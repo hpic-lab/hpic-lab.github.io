@@ -1,0 +1,582 @@
+* {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+/* navbar */
+.navbar-brand img {
+  margin-right: 4px;
+}
+
+/* gallery */
+.gallery-title-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.btn-rotate {
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  font-size: 24px;
+  transition: transform 0.3s ease-in-out;
+  background: transparent;
+  color: #313131;
+}
+
+.btn-rotate:hover {
+  transform: rotate(90deg);
+  background: transparent;
+  color: var(--theme-color);
+}
+
+.gallery-card-container {
+  display: flex;
+  flex-direction: row;
+  margin: 16px 0;
+  justify-content: space-between;
+}
+
+.gallery-card-container .card {
+  margin: 0 16px 0 0;
+  width: 220px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-title {
+  margin: 0 !important;
+}
+
+.card-text {
+  padding: 0 !important;
+  color: gray;
+  font-size: 12px;
+}
+
+/* chip gallery */
+/* slider slick */
+
+.slick-next,
+.slick-prev {
+  width: 30px; /* 버튼 넓이 */
+  height: 180px; /* 버튼 높이 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1; /* 필요시 z-index 조정 */
+  border-radius: 0; /* 모서리를 둥글지 않게 설정 */
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: rgba(0, 0, 0, 0.3); /* 화살표 색상 변경 */
+  font-size: 32px;
+}
+
+.slick-prev {
+  left: -36px; /* 왼쪽 화살표 위치 조정 */
+  z-index: 1; /* 필요시 z-index 조정 */
+}
+
+.slick-next {
+  right: -36px;
+  z-index: 1; /* 필요시 z-index 조정 */
+}
+
+.chip-item {
+  margin: 0px 12px;
+}
+
+/* publication */
+.list-group-item a {
+  margin-left: auto;
+}
+
+.card-body {
+  padding: 16px;
+}
+
+.pub-card {
+  /* width: 300px; */
+}
+
+.pub-card img {
+  height: 180px;
+  object-fit: cover;
+}
+
+#publications .card-text {
+  font-size: 16px;
+}
+
+#publications .list-group-item {
+  padding: 0px 8px;
+  margin: 0;
+}
+
+#publications .badge {
+  margin: 4px 0px 4px;
+  font-size: 12px;
+  font-weight: 300;
+  word-break: break-word;
+  white-space: normal;
+  text-align: left;
+}
+
+/* icon */
+.network-icon img {
+  height: 2rem;
+  width: 2rem;
+}
+
+.graduation-cap-icon {
+  height: 1.5rem;
+  width: 1.5rem;
+  color: #343a40;
+  margin-right: 12px;
+}
+
+.edu-item {
+  display: flex;
+}
+
+.contact-icon {
+  display: flex;
+  align-items: center;
+}
+
+.contact-icon img {
+  margin-right: 12px;
+  width: 1.5rem;
+}
+
+.contact-icon .location-icon {
+  height: 2rem;
+  margin-right: 12px;
+}
+
+.contact-ul {
+  padding-left: 0;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: 234px;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.slides {
+  margin-left: 64px;
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  gap: 12px;
+}
+
+.slide {
+  flex: 0 0 auto; /* 슬라이드의 너비를 고정 */
+  width: 200px;
+  box-sizing: border-box;
+  height: 200px; /* 슬라이드 높이를 200px로 설정 */
+  background-color: #f7f7f7;
+  padding: 12px;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  margin: 0 auto;
+  display: block;
+  pointer-events: none; /* 마우스 이벤트 방지 */
+  user-select: none; /* 텍스트 선택 방지 */
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.prev {
+  left: 12px;
+}
+
+.next {
+  right: 12px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(82, 82, 82, 0.5);
+}
+
+/* 화살표 버튼 스타일 */
+.arrow {
+  width: 48px; /* 화살표 버튼의 너비 */
+  height: 48px; /* 화살표 버튼의 높이 */
+  background-color: rgba(0, 0, 0, 0.2); /* 배경 색상 */
+  color: white; /* 화살표 색상 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%; /* 직사각형으로 만들기 위해 테두리 반경을 0으로 설정 */
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.arrow.next {
+  right: 10px; /* 오른쪽 화살표 위치 */
+}
+
+.arrow.prev {
+  left: 10px; /* 왼쪽 화살표 위치 */
+}
+
+/* 화살표 아이콘 스타일 */
+.arrow::before {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.arrow.next::before {
+  border-width: 10px 0 10px 15px;
+  border-color: transparent transparent transparent #fff;
+}
+
+.arrow.prev::before {
+  border-width: 10px 15px 10px 0;
+  border-color: transparent #fff transparent transparent;
+}
+
+.modal-body-title {
+  font-weight: 500;
+}
+
+.research-projects-ul li {
+  margin-bottom: 12px;
+}
+
+.sponsor {
+  color: #770001;
+  font-weight: 550;
+}
+
+@media (max-width: 1400px) {
+  #navbar {
+    overflow: hidden;
+    transition: height 0.3s ease-out, opacity 0.3s ease-out;
+    height: 0;
+    opacity: 0;
+  }
+
+  #navbar.show {
+    height: auto; /* 실제 높이를 계산하기 위해 auto로 설정 */
+    opacity: 1;
+  }
+}
+
+.hamburger-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.hpic-img {
+  width: 100%;
+  /* margin: 0px 0px 0px 0px auto; */
+  /* border-radius: 8px; */
+  box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* member cards */
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0px;
+}
+.user-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 2px 20px -5px rgba(0, 0, 0, 0.5);
+}
+
+.user-card-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+  width: 28%;
+}
+
+.user-card-img img {
+  object-fit: contain;
+  padding: 4px;
+}
+
+.user-card-info {
+  text-align: left;
+  padding-left: 12px;
+  margin-left: 20px;
+  width: 60%;
+}
+
+.user-card-info h2 {
+  font-size: 24px;
+  margin: 0;
+  margin-bottom: 10px;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.user-card-info p {
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+.user-card-info p span {
+  font-weight: 700;
+  margin-right: 10px;
+}
+
+.news-ul p,
+.research-projects-ul li p {
+  margin-bottom: 8px;
+}
+
+.news-ul .news-date,
+.research-date {
+  font-style: italic;
+}
+
+.col-lg-8 h5:not(:first-of-type) {
+  margin-top: 40px;
+}
+
+section {
+  overflow: hidden;
+}
+
+.home-section:first-of-type {
+  padding: 0;
+}
+
+/* 캐러셀 */
+
+#carousel-autoplaying {
+  height: 800px;
+  width: 100%;
+  background: gray;
+  padding: 0;
+  overflow: hidden;
+}
+
+.carousel-item img {
+  height: 800px;
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+  z-index: 0;
+}
+
+.carousel-item {
+  position: relative;
+  width: 100%;
+  transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+}
+.carousel-item-left {
+  transform: translateX(-100%);
+}
+
+.dim {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* 어두운 효과 */
+  z-index: 1;
+}
+
+.carousel-inner .autoplay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 200px;
+  z-index: 1;
+}
+
+.autoplay div {
+  background: rgba(109, 109, 109, 0.1);
+}
+
+.autoplay .sponsor-item {
+  /* border: 1px solid red; */
+  background: rgba(182, 182, 182, 0.5);
+  border-radius: 12px;
+  color: white;
+  font-size: 16px;
+  height: 100px;
+  margin: 56px 20px 56px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-sponsor-title {
+  position: absolute;
+  top: 600px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 200px;
+  z-index: 1;
+  color: white;
+}
+
+.home-description-container {
+  position: absolute;
+  top: 300px;
+  left: 64px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 200px;
+  z-index: 1;
+  color: white;
+}
+.home-description-container .uni {
+  width: fit-content;
+  letter-spacing: 2px;
+}
+
+.home-description-container h1 {
+  margin-top: 0;
+  color: white;
+  font-size: 60px;
+  letter-spacing: 12px;
+  font-weight: 500;
+}
+
+.home-description-container .txt {
+  /* border: 1px solid red; */
+  width: fit-content;
+  margin-top: 12px;
+  letter-spacing: 2px;
+  font-size: 12px;
+}
+
+@media (max-width: 767px) {
+  /* 메인 홈 */
+  .home-description-container {
+    position: absolute;
+    top: 100px;
+    left: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 200px;
+    z-index: 1;
+    color: white;
+    padding-right: 40px;
+  }
+
+  .home-description-container h1 {
+    font-size: 20px;
+  }
+
+  .txt {
+    /* border: 1px solid red; */
+    width: fit-content;
+    margin-top: 12px;
+    letter-spacing: 2px;
+    font-size: 12px;
+  }
+
+  .home-description-container p {
+    word-wrap: break-word; /* 긴 단어를 줄 바꿈 */
+    overflow-wrap: break-word; /* 긴 단어를 줄 바꿈 */
+    padding: 0 32px 0 0; /* 양쪽에 패딩 추가 */
+    box-sizing: border-box; /* 패딩을 포함한 박스 크기 계산 */
+  }
+
+  .wrapper {
+    padding-top: 3%;
+  }
+  .user-card-info {
+    width: 100%;
+    padding: 4px 8px;
+    margin-left: 0px;
+  }
+
+  .user-card-info h2 {
+    margin-top: 12px;
+    font-size: 35px;
+    text-align: center;
+  }
+  .user-card-info p span {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 16px;
+  }
+  .user-card {
+    display: block;
+  }
+  .user-card-img {
+    width: 100%;
+    height: 200px;
+  }
+  .user-card-img img {
+    width: 100%;
+    height: 200px;
+  }
+}
+
+@media (max-width: 575px) {
+  .home-description-container {
+    left: 32px;
+  }
+
+  .slick-prev {
+    left: 0; /* 왼쪽 화살표 위치 조정 */
+  }
+
+  .slick-next {
+    right: 0;
+  }
+
+  .chip-item {
+    margin: 0px 16px;
+  }
+}
+
+:root {
+  --theme-color: rgba(63, 81, 181, 1);
+}
