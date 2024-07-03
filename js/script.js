@@ -197,6 +197,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   document.querySelector(".next").addEventListener("click", nextSlide);
   document.querySelector(".prev").addEventListener("click", prevSlide);
+  
   // 카드 클릭 시 href로 이동하도록 하는 이벤트 리스너 추가
   document.querySelectorAll('.pub-card').forEach(card => {
     card.addEventListener('click', () => {

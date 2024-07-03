@@ -2144,5 +2144,18 @@
         </div>
       </div>
     </div>
+
+<!--카드 클릭 시 href로 이동하도록 하는 이벤트 리스너 추가 -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll('.pub-card').forEach(card => {
+      card.addEventListener('click', () => {
+        window.location.href = card.querySelector('a.card-text').href;
+      });
+    });
+  });
+</script>
+
+
   </body>
 </html>
