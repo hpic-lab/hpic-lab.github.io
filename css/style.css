@@ -2,6 +2,24 @@
   font-family: "Noto Sans KR", sans-serif;
 }
 
+/* Apply "Noto Sans KR" font to all heading elements */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Noto Sans KR", sans-serif !important;
+  font-weight: 400;
+  margin-top: 1rem;
+  margin-bottom: .5rem;
+  line-height: 1.25;
+  color: #313131;
+  text-rendering: optimizeLegibility;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+  -webkit-hyphens: manual;
+  -ms-hyphens: manual;
+  hyphens: manual;
+}
+
+
 /* navbar */
 .navbar-brand img {
   margin-right: 4px;
