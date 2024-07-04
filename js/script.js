@@ -1,5 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
   $(document).ready(function () {
+
+  // 자동으로 네비게이션 버튼 클릭
+  $(".navbar-toggler").trigger("click");
+
     // 햄버거 버튼 클릭 이벤트 핸들러
     $(".navbar-toggler, .navbar-toggler-icon").click(function (event) {
       var $navbar = $(".navbar-collapse");
