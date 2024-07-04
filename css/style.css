@@ -1,13 +1,18 @@
 * {
   font-family: "Noto Sans KR", sans-serif;
 }
- 
+
 /* Apply "Noto Sans KR" font to all heading elements  */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Noto Sans KR", sans-serif !important;
   font-weight: 700;
   margin-top: 1rem;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   line-height: 1.25;
   color: #313131;
   text-rendering: optimizeLegibility;
@@ -18,7 +23,6 @@ h1, h2, h3, h4, h5, h6 {
   -ms-hyphens: manual;
   hyphens: manual;
 }
-
 
 /* navbar */
 .navbar-brand img {
@@ -51,6 +55,7 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--theme-color);
 }
 
+/* 뉴스 갤러리 */
 .gallery-card-container {
   display: flex;
   flex-direction: row;
@@ -77,6 +82,16 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0 !important;
   color: gray;
   font-size: 12px;
+}
+
+/* 갤러리 디테일 페이지 */
+.news-gallery-detail .card {
+  margin: 16px 0;
+}
+
+.news-gallery-detail h2 {
+  margin: 40px 0;
+  text-align: center;
 }
 
 /* chip gallery */
