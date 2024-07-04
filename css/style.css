@@ -85,11 +85,11 @@ h6 {
 }
 
 /* 갤러리 디테일 페이지 */
-.news-gallery-detail .card {
+.gallery-detail .card {
   margin: 16px 0;
 }
 
-.news-gallery-detail h2 {
+.gallery-detail h2 {
   margin: 40px 0;
   text-align: center;
 }
@@ -162,6 +162,28 @@ h6 {
   word-break: break-word;
   white-space: normal;
   text-align: left;
+}
+
+/* 칩 갤러리 상세 페이지 카드 디자인 */
+.chip-detail-card img {
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+  /* padding: 12px; */
+}
+
+.chip-detail-card .card-text {
+  /* font-size: 16px; */
+}
+
+.chip-detail-card .list-group-item {
+  padding: 0px 8px;
+  margin: 0;
+}
+
+.chip-detail-card span:first-of-type {
+  font-weight: 600;
+  margin-right: 4px;
 }
 
 /* icon */
