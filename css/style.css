@@ -129,6 +129,23 @@ h6 {
 }
 
 /* publication */
+.pub-row {
+  display: flex;
+}
+
+.pub-year-title {
+  background: transparent;
+  padding: 0;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pub-year-title h3 {
+  padding: 0;
+  margin: 0;
+}
+
 .list-group-item a {
   margin-left: auto;
 }
