@@ -45,6 +45,8 @@ document.addEventListener("DOMContentLoaded", function () {
     slidesToShow: 4,
     slidesToScroll: 1,
     arrows: true,
+    autoplay: true, //수정
+    autoplaySpeed: 2000, //수정
     // dots: true,
     responsive: [
       {
