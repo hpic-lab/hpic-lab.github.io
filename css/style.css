@@ -1,13 +1,18 @@
 * {
   font-family: "Noto Sans KR", sans-serif;
 }
- 
+
 /* Apply "Noto Sans KR" font to all heading elements  */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Noto Sans KR", sans-serif !important;
   font-weight: 700;
   margin-top: 1rem;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   line-height: 1.25;
   color: #313131;
   text-rendering: optimizeLegibility;
@@ -18,7 +23,6 @@ h1, h2, h3, h4, h5, h6 {
   -ms-hyphens: manual;
   hyphens: manual;
 }
-
 
 /* navbar */
 .navbar-brand img {
@@ -51,6 +55,7 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--theme-color);
 }
 
+/* 뉴스 갤러리 */
 .gallery-card-container {
   display: flex;
   flex-direction: row;
@@ -77,6 +82,16 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0 !important;
   color: gray;
   font-size: 12px;
+}
+
+/* 갤러리 디테일 페이지 */
+.gallery-detail .card {
+  margin: 16px 0;
+}
+
+.gallery-detail h2 {
+  margin: 40px 0;
+  text-align: center;
 }
 
 /* chip gallery */
@@ -114,6 +129,23 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* publication */
+.pub-row {
+  display: flex;
+}
+
+.pub-year-title {
+  background: transparent;
+  padding: 0;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pub-year-title h3 {
+  padding: 0;
+  margin: 0;
+}
+
 .list-group-item a {
   margin-left: auto;
 }
@@ -147,6 +179,28 @@ h1, h2, h3, h4, h5, h6 {
   word-break: break-word;
   white-space: normal;
   text-align: left;
+}
+
+/* 칩 갤러리 상세 페이지 카드 디자인 */
+.chip-detail-card img {
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+  /* padding: 12px; */
+}
+
+.chip-detail-card .card-text {
+  /* font-size: 16px; */
+}
+
+.chip-detail-card .list-group-item {
+  padding: 0px 8px;
+  margin: 0;
+}
+
+.chip-detail-card span:first-of-type {
+  font-weight: 600;
+  margin-right: 4px;
 }
 
 /* icon */
