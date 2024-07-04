@@ -1,9 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   $(document).ready(function () {
 
-  // 자동으로 네비게이션 버튼 클릭
-  $(".navbar-toggler").trigger("click");
-
     // 햄버거 버튼 클릭 이벤트 핸들러
     $(".navbar-toggler, .navbar-toggler-icon").click(function (event) {
       var $navbar = $(".navbar-collapse");
@@ -124,7 +121,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (toggleButton) {
     toggleButton.addEventListener("click", function () {
-      if (window.innerWidth < 1401) {  // Only apply the toggle effect in mobile mode
       if (navbarDiv.classList.contains("show")) {
         // 메뉴를 서서히 사라지게
         navbarDiv.style.height = `${navbarDiv.scrollHeight}px`;

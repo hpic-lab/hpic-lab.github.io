@@ -356,15 +356,6 @@ h6 {
   font-weight: 550;
 }
 
-/* Ensure the navbar is always visible in desktop mode */
-@media (min-width: 1401px) {
-  #navbar {
-    display: block !important;
-    height: auto !important;
-    opacity: 1 !important;
-    transition: none !important;
-  }
-}
 
 @media (max-width: 1400px) {
   #navbar {
