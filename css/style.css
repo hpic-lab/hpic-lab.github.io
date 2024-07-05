@@ -32,6 +32,16 @@ h6 {
   hyphens: manual;
 }
 
+/* 아코디언뷰 */
+.ui-state-active {
+  background: var(--theme-color);
+  border: none;
+}
+
+.ui-accordion-header {
+  border: none;
+}
+
 /* navbar */
 .navbar-brand img {
   margin-right: 4px;
@@ -363,7 +373,6 @@ h6 {
   color: #770001;
   font-weight: 550;
 }
-
 
 @media (max-width: 1400px) {
   #navbar {
