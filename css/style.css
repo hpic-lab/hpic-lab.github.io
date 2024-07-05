@@ -109,29 +109,37 @@ h6 {
 
 .slick-next,
 .slick-prev {
-  width: 30px; /* 버튼 넓이 */
-  height: 180px; /* 버튼 높이 */
+  width: 30px;
+  /* 버튼 넓이 */
+  height: 180px;
+  /* 버튼 높이 */
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 1; /* 필요시 z-index 조정 */
-  border-radius: 0; /* 모서리를 둥글지 않게 설정 */
+  z-index: 1;
+  /* 필요시 z-index 조정 */
+  border-radius: 0;
+  /* 모서리를 둥글지 않게 설정 */
 }
 
 .slick-prev:before,
 .slick-next:before {
-  color: rgba(0, 0, 0, 0.3); /* 화살표 색상 변경 */
+  color: rgba(0, 0, 0, 0.3);
+  /* 화살표 색상 변경 */
   font-size: 32px;
 }
 
 .slick-prev {
-  left: -36px; /* 왼쪽 화살표 위치 조정 */
-  z-index: 1; /* 필요시 z-index 조정 */
+  left: -36px;
+  /* 왼쪽 화살표 위치 조정 */
+  z-index: 1;
+  /* 필요시 z-index 조정 */
 }
 
 .slick-next {
   right: -36px;
-  z-index: 1; /* 필요시 z-index 조정 */
+  z-index: 1;
+  /* 필요시 z-index 조정 */
 }
 
 .chip-item {
@@ -151,6 +159,7 @@ h6 {
   justify-content: center;
   align-items: center;
 }
+
 .pub-year-title h3 {
   padding: 0;
   margin: 0;
@@ -266,10 +275,12 @@ h6 {
 }
 
 .slide {
-  flex: 0 0 auto; /* 슬라이드의 너비를 고정 */
+  flex: 0 0 auto;
+  /* 슬라이드의 너비를 고정 */
   width: 200px;
   box-sizing: border-box;
-  height: 200px; /* 슬라이드 높이를 200px로 설정 */
+  height: 200px;
+  /* 슬라이드 높이를 200px로 설정 */
   background-color: #f7f7f7;
   padding: 12px;
 }
@@ -280,8 +291,10 @@ h6 {
   object-fit: contain;
   margin: 0 auto;
   display: block;
-  pointer-events: none; /* 마우스 이벤트 방지 */
-  user-select: none; /* 텍스트 선택 방지 */
+  pointer-events: none;
+  /* 마우스 이벤트 방지 */
+  user-select: none;
+  /* 텍스트 선택 방지 */
 }
 
 .prev,
@@ -312,14 +325,19 @@ h6 {
 
 /* 화살표 버튼 스타일 */
 .arrow {
-  width: 48px; /* 화살표 버튼의 너비 */
-  height: 48px; /* 화살표 버튼의 높이 */
-  background-color: rgba(0, 0, 0, 0.2); /* 배경 색상 */
-  color: white; /* 화살표 색상 */
+  width: 48px;
+  /* 화살표 버튼의 너비 */
+  height: 48px;
+  /* 화살표 버튼의 높이 */
+  background-color: rgba(0, 0, 0, 0.2);
+  /* 배경 색상 */
+  color: white;
+  /* 화살표 색상 */
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50%; /* 직사각형으로 만들기 위해 테두리 반경을 0으로 설정 */
+  border-radius: 50%;
+  /* 직사각형으로 만들기 위해 테두리 반경을 0으로 설정 */
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -328,11 +346,13 @@ h6 {
 }
 
 .arrow.next {
-  right: 10px; /* 오른쪽 화살표 위치 */
+  right: 10px;
+  /* 오른쪽 화살표 위치 */
 }
 
 .arrow.prev {
-  left: 10px; /* 왼쪽 화살표 위치 */
+  left: 10px;
+  /* 왼쪽 화살표 위치 */
 }
 
 /* 화살표 아이콘 스타일 */
@@ -366,7 +386,7 @@ h6 {
   font-weight: 550;
 }
 
-@media (max-width: 1400px) {
+/* @media (max-width: 1400px) {
   #navbar {
     overflow: hidden;
     transition: height 0.3s ease-out, opacity 0.3s ease-out;
@@ -375,10 +395,10 @@ h6 {
   }
 
   #navbar.show {
-    height: auto; /* 실제 높이를 계산하기 위해 auto로 설정 */
+    height: auto;
     opacity: 1;
   }
-}
+} */
 
 .hamburger-icon {
   width: 1.5rem;
@@ -399,6 +419,7 @@ h6 {
   align-items: center;
   margin: 20px 0px;
 }
+
 .user-card {
   display: flex;
   align-items: center;
@@ -443,6 +464,7 @@ h6 {
   font-size: 14px;
   margin-bottom: 2px;
 }
+
 .user-card-info p span {
   font-weight: 700;
   margin-right: 10px;
@@ -493,6 +515,7 @@ section {
   width: 100%;
   transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
 }
+
 .carousel-item-left {
   transform: translateX(-100%);
 }
@@ -503,7 +526,8 @@ section {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6); /* 어두운 효과 */
+  background-color: rgba(0, 0, 0, 0.6);
+  /* 어두운 효과 */
   z-index: 1;
 }
 
@@ -554,6 +578,7 @@ section {
   z-index: 1;
   color: white;
 }
+
 .home-description-container .uni {
   width: fit-content;
   letter-spacing: 2px;
@@ -576,6 +601,7 @@ section {
 }
 
 @media (max-width: 767px) {
+
   /* 메인 홈 */
   .home-description-container {
     position: absolute;
@@ -603,15 +629,20 @@ section {
   }
 
   .home-description-container p {
-    word-wrap: break-word; /* 긴 단어를 줄 바꿈 */
-    overflow-wrap: break-word; /* 긴 단어를 줄 바꿈 */
-    padding: 0 32px 0 0; /* 양쪽에 패딩 추가 */
-    box-sizing: border-box; /* 패딩을 포함한 박스 크기 계산 */
+    word-wrap: break-word;
+    /* 긴 단어를 줄 바꿈 */
+    overflow-wrap: break-word;
+    /* 긴 단어를 줄 바꿈 */
+    padding: 0 32px 0 0;
+    /* 양쪽에 패딩 추가 */
+    box-sizing: border-box;
+    /* 패딩을 포함한 박스 크기 계산 */
   }
 
   .wrapper {
     padding-top: 3%;
   }
+
   .user-card-info {
     width: 100%;
     padding: 4px 8px;
@@ -623,18 +654,22 @@ section {
     font-size: 35px;
     text-align: center;
   }
+
   .user-card-info p span {
     display: block;
     margin-bottom: 4px;
     font-size: 16px;
   }
+
   .user-card {
     display: block;
   }
+
   .user-card-img {
     width: 100%;
     height: 200px;
   }
+
   .user-card-img img {
     width: 100%;
     height: 200px;
@@ -647,7 +682,8 @@ section {
   }
 
   .slick-prev {
-    left: 0; /* 왼쪽 화살표 위치 조정 */
+    left: 0;
+    /* 왼쪽 화살표 위치 조정 */
   }
 
   .slick-next {
