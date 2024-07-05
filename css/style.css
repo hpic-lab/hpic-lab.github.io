@@ -30,6 +30,10 @@ h6 {
   border: none;
 }
 
+.ui-accordion-header {
+  border: none;
+}
+
 /* navbar */
 .navbar-brand img {
   margin-right: 4px;
