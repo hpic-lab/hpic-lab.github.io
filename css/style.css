@@ -2,20 +2,6 @@
   font-family: "Noto Sans KR", sans-serif;
 }
 
-a:link {
-  color : rgb(255, 255, 255) !important; 
-}
-
-a:hover {
-  color : rgb(158, 249, 255) !important;
-}
-
-a, h3.article-title a:hover {
-  color: #ffffff !important ; 
-  text-decoration: none;
-  transition: color .6s ease;
-}
-
 /* Apply "Noto Sans KR" font to all heading elements  */
 h1,
 h2,
