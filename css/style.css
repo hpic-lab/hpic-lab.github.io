@@ -223,17 +223,21 @@ h6 {
 }
 
 /* icon */
-.network-icon img {
-  height: 2rem;
-  width: 2rem;
+.network-icon {
+  margin-top: 4px;
 }
 
-.graduation-cap-icon {
+.network-icon img {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+/* .graduation-cap-icon {
   height: 1.5rem;
   width: 1.5rem;
   color: #343a40;
   margin-right: 12px;
-}
+} */
 
 .edu-item {
   display: flex;
@@ -386,20 +390,6 @@ h6 {
   font-weight: 550;
 }
 
-/* @media (max-width: 1400px) {
-  #navbar {
-    overflow: hidden;
-    transition: height 0.3s ease-out, opacity 0.3s ease-out;
-    height: 0;
-    opacity: 0;
-  }
-
-  #navbar.show {
-    height: auto;
-    opacity: 1;
-  }
-} */
-
 .hamburger-icon {
   width: 1.5rem;
   height: 1.5rem;
@@ -412,7 +402,7 @@ h6 {
   box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.1);
 }
 
-/* member cards */
+/* people cards */
 .wrapper {
   display: flex;
   justify-content: center;
@@ -431,6 +421,19 @@ h6 {
   position: relative;
   overflow: hidden;
   box-shadow: 0 2px 20px -5px rgba(0, 0, 0, 0.5);
+}
+
+/* 교수님 왼쪽 프로필 */
+.portrait-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 교수님 오른쪽 프로필 */
+.profile-right p {
+  font-size: 14px;
+  margin-bottom: 2px;
 }
 
 .user-card-img {
