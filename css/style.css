@@ -2,6 +2,14 @@
   font-family: "Noto Sans KR", sans-serif;
 }
 
+a:link {
+  color : rgb(255, 255, 255);
+}
+
+a:hover {
+  color : rgb(158, 249, 255);
+}
+
 /* Apply "Noto Sans KR" font to all heading elements  */
 h1,
 h2,
@@ -10,7 +18,7 @@ h4,
 h5,
 h6 {
   font-family: "Noto Sans KR", sans-serif !important;
-  font-weight: 700;
+  font-weight: 400;
   margin-top: 1rem;
   margin-bottom: 0.5rem;
   line-height: 1.25;
