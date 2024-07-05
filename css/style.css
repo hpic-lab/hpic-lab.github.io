@@ -11,7 +11,7 @@ a:hover {
 }
 
 a, h3.article-title a:hover {
-  color: #ffffff;
+  color: #ffffff !important ; 
   text-decoration: none;
   transition: color .6s ease;
 }
