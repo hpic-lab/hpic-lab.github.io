@@ -2,8 +2,9 @@ document.addEventListener("DOMContentLoaded", function () {
   $(document).ready(function () {
     // 아코디언
     $(function () {
-      $("#accordion").accordion({
+      $(".accordion").accordion({
         collapsible: true,
+        heightStyle: "content",
       });
     });
 
