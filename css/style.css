@@ -10,6 +10,12 @@ a:hover {
   color : rgb(158, 249, 255) !important;
 }
 
+a, h3.article-title a:hover {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color .6s ease;
+}
+
 /* Apply "Noto Sans KR" font to all heading elements  */
 h1,
 h2,
