@@ -1,29 +1,44 @@
 document.addEventListener("DOMContentLoaded", function () {
-  $(document).ready(function () {
-    // 아코디언
-    $(function () {
-      $(".accordion").accordion({
-        collapsible: true,
-        heightStyle: "content",
-      });
-    });
+  // 아코디언
+  $(".accordion").accordion({
+    collapsible: true,
+    heightStyle: "content",
+    activate: function (event, ui) {
+      // 헤더가 활성화되면 실행되는 콜백 함수
+      var headerIndex = $(this)
+        .find(".ui-accordion-header")
+        .index(ui.newHeader);
 
-    // 햄버거 버튼 클릭 이벤트 핸들러
-    $(".navbar-toggler, .navbar-toggler-icon").click(function (event) {
-      var $navbar = $(".navbar-collapse");
-      $navbar.collapse("toggle");
-      event.stopPropagation(); // 이벤트 전파 중지
-    });
+      var headerHeight = $(this).find(".ui-accordion-header").outerHeight();
 
-    // 문서 클릭 이벤트 핸들러
-    $(document).click(function (event) {
-      var clickover = $(event.target);
-      var $navbar = $(".navbar-collapse");
-      var _opened = $navbar.hasClass("show");
-      if (_opened && !clickover.closest(".navbar").length) {
-        $navbar.collapse("hide");
-      }
-    });
+      $("html, body").animate(
+        {
+          scrollTop:
+            $(this).find(".ui-accordion-header").offset().top -
+            headerHeight -
+            40 +
+            headerIndex * headerHeight,
+        },
+        50 // 애니메이션 진행 시간
+      );
+    },
+  });
+
+  // 햄버거 버튼 클릭 이벤트 핸들러
+  $(".navbar-toggler, .navbar-toggler-icon").click(function (event) {
+    var $navbar = $(".navbar-collapse");
+    $navbar.collapse("toggle");
+    event.stopPropagation(); // 이벤트 전파 중지
+  });
+
+  // 문서 클릭 이벤트 핸들러
+  $(document).click(function (event) {
+    var clickover = $(event.target);
+    var $navbar = $(".navbar-collapse");
+    var _opened = $navbar.hasClass("show");
+    if (_opened && !clickover.closest(".navbar").length) {
+      $navbar.collapse("hide");
+    }
   });
 
   $(".autoplay").slick({
