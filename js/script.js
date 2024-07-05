@@ -1,5 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
   $(document).ready(function () {
+    // 아코디언
+    $(function () {
+      $("#accordion").accordion({
+        collapsible: true,
+      });
+    });
 
     // 햄버거 버튼 클릭 이벤트 핸들러
     $(".navbar-toggler, .navbar-toggler-icon").click(function (event) {
