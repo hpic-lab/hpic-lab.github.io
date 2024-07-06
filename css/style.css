@@ -26,12 +26,17 @@ h6 {
 
 /* 아코디언뷰 */
 .ui-state-active {
-  background: var(--theme-color);
+  background: rgba(63, 81, 181, 1);
   border: none;
 }
 
 .ui-accordion-header {
   border: none;
+}
+
+.ui-accordion .ui-accordion-content {
+  border: none;
+  background: none;
 }
 
 /* navbar */
@@ -410,6 +415,10 @@ h6 {
   margin: 20px 0px;
 }
 
+.accordion div:first-child {
+  margin-top: 0;
+}
+
 .user-card {
   display: flex;
   align-items: center;
@@ -645,10 +654,6 @@ section {
     /* 양쪽에 패딩 추가 */
     box-sizing: border-box;
     /* 패딩을 포함한 박스 크기 계산 */
-  }
-
-  .wrapper {
-    padding-top: 3%;
   }
 
   .user-card-info {
