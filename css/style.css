@@ -10,8 +10,6 @@ h4,
 h5,
 h6 {
   font-family: "Noto Sans KR", sans-serif !important;
-  font-weight: 400;
-  margin-top: 1rem;
   margin-bottom: 0.5rem;
   line-height: 1.25;
   color: #313131;
@@ -74,12 +72,12 @@ h6 {
 .gallery-card-container {
   display: flex;
   flex-direction: row;
-  margin: 16px 0;
+  /* margin: 16px 0; */
   justify-content: space-between;
 }
 
 .gallery-card-container .card {
-  margin: 0 16px 0 0;
+  /* margin: 0 16px 0 0; */
   width: 220px;
 }
 
@@ -498,7 +496,8 @@ h6 {
   font-style: italic;
 }
 
-.col-lg-8 h5:not(:first-of-type) {
+.col-lg-8 h5:not(:first-child),
+.chip-gallery-title-row {
   margin-top: 40px;
 }
 
