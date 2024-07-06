@@ -431,11 +431,16 @@ h6 {
 }
 
 /* 교수님 오른쪽 프로필 */
+.profile-right {
+  /* margin-left: 5px; */
+}
+
 .profile-right p {
   font-size: 14px;
   margin-bottom: 2px;
 }
 
+/* 학생들 프로필 */
 .user-card-img {
   display: flex;
   justify-content: center;
@@ -468,7 +473,8 @@ h6 {
   margin-bottom: 2px;
 }
 
-.user-card-info p span {
+.user-card-info p span,
+.profile-right span {
   font-weight: 700;
   margin-right: 10px;
 }
@@ -604,7 +610,6 @@ section {
 }
 
 @media (max-width: 767px) {
-
   /* 메인 홈 */
   .home-description-container {
     position: absolute;
