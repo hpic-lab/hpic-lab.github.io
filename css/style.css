@@ -150,6 +150,11 @@ h6 {
 }
 
 /* publication */
+.pub-title-row {
+  display: flex;
+  flex-direction: column;
+}
+
 .pub-nav-tabs .nav-link {
   color: #454545;
   border: none;
@@ -606,6 +611,15 @@ section {
   margin-top: 12px;
   letter-spacing: 2px;
   font-size: 12px;
+}
+
+@media (max-width: 992px) {
+  .pub-title-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 @media (max-width: 767px) {
