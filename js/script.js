@@ -150,39 +150,39 @@ document.addEventListener("DOMContentLoaded", function () {
   // });
 
   // 네비게이션 토글 버튼 기능 추가
-  const toggleButton = document.querySelector(".navbar-toggler");
-  const navbarDiv = document.getElementById("navbar");
+  // const toggleButton = document.querySelector(".navbar-toggler");
+  // const navbarDiv = document.getElementById("navbar");
 
-  if (toggleButton) {
-    toggleButton.addEventListener("click", function () {
-      if (navbarDiv.classList.contains("show")) {
-        // 메뉴를 서서히 사라지게
-        navbarDiv.style.height = `${navbarDiv.scrollHeight}px`;
-        navbarDiv.offsetHeight; // 강제 리플로우(reflow) 트리거
-        navbarDiv.style.height = "0";
-        navbarDiv.style.opacity = "0";
+  // if (toggleButton) {
+  //   toggleButton.addEventListener("click", function () {
+  //     if (navbarDiv.classList.contains("show")) {
+  //       // 메뉴를 서서히 사라지게
+  //       navbarDiv.style.height = `${navbarDiv.scrollHeight}px`;
+  //       navbarDiv.offsetHeight; // 강제 리플로우(reflow) 트리거
+  //       navbarDiv.style.height = "0";
+  //       navbarDiv.style.opacity = "0";
 
-        setTimeout(() => {
-          navbarDiv.classList.remove("show");
-          toggleButton.classList.add("collapsed");
-          toggleButton.setAttribute("aria-expanded", "false");
-        }, 300); // CSS 전환 시간과 동일하게 설정
-      } else {
-        // 메뉴를 서서히 나타나게 하기
-        navbarDiv.classList.add("show");
-        navbarDiv.style.height = "0";
-        navbarDiv.offsetHeight; // 강제 리플로우(reflow) 트리거
-        navbarDiv.style.height = `${navbarDiv.scrollHeight}px`;
-        navbarDiv.style.opacity = "1";
+  //       setTimeout(() => {
+  //         navbarDiv.classList.remove("show");
+  //         toggleButton.classList.add("collapsed");
+  //         toggleButton.setAttribute("aria-expanded", "false");
+  //       }, 300); // CSS 전환 시간과 동일하게 설정
+  //     } else {
+  //       // 메뉴를 서서히 나타나게 하기
+  //       navbarDiv.classList.add("show");
+  //       navbarDiv.style.height = "0";
+  //       navbarDiv.offsetHeight; // 강제 리플로우(reflow) 트리거
+  //       navbarDiv.style.height = `${navbarDiv.scrollHeight}px`;
+  //       navbarDiv.style.opacity = "1";
 
-        setTimeout(() => {
-          navbarDiv.style.height = "auto"; // 높이를 auto로 설정
-          toggleButton.classList.remove("collapsed");
-          toggleButton.setAttribute("aria-expanded", "true");
-        }, 300); // CSS 전환 시간과 동일하게 설정
-      }
-    });
-  }
+  //       setTimeout(() => {
+  //         navbarDiv.style.height = "auto"; // 높이를 auto로 설정
+  //         toggleButton.classList.remove("collapsed");
+  //         toggleButton.setAttribute("aria-expanded", "true");
+  //       }, 300); // CSS 전환 시간과 동일하게 설정
+  //     }
+  //   });
+  // }
 
   // 스크롤 이벤트 리스너 추가
   // window.addEventListener("scroll", () => {
