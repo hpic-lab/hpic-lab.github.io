@@ -108,7 +108,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // });
 
   // 네비게이션 링크 설정
-  const navLinks = document.querySelectorAll(".nav-link");
+  const navLinks = document.querySelectorAll(".top-navbar .nav-link");
 
   navLinks.forEach((link) => {
     link.addEventListener("click", function (e) {
