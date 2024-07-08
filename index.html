@@ -31,10 +31,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
     />
-    <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
-    ></script>
 
     <link
       rel="stylesheet"
@@ -1358,8 +1354,47 @@
         <div class="row">
           <div class="col-12 col-lg-4 section-heading">
             <h1>Publications</h1>
+
+            <ul class="nav flex-column nav-tabs pub-nav-tabs">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  data-bs-toggle="tab"
+                  data-bs-target="#academy"
+                  >Academy</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  data-bs-toggle="tab"
+                  data-bs-target="#journal"
+                  >Journal</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  data-bs-toggle="tab"
+                  data-bs-target="#conference"
+                  >Conference</a
+                >
+              </li>
+            </ul>
+
+            <!-- <div class="tab-content">
+              <div class="tab-pane fade show active" id="academy">
+                Academy Content
+              </div>
+              <div class="tab-pane fade" id="journal">Journal Content</div>
+              <div class="tab-pane fade" id="conference">
+                Conference Content
+              </div>
+            </div> -->
           </div>
+
           <div class="col-12 col-lg-8">
+            <!-- Total Publications -->
             <div class="accordion">
               <!-- 2024 -->
               <h3>2024</h3>
@@ -1371,11 +1406,7 @@
                 <div class="row">
                   <div class="col-md-6">
                     <div class="card pub-card mb-4">
-                      <img
-                        src="img/c8.png"
-                        class="card-img-top"
-                        alt="..."
-                      />
+                      <img src="img/c8.png" class="card-img-top" alt="..." />
                       <div class="card-body">
                         <p class="card-text">
                           Radiation-Hardened Processing-In-Memory Crossbar Array
@@ -1424,11 +1455,7 @@
                   </div>
                   <div class="col-md-6">
                     <div class="card pub-card mb-4">
-                      <img
-                        src="img/c7.png"
-                        class="card-img-top"
-                        alt="..."
-                      />
+                      <img src="img/c7.png" class="card-img-top" alt="..." />
                       <div class="card-body">
                         <p class="card-text">
                           Direct Phase Control in Digital Phase-Locked Loop
@@ -1481,11 +1508,7 @@
                 <div class="row">
                   <div class="col-md-6">
                     <div class="card pub-card mb-4">
-                      <img
-                        src="img/j11.png"
-                        class="card-img-top"
-                        alt="..."
-                      />
+                      <img src="img/j11.png" class="card-img-top" alt="..." />
                       <div class="card-body">
                         <p class="card-text">
                           An Automated Design Methodology for Ring
@@ -1545,11 +1568,7 @@
                 <div class="row">
                   <div class="col-md-6">
                     <div class="card pub-card mb-4">
-                      <img
-                        src="img/j10.png"
-                        class="card-img-top"
-                        alt="..."
-                      />
+                      <img src="img/j10.png" class="card-img-top" alt="..." />
                       <div class="card-body">
                         <p class="card-text">
                           A PVT Variation-Robust All-Digital Injection-Locked
@@ -1604,11 +1623,7 @@
 
                   <div class="col-md-6">
                     <div class="card pub-card mb-4">
-                      <img
-                        src="img/j9.png"
-                        class="card-img-top"
-                        alt="..."
-                      />
+                      <img src="img/j9.png" class="card-img-top" alt="..." />
                       <div class="card-body">
                         <p class="card-text">
                           A 4-20-Gb/s 1.87-pJ/b Continuous-Rate Digital CDR
@@ -1672,11 +1687,7 @@
                   <!-- J8 -->
                   <div class="col-md-6">
                     <div class="card pub-card mb-4">
-                      <img
-                        src="img/j8.png"
-                        class="card-img-top"
-                        alt="..."
-                      />
+                      <img src="img/j8.png" class="card-img-top" alt="..." />
                       <div class="card-body">
                         <p class="card-text">
                           Review of Injection-Locked Oscillators
@@ -1731,11 +1742,7 @@
                   <!-- J7 -->
                   <div class="col-md-6">
                     <div class="card pub-card mb-4">
-                      <img
-                        src="img/j7.png"
-                        class="card-img-top"
-                        alt="..."
-                      />
+                      <img src="img/j7.png" class="card-img-top" alt="..." />
                       <div class="card-body">
                         <p class="card-text">
                           A 15-GHz, 17.8-mW, 213-fs Injection-Locked PLL With

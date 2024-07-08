@@ -150,6 +150,23 @@ h6 {
 }
 
 /* publication */
+.pub-nav-tabs .nav-link {
+  color: #454545;
+  border: none;
+  cursor: pointer;
+}
+
+.pub-nav-tabs a:hover {
+  /* color: #8c9eff; */
+  background: #f6f6f6;
+}
+
+.pub-nav-tabs.nav-tabs .nav-link.active {
+  color: var(--theme-color);
+  font-weight: 600;
+  background: #f6f6f6;
+}
+
 .pub-row {
   display: flex;
 }
