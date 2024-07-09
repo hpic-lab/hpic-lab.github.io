@@ -1,4 +1,14 @@
 document.addEventListener("DOMContentLoaded", function () {
+  // Publications 카드 새 탭에서 열기
+  $(".pub-card").on("click", function (event) {
+    event.preventDefault(); // 기본 링크 클릭 동작을 막음
+    event.stopPropagation(); // 이벤트 전파를 막음
+    var url = $(this).find("a.card-text").attr("href");
+    if (url) {
+      window.open(url, "_blank");
+    }
+  });
+
   // 아코디언(토글 목록)
   $(".accordion").accordion({
     collapsible: true,
@@ -82,30 +92,6 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     ],
   });
-
-  // var carousel = document.getElementById("carousel-autoplaying");
-
-  // carousel.addEventListener("slide.bs.carousel", function (e) {
-  //   var relatedTarget = e.relatedTarget;
-  //   var idx = [...relatedTarget.parentElement.children].indexOf(relatedTarget);
-  //   var items = document.querySelectorAll(".carousel-item");
-  //   var totalItems = items.length;
-
-  //   if (idx === 0) {
-  //     items[totalItems - 1].classList.add("carousel-item-left");
-  //   } else {
-  //     items.forEach(function (item) {
-  //       item.classList.remove("carousel-item-left");
-  //     });
-  //   }
-  // });
-
-  // carousel.addEventListener("slid.bs.carousel", function (e) {
-  //   var items = document.querySelectorAll(".carousel-item");
-  //   items.forEach(function (item) {
-  //     item.classList.remove("carousel-item-left");
-  //   });
-  // });
 
   // 네비게이션 링크 설정
   const navLinks = document.querySelectorAll(".top-navbar .nav-link");
@@ -192,43 +178,6 @@ document.addEventListener("DOMContentLoaded", function () {
       if (link.getAttribute("href") === `#${current}`) {
         link.classList.add("active");
       }
-    });
-  });
-
-  // // 이미지 갤러리
-  // const slidesContainer = document.querySelector(".slides");
-  // const slides = document.querySelectorAll(".slide");
-  // const slideWidth = 200; // 이미지 크기
-  // const slidePadding = 12; // 슬라이드 패딩
-  // const slideStep = slideWidth + slidePadding; // 각 슬라이드의 총 너비
-  // let currentIndex = 0;
-
-  // function updateTransform(index) {
-  //   const offset = -index * slideStep;
-  //   slidesContainer.style.transform = `translateX(${offset}px)`;
-  // }
-
-  // function nextSlide() {
-  //   if (currentIndex < slides.length - 1) {
-  //     currentIndex++;
-  //     updateTransform(currentIndex);
-  //   }
-  // }
-
-  // function prevSlide() {
-  //   if (currentIndex > 0) {
-  //     currentIndex--;
-  //     updateTransform(currentIndex);
-  //   }
-  // }
-
-  // document.querySelector(".next").addEventListener("click", nextSlide);
-  // document.querySelector(".prev").addEventListener("click", prevSlide);
-
-  // 카드 클릭 시 href로 이동하도록 하는 이벤트 리스너 추가
-  document.querySelectorAll(".pub-card").forEach((card) => {
-    card.addEventListener("click", () => {
-      window.location.href = card.querySelector("a.card-text").href;
     });
   });
 });

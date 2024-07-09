@@ -3,10 +3,10 @@
 }
 
 /* 내비게이션 픽셀크기증가 - 추교수님 요구사항 */
-.dropdown-menu, nav#navbar-main li.nav-item {
+.dropdown-menu,
+nav#navbar-main li.nav-item {
   font-size: 15px !important;
 }
-
 
 /* Apply "Noto Sans KR" font to all heading  elements  */
 h1,
@@ -206,6 +206,7 @@ h6 {
 
 .pub-card {
   /* width: 300px; */
+  cursor: pointer;
 }
 
 .pub-card img {
