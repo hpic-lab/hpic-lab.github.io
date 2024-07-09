@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
       // a 태그에 hover
       $(this).css("background", "var(--hover-color)");
       // a 태그 내부의 svg에 hover
-      $(this).find("svg").css("fill", "var(--secondary)");
+      $(this).find("svg").css("fill", "var(--hover-color)");
       // a 태그 내부의 버튼에 hover
       $(this).find(".btn-rotate").css({
         transform: "rotate(90deg)",
@@ -14,8 +14,8 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     function () {
       // hover 해제 시 원래 상태로 복원
-      $(this).css("background", "var(--secondary)");
-      $(this).find("svg").css("fill", "var(--secondary)");
+      $(this).css("background", "var(--detail-button-color)");
+      $(this).find("svg").css("fill", "var(--detail-button-color)");
       $(this).find(".btn-rotate").css({
         transform: "rotate(0deg)",
       });

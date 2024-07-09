@@ -59,7 +59,7 @@ h6 {
 
 .gallery-title-row a {
   color: white;
-  background: var(--secondary);
+  background: var(--detail-button-color);
   border-radius: 2vw;
   padding: 0 8px;
   height: 32px;
