@@ -620,6 +620,7 @@ section {
   font-size: 12px;
 }
 
+/* Breakpint LG - 태블릿*/
 @media (max-width: 992px) {
   .pub-title-row {
     display: flex;
@@ -629,6 +630,7 @@ section {
   }
 }
 
+/* Breakpoint MD - 모바일*/
 @media (max-width: 767px) {
   /* 메인 홈 */
   .home-description-container {
@@ -700,6 +702,7 @@ section {
   }
 }
 
+/* Breakpoint SM */
 @media (max-width: 575px) {
   .home-description-container {
     left: 32px;
@@ -707,7 +710,6 @@ section {
 
   .slick-prev {
     left: 0;
-    /* 왼쪽 화살표 위치 조정 */
   }
 
   .slick-next {
@@ -716,6 +718,18 @@ section {
 
   .chip-item {
     margin: 0px 16px;
+  }
+}
+
+@media (max-width: 434px) {
+  .home-section h1 {
+    font-size: 6vw;
+  }
+
+  /* Publications */
+  .pub-title-row ul li a {
+    font-size: 3vw;
+    padding: 1vw 2vw;
   }
 }
 
