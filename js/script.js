@@ -1,4 +1,27 @@
 document.addEventListener("DOMContentLoaded", function () {
+  // 갤러리 제목 행 hover 설정
+  $(".gallery-title-row a").hover(
+    function () {
+      // a 태그에 hover
+      $(this).css("background", "var(--hover-color)");
+      // a 태그 내부의 svg에 hover
+      $(this).find("svg").css("fill", "var(--secondary)");
+      // a 태그 내부의 버튼에 hover
+      $(this).find(".btn-rotate").css({
+        transform: "rotate(90deg)",
+        background: "white",
+      });
+    },
+    function () {
+      // hover 해제 시 원래 상태로 복원
+      $(this).css("background", "var(--secondary)");
+      $(this).find("svg").css("fill", "var(--secondary)");
+      $(this).find(".btn-rotate").css({
+        transform: "rotate(0deg)",
+      });
+    }
+  );
+
   // Publications 카드 새 탭에서 열기
   $(".pub-card").on("click", function (event) {
     event.preventDefault(); // 기본 링크 클릭 동작을 막음

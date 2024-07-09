@@ -52,26 +52,63 @@ h6 {
 .gallery-title-row {
   display: flex;
   flex-direction: row;
+  /* align-items: center; */
   justify-content: space-between;
+  align-items: center;
+}
+
+.gallery-title-row a {
+  color: white;
+  background: var(--secondary);
+  border-radius: 2vw;
+  padding: 0 8px;
+  height: 32px;
+  margin: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.gallery-title-row span {
+  margin-right: 4px;
+  font-size: 12px;
 }
 
 .btn-rotate {
   align-items: center;
   justify-content: center;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
   border: none;
   font-size: 24px;
   transition: transform 0.3s ease-in-out;
-  background: transparent;
-  color: #313131;
+  display: flex;
+}
+
+.gallery-title-row button {
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery-title-row svg {
+  height: 12px;
+  width: auto;
+  fill: var(--secondary);
+}
+
+.gallery-title-row a:hover {
+  background: var(--hover-color);
+}
+
+.gallery-title-row svg:hover {
+  fill: var(--secondary);
 }
 
 .btn-rotate:hover {
   transform: rotate(90deg);
-  background: transparent;
-  color: var(--theme-color);
+  background: white;
 }
 
 /* 뉴스 갤러리 */
@@ -119,36 +156,28 @@ h6 {
 .slick-next,
 .slick-prev {
   width: 30px;
-  /* 버튼 넓이 */
   height: 180px;
-  /* 버튼 높이 */
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 1;
-  /* 필요시 z-index 조정 */
   border-radius: 0;
-  /* 모서리를 둥글지 않게 설정 */
 }
 
 .slick-prev:before,
 .slick-next:before {
   color: rgba(0, 0, 0, 0.3);
-  /* 화살표 색상 변경 */
   font-size: 32px;
 }
 
 .slick-prev {
   left: -36px;
-  /* 왼쪽 화살표 위치 조정 */
   z-index: 1;
-  /* 필요시 z-index 조정 */
 }
 
 .slick-next {
   right: -36px;
   z-index: 1;
-  /* 필요시 z-index 조정 */
 }
 
 .chip-item {
@@ -263,13 +292,6 @@ h6 {
   height: 1.5rem;
   width: 1.5rem;
 }
-
-/* .graduation-cap-icon {
-  height: 1.5rem;
-  width: 1.5rem;
-  color: #343a40;
-  margin-right: 12px;
-} */
 
 .edu-item {
   display: flex;
@@ -704,6 +726,10 @@ section {
 
 /* Breakpoint SM */
 @media (max-width: 575px) {
+  .card-body {
+    padding: 12px;
+  }
+
   .home-description-container {
     left: 32px;
   }
@@ -721,7 +747,12 @@ section {
   }
 }
 
+/* 모바일 작은 화면 */
 @media (max-width: 434px) {
+  .gallery-title-row a {
+    border-radius: 4vw;
+  }
+
   .home-section h1 {
     font-size: 6vw;
   }
@@ -735,4 +766,5 @@ section {
 
 :root {
   --theme-color: rgba(63, 81, 181, 1);
+  --hover-color: #677dff;
 }
