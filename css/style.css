@@ -431,6 +431,7 @@ h6 {
 }
 
 /* people cards */
+
 .wrapper {
   display: flex;
   justify-content: center;
@@ -460,6 +461,16 @@ h6 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.portrait-title h2 {
+  font-size: 1.2vw;
+}
+
+.portrait-title h3 {
+  font-size: 0.8vw;
 }
 
 /* 교수님 오른쪽 프로필 */
@@ -642,8 +653,26 @@ section {
   font-size: 12px;
 }
 
+@media (max-width: 1399px) {
+  .portrait-title h2 {
+    font-size: 1.8vw;
+  }
+
+  .portrait-title h3 {
+    font-size: 1.4vw;
+  }
+}
+
 /* Breakpint LG - 태블릿*/
 @media (max-width: 992px) {
+  .portrait-title h2 {
+    font-size: 3vw;
+  }
+
+  .portrait-title h3 {
+    font-size: 2vw;
+  }
+
   .pub-title-row {
     display: flex;
     flex-direction: row;
@@ -654,6 +683,14 @@ section {
 
 /* Breakpoint MD - 모바일*/
 @media (max-width: 767px) {
+  .portrait-title h2 {
+    font-size: 4vw;
+  }
+
+  .portrait-title h3 {
+    font-size: 2.5vw;
+  }
+
   /* 메인 홈 */
   .home-description-container {
     position: absolute;
@@ -726,6 +763,14 @@ section {
 
 /* Breakpoint SM */
 @media (max-width: 575px) {
+  .portrait-title h2 {
+    font-size: 6vw;
+  }
+
+  .portrait-title h3 {
+    font-size: 4vw;
+  }
+
   .card-body {
     padding: 12px;
   }
@@ -749,6 +794,14 @@ section {
 
 /* 모바일 작은 화면 */
 @media (max-width: 434px) {
+  .portrait-title h2 {
+    font-size: 7vw;
+  }
+
+  .portrait-title h3 {
+    font-size: 5vw;
+  }
+
   .gallery-title-row a {
     border-radius: 4vw;
   }
