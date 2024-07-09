@@ -97,15 +97,38 @@ document.addEventListener("DOMContentLoaded", function () {
     ],
   });
 
-  // 칩 갤러리 캐러셀
-  $(".multiple-items").slick({
+  // News - 갤러리 캐러셀
+  $(".news-gallery-items").slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    responsive: [
+      {
+        breakpoint: 575,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 360,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  });
+
+  // Research - 칩 갤러리 캐러셀
+  $(".chip-gallery-items").slick({
     infinite: true,
     slidesToShow: 4,
     slidesToScroll: 1,
     arrows: true,
     autoplay: true, //수정
     autoplaySpeed: 2000, //수정
-    // dots: true,
     responsive: [
       {
         breakpoint: 575,
