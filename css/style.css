@@ -112,6 +112,12 @@ h6 {
 }
 
 /* 뉴스 갤러리 */
+.card-img-top {
+  object-fit: contain;
+  height: 300px;
+  border-bottom: 1px solid #c9c9c9;
+}
+
 .gallery-card-container {
   display: flex;
   flex-direction: row;
@@ -125,13 +131,21 @@ h6 {
 }
 
 .card-body {
+  height: 120px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .card-title {
   margin: 0 !important;
+  overflow: hidden; /* 넘치는 텍스트를 숨김 */
+  text-overflow: ellipsis; /* 넘치는 텍스트를 ...로 표시 */
+  display: -webkit-box; /* 유연한 레이아웃을 위한 플렉스 박스를 사용 */
+  -webkit-box-orient: vertical; /* 수직 방향으로 박스 정렬 */
+  -webkit-line-clamp: 3; /* 최대 줄 수를 설정 */
+  line-clamp: 3; /* 이 속성은 최신 브라우저에서만 지원 */
+  white-space: normal; /* 텍스트를 여러 줄로 표시 */
 }
 
 .card-text {
@@ -688,6 +702,13 @@ section {
 
 /* Breakpoint MD - 모바일*/
 @media (max-width: 767px) {
+  .card-body {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
   .portrait-title h2 {
     font-size: 4vw;
   }
