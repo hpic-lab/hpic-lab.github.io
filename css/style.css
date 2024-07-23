@@ -275,6 +275,15 @@ h6 {
   text-align: left;
 }
 
+/* Publications - Patent */
+#patent .card-text {
+  margin-bottom: 4px;
+}
+
+#patent .process-badge {
+  background-color: var(--application-completed);
+}
+
 /* 칩 갤러리 상세 페이지 카드 디자인 */
 .chip-detail-card img {
   height: 100%;
@@ -682,8 +691,32 @@ section {
   }
 }
 
+@media (max-width: 1199px) {
+  #patent .card-text {
+    margin: 0 !important;
+    overflow: hidden; /* 넘치는 텍스트를 숨김 */
+    text-overflow: ellipsis; /* 넘치는 텍스트를 ...로 표시 */
+    display: -webkit-box; /* 유연한 레이아웃을 위한 플렉스 박스를 사용 */
+    -webkit-box-orient: vertical; /* 수직 방향으로 박스 정렬 */
+    -webkit-line-clamp: 2; /* 최대 줄 수를 설정 */
+    line-clamp: 2; /* 이 속성은 최신 브라우저에서만 지원 */
+    white-space: normal; /* 텍스트를 여러 줄로 표시 */
+  }
+}
+
 /* Breakpint LG - 태블릿*/
 @media (max-width: 992px) {
+  #patent .card-text {
+    margin: 0 !important;
+    overflow: hidden; /* 넘치는 텍스트를 숨김 */
+    text-overflow: ellipsis; /* 넘치는 텍스트를 ...로 표시 */
+    display: -webkit-box; /* 유연한 레이아웃을 위한 플렉스 박스를 사용 */
+    -webkit-box-orient: vertical; /* 수직 방향으로 박스 정렬 */
+    -webkit-line-clamp: 3; /* 최대 줄 수를 설정 */
+    line-clamp: 3; /* 이 속성은 최신 브라우저에서만 지원 */
+    white-space: normal; /* 텍스트를 여러 줄로 표시 */
+  }
+
   .portrait-title h2 {
     font-size: 3vw;
   }
@@ -789,6 +822,21 @@ section {
 
 /* Breakpoint SM */
 @media (max-width: 575px) {
+  #patent .card-body {
+    height: 120px;
+  }
+
+  #patent .card-text {
+    margin: 0 !important;
+    overflow: hidden; /* 넘치는 텍스트를 숨김 */
+    text-overflow: ellipsis; /* 넘치는 텍스트를 ...로 표시 */
+    display: -webkit-box; /* 유연한 레이아웃을 위한 플렉스 박스를 사용 */
+    -webkit-box-orient: vertical; /* 수직 방향으로 박스 정렬 */
+    -webkit-line-clamp: 3; /* 최대 줄 수를 설정 */
+    line-clamp: 3; /* 이 속성은 최신 브라우저에서만 지원 */
+    white-space: normal; /* 텍스트를 여러 줄로 표시 */
+  }
+
   .portrait-title h2 {
     font-size: 6vw;
   }
@@ -843,8 +891,20 @@ section {
   }
 }
 
+@media (max-width: 344px) {
+  #patent .card-text {
+    -webkit-line-clamp: 4; /* 최대 줄 수를 설정 */
+    line-clamp: 4; /* 이 속성은 최신 브라우저에서만 지원 */
+  }
+
+  #patent .card-body {
+    height: 156px;
+  }
+}
+
 :root {
   --theme-color: #3f51b5;
   --detail-button-color: #677dff;
   --hover-color: #4a5fd4;
+  --application-completed: #d68787;
 }
