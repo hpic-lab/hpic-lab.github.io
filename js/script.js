@@ -97,29 +97,29 @@ document.addEventListener("DOMContentLoaded", function () {
     ],
   });
 
-  // News - 갤러리 캐러셀
-  $(".news-gallery-items").slick({
-    infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    arrows: true,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    responsive: [
-      {
-        breakpoint: 575,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 360,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-    ],
-  });
+  // // News - 갤러리 캐러셀
+  // $(".news-gallery-items").slick({
+  //   infinite: true,
+  //   slidesToShow: 3,
+  //   slidesToScroll: 1,
+  //   arrows: true,
+  //   autoplay: true,
+  //   autoplaySpeed: 2000,
+  //   responsive: [
+  //     {
+  //       breakpoint: 575,
+  //       settings: {
+  //         slidesToShow: 2,
+  //       },
+  //     },
+  //     {
+  //       breakpoint: 360,
+  //       settings: {
+  //         slidesToShow: 1,
+  //       },
+  //     },
+  //   ],
+  // });
 
   // Research - 칩 갤러리 캐러셀
   $(".chip-gallery-items").slick({

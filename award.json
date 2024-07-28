@@ -1,0 +1,143 @@
+[
+  {
+    "id": 1,
+    "img_src": "img/dummy3-img.png",
+    "award_date": "20230117",
+    "award_name": "SCCuD Day 구두발표 대상",
+    "recipient_name": "장인우, 김태현",
+    "award_content": "공학 프로젝트 우수(칩설계)",
+    "awarding_institution": "한양대학교 전자공학부 반도체전공트랙사업단"
+  },
+  {
+    "id": 2,
+    "img_src": "img/dummy3-img.png",
+    "award_date": "20230617",
+    "award_name": "창의적공학설계대회 동상",
+    "recipient_name": "장인우, 김태현",
+    "award_content": "공학설계 프로젝트 우수(칩설계)",
+    "awarding_institution": "한양대학교 ERICA 공학대학"
+  },
+  {
+    "id": 3,
+    "img_src": "img/dummy3-img.png",
+    "award_date": "20230917",
+    "award_name": "Capstone Design 공학대학 Fair 동상",
+    "recipient_name": "장인우, 김태현",
+    "award_content": "Capstone Design 우수(칩설계)",
+    "awarding_institution": "한양대학교 ERICA 공학대학"
+  },
+  {
+    "id": 4,
+    "img_src": "img/dummy3-img.png",
+    "award_date": "20231201",
+    "award_name": "CAS Student Design Contest",
+    "recipient_name": "장인우, 박규란",
+    "award_content": "회로설계 디자인 콘테스트 본선 진출 (대한민국 3팀)",
+    "awarding_institution": "IEEE CAS Society"
+  },
+  {
+    "id": 5,
+    "img_src": "img/dummy3-img.png",
+    "award_date": "20231201",
+    "award_name": "CAS Student Design Contest",
+    "recipient_name": "박규란, 장인우",
+    "award_content": "Best Student Design Award(IEEE CAS Seoul/Taegu/Daejeon Chapter)",
+    "awarding_institution": "IEEE CAS Society"
+  },
+  {
+    "id": 6,
+    "img_src": "img/dummy3-img.png",
+    "award_date": "20231227",
+    "award_name": "SCCuD DAY 구두발표 최우수상",
+    "recipient_name": "진승모, 이재건, 송민권",
+    "award_content": "PIM simulation 테크닉 연구 발표",
+    "awarding_institution": "한양대학교 전자공학부 반도체전공트랙사업단"
+  },
+  {
+    "id": 7,
+    "img_src": "img/dummy3-img.png",
+    "award_date": "20231227",
+    "award_name": "SCCuD DAY 포스터발표 대상",
+    "recipient_name": "권지현, 변유진, 이동은",
+    "award_content": "DSP BASED RECEIVER behavioral modeling 포스터 발표",
+    "awarding_institution": "한양대학교 전자공학부 반도체전공트랙사업단"
+  },
+  {
+    "id": 8,
+    "img_src": "img/dummy3-img.png",
+    "award_date": "20231228",
+    "award_name": "BK21 연구발표회 포스터발표 우수",
+    "recipient_name": "김지호",
+    "award_content": "High Performance ALL Digital Phase-Locked Loop (High-PSRR)",
+    "awarding_institution": "한양대학교 고신뢰성 에너지용 지능형 시스템반도체 교육연구단(BK21)"
+  },
+  {
+    "id": 9,
+    "img_src": "img/dummy3-img.png",
+    "award_date": "20231228",
+    "award_name": "BK21 연구발표회 포스터발표 최우수",
+    "recipient_name": "허동회",
+    "award_content": "Phase Interpolator based Clock and Data Recovery behavioral model 포스터 발표",
+    "awarding_institution": "한양대학교 고신뢰성 에너지용 지능형 시스템반도체 교육연구단(BK21)"
+  },
+  {
+    "id": 10,
+    "img_src": "img/dummy3-img.png",
+    "award_date": "20240130",
+    "award_name": "ICEIC 2024 International Conference",
+    "recipient_name": "허동회, 김태현",
+    "award_content": "Best Paper Awards - Gold Prize (2nd Place)",
+    "awarding_institution": "ICEIC International Conference"
+  },
+  {
+    "id": 11,
+    "img_src": "img/dummy3-img.png",
+    "award_date": "20240511",
+    "award_name": "SOC 학술대회 우수발표 논문상",
+    "recipient_name": "송민권, 이재건, 진승모",
+    "award_content": "Vertical AND cell Package 구두발표",
+    "awarding_institution": "대한전자공학회"
+  },
+  {
+    "id": 12,
+    "img_src": "img/dummy3-img.png",
+    "award_date": "20240620",
+    "award_name": "Capstone Design 전자공학부",
+    "recipient_name": "송민권, 이재건, 진승모",
+    "award_content": "Efficient Processing in Memory design methodology with emulated neural networks for AI inferencing applications",
+    "awarding_institution": "한양대학교 공학대학 전자공학부"
+  },
+  {
+    "id": 13,
+    "img_src": "img/dummy3-img.png",
+    "award_date": "20240620",
+    "award_name": "Capstone Design Fair 공학대학 동상",
+    "recipient_name": "송민권, 이재건, 진승모",
+    "award_content": "Efficient Processing in Memory design methodology with emulated neural networks for AI inferencing applications",
+    "award_material": "발표자료",
+    "award_status": "수상 후 기입",
+    "awarding_institution": "한양대학교 공학대학"
+  },
+  {
+    "id": 14,
+    "img_src": "img/dummy3-img.png",
+    "award_date": "20240620",
+    "award_name": "SCCuD DAY 포스터발표 대상",
+    "recipient_name": "권지현, 변유진, 이동은",
+    "award_content": "DSP-based wireline link 설계",
+    "award_material": "발표자료",
+    "award_status": "상장",
+    "awarding_institution": "한양대학교 전자공학부 반도체전공트랙사업단"
+  },
+  {
+    "id": 15,
+    "img_src": "img/dummy3-img.png",
+    "award_date": "20240620",
+    "award_name": "SCCuD DAY 구두발표 최우수상",
+    "recipient_name": "송민권, 이재건, 진승모",
+    "award_content": "Efficient Processing in Memory design methodology with emulated neural networks for AI inferencing applications",
+    "award_material": "발표자료",
+    "award_status": "상장",
+    "awarding_institution": "한양대학교 전자공학부 반도체전공트랙사업단"
+  }
+]
