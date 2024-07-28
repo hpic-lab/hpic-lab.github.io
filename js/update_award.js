@@ -10,6 +10,7 @@ $(document).ready(function() {
             <img src="${award.img_src}" class="card-img-top" alt="..." />
             <div class="card-body">
               <h5 class="card-title">${award.award_name}</h5>
+              <p class="recipient-name">${award.recipient_name}</p>
               <p class="card-text">${formatDate(award.award_date)}</p>
             </div>
           </div>
@@ -48,7 +49,7 @@ $(document).ready(function() {
 });
 
 function formatDate(dateString) {
-  const year = dateString.substring(0, 4);
+  const year = dateString.substring(2, 4);
   const month = dateString.substring(4, 6);
   const day = dateString.substring(6, 8);
   return `${year}.${month}.${day}`;
