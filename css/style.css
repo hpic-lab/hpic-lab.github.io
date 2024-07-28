@@ -139,13 +139,20 @@ h6 {
 
 .card-title {
   margin: 0 !important;
-  overflow: hidden; /* 넘치는 텍스트를 숨김 */
-  text-overflow: ellipsis; /* 넘치는 텍스트를 ...로 표시 */
-  display: -webkit-box; /* 유연한 레이아웃을 위한 플렉스 박스를 사용 */
-  -webkit-box-orient: vertical; /* 수직 방향으로 박스 정렬 */
-  -webkit-line-clamp: 3; /* 최대 줄 수를 설정 */
-  line-clamp: 3; /* 이 속성은 최신 브라우저에서만 지원 */
-  white-space: normal; /* 텍스트를 여러 줄로 표시 */
+  overflow: hidden;
+  /* 넘치는 텍스트를 숨김 */
+  text-overflow: ellipsis;
+  /* 넘치는 텍스트를 ...로 표시 */
+  display: -webkit-box;
+  /* 유연한 레이아웃을 위한 플렉스 박스를 사용 */
+  -webkit-box-orient: vertical;
+  /* 수직 방향으로 박스 정렬 */
+  -webkit-line-clamp: 3;
+  /* 최대 줄 수를 설정 */
+  line-clamp: 3;
+  /* 이 속성은 최신 브라우저에서만 지원 */
+  white-space: normal;
+  /* 텍스트를 여러 줄로 표시 */
 }
 
 .card-text {
@@ -162,6 +169,23 @@ h6 {
 .gallery-detail h2 {
   margin: 40px 0;
   text-align: center;
+}
+
+.news-gallery-card-body {
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gallery-detail .list-group-item {
+  padding: 0px 8px;
+  margin: 0;
+}
+
+.gallery-detail span:first-of-type {
+  font-weight: 600;
+  margin-right: 4px;
 }
 
 /* chip gallery */
@@ -694,13 +718,20 @@ section {
 @media (max-width: 1199px) {
   #patent .card-text {
     margin: 0 !important;
-    overflow: hidden; /* 넘치는 텍스트를 숨김 */
-    text-overflow: ellipsis; /* 넘치는 텍스트를 ...로 표시 */
-    display: -webkit-box; /* 유연한 레이아웃을 위한 플렉스 박스를 사용 */
-    -webkit-box-orient: vertical; /* 수직 방향으로 박스 정렬 */
-    -webkit-line-clamp: 2; /* 최대 줄 수를 설정 */
-    line-clamp: 2; /* 이 속성은 최신 브라우저에서만 지원 */
-    white-space: normal; /* 텍스트를 여러 줄로 표시 */
+    overflow: hidden;
+    /* 넘치는 텍스트를 숨김 */
+    text-overflow: ellipsis;
+    /* 넘치는 텍스트를 ...로 표시 */
+    display: -webkit-box;
+    /* 유연한 레이아웃을 위한 플렉스 박스를 사용 */
+    -webkit-box-orient: vertical;
+    /* 수직 방향으로 박스 정렬 */
+    -webkit-line-clamp: 2;
+    /* 최대 줄 수를 설정 */
+    line-clamp: 2;
+    /* 이 속성은 최신 브라우저에서만 지원 */
+    white-space: normal;
+    /* 텍스트를 여러 줄로 표시 */
   }
 }
 
@@ -708,13 +739,20 @@ section {
 @media (max-width: 992px) {
   #patent .card-text {
     margin: 0 !important;
-    overflow: hidden; /* 넘치는 텍스트를 숨김 */
-    text-overflow: ellipsis; /* 넘치는 텍스트를 ...로 표시 */
-    display: -webkit-box; /* 유연한 레이아웃을 위한 플렉스 박스를 사용 */
-    -webkit-box-orient: vertical; /* 수직 방향으로 박스 정렬 */
-    -webkit-line-clamp: 3; /* 최대 줄 수를 설정 */
-    line-clamp: 3; /* 이 속성은 최신 브라우저에서만 지원 */
-    white-space: normal; /* 텍스트를 여러 줄로 표시 */
+    overflow: hidden;
+    /* 넘치는 텍스트를 숨김 */
+    text-overflow: ellipsis;
+    /* 넘치는 텍스트를 ...로 표시 */
+    display: -webkit-box;
+    /* 유연한 레이아웃을 위한 플렉스 박스를 사용 */
+    -webkit-box-orient: vertical;
+    /* 수직 방향으로 박스 정렬 */
+    -webkit-line-clamp: 3;
+    /* 최대 줄 수를 설정 */
+    line-clamp: 3;
+    /* 이 속성은 최신 브라우저에서만 지원 */
+    white-space: normal;
+    /* 텍스트를 여러 줄로 표시 */
   }
 
   .portrait-title h2 {
@@ -828,13 +866,20 @@ section {
 
   #patent .card-text {
     margin: 0 !important;
-    overflow: hidden; /* 넘치는 텍스트를 숨김 */
-    text-overflow: ellipsis; /* 넘치는 텍스트를 ...로 표시 */
-    display: -webkit-box; /* 유연한 레이아웃을 위한 플렉스 박스를 사용 */
-    -webkit-box-orient: vertical; /* 수직 방향으로 박스 정렬 */
-    -webkit-line-clamp: 3; /* 최대 줄 수를 설정 */
-    line-clamp: 3; /* 이 속성은 최신 브라우저에서만 지원 */
-    white-space: normal; /* 텍스트를 여러 줄로 표시 */
+    overflow: hidden;
+    /* 넘치는 텍스트를 숨김 */
+    text-overflow: ellipsis;
+    /* 넘치는 텍스트를 ...로 표시 */
+    display: -webkit-box;
+    /* 유연한 레이아웃을 위한 플렉스 박스를 사용 */
+    -webkit-box-orient: vertical;
+    /* 수직 방향으로 박스 정렬 */
+    -webkit-line-clamp: 3;
+    /* 최대 줄 수를 설정 */
+    line-clamp: 3;
+    /* 이 속성은 최신 브라우저에서만 지원 */
+    white-space: normal;
+    /* 텍스트를 여러 줄로 표시 */
   }
 
   .portrait-title h2 {
@@ -893,8 +938,10 @@ section {
 
 @media (max-width: 344px) {
   #patent .card-text {
-    -webkit-line-clamp: 4; /* 최대 줄 수를 설정 */
-    line-clamp: 4; /* 이 속성은 최신 브라우저에서만 지원 */
+    -webkit-line-clamp: 4;
+    /* 최대 줄 수를 설정 */
+    line-clamp: 4;
+    /* 이 속성은 최신 브라우저에서만 지원 */
   }
 
   #patent .card-body {

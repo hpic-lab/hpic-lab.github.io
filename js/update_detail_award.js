@@ -9,13 +9,30 @@ $(document).ready(function() {
         <div class="col-12 col-lg-4">
           <div class="card">
             <img src="${award.img_src}" class="card-img-top" alt="..." />
-            <div class="card-body">
+            <div class="news-gallery-card-body">
               <h5 class="card-title">${award.award_name}</h5>
-              <p class="recipient-name">${award.recipient_name}</p>
-              <p class="card-text">${formatDate(award.award_date)}</p>
             </div>
+            
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item d-flex align-items-center flex-wrap">
+                <span>Date:</span>
+                <span>${formatDate(award.award_date)}</span>
+              </li>
+              <li class="list-group-item d-flex align-items-center flex-wrap">
+                <span>Winner:</span>
+                <span>${award.recipient_name}</span>
+              </li>
+              <li class="list-group-item d-flex align-items-center flex-wrap">
+                <span>Description:</span>
+                <span>${award.award_content}</span>
+              </li> 
+              <li class="list-group-item d-flex align-items-center flex-wrap">
+                <span>Institution:</span>
+                <span>${award.awarding_institution}</span>
+              </li>
+            </ul>
           </div>
-        </div>
+        </div> 
         `;
         cardContainer.append(card);
       });
