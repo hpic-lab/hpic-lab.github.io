@@ -164,6 +164,7 @@ h6 {
 /* 갤러리 디테일 페이지 */
 .gallery-detail .card {
   margin: 16px 0;
+  height: 500px;
 }
 
 .gallery-detail h2 {
@@ -737,6 +738,10 @@ section {
 
 /* Breakpint LG - 태블릿*/
 @media (max-width: 992px) {
+  .gallery-detail .card {
+    margin: 16px 0;
+  }
+
   #patent .card-text {
     margin: 0 !important;
     overflow: hidden;
