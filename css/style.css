@@ -139,8 +139,6 @@ h6 {
 
 .card-title {
   margin: 0 !important;
-  overflow: hidden;
-  /* 넘치는 텍스트를 숨김 */
   text-overflow: ellipsis;
   /* 넘치는 텍스트를 ...로 표시 */
   display: -webkit-box;
@@ -571,6 +569,10 @@ h6 {
 }
 
 /* News Section */
+.recipient-name {
+  margin-bottom: 4px;
+}
+
 .news-gallery-items .card {
   margin-right: 4px;
 }
