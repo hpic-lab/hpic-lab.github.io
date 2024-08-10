@@ -37,7 +37,7 @@
   },
   {
     "id": 5,
-    "img_src": "img/dummy3-img.png",
+    "img_src": "img/award/231201_ICASS_IEEE_박규란_장인우.jpg",
     "award_date": "20231201",
     "award_name": "CAS Student Design Contest",
     "recipient_name": "박규란, 장인우",
@@ -46,7 +46,7 @@
   },
   {
     "id": 6,
-    "img_src": "img/dummy3-img.png",
+    "img_src": "img/award/231222_SCCuD.jpg",
     "award_date": "20231227",
     "award_name": "SCCuD DAY 구두발표 최우수상",
     "recipient_name": "진승모, 이재건, 송민권",
@@ -55,7 +55,7 @@
   },
   {
     "id": 7,
-    "img_src": "img/dummy3-img.png",
+    "img_src": "img/award/231222_SCCuD.png",
     "award_date": "20231227",
     "award_name": "SCCuD DAY 포스터발표 대상",
     "recipient_name": "권지현, 변유진, 이동은",
@@ -82,7 +82,7 @@
   },
   {
     "id": 10,
-    "img_src": "img/dummy3-img.png",
+    "img_src": "img/award/240130_ICEIC_허동회.jpg",
     "award_date": "20240130",
     "award_name": "ICEIC 2024 International Conference",
     "recipient_name": "허동회, 김태현",
@@ -91,7 +91,7 @@
   },
   {
     "id": 11,
-    "img_src": "img/dummy3-img.png",
+    "img_src": "img/award/240511_가천대.png",
     "award_date": "20240511",
     "award_name": "SOC 학술대회 우수발표 논문상",
     "recipient_name": "송민권, 이재건, 진승모",
@@ -131,7 +131,7 @@
   },
   {
     "id": 15,
-    "img_src": "img/dummy3-img.png",
+    "img_src": "img/award/240621_SCCuD.png",
     "award_date": "20240620",
     "award_name": "SCCuD DAY 구두발표 최우수상",
     "recipient_name": "송민권, 이재건, 진승모",
