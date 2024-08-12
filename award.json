@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "img_src": "img/dummy3-img.png",
+    "img_src": "img/award/230117.jpg",
     "award_date": "20230117",
     "award_name": "SCCuD Day 구두발표 대상",
     "recipient_name": "장인우, 김태현",
@@ -19,7 +19,7 @@
   },
   {
     "id": 3,
-    "img_src": "img/dummy3-img.png",
+    "img_src": "img/award/230917.jpg",
     "award_date": "20230917",
     "award_name": "Capstone Design 공학대학 Fair 동상",
     "recipient_name": "장인우, 김태현",
@@ -46,7 +46,7 @@
   },
   {
     "id": 6,
-    "img_src": "img/award/231222_SCCuD.jpg",
+    "img_src": "img/award/231227_sccud.jpg",
     "award_date": "20231227",
     "award_name": "SCCuD DAY 구두발표 최우수상",
     "recipient_name": "진승모, 이재건, 송민권",
