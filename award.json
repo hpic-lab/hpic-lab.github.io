@@ -10,7 +10,7 @@
   },
   {
     "id": 2,
-    "img_src": "img/dummy3-img.png",
+    "img_src": "img/award.jpg",
     "award_date": "20230617",
     "award_name": "창의적공학설계대회 동상",
     "recipient_name": "장인우, 김태현",
@@ -28,7 +28,7 @@
   },
   {
     "id": 4,
-    "img_src": "img/dummy3-img.png",
+    "img_src": "img/award.jpg",
     "award_date": "20231201",
     "award_name": "CAS Student Design Contest",
     "recipient_name": "장인우, 박규란",
@@ -64,7 +64,7 @@
   },
   {
     "id": 8,
-    "img_src": "img/dummy3-img.png",
+    "img_src": "img/award.jpg",
     "award_date": "20231228",
     "award_name": "BK21 연구발표회 포스터발표 우수",
     "recipient_name": "김지호",
@@ -73,7 +73,7 @@
   },
   {
     "id": 9,
-    "img_src": "img/dummy3-img.png",
+    "img_src": "img/award.jpg",
     "award_date": "20231228",
     "award_name": "BK21 연구발표회 포스터발표 최우수",
     "recipient_name": "허동회",
@@ -100,7 +100,7 @@
   },
   {
     "id": 12,
-    "img_src": "img/dummy3-img.png",
+    "img_src": "img/award.jpg",
     "award_date": "20240620",
     "award_name": "Capstone Design 전자공학부",
     "recipient_name": "송민권, 이재건, 진승모",
@@ -109,7 +109,7 @@
   },
   {
     "id": 13,
-    "img_src": "img/dummy3-img.png",
+    "img_src": "img/award.jpg",
     "award_date": "20240620",
     "award_name": "Capstone Design Fair 공학대학 동상",
     "recipient_name": "송민권, 이재건, 진승모",
@@ -120,7 +120,7 @@
   },
   {
     "id": 14,
-    "img_src": "img/dummy3-img.png",
+    "img_src": "img/award.jpg",
     "award_date": "20240620",
     "award_name": "SCCuD DAY 포스터발표 대상",
     "recipient_name": "권지현, 변유진, 이동은",
