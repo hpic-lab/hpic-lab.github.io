@@ -497,28 +497,13 @@ h6 {
 
 /* people cards */
 
-.wrapper {
+#people .row {
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin: 20px 0px;
 }
 
-.accordion div:first-child {
-  margin-top: 0;
-}
-
-.user-card {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #fff;
-  border-radius: 10px;
-  padding: 20px;
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-  box-shadow: 0 2px 20px -5px rgba(0, 0, 0, 0.5);
+#people h3 {
+  text-align: center;
 }
 
 /* 교수님 왼쪽 프로필 */
@@ -536,16 +521,6 @@ h6 {
 
 .portrait-title h3 {
   font-size: 0.8vw;
-}
-
-/* 교수님 오른쪽 프로필 */
-.profile-right {
-  /* margin-left: 5px; */
-}
-
-.profile-right p {
-  font-size: 14px;
-  margin-bottom: 2px;
 }
 
 /* 학생들 프로필 */
