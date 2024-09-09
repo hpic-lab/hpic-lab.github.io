@@ -4,7 +4,7 @@
     <!-- 홈피 링크 -->
     <loc>https://hpic-lab.github.io/</loc>
     <!-- 마지막 수정일 -->
-    <lastmod>2024-09-03</lastmod>
+    <lastmod>2024-09-09</lastmod>
     <!-- 변경 빈도 -->
     <changefreq>weekly</changefreq>
     <!-- 페이지의 상대적 중요도 0.1~1.0 -->
@@ -14,15 +14,15 @@
   <!-- 페이지마다 추가 -->
   <url>
     <loc>https://hpic-lab.github.io/news_gallery.html</loc>
-    <lastmod>2024-09-01</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2024-09-09</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://hpic-lab.github.io/chip_gallery.html</loc>
-    <lastmod>2024-09-01</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2024-09-09</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 </urlset>
