@@ -1,6 +1,5 @@
 $(document).ready(function () {
   $.getJSON("json/people/principal_investigator.json").done(function (people) {
-    // $.getJSON("json/news/award.json").done(function (people) {
     const container = $(".principal-investigator");
 
     people.forEach((person) => {
@@ -10,7 +9,7 @@ $(document).ready(function () {
                 <img
                   class="portrait"
                   src="${person.profile_img}"
-                  alt="minseong-chu-profile-img"
+                  alt="${person.name}-profile-img"
                 />
 
                 <!-- 프로필 이미지 아래 설명 -->
@@ -19,33 +18,51 @@ $(document).ready(function () {
                   <h3>${person.position}</h3>
 
                   <!-- 프로필 아래 링크 아이콘 -->
-                  <ul class="network-icon" area-hidden="true">
+                  <ul class="network-icon" aria-hidden="true">
+                    ${
+                      person.google_scholar
+                        ? `
                     <li>
-                      <a
-                        href="https://scholar.google.com/citations?user=9pp10QUAAAAJ&hl=en"
-                      >
+                      <a href="${person.google_scholar}">
                         <img src="img/google-scholar-svg.svg" />
                       </a>
                     </li>
+                    `
+                        : ""
+                    }
+                    ${
+                      person.cv
+                        ? `
                     <li>
-                      <a
-                        href="https://drive.google.com/file/d/1-O553iH_hAohpycfDRlX6YO07z2_3d1G/view"
-                      >
+                      <a href="${person.cv}">
                         <img src="img/cv-svg.svg" />
                       </a>
                     </li>
+                    `
+                        : ""
+                    }
+                    ${
+                      person.linkedin
+                        ? `
                     <li>
-                      <a
-                        href="https://www.linkedin.com/in/min-seong-choo-5b7036176/"
-                      >
+                      <a href="${person.linkedin}">
                         <img src="img/linkedin-svg.svg" />
                       </a>
                     </li>
+                    `
+                        : ""
+                    }
+                    ${
+                      person.orcid
+                        ? `
                     <li>
-                      <a href="https://orcid.org/0000-0002-8638-6332">
+                      <a href="${person.orcid}">
                         <img src="img/orcid-svg.svg" />
                       </a>
                     </li>
+                    `
+                        : ""
+                    }
                   </ul>
                 </div>
               </div>
