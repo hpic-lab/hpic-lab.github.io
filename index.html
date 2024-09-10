@@ -5,15 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#3f51b5" />
     <meta
+      name="description"
+      content="추민성 교수 HPIC lab, High-Performance Integrated Circuits at Hanyang University"
+    />
+    <meta
       property="og:title"
       content="High-Performance Integrated Circuits(HPIC)"
     />
-    <meta property="og:description" content="Minseong Choo" />
+    <meta
+      property="og:description"
+      content="추민성 교수 HPIC lab, High-Performance Integrated Circuits at Hanyang University"
+    />
     <meta
       property="og:image"
-      content="https://sorongosdev.github.io/lab_page/img/lab-logo.jpg"
+      content="https://hpic-lab.github.io/img/lab-logo.jpg"
     />
-    <meta property="og:url" content="https://sorongosdev.github.io/lab_page" />
+    <meta property="og:url" content="https://hpic-lab.github.io" />
     <meta property="og:type" content="website" />
 
     <title>HPIC</title>
@@ -43,7 +50,7 @@
 
     <link
       rel="icon"
-      href="https://sorongosdev.github.io/lab_page/img/lab-logo-square.png"
+      href="https://hpic-lab.github.io/img/lab-logo-square.png"
       type="image/png"
     />
 
@@ -716,7 +723,15 @@
           <div class="col-12 col-lg-8">
             <!-- Principal Investigator -->
             <h3 id="professor">Principal Investigator</h3>
-            <div class="row">
+            <div class="row principal-investigator">
+              <script>
+                $(document).ready(function () {
+                  $.getJSON("json/people/principal_investigator.json").done(
+                    function (people) {
+                      const container = $(".principal-investigator");
+
+                      people.forEach((person) => {
+                        const profile = `
               <div class="col-12 col-lg-4">
                 <!-- 프로필 이미지 -->
                 <img
@@ -761,6 +776,14 @@
                   </ul>
                 </div>
               </div>
+                      `;
+
+                        cardContainer.append(card);
+                      });
+                    }
+                  );
+                });
+              </script>
             </div>
 
             <!-- Ph.D./M.S. Students -->
