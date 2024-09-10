@@ -1,8 +1,11 @@
-{
-  "name": "Minseong Choo",
-  "position": "Assistant Professor",
-  "google_scholar": "https://scholar.google.com/citations?user=9pp10QUAAAAJ&hl=en",
-  "cv": "https://drive.google.com/file/d/1-O553iH_hAohpycfDRlX6YO07z2_3d1G/view",
-  "linkedin": "https://www.linkedin.com/in/min-seong-choo-5b7036176/",
-  "orcid": "https://orcid.org/0000-0002-8638-6332"
-}
+[
+  {
+    "profile_img": "img/minseong-chu-profile-img.png",
+    "name": "Minseong Choo",
+    "position": "Assistant Professor",
+    "google_scholar": "https://scholar.google.com/citations?user=9pp10QUAAAAJ&hl=en",
+    "cv": "https://drive.google.com/file/d/1-O553iH_hAohpycfDRlX6YO07z2_3d1G/view",
+    "linkedin": "https://www.linkedin.com/in/min-seong-choo-5b7036176/",
+    "orcid": "https://orcid.org/0000-0002-8638-6332"
+  }
+]
