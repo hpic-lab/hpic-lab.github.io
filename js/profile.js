@@ -82,5 +82,7 @@ $(document).ready(function () {
   // Ph.D./M.S. Students
   loadProfiles("json/people/phd_ms.json", ".phd-ms-students");
   // M.S.-Ph.D. Candidates
-  loadProfiles("json/people/ms_phd_candidates.json", ".ms-phd-candidates");
+  loadProfiles("json/people/01_ms_phd_candidates.json", ".ms-phd-candidates");
+  // M.S. Candidates
+  loadProfiles("json/people/02_ms_candidates.json", ".ms-candidates");
 });
