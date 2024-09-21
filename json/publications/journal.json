@@ -1,15 +1,22 @@
 [
   {
-    "year": "2022",
+    "year": 2022,
     "title": "An Automated Design Methodology for Ring Voltage-Controlled Oscillators in Nanometer CMOS Technologies",
-    "link": "https://ieeexplore.ieee.org/abstract/document/10002363",
+    "image": "img/j11.png",
     "journal": "IEEE Access",
-    "authors": ["D. Lee", "K. Park", "J. Han", "M.-S. Choo"]
+    "authors": [
+      "D. Lee",
+      "K. Park",
+      "J. Han",
+      "M.-S. Choo"
+    ],
+    "link": "https://ieeexplore.ieee.org/abstract/document/10002363"
   },
+    
   {
-    "year": "2021",
+    "year": 2021,
     "title": "A PVT Variation-Robust All-Digital Injection-Locked Clock Multiplier with Real-Time Offset Tracking using Time-Division Dual Calibration",
-    "link": "https://ieeexplore.ieee.org/document/9386211",
+    "image": "img/j10.png",
     "journal": "IEEE Journal of Solid-State Circuits (JSSC)",
     "authors": [
       "M.-S. Choo",
@@ -21,12 +28,13 @@
       "S. Shin",
       "H. Chi",
       "D.-K. Jeong"
-    ]
+    ],
+    "link": "https://ieeexplore.ieee.org/document/9386211"
   },
   {
-    "year": "2021",
+    "year": 2021,
     "title": "A 4-20-Gb/s 1.87-pJ/b Continuous-Rate Digital CDR Circuit With Unlimited Frequency Acquisition Capability in 65-nm CMOS",
-    "link": "https://ieeexplore.ieee.org/abstract/document/9239394",
+    "image": "img/j9.png",
     "journal": "IEEE Journal of Solid-State Circuits (JSSC)",
     "authors": [
       "K. Park",
@@ -36,19 +44,24 @@
       "J. Hwang",
       "M.-S. Choo",
       "D.-K. Jeong"
-    ]
+    ],
+    "link": "https://ieeexplore.ieee.org/abstract/document/9239394"
   },
   {
-    "year": "2020",
+    "year": 2020,
     "title": "Review of Injection-Locked Oscillators",
-    "link": "https://koreascience.kr/article/JAKO202021262090393.page",
+    "image": "img/j8.png",
     "journal": "Journal of Semiconductor Engineering (JSE)",
-    "authors": ["M.-S. Choo", "D.-K. Jeong"]
+    "authors": [
+      "M.-S. Choo",
+      "D.-K. Jeong"
+    ],
+    "link": "https://koreascience.kr/article/JAKO202021262090393.page"
   },
   {
-    "year": "2019",
+    "year": 2019,
     "title": "A 15-GHz, 17.8-mW, 213-fs Injection-Locked PLL With Maximized Injection Strength Using Adjustment of Phase Domain Response",
-    "link": "https://koreascience.kr/article/JAKO202021262090393.page",
+    "image": "img/j7.png",
     "journal": "IEEE Transactions on Circuits and Systems-II: Express Briefs (TCAS-II)",
     "authors": [
       "M.-S. Choo",
@@ -57,12 +70,13 @@
       "H.-G. Ko",
       "K. Park",
       "D.-K. Jeong"
-    ]
+    ],
+    "link": "https://koreascience.kr/article/JAKO202021262090393.page"
   },
   {
-    "year": "2019",
+    "year": 2019,
     "title": "A 10-Gb/s, 0.03-mm2, 1.28-pJ/bit Half-Rate Injection-Locked CDR With Path Mismatch Tracking Loop in a 28-nm CMOS Technology",
-    "link": "https://koreascience.kr/article/JAKO202021262090393.page",
+    "image": "img/j6.png",
     "journal": "IEEE Transactions on Circuits and Systems-II: Express Briefs (TCAS-II)",
     "authors": [
       "M.-S. Choo",
@@ -71,19 +85,27 @@
       "S.-Y. Cho",
       "K. Lee",
       "D.-K. Jeong"
-    ]
+    ],
+    "link": "https://koreascience.kr/article/JAKO202021262090393.page"
   },
   {
-    "year": "2019",
+    "year": 2019,
     "title": "A Current-Mode Digital AOT 4-Phase Buck Voltage Regulator",
-    "link": "https://ieeexplore.ieee.org/abstract/document/8771119",
+    "image": "img/j5.png",
     "journal": "IEEE Solid-State Circuits Letters (SSC-L)",
-    "authors": ["M. Choi", "C.-H. Kye", "J. Oh", "M.-S. Choo", "D.-K. Jeong"]
+    "authors": [
+      "M. Choi",
+      "C.-H. Kye",
+      "J. Oh",
+      "M.-S. Choo",
+      "D.-K. Jeong"
+    ],
+    "link": "https://ieeexplore.ieee.org/abstract/document/8771119"
   },
   {
-    "year": "2019",
+    "year": 2019,
     "title": "A 4-to-20Gb/s 1.87 pJ/b referenceless digital CDR with unlimited frequency detection capability in 65nm CMOS",
-    "link": "https://ieeexplore.ieee.org/abstract/document/8778157",
+    "image": "img/c6.png",
     "journal": "IEEE Symposium on VLSI Circuits (VLSIC)",
     "authors": [
       "K. Park",
@@ -93,33 +115,55 @@
       "J. Hwang",
       "M.-S. Choo",
       "D.-K. Jeong"
-    ]
+    ],
+    "link": "https://ieeexplore.ieee.org/abstract/document/8778157"
   },
   {
-    "year": "2019",
+    "year": 2019,
     "title": "A Synthesizable Digital AOT 4-Phase Buck Voltage Regulator for Digital Systems with 0.0054mm2 Controller and 80ns Recovery Time",
-    "link": "https://ieeexplore.ieee.org/abstract/document/8662453",
+    "image": "img/c5.png",
     "journal": "IEEE International Solid-State Circuits Conference (ISSCC)",
-    "authors": ["M. Choi", "C.-H. Kye", "J. Oh", "M.-S. Choo", "D.-K. Jeong"]
+    "authors": [
+      "M. Choi",
+      "C.-H. Kye",
+      "J. Oh",
+      "M.-S. Choo",
+      "D.-K. Jeong"
+    ],
+    "link": "https://ieeexplore.ieee.org/abstract/document/8662453"
   },
   {
-    "year": "2018",
+    "year": 2018,
     "title": "A 10-Gb/s, 0.03-mm2, 1.28-pJ/bit Half-Rate All-Digital Injection-Locked Clock and Data Recovery with Maximum Timing-Margin Tracking Loop",
-    "link": "https://ieeexplore.ieee.org/abstract/document/8579270",
+    "image": "img/c4.png",
     "journal": "IEEE Asian Solid-State Circuits Conference (A-SSCC) invited to JSSC",
-    "authors": ["M.-S. Choo", "H.-G. Ko", "S.-Y. Cho", "K. Lee", "D.-K. Jeong"]
+    "authors": [
+      "M.-S. Choo",
+      "H.-G. Ko",
+      "S.-Y. Cho",
+      "K. Lee",
+      "D.-K. Jeong"
+    ],
+    "link": "https://ieeexplore.ieee.org/abstract/document/8579270"
   },
   {
-    "year": "2018",
+    "year": 2018,
     "title": "An optimum injection-timing tracking loop for 5-GHz, 1.13-mW/GHz RO-based injection-locked PLL with 152-fs integrated jitter",
-    "link": "https://ieeexplore.ieee.org/abstract/document/8514813",
+    "image": "img/j4.png",
     "journal": "IEEE Transactions on Circuits and Systems-II: Express Briefs (TCAS-II)",
-    "authors": ["M.-S. Choo", "H.-G. Ko", "S.-Y. Cho", "K. Lee", "D.-K. Jeong"]
+    "authors": [
+      "M.-S. Choo",
+      "H.-G. Ko",
+      "S.-Y. Cho",
+      "K. Lee",
+      "D.-K. Jeong"
+    ],
+    "link": "https://ieeexplore.ieee.org/abstract/document/8514813"
   },
   {
-    "year": "2018",
+    "year": 2018,
     "title": "A 2.5–5.6 GHz subharmonically injection-locked all-digital PLL with dual-edge complementary switched injection",
-    "link": "https://ieeexplore.ieee.org/abstract/document/8292824",
+    "image": "img/j3.png",
     "journal": "IEEE Transactions on Circuits and Systems-I: Regular Links (TCAS-I)",
     "authors": [
       "S.-Y. Cho",
@@ -129,12 +173,13 @@
       "J. Lee",
       "W. Bae",
       "D.-K. Jeong"
-    ]
+    ],
+    "link": "https://ieeexplore.ieee.org/abstract/document/8292824"
   },
   {
-    "year": "2017",
+    "year": 2017,
     "title": "A 55.1 mW 1.62-to-8.1 Gb/s video interface receiver generating up to 680 MHz stream clock over 20 dB loss channel",
-    "link": "https://ieeexplore.ieee.org/abstract/document/8022928",
+    "image": "img/j2.png",
     "journal": "IEEE Transactions on Circuits and Systems-II: Express Briefs (TCAS-II)",
     "authors": [
       "K. Park",
@@ -145,12 +190,13 @@
       "S.-H. Chu",
       "S. Kim",
       "D.-K. Jeong"
-    ]
+    ],
+    "link": "https://ieeexplore.ieee.org/abstract/document/8022928"
   },
   {
-    "year": "2017",
+    "year": 2017,
     "title": "A 2.5GHz injection-locked ADPLL with 197fsrms integrated jitter and −65dBc reference spur using time-division dual calibration",
-    "link": "https://ieeexplore.ieee.org/abstract/document/7870477",
+    "image": "img/c3.png",
     "journal": "IEEE International Solid-State Circuits Conference (ISSCC)",
     "authors": [
       "S. Kim",
@@ -161,12 +207,13 @@
       "M.-S. Choo",
       "H. Chi",
       "D.-K. Jeong"
-    ]
+    ],
+    "link": "https://ieeexplore.ieee.org/abstract/document/7870477"
   },
   {
-    "year": "2016",
+    "year": 2016,
     "title": "A 285-fs rms Integrated Jitter Injection-Locked Ring PLL with Charge-Stored Complementary Switch Injection Technique",
-    "link": "https://koreascience.kr/article/JAKO201607959403082.page",
+    "image": "img/j1.png",
     "journal": "Journal of Semiconductor Technology and Science (JSTS)",
     "authors": [
       "S. Kim",
@@ -176,12 +223,13 @@
       "G.-S. Jeong",
       "W. Bae",
       "D.-K. Jeong"
-    ]
+    ],
+    "link": "https://koreascience.kr/article/JAKO201607959403082.page"
   },
   {
-    "year": "2016",
+    "year": 2016,
     "title": "A theoretical analysis of phase shift in pulse injection-locked oscillators",
-    "link": "https://ieeexplore.ieee.org/abstract/document/7538886",
+    "image": "img/c2.png",
     "journal": "IEEE International Symposium on Circuits and Systems (ISCAS)",
     "authors": [
       "J. Lee",
@@ -190,12 +238,13 @@
       "S.-Y. Cho",
       "H.-G. Ko",
       "D.-K. Jeong"
-    ]
+    ],
+    "link": "https://ieeexplore.ieee.org/abstract/document/7538886"
   },
   {
-    "year": "2015",
+    "year": 2015,
     "title": "A 5-GHz subharmonically injection-locked all-digital PLL with complementary switched injection",
-    "link": "https://ieeexplore.ieee.org/abstract/document/7313908",
+    "image": "img/c1.png",
     "journal": "European Solid-State Circuits Conference (ESSCIRC)",
     "authors": [
       "S.-Y. Cho",
@@ -208,6 +257,7 @@
       "W. Bae",
       "Y. Kim",
       "D.-K. Jeong"
-    ]
+    ],
+    "link": "https://ieeexplore.ieee.org/abstract/document/7313908"
   }
 ]
