@@ -1,0 +1,137 @@
+[
+  {
+    "name": "Jae-Gun Lee",
+    "research_interests": "DSP-based Receiver",
+    "tape_out_schedule": [
+      {
+        "date": "2023.11",
+        "process": "28-nm S, 65-nm T"
+      },
+      {
+        "date": "2024.09",
+        "process": "40-nm T"
+      }
+    ],
+    "achievements": "2023 SCCUD 구두 발표 최우수상, ICEIC'24",
+    "details": "Currently pursuing a Bachelor's degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include artificial intelligence hardware design and processing in memory (PIM).",
+    "email": "dlworjs@hanyang.ac.kr",
+    "profile_img": "img/jg-lee-profile-img.jpeg",
+    "position": "Undergraduate Researcher"
+  },
+  {
+    "name": "Min-Gwon Song",
+    "research_interests": "PIM and design automation",
+    "achievements": "2023 SCCUD 구두 발표 최우수상, DAC'24",
+    "details": "Currently pursuing a Bachelor's degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include artificial intelligence hardware design and processing in memory (PIM).",
+    "email": "llimsg150@hanyang.ac.kr",
+    "profile_img": "img/mg-song-profile-img.jpg",
+    "position": "Undergraduate Researcher"
+  },
+  {
+    "name": "Jee-Hyun Kwon",
+    "research_interests": "PAM4 Receiver (DSP-based Link)",
+    "tape_out_schedule": [
+      {
+        "date": "2023.07",
+        "process": "28-nm S"
+      },
+      {
+        "date": "2023.11",
+        "process": "28-nm S"
+      }
+    ],
+    "achievements": "2023 SCCUD 포스터 발표 대상, KCS'24",
+    "details": "Currently pursuing a Bachelor's degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. Her research interests include adaptive equalizer and PAM4 receiver (DSP-based Link).",
+    "email": "bornin321@hanyang.ac.kr",
+    "profile_img": "img/jh-kwon-profile-img.png",
+    "position": "Undergraduate Researcher"
+  },
+  {
+    "name": "Yu-Jin Byeon",
+    "research_interests": "Time-Interleaved SAR ADC, DSP-based Receiver",
+    "tape_out_schedule": [
+      {
+        "date": "2023.07",
+        "process": "28-nm S"
+      },
+      {
+        "date": "2023.11",
+        "process": "28-nm S"
+      },
+      {
+        "date": "2024.06",
+        "process": "28-nm T"
+      }
+    ],
+    "achievements": "2023 SCCUD 포스터 발표 대상, KCS'24",
+    "details": "Currently pursuing a Bachelor's degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. Her research interests include adaptive equalizer and PAM4 receiver (DSP-based Link).",
+    "email": "byj8629@hanyang.ac.kr",
+    "profile_img": "img/yj-byeon-profile-img.png",
+    "position": "Undergraduate Researcher"
+  },
+  {
+    "name": "Dong-Eun Lee",
+    "research_interests": "DSP-based Transmitter",
+    "tape_out_schedule": [
+      {
+        "date": "2023.07",
+        "process": "28-nm S"
+      },
+      {
+        "date": "2023.11",
+        "process": "28-nm S"
+      },
+      {
+        "date": "2024.09",
+        "process": "40-nm T"
+      }
+    ],
+    "achievements": "2023 SCCUD 포스터 발표 대상, KCS'24",
+    "details": "Currently pursuing a Bachelor's degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. Her research interests include adaptive equalizers and PAM4 receiver (DSP-based Link).",
+    "email": "dms2021@hanyang.ac.kr",
+    "profile_img": "img/de-lee-profile-img.png",
+    "position": "Undergraduate Researcher"
+  },
+  {
+    "name": "Seung-Mo Jin",
+    "research_interests": "DSP-based Transmitter",
+    "achievements": "2023 SCCUD 구두 발표 최우수상, ICEIC'24",
+    "details": "Currently pursuing a Bachelor's degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include artificial intelligence hardware design and processing in memory (PIM).",
+    "email": "victorymo@hanyang.ac.kr",
+    "profile_img": "img/sm-jin-profile-img.jpg",
+    "position": "Undergraduate Researcher"
+  },
+  {
+    "name": "Woo-Suk Jung",
+    "research_interests": "AI hardware design and PIM (2T DRAM)",
+    "tape_out_schedule": [
+      {
+        "date": "2024.07",
+        "process": "28-nm S"
+      }
+    ],
+    "details": "Currently pursuing a Bachelor's degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include artificial intelligence hardware design and processing in memory (PIM).",
+    "email": "wjd5952@hanyang.ac.kr",
+    "profile_img": "img/ws-jung-profile-img.png",
+    "position": "Undergraduate Researcher"
+  },
+  {
+    "name": "Jong-Hoon Park",
+    "research_interests": "AI hardware design and Digital PIM",
+    "tape_out_schedule": [],
+    "details": "Currently pursuing a Bachelor's degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include artificial intelligence hardware design and Digital processing in memory (Digital PIM).",
+    "email": "hoon765@hanyang.ac.kr",
+    "profile_img": "img/jh-park-profile-img.jpg",
+    "position": "Undergraduate Researcher"
+  },
+  {
+    "name": "Open Positions. No prerequisite!",
+    "research_interests": "",
+    "tape_out_schedule": [],
+    "achievements": "",
+    "details": "",
+    "email": "",
+    "profile_img": "img/empty-profile-img.jpg",
+    "position":""
+  }
+]

@@ -91,7 +91,7 @@
     "details": "Pursuing a Bachelor's degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. He will join the HPIC Design Lab. in the fall semester of 2024. His research interests include analog and digital circuit designs of phase-locked-loop (PLL).",
     "email": "ccomo7004@hanyang.ac.kr",
     "profile_img": "img/jh-pyeon-profile-img.png",
-    "position": "B.S. Candidate"
+    "position": "M.S. Candidate"
   },
   {
     "name": "So-Yeon Kwon",
@@ -106,54 +106,6 @@
     "email": "sykwon00@hanyang.ac.kr",
     "profile_img": "img/sw-kwon-profile-image.jpeg",
     "position": "M.S. Candidate"
-  },
-  {
-    "name": "In-Ho Han",
-    "research_interests": "PLL",
-    "tape_out_schedule": [
-      {
-        "date": "2024",
-        "process": ""
-      }
-    ],
-    "details": "Received a B.S. degree in electrical engineering from Gachon University, Sungnam, South Korea. He is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include analog and digital circuit designs of phase-locked-loop (PLL).",
-    "email": "inho0303@hanyang.ac.kr",
-    "profile_img": "img/ih-han-profile-img.jpg"
-  },
-  {
-    "name": "Seung-Hwan Gong",
-    "research_interests": "CDR, DSP-based Receiver",
-    "tape_out_schedule": [
-      {
-        "date": "2024",
-        "process": ""
-      }
-    ],
-    "details": "Received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include CDR, DSP-based Receiver.",
-    "email": "fire051324@gmail.com",
-    "profile_img": "img/sh-gong-profile-image.jpg"
-  },
-  {
-    "name": "Dong-Ho Kim",
-    "research_interests": "DSP-based Transmitter",
-    "tape_out_schedule": [
-      {
-        "date": "2024",
-        "process": ""
-      }
-    ],
-    "details": "Received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include DSP-DAC based transmitter.",
-    "email": "dpdl112@hanyang.ac.kr",
-    "profile_img": "img/dh-kim-profile-image.jpg"
-  },
-  {
-    "name": "Open Positions",
-    "research_interests": "",
-    "tape_out_schedule": [],
-    "achievements": "",
-    "details": "",
-    "email": "",
-    "profile_img": "img/empty-profile-img.jpg"
   },
   {
     "name": "In-Ho Han",
@@ -206,5 +158,5 @@
     "email": "",
     "profile_img": "img/empty-profile-img.jpg",
     "position": ""
-  }  
+  }
 ]

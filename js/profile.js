@@ -6,7 +6,7 @@ $(document).ready(function () {
 
       people.forEach((person) => {
         const profile = `
-          <div class="col-12 col-lg-4">
+          <div class="col-12 col-lg-3">
             <!-- 프로필 이미지 -->
             <img
               class="portrait"
@@ -76,13 +76,18 @@ $(document).ready(function () {
 
   // 교수님
   loadProfiles(
-    "json/people/principal_investigator.json",
+    "json/people/00_principal_investigator.json",
     ".principal-investigator"
   );
   // Ph.D./M.S. Students
-  loadProfiles("json/people/phd_ms.json", ".phd-ms-students");
+  loadProfiles("json/people/01_phd_ms.json", ".phd-ms-students");
   // M.S.-Ph.D. Candidates
-  loadProfiles("json/people/01_ms_phd_candidates.json", ".ms-phd-candidates");
+  loadProfiles("json/people/02_ms_phd_candidates.json", ".ms-phd-candidates");
   // M.S. Candidates
-  loadProfiles("json/people/02_ms_candidates.json", ".ms-candidates");
+  loadProfiles("json/people/03_ms_candidates.json", ".ms-candidates");
+  // Undergraduate Researchers
+  loadProfiles(
+    "json/people/04_undergraduate_researchers.json",
+    ".undergraduate-researchers"
+  );
 });
