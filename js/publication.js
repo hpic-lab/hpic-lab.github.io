@@ -27,6 +27,34 @@ $(document).ready(function () {
     });
   }
 
+  function loadPatent(url, containerClass) {
+    $.getJSON(url).done(function (pubs) {
+      const container = $(containerClass);
+
+      pubs.forEach((pub) => {
+        const inventorList = pub.inventors
+          .map((inventor) => `<span>${inventor}</span>`)
+          .join(", ");
+
+        const pub_detail = `
+        <div class="pub-wrapper">
+          <span class="pub-icon-box"><img src="img/pub-svg.svg"></span>
+          <span class="badge text-bg-primary"> ${pub.type}</span>|
+          <span class="badge process-badge">${pub.status}</span>|
+          <span class="badge bg-success">${pub.registration}</span>
+          <br>
+          <span class="pub-author">
+            ${inventorList}
+          </span>
+          <span> (${pub.year}).</span>
+          <span><b> ${pub.title}.</b></span>
+        </div>
+        `;
+        container.append(pub_detail);
+      });
+    });
+  }
   loadPublication("json/publications/journal.json", ".journal-container");
   loadPublication("json/publications/conference.json", ".conference-container");
+  loadPatent("json/publications/patent.json", ".patent-container");
 });
