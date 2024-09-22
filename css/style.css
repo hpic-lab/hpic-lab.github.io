@@ -241,6 +241,19 @@ h6 {
 }
 
 /* publication */
+.pub-wrapper {
+  margin-bottom: 16px;
+}
+
+.pub-icon-box {
+  display: inline-block;
+  vertical-align: middle;
+  align-items: center;
+  width: 16px;
+  height: 16px;
+  padding: 0;
+}
+
 .pub-title-row {
   display: flex;
   flex-direction: column;
