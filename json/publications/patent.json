@@ -1,0 +1,26 @@
+[
+  {
+    "year": 2024,
+    "type": "출원",
+    "status": "출원완료",
+    "registration": "KR · P20240060OP",
+    "title": "데이터 처리 장치 및 그 제어 방법",
+    "inventors": ["M.-G. Song", "S.-U. Kang", "S.-Y. Kim", "M.-S. Choo"]
+  },
+  {
+    "year": 2024,
+    "type": "출원",
+    "status": "출원완료",
+    "registration": "KR · P20240316OP",
+    "title": "삼진/이진 신경망용 단일 종단 및 워드라인 분할 6T 정적 램 기반 ADC 없는 프로세싱 인 메모리 가속기",
+    "inventors": ["S.-U. Kang", "M.-G. Song", "S.-Y. Kim", "M.-S. Choo"]
+  },
+  {
+    "year": 2024,
+    "type": "출원",
+    "status": "출원완료",
+    "registration": "KR · P20240332OP",
+    "title": "주입 잠금 발진 장치, 상기 주입 잠금 발진 장치를 이용한 위상 잠금 루프 회로 및 이의 제어 방법",
+    "inventors": ["K.-R. Park", "J.-H. Kim", "I.-W. Jang", "M.-S. Choo"]
+  }
+]

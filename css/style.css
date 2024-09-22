@@ -241,6 +241,19 @@ h6 {
 }
 
 /* publication */
+.pub-wrapper {
+  margin-bottom: 16px;
+}
+
+.pub-icon-box {
+  display: inline-block;
+  vertical-align: middle;
+  align-items: center;
+  width: 16px;
+  height: 16px;
+  padding: 0;
+}
+
 .pub-title-row {
   display: flex;
   flex-direction: column;
@@ -495,17 +508,14 @@ h6 {
   box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.1);
 }
 
-/* people cards */
-
-.wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 20px 0px;
+/* people*/
+#people .accordion .wrapper {
+  margin: 16px 0;
 }
 
-.accordion div:first-child {
-  margin-top: 0;
+#people .row {
+  display: flex;
+  justify-content: center;
 }
 
 .user-card {
@@ -519,6 +529,19 @@ h6 {
   position: relative;
   overflow: hidden;
   box-shadow: 0 2px 20px -5px rgba(0, 0, 0, 0.5);
+}
+
+#people h3:not(.accordion h3) {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+#people .ui-accordion .ui-accordion-content {
+  padding: 0 1.5rem;
+}
+
+#people .accordion h3 {
+  text-align: left;
 }
 
 /* 교수님 왼쪽 프로필 */
@@ -538,14 +561,9 @@ h6 {
   font-size: 0.8vw;
 }
 
-/* 교수님 오른쪽 프로필 */
-.profile-right {
-  /* margin-left: 5px; */
-}
-
-.profile-right p {
-  font-size: 14px;
-  margin-bottom: 2px;
+#people .portrait {
+  height: 150px;
+  width: 150px;
 }
 
 /* 학생들 프로필 */
@@ -874,7 +892,7 @@ section {
     font-size: 16px;
   }
 
-  .user-card {
+  /* .user-card {
     display: block;
   }
 
@@ -886,7 +904,7 @@ section {
   .user-card-img img {
     width: 100%;
     height: 200px;
-  }
+  } */
 }
 
 /* Breakpoint SM */
