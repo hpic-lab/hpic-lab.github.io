@@ -2,6 +2,22 @@
   [
     {
       "year": 2024,
+      "title": "Hardware and Software Co-Simulation Methodology for Processing-in-Memory Bitcell Application",
+      "image": "",
+      "journal": "ICEIC 2024",
+      "authors": ["J.-G. Lee", "S.-U. Kang", "M.-S. Choo"],
+      "link": "https://ieeexplore.ieee.org/document/10457160"
+    },
+    {
+      "year": 2024,
+      "title": "Analysis of ADC Quantization Effect in Processing-In-Memory Macro in Various Low-Precision Deep Neural Networks",
+      "image": "",
+      "journal": "ICEIC 2024",
+      "authors": ["S.-M. Jin", "S.-U. Kang", "M.-S. Choo"],
+      "link": "https://ieeexplore.ieee.org/document/10457226"
+    },
+    {
+      "year": 2024,
       "title": "A 4.5-to-14 GHz PLL-Based Clock Driver with Wide-Range 3-Shaped LC-VCOs for DRAM Test",
       "image": "",
       "journal": "JSTS",
