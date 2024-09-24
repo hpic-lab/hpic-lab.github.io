@@ -2,6 +2,14 @@
   [
     {
       "year": 2024,
+      "title": "A 4.5-to-14 GHz PLL-Based Clock Driver with Wide-Range 3-Shaped LC-VCOs for DRAM Test",
+      "image": "",
+      "journal": "JSTS",
+      "authors": ["Chan-Ho Kye", "Jihee Kim", "Deog-Kyoon Jeong", "Min-Seong Choo"],
+      "link": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11825975"
+    },
+    {
+      "year": 2024,
       "title": "3.2-GHz Digital Phase-Locked Loop with Autocorrelation-based Direct Jitter Correction",
       "image": "",
       "journal": "IEEE TCASII",
@@ -42,21 +50,6 @@
         "Min-Seong Choo and Jeongjin Roh"
       ],
       "link": "https://ieeexplore.ieee.org/abstract/document/10614194"
-    },
-    {
-      "year": 2023,
-      "title": "3.2-GHz Digital Phase-Locked Loop with Autocorrelation-based Direct Jitter Correction",
-      "image": "",
-      "journal": "IEEE TCASII",
-      "authors": [
-        "Gijin Park",
-        "Sunoh Yeom",
-        "In-Woo Jang",
-        "Dongjun Lee",
-        "Jaeduk Han",
-        "Min-Seong Choo"
-      ],
-      "link": "https://ieeexplore.ieee.org/document/10507171"
     },
     {
       "year": 2022,
@@ -128,21 +121,6 @@
       "S.-Y. Cho",
       "H.-G. Ko",
       "K. Park",
-      "D.-K. Jeong"
-    ],
-    "link": "https://koreascience.kr/article/JAKO202021262090393.page"
-  },
-  {
-    "year": 2019,
-    "title": "A 10-Gb/s, 0.03-mm2, 1.28-pJ/bit Half-Rate Injection-Locked CDR With Path Mismatch Tracking Loop in a 28-nm CMOS Technology",
-    "image": "img/j6.png",
-    "journal": "IEEE Transactions on Circuits and Systems-II: Express Briefs (TCAS-II)",
-    "authors": [
-      "M.-S. Choo",
-      "K. Park",
-      "H.-G. Ko",
-      "S.-Y. Cho",
-      "K. Lee",
       "D.-K. Jeong"
     ],
     "link": "https://koreascience.kr/article/JAKO202021262090393.page"
