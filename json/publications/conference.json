@@ -1,175 +1,66 @@
 [
   {
-    "year": 2024,
-    "title": "Modeling of DSP-Based Receiver and Analysis Data Phase With Stochastic Method",
-    "image": "img/con6.png",
-    "conference": "KCS 2024",
-    "authors": ["J.-H. Kwon", "T.-H. Kim", "M.-S. Choo"],
-    "link": "https://ieeexplore.ieee.org/abstract/document/10049920"
-  },
-  {
-    "year": 2024,
-    "title": "Technology of Channel Equalization at the Receiver in 28nm CMOS",
-    "image": "img/con7.png",
-    "conference": "KCS 2024",
-    "authors": ["D.-E. Lee", "T.-H. Kim", "M.-S. Choo"],
-    "link": "https://ieeexplore.ieee.org/abstract/document/10049920"
-  },
-  {
-    "year": 2024,
-    "title": "Design of PAM4 Transmitter in 28-nm CMOS Technology",
-    "image": "img/con8.png",
-    "conference": "KCS 2024",
-    "authors": ["Y.-J. Byeon", "M.-S. Choo"],
-    "link": "..."
-  },
-  {
-    "year": 2024,
-    "title": "An Analysis of 32-Gb/s and Full-Rate Phase Interpolator based Clock and Data Recovery",
-    "image": "img/con9.png",
-    "conference": "ICEIC 2024",
-    "authors": ["D.-H. Heo", "T.-H. Kim", "K.-H. Lee", "M.-S. Choo"],
-    "link": "..."
-  },
-  {
-    "year": 2024,
-    "title": "Hardware and Software Co-Simulation Methodology for Processing-In-Memory Bitcell application",
-    "image": "img/con10.png",
-    "conference": "ICEIC 2024",
-    "authors": ["J.-G. Lee", "S.-U. Kang", "M.-S. Choo"],
-    "link": "..."
-  },
-  {
-    "year": 2024,
-    "title": "Analysis of ADC Quantization Effect in Processing-In-Memory Macro in Various Low-Precision Deep Neural Networks",
-    "image": "img/con11.png",
-    "conference": "ICEIC 2024",
-    "authors": ["S.-M. Jin", "S.-U. Kang", "M.-S. Choo"],
-    "link": "..."
-  },
-  {
-    "year": 2024,
-    "title": "Late Breaking Results: A General Purpose Compute-in-Memory Architecture with ADC-Awared Neural Networks",
-    "image": "img/conn2.png",
-    "conference": "DAC: LBR 2024",
-    "authors": ["M.-G. Song", "S.-U. Kang", "M.-S. Choo"],
-    "link": "..."
-  },
-  {
-    "year": 2024,
-    "title": "Vertical AND Cell Package : AND CiM 을 통한 BNN 운용 방법론",
-    "image": "img/con12.png",
-    "conference": "2024 SOC 학술대회",
-    "authors": ["S.-M. Jin", "S.-U. Kang", "M.-S. Choo"],
-    "link": "..."
-  },
-  {
-    "year": 2024,
-    "title": "A 2T1C eDRAM-based Compute-In-Memory Macro with 8-to-1 Column Multiplexing Scheme for Highly Sparse Binarized Deep Neural Networks",
-    "image": "img/dummy3.png",
-    "conference": "ISOCC 2024",
-    "authors": [
-      "S.-U. Kang",
-      "S.-M. Jin",
-      "M.-G. Song",
-      "D.-H. Lee",
-      "W.-S. Jung",
-      "M.-S. Choo"
-    ],
-    "link": "..."
-  },
-  {
-    "year": 2024,
-    "title": "A 14-to-32-Gb/s Deadzone-Free Referenceless CDR with Autocovariance-based Frequency Detector in 40-nm CMOS Technology",
-    "image": "img/dummy3-img.png",
-    "conference": "ASSCC 2024",
-    "authors": [
-      "H.-S. Choi",
-      "J.-G. Lee",
-      "K.-H. Lee",
-      "D. Koh",
-      "J.-W. Sull",
-      "H.-R. Do",
-      "C.-H. Kye",
-      "D.-K. Jeong",
-      "M.-S. Choo"
-    ],
-    "link": "..."
-  },
-  {
-    "year": 2024,
-    "title": "Late Breaking Results: A General Purpose Compute-in-Memory Architecture with ADC-Awared Neural Networks",
-    "image": "img/con13.png",
-    "conference": "DAC (WiP)",
-    "authors": ["M.-G. Song", "S.-U. Kang", "M.-S. Choo"],
-    "link": "..."
-  },
-  {
     "year": 2023,
     "title": "Radiation-Hardened Processing-In-Memory Crossbar Array With Hybrid Synapse Devices for Space Application",
-    "image": "img/con1.png",
-    "conference": "ICEIC",
-    "authors": ["S.-U. Kang", "J.-W. Han", "M.-S. Choo"],
-    "link": "https://ieeexplore.ieee.org/abstract/document/10049920"
+    "image": "",
+    "conference": "ICEIC 2023",
+    "authors": ["Shin-Uk Kang", "Jin-Woo Han", "Min-Seong Choo"],
+    "link": ""
   },
   {
     "year": 2023,
-    "title": "Direct Phase Control in Digital Phase-Locked Loop Mitigating Loop Delay Inside Digital Filter",
-    "image": "img/con2.png",
-    "conference": "ICEIC",
-    "authors": ["I.-W. Jang", "M.-S. Choo"],
-    "link": "https://ieeexplore.ieee.org/abstract/document/10049900"
+    "title": "Direct Phase Control in Digital Phase-Locked Loop Mitigating Loop Delay Effect inside Digital Filter",
+    "image": "",
+    "conference": "ICEIC 2023",
+    "authors": ["In-Woo Jang", "Min-Seong Choo"],
+    "link": ""
   },
   {
     "year": 2023,
     "title": "Phase Domain Response 분석을 통한 Injection-Locked Oscillator의 Locking Point 예측",
-    "image": "img/con3.png",
+    "image": "",
     "conference": "2023 하계학술대회",
-    "authors": [
-      "G.-Y. You",
-      "S.-W. Han",
-      "J.-H. Kwon",
-      "D.-E Lee",
-      "Y.-J Byeon",
-      "M.-S. Choo"
-    ],
-    "link": "https://ieeexplore.ieee.org/abstract/document/10049900"
+    "authors": ["Geun-Young You", "Seung-Wan Han", "Jee-Hyun Kwon", "Dong-Eun Lee", "Yu-Jin Byeon", "Min-Seong Choo"],
+    "link": ""
   },
   {
     "year": 2023,
     "title": "PDR 기반 Injection Point에 따른 Injection-Locked Oscillator의 Locking Time 분석",
-    "image": "img/con4.png",
+    "image": "",
     "conference": "2023 하계학술대회",
-    "authors": [
-      "G.-Y. You",
-      "S.-W. Han",
-      "J.-G. Lee",
-      "M.-G. Song",
-      "M.-S. Choo"
-    ],
-    "link": "..."
+    "authors": ["Seung-Wan Han", "Geun Young You", "Jae-Gun Lee", "Min-Gwon Song", "Min-Seong Choo"],
+    "link": ""
   },
-
   {
     "year": 2023,
     "title": "Analysis of Channel Equalization on High-Speed Serial Data Communication",
-    "image": "img/con5.png",
+    "image": "",
     "conference": "2023 하계학술대회",
-    "authors": [
-      "T.-H. Kim",
-      "D.-H. Heo",
-      "J.-H. Lee",
-      "S.-M. Jin",
-      "M.-S. Choo"
-    ],
-    "link": "..."
+    "authors": ["Tae-Hyeon Kim", "Dong-Hoe Heo", "ji-hwan Lee", "Seung-Mo Jin", "Min-Seong Choo"],
+    "link": ""
   },
   {
-    "year": 2023,
-    "title": "IGA: A General Purpose Compute-in-Memory Architecture with ADC-Awared Neural Networks",
-    "image": "img/conn1.png",
-    "conference": "DATE: LBR 2024",
-    "authors": ["M.-G. Song", "S.-U. Kang", "M.-S. Choo"],
-    "link": "..."
+    "year": 2024,
+    "title": "Modeling of DSP-Based Receiver and Analysis Data Phase With Stochastic Method",
+    "image": "",
+    "conference": "KCS 2024",
+    "authors": ["Jee-Hyun Kwon", "Tae-Hyeon Kim", "Min-Seong Choo"],
+    "link": ""
+  },
+  {
+    "year": 2024,
+    "title": "A 2T1C eDRAM-based Compute-In-Memory Macro with 8-to-1 Column Multiplexing Scheme for Highly Sparse Binarized Deep Neural Networks",
+    "image": "",
+    "conference": "ISOCC 2024",
+    "authors": ["Shin-Uk Kang", "Seung-Mo Jin", "Min-Gwon Song", "Dong-Hyun Lee", "Woo-Suk Jung", "Min-Seong Choo"],
+    "link": ""
+  },
+  {
+    "year": 2024,
+    "title": "A 14-to-32-Gb/s Deadzone-Free Referenceless CDR with Autocovariance-based Frequency Detector in 40-nm CMOS Technology",
+    "image": "",
+    "conference": "ASSCC 2024",
+    "authors": ["Hong-Seok Choi", "Jae-Gun Lee", "Kwang-Ho Lee", "Daehyun Koh", "Jung-Woo Sull", "Hyungrok Do", "Chan-Ho Kye", "Deog-Kyoon Jeong", "Min-Seong Choo"],
+    "link": ""
   }
 ]
