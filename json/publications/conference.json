@@ -1,5 +1,46 @@
 [
   {
+    "year": 2024,
+    "title": "Hardware and Software Co-Simulation Methodology for Processing-in-Memory Bitcell Application",
+    "image": "",
+    "journal": "ICEIC 2024",
+    "authors": ["J.-G. Lee", "S.-U. Kang", "M.-S. Choo"],
+    "link": "https://ieeexplore.ieee.org/document/10457160"
+  },
+  {
+    "year": 2024,
+    "title": "Analysis of ADC Quantization Effect in Processing-In-Memory Macro in Various Low-Precision Deep Neural Networks",
+    "image": "",
+    "journal": "ICEIC 2024",
+    "authors": ["S.-M. Jin", "S.-U. Kang", "M.-S. Choo"],
+    "link": "https://ieeexplore.ieee.org/document/10457226"
+  },
+  
+  {
+    "year": 2024,
+    "title": "Modeling of DSP-Based Receiver and Analysis Data Phase With Stochastic Method",
+    "image": "",
+    "conference": "KCS 2024",
+    "authors": ["Jee-Hyun Kwon", "Tae-Hyeon Kim", "Min-Seong Choo"],
+    "link": ""
+  },
+  {
+    "year": 2024,
+    "title": "A 2T1C eDRAM-based Compute-In-Memory Macro with 8-to-1 Column Multiplexing Scheme for Highly Sparse Binarized Deep Neural Networks",
+    "image": "",
+    "conference": "ISOCC 2024",
+    "authors": ["Shin-Uk Kang", "Seung-Mo Jin", "Min-Gwon Song", "Dong-Hyun Lee", "Woo-Suk Jung", "Min-Seong Choo"],
+    "link": ""
+  },
+  {
+    "year": 2024,
+    "title": "A 14-to-32-Gb/s Deadzone-Free Referenceless CDR with Autocovariance-based Frequency Detector in 40-nm CMOS Technology",
+    "image": "",
+    "conference": "ASSCC 2024",
+    "authors": ["Hong-Seok Choi", "Jae-Gun Lee", "Kwang-Ho Lee", "Daehyun Koh", "Jung-Woo Sull", "Hyungrok Do", "Chan-Ho Kye", "Deog-Kyoon Jeong", "Min-Seong Choo"],
+    "link": ""
+  },
+  {
     "year": 2023,
     "title": "Radiation-Hardened Processing-In-Memory Crossbar Array With Hybrid Synapse Devices for Space Application",
     "image": "",
@@ -38,29 +79,5 @@
     "conference": "2023 하계학술대회",
     "authors": ["Tae-Hyeon Kim", "Dong-Hoe Heo", "ji-hwan Lee", "Seung-Mo Jin", "Min-Seong Choo"],
     "link": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11521991"
-  },
-  {
-    "year": 2024,
-    "title": "Modeling of DSP-Based Receiver and Analysis Data Phase With Stochastic Method",
-    "image": "",
-    "conference": "KCS 2024",
-    "authors": ["Jee-Hyun Kwon", "Tae-Hyeon Kim", "Min-Seong Choo"],
-    "link": ""
-  },
-  {
-    "year": 2024,
-    "title": "A 2T1C eDRAM-based Compute-In-Memory Macro with 8-to-1 Column Multiplexing Scheme for Highly Sparse Binarized Deep Neural Networks",
-    "image": "",
-    "conference": "ISOCC 2024",
-    "authors": ["Shin-Uk Kang", "Seung-Mo Jin", "Min-Gwon Song", "Dong-Hyun Lee", "Woo-Suk Jung", "Min-Seong Choo"],
-    "link": ""
-  },
-  {
-    "year": 2024,
-    "title": "A 14-to-32-Gb/s Deadzone-Free Referenceless CDR with Autocovariance-based Frequency Detector in 40-nm CMOS Technology",
-    "image": "",
-    "conference": "ASSCC 2024",
-    "authors": ["Hong-Seok Choi", "Jae-Gun Lee", "Kwang-Ho Lee", "Daehyun Koh", "Jung-Woo Sull", "Hyungrok Do", "Chan-Ho Kye", "Deog-Kyoon Jeong", "Min-Seong Choo"],
-    "link": ""
   }
 ]
