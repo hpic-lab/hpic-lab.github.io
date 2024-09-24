@@ -1,18 +1,77 @@
-[
-  {
-    "year": 2022,
-    "title": "An Automated Design Methodology for Ring Voltage-Controlled Oscillators in Nanometer CMOS Technologies",
-    "image": "img/j11.png",
-    "journal": "IEEE Access",
-    "authors": [
-      "D. Lee",
-      "K. Park",
-      "J. Han",
-      "M.-S. Choo"
-    ],
-    "link": "https://ieeexplore.ieee.org/abstract/document/10002363"
-  },
-    
+
+  [
+    {
+      "year": 2024,
+      "title": "3.2-GHz Digital Phase-Locked Loop with Autocorrelation-based Direct Jitter Correction",
+      "image": "",
+      "journal": "IEEE TCASII",
+      "authors": [
+        "Gijin Park",
+        "Sunoh Yeom",
+        "In-Woo Jang",
+        "Dongjun Lee",
+        "Jaeduk Han",
+        "Min-Seong Choo"
+      ],
+      "link": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10507171"
+    },
+    {
+      "year": 2024,
+      "title": "A Compact Single-Channel 1 GS/s 8-Bit 3-Stage Capacitor Array-Assisted Charge-Injection DAC-Based SAR ADC",
+      "image": "",
+      "journal": "IEEE TCASI",
+      "authors": [
+        "Chanho Kye",
+        "Yu-Jin Byeon",
+        "Kyojin Choo",
+        "Min-Seong Choo"
+      ],
+      "link": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10586762"
+    },
+    {
+      "year": 2024,
+      "title": "High-Precision Built-In Phase Noise Measurement Circuit with Hybrid ΔΣ Time-to-Digital Converter For SoC Clocking Applications",
+      "image": "",
+      "journal": "IEEE TCASII",
+      "authors": [
+        "Jihun Choi",
+        "Hojin Kim",
+        "Hyungdong Roh",
+        "Youngjae Cho",
+        "Michael Choi",
+        "Min-Seong Choo and Jeongjin Roh"
+      ],
+      "link": "https://ieeexplore.ieee.org/abstract/document/10614194"
+    },
+    {
+      "year": 2023,
+      "title": "3.2-GHz Digital Phase-Locked Loop with Autocorrelation-based Direct Jitter Correction",
+      "image": "",
+      "journal": "IEEE TCASII",
+      "authors": [
+        "Gijin Park",
+        "Sunoh Yeom",
+        "In-Woo Jang",
+        "Dongjun Lee",
+        "Jaeduk Han",
+        "Min-Seong Choo"
+      ],
+      "link": "https://ieeexplore.ieee.org/document/10507171"
+    },
+    {
+      "year": 2022,
+      "title": "An Automated Design Methodology for Ring Voltage-Controlled Oscillators in Nanometer CMOS Technologies",
+      "image": "img/j11.png",
+      "journal": "IEEE ACCESS",
+      "authors": [
+        "Dongjun Lee",
+        "Gijin Park",
+        "Jaeduk Han",
+        "Min-Seong Choo"
+      ],
+      "link": "https://ieeexplore.ieee.org/abstract/document/10002363/"
+    }
+  ,  
   {
     "year": 2021,
     "title": "A PVT Variation-Robust All-Digital Injection-Locked Clock Multiplier with Real-Time Offset Tracking using Time-Division Dual Calibration",
