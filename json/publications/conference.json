@@ -51,24 +51,24 @@
     "year": 2023,
     "title": "An Analysis of 32-Gb/s and Full-Rate Phase Interpolator based Clock and Data Recovery",
     "image": "",
-    "conference": "",
-    "authors": [],
-    "link": ""
+    "conference": "ICEIC 2024",
+    "authors": ["Dong-Hoe Heo", "Tae-Hyeon Kim", "Kwang-ho Lee" ,"Min-Seong Choo"],
+    "link": "https://ieeexplore.ieee.org/document/10457116"
   },
   {
     "year": 2023,
     "title": "Design of PAM4 Transmitter in 28-nm CMOS Technology",
     "image": "",
-    "conference": "",
-    "authors": [],
+    "conference": "KCS 2024",
+    "authors": ["Yu-Jin Byeon", "and Min-Seong Choo"],
     "link": ""
   },
   {
     "year": 2023,
     "title": "Technology of Channel Equalization at the Receiver in 28nm CMOS",
     "image": "",
-    "conference": "",
-    "authors": [],
+    "conference": "KCS 2024",
+    "authors": ["Dong-Eun Lee", "Tae-Hyeon Kim", "Min-Seong Choo"],
     "link": ""
   },
   {
