@@ -12,11 +12,16 @@ $(document).ready(function () {
               class="portrait"
               src="${person.profile_img}"
               alt="${person.name}-profile-img"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
             />
 
             <!-- 프로필 이미지 아래 설명 -->
             <div class="portrait-title">
-              <h2>${person.name}</h2>
+              <h2
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+              >${person.name}</h2>
               <h3>${person.position}</h3>
 
               <!-- 프로필 아래 링크 아이콘 -->

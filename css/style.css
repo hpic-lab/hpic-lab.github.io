@@ -509,6 +509,11 @@ h6 {
 }
 
 /* people*/
+#people .portrait,
+#people .portrait-title h2 {
+  cursor: pointer;
+}
+
 #people .accordion .wrapper {
   margin: 16px 0;
 }
