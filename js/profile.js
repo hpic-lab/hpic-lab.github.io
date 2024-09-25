@@ -14,6 +14,7 @@ $(document).ready(function () {
               alt="${person.name}-profile-img"
               data-bs-toggle="modal"
               data-bs-target="#exampleModal"
+              data-name="${person.name}"
             />
 
             <!-- 프로필 이미지 아래 설명 -->
@@ -21,6 +22,7 @@ $(document).ready(function () {
               <h2
               data-bs-toggle="modal"
               data-bs-target="#exampleModal"
+              data-name="${person.name}"
               >${person.name}</h2>
               <h3>${person.position}</h3>
 
@@ -79,6 +81,13 @@ $(document).ready(function () {
     });
   }
 
+  $("#exampleModal").on("show.bs.modal", function (event) {
+    const button = $(event.relatedTarget); // 클릭한 버튼
+    const name = button.data("name");
+
+    // 모달 내용 업데이트
+    $("#modalName").text(name);
+  });
   // 교수님
   loadProfiles(
     "json/people/00_principal_investigator.json",
