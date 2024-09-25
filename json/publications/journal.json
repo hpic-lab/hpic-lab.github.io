@@ -2,11 +2,31 @@
   [
     {
       "year": 2024,
-      "title": "A 4.5-to-14 GHz PLL-Based Clock Driver with Wide-Range 3-Shaped LC-VCOs for DRAM Test",
+      "title": "High-Precision Built-In Phase Noise Measurement Circuit with Hybrid ΔΣ Time-to-Digital Converter For SoC Clocking Applications",
       "image": "",
-      "journal": "JSTS",
-      "authors": ["Chan-Ho Kye", "Jihee Kim", "Deog-Kyoon Jeong", "Min-Seong Choo"],
-      "link": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11825975"
+      "journal": "IEEE TCASII",
+      "authors": [
+        "Jihun Choi",
+        "Hojin Kim",
+        "Hyungdong Roh",
+        "Youngjae Cho",
+        "Michael Choi",
+        "Min-Seong Choo and Jeongjin Roh"
+      ],
+      "link": "https://ieeexplore.ieee.org/abstract/document/10614194"
+    },
+    {
+      "year": 2024,
+      "title": "A Compact Single-Channel 1 GS/s 8-Bit 3-Stage Capacitor Array-Assisted Charge-Injection DAC-Based SAR ADC",
+      "image": "",
+      "journal": "IEEE TCASI",
+      "authors": [
+        "Chanho Kye",
+        "Yu-Jin Byeon",
+        "Kyojin Choo",
+        "Min-Seong Choo"
+      ],
+      "link": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10586762"
     },
     {
       "year": 2024,
@@ -25,32 +45,15 @@
     },
     {
       "year": 2024,
-      "title": "A Compact Single-Channel 1 GS/s 8-Bit 3-Stage Capacitor Array-Assisted Charge-Injection DAC-Based SAR ADC",
+      "title": "A 4.5-to-14 GHz PLL-Based Clock Driver with Wide-Range 3-Shaped LC-VCOs for DRAM Test",
       "image": "",
-      "journal": "IEEE TCASI",
-      "authors": [
-        "Chanho Kye",
-        "Yu-Jin Byeon",
-        "Kyojin Choo",
-        "Min-Seong Choo"
-      ],
-      "link": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10586762"
+      "journal": "JSTS",
+      "authors": ["Chan-Ho Kye", "Jihee Kim", "Deog-Kyoon Jeong", "Min-Seong Choo"],
+      "link": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11825975"
     },
-    {
-      "year": 2024,
-      "title": "High-Precision Built-In Phase Noise Measurement Circuit with Hybrid ΔΣ Time-to-Digital Converter For SoC Clocking Applications",
-      "image": "",
-      "journal": "IEEE TCASII",
-      "authors": [
-        "Jihun Choi",
-        "Hojin Kim",
-        "Hyungdong Roh",
-        "Youngjae Cho",
-        "Michael Choi",
-        "Min-Seong Choo and Jeongjin Roh"
-      ],
-      "link": "https://ieeexplore.ieee.org/abstract/document/10614194"
-    },
+
+
+
     {
       "year": 2022,
       "title": "An Automated Design Methodology for Ring Voltage-Controlled Oscillators in Nanometer CMOS Technologies",
