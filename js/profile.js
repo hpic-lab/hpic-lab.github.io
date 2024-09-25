@@ -15,6 +15,13 @@ $(document).ready(function () {
               data-bs-toggle="modal"
               data-bs-target="#exampleModal"
               data-name="${person.name}"
+              data-research_interests="${person.research_interests}"
+              data-tape_out_schedule="${person.tape_out_schedule}"
+              data-achievements="${person.achievements}"
+              data-details="${person.details}"
+              data-email="${person.email}"
+              data-profile_img="${person.profile_img}"
+              data-position="${person.position}"
             />
 
             <!-- 프로필 이미지 아래 설명 -->
@@ -23,6 +30,13 @@ $(document).ready(function () {
               data-bs-toggle="modal"
               data-bs-target="#exampleModal"
               data-name="${person.name}"
+              data-research_interests="${person.research_interests}"
+              data-tape_out_schedule="${person.tape_out_schedule}"
+              data-achievements="${person.achievements}"
+              data-details="${person.details}"
+              data-email="${person.email}"
+              data-profile_img="${person.profile_img}"
+              data-position="${person.position}"
               >${person.name}</h2>
               <h3>${person.position}</h3>
 
@@ -84,10 +98,15 @@ $(document).ready(function () {
   $("#exampleModal").on("show.bs.modal", function (event) {
     const button = $(event.relatedTarget); // 클릭한 버튼
     const name = button.data("name");
+    const position = button.data("position");
+    const profile_img = button.data("profile_img");
 
     // 모달 내용 업데이트
-    $("#modalName").text(name);
+    $("#modal-name").text(name);
+    $("#modal-position").text(position);
+    $("#modal-profile-img").attr("src", profile_img);
   });
+
   // 교수님
   loadProfiles(
     "json/people/00_principal_investigator.json",
