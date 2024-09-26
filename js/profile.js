@@ -101,15 +101,29 @@ $(document).ready(function () {
   $("#exampleModal").on("show.bs.modal", function (event) {
     const button = $(event.relatedTarget); // 클릭한 버튼
     const name = button.data("name");
-    const position = button.data("position");
-    const profile_img = button.data("profile_img");
+    const research_interests = button.data("research_interests");
     const details = button.data("details");
+    const profile_img = button.data("profile_img");
+    const position = button.data("position");
 
     // 모달 내용 업데이트
     $("#modal-name").text(name);
-    $("#modal-position").text(position);
     $("#modal-profile-img").attr("src", profile_img);
     $("#modal-details").text(details);
+    $("#modal-position").text(position);
+
+    // 연구 관심사를 <li>로 추가
+    $("#modal-research_interests").empty(); // 기존 내용을 비움
+
+    if (Array.isArray(research_interests)) {
+      // 배열인지 확인
+      research_interests.forEach(function (interest) {
+        $("#modal-research_interests").append(`<li>${interest}</li>`);
+      });
+    } else {
+      // 배열이 아니라면 그냥 <li>로 추가
+      $("#modal-research_interests").append(`<li>${research_interests}</li>`);
+    }
   });
 
   // 교수님
