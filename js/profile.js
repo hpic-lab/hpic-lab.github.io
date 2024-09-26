@@ -14,6 +14,7 @@ $(document).ready(function () {
               alt="${person.name}-profile-img"
               data-bs-toggle="modal"
               data-bs-target="#exampleModal"
+
               data-name="${person.name}"
               data-research_interests="${person.research_interests}"
               data-tape_out_schedule="${person.tape_out_schedule}"
@@ -29,6 +30,7 @@ $(document).ready(function () {
               <h2
               data-bs-toggle="modal"
               data-bs-target="#exampleModal"
+              
               data-name="${person.name}"
               data-research_interests="${person.research_interests}"
               data-tape_out_schedule="${person.tape_out_schedule}"
@@ -37,6 +39,7 @@ $(document).ready(function () {
               data-email="${person.email}"
               data-profile_img="${person.profile_img}"
               data-position="${person.position}"
+
               >${person.name}</h2>
               <h3>${person.position}</h3>
 
@@ -100,11 +103,13 @@ $(document).ready(function () {
     const name = button.data("name");
     const position = button.data("position");
     const profile_img = button.data("profile_img");
+    const details = button.data("details");
 
     // 모달 내용 업데이트
     $("#modal-name").text(name);
     $("#modal-position").text(position);
     $("#modal-profile-img").attr("src", profile_img);
+    $("#modal-details").text(details);
   });
 
   // 교수님
