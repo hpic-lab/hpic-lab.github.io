@@ -16,8 +16,8 @@ $(document).ready(function () {
 
             <!-- 프로필 이미지 아래 설명 -->
             <div class="portrait-title">
-              <h3>${person.name}</h3>
-              <h4>${person.position}</h4>
+              <h2>${person.name}</h2>
+              <h3>${person.position}</h3>
 
               <!-- 프로필 아래 링크 아이콘 -->
               <ul class="network-icon" aria-hidden="true">
