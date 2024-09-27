@@ -103,6 +103,7 @@ $(document).ready(function () {
     const name = button.data("name");
     const research_interests = button.data("research_interests");
     const details = button.data("details");
+    const email = button.data("email");
     const profile_img = button.data("profile_img");
     const position = button.data("position");
 
@@ -110,6 +111,7 @@ $(document).ready(function () {
     $("#modal-name").text(name);
     $("#modal-profile-img").attr("src", profile_img);
     $("#modal-details").text(details);
+    $("#modal-email").text(email);
     $("#modal-position").text(position);
 
     // 연구 관심사를 <li>로 추가
