@@ -1,42 +1,5 @@
 [
   {
-    "name": "Jae-Gun Lee",
-    "research_interests": "DSP-based Receiver",
-    "tape_out_schedule": [
-      {
-        "date": "2023.11",
-        "process": "28-nm S, 65-nm T"
-      },
-      {
-        "date": "2024.09",
-        "process": "40-nm T"
-      }
-    ],
-    "achievements": "2023 SCCUD 구두 발표 최우수상, ICEIC'24",
-    "details": "Currently pursuing a Bachelor's degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include artificial intelligence hardware design and processing in memory (PIM).",
-    "email": "dlworjs@hanyang.ac.kr",
-    "profile_img": "img/jg-lee-profile-img.jpeg",
-    "position": "Undergraduate Researcher"
-  },
-  {
-    "name": "Seung-Mo Jin",
-    "research_interests": "DSP-based Transmitter",
-    "achievements": "2023 SCCUD 구두 발표 최우수상, ICEIC'24",
-    "details": "Currently pursuing a Bachelor's degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include artificial intelligence hardware design and processing in memory (PIM).",
-    "email": "victorymo@hanyang.ac.kr",
-    "profile_img": "img/sm-jin-profile-img.jpg",
-    "position": "Undergraduate Researcher"
-  },
-  {
-    "name": "Jong-Hoon Park",
-    "research_interests": "AI hardware design and Digital PIM",
-    "tape_out_schedule": [],
-    "details": "Currently pursuing a Bachelor's degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include artificial intelligence hardware design and Digital processing in memory (Digital PIM).",
-    "email": "hoon765@hanyang.ac.kr",
-    "profile_img": "img/jh-park-profile-img.jpg",
-    "position": "Undergraduate Researcher"
-  },
-  {
     "name": "Open Positions. No prerequisite!",
     "research_interests": "",
     "tape_out_schedule": [],
