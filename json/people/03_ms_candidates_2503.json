@@ -1,13 +1,14 @@
 [
   {
     "name": "Seung-Hwan Gong",
-    "research_interests": "CDR, DSP-based Receiver",
+    "research_interests": ["CDR, DSP-based Receiver"],
     "tape_out_schedule": [
       {
         "date": "2024",
         "process": ""
       }
     ],
+    "achievements": [],
     "details": "Received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include CDR, DSP-based Receiver.",
     "email": "fire051324@gmail.com",
     "profile_img": "img/sh-gong-profile-image.jpg",
@@ -15,13 +16,14 @@
   },
   {
     "name": "Dong-Ho Kim",
-    "research_interests": "DSP-based Transmitter",
+    "research_interests": ["DSP-based Transmitter"],
     "tape_out_schedule": [
       {
         "date": "2024",
         "process": ""
       }
     ],
+    "achievements": [],
     "details": "Received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include DSP-DAC based transmitter.",
     "email": "dpdl112@hanyang.ac.kr",
     "profile_img": "img/dh-kim-profile-image.jpg",
@@ -29,7 +31,7 @@
   },
   {
     "name": "Jae-Gun Lee",
-    "research_interests": "DSP-based Receiver",
+    "research_interests": ["DSP-based Receiver"],
     "tape_out_schedule": [
       {
         "date": "2023.11",
@@ -40,7 +42,7 @@
         "process": "40-nm T"
       }
     ],
-    "achievements": "2023 SCCUD 구두 발표 최우수상, ICEIC'24",
+    "achievements": ["2023 SCCUD 구두 발표 최우수상, ICEIC'24"],
     "details": "Currently pursuing a Bachelor's degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include artificial intelligence hardware design and processing in memory (PIM).",
     "email": "dlworjs@hanyang.ac.kr",
     "profile_img": "img/jg-lee-profile-img.jpeg",
@@ -48,8 +50,8 @@
   },
   {
     "name": "Seung-Mo Jin",
-    "research_interests": "DSP-based Transmitter",
-    "achievements": "2023 SCCUD 구두 발표 최우수상, ICEIC'24",
+    "research_interests": ["DSP-based Transmitter"],
+    "achievements": ["2023 SCCUD 구두 발표 최우수상, ICEIC'24"],
     "details": "Currently pursuing a Bachelor's degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include artificial intelligence hardware design and processing in memory (PIM).",
     "email": "victorymo@hanyang.ac.kr",
     "profile_img": "img/sm-jin-profile-img.jpg",
