@@ -16,7 +16,9 @@ $(document).ready(function () {
               data-bs-target="#exampleModal"
 
               data-name="${person.name}"
-              data-research_interests="${person.research_interests}"
+              data-research_interests='${JSON.stringify(
+                person.research_interests
+              ).replace(/'/g, "&apos;")}'
               data-tape_out_schedule='${JSON.stringify(
                 person.tape_out_schedule
               )}'              
@@ -38,7 +40,9 @@ $(document).ready(function () {
               data-bs-target="#exampleModal"
               
               data-name="${person.name}"
-              data-research_interests="${person.research_interests}"
+              data-research_interests='${JSON.stringify(
+                person.research_interests
+              ).replace(/'/g, "&apos;")}'
               data-tape_out_schedule='${JSON.stringify(
                 person.tape_out_schedule
               )}'              
@@ -128,18 +132,33 @@ $(document).ready(function () {
     /*******************************************  position*/
     $("#modal-position").text(position);
     /**************************************** research_interests*/
-    $("#modal-research_interests").empty(); // 기존 내용을 비움
 
-    if (Array.isArray(research_interests)) {
-      // 배열인지 확인
-      research_interests.forEach(function (interest) {
-        $("#modal-research_interests").append(`<li>${interest}</li>`);
-      });
-    } else {
-      // 배열이 아니라면 그냥 <li>로 추가
-      $("#modal-research_interests").append(`<li>${research_interests}</li>`);
+    // research_interests 처리
+    console.log("research_interests: ", research_interests);
+    let parsed_research_interests = [];
+
+    try {
+      if (Array.isArray(research_interests)) {
+        parsed_research_interests = research_interests;
+      } else if (typeof research_interests === "string") {
+        parsed_research_interests = JSON.parse(
+          research_interests.replace(/&apos;/g, "'")
+        );
+      }
+    } catch (error) {
+      console.error("Error parsing research_interests:", error);
     }
 
+    // 각 연구 관심사를 리스트로 추가
+    const researchInterestsList = $("#modal-research_interests");
+    researchInterestsList.empty(); // 기존 내용을 비움
+    if (parsed_research_interests.length > 0) {
+      parsed_research_interests.forEach(function (interest) {
+        researchInterestsList.append(`<li>${interest}</li>`);
+      });
+    } else {
+      researchInterestsList.append(`<li>No research interests available.</li>`);
+    }
     /*****************************************  tape_out_schedule */
     let parsedTapeOutSchedule;
     try {

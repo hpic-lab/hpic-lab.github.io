@@ -1,7 +1,7 @@
 [
   {
     "name": "Ji-Ho Kim",
-    "research_interests": "High PSRR DPLL",
+    "research_interests": ["High PSRR DPLL"],
     "tape_out_schedule": [
       {
         "date": "2023.12",
@@ -20,7 +20,7 @@
   },
   {
     "name": "Dong-Hoe Heo",
-    "research_interests": "Wide-range PI-based CDR",
+    "research_interests": ["Wide-range PI-based CDR"],
     "tape_out_schedule": [
       {
         "date": "2024.06",
@@ -35,7 +35,7 @@
   },
   {
     "name": "Kyu-Ran Park",
-    "research_interests": "High-performance DPLL",
+    "research_interests": ["High-performance DPLL"],
     "tape_out_schedule": [
       {
         "date": "2023.11",
@@ -50,7 +50,7 @@
   },
   {
     "name": "Sang-Hyun Ok",
-    "research_interests": "CDR, PAM4 receiver",
+    "research_interests": ["CDR, PAM4 receiver"],
     "tape_out_schedule": [
       {
         "date": "2024.06",
@@ -69,7 +69,7 @@
   },
   {
     "name": "Dong-Hyun Lee",
-    "research_interests": "AI hardware design and PIM",
+    "research_interests": ["AI hardware design and PIM"],
     "tape_out_schedule": [
       {
         "date": "2024.05",
@@ -84,7 +84,7 @@
   },
   {
     "name": "Jae-Hyeon Pyeon",
-    "research_interests": "High-performance DPLL",
+    "research_interests": ["High-performance DPLL"],
     "tape_out_schedule": [
       {
         "date": "2023.07",
@@ -99,7 +99,7 @@
   },
   {
     "name": "So-Yeon Kwon",
-    "research_interests": "Digital PIM",
+    "research_interests": ["Digital PIM"],
     "tape_out_schedule": [
       {
         "date": "2024",
@@ -114,7 +114,7 @@
   },
   {
     "name": "In-Ho Han",
-    "research_interests": "PLL",
+    "research_interests": ["PLL"],
     "tape_out_schedule": [
       {
         "date": "2024",
@@ -129,7 +129,7 @@
   },
   {
     "name": "Seung-Hwan Gong",
-    "research_interests": "CDR, DSP-based Receiver",
+    "research_interests": ["CDR, DSP-based Receiver"],
     "tape_out_schedule": [
       {
         "date": "2024",
@@ -144,7 +144,7 @@
   },
   {
     "name": "Dong-Ho Kim",
-    "research_interests": "DSP-based Transmitter",
+    "research_interests": ["DSP-based Transmitter"],
     "tape_out_schedule": [
       {
         "date": "2024",
@@ -159,7 +159,7 @@
   },
   {
     "name": "Open Positions",
-    "research_interests": "",
+    "research_interests": [],
     "tape_out_schedule": [],
     "achievements": [],
     "details": "",

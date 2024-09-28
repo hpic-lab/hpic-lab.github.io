@@ -1,7 +1,7 @@
 [
   {
     "name": "Shin-Uk Kang",
-    "research_interests": "AI hardware design and PIM",
+    "research_interests": ["AI hardware design and PIM"],
     "tape_out_schedule": [
       {
         "date": "2023.12",
@@ -20,7 +20,7 @@
   },
   {
     "name": "Kang-Min Kim",
-    "research_interests": "Physically Unclonable Function (PUF)",
+    "research_interests": ["Physically Unclonable Function (PUF)"],
     "tape_out_schedule": [
       {
         "date": "2024.05",

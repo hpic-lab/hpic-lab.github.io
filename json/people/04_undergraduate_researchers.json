@@ -1,7 +1,7 @@
 [
   {
     "name": "Jae-Gun Lee",
-    "research_interests": "DSP-based Receiver",
+    "research_interests": ["DSP-based Receiver"],
     "tape_out_schedule": [
       {
         "date": "2023.11",
@@ -20,7 +20,7 @@
   },
   {
     "name": "Seung-Mo Jin",
-    "research_interests": "DSP-based Transmitter",
+    "research_interests": ["DSP-based Transmitter"],
     "achievements": ["2023 SCCUD 구두 발표 최우수상, ICEIC'24"],
     "details": "Currently pursuing a Bachelor's degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include artificial intelligence hardware design and processing in memory (PIM).",
     "email": "victorymo@hanyang.ac.kr",
@@ -29,7 +29,7 @@
   },
   {
     "name": "Jong-Hoon Park",
-    "research_interests": "AI hardware design and Digital PIM",
+    "research_interests": ["AI hardware design and Digital PIM"],
     "achievements": [],
     "tape_out_schedule": [],
     "details": "Currently pursuing a Bachelor's degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include artificial intelligence hardware design and Digital processing in memory (Digital PIM).",
@@ -39,7 +39,7 @@
   },
   {
     "name": "Open Positions. No prerequisite!",
-    "research_interests": "",
+    "research_interests": [],
     "tape_out_schedule": [],
     "achievements": [],
     "details": "",
