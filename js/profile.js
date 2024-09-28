@@ -5,114 +5,72 @@ $(document).ready(function () {
       const container = $(containerClass);
 
       people.forEach((person) => {
-        const profile = `
-          <div class="col-12 col-lg-3">
-            <!-- 프로필 이미지 -->
-            <img
-              class="portrait"
-              src="${person.profile_img}"
-              alt="${person.name}-profile-img"
-              data-bs-toggle="modal"
-              data-bs-target="#exampleModal"
-
-              data-name="${person.name}"
-              data-research_interests='${JSON.stringify(
-                person.research_interests
-              ).replace(/'/g, "&apos;")}'
-              data-tape_out_schedule='${JSON.stringify(
-                person.tape_out_schedule
-              )}'              
-              data-achievements='${JSON.stringify(person.achievements).replace(
-                /'/g,
-                "&apos;"
-              )}'
-
-              data-details="${person.details}"
-              data-email="${person.email}"
-              data-profile_img="${person.profile_img}"
-              data-position="${person.position}"
-            />
-
-            <!-- 프로필 이미지 아래 설명 -->
-            <div class="portrait-title">
-              <h2
-              data-bs-toggle="modal"
-              data-bs-target="#exampleModal"
-              
-              data-name="${person.name}"
-              data-research_interests='${JSON.stringify(
-                person.research_interests
-              ).replace(/'/g, "&apos;")}'
-              data-tape_out_schedule='${JSON.stringify(
-                person.tape_out_schedule
-              )}'              
-              data-achievements='${JSON.stringify(person.achievements).replace(
-                /'/g,
-                "&apos;"
-              )}'
-              data-details="${person.details}"
-              data-email="${person.email}"
-              data-profile_img="${person.profile_img}"
-              data-position="${person.position}"
-
-              >${person.name}</h2>
-              <h3>${person.position}</h3>
-
-              <!-- 프로필 아래 링크 아이콘 -->
-              <ul class="network-icon" aria-hidden="true">
-                ${
-                  person.google_scholar
-                    ? `
-                <li>
-                  <a href="${person.google_scholar}">
-                    <img src="img/google-scholar-svg.svg" />
-                  </a>
-                </li>
-                `
-                    : ""
-                }
-                ${
-                  person.cv
-                    ? `
-                <li>
-                  <a href="${person.cv}">
-                    <img src="img/cv-svg.svg" />
-                  </a>
-                </li>
-                `
-                    : ""
-                }
-                ${
-                  person.linkedin
-                    ? `
-                <li>
-                  <a href="${person.linkedin}">
-                    <img src="img/linkedin-svg.svg" />
-                  </a>
-                </li>
-                `
-                    : ""
-                }
-                ${
-                  person.orcid
-                    ? `
-                <li>
-                  <a href="${person.orcid}">
-                    <img src="img/orcid-svg.svg" />
-                  </a>
-                </li>
-                `
-                    : ""
-                }
-              </ul>
-            </div>
-          </div>
-        `;
+        const profile = createProfileHTML(person);
         container.append(profile);
       });
     });
   }
 
+  // 프로필 HTML 생성 함수
+  function createProfileHTML(person) {
+    return `
+      <div class="col-12 col-lg-3">
+        <img
+          class="portrait"
+          src="${person.profile_img}"
+          alt="${person.name}-profile-img"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+          data-name="${person.name}"
+          data-research_interests='${JSON.stringify(person.research_interests)}'
+          data-tape_out_schedule='${JSON.stringify(person.tape_out_schedule)}'
+          data-achievements='${JSON.stringify(person.achievements).replace(
+            /'/g,
+            "&apos;"
+          )}'
+          data-details="${person.details}"
+          data-email="${person.email}"
+          data-profile_img="${person.profile_img}"
+          data-position="${person.position}"
+        />
+        <div class="portrait-title">
+          <h2>${person.name}</h2>
+          <h3>${person.position}</h3>
+          <ul class="network-icon" aria-hidden="true">
+            ${createNetworkIcons(person)}
+          </ul>
+        </div>
+      </div>
+    `;
+  }
+
+  // 네트워크 아이콘 생성 함수
+  function createNetworkIcons(person) {
+    return `
+      ${
+        person.google_scholar
+          ? `<li><a href="${person.google_scholar}"><img src="img/google-scholar-svg.svg" /></a></li>`
+          : ""
+      }
+      ${
+        person.cv
+          ? `<li><a href="${person.cv}"><img src="img/cv-svg.svg" /></a></li>`
+          : ""
+      }
+      ${
+        person.linkedin
+          ? `<li><a href="${person.linkedin}"><img src="img/linkedin-svg.svg" /></a></li>`
+          : ""
+      }
+      ${
+        person.orcid
+          ? `<li><a href="${person.orcid}"><img src="img/orcid-svg.svg" /></a></li>`
+          : ""
+      }
+    `;
+  }
+
+  // 모달 이벤트 핸들러
   $("#exampleModal").on("show.bs.modal", function (event) {
     const button = $(event.relatedTarget); // 클릭한 버튼
     const name = button.data("name");
@@ -125,90 +83,89 @@ $(document).ready(function () {
     const position = button.data("position");
 
     // 모달 내용 업데이트
+    updateModalContent(
+      name,
+      profile_img,
+      details,
+      email,
+      position,
+      research_interests,
+      tape_out_schedule,
+      achievements
+    );
+  });
+
+  // 모달 내용 업데이트 함수
+  function updateModalContent(
+    name,
+    profile_img,
+    details,
+    email,
+    position,
+    research_interests,
+    tape_out_schedule,
+    achievements
+  ) {
     $("#modal-name").text(name);
     $("#modal-profile-img").attr("src", profile_img);
     $("#modal-details").text(details);
     $("#modal-email").text(email);
-    /*******************************************  position*/
     $("#modal-position").text(position);
-    /**************************************** research_interests*/
 
     // research_interests 처리
-    console.log("research_interests: ", research_interests);
-    let parsed_research_interests = [];
+    const parsed_research_interests = parseData(research_interests);
+    updateList(
+      "#modal-research_interests",
+      parsed_research_interests,
+      "No research interests available."
+    );
 
-    try {
-      if (Array.isArray(research_interests)) {
-        parsed_research_interests = research_interests;
-      } else if (typeof research_interests === "string") {
-        parsed_research_interests = JSON.parse(
-          research_interests.replace(/&apos;/g, "'")
-        );
-      }
-    } catch (error) {
-      console.error("Error parsing research_interests:", error);
-    }
-
-    // 각 연구 관심사를 리스트로 추가
-    const researchInterestsList = $("#modal-research_interests");
-    researchInterestsList.empty(); // 기존 내용을 비움
-    if (parsed_research_interests.length > 0) {
-      parsed_research_interests.forEach(function (interest) {
-        researchInterestsList.append(`<li>${interest}</li>`);
-      });
-    } else {
-      researchInterestsList.append(`<li>No research interests available.</li>`);
-    }
-    /*****************************************  tape_out_schedule */
-    let parsedTapeOutSchedule;
-    try {
-      if (typeof tape_out_schedule === "string") {
-        parsedTapeOutSchedule = JSON.parse(tape_out_schedule); // 문자열일 경우 파싱
-      } else {
-        parsedTapeOutSchedule = tape_out_schedule; // 이미 객체일 경우
-      }
-    } catch (error) {
-      console.error("Error parsing tape_out_schedule:", error);
-      parsedTapeOutSchedule = []; // 오류 발생 시 빈 배열
-    }
-
-    // tape_out_schedule을 원하는 형식으로 변환
+    // tape_out_schedule 처리
+    const parsedTapeOutSchedule = parseData(tape_out_schedule);
     const formattedTapeOutSchedule = parsedTapeOutSchedule
-      .map((schedule) => {
-        return `${schedule.date} (${schedule.process})`; // 원하는 형식으로 결합
-      })
-      .join(", "); // 각 항목을 쉼표로 구분
-
-    // 모달 내용 업데이트
+      .map((schedule) => `${schedule.date} (${schedule.process})`)
+      .join(", ");
     $("#modal-tape_out_schedule").text(formattedTapeOutSchedule);
-    /*******************************************************  achievements */
-    let parsedAchievements;
-    try {
-      if (achievements && typeof achievements === "string") {
-        parsedAchievements = JSON.parse(achievements.replace(/&apos;/g, "'"));
-      } else {
-        parsedAchievements = Array.isArray(achievements) ? achievements : [];
+
+    // achievements 처리
+    const parsedAchievements = parseData(achievements);
+    $("#modal-achievements").text(parsedAchievements.join(", "));
+  }
+
+  // 데이터 파싱 함수
+  function parseData(data) {
+    if (Array.isArray(data)) {
+      return data;
+    } else if (typeof data === "string") {
+      try {
+        return JSON.parse(data);
+      } catch (error) {
+        console.error("Error parsing data:", error);
+        return [];
       }
-    } catch (error) {
-      console.error("Error parsing achievements:", error);
-      parsedAchievements = [];
     }
+    return [];
+  }
 
-    $("#modal-achievements").text(parsedAchievements.join(", ")); // 배열을 문자열로 변환하여 추가
-  });
+  // 리스트 업데이트 함수
+  function updateList(selector, items, emptyMessage) {
+    const list = $(selector);
+    list.empty(); // 기존 내용을 비움
+    if (items.length > 0) {
+      items.forEach((item) => list.append(`<li>${item}</li>`));
+    } else {
+      list.append(`<li>${emptyMessage}</li>`);
+    }
+  }
 
-  // 교수님
+  // 교수님 및 학생 프로필 로드
   loadProfiles(
     "json/people/00_principal_investigator.json",
     ".principal-investigator"
   );
-  // Ph.D./M.S. Students
   loadProfiles("json/people/01_phd_ms.json", ".phd-ms-students");
-  // M.S.-Ph.D. Candidates
   loadProfiles("json/people/02_ms_phd_candidates.json", ".ms-phd-candidates");
-  // M.S. Candidates
   loadProfiles("json/people/03_ms_candidates.json", ".ms-candidates");
-  // Undergraduate Researchers
   loadProfiles(
     "json/people/04_undergraduate_researchers.json",
     ".undergraduate-researchers"
