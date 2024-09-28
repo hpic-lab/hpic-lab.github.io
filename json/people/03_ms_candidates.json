@@ -128,36 +128,6 @@
     "position": "M.S. Candidate"
   },
   {
-    "name": "Seung-Hwan Gong",
-    "research_interests": ["CDR, DSP-based Receiver"],
-    "tape_out_schedule": [
-      {
-        "date": "2024",
-        "process": ""
-      }
-    ],
-    "achievements": [],
-    "details": "Received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include CDR, DSP-based Receiver.",
-    "email": "fire051324@gmail.com",
-    "profile_img": "img/sh-gong-profile-image.jpg",
-    "position": "M.S. Candidate"
-  },
-  {
-    "name": "Dong-Ho Kim",
-    "research_interests": ["DSP-based Transmitter"],
-    "tape_out_schedule": [
-      {
-        "date": "2024",
-        "process": ""
-      }
-    ],
-    "achievements": [],
-    "details": "Received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include DSP-DAC based transmitter.",
-    "email": "dpdl112@hanyang.ac.kr",
-    "profile_img": "img/dh-kim-profile-image.jpg",
-    "position": "M.S. Candidate"
-  },
-  {
     "name": "Open Positions",
     "research_interests": [],
     "tape_out_schedule": [],

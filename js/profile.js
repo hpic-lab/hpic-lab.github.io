@@ -187,6 +187,7 @@ $(document).ready(function () {
   loadProfiles("json/people/01_phd_ms.json", ".phd-ms-students");
   loadProfiles("json/people/02_ms_phd_candidates.json", ".ms-phd-candidates");
   loadProfiles("json/people/03_ms_candidates.json", ".ms-candidates");
+  loadProfiles("json/people/03_ms_candidates_2503.json", ".ms-candidates-2503");
   loadProfiles(
     "json/people/04_undergraduate_researchers.json",
     ".undergraduate-researchers"

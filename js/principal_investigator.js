@@ -14,7 +14,7 @@ $(document).ready(function () {
 
                 <!-- 프로필 이미지 아래 설명 -->
                 <div class="portrait-title">
-                  <h2>${person.name}</h2>
+                  <h2 style="!important font-size: 22px;">${person.name}</h2>
                   <h3>${person.position}</h3>
 
                   <!-- 프로필 아래 링크 아이콘 -->
