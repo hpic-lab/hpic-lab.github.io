@@ -27,7 +27,7 @@ $(document).ready(function () {
           data-achievements='${JSON.stringify(person.achievements).replace(
             /'/g,
             "&apos;"
-          )}'
+          )}'          
           data-details="${person.details}"
           data-email="${person.email}"
           data-profile_img="${person.profile_img}"
@@ -125,11 +125,25 @@ $(document).ready(function () {
     const formattedTapeOutSchedule = parsedTapeOutSchedule
       .map((schedule) => `${schedule.date} (${schedule.process})`)
       .join(", ");
-    $("#modal-tape_out_schedule").text(formattedTapeOutSchedule);
+
+    // tape_out_schedule 표시 처리
+    if (formattedTapeOutSchedule) {
+      $("#modal-tape_out_schedule").text(formattedTapeOutSchedule);
+      $("#modal-tape_out_schedule-title").show(); // 제목 표시
+    } else {
+      $("#modal-tape_out_schedule").text("");
+      $("#modal-tape_out_schedule-title").hide(); // 제목 숨김
+    }
 
     // achievements 처리
     const parsedAchievements = parseData(achievements);
-    $("#modal-achievements").text(parsedAchievements.join(", "));
+    if (parsedAchievements.length > 0) {
+      $("#modal-achievements").text(parsedAchievements.join(", "));
+      $("#modal-achievements-title").show(); // 제목 표시
+    } else {
+      $("#modal-achievements").text("");
+      $("#modal-achievements-title").hide(); // 제목 숨김
+    }
   }
 
   // 데이터 파싱 함수
