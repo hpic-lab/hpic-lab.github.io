@@ -73,12 +73,19 @@ $(document).ready(function () {
   // 모달 이벤트 핸들러
   $("#exampleModal").on("show.bs.modal", function (event) {
     const button = $(event.relatedTarget); // 클릭한 버튼
+    const email = button.data("email");
+
+    // 이메일이 빈 문자열일 경우 모달 띄우지 않음
+    if (!email) {
+      event.preventDefault(); // 모달 열기 방지
+      return; // 함수 종료
+    }
+
     const name = button.data("name");
     const research_interests = button.data("research_interests");
     const tape_out_schedule = button.data("tape_out_schedule");
     const achievements = button.data("achievements");
     const details = button.data("details");
-    const email = button.data("email");
     const profile_img = button.data("profile_img");
     const position = button.data("position");
 
