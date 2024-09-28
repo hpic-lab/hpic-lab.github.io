@@ -721,7 +721,6 @@
             <h1>People</h1>
           </div>
           <div class="col-12 col-lg-8">
-            <!-- Principal Investigator -->
             <h3 id="professor">Principal Investigator</h3>
             <div class="row principal-investigator"></div>
 
@@ -973,6 +972,98 @@
         </div>
       </div>
     </section>
+
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div>
+              <div class="wrapper">
+                <div class="user-card">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-12 col-lg-4 profile-left">
+                        <!-- 프로필 이미지 -->
+                        <img
+                          class="portrait"
+                          id="modal-profile-img"
+                          src="img/minseong-chu-profile-img.png"
+                          alt="minseong-chu-profile-img"
+                        />
+
+                        <!-- 프로필 이미지 아래 설명 -->
+                        <div class="portrait-title">
+                          <h2 id="modal-name"></h2>
+                          <h3 id="modal-position"></h3>
+
+                          <!-- 프로필 아래 링크 아이콘 -->
+                          <ul id="network-icon" area-hidden="true"></ul>
+                        </div>
+                      </div>
+                      <div class="col-12 col-lg-8 profile-right">
+                        <!-- 프로필 우측 설명 -->
+                        <p style="margin-bottom: 8px">
+                          <span>Research Interests</span>
+                        </p>
+                        <ul
+                          class="ul-interests"
+                          id="modal-research_interests"
+                        ></ul>
+                        <p
+                          style="margin-bottom: 8px"
+                          id="modal-tape_out_schedule-title"
+                        >
+                          <span>Tape-out Schedule</span>
+                        </p>
+                        <p id="modal-tape_out_schedule"></p>
+                        <p
+                          style="margin-bottom: 8px"
+                          id="modal-achievements-title"
+                        >
+                          <span>Achievements</span>
+                        </p>
+                        <p id="modal-achievements"></p>
+                        <p style="margin-bottom: 8px">
+                          <span>Details</span>
+                        </p>
+                        <p id="modal-details"></p>
+                        <p style="margin-bottom: 8px">
+                          <span>Email</span>
+                        </p>
+                        <p id="modal-email"></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="js/academic.min.dc856155b640fa1cd8bd8b7b068fe79c.js"></script>
     <script

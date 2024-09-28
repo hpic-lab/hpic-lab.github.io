@@ -509,6 +509,15 @@ h6 {
 }
 
 /* people*/
+#people .portrait,
+#people .portrait-title h2 {
+  cursor: pointer;
+}
+
+#people .portrait-title h2 {
+  white-space: nowrap;
+}
+
 #people .accordion .wrapper {
   margin: 16px 0;
 }
@@ -522,13 +531,16 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #fff;
-  border-radius: 10px;
   padding: 20px;
   width: 100%;
   position: relative;
   overflow: hidden;
-  box-shadow: 0 2px 20px -5px rgba(0, 0, 0, 0.5);
+}
+
+.profile-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #people h3:not(.accordion h3) {
