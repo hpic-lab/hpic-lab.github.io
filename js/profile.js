@@ -20,7 +20,11 @@ $(document).ready(function () {
               data-tape_out_schedule='${JSON.stringify(
                 person.tape_out_schedule
               )}'              
-              data-achievements="${person.achievements}"
+              data-achievements='${JSON.stringify(person.achievements).replace(
+                /'/g,
+                "&apos;"
+              )}'
+
               data-details="${person.details}"
               data-email="${person.email}"
               data-profile_img="${person.profile_img}"
@@ -38,7 +42,10 @@ $(document).ready(function () {
               data-tape_out_schedule='${JSON.stringify(
                 person.tape_out_schedule
               )}'              
-              data-achievements="${person.achievements}"
+              data-achievements='${JSON.stringify(person.achievements).replace(
+                /'/g,
+                "&apos;"
+              )}'
               data-details="${person.details}"
               data-email="${person.email}"
               data-profile_img="${person.profile_img}"
@@ -107,6 +114,7 @@ $(document).ready(function () {
     const name = button.data("name");
     const research_interests = button.data("research_interests");
     const tape_out_schedule = button.data("tape_out_schedule");
+    const achievements = button.data("achievements");
     const details = button.data("details");
     const email = button.data("email");
     const profile_img = button.data("profile_img");
@@ -133,7 +141,6 @@ $(document).ready(function () {
     }
 
     /*****************************************  tape_out_schedule */
-    console.log("tape_out_schedule:", tape_out_schedule); // 로그 추가
     let parsedTapeOutSchedule;
     try {
       if (typeof tape_out_schedule === "string") {
@@ -155,6 +162,20 @@ $(document).ready(function () {
 
     // 모달 내용 업데이트
     $("#modal-tape_out_schedule").text(formattedTapeOutSchedule);
+    /*******************************************************  achievements */
+    let parsedAchievements;
+    try {
+      if (achievements && typeof achievements === "string") {
+        parsedAchievements = JSON.parse(achievements.replace(/&apos;/g, "'"));
+      } else {
+        parsedAchievements = Array.isArray(achievements) ? achievements : [];
+      }
+    } catch (error) {
+      console.error("Error parsing achievements:", error);
+      parsedAchievements = [];
+    }
+
+    $("#modal-achievements").text(parsedAchievements.join(", ")); // 배열을 문자열로 변환하여 추가
   });
 
   // 교수님
