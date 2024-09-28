@@ -514,6 +514,10 @@ h6 {
   cursor: pointer;
 }
 
+#people .portrait-title h2 {
+  white-space: nowrap;
+}
+
 #people .accordion .wrapper {
   margin: 16px 0;
 }
