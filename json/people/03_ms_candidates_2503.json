@@ -30,7 +30,7 @@
     "position": "M.S. Candidate"
   },
   {
-    "name": "Jae-Gun Lee",
+    "name": "Jae-Geon Lee",
     "research_interests": ["DSP-based Receiver"],
     "tape_out_schedule": [
       {
@@ -43,7 +43,7 @@
       }
     ],
     "achievements": ["2023 SCCUD 구두 발표 최우수상, ICEIC'24"],
-    "details": "Currently pursuing a Bachelor's degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include artificial intelligence hardware design and processing in memory (PIM).",
+    "details": "Currently pursuing a Bachelor's degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include Clock and data recovery (CDR) and DSP-based Receiver.",
     "email": "dlworjs@hanyang.ac.kr",
     "profile_img": "img/jg-lee-profile-img.jpeg",
     "position": "M.S. Candidate"
@@ -56,5 +56,41 @@
     "email": "victorymo@hanyang.ac.kr",
     "profile_img": "img/sm-jin-profile-img.jpg",
     "position": "M.S. Candidate"
-  }
+  },
+  {
+  "name": "Hyeon-Seo Kim",
+  "research_interests": [],
+  "achievements": [],
+  "details": "Currently pursuing a Bachelor's degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include artificial intelligence hardware design and processing in memory (PIM).",
+  "email": "hyeonseo1833@gmail.com",
+  "profile_img": "img/empty-profile-img.jpg",
+  "position": "M.S. Candidate"
+},
+{
+  "name": "Seol-Hyeon Kim",
+  "research_interests": ["Digital PIM"],
+  "achievements": [],
+  "details": "Currently pursuing a Bachelor's degree in the school of electrical engineering at Hanyang University, South Korea. Her research interests include artificial intelligence hardware design and processing in memory (PIM).",
+  "email": "congcongsister@naver.com",
+  "profile_img": "img/empty-profile-img.jpg",
+  "position": "M.S. Candidate"
+},
+{
+  "name": "Dong-Jin Kwak",
+  "research_interests": [],
+  "achievements": [],
+  "details": "Currently pursuing a Bachelor's degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include artificial intelligence hardware design and processing in memory (PIM).",
+  "email": "kdjkoj@hanyang.ac.kr",
+  "profile_img": "img/empty-profile-img.jpg",
+  "position": "M.S. Candidate"
+},
+{
+  "name": "Dong-eon Jin",
+  "research_interests": [],
+  "achievements": [],
+  "details": "Currently pursuing a Bachelor's degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include Clock and data recovery (CDR).",
+  "email": "dujin0509@hanyang.ac.kr",
+  "profile_img": "img/empty-profile-img.jpg",
+  "position": "M.S.-Ph.D. Candidate"
+}
 ]
