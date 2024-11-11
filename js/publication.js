@@ -14,6 +14,8 @@ $(document).ready(function () {
         const pub_detail = `
         <div class="pub-wrapper">
           <span class="pub-icon-box"><img src="img/pub-svg.svg"></span>
+          <span class="badge text-bg-primary"> ${pub.type}</span>|
+          <span class="badge process-badge">${pub.status}</span>|
           <span class="pub-author">
             ${authorsList}
           </span>
