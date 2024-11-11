@@ -1,6 +1,8 @@
 [
   {
     "year": 2024,
+    "type": "'24",
+    "status": "ASSCC",
     "title": "A 14-to-32-Gb/s Deadzone-Free Referenceless CDR with Autocovariance-based Frequency Detector in 40-nm CMOS Technology",
     "image": "",
     "conference": "ASSCC 2024",
