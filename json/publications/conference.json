@@ -148,5 +148,24 @@
     "conference": "ICEIC 2023",
     "authors": ["Shin-Uk Kang", "Jin-Woo Han", "Min-Seong Choo"],
     "link": "https://ieeexplore.ieee.org/document/10049920"
+  },
+  {
+    "year": 2017,
+    "type": "'17",
+    "status": "ISSCC",
+    "title": "A 2.5GHz injection-locked ADPLL with 197fsrms integrated jitter and −65dBc reference spur using time-division dual calibration",
+    "image": "img/c3.png",
+    "journal": "IEEE International Solid-State Circuits Conference (ISSCC)",
+    "authors": [
+      "S. Kim",
+      "H.-G. Ko",
+      "S.-Y. Cho",
+      "J. Lee",
+      "S. Shin",
+      "M.-S. Choo",
+      "H. Chi",
+      "D.-K. Jeong"
+    ],
+    "link": "https://ieeexplore.ieee.org/abstract/document/7870477"
   }
 ]
