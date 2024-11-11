@@ -59,9 +59,6 @@
       "authors": ["Chan-Ho Kye", "Jihee Kim", "Deog-Kyoon Jeong", "Min-Seong Choo"],
       "link": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11825975"
     },
-
-
-
     {
       "year": 2022,
       "type": "'22",
@@ -76,8 +73,7 @@
         "Min-Seong Choo"
       ],
       "link": "https://ieeexplore.ieee.org/abstract/document/10002363/"
-    }
-  ,  
+    },  
   {
     "year": 2021,
     "type": "'21",
@@ -161,24 +157,6 @@
       "D.-K. Jeong"
     ],
     "link": "https://ieeexplore.ieee.org/abstract/document/8771119"
-  },
-  {
-    "year": 2019,
-    "type": "'19",
-    "status": "IEEE VLSIC",
-    "title": "A 4-to-20Gb/s 1.87 pJ/b referenceless digital CDR with unlimited frequency detection capability in 65nm CMOS",
-    "image": "img/c6.png",
-    "journal": "IEEE Symposium on VLSI Circuits (VLSIC)",
-    "authors": [
-      "K. Park",
-      "K. Lee",
-      "S.-Y. Cho",
-      "J. Lee",
-      "J. Hwang",
-      "M.-S. Choo",
-      "D.-K. Jeong"
-    ],
-    "link": "https://ieeexplore.ieee.org/abstract/document/8778157"
   },
   {
     "year": 2018,
@@ -266,43 +244,5 @@
       "D.-K. Jeong"
     ],
     "link": "https://koreascience.kr/article/JAKO201607959403082.page"
-  },
-  {
-    "year": 2016,
-    "type": "'16",
-    "status": "IEEE ISCAS",
-    "title": "A theoretical analysis of phase shift in pulse injection-locked oscillators",
-    "image": "img/c2.png",
-    "journal": "IEEE International Symposium on Circuits and Systems (ISCAS)",
-    "authors": [
-      "J. Lee",
-      "S. Kim",
-      "M.-S. Choo",
-      "S.-Y. Cho",
-      "H.-G. Ko",
-      "D.-K. Jeong"
-    ],
-    "link": "https://ieeexplore.ieee.org/abstract/document/7538886"
-  },
-  {
-    "year": 2015,
-    "type": "'15",
-    "status": "ESSCIRC",
-    "title": "A 5-GHz subharmonically injection-locked all-digital PLL with complementary switched injection",
-    "image": "img/c1.png",
-    "journal": "European Solid-State Circuits Conference (ESSCIRC)",
-    "authors": [
-      "S.-Y. Cho",
-      "S. Kim",
-      "M.-S. Choo",
-      "J. Lee",
-      "H.-G. Ko",
-      "S. Jang",
-      "S.-H. Chu",
-      "W. Bae",
-      "Y. Kim",
-      "D.-K. Jeong"
-    ],
-    "link": "https://ieeexplore.ieee.org/abstract/document/7313908"
   }
 ]
