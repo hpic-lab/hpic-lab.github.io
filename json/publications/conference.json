@@ -150,6 +150,22 @@
     "link": "https://ieeexplore.ieee.org/document/10049920"
   },
   {
+    "year": 2019,
+    "type": "'19",
+    "status": "IEEE ISSCC",
+    "title": "A Synthesizable Digital AOT 4-Phase Buck Voltage Regulator for Digital Systems with 0.0054mm2 Controller and 80ns Recovery Time",
+    "image": "img/c5.png",
+    "journal": "IEEE International Solid-State Circuits Conference (ISSCC)",
+    "authors": [
+      "M. Choi",
+      "C.-H. Kye",
+      "J. Oh",
+      "M.-S. Choo",
+      "D.-K. Jeong"
+    ],
+    "link": "https://ieeexplore.ieee.org/abstract/document/8662453"
+  },
+  {
     "year": 2017,
     "type": "'17",
     "status": "ISSCC",

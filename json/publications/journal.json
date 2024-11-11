@@ -81,7 +81,7 @@
   {
     "year": 2021,
     "type": "'21",
-    "status": "IEEE JSSC",
+    "status": "JSSC",
     "title": "A PVT Variation-Robust All-Digital Injection-Locked Clock Multiplier with Real-Time Offset Tracking using Time-Division Dual Calibration",
     "image": "img/j10.png",
     "journal": "IEEE Journal of Solid-State Circuits (JSSC)",
@@ -101,7 +101,7 @@
   {
     "year": 2021,
     "type": "'21",
-    "status": "IEEE JSSC",
+    "status": "JSSC",
     "title": "A 4-20-Gb/s 1.87-pJ/b Continuous-Rate Digital CDR Circuit With Unlimited Frequency Acquisition Capability in 65-nm CMOS",
     "image": "img/j9.png",
     "journal": "IEEE Journal of Solid-State Circuits (JSSC)",
@@ -132,7 +132,7 @@
   {
     "year": 2019,
     "type": "'19",
-    "status": "IEEE TCASII",
+    "status": "TCASII",
     "title": "A 15-GHz, 17.8-mW, 213-fs Injection-Locked PLL With Maximized Injection Strength Using Adjustment of Phase Domain Response",
     "image": "img/j7.png",
     "journal": "IEEE Transactions on Circuits and Systems-II: Express Briefs (TCAS-II)",
@@ -181,25 +181,9 @@
     "link": "https://ieeexplore.ieee.org/abstract/document/8778157"
   },
   {
-    "year": 2019,
-    "type": "'19",
-    "status": "IEEE ISSCC",
-    "title": "A Synthesizable Digital AOT 4-Phase Buck Voltage Regulator for Digital Systems with 0.0054mm2 Controller and 80ns Recovery Time",
-    "image": "img/c5.png",
-    "journal": "IEEE International Solid-State Circuits Conference (ISSCC)",
-    "authors": [
-      "M. Choi",
-      "C.-H. Kye",
-      "J. Oh",
-      "M.-S. Choo",
-      "D.-K. Jeong"
-    ],
-    "link": "https://ieeexplore.ieee.org/abstract/document/8662453"
-  },
-  {
     "year": 2018,
     "type": "'18",
-    "status": "IEEE JSSC",
+    "status": "JSSC",
     "title": "A 10-Gb/s, 0.03-mm2, 1.28-pJ/bit Half-Rate All-Digital Injection-Locked Clock and Data Recovery with Maximum Timing-Margin Tracking Loop",
     "image": "img/c4.png",
     "journal": "IEEE Asian Solid-State Circuits Conference (A-SSCC) invited to JSSC",
@@ -215,7 +199,7 @@
   {
     "year": 2018,
     "type": "'18",
-    "status": "IEEE TCASII",
+    "status": "TCASII",
     "title": "An optimum injection-timing tracking loop for 5-GHz, 1.13-mW/GHz RO-based injection-locked PLL with 152-fs integrated jitter",
     "image": "img/j4.png",
     "journal": "IEEE Transactions on Circuits and Systems-II: Express Briefs (TCAS-II)",
@@ -231,7 +215,7 @@
   {
     "year": 2018,
     "type": "'18",
-    "status": "IEEE TCASI",
+    "status": "TCASI",
     "title": "A 2.5–5.6 GHz subharmonically injection-locked all-digital PLL with dual-edge complementary switched injection",
     "image": "img/j3.png",
     "journal": "IEEE Transactions on Circuits and Systems-I: Regular Links (TCAS-I)",
@@ -249,7 +233,7 @@
   {
     "year": 2017,
     "type": "'17",
-    "status": "IEEE TCASII",
+    "status": "TCASII",
     "title": "A 55.1 mW 1.62-to-8.1 Gb/s video interface receiver generating up to 680 MHz stream clock over 20 dB loss channel",
     "image": "img/j2.png",
     "journal": "IEEE Transactions on Circuits and Systems-II: Express Briefs (TCAS-II)",
