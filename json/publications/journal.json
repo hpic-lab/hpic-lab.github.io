@@ -3,7 +3,7 @@
     {
       "year": 2024,
       "type": "'24",
-      "status": "TCASII",
+      "status": "IEEE TCASII",
       "title": "High-Precision Built-In Phase Noise Measurement Circuit with Hybrid ΔΣ Time-to-Digital Converter For SoC Clocking Applications",
       "image": "",
       "journal": "IEEE TCASII",
@@ -20,7 +20,7 @@
     {
       "year": 2024,
       "type": "'24",
-      "status": "TCASI",
+      "status": "IEEE TCASI",
       "title": "A Compact Single-Channel 1 GS/s 8-Bit 3-Stage Capacitor Array-Assisted Charge-Injection DAC-Based SAR ADC ",
       "image": "",
       "journal": "IEEE TCASI",
@@ -35,7 +35,7 @@
     {
       "year": 2024,
       "type": "'24",
-      "status": "TCASII",
+      "status": "IEEE TCASII",
       "title": "3.2-GHz Digital Phase-Locked Loop with Autocorrelation-based Direct Jitter Correction",
       "image": "",
       "journal": "IEEE TCASII",
@@ -77,7 +77,7 @@
   {
     "year": 2021,
     "type": "'21",
-    "status": "JSSC",
+    "status": "IEEE JSSC",
     "title": "A PVT Variation-Robust All-Digital Injection-Locked Clock Multiplier with Real-Time Offset Tracking using Time-Division Dual Calibration",
     "image": "img/j10.png",
     "journal": "IEEE Journal of Solid-State Circuits (JSSC)",
@@ -97,7 +97,7 @@
   {
     "year": 2021,
     "type": "'21",
-    "status": "JSSC",
+    "status": "IEEE JSSC",
     "title": "A 4-20-Gb/s 1.87-pJ/b Continuous-Rate Digital CDR Circuit With Unlimited Frequency Acquisition Capability in 65-nm CMOS",
     "image": "img/j9.png",
     "journal": "IEEE Journal of Solid-State Circuits (JSSC)",
@@ -128,7 +128,7 @@
   {
     "year": 2019,
     "type": "'19",
-    "status": "TCASII",
+    "status": "IEEE TCASII",
     "title": "A 15-GHz, 17.8-mW, 213-fs Injection-Locked PLL With Maximized Injection Strength Using Adjustment of Phase Domain Response",
     "image": "img/j7.png",
     "journal": "IEEE Transactions on Circuits and Systems-II: Express Briefs (TCAS-II)",
@@ -161,7 +161,7 @@
   {
     "year": 2018,
     "type": "'18",
-    "status": "JSSC",
+    "status": "IEEE JSSC",
     "title": "A 10-Gb/s, 0.03-mm2, 1.28-pJ/bit Half-Rate All-Digital Injection-Locked Clock and Data Recovery with Maximum Timing-Margin Tracking Loop",
     "image": "img/c4.png",
     "journal": "IEEE Asian Solid-State Circuits Conference (A-SSCC) invited to JSSC",
@@ -177,7 +177,7 @@
   {
     "year": 2018,
     "type": "'18",
-    "status": "TCASII",
+    "status": "IEEE TCASII",
     "title": "An optimum injection-timing tracking loop for 5-GHz, 1.13-mW/GHz RO-based injection-locked PLL with 152-fs integrated jitter",
     "image": "img/j4.png",
     "journal": "IEEE Transactions on Circuits and Systems-II: Express Briefs (TCAS-II)",
@@ -193,7 +193,7 @@
   {
     "year": 2018,
     "type": "'18",
-    "status": "TCASI",
+    "status": "IEEE TCASI",
     "title": "A 2.5–5.6 GHz subharmonically injection-locked all-digital PLL with dual-edge complementary switched injection",
     "image": "img/j3.png",
     "journal": "IEEE Transactions on Circuits and Systems-I: Regular Links (TCAS-I)",
@@ -211,7 +211,7 @@
   {
     "year": 2017,
     "type": "'17",
-    "status": "TCASII",
+    "status": "IEEE TCASII",
     "title": "A 55.1 mW 1.62-to-8.1 Gb/s video interface receiver generating up to 680 MHz stream clock over 20 dB loss channel",
     "image": "img/j2.png",
     "journal": "IEEE Transactions on Circuits and Systems-II: Express Briefs (TCAS-II)",
