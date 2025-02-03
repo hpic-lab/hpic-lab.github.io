@@ -1,5 +1,27 @@
 [
   {
+    "year": 2025,
+    "type": "'25",
+    "status": "IEEE VLSIC",
+    "registration": "submitted",
+    "title": "6T SRAM Compute-In-Memory Macro for Binary/Ternary Neural Network with 1-bit ADC Optimizing Training Algorithm",
+    "image": "",
+    "conference": "VLSIC 2025",
+    "authors": ["Shin-Uk Kang", "Dong-Hyun Lee", "So-Yeon Kwon", "Seol-Hyeon Kim", "Dong-jin Kwak", "Min-Seong Choo"],
+    "link": ""
+  },
+  {
+    "year": 2025,
+    "type": "'25",
+    "status": "IEEE VLSIC",
+    "registration": "submitted",
+    "title": "",
+    "image": "",
+    "conference": "VLSIC 2025",
+    "authors": ["Ji-Hoon Choi", "Min-Seong Choo and Jeongjin Roh"],
+    "link": ""
+  },
+  {
     "year": 2024,
     "type": "'24",
     "status": "ASSCC",

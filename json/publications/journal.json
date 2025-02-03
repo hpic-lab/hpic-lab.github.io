@@ -1,6 +1,29 @@
 
   [
     {
+      "year": 2025,
+      "type": "'25",
+      "status": "IEEE JSSC",
+      "registration": "submitted",
+      "title": "A 14-to-32-Gb/s Deadzone-Free Referenceless CDR with Autocovariance-based Seamless Frequency Detector in 40-nm CMOS Technology",
+      "image": "",
+      "journal": "IEEE JSSC",
+      "authors": [
+        "Hong-Seok Choi", 
+        "Jae-Gun Lee", 
+        "Seung-Hwan Gong", 
+        "Kwang-Ho Lee", 
+        "Daehyun Koh", 
+        "Jung-Woo Sull", 
+        "Hyungrok Do", 
+        "Chan-Ho Kye", 
+        "Deog-Kyoon Jeong", 
+        "Kwan-seo Park", 
+        "Min-Seong Choo"
+      ],
+      "link": ""
+    },
+    {
       "year": 2024,
       "type": "'24",
       "status": "IEEE TCASII",
