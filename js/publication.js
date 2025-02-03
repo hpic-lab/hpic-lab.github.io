@@ -22,7 +22,6 @@ $(document).ready(function () {
             ${authorsList}
           </span>
           <span><a href="${pub.link}" target="_blank"><b> ${pub.title}.</b></a></span>
-          <span> (${publicationSource}).</span>
         </div>
         `;
         container.append(pub_detail);
