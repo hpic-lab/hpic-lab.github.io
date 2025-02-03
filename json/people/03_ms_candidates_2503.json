@@ -32,5 +32,39 @@
     "email": "lan2137@hanyang.ac.kr",
     "profile_img": "img/kr-park-profile-img.png",
     "position": "M.S. Candidate"
+  },
+  {
+    "name": "Shin-Uk Kang",
+    "research_interests": ["AI hardware design and PIM"],
+    "tape_out_schedule": [
+      {
+        "date": "2023.12",
+        "process": "65-nm T"
+      },
+      {
+        "date": "2024.05",
+        "process": "28-nm T"
+      }
+    ],
+    "achievements": ["ICEIC'23", "ICEIC'24"],
+    "details": "Received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. He is currently pursuing a M.S -Ph.D. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include artificial intelligence hardware design and processing in memory (PIM).",
+    "email": "ksu2068@hanyang.ac.kr",
+    "profile_img": "img/su-kang-profile-img.jpg",
+    "position": "M.S.-Ph.D. Candidates"
+  },
+  {
+    "name": "Kang-Min Kim",
+    "research_interests": ["Physically Unclonable Function (PUF)"],
+    "tape_out_schedule": [
+      {
+        "date": "2024.05",
+        "process": "28-nm T"
+      }
+    ],
+    "achievements": [],
+    "details": "Received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. He is currently pursuing a M.S -Ph.D. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include hardware security.",
+    "email": "mim455@hanyang.ac.kr",
+    "profile_img": "img/km-kim-profile-img.jpg",
+    "position": "M.S.-Ph.D. Candidates"
   }
 ]
