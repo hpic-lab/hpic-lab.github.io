@@ -20,6 +20,7 @@
     "link": ""
   },
   {
+    "sub": "accepted",
     "type": "'24",
     "status": "ASSCC",
     "title": "A 14-to-32-Gb/s Deadzone-Free Referenceless CDR with Autocovariance-based Frequency Detector in 40-nm CMOS Technology",
@@ -29,6 +30,7 @@
     "link": "https://ieeexplore.ieee.org/document/10848602"
   },
   {
+    "sub": "accepted",
     "type": "'24",
     "status": "ISOCC",
     "title": "A 2T1C eDRAM-based Compute-In-Memory Macro with 8-to-1 Column Multiplexing Scheme for Highly Sparse Binarized Deep Neural Networks",
@@ -38,6 +40,7 @@
     "link": "https://ieeexplore.ieee.org/document/10762215"
   },
   {
+    "sub": "accepted",
     "type": "'24",
     "status": "DAC (WiP)",
     "title": "A General Purpose IMC Architecture with ADC-Awared Neural Networks",
@@ -47,6 +50,7 @@
     "link": ""
   },
   {
+    "sub": "accepted",
     "type": "'24",
     "status": "2024 SOC 학술대회",
     "title": "Vertical AND Cell Package: AND CiM 을 통한 BNN 운용 방법론",
@@ -56,6 +60,7 @@
     "link": ""
   },
   {
+    "sub": "accepted",
     "type": "'24",
     "status": "ICEIC",
     "title": "Analysis of ADC Quantization Effect in Processing-In-Memory Macro in Various Low-Precision Deep Neural Networks",
@@ -65,6 +70,7 @@
     "link": "https://ieeexplore.ieee.org/document/10457226"
   },
   {
+    "sub": "accepted",
     "type": "'24",
     "status": "ICEIC",
     "title": "Hardware and Software Co-Simulation Methodology for Processing-in-Memory Bitcell Application ",
@@ -74,6 +80,7 @@
     "link": "https://ieeexplore.ieee.org/document/10457160"
   },
   {
+    "sub": "accepted",
     "type": "'24",
     "status": "ICEIC",
     "title": "An Analysis of 32-Gb/s and Full-Rate Phase Interpolator based Clock and Data Recovery",
@@ -83,6 +90,7 @@
     "link": "https://ieeexplore.ieee.org/document/10457116"
   },
   {
+    "sub": "accepted",
     "type": "'24",
     "status": "KCS",
     "title": "Design of PAM4 Transmitter in 28-nm CMOS Technology",
@@ -92,6 +100,7 @@
     "link": ""
   },
   {
+    "sub": "accepted",
     "type": "'24",
     "status": "KCS",
     "title": "Technology of Channel Equalization at the Receiver in 28nm CMOS",
@@ -101,6 +110,7 @@
     "link": ""
   },
   {
+    "sub": "accepted",
     "type": "'24",
     "status": "KCS",
     "title": "Modeling of DSP-Based Receiver and Analysis Data Phase With Stochastic Method",
@@ -110,6 +120,7 @@
     "link": ""
   },
   {
+    "sub": "accepted",
     "type": "'23",
     "status": "하계학술대회",
     "title": "Analysis of Channel Equalization on High-Speed Serial Data Communication",
@@ -119,6 +130,7 @@
     "link": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11521991"
   },
   {
+    "sub": "accepted",
     "type": "'23",
     "status": "하계학술대회",
     "title": "PDR 기반 Injection Point에 따른 Injection-Locked Oscillator의 Locking Time 분석",
@@ -128,6 +140,7 @@
     "link": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11522007"
   },
   {
+    "sub": "accepted",
     "type": "'23",
     "status": "하계학술대회",
     "title": "Phase Domain Response 분석을 통한 Injection-Locked Oscillator의 Locking Point 예측",
@@ -137,6 +150,7 @@
     "link": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11521992"
   },
   {
+    "sub": "accepted",
     "type": "'23",
     "status": "ICEIC",
     "title": "Direct Phase Control in Digital Phase-Locked Loop Mitigating Loop Delay Effect inside Digital Filter",
@@ -146,6 +160,7 @@
     "link": "https://ieeexplore.ieee.org/document/10049900"
   },
   {
+    "sub": "accepted",
     "type": "'23",
     "status": "ICEIC",
     "title": "Radiation-Hardened Processing-In-Memory Crossbar Array With Hybrid Synapse Devices for Space Application",
@@ -155,6 +170,7 @@
     "link": "https://ieeexplore.ieee.org/document/10049920"
   },
   {
+    "sub": "accepted",
     "type": "'19",
     "status": "ISSCC",
     "title": "A Synthesizable Digital AOT 4-Phase Buck Voltage Regulator for Digital Systems with 0.0054mm2 Controller and 80ns Recovery Time",
@@ -170,6 +186,7 @@
     "link": "https://ieeexplore.ieee.org/abstract/document/8662453"
   },
   {
+    "sub": "accepted",
     "type": "'19",
     "status": "IEEE VLSIC",
     "title": "A 4-to-20Gb/s 1.87 pJ/b referenceless digital CDR with unlimited frequency detection capability in 65nm CMOS",
@@ -187,6 +204,7 @@
     "link": "https://ieeexplore.ieee.org/abstract/document/8778157"
   },
   {
+    "sub": "accepted",
     "type": "'17",
     "status": "ISSCC",
     "title": "A 2.5GHz injection-locked ADPLL with 197fsrms integrated jitter and −65dBc reference spur using time-division dual calibration",
@@ -205,6 +223,7 @@
     "link": "https://ieeexplore.ieee.org/abstract/document/7870477"
   },
   {
+    "sub": "accepted",
     "type": "'16",
     "status": "IEEE ISCAS",
     "title": "A theoretical analysis of phase shift in pulse injection-locked oscillators",
@@ -221,6 +240,7 @@
     "link": "https://ieeexplore.ieee.org/abstract/document/7538886"
   },
   {
+    "sub": "accepted",
     "type": "'15",
     "status": "ESSCIRC",
     "title": "A 5-GHz subharmonically injection-locked all-digital PLL with complementary switched injection",

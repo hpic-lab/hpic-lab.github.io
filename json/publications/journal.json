@@ -14,6 +14,7 @@
       "link": ""
     },
     {
+       "sub": "accepted",
       "type": "'24",
       "status": "IEEE TCASII",
       "title": "High-Precision Built-In Phase Noise Measurement Circuit with Hybrid ΔΣ Time-to-Digital Converter For SoC Clocking Applications",
@@ -30,6 +31,7 @@
       "link": "https://ieeexplore.ieee.org/abstract/document/10614194"
     },
     {
+       "sub": "accepted",
       "type": "'24",
       "status": "IEEE TCASI",
       "title": "A Compact Single-Channel 1 GS/s 8-Bit 3-Stage Capacitor Array-Assisted Charge-Injection DAC-Based SAR ADC ",
@@ -44,7 +46,7 @@
       "link": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10586762"
     },
     {
-       
+       "sub": "accepted",
       "type": "'24",
       "status": "IEEE TCASII",
       "title": "3.2-GHz Digital Phase-Locked Loop with Autocorrelation-based Direct Jitter Correction",
@@ -61,7 +63,7 @@
       "link": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10507171"
     },
     {
-       
+       "sub": "accepted",
       "type": "'24",
       "status": "JSTS",
       "title": "A 4.5-to-14 GHz PLL-Based Clock Driver with Wide-Range 3-Shaped LC-VCOs for DRAM Test",
@@ -71,7 +73,7 @@
       "link": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11825975"
     },
     {
-       
+       "sub": "accepted", 
       "type": "'22",
       "status": "IEEE ACCESS",
       "title": "An Automated Design Methodology for Ring Voltage-Controlled Oscillators in Nanometer CMOS Technologies",
@@ -86,7 +88,7 @@
       "link": "https://ieeexplore.ieee.org/abstract/document/10002363/"
     },  
   {
-     
+     "sub": "accepted", 
     "type": "'21",
     "status": "IEEE JSSC",
     "title": "A PVT Variation-Robust All-Digital Injection-Locked Clock Multiplier with Real-Time Offset Tracking using Time-Division Dual Calibration",
@@ -106,7 +108,7 @@
     "link": "https://ieeexplore.ieee.org/document/9386211"
   },
   {
-     
+     "sub": "accepted", 
     "type": "'21",
     "status": "IEEE JSSC",
     "title": "A 4-20-Gb/s 1.87-pJ/b Continuous-Rate Digital CDR Circuit With Unlimited Frequency Acquisition Capability in 65-nm CMOS",
@@ -124,7 +126,7 @@
     "link": "https://ieeexplore.ieee.org/abstract/document/9239394"
   },
   {
-     
+     "sub": "accepted", 
     "type": "'20",
     "status": "JSE",
     "title": "Review of Injection-Locked Oscillators",
@@ -137,7 +139,7 @@
     "link": "https://koreascience.kr/article/JAKO202021262090393.page"
   },
   {
-     
+     "sub": "accepted", 
     "type": "'19",
     "status": "IEEE TCASII",
     "title": "A 15-GHz, 17.8-mW, 213-fs Injection-Locked PLL With Maximized Injection Strength Using Adjustment of Phase Domain Response",
@@ -154,7 +156,7 @@
     "link": "https://koreascience.kr/article/JAKO202021262090393.page"
   },
   {
-     
+     "sub": "accepted", 
     "type": "'19",
     "status": "IEEE SSC-L",
     "title": "A Current-Mode Digital AOT 4-Phase Buck Voltage Regulator",
@@ -170,6 +172,7 @@
     "link": "https://ieeexplore.ieee.org/abstract/document/8771119"
   },
   {
+     "sub": "accepted",
     "type": "'18",
     "status": "IEEE JSSC",
     "title": "A 10-Gb/s, 0.03-mm2, 1.28-pJ/bit Half-Rate All-Digital Injection-Locked Clock and Data Recovery with Maximum Timing-Margin Tracking Loop",
@@ -185,6 +188,7 @@
     "link": "https://ieeexplore.ieee.org/abstract/document/8579270"
   },
   {
+     "sub": "accepted",
     "type": "'18",
     "status": "IEEE TCASII",
     "title": "An optimum injection-timing tracking loop for 5-GHz, 1.13-mW/GHz RO-based injection-locked PLL with 152-fs integrated jitter",
@@ -200,6 +204,7 @@
     "link": "https://ieeexplore.ieee.org/abstract/document/8514813"
   },
   {
+     "sub": "accepted",
     "type": "'18",
     "status": "IEEE TCASI",
     "title": "A 2.5–5.6 GHz subharmonically injection-locked all-digital PLL with dual-edge complementary switched injection",
@@ -217,6 +222,7 @@
     "link": "https://ieeexplore.ieee.org/abstract/document/8292824"
   },
   {
+     "sub": "accepted",
     "type": "'17",
     "status": "IEEE TCASII",
     "title": "A 55.1 mW 1.62-to-8.1 Gb/s video interface receiver generating up to 680 MHz stream clock over 20 dB loss channel",
@@ -235,6 +241,7 @@
     "link": "https://ieeexplore.ieee.org/abstract/document/8022928"
   },
   {
+     "sub": "accepted",
     "type": "'16",
     "status": "JSTS",
     "title": "A 285-fs rms Integrated Jitter Injection-Locked Ring PLL with Charge-Stored Complementary Switch Injection Technique",
