@@ -28,7 +28,7 @@
         "process": "40-nm T"
       }
     ],
-    "achievements": [],
+    "achievements": ["ICEIC'25 Best Paper Award - Silver Prize"],
     "details": "Received a B.S. degree in the school of electronics and communication engineering at Hanyang University, Ansan, South Korea. He is currently pursuing a Master's degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. He joined LX Semicon, Seoul, South Korea in 2016, where he was involved in the LCD DDI team. His research interests include digital and analog circuit design of Clock and Data Recovery (CDR) and digital circuit design of PAM4 Receiver with adaptive decision feedback equalizer.",
     "email": "noradlll@hanyang.ac.kr",
     "profile_img": "img/sh-ok-profile-img.jpg",
@@ -58,7 +58,7 @@
         "process": "28-nm S"
       }
     ],
-    "achievements": [],
+    "achievements": ["ICEIC'25"],
     "details": "Pursuing a Bachelor's degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. He will join the HPIC Design Lab. in the fall semester of 2024. His research interests include analog and digital circuit designs of phase-locked-loop (PLL).",
     "email": "ccomo7004@hanyang.ac.kr",
     "profile_img": "img/jh-pyeon-profile-img.png",
@@ -88,7 +88,7 @@
         "process": ""
       }
     ],
-    "achievements": [],
+    "achievements": ["ICEIC'25"],
     "details": "Received a B.S. degree in electrical engineering from Gachon University, Sungnam, South Korea. He is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include analog and digital circuit designs of phase-locked-loop (PLL).",
     "email": "inho0303@hanyang.ac.kr",
     "profile_img": "img/ih-han-profile-img.jpg",
