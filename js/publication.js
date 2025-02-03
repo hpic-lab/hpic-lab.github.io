@@ -15,13 +15,12 @@ $(document).ready(function () {
         <div class="pub-wrapper">
           <span class="pub-icon-box"><img src="img/pub-svg.svg"></span>
           <span class="badge text-bg-primary"> ${pub.type}</span>|
-          <span class="badge process-badge">${pub.status}</span>|
-          <span class="badge bg-success">${pub.registration}</span>
+          <span class="badge bg-success">${pub.status}</span>         
           <br>
           <span class="pub-author">
             ${authorsList}
           </span>
-          <span> (${pub.year}).</span>
+          <span> [${pub.sub}].</span>
           <span><a href="${pub.link}" target="_blank"><b> ${pub.title}.</b></a></span>
           <span> (${publicationSource}).</span>
         </div>
