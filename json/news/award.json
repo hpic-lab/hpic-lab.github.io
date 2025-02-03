@@ -84,9 +84,9 @@
     "id": 10,
     "img_src": "img/award/240130_ICEIC_허동회.jpg",
     "award_date": "20240130",
-    "award_name": "ICEIC 2024 International Conference",
+    "award_name": "Best Paper Awards - Gold Prize (2nd Place)",
     "recipient_name": "허동회, 김태현",
-    "award_content": "Best Paper Awards - Gold Prize (2nd Place)",
+    "award_content": "An Analysis of 32-Gb/s and Full-Rate Phase Interpolator based Clock and Data Recovery",
     "awarding_institution": "ICEIC International Conference"
   },
   {
@@ -109,8 +109,8 @@
   },
   {
     "id": 13,
-    "img_src": "img/HYU_logo.png",
-    "award_date": "20240620",
+    "img_src": "img/2024-1 Capstone Design Fair 공학대학 동상.png",
+    "award_date": "20241205",
     "award_name": "Capstone Design Fair 공학대학 동상",
     "recipient_name": "송민권, 이재건, 진승모",
     "award_content": "Efficient Processing in Memory design methodology with emulated neural networks for AI inferencing applications",
@@ -139,5 +139,15 @@
     "award_material": "발표자료",
     "award_status": "상장",
     "awarding_institution": "한양대학교 전자공학부 반도체전공트랙사업단"
+  },
+  {
+  "id": 16,
+  "img_src": "img/award/ICEIC2025_Silver_shok.png",
+  "award_date": "20250121",
+  "award_name": "ICEIC 2025 Best Paper Award Silver Prize",
+  "recipient_name": "옥상현",
+  "award_content": "An implementation of a DSP-Based PAM-4 Digital Equalizer With 32-Way TI-ADC",
+  "awarding_institution": "ICEIC International Conference"
   }
+  
 ]
