@@ -11,6 +11,14 @@ $(document).ready(function () {
 
         const publicationSource = pub.journal ? pub.journal : pub.conference;
 
+        //사진 테스트용
+        const figures = pub.figure
+        ? pub.figure
+            .map((img) => `<img src="img/${img}" class="pub-figure" alt="Figure">`)
+            .join("")
+        : "";
+        //////////////
+        
         const pub_detail = `
         <div class="pub-wrapper">
           <span class="pub-icon-box"><img src="img/pub-svg.svg"></span>
