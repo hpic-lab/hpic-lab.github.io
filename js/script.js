@@ -245,15 +245,3 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-const figure = document.createElement("figure");
-figure.textContent = `
-  .pub-figure {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin: 5px;
-    border: 2px solid #ccc;
-  }
-`;
-document.head.appendChild(figure);
