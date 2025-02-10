@@ -1,6 +1,58 @@
 
   [
     {
+      "sub": "in preparation",
+      "type": "'25",
+      "status": "IEEE JSSC",
+      "title": "",
+      "image": "",
+      "journal": "IEEE JSSC",
+      "authors": [
+        "Jae-Hyeon Pyeon...", 
+        "Min-Seong Choo. in preparation"
+      ],
+      "link": ""
+    },
+    {
+      "sub": "in preparation",
+      "type": "'25",
+      "status": "IEEE TCASI",
+      "title": "",
+      "image": "",
+      "journal": "IEEE TCASI",
+      "authors": [
+        "Sang-Hyeon Ok...", 
+        "Min-Seong Choo. in preparation"
+      ],
+      "link": ""
+    },
+    {
+      "sub": "in preparation",
+      "type": "'25",
+      "status": "IEEE TCASI",
+      "title": "",
+      "image": "",
+      "journal": "IEEE TCASI",
+      "authors": [
+        "Dong-Ho Kim, Seung-Mo Jin...", 
+        "Min-Seong Choo. in preparation"
+      ],
+      "link": ""
+    },
+    {
+      "sub": "submitted",
+      "type": "'25",
+      "status": "IEEE TVLSI",
+      "title": "",
+      "image": "",
+      "journal": "IEEE TVLSI",
+      "authors": [
+        "Ji-Ho Kim...", 
+        "Min-Seong Choo. Submitted"
+      ],
+      "link": ""
+    },
+    {
       "sub": "submitted",
       "type": "'25",
       "status": "IEEE JSSC",
