@@ -63,7 +63,7 @@
         "Jae-Geon Lee...", 
         "Min-Seong Choo. Submitted"
       ],
-      "figure": ["HYU_logo.png", "HYU_logo.png"],
+      
       "link": ""
     },
     {
@@ -81,6 +81,7 @@
         "Michael Choi",
         "Min-Seong Choo and Jeongjin Roh"
       ],
+      "figure": ["minseong-chu-profile-img.png"],
       "link": "https://ieeexplore.ieee.org/abstract/document/10614194"
     },
     {
@@ -96,6 +97,7 @@
         "Kyojin Choo",
         "Min-Seong Choo"
       ],
+      "figure": ["yj-byeon-profile-img.png","minseong-chu-profile-img.png"],
       "link": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10586762"
     },
     {
@@ -113,6 +115,7 @@
         "Jaeduk Han",
         "Min-Seong Choo"
       ],
+      "figure": ["minseong-chu-profile-img.png"],
       "link": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10507171"
     },
     {
@@ -123,6 +126,7 @@
       "image": "",
       "journal": "JSTS",
       "authors": ["Chan-Ho Kye", "Jihee Kim", "Deog-Kyoon Jeong", "Min-Seong Choo"],
+      "figure": ["minseong-chu-profile-img.png"],
       "link": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11825975"
     },
     {
@@ -138,6 +142,7 @@
         "Jaeduk Han",
         "Min-Seong Choo"
       ],
+      "figure": ["minseong-chu-profile-img.png"],
       "link": "https://ieeexplore.ieee.org/abstract/document/10002363/"
     },  
   {
@@ -158,6 +163,7 @@
       "H. Chi",
       "D.-K. Jeong"
     ],
+    "figure": ["minseong-chu-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/document/9386211"
   },
   {
@@ -176,6 +182,7 @@
       "M.-S. Choo",
       "D.-K. Jeong"
     ],
+    "figure": ["minseong-chu-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/abstract/document/9239394"
   },
   {
@@ -189,6 +196,7 @@
       "M.-S. Choo",
       "D.-K. Jeong"
     ],
+    "figure": ["minseong-chu-profile-img.png"],
     "link": "https://koreascience.kr/article/JAKO202021262090393.page"
   },
   {
@@ -206,6 +214,7 @@
       "K. Park",
       "D.-K. Jeong"
     ],
+    "figure": ["minseong-chu-profile-img.png"],
     "link": "https://koreascience.kr/article/JAKO202021262090393.page"
   },
   {
@@ -222,6 +231,7 @@
       "M.-S. Choo",
       "D.-K. Jeong"
     ],
+    "figure": ["minseong-chu-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/abstract/document/8771119"
   },
   {
@@ -238,6 +248,7 @@
       "K. Lee",
       "D.-K. Jeong"
     ],
+    "figure": ["minseong-chu-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/abstract/document/8579270"
   },
   {
@@ -254,6 +265,7 @@
       "K. Lee",
       "D.-K. Jeong"
     ],
+    "figure": ["minseong-chu-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/abstract/document/8514813"
   },
   {
@@ -272,6 +284,7 @@
       "W. Bae",
       "D.-K. Jeong"
     ],
+    "figure": ["minseong-chu-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/abstract/document/8292824"
   },
   {
@@ -291,6 +304,7 @@
       "S. Kim",
       "D.-K. Jeong"
     ],
+    "figure": ["minseong-chu-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/abstract/document/8022928"
   },
   {
@@ -309,6 +323,7 @@
       "W. Bae",
       "D.-K. Jeong"
     ],
+    "figure": ["minseong-chu-profile-img.png"],
     "link": "https://koreascience.kr/article/JAKO201607959403082.page"
   }
 ]
