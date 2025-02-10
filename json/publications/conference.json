@@ -38,7 +38,7 @@
     "image": "",
     "conference": "ISOCC 2024",
     "authors": ["Shin-Uk Kang", "Seung-Mo Jin", "Min-Gwon Song", "Dong-Hyun Lee", "Woo-Suk Jung", "Min-Seong Choo"],
-    "figure": ["su-kang-profile-img.jpg", "sm-jin-profile-img.png", "mg-song-profile-img.jpg", "dh-lee-profile-img.png", "ws-jeong-profile-img.png", "minseong-chu-profile-img.png"],
+    "figure": ["su-kang-profile-img.jpg", "sm-jin-profile-img.png", "mg-song-profile-img.jpg", "dh-lee-profile-img.png", "minseong-chu-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/document/10762215"
   },
   {
@@ -60,7 +60,7 @@
     "image": "",
     "journal": "2024 SOC 학술대회",
     "authors": ["Min-Gwon Song", "Jae-Geon Lee", "Seung-Mo Jin", "Min-Seong Choo"],
-    "figure": ["mg-song-profile-img.jpg", "jg-lee-profile-img.jpg", "sm-jin-profile-img.png", "minseong-chu-profile-img.png"],
+    "figure": ["mg-song-profile-img.jpg", "jg-lee-profile-img.jpeg", "sm-jin-profile-img.png", "minseong-chu-profile-img.png"],
     "link": "https://drive.google.com/file/d/1aC8FmySN5FQz4NIIZGNZot0416-Uqh-s/view"
   },
   {
@@ -148,7 +148,7 @@
     "image": "",
     "conference": "2023 하계학술대회",
     "authors": ["Seung-Wan Han", "Geun Young You", "Jae-Gun Lee", "Min-Gwon Song", "Min-Seong Choo"],
-    "figure": ["jg-lee-profile-img.jpg", "mg-song-profile-img.jpg", "minseong-chu-profile-img.png"],
+    "figure": ["jg-lee-profile-img.jpeg", "mg-song-profile-img.jpg", "minseong-chu-profile-img.png"],
     "link": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11522007"
   },
   {
