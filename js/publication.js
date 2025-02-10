@@ -29,6 +29,9 @@ $(document).ready(function () {
             ${authorsList}
           </span>
           <span><a href="${pub.link}" target="_blank"><b> ${pub.title}.</b></a></span>
+          <div class="pub-figures">
+          ${figures} <!-- 이미지 추가 -->
+          </div>
         </div>
         `;
         container.append(pub_detail);
