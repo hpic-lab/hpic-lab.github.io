@@ -71,10 +71,11 @@
     
     
     <style>
- .pub-figures {
-    display: block; /* 블록 요소로 설정 */
-    margin-top: 10px; /* 텍스트와 이미지 간의 간격 추가 */
-    text-align: left; /* 이미지 정렬 (왼쪽으로 맞춤) */
+  .pub-figures {
+    display: flex; /* Flexbox로 이미지 가로 정렬 */
+    justify-content: flex-start; /* 왼쪽 정렬 */
+    gap: 10px; /* 이미지 간 간격 */
+    margin-top: 10px; /* 텍스트와 이미지 간 간격 */
   }
 
   .pub-figure {
