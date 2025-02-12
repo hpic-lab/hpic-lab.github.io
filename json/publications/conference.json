@@ -70,7 +70,7 @@
     "title": "Analysis of ADC Quantization Effect in Processing-In-Memory Macro in Various Low-Precision Deep Neural Networks",
     "image": "",
     "journal": "ICEIC 2024",
-    "authors": ["S.-M. Jin", "S.-U. Kang", "M.-S. Choo"],
+    "authors": ["Seung-Mo Jin", "Shin-Uk Kang", "Min-Seong Choo"],
     "figure": ["sm-jin-profile-img.png", "su-kang-profile-img.jpg", "minseong-chu-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/document/10457226"
   },
@@ -81,7 +81,7 @@
     "title": "Hardware and Software Co-Simulation Methodology for Processing-in-Memory Bitcell Application ",
     "image": "",
     "journal": "ICEIC 2024",
-    "authors": ["J.-G. Lee", "S.-U. Kang", "M.-S. Choo"],
+    "authors": ["Jae-Geon Lee", "Shin-Uk Kang", "Min-Seong Choo"],
     "figure": ["jg-lee-profile-img.jpeg", "su-kang-profile-img.jpg", "minseong-chu-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/document/10457160"
   },
