@@ -2,7 +2,7 @@
   [
     {
       "sub": "in preparation",
-      "type": "'25",
+      "type": "2025",
       "status": "IEEE JSSC",
       "title": "",
       "image": "",
@@ -11,11 +11,12 @@
         "Jae-Hyeon Pyeon...", 
         "Min-Seong Choo. in preparation"
       ],
+      "figure": [ "jh-pyeon-profile-img.png", "ih-han-profile-img.jpg", "minseong-chu-profile-img.png"],
       "link": ""
     },
     {
       "sub": "in preparation",
-      "type": "'25",
+      "type": "2025",
       "status": "IEEE TCASI",
       "title": "",
       "image": "",
@@ -24,11 +25,12 @@
         "Sang-Hyun Ok...", 
         "Min-Seong Choo. in preparation"
       ],
+      "figure": [ "sh-ok-profile-img.jpg", "jg-lee-profile-img.jpeg", "minseong-chu-profile-img.png"],
       "link": ""
     },
     {
       "sub": "in preparation",
-      "type": "'25",
+      "type": "2025",
       "status": "IEEE TCASI",
       "title": "",
       "image": "",
@@ -37,11 +39,12 @@
         "Dong-Ho Kim, Seung-Mo Jin...", 
         "Min-Seong Choo. in preparation"
       ],
+      "figure": ["sm-jin-profile-img.png", "dh-kim-profile-img.jpg", "minseong-chu-profile-img.png"],
       "link": ""
     },
     {
       "sub": "submitted",
-      "type": "'25",
+      "type": "2025",
       "status": "IEEE TVLSI",
       "title": "",
       "image": "",
@@ -50,11 +53,12 @@
         "Ji-Ho Kim...", 
         "Min-Seong Choo. Submitted"
       ],
+      "figure": ["jh-kim-profile-img.png", "minseong-chu-profile-img.png"],
       "link": ""
     },
     {
       "sub": "submitted",
-      "type": "'25",
+      "type": "2025",
       "status": "IEEE JSSC",
       "title": "",
       "image": "",
@@ -63,12 +67,12 @@
         "Jae-Geon Lee...", 
         "Min-Seong Choo. Submitted"
       ],
-      
+      "figure": ["jg-lee-profile-img.jpeg", "sh-gong-profile-img.jpg", "minseong-chu-profile-img.png"],
       "link": ""
     },
     {
     
-      "type": "'24",
+      "type": "2024",
       "status": "IEEE TCASII",
       "title": "High-Precision Built-In Phase Noise Measurement Circuit with Hybrid ΔΣ Time-to-Digital Converter For SoC Clocking Applications",
       "image": "",
@@ -86,7 +90,7 @@
     },
     {
     
-      "type": "'24",
+      "type": "2024",
       "status": "IEEE TCASI",
       "title": "A Compact Single-Channel 1 GS/s 8-Bit 3-Stage Capacitor Array-Assisted Charge-Injection DAC-Based SAR ADC ",
       "image": "",
@@ -102,7 +106,7 @@
     },
     {
     
-      "type": "'24",
+      "type": "2024",
       "status": "IEEE TCASII",
       "title": "3.2-GHz Digital Phase-Locked Loop with Autocorrelation-based Direct Jitter Correction",
       "image": "",
@@ -120,7 +124,7 @@
     },
     {
     
-      "type": "'24",
+      "type": "2024",
       "status": "JSTS",
       "title": "A 4.5-to-14 GHz PLL-Based Clock Driver with Wide-Range 3-Shaped LC-VCOs for DRAM Test",
       "image": "",
@@ -131,7 +135,7 @@
     },
     {
      
-      "type": "'22",
+      "type": "2022",
       "status": "IEEE ACCESS",
       "title": "An Automated Design Methodology for Ring Voltage-Controlled Oscillators in Nanometer CMOS Technologies",
       "image": "img/j11.png",
@@ -147,7 +151,7 @@
     },  
   {
    
-    "type": "'21",
+    "type": "2021",
     "status": "IEEE JSSC",
     "title": "A PVT Variation-Robust All-Digital Injection-Locked Clock Multiplier with Real-Time Offset Tracking using Time-Division Dual Calibration",
     "image": "img/j10.png",
@@ -168,7 +172,7 @@
   },
   {
    
-    "type": "'21",
+    "type": "2021",
     "status": "IEEE JSSC",
     "title": "A 4-20-Gb/s 1.87-pJ/b Continuous-Rate Digital CDR Circuit With Unlimited Frequency Acquisition Capability in 65-nm CMOS",
     "image": "img/j9.png",
@@ -187,7 +191,7 @@
   },
   {
    
-    "type": "'20",
+    "type": "2020",
     "status": "JSE",
     "title": "Review of Injection-Locked Oscillators",
     "image": "img/j8.png",
@@ -201,7 +205,7 @@
   },
   {
    
-    "type": "'19",
+    "type": "2019",
     "status": "IEEE TCASII",
     "title": "A 15-GHz, 17.8-mW, 213-fs Injection-Locked PLL With Maximized Injection Strength Using Adjustment of Phase Domain Response",
     "image": "img/j7.png",
@@ -219,7 +223,7 @@
   },
   {
    
-    "type": "'19",
+    "type": "2019",
     "status": "IEEE SSC-L",
     "title": "A Current-Mode Digital AOT 4-Phase Buck Voltage Regulator",
     "image": "img/j5.png",
@@ -236,7 +240,7 @@
   },
   {
   
-    "type": "'18",
+    "type": "2018",
     "status": "IEEE JSSC",
     "title": "A 10-Gb/s, 0.03-mm2, 1.28-pJ/bit Half-Rate All-Digital Injection-Locked Clock and Data Recovery with Maximum Timing-Margin Tracking Loop",
     "image": "img/c4.png",
@@ -253,7 +257,7 @@
   },
   {
   
-    "type": "'18",
+    "type": "2018",
     "status": "IEEE TCASII",
     "title": "An optimum injection-timing tracking loop for 5-GHz, 1.13-mW/GHz RO-based injection-locked PLL with 152-fs integrated jitter",
     "image": "img/j4.png",
@@ -270,7 +274,7 @@
   },
   {
   
-    "type": "'18",
+    "type": "2018",
     "status": "IEEE TCASI",
     "title": "A 2.5–5.6 GHz subharmonically injection-locked all-digital PLL with dual-edge complementary switched injection",
     "image": "img/j3.png",
@@ -289,7 +293,7 @@
   },
   {
   
-    "type": "'17",
+    "type": "2017",
     "status": "IEEE TCASII",
     "title": "A 55.1 mW 1.62-to-8.1 Gb/s video interface receiver generating up to 680 MHz stream clock over 20 dB loss channel",
     "image": "img/j2.png",
@@ -309,7 +313,7 @@
   },
   {
   
-    "type": "'16",
+    "type": "2016",
     "status": "JSTS",
     "title": "A 285-fs rms Integrated Jitter Injection-Locked Ring PLL with Charge-Stored Complementary Switch Injection Technique",
     "image": "img/j1.png",

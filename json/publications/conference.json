@@ -1,27 +1,29 @@
 [
   {
     "sub": "submitted",
-    "type": "'25",
+    "type": "2025",
     "status": "IEEE VLSIC",
     "title": "",
     "image": "",
     "conference": "VLSIC 2025",
     "authors": ["Shin-Uk Kang...", "Min-Seong Choo. Submitted"],
+    "figure": ["su-kang-profile-img.jpg", "dh-lee-profile-img.png", "sw-kwon-profile-image.jpeg", "sh-kim-profile-image.jpg", "dj-kwak-profile-image.jpg", "minseong-chu-profile-img.png"],
     "link": ""
   },
   {
     "sub": "submitted",
-    "type": "'25",
+    "type": "2025",
     "status": "IEEE VLSIC",
     "title": "",
     "image": "",
     "conference": "VLSIC 2025",
     "authors": ["Jihun Choi...", "Min-Seong Choo. Submitted"],
+    "figure": ["jh-kim-profile-img.png", "minseong-chu-profile-img.png"],
     "link": ""
   },
   {
  
-    "type": "'24",
+    "type": "2024",
     "status": "ASSCC",
     "title": "A 14-to-32-Gb/s Deadzone-Free Referenceless CDR with Autocovariance-based Frequency Detector in 40-nm CMOS Technology",
     "image": "",
@@ -32,7 +34,7 @@
   },
   {
  
-    "type": "'24",
+    "type": "2024",
     "status": "ISOCC",
     "title": "A 2T1C eDRAM-based Compute-In-Memory Macro with 8-to-1 Column Multiplexing Scheme for Highly Sparse Binarized Deep Neural Networks",
     "image": "",
@@ -43,7 +45,7 @@
   },
   {
  
-    "type": "'24",
+    "type": "2024",
     "status": "DAC (WiP)",
     "title": "A General Purpose IMC Architecture with ADC-Awared Neural Networks",
     "image": "",
@@ -54,7 +56,7 @@
   },
   {
  
-    "type": "'24",
+    "type": "2024",
     "status": "2024 SOC 학술대회",
     "title": "Vertical AND Cell Package: AND CiM 을 통한 BNN 운용 방법론",
     "image": "",
@@ -65,7 +67,7 @@
   },
   {
  
-    "type": "'24",
+    "type": "2024",
     "status": "ICEIC",
     "title": "Analysis of ADC Quantization Effect in Processing-In-Memory Macro in Various Low-Precision Deep Neural Networks",
     "image": "",
@@ -76,7 +78,7 @@
   },
   {
  
-    "type": "'24",
+    "type": "2024",
     "status": "ICEIC",
     "title": "Hardware and Software Co-Simulation Methodology for Processing-in-Memory Bitcell Application ",
     "image": "",
@@ -87,7 +89,7 @@
   },
   {
  
-    "type": "'24",
+    "type": "2024",
     "status": "ICEIC",
     "title": "An Analysis of 32-Gb/s and Full-Rate Phase Interpolator based Clock and Data Recovery",
     "image": "",
@@ -98,7 +100,7 @@
   },
   {
  
-    "type": "'24",
+    "type": "2024",
     "status": "KCS",
     "title": "Design of PAM4 Transmitter in 28-nm CMOS Technology",
     "image": "",
@@ -109,7 +111,7 @@
   },
   {
  
-    "type": "'24",
+    "type": "2024",
     "status": "KCS",
     "title": "Technology of Channel Equalization at the Receiver in 28nm CMOS",
     "image": "",
@@ -120,7 +122,7 @@
   },
   {
  
-    "type": "'24",
+    "type": "2024",
     "status": "KCS",
     "title": "Modeling of DSP-Based Receiver and Analysis Data Phase With Stochastic Method",
     "image": "",
@@ -131,7 +133,7 @@
   },
   {
  
-    "type": "'23",
+    "type": "2023",
     "status": "하계학술대회",
     "title": "Analysis of Channel Equalization on High-Speed Serial Data Communication",
     "image": "",
@@ -142,7 +144,7 @@
   },
   {
  
-    "type": "'23",
+    "type": "2023",
     "status": "하계학술대회",
     "title": "PDR 기반 Injection Point에 따른 Injection-Locked Oscillator의 Locking Time 분석",
     "image": "",
@@ -153,7 +155,7 @@
   },
   {
  
-    "type": "'23",
+    "type": "2023",
     "status": "하계학술대회",
     "title": "Phase Domain Response 분석을 통한 Injection-Locked Oscillator의 Locking Point 예측",
     "image": "",
@@ -164,7 +166,7 @@
   },
   {
  
-    "type": "'23",
+    "type": "2023",
     "status": "ICEIC",
     "title": "Direct Phase Control in Digital Phase-Locked Loop Mitigating Loop Delay Effect inside Digital Filter",
     "image": "",
@@ -175,7 +177,7 @@
   },
   {
  
-    "type": "'23",
+    "type": "2023",
     "status": "ICEIC",
     "title": "Radiation-Hardened Processing-In-Memory Crossbar Array With Hybrid Synapse Devices for Space Application",
     "image": "",
@@ -186,7 +188,7 @@
   },
   {
  
-    "type": "'19",
+    "type": "2019",
     "status": "ISSCC",
     "title": "A Synthesizable Digital AOT 4-Phase Buck Voltage Regulator for Digital Systems with 0.0054mm2 Controller and 80ns Recovery Time",
     "image": "img/c5.png",
@@ -203,7 +205,7 @@
   },
   {
  
-    "type": "'19",
+    "type": "2019",
     "status": "IEEE VLSIC",
     "title": "A 4-to-20Gb/s 1.87 pJ/b referenceless digital CDR with unlimited frequency detection capability in 65nm CMOS",
     "image": "img/c6.png",
@@ -222,7 +224,7 @@
   },
   {
  
-    "type": "'17",
+    "type": "2017",
     "status": "ISSCC",
     "title": "A 2.5GHz injection-locked ADPLL with 197fsrms integrated jitter and −65dBc reference spur using time-division dual calibration",
     "image": "img/c3.png",
@@ -242,7 +244,7 @@
   },
   {
  
-    "type": "'16",
+    "type": "2016",
     "status": "IEEE ISCAS",
     "title": "A theoretical analysis of phase shift in pulse injection-locked oscillators",
     "image": "img/c2.png",
@@ -260,7 +262,7 @@
   },
   {
  
-    "type": "'15",
+    "type": "2015",
     "status": "ESSCIRC",
     "title": "A 5-GHz subharmonically injection-locked all-digital PLL with complementary switched injection",
     "image": "img/c1.png",
