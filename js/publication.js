@@ -48,6 +48,14 @@ $(document).ready(function () {
           .map((inventor) => `<span>${inventor}</span>`)
           .join(", ");
 
+        //사진
+        const figures = pub.figure
+        ? pub.figure
+            .map((img) => `<img src="img/${img}" class="pub-figure" alt="Figure">`)
+            .join("")
+        : "";
+        //////////////
+
         const pub_detail = `
         <div class="pub-wrapper">
           <span class="pub-icon-box"><img src="img/pub-svg.svg"></span>
@@ -60,6 +68,9 @@ $(document).ready(function () {
           </span>
           <span> (${pub.year}).</span>
           <span><b> ${pub.title}.</b></span>
+          <div class="pub-figures">
+          ${figures} <!-- 이미지 추가 -->
+          </div>
         </div>
         `;
         container.append(pub_detail);
