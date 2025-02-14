@@ -23,7 +23,8 @@ $(document).ready(function () {
         <div class="pub-wrapper">
           <span class="pub-icon-box"><img src="img/pub-svg.svg"></span>
           <span class="badge text-bg-primary"> ${pub.type}</span>|
-          <span class="badge bg-success">${pub.status}</span>
+          <span class="badge bg-success">${pub.status}</span>|
+          <span class="badge bg-success">${pub.registration}</span>
           <br>
           <span class="pub-author">
             ${authorsList}
