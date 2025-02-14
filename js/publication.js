@@ -19,14 +19,13 @@ $(document).ready(function () {
         : "";
         //////////////
 
-        const submission = pub.sub ? pub.sub : "available";
+        
 
         const pub_detail = `
         <div class="pub-wrapper">
           <span class="pub-icon-box"><img src="img/pub-svg.svg"></span>
           <span class="badge text-bg-primary"> ${pub.type}</span>|
           <span class="badge bg-success">${pub.status}</span>|
-          <span class="badge process-badge">${submission}</span>
           <br>
           <span class="pub-author">
             ${authorsList}
