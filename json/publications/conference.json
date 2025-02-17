@@ -188,6 +188,23 @@
   },
   {
  
+    "type": "2022",
+    "status": "ESSCIRC",
+    "title": "A− 247.1 dB FoM,− 77.9 dBc Reference Spur Ring-Oscillator-Based Injection-Locked Clock Multiplier with Multi-Phase-Based Calibration",
+    "image": "img/c1.png",
+    "journal": "European Solid-State Circuits Conference (ESSCIRC)",
+    "authors": [
+      "Yeong-Geun Sonn",
+      "Kyoung-Joon Ha",
+      "Han-Gon Ko",
+      "Min-Seong Choo",
+      "Deog-Kyoon Jeong"
+    ],
+    "figure": ["minseong-chu-profile-img.png"],
+    "link": "https://ieeexplore.ieee.org/abstract/document/9911362"
+  },
+  {
+ 
     "type": "2019",
     "status": "ISSCC",
     "title": "A Synthesizable Digital AOT 4-Phase Buck Voltage Regulator for Digital Systems with 0.0054mm2 Controller and 80ns Recovery Time",
@@ -221,6 +238,17 @@
     ],
     "figure": ["minseong-chu-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/abstract/document/8778157"
+  },
+  {
+ 
+    "type": "2018",
+    "status": "ASSCC",
+    "title": "A 10-Gb/s, 0.03-mm2, 1.28-pJ/bit Half-Rate All-Digital Injection-Locked Clock and Data Recovery with Maximum Timing-Margin Tracking Loop",
+    "image": "",
+    "conference": "ASSCC 2018",
+    "authors": ["Min-Seong Choo", "Han-Gon Ko", "Sung-Yong Cho", "Kwang-Ho Lee", "Deog-Kyoon Jeong"],
+    "figure": ["minseong-chu-profile-img.png"],
+    "link": "https://ieeexplore.ieee.org/abstract/document/8579270"
   },
   {
  
