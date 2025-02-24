@@ -185,7 +185,7 @@ $(document).ready(function () {
   function adjustFontSize() {
     const minWidth = 320;      // 최소 창 너비 (px)
     const maxWidth = 1920;     // 최대 창 너비 (px)
-    const minFontSize = 8;    // 최소 폰트 크기 (px)
+    const minFontSize = 1;    // 최소 폰트 크기 (px)
     const maxFontSize = 24;    // 최대 폰트 크기 (px)
   
     // 현재 창 너비와 확대/축소 비율(devicePixelRatio)을 가져옴
