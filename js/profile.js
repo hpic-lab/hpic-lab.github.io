@@ -182,6 +182,32 @@ $(document).ready(function () {
     }
   }
 
+  // 창 크기에 따라 폰트 크기를 동적으로 조절하는 함수
+  function adjustFontSize() {
+    const minWidth = 320;      // 최소 창 너비 (px)
+    const maxWidth = 1920;     // 최대 창 너비 (px)
+    const minFontSize = 16;    // 최소 폰트 크기 (px)
+    const maxFontSize = 24;    // 최대 폰트 크기 (px)
+
+    let width = window.innerWidth;
+    let newFontSize;
+    
+    if (width <= minWidth) {
+      newFontSize = minFontSize;
+    } else if (width >= maxWidth) {
+      newFontSize = maxFontSize;
+    } else {
+      newFontSize = minFontSize + (maxFontSize - minFontSize) * ((width - minWidth) / (maxWidth - minWidth));
+    }
+    document.documentElement.style.fontSize = newFontSize + "px";
+  }
+
+  // 초기 폰트 사이즈 설정 및 창 크기 변경 이벤트 등록
+  adjustFontSize();
+  $(window).on("resize", adjustFontSize);
+
+
+
   // 교수님 및 학생 프로필 로드
   loadProfiles(
     "json/people/00_principal_investigator.json",
