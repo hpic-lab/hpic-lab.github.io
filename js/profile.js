@@ -182,34 +182,32 @@ $(document).ready(function () {
     }
   }
 
-// 창 크기와 브라우저 확대/축소 비율에 따라 폰트 크기를 동적으로 조절하는 함수
-function adjustFontSize() {
-  const minWidth = 320;      // 최소 창 너비 (px)
-  const maxWidth = 1920;     // 최대 창 너비 (px)
-  const minFontSize = 16;    // 최소 폰트 크기 (px)
-  const maxFontSize = 24;    // 최대 폰트 크기 (px)
-
-  // 현재 창 너비와 확대/축소 비율(devicePixelRatio)을 가져옴
-  let width = window.innerWidth;
-  let zoom = window.devicePixelRatio || 1;
-  let newFontSize;
+  function adjustFontSize() {
+    const minWidth = 320;      // 최소 창 너비 (px)
+    const maxWidth = 1920;     // 최대 창 너비 (px)
+    const minFontSize = 16;    // 최소 폰트 크기 (px)
+    const maxFontSize = 24;    // 최대 폰트 크기 (px)
   
-  if (width <= minWidth) {
-    newFontSize = minFontSize;
-  } else if (width >= maxWidth) {
-    newFontSize = maxFontSize;
-  } else {
-    newFontSize = minFontSize + (maxFontSize - minFontSize) * ((width - minWidth) / (maxWidth - minWidth));
+    // 현재 창 너비와 확대/축소 비율(devicePixelRatio)을 가져옴
+    let width = window.innerWidth;
+    let zoom = window.devicePixelRatio || 1;
+    let newFontSize;
+    
+    if (width <= minWidth) {
+      newFontSize = minFontSize;
+    } else if (width >= maxWidth) {
+      newFontSize = maxFontSize;
+    } else {
+      newFontSize = minFontSize + (maxFontSize - minFontSize) * ((width - minWidth) / (maxWidth - minWidth));
+    }
+    // 확대/축소 비율을 반영하여 폰트 크기 조절
+    newFontSize = newFontSize * zoom;
+    document.documentElement.style.fontSize = newFontSize + "px";
   }
-  // 확대/축소 비율을 반영하여 폰트 크기 조절
-  newFontSize = newFontSize * zoom;
-  document.documentElement.style.fontSize = newFontSize + "px";
-}
-
-// DOM이 준비되면 폰트 크기 조절 함수 실행 및 resize 이벤트에 연결
-$(document).ready(function () {
   adjustFontSize();
   $(window).on("resize", adjustFontSize);
+
+
 
 
   // 교수님 및 학생 프로필 로드
