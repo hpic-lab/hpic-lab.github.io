@@ -245,3 +245,29 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+function adjustFontSize() {
+  const minWidth = 320;      // 최소 창 너비 (px)
+  const maxWidth = 1920;     // 최대 창 너비 (px)
+  const minFontSize = 16;    // 최소 폰트 크기 (px)
+  const maxFontSize = 24;    // 최대 폰트 크기 (px)
+
+  let width = window.innerWidth;
+  let newFontSize;
+  
+  if (width <= minWidth) {
+    newFontSize = minFontSize;
+  } else if (width >= maxWidth) {
+    newFontSize = maxFontSize;
+  } else {
+    newFontSize = minFontSize + (maxFontSize - minFontSize) * ((width - minWidth) / (maxWidth - minWidth));
+  }
+  document.documentElement.style.fontSize = newFontSize + "px";
+}
+
+// DOM이 준비되면 폰트 크기 조절 함수 실행 및 resize 이벤트에 연결
+document.addEventListener("DOMContentLoaded", function () {
+  adjustFontSize();
+  window.addEventListener("resize", adjustFontSize);
+
+  // 기존의 hover, 클릭 등 나머지 스크립트 코드들 ...
+});
