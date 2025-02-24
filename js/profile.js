@@ -13,6 +13,9 @@ $(document).ready(function () {
 
   // 프로필 HTML 생성 함수
   function createProfileHTML(person) {
+    const name = person.name;
+    const position = person.position;
+
     return `
       <div class="col-12 col-lg-3">
         <img
@@ -34,8 +37,8 @@ $(document).ready(function () {
           data-position="${person.position}"
         />
         <div class="portrait-title">
-          <h2>${person.name}</h2>
-          <h3>${person.position}</h3>
+          <h2>${name}</h2> 
+          <h3>${position}</h3>
           <ul class="network-icon" aria-hidden="true">
             ${createNetworkIcons(person)}
           </ul>
