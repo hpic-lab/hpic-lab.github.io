@@ -23,6 +23,17 @@
   },
   {
  
+    "type": "2025",
+    "status": "ICEIC",
+    "title": "An Implementation of a DSP-Based PAM-4 Digital Equalizer with 32-Way TI-ADC",
+    "image": "",
+    "conference": "ICEIC 2025",
+    "authors": ["Sang-Hyeon Ok", "Dong-Hoe Heo", "Jae-Geon Lee", "Seung-Mo Jin", "Kwang-ho Lee" ,"Daniel Jeong" ,"Min-Seong Choo"],
+    "figure": ["sh-ok-profile-img.jpg", "dh-heo-profile-img.jpg", "jg-lee-profile-img.jpeg", "sm-jin-profile-img.png", "minseong-chu-profile-img.png"],
+    "link": "https://ieeexplore.ieee.org/document/10457116"
+  },
+  {
+ 
     "type": "2024",
     "status": "ASSCC",
     "title": "A 14-to-32-Gb/s Deadzone-Free Referenceless CDR with Autocovariance-based Frequency Detector in 40-nm CMOS Technology",
