@@ -25,6 +25,7 @@
  
     "type": "2025",
     "status": "ICEIC",
+    "award": "Best Paper Award",
     "title": "An Implementation of a DSP-Based PAM-4 Digital Equalizer with 32-Way TI-ADC",
     "image": "",
     "conference": "ICEIC 2025",
@@ -36,6 +37,7 @@
  
     "type": "2024",
     "status": "ASSCC",
+    "award": "Highlighted paper (JSSC Invited)",
     "title": "A 14-to-32-Gb/s Deadzone-Free Referenceless CDR with Autocovariance-based Frequency Detector in 40-nm CMOS Technology",
     "image": "",
     "conference": "ASSCC 2024",
@@ -69,6 +71,7 @@
  
     "type": "2024",
     "status": "2024 SOC 학술대회",
+    "award": "Best Paper Award",
     "title": "Vertical AND Cell Package: AND CiM 을 통한 BNN 운용 방법론",
     "image": "",
     "journal": "2024 SOC 학술대회",
@@ -102,6 +105,7 @@
  
     "type": "2024",
     "status": "ICEIC",
+    "award": "Best Paper Award",
     "title": "An Analysis of 32-Gb/s and Full-Rate Phase Interpolator based Clock and Data Recovery",
     "image": "",
     "conference": "ICEIC 2024",

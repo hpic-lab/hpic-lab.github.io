@@ -20,8 +20,23 @@ $(document).ready(function () {
         //////////////
 
         //const submission = pub.sub ? pub.sub : "Available";
-
-        const pub_detail = `
+        const pub_detail = pub.award ? `
+        <div class="pub-wrapper">
+          <span class="pub-icon-box"><img src="img/pub-svg.svg"></span>
+          <span class="badge text-bg-primary"> ${pub.type}</span>|
+          <span class="badge bg-success">${pub.status}</span>|
+          <span class="badge bg-warning">${pub.award}</span>
+          <br>
+          <span class="pub-author">
+            ${authorsList}
+          </span>
+          <span><a href="${pub.link}" target="_blank"><b> ${pub.title}.</b></a></span>
+          <div class="pub-figures">
+          ${figures} <!-- 이미지 추가 -->
+          </div>
+        </div>
+        `:
+        `
         <div class="pub-wrapper">
           <span class="pub-icon-box"><img src="img/pub-svg.svg"></span>
           <span class="badge text-bg-primary"> ${pub.type}</span>|
@@ -36,6 +51,22 @@ $(document).ready(function () {
           </div>
         </div>
         `;
+        // const pub_detail = `
+        // <div class="pub-wrapper">
+        //   <span class="pub-icon-box"><img src="img/pub-svg.svg"></span>
+        //   <span class="badge text-bg-primary"> ${pub.type}</span>|
+        //   <span class="badge bg-success">${pub.status}</span>|
+        //   <span class="badge bg-warning">${pub.award}</span>
+        //   <br>
+        //   <span class="pub-author">
+        //     ${authorsList}
+        //   </span>
+        //   <span><a href="${pub.link}" target="_blank"><b> ${pub.title}.</b></a></span>
+        //   <div class="pub-figures">
+        //   ${figures} <!-- 이미지 추가 -->
+        //   </div>
+        // </div>
+        // `;
         container.append(pub_detail);
       });
     });
