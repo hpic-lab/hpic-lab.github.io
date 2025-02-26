@@ -10,7 +10,8 @@ $(document).ready(function () {
           .join(", ");
 
         const publicationSource = pub.journal ? pub.journal : pub.conference;
-
+        
+        //const awardBadge = pub.award ? `<span class="badge bg-warning">${pub.award}</span> ` : "";
         //사진
         const figures = pub.figure
         ? pub.figure
