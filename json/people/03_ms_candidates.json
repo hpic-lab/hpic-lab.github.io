@@ -7,6 +7,10 @@
       {
         "date": "2024.06",
         "process": "28-nm T"
+      },
+      {
+        "date": "2025.02",
+        "process": "28-nm T"
       }
     ],
     "achievements": ["ICEIC'24 Best Paper Award - Gold Prize"],
@@ -26,6 +30,10 @@
       {
         "date": "2024.09",
         "process": "40-nm T"
+      },
+      {
+        "date": "2025.02",
+        "process": "28-nm T"
       }
     ],
     "achievements": ["ICEIC'25 Best Paper Award - Silver Prize"],
@@ -99,8 +107,8 @@
     "research_interests": ["CDR, DSP-based Receiver"],
     "tape_out_schedule": [
       {
-        "date": "2024",
-        "process": ""
+        "date": "2025.02",
+        "process": "28-nm T"
       }
     ],
     "achievements": [],
@@ -114,8 +122,8 @@
     "research_interests": ["DSP-based Transmitter"],
     "tape_out_schedule": [
       {
-        "date": "2024",
-        "process": ""
+        "date": "2025.05",
+        "process": "28-nm T"
       }
     ],
     "achievements": [],
@@ -135,9 +143,13 @@
       {
         "date": "2024.09",
         "process": "40-nm T"
+      },
+      {
+        "date": "2025.05",
+        "process": "28-nm T"
       }
     ],
-    "achievements": ["2023 SCCUD 구두 발표 최우수상, ICEIC'24, ASSCC'24"],
+    "achievements": ["ICEIC'24, ASSCC'24"],
     "details": "Received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. He is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include Clock and data recovery (CDR) and DSP-based Receiver.",
     "email": "dlworjs@hanyang.ac.kr",
     "profile_img": "img/jg-lee-profile-img.jpeg",
@@ -146,6 +158,12 @@
   {
     "name": "Seung-Mo Jin",
     "research_interests": ["DSP-based Transmitter"],
+    "tape_out_schedule": [
+      {
+        "date": "2025.05",
+        "process": "28-nm T"
+      }
+    ],
     "achievements": ["2023 SCCUD 구두 발표 최우수상, ICEIC'24"],
     "details": "Received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. He is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include DSP-DAC based transmitter.",
     "email": "victorymo@hanyang.ac.kr",
@@ -154,7 +172,7 @@
   },
   {
   "name": "Hyeon-Seo Kim",
-  "research_interests": [],
+  "research_interests": ["Analog Digital Converter (ADC)"],
   "achievements": [],
   "details": "Received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. He is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include analog digital converter (ADC)",
   "email": "hyeonseo1833@gmail.com",
