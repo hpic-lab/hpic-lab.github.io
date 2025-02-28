@@ -137,10 +137,6 @@
     "research_interests": ["DSP-based Receiver"],
     "tape_out_schedule": [
       {
-        "date": "2023.11",
-        "process": "28-nm S, 65-nm T"
-      },
-      {
         "date": "2024.09",
         "process": "40-nm T"
       },
