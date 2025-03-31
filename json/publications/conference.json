@@ -1,26 +1,5 @@
 [
-  {
-    "sub": "submitted",
-    "type": "2025",
-    "status": "IEEE VLSIC",
-    "title": "",
-    "image": "",
-    "conference": "VLSIC 2025",
-    "authors": ["Shin-Uk Kang...", "Min-Seong Choo. Submitted"],
-    "figure": ["su-kang-profile-img.jpg", "dh-lee-profile-img.png", "sw-kwon-profile-image.jpeg", "sh-kim-profile-image.jpg", "dj-kwak-profile-image.jpg", "minseong-chu-profile-img.png"],
-    "link": ""
-  },
-  {
-    "sub": "submitted",
-    "type": "2025",
-    "status": "IEEE VLSIC",
-    "title": "",
-    "image": "",
-    "conference": "VLSIC 2025",
-    "authors": ["Jihun Choi...", "Min-Seong Choo. Submitted"],
-    "figure": ["jh-kim-profile-img.png", "minseong-chu-profile-img.png"],
-    "link": ""
-  },
+
   {
  
     "type": "2025",
