@@ -1,9 +1,9 @@
 [
   {
-    "sub": "in preparation",
+    "sub": "in submission",
     "type": "2025",
     "status": "European Solid-State Circuits Conference (ESSCIRC)",
-    "title": "",
+    "title": "6T SRAM Compute-In-Memory Macro for Binary/Ternary Neural Network with 1-bit ADC Optimizing Training Algorithm",
     "image": "",
     "conference": "ESSCIRC",
     "authors": ["Shin-Uk Kang", "Dong-Hyun Lee", "So-Yeon Kwon", "Seol-Hyeon Kim", "Dong-Jin Kwak", "Min-Seong Choo"],
