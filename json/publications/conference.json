@@ -1,5 +1,15 @@
 [
-
+  {
+    "sub": "in preparation",
+    "type": "2025",
+    "status": "European Solid-State Circuits Conference (ESSCIRC)",
+    "title": "",
+    "image": "",
+    "conference": "ESSCIRC",
+    "authors": ["Shin-Uk Kang", "Dong-Hyun Lee", "So-Yeon Kwon", "Seol-Hyeon Kim", "Dong-Jin Kwak", "Min-Seong Choo"],
+    "figure": ["su-kang-profile-img.jpg", "dh-lee-profile-img.png", "sw-kwon-profile-image.jpeg", "sh-kim-profile-image.jpg", "dj-kwak-profile-image.jpg", "minseong-chu-profile-img.png"],
+    "link": ""
+  },
   {
  
     "type": "2025",
