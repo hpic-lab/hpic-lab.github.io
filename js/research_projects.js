@@ -76,7 +76,7 @@ $(document).ready(function () {
           <span class="badge bg-success">${item.date}</span> |
             ${status}
           <br>
-          <span class="pub-author">${item.title}</span>
+          <span class="pub-author"><b>${item.title}</b></span>
           <p>${item.sponsor}</p>
         </div>
       `;
