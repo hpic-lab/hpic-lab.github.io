@@ -141,18 +141,18 @@
         "process": "40-nm T"
       },
       {
-        "date": "2025.05",
+        "date": "2025.06",
         "process": "28-nm T"
       }
     ],
-    "achievements": ["ICEIC'24, ASSCC'24"],
+    "achievements": ["ICEIC'24, ASSCC'24[JSSC invited]"],
     "details": "Received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. He is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include Clock and data recovery (CDR) and DSP-based Receiver.",
     "email": "dlworjs@hanyang.ac.kr",
     "profile_img": "img/jg-lee-profile-img.jpeg",
     "position": "M.S. Candidate"
   },
   {
-    "name": "Seung-Mo Jin",
+    "name": "Seung-Mo Jin [lab manager]",
     "research_interests": ["DSP-based Transmitter"],
     "tape_out_schedule": [
       {
