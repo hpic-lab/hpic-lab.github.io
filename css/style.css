@@ -706,8 +706,7 @@ section {
   border-radius: 12px;
   color: white;
   font-size: 16px;
-  /* height: 100px; */
-  height: auto;
+  height: 100px;
   object-fit: contain;
   margin: 56px 20px 56px 20px;
   display: flex;
