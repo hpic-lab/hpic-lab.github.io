@@ -1,6 +1,12 @@
 $(document).ready(function () {
     const researchProjects = [
       {
+        date: "May 2025 - Apr. 2027",
+        title:
+          "극저온 초전도 양자컴퓨터 판독 수신기",
+        sponsor: "Samsung Electronics",
+      },
+      {
         date: "Apr. 2024 - Mar. 2027",
         title:
           "Development of High-Speed, Low-Power, and Low-Noise Clocking Network Systems for Optical Communication Chiplets",
