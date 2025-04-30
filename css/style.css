@@ -704,12 +704,12 @@ section {
   /* border: 1px solid red; */
   background: rgba(182, 182, 182, 0.5);
   border-radius: 12px;
-  object-fit: contain;
   color: white;
   font-size: 16px;
   /* height: 100px; */
   height: auto;
   padding: 5px;
+  object-fit: contain;
   margin: 56px 20px 56px 20px;
   display: flex;
   align-items: center;
