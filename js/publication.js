@@ -24,7 +24,7 @@ $(document).ready(function () {
         : "";
 
         const progress = pub.progress 
-        ? `<span class="badge bg-warning">${pub.progress}</span>` 
+        ? `<span class="badge process-badge">${pub.progress}</span>` 
         : "";        
 
         const pub_detail = `
