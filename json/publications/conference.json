@@ -2,11 +2,11 @@
   {
     "sub": "submitted",
     "type": "2025",
-    "status": "ESSCIRC",
+    "status": "IEEE ESSCIRC",
     "title": "",
     "image": "",
     "progress": "submitted",
-    "conference": "ESSCIRC",
+    "conference": "IEEE ESSCIRC",
     "authors": ["Shin-Uk Kang", "Dong-Hyun Lee", "So-Yeon Kwon", "Seol-Hyeon Kim", "Dong-Jin Kwak", "Min-Seong Choo"],
     "figure": ["su-kang-profile-img.jpg", "dh-lee-profile-img.png", "sw-kwon-profile-image.jpeg", "sh-kim-profile-image.jpg", "dj-kwak-profile-image.jpg", "minseong-chu-profile-img.png"],
     "link": ""
@@ -26,11 +26,11 @@
   {
  
     "type": "2024",
-    "status": "ASSCC",
+    "status": "IEEE A-SSCC",
     "award": "Highlighted paper (JSSC Invited)",
     "title": "A 14-to-32-Gb/s Deadzone-Free Referenceless CDR with Autocovariance-based Frequency Detector in 40-nm CMOS Technology",
     "image": "",
-    "conference": "ASSCC 2024",
+    "conference": "IEEE A-SSCC 2024",
     "authors": ["Hong-Seok Choi", "Jae-Geon Lee", "Kwang-Ho Lee", "Daehyun Koh", "Jung-Woo Sull", "Hyungrok Do", "Chan-Ho Kye", "Deog-Kyoon Jeong", "Min-Seong Choo"],
     "figure": ["jg-lee-profile-img.jpeg", "minseong-chu-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/document/10848602"
@@ -194,10 +194,10 @@
   {
  
     "type": "2022",
-    "status": "ESSCIRC",
+    "status": "IEEE ESSCIRC",
     "title": "A− 247.1 dB FoM,− 77.9 dBc Reference Spur Ring-Oscillator-Based Injection-Locked Clock Multiplier with Multi-Phase-Based Calibration",
     "image": "img/c1.png",
-    "journal": "European Solid-State Circuits Conference (ESSCIRC)",
+    "journal": "European Solid-State Circuits Conference (IEEE ESSCIRC)",
     "authors": [
       "Yeong-Geun Song",
       "Kyoung-Joon Ha",
@@ -247,10 +247,10 @@
   {
  
     "type": "2018",
-    "status": "ASSCC",
+    "status": "IEEE A-SSCC",
     "title": "A 10-Gb/s, 0.03-mm2, 1.28-pJ/bit Half-Rate All-Digital Injection-Locked Clock and Data Recovery with Maximum Timing-Margin Tracking Loop",
     "image": "",
-    "conference": "ASSCC 2018",
+    "conference": "IEEE A-SSCC 2018",
     "authors": ["Min-Seong Choo", "Han-Gon Ko", "Sung-Yong Cho", "Kwang-Ho Lee", "Deog-Kyoon Jeong"],
     "figure": ["minseong-chu-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/abstract/document/8579270"
@@ -296,10 +296,10 @@
   {
  
     "type": "2015",
-    "status": "ESSCIRC",
+    "status": "IEEE ESSCIRC",
     "title": "A 5-GHz subharmonically injection-locked all-digital PLL with complementary switched injection",
     "image": "img/c1.png",
-    "journal": "European Solid-State Circuits Conference (ESSCIRC)",
+    "journal": "European Solid-State Circuits Conference (IEEE ESSCIRC)",
     "authors": [
       "Sung-Yong Cho",
       "Sungwoo Kim",
