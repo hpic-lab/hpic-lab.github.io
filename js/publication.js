@@ -20,8 +20,12 @@ $(document).ready(function () {
         : "";
         //////////////
         const awardBadge = pub.award 
-        ? `<span class="badge bg-warning">${pub.award}</span>` 
+        ? `<span class="badge bg-warning">${pub.award}</span> |` 
         : "";
+
+        const progress = pub.progress 
+        ? `<span class="badge bg-warning">${pub.progress}</span>` 
+        : "";        
 
         const pub_detail = `
         <div class="pub-wrapper">
@@ -29,6 +33,7 @@ $(document).ready(function () {
           <span class="badge text-bg-primary">${pub.type}</span> |
           <span class="badge bg-success">${pub.status}</span> |
           ${awardBadge}
+          ${progress}
           <br>
           <span class="pub-author">${authorsList}</span>
           <span><a href="${pub.link}" target="_blank"><b>${pub.title}.</b></a></span>

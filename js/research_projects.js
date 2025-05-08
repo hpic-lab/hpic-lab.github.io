@@ -1,13 +1,13 @@
 $(document).ready(function () {
     const researchProjects = [
       {
-        date: "May 2025 - Apr. 2027",
+        date: "May 2025 - Apr. 2026",
         title:
           "극저온 초전도 양자컴퓨터 판독 수신기",
         sponsor: "Samsung Electronics",
       },
       {
-        date: "Apr. 2024 - Mar. 2027",
+        date: "Apr. 2024 - Mar. 2029",
         title:
           "Development of High-Speed, Low-Power, and Low-Noise Clocking Network Systems for Optical Communication Chiplets",
         sponsor: "National Research Foundation (NRF) of Korea; 우수신진연구",

@@ -49,23 +49,22 @@
       "title": "",
       "image": "",
       "journal": "IEEE TVLSI",
+      "progress" : "in revision",
       "authors": [
         "Ji-Ho Kim...", 
-        "Min-Seong Choo. in revision"
+        "Min-Seong Choo"
       ],
       "figure": ["jh-kim-profile-img.png", "minseong-chu-profile-img.png"],
       "link": ""
     },
     {
-      "sub": "in revision",
       "type": "2025",
       "status": "IEEE JSSC",
-      "title": "",
+      "title": "A 14-to-32-Gb/s Deadzone-Free Referenceless CDR with Autocovariance-based Seamless Frequency Detector in 40nm CMOS Technology",
       "image": "",
       "journal": "IEEE JSSC",
-      "authors": [
-        "Jae-Geon Lee...", 
-        "Min-Seong Choo. accepted"
+      "progress" : "Accepted",
+      "authors": ["Hong-Seok Choi", "Jae-Geon Lee", "Seung-Hwan Gong", "Kwang-Ho Lee", "Daehyun Koh", "Jung-Woo Sull", "Hyungrok Do", "Chan-Ho Kye", "Deog-Kyoon Jeong", "Min-Seong Choo"
       ],
       "figure": ["jg-lee-profile-img.jpeg", "sh-gong-profile-image.jpg", "minseong-chu-profile-img.png"],
       "link": ""
