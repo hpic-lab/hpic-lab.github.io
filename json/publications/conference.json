@@ -211,10 +211,10 @@
   {
  
     "type": "2019",
-    "status": "ISSCC",
+    "status": "IEEE ISSCC",
     "title": "A Synthesizable Digital AOT 4-Phase Buck Voltage Regulator for Digital Systems with 0.0054mm2 Controller and 80ns Recovery Time",
     "image": "img/c5.png",
-    "journal": "IEEE International Solid-State Circuits Conference (ISSCC)",
+    "journal": "IEEE International Solid-State Circuits Conference (IEEE ISSCC)",
     "authors": [
       "Minho Choi",
       "Chan-Ho Kye",
@@ -258,10 +258,10 @@
   {
  
     "type": "2017",
-    "status": "ISSCC",
+    "status": "IEEE ISSCC",
     "title": "A 2.5GHz injection-locked ADPLL with 197fsrms integrated jitter and −65dBc reference spur using time-division dual calibration",
     "image": "img/c3.png",
-    "journal": "IEEE International Solid-State Circuits Conference (ISSCC)",
+    "journal": "IEEE International Solid-State Circuits Conference (IEEE ISSCC)",
     "authors": [
       "Sungwoo Kim",
       "Han-Gon Ko",
