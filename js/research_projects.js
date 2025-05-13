@@ -36,7 +36,8 @@ $(document).ready(function () {
       {
         date: "Jul. 2022 - Feb. 2025",
         title: "반도체전공트랙사업",
-        sponsor: "KIAT, completed",
+        sponsor: "KIAT",
+        status: "completed",
       },
       {
         date: "Mar. 2022 - Aug. 2027",
