@@ -120,7 +120,7 @@ $(document).ready(function () {
     $("#modal-profile-img").attr("src", profile_img);
     $("#modal-details").text(details);
     $("#modal-email").text(email);
-    $("#modal-position").text(position);
+    $("#modal-position").html(position);
 
     // research_interests 처리
     const parsed_research_interests = parseData(research_interests);
