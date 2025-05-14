@@ -183,8 +183,6 @@ $(document).ready(function () {
   }
 
 
-
-
   // 교수님 및 학생 프로필 로드
   loadProfiles(
     "json/people/00_principal_investigator.json",
