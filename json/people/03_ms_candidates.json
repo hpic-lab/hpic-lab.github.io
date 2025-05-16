@@ -187,14 +187,5 @@
   "email": "congcongsister@naver.com",
   "profile_img": "img/sh-kim-profile-image.jpg",
   "position": "M.S. Candidate"
-},
-{
-  "name": "Dong-Jin Kwak",
-  "research_interests": ["PIM"],
-  "achievements": [],
-  "details": "Received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. He is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include artificial intelligence hardware design and processing in memory (PIM).",
-  "email": "kdjkoj@hanyang.ac.kr",
-  "profile_img": "img/dj-kwak-profile-image.jpg",
-  "position": "M.S. Candidate"
 }
 ]
