@@ -43,19 +43,17 @@
       "link": ""
     },
     {
-      "sub": "in revision",
       "type": "2025",
       "status": "IEEE TVLSI",
-      "title": "",
+      "title": "A Supply Noise-Insensitive Ring DCO With a Self-Biased Shunt Regulator Array in Wide-Range Digital PLL",
       "image": "",
       "journal": "IEEE TVLSI",
-      "progress" : "in revision",
+      "progress" : "Accepted",
       "authors": [
-        "Ji-Ho Kim...", 
-        "Min-Seong Choo"
+        "Kyung-Min Baek", "Ji-Ho Kim", "Ka-Hyun Kim", "Deog-Kyoon Jeong", "Min-Seong Choo"
       ],
       "figure": ["jh-kim-profile-img.png", "minseong-chu-profile-img.png"],
-      "link": ""
+      "link": "https://hpiclab-my.sharepoint.com/personal/hpic-lab_hpiclab_onmicrosoft_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fhpic%2Dlab%5Fhpiclab%5Fonmicrosoft%5Fcom%2FDocuments%2FMicrosoft%20Teams%20%EC%B1%84%ED%8C%85%20%ED%8C%8C%EC%9D%BC%2FTVLSI%5F2024%5Fkmbaek%5F%5Frevision%5F%2Epdf&parent=%2Fpersonal%2Fhpic%2Dlab%5Fhpiclab%5Fonmicrosoft%5Fcom%2FDocuments%2FMicrosoft%20Teams%20%EC%B1%84%ED%8C%85%20%ED%8C%8C%EC%9D%BC&ga=1"
     },
     {
       "type": "2025",
