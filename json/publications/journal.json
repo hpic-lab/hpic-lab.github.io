@@ -44,19 +44,6 @@
     },
     {
       "type": "2025",
-      "status": "IEEE TVLSI",
-      "title": "A Supply Noise-Insensitive Ring DCO With a Self-Biased Shunt Regulator Array in Wide-Range Digital PLL",
-      "image": "",
-      "journal": "IEEE TVLSI",
-      "progress" : "Accepted",
-      "authors": [
-        "Kyung-Min Baek", "Ji-Ho Kim", "Ka-Hyun Kim", "Deog-Kyoon Jeong", "Min-Seong Choo"
-      ],
-      "figure": ["jh-kim-profile-img.png", "minseong-chu-profile-img.png"],
-      "link": "https://hpiclab-my.sharepoint.com/personal/hpic-lab_hpiclab_onmicrosoft_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fhpic%2Dlab%5Fhpiclab%5Fonmicrosoft%5Fcom%2FDocuments%2FMicrosoft%20Teams%20%EC%B1%84%ED%8C%85%20%ED%8C%8C%EC%9D%BC%2FTVLSI%5F2024%5Fkmbaek%5F%5Frevision%5F%2Epdf&parent=%2Fpersonal%2Fhpic%2Dlab%5Fhpiclab%5Fonmicrosoft%5Fcom%2FDocuments%2FMicrosoft%20Teams%20%EC%B1%84%ED%8C%85%20%ED%8C%8C%EC%9D%BC&ga=1"
-    },
-    {
-      "type": "2025",
       "status": "IEEE JSSC",
       "title": "A 14-to-32-Gb/s Deadzone-Free Referenceless CDR with Autocovariance-based Seamless Frequency Detector in 40nm CMOS Technology",
       "image": "",
@@ -66,6 +53,18 @@
       ],
       "figure": ["jg-lee-profile-img.jpeg", "sh-gong-profile-image.jpg", "minseong-chu-profile-img.png"],
       "link": "https://hpiclab-my.sharepoint.com/:b:/g/personal/jglee_hpiclab_onmicrosoft_com/EW-0ZF0joLtPndhG0RlN3HMBY3lvZdoG9ZOkNWDQPiiKwg?e=ejjpoZ"
+    },
+        {
+      "type": "2025",
+      "status": "IEEE TVLSI",
+      "title": "A Supply Noise-Insensitive Ring DCO With a Self-Biased Shunt Regulator Array in Wide-Range Digital PLL",
+      "image": "",
+      "journal": "IEEE TVLSI",
+      "authors": [
+        "Kyung-Min Baek", "Ji-Ho Kim", "Ka-Hyun Kim", "Deog-Kyoon Jeong", "Min-Seong Choo"
+      ],
+      "figure": ["jh-kim-profile-img.png", "minseong-chu-profile-img.png"],
+      "link": "https://ieeexplore.ieee.org/document/11017684"
     },
     {
     
