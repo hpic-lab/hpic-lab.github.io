@@ -1,5 +1,64 @@
 [
   {
+    "sub": "in preparation",
+    "type": "2025",
+    "status": "IEEE A-SSCC",
+    "title": "",
+    "image": "",
+    "journal": "IEEE A-SSCC 2025",
+    "authors": [
+      "Sang-Hyeon Ok", 
+      "Jae-Geon Lee",
+      "Min-Seong Choo. in preparation"
+    ],
+    "figure": [ "sh-ok-profile-img.jpg", "jg-lee-profile-img.jpeg", "minseong-chu-profile-img.png"],
+    "link": ""
+  },
+  {
+    "sub": "in preparation",
+    "type": "2025",
+    "status": "IEEE A-SSCC",
+    "title": "",
+    "image": "",
+    "journal": "IEEE A-SSCC 2025",
+    "authors": [
+      "Dong-Hoe Heo", 
+      "Seung-Hwan Gong",
+      "Min-Seong Choo. in preparation"
+    ],
+    "figure": [ "dh-heo-profile-img.jpg", "sh-gong-profile-image.jpg", "minseong-chu-profile-img.png"],
+    "link": ""
+  },
+  {
+    "sub": "in preparation",
+    "type": "2025",
+    "status": "IEEE A-SSCC",
+    "title": "",
+    "image": "",
+    "journal": "IEEE A-SSCC 2025",
+    "authors": [
+      "Dong-Hyun Lee", 
+      "Min-Seong Choo. in preparation"
+    ],
+    "figure": [ "dh-lee-profile-img.png", "minseong-chu-profile-img.png"],
+    "link": ""
+  },  
+  {
+    "sub": "in preparation",
+    "type": "2025",
+    "status": "IEEE A-SSCC",
+    "title": "",
+    "image": "",
+    "journal": "IEEE A-SSCC 2025",
+    "authors": [
+      "Dong-Ho Kim", 
+      "Seung-Mo Jin", 
+      "Min-Seong Choo. in preparation"
+    ],
+    "figure": [ "dh-kim-profile-img.jpg", "sm-jin-profile-img.png", "minseong-chu-profile-img.png"],
+    "link": ""
+  },    
+  {
     "sub": "submitted",
     "type": "2025",
     "status": "IEEE ESSCIRC",
