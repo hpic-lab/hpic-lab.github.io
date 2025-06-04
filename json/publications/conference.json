@@ -1,4 +1,20 @@
-[
+[  {
+    "sub": "in preparation",
+    "type": "2025",
+    "status": "IEEE A-SSCC",
+    "title": "",
+    "image": "",
+    "journal": "IEEE A-SSCC 2025",
+    "authors": [
+      "Shin-Uk Kang", 
+      "Dong-Hyun Lee",
+      "So-Yeon Kwon", 
+      "Seol-Hyeon Kim",
+      "Min-Seong Choo. in preparation"
+    ],
+    "figure": [ "su-kang-profile-img.jpg", "dh-lee-profile-img.png", "sw-kwon-profile-image.jpeg", "sh-kim-profile-image.jpg", "minseong-chu-profile-img.png"],
+    "link": ""
+  },
   {
     "sub": "in preparation",
     "type": "2025",
