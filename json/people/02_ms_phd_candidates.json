@@ -7,5 +7,14 @@
     "email": "dujin0509@hanyang.ac.kr",
     "profile_img": "img/de-jin-profile-image.jpg",
     "position": "M.S.-Ph.D. Candidate"
+  },
+  {
+    "name": "Joon-Seok KWON",
+    "research_interests": ["Wireline Interface"],
+    "achievements": [],
+    "details": "Received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. He is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include Wireline Interface.",
+    "email": "best3016@naver.com",
+    "profile_img": "img/js-kwon-profile-image.jpg",
+    "position": "M.S.-Ph.D. Candidate"
   }
 ]
