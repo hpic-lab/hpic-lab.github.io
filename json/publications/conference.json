@@ -1,4 +1,4 @@
-[
+[  
   {
     "sub": "in preparation",
     "type": "2025",
@@ -90,7 +90,7 @@
  
     "type": "2024",
     "status": "IEEE A-SSCC",
-    "award": "Highlighted paper (JSSC Invited)",
+    "award": "JSSC Invited",
     "title": "A 14-to-32-Gb/s Deadzone-Free Referenceless CDR with Autocovariance-based Frequency Detector in 40-nm CMOS Technology",
     "image": "",
     "conference": "IEEE A-SSCC 2024",
@@ -173,7 +173,7 @@
     "title": "Design of PAM4 Transmitter in 28-nm CMOS Technology",
     "image": "",
     "conference": "KCS 2024",
-    "authors": ["Yu-Jin Byeon", "and Min-Seong Choo"],
+    "authors": ["Yu-Jin Byeon", "Min-Seong Choo"],
     "figure": ["yj-byeon-profile-img.png", "minseong-chu-profile-img.png"],
     "link": "https://drive.google.com/file/d/1lVfAHKRFshsPsVT17O25Oz3bHriDWW6B/view"
   },
