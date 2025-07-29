@@ -1,5 +1,11 @@
 $(document).ready(function () {
     const researchProjects = [
+        {
+        date: "May 2025 - Apr. 2028",
+        title:
+          "유기발광 디스플레이 전문인력 양성",
+        sponsor: "National Research Foundation (NRF) of Korea",
+      },
       {
         date: "May 2025 - Apr. 2026",
         title:
