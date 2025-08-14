@@ -1,7 +1,7 @@
 $(document).ready(function () {
     const researchProjects = [
       {
-        date: "Jun. 2025 - Dec. 2025",
+        date: "Jun. 2025 - Dec. 2029",
         title:
           "2.5D 광패키징 기반 CPO를 위한 Opto-chiplet이 집적된 인터포저 기술",
         sponsor: "National Research Foundation (NRF) of Korea",
