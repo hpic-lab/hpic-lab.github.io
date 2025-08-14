@@ -7,10 +7,10 @@ $(document).ready(function () {
         sponsor: "National Research Foundation (NRF) of Korea",
       },
       {
-        date: "Mar. 2025 - Feb. 2026",
+        date: "Mar. 2025 - Oct. 2025",
         title:
           "유기발광 디스플레이 전문인력양성",
-        sponsor: "National Research Foundation (NRF) of Korea",
+        sponsor: "Korea Display Industry Association",
       },
       {
         date: "May 2025 - Apr. 2026",
