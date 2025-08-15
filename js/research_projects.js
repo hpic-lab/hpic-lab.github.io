@@ -4,7 +4,7 @@ $(document).ready(function () {
         date: "Jun. 2025 - Dec. 2029",
         title:
           "2.5D 광패키징 기반 CPO를 위한 Opto-chiplet이 집적된 인터포저 기술",
-        sponsor: "과학기술정보통신부",
+        sponsor: "Ministry of Science and ICT (MSIT)",
       },
       {
         date: "May. 2025 - Oct. 2025",
