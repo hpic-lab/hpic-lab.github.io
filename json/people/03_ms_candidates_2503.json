@@ -66,5 +66,28 @@
     "email": "mim455@hanyang.ac.kr",
     "profile_img": "img/km-kim-profile-img.jpg",
     "position": "M.S.-Ph.D. Candidates"
+  },
+    {
+    "name": "Dong-Hoe Heo",
+    "research_interests": ["Wide-range PI-based CDR"],
+    "tape_out_schedule": [
+      {
+        "date": "2024.06",
+        "process": "28-nm T"
+      },
+      {
+        "date": "2024.09",
+        "process": "40-nm T"
+      },
+      {
+        "date": "2025.02",
+        "process": "28-nm T"
+      }
+    ],
+    "achievements": ["ICEIC'24 Best Paper Award - Gold Prize"],
+    "details": "Received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. He is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include clock and data recovery (CDR) circuit design.",
+    "email": "ehdghl97@hanyang.ac.kr",
+    "profile_img": "img/dh-heo-profile-img.jpg",
+    "position": "M.S. Candidate"
   }
 ]
