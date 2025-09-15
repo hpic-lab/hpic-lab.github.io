@@ -1,5 +1,21 @@
 
-  [
+  [ {
+      "sub": "submitted",
+      "type": "2025",
+      "status": "IEEE JETCAS",
+      "title": "",
+      "image": "",
+      "journal": "IEEE JETCAS",
+      "authors": [
+        "Shin-Uk Kang",
+        "Dong-Hyun Lee",
+        "Min-Gwon Song",
+        "Mingoo Seok", 
+        "Min-Seong Choo."
+      ],
+      "figure": [ "su-kang-profile-img.jpg", "dh-lee-profile-img.png","mg-song-profile-img.jpg", "minseong-chu-profile-img.png"],
+      "link": ""
+    },
     {
       "sub": "in preparation",
       "type": "2025",
