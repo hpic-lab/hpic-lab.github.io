@@ -2,17 +2,18 @@
   {
     "type": "2025",
     "status": "IEEE A-SSCC",
-    "title": "Critical-Timing-Relaxed pre-Decision Feedforward Equalizer for High-Speed DSP-based Wireline Receiver using Hardware-in-the-Loop Verification on RF-SoC",
+    "award": "Accepted",
+    "title": "",
     "image": "",
     "journal": "IEEE A-SSCC 2025",
     "authors": [
       "Sang-Hyeon Ok", 
       "Jae-Geon Lee",
       "Kwang-Ho Lee",
-      "Haran Ju",
+      "Haram Ju",
       "Gyu-Seob Jeong",
       "Woorham Bae",
-      "Min-Seong Choo"
+      "Min-Seong Choo Critical-Timing-Relaxed pre-Decision Feedforward Equalizer for High-Speed DSP-based Wireline Receiver using Hardware-in-the-Loop Verification on RF-SoC"
     ],
     "figure": [ "sh-ok-profile-img.jpg", "jg-lee-profile-img.jpeg", "minseong-chu-profile-img.png"],
     "link": ""
@@ -20,7 +21,8 @@
   {
     "type": "2025",
     "status": "IEEE A-SSCC",
-    "title": "A 22Gb/s-54Gb/s Reconfigurable PAM-2/4/8 DSP-Based Transmitter with 14-Tap Feedforward Equalization",
+    "award": "Accepted",
+    "title": "",
     "image": "",
     "journal": "IEEE A-SSCC 2025",
     "authors": [
@@ -31,9 +33,9 @@
       "Gyu-Seob Jeong",
       "Woorham Bae",
       "Jaeduk Han", 
-      "Min-Seong Choo"
+      "Min-Seong Choo A 22Gb/s-54Gb/s Reconfigurable PAM-2/4/8 DSP-Based Transmitter with 14-Tap Feedforward Equalization"
     ],
-    "figure": [ "dh-kim-profile-image.jpg", "sm-jin-profile-img.png", "minseong-chu-profile-img.png"],
+    "figure": [ "sm-jin-profile-img.png", "dh-kim-profile-image.jpg", "minseong-chu-profile-img.png"],
     "link": ""
   },    
   {

@@ -1,10 +1,16 @@
 $(document).ready(function () {
     const researchProjects = [
-        {
-        date: "May 2025 - Apr. 2028",
+      {
+        date: "Jun. 2025 - Dec. 2029",
         title:
-          "유기발광 디스플레이 전문인력 양성",
-        sponsor: "National Research Foundation (NRF) of Korea",
+          "2.5D 광패키징 기반 CPO를 위한 Opto-chiplet이 집적된 인터포저 기술",
+        sponsor: "Ministry of Science and ICT (MSIT)",
+      },
+      {
+        date: "May. 2025 - Oct. 2025",
+        title:
+          "유기발광 디스플레이 전문인력양성",
+        sponsor: "Korea Display Industry Association",
       },
       {
         date: "May 2025 - Apr. 2026",
