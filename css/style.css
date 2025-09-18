@@ -544,7 +544,7 @@ h6 {
 }
 
 #people h3:not(.accordion h3) {
-  text-align: center;
+  text-align: left;
   margin-bottom: 1.5rem;
 }
 
