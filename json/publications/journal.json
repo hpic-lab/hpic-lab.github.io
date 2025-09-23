@@ -5,11 +5,12 @@
       "status": "IEEE TIM",
       "title": "",
       "image": "",
+      "progress": "submitted",
       "journal": "IEEE TIM",
       "authors": [
         "Ji-Ho Kim",
         "Jae-Hyeon Pyeon",
-        "Min-Seong Choo. submitted"
+        "Min-Seong Choo."
       ],
       "figure": [ "jh-kim-profile-img.png", "jh-pyeon-profile-img.png", "minseong-chu-profile-img.png"],
       "link": ""
@@ -20,13 +21,14 @@
       "status": "IEEE JETCAS",
       "title": "",
       "image": "",
+      "progress": "submitted",
       "journal": "IEEE JETCAS",
       "authors": [
         "Shin-Uk Kang",
         "Dong-Hyun Lee",
         "Min-Gwon Song",
         "Mingoo Seok", 
-        "Min-Seong Choo. submitted"
+        "Min-Seong Choo."
       ],
       "figure": [ "su-kang-profile-img.jpg", "dh-lee-profile-img.png","mg-song-profile-img.jpg", "minseong-chu-profile-img.png"],
       "link": ""
@@ -37,10 +39,11 @@
       "status": "IEEE JSSC",
       "title": "",
       "image": "",
+      "progress": "in preparation",
       "journal": "IEEE JSSC",
       "authors": [
         "Jae-Hyeon Pyeon...", 
-        "Min-Seong Choo. in preparation"
+        "Min-Seong Choo."
       ],
       "figure": [ "jh-pyeon-profile-img.png", "ih-han-profile-img.jpg", "minseong-chu-profile-img.png"],
       "link": ""
@@ -51,10 +54,11 @@
       "status": "IEEE TCASI",
       "title": "",
       "image": "",
+      "progress": "in preparation",
       "journal": "IEEE TCASI",
       "authors": [
         "Sang-Hyun Ok...", 
-        "Min-Seong Choo. in preparation"
+        "Min-Seong Choo."
       ],
       "figure": [ "sh-ok-profile-img.jpg", "jg-lee-profile-img.jpeg", "minseong-chu-profile-img.png"],
       "link": ""
