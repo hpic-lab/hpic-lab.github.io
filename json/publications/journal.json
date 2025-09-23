@@ -2,6 +2,21 @@
   [ {
       "sub": "submitted",
       "type": "2025",
+      "status": "IEEE TIM",
+      "title": "",
+      "image": "",
+      "journal": "IEEE TIM",
+      "authors": [
+        "Ji-Ho Kim",
+        "Jae-Hyeon Pyeon",
+        "Min-Seong Choo. submitted"
+      ],
+      "figure": [ "jh-kim-profile-img.png", "jh-pyeon-profile-img.png", "minseong-chu-profile-img.png"],
+      "link": ""
+    },
+    {
+      "sub": "submitted",
+      "type": "2025",
       "status": "IEEE JETCAS",
       "title": "",
       "image": "",
