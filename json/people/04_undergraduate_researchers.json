@@ -13,6 +13,15 @@
     "profile_img": "img/dh_lee_bs_profile_image.jpg",
     "position": "undergraduate researcher"
   },
+    {
+    "name": "Han-Gil Yoo",
+    "research_interests": ["PiM"],
+    "achievements": [],
+    "details": "Pursuing a Bachelor's degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include analog and digital circuit designs of processing in memory (PiM).",
+    "email": "ilovec215@gmail.com",
+    "profile_img": "img/hg-yoo-profile_img.jpg",
+    "position": "undergraduate researcher"
+  },
   {
     "name": "Open Positions",
     "research_interests": [],
