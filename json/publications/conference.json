@@ -41,6 +41,17 @@
   {
  
     "type": "2025",
+    "status": "ITC-CSCC",
+    "title": "Analysis of Adaptive Learning Rate Strategies for Sign-Sign LMS: Stability and Speed",
+    "image": "",
+    "conference": "ITC-CSCC 2025",
+    "authors": ["Jae-Geon Lee", "Sang-Hyeon Ok", "Seung-Hwan Gong", "Seung-Mo Jin", "Dong-ho Kim" ,"Min-Seong Choo"],
+    "figure": ["jg-lee-profile-img.jpeg", "sh-ok-profile-img.jpg", "sh-gong-profile-image.jpg", "sm-jin-profile-img.png", "dh-kim-profile-image.jpg", "minseong-chu-profile-img.png"],
+    "link": "https://ieeexplore.ieee.org/document/10879734"
+  },
+  {
+ 
+    "type": "2025",
     "status": "ICEIC",
     "award": "Best Paper Award",
     "title": "An Implementation of a DSP-Based PAM-4 Digital Equalizer with 32-Way TI-ADC",
