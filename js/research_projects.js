@@ -7,7 +7,7 @@ $(document).ready(function () {
         sponsor: "Ministry of Science and ICT (MSIT)",
       },
       {
-        date: "May. 2025 - Oct. 2025",
+        date: "May. 2025 - Feb. 2030",
         title:
           "유기발광 디스플레이 전문인력양성",
         sponsor: "Korea Display Industry Association",

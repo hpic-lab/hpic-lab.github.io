@@ -529,7 +529,7 @@ h6 {
 
 .user-card {
   display: flex;
-  align-items: left;
+  align-items: center;
   justify-content: left;
   padding: 20px;
   width: 100%;
@@ -593,7 +593,7 @@ h6 {
 }
 
 .user-card-info {
-  text-align: left;
+  text-align: center;
   padding-left: 12px;
   margin-left: 20px;
   width: 60%;

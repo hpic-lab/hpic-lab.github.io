@@ -23,7 +23,7 @@ $(document).ready(function () {
         ? `<span class="badge bg-warning">${pub.award}</span>|` 
         : "";
         const sub = pub.sub 
-        ? `<span class="badge bg-info">${pub.progress}</span>` 
+        ? `<span class="badge bg-info">${pub.sub}</span>` 
         : "";        
         const progress = pub.progress 
         ? `<span class="badge bg-secondary">${pub.progress}</span>` 
