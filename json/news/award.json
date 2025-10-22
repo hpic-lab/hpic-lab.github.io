@@ -1,5 +1,41 @@
 [
   {
+  "id": 21,
+  "img_src": "img/award/251016편재현_CDC_수상.png",
+  "award_date": "20251016",
+  "award_name": "ISOCC 2025 Chip Design Contest Best Poster Award",
+  "recipient_name": "편재현",
+  "award_content": "Design of Ring Oscillator based triple-point background calibration Injection Locked Closk Multiplier",
+  "awarding_institution": "ISOCC International Conference"
+  },  
+  {
+  "id": 21,
+  "img_src": "img/award/251016허동회_공승환_CDC_수상.jpeg",
+  "award_date": "20251016",
+  "award_name": "ISOCC 2025 Chip Design Contest Special Prize",
+  "recipient_name": "허동회, 공승환",
+  "award_content": "A 20-32Gb/s, 1.37pJ/b PI-based CDR with a Direct Proportional Path and an IIR Filter for Frequency Offset Tracking in 28-nm CMOS",
+  "awarding_institution": "ISOCC International Conference"
+  },    
+  {
+  "id": 20,
+  "img_src": "img/award/251016공승환_ISOCC_수상.jpg",
+  "award_date": "20251016",
+  "award_name": "ISOCC 2025 Synopsys Best Paper Award",
+  "recipient_name": "공승환",
+  "award_content": "A 20-32Gb/s, 1.37pJ/b PI-based CDR with a Direct Proportional Path and an IIR Filter for Frequency Offset Tracking in 28-nm CMOS",
+  "awarding_institution": "ISOCC International Conference"
+  },  
+  {
+  "id": 19,
+  "img_src": "img/award/251016진승모_김동호_ISOCC_수상.jpg",
+  "award_date": "20251016",
+  "award_name": "ISOCC 2025 SSCS Seoul Chapter Best Paper Award",
+  "recipient_name": "진승모, 김동호",
+  "award_content": "A PAM-2/4/8 DSP-based Transmitter with 14-tap Feedforward Equalization for PAM-8 at 54Gb/s in 40nm CMOS",
+  "awarding_institution": "ISOCC International Conference"
+  },  
+  {
   "id": 18,
   "img_src": "",
   "award_date": "20250915",
