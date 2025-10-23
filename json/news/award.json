@@ -37,8 +37,8 @@
   },  
   {
   "id": 18,
-  "img_src": "",
-  "award_date": "20250915",
+  "img_src": "img/award/251023_반도체 설계대전_지식재산처장상_진승모_김동호.jpg",
+  "award_date": "20251023",
   "award_name": "제26회 대한민국 반도체설계대전 기업특별상(바움디자인시스템즈)",
   "recipient_name": "이동현",
   "award_content": "A Compact 6T SRAM Compute-In-Memory Engine for Binary/Ternary Neural Networks Featuring Efficient ADC-Less and PVT-Robust Error-Aware Training Algorithm",
@@ -46,8 +46,8 @@
   },  
   {
   "id": 17,
-  "img_src": "",
-  "award_date": "20250915",
+  "img_src": "img/award/251023_반도체 설계대전_지식재산처장상_진승모_김동호.jpg",
+  "award_date": "20251023",
   "award_name": "제26회 대한민국 반도체설계대전 특허청장상",
   "recipient_name": "진승모, 김동호",
   "award_content": "A 22Gb/s-54Gb/s Reconfigurable PAM-2/4/8 DSP-based Transmitter with 14-tap Feedforward Equalization",
