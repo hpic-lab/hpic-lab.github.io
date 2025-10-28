@@ -10,17 +10,17 @@ $(document).ready(function () {
           <div class="card">
             <img src="${award.img_src}" class="card-img-top" alt="..." />
             <div class="news-gallery-card-body">
-              <h5 class="card-title">${award.award_name}</h5>
+              <h5 class="card-title">${award.name}</h5>
             </div>
             
             <ul class="list-group list-group-flush">
               <li class="list-group-item d-flex align-items-center flex-wrap">
                 <span>Date:</span>
-                <span>${formatDate(award.award_date)}</span>
+                <span>${formatDate(award.date)}</span>
               </li>
               <li class="list-group-item d-flex align-items-center flex-wrap">
                 <span>Description:</span>
-                <span>${award.award_content}</span>
+                <span>${award.content}</span>
               </li> 
             </ul>
           </div>
