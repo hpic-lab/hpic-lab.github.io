@@ -10,7 +10,6 @@ $(document).ready(function () {
             <img src="${award.img_src}" class="card-img-top" alt="..." />
             <div class="card-body">
               <h5 class="card-title">${award.award_name}</h5>
-              <p class="recipient-name">${award.recipient_name}</p>
               <p class="card-text">${formatDate(award.award_date)}</p>
             </div>
           </div>
