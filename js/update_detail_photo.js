@@ -19,9 +19,17 @@ $(document).ready(function () {
                 <span>${formatDate(award.award_date)}</span>
               </li>
               <li class="list-group-item d-flex align-items-center flex-wrap">
+                <span>Winner:</span>
+                <span>${award.recipient_name}</span>
+              </li>
+              <li class="list-group-item d-flex align-items-center flex-wrap">
                 <span>Description:</span>
                 <span>${award.award_content}</span>
               </li> 
+              <li class="list-group-item d-flex align-items-center flex-wrap">
+                <span>Institution:</span>
+                <span>${award.awarding_institution}</span>
+              </li>
             </ul>
           </div>
         </div> 
