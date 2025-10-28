@@ -1,16 +1,9 @@
 [
   {
-    "id": 2,
+    "id": 1,
     "img_src": "img/photo/20251023_ISOCC.jpg",
-    "date": "20251023",
+    "date": "20251016",
     "name": "HPIC at ISOCC 2025",
     "content": "부산 파라다이스호텔"
-  },
-   {
-    "id": 1,
-    "img_src": "img/photo/20250626_하계학술대회_워크샵.jpg",
-    "date": "20250626",
-    "name": "HPIC at 하계학술대회 워크샵",
-    "content": "제주 중문 색달 해수욕장"
   }
 ]
