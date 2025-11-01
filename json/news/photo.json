@@ -1,9 +1,16 @@
 [
   {
-    "id": 1,
+    "id": 2,
     "img_src": "img/photo/20251023_ISOCC.jpg",
     "date": "20251016",
     "name": "HPIC at ISOCC 2025",
     "content": "부산 파라다이스호텔"
+  },
+  {
+    "id": 1,
+    "img_src": "img/photo/20251010_대부도_야유회.jpg",
+    "date": "20251010",
+    "name": "HPIC members Picnic at Daebudo",
+    "content": "대부도"
   }
 ]
