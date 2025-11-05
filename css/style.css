@@ -537,14 +537,6 @@ h6 {
   overflow: hidden;
 }
 
-/*timeline 들여쓰기*/
-h3#2025 + div ul,
-h3#2024 + div ul,
-h3#2023 + div ul,
-h3#2022 + div ul {
-  padding-left: 0px;
-}
-
 .profile-left {
   display: flex;
   flex-direction: column;
