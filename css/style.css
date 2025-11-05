@@ -5,7 +5,7 @@
 /* 내비게이션 픽셀크기증가 - 추교수님 요구사항 */
 .dropdown-menu,
 nav#navbar-main li.nav-item {
-  font-size: 15px !important;
+  font-size: 20px !important;
 }
 
 /* Apply "Noto Sans KR" font to all heading  elements  */
