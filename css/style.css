@@ -542,7 +542,7 @@ h3#2025 + div ul,
 h3#2024 + div ul,
 h3#2023 + div ul,
 h3#2022 + div ul {
-  padding-left: 20px;
+  padding-left: 0px;
 }
 
 .profile-left {
