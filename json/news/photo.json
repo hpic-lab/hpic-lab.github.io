@@ -1,12 +1,19 @@
 [
   {
-    "id": 4,
+    "id": 5,
     "img_src": "img/photo/20251102_ASSCC.png",
     "date": "20251102",
     "name": "HPIC at ASSCC 2025",
     "content": "대전 컨벤션센터"
   },  
   {
+    "id": 4,
+    "img_src": "img/photo/20251023_진승모김동호_반도체설계대전2.jpg",
+    "date": "20251023",
+    "name": "Seung-Mo Jin and Dong-Ho Kim's award ceremony at KSIA 2025",
+    "content": "제 26회 대한민국 반도체 설계대전 시상식"
+  },
+    {
     "id": 3,
     "img_src": "img/photo/20251023_ISOCC.jpg",
     "date": "20251016",
