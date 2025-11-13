@@ -1,4 +1,13 @@
 [
+    {
+  "id": 22,
+  "img_src": "img/award/251022_교수님_반도체협회장상.jpg",
+  "award_date": "20251022",
+  "award_name": "한국반도체산업협회장상",
+  "recipient_name": "교수님",
+  "award_content": "한국반도체산업협회장상",
+  "awarding_institution": "한국반도체산업협회"
+  },  
   {
   "id": 22,
   "img_src": "img/award/251016편재현_CDC_수상.png",
