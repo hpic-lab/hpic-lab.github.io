@@ -636,14 +636,14 @@ h6 {
   font-style: italic;
 }
 
-.news-link {
+.user-card .news-link {
   color: #007bff;
   font-weight: bold;
   margin-left: 8px;
   text-decoration: none;
 }
 
-.news-link:hover {
+.user-card .news-link:hover {
   text-decoration: underline;
 }
 
