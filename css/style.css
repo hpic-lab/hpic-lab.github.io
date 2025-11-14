@@ -636,6 +636,17 @@ h6 {
   font-style: italic;
 }
 
+.news-link {
+  color: #007bff;
+  font-weight: bold;
+  margin-left: 8px;
+  text-decoration: none;
+}
+
+.news-link:hover {
+  text-decoration: underline;
+}
+
 .col-lg-8 h5:not(:first-child),
 .chip-gallery-title-row {
   margin-top: 40px;
