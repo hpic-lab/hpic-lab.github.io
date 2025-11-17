@@ -47,11 +47,11 @@
     },
     {
       "type": "2025",
-      "status": "IEEE TCASI",
+      "status": "IEEE TCAS-I",
       "title": "",
       "image": "",
       "progress": "",
-      "journal": "IEEE TCASI",
+      "journal": "IEEE TCAS-I",
       "authors": [
         "Sang-Hyun Ok...", 
         "Min-Seong Choo."
@@ -61,11 +61,11 @@
     },
     {
       "type": "2025",
-      "status": "IEEE TCASI",
+      "status": "IEEE TCAS-I",
       "title": "",
       "image": "",
       "progress": "",
-      "journal": "IEEE TCASI",
+      "journal": "IEEE TCAS-I",
       "authors": [
         "Dong-Ho Kim, Seung-Mo Jin...", 
         "Min-Seong Choo."
@@ -99,10 +99,10 @@
     {
     
       "type": "2024",
-      "status": "IEEE TCASII",
+      "status": "IEEE TCAS-II",
       "title": "High-Precision Built-In Phase Noise Measurement Circuit with Hybrid ΔΣ Time-to-Digital Converter For SoC Clocking Applications",
       "image": "",
-      "journal": "IEEE TCASII",
+      "journal": "IEEE TCAS-II",
       "authors": [
         "Jihun Choi",
         "Hojin Kim",
@@ -117,10 +117,10 @@
     {
     
       "type": "2024",
-      "status": "IEEE TCASI",
+      "status": "IEEE TCAS-I",
       "title": "A Compact Single-Channel 1 GS/s 8-Bit 3-Stage Capacitor Array-Assisted Charge-Injection DAC-Based SAR ADC",
       "image": "",
-      "journal": "IEEE TCASI",
+      "journal": "IEEE TCAS-I",
       "authors": [
         "Chanho Kye",
         "Yu-Jin Byeon",
@@ -133,10 +133,10 @@
     {
     
       "type": "2024",
-      "status": "IEEE TCASII",
+      "status": "IEEE TCAS-II",
       "title": "3.2-GHz Digital Phase-Locked Loop with Autocorrelation-based Direct Jitter Correction",
       "image": "",
-      "journal": "IEEE TCASII",
+      "journal": "IEEE TCAS-II",
       "authors": [
         "Gijin Park",
         "Sunoh Yeom",
@@ -232,7 +232,7 @@
   {
    
     "type": "2019",
-    "status": "IEEE TCASII",
+    "status": "IEEE TCAS-II",
     "title": "A 15-GHz, 17.8-mW, 213-fs Injection-Locked PLL With Maximized Injection Strength Using Adjustment of Phase Domain Response",
     "image": "img/j7.png",
     "journal": "IEEE Transactions on Circuits and Systems-II: Express Briefs (TCAS-II)",
@@ -284,7 +284,7 @@
   {
   
     "type": "2018",
-    "status": "IEEE TCASII",
+    "status": "IEEE TCAS-II",
     "title": "An optimum injection-timing tracking loop for 5-GHz, 1.13-mW/GHz RO-based injection-locked PLL with 152-fs integrated jitter",
     "image": "img/j4.png",
     "journal": "IEEE Transactions on Circuits and Systems-II: Express Briefs (TCAS-II)",
@@ -301,7 +301,7 @@
   {
   
     "type": "2018",
-    "status": "IEEE TCASI",
+    "status": "IEEE TCAS-I",
     "title": "A 2.5–5.6 GHz subharmonically injection-locked all-digital PLL with dual-edge complementary switched injection",
     "image": "img/j3.png",
     "journal": "IEEE Transactions on Circuits and Systems-I: Regular Links (TCAS-I)",
@@ -320,7 +320,7 @@
   {
   
     "type": "2017",
-    "status": "IEEE TCASII",
+    "status": "IEEE TCAS-II",
     "title": "A 55.1 mW 1.62-to-8.1 Gb/s video interface receiver generating up to 680 MHz stream clock over 20 dB loss channel",
     "image": "img/j2.png",
     "journal": "IEEE Transactions on Circuits and Systems-II: Express Briefs (TCAS-II)",
