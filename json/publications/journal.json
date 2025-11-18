@@ -1,5 +1,6 @@
 
-  [ {
+  [ 
+    {
       "sub": "submitted",
       "type": "2025",
       "status": "IEEE TIM",
@@ -74,6 +75,17 @@
       "link": ""
     },
     {
+      "sub": "Accepted",      
+      "type": "2025",
+      "status": "IEEE MWTL",
+      "title": "A Stagger-Tuned Cryogenic Broadband CMOS 3-stage Cascode LNA for Quantum Computing",
+      "image": "",
+      "journal": "IEEE MWTL",
+      "authors": ["Woong-Joo Chang", "Junhee Kwon", "Geunyong Kim", "Insu Jeon", "Jaeho Shin", "Seong-Joong Kim", "Hui-Dong Gwon", "Min-Seong Choo", "Tae Hwan Jang"],
+      "figure": ["minseong-chu-profile-img.png"],
+      "link": "https://ieeexplore.ieee.org/document/11029275"
+    },    
+    {
       "type": "2025",
       "status": "IEEE JSSC",
       "title": "A 14-to-32-Gb/s Deadzone-Free Referenceless CDR with Autocovariance-based Seamless Frequency Detector in 40nm CMOS Technology",
@@ -84,7 +96,7 @@
       "figure": ["jg-lee-profile-img.jpeg", "sh-gong-profile-image.jpg", "minseong-chu-profile-img.png"],
       "link": "https://ieeexplore.ieee.org/document/11029275"
     },
-        {
+    {
       "type": "2025",
       "status": "IEEE TVLSI",
       "title": "A Supply Noise-Insensitive Ring DCO With a Self-Biased Shunt Regulator Array in Wide-Range Digital PLL",
