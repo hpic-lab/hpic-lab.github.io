@@ -566,11 +566,13 @@ h6 {
 }
 
 .portrait-title h2 {
-  font-size: 1.2vw;
+/*  font-size: 1.2vw; */
+    font-size: 1.6rem;
 }
 
 .portrait-title h3 {
-  font-size: 0.8vw;
+/*  font-size: 0.8vw; */
+    font-size: 1.0rem;
 }
 
 #people .portrait {
