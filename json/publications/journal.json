@@ -77,13 +77,24 @@
     {
       "sub": "Accepted",      
       "type": "2025",
+      "status": "IEEE TVLSI",
+      "title": "A Pattern-Dependent Pulse Filtering Technique for Low-Jitter Injection-Locked CDR in 28-nm CMOS",
+      "image": "",
+      "journal": "IEEE TVLSI",
+      "authors": ["Junhak Kim", "Young-Wook Kim", "Sinho Lee", "Yoojin Jung", "Min-Seong Choo", "Kwanseo Park"],
+      "figure": ["minseong-chu-profile-img.png"],
+      "link": ""
+    },
+    {
+      "sub": "",      
+      "type": "2025",
       "status": "IEEE MWTL",
       "title": "A Stagger-Tuned Cryogenic Broadband CMOS 3-stage Cascode LNA for Quantum Computing",
       "image": "",
       "journal": "IEEE MWTL",
       "authors": ["Woong-Joo Chang", "Junhee Kwon", "Geunyong Kim", "Insu Jeon", "Jaeho Shin", "Seong-Joong Kim", "Hui-Dong Gwon", "Min-Seong Choo", "Tae Hwan Jang"],
       "figure": ["minseong-chu-profile-img.png"],
-      "link": ""
+      "link": "https://ieeexplore.ieee.org/document/11272918"
     },    
     {
       "type": "2025",
