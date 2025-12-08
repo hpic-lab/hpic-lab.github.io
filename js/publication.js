@@ -115,47 +115,52 @@ $(document).ready(function () {
 
 $(document).ready(function () {
 
+  // [최종_v3] 화살표 아이콘 + 안전장치 완비 버전
   function loadPublication(url, containerClass) {
     $.getJSON(url).done(function (pubs) {
       const container = $(containerClass);
       container.empty();
       
-      // [보완 1] 이벤트 이름표(.pubToggle)를 사용하여, 다른 기능의 클릭 이벤트는 건드리지 않음
+      // [안전장치 1] 네임스페이스(.pubToggle)를 사용하여 이 기능의 이벤트만 깔끔하게 초기화
       container.off("click.pubToggle", ".publication-year-header");
 
       // 1. 데이터를 연도별로 그룹화
       const papersByYear = {};
       pubs.forEach((pub) => {
-        // [보완 2] 연도 데이터가 없을 경우 'Others'로 처리하여 undefined 방지
-        const year = pub.type ? pub.type : "Others"; 
-        
-        if (!papersByYear[year]) {
-          papersByYear[year] = [];
-        }
+        // [안전장치 2] 연도 데이터가 없으면 'Others'로 처리해 에러 방지
+        const year = pub.type ? pub.type : "Others";
+        if (!papersByYear[year]) papersByYear[year] = [];
         papersByYear[year].push(pub);
       });
 
-      // 2. 연도 내림차순 정렬
+      // 2. 정렬 (최신순) - 문자열이 섞여도 깨지지 않음
       const sortedYears = Object.keys(papersByYear).sort((a, b) => {
-        // "Others"는 항상 맨 뒤로 보냄
         if (a === "Others") return 1;
         if (b === "Others") return -1;
-        
         if (!isNaN(a) && !isNaN(b)) return b - a; 
         return a < b ? 1 : -1;
       });
 
       // 3. 화면 그리기
       sortedYears.forEach((year) => {
-        // 헤더 추가
-        const yearHeaderHTML = `<h3 class="publication-year-header">${year}</h3>`;
+        
+        // 제목 + 화살표 아이콘(SVG)
+        const yearHeaderHTML = `
+          <h3 class="publication-year-header">
+            <span>${year}</span>
+            <span class="pub-toggle-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </span>
+          </h3>
+        `;
         container.append(yearHeaderHTML);
 
-        // 내용 박스 추가
+        // 내용 박스
         const yearContentDiv = $("<div class='pub-year-content'></div>");
 
         papersByYear[year].forEach((pub) => {
-          // 기존 디자인 로직 (그대로 유지)
           const authorsList = pub.authors.map(a => `<span>${a}</span>`).join(", ");
           const figures = pub.figure ? pub.figure.map(img => `<img src="img/${img}" class="pub-figure" alt="Figure">`).join("") : "";
           const awardBadge = pub.award ? `<span class="badge bg-warning">${pub.award}</span>|` : "";
@@ -180,9 +185,12 @@ $(document).ready(function () {
         container.append(yearContentDiv);
       });
 
-      // 4. [보완 1 & 3] 이름표가 붙은 클릭 이벤트 + 애니메이션 꼬임 방지(.stop)
+      // 4. 클릭 이벤트 연결
       container.on("click.pubToggle", ".publication-year-header", function() {
-        // .stop(true, false): 현재 진행 중인 애니메이션을 즉시 멈추고 새 명령 수행
+        // 아이콘 회전 클래스 토글
+        $(this).toggleClass("collapsed");
+        
+        // [안전장치 3] .stop()으로 이전 애니메이션 즉시 종료 (광클 꼬임 방지)
         $(this).next(".pub-year-content").stop(true, false).slideToggle(300);
       });
     });

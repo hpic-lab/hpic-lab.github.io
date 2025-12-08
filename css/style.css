@@ -361,25 +361,49 @@ h6 {
 .publication-year-header {
   background: none;
   border: none;
-  border-bottom: 3px solid #005bac; /* 파란색 밑줄 (한양대 색상) */
+  border-bottom: 3px solid #005bac; /* 파란색 밑줄 */
   font-family: "Noto Sans KR", sans-serif;
   font-size: 1.8rem;
   font-weight: 700;
   color: #333;
-  margin-top: 40px;    /* 연도 사이 간격 */
-  margin-bottom: 20px; /* 제목과 내용 사이 간격 */
+  margin-top: 40px;
+  margin-bottom: 20px;
   padding-bottom: 5px;
-  cursor: pointer;     /* 마우스 올리면 손가락 모양 */
-  display: block;
-  user-select: none;   /* 더블 클릭 시 텍스트 선택되는 것 방지 */
+  cursor: pointer;
+  user-select: none;   /* 텍스트 드래그 방지 */
+  
+  display: flex;       /* 아이콘 정렬용 */
+  align-items: center; 
 }
 
-/* 2. 연도별 논문 내용 (패널) 디자인 */
+/* 2. 아이콘 스타일 */
+.pub-toggle-icon {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  transition: transform 0.3s ease; /* 부드러운 회전 */
+  color: #888;
+  
+  /* [안전장치 4] 아이콘 찌그러짐 방지 */
+  flex-shrink: 0; 
+}
+
+/* 마우스 올렸을 때 아이콘 색상 변경 */
+.publication-year-header:hover .pub-toggle-icon {
+  color: #005bac;
+}
+
+/* 3. 접혔을 때 아이콘 회전 (아래 -> 오른쪽) */
+.publication-year-header.collapsed .pub-toggle-icon {
+  transform: rotate(-90deg);
+}
+
+/* 4. 내용 영역 */
 .pub-year-content {
-  display: block;      /* 기본적으로 '보임' 상태로 시작 */
+  display: block;
 }
 
-/* 맨 첫 번째 연도 제목의 불필요한 위쪽 여백 제거 */
+/* 첫 번째 연도 위쪽 여백 제거 */
 .publication-year-header:first-of-type {
   margin-top: 0;
 }
