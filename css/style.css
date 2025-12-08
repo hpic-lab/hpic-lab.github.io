@@ -331,31 +331,9 @@ h6 {
 }
 /*Publications CSS for each year 25.12.08 D.H Lee (Start)*/
 
-/* Publications 연도별 헤더 스타일 */
-.publication-year-header {
-  width: 100%;
-  margin-top: 50px;    /* 연도 사이 간격 */
-  margin-bottom: 20px; /* 제목과 첫 논문 사이 간격 */
-  clear: both;         /* 레이아웃 꼬임 방지 */
-}
-
-/* 맨 첫 번째 연도는 위쪽 간격 없애기 */
-.publication-year-header:first-child {
-  margin-top: 0;
-}
-
-.publication-year-header h3 {
-  font-size: 1.8rem;   /* 연도 글씨 크기 */
-  font-weight: 700;    /* 굵게 */
-  color: #333;         /* 글자색 (진한 회색) */
-  margin-bottom: 10px;
-  border-bottom: 3px solid #005bac; /* 파란색 밑줄 (한양대 색상) */
-  padding-bottom: 5px;
-}
-
-.publication-year-header hr {
-  display: none; /* h3에 밑줄을 넣었으므로 기본 hr은 숨김 */
-}
+/* ========================================= */
+/* [최종_v4] Publications 스타일 (레퍼런스형 + 토글) */
+/* ========================================= */
 
 /* 1. 연도 제목 (헤더) 디자인 */
 .publication-year-header {
@@ -370,9 +348,9 @@ h6 {
   margin-bottom: 20px;
   padding-bottom: 5px;
   cursor: pointer;
-  user-select: none;   /* 텍스트 드래그 방지 */
+  user-select: none;
   
-  display: flex;       /* 아이콘 정렬용 */
+  display: flex;       
   align-items: center; 
 }
 
@@ -381,11 +359,9 @@ h6 {
   display: flex;
   align-items: center;
   margin-left: 10px;
-  transition: transform 0.3s ease; /* 부드러운 회전 */
+  transition: transform 0.3s ease; 
   color: #888;
-  
-  /* [안전장치 4] 아이콘 찌그러짐 방지 */
-  flex-shrink: 0; 
+  flex-shrink: 0; /* 아이콘 찌그러짐 방지 */
 }
 
 /* 마우스 올렸을 때 아이콘 색상 변경 */
@@ -393,7 +369,7 @@ h6 {
   color: #005bac;
 }
 
-/* 3. 접혔을 때 아이콘 회전 (아래 -> 오른쪽) */
+/* 3. 접혔을 때 아이콘 회전 */
 .publication-year-header.collapsed .pub-toggle-icon {
   transform: rotate(-90deg);
 }
@@ -408,8 +384,44 @@ h6 {
   margin-top: 0;
 }
 
-/*Publications CSS for each year 25.12.08 D.H Lee (END)*/
+/* 5. [NEW] 레퍼런스 텍스트 디자인 (기존 폰트 유지) */
+.pub-citation-text {
+  margin-top: 6px;
+  line-height: 1.6;
+  color: #333;
+  font-size: 1rem; /* 웹사이트 기본 폰트 크기 */
+}
 
+/* 논문 제목 링크 */
+.pub-title-link {
+  color: #333;
+  text-decoration: none;
+}
+
+.pub-title-link:hover {
+  text-decoration: underline;
+  color: #005bac;
+}
+
+/* 6. 배지 및 아이콘 간격 */
+.pub-badges {
+  margin-bottom: 4px;
+}
+
+.pub-badges .badge {
+  margin-right: 4px;
+  font-size: 0.75rem;
+  vertical-align: middle;
+}
+
+.pub-icon-box img {
+  width: 16px;
+  height: 16px;
+  vertical-align: text-top;
+  margin-right: 4px;
+}
+
+/*Publications CSS for each year 25.12.08 D.H Lee (END)*/
 
 /* Publications - Patent */
 #patent .card-text {
