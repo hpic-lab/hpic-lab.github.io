@@ -120,7 +120,6 @@ $(document).ready(function () {
       const container = $(containerClass);
       container.empty();
       
-      // 이벤트 중복 방지
       container.off("click.pubToggle", ".publication-year-header");
 
       // 1. 데이터 연도별 그룹화
@@ -158,59 +157,82 @@ $(document).ready(function () {
         const yearContentDiv = $("<div class='pub-year-content'></div>");
 
         papersByYear[year].forEach((pub) => {
-          // 저자 목록 (기본적으로 쉼표로 연결)
-          let authorsText = pub.authors.join(", ");
+          const authorsText = pub.authors.join(", ");
 
-          // 배지 생성
+          // --- [수정됨] 배지 생성 로직 ---
           let badgesHTML = "";
+          
+          // 1. 연도 (Type) - 파란색
           if (pub.type) badgesHTML += `<span class="badge text-bg-primary">${pub.type}</span>| `;
+          
+          // 2. [수정] 저널 배지 (journal 필드) - 녹색
+          if (pub.journal) badgesHTML += `<span class="badge bg-success">${pub.journal}</span>| `;
+
+          // 3. [추가] 컨퍼런스 배지 (conference 필드) - 녹색 (저널과 동일 디자인)
+          if (pub.conference) badgesHTML += `<span class="badge bg-success">${pub.conference}</span>| `;
+
+          // 4. 상태 (Status) - 녹색
           if (pub.status) badgesHTML += `<span class="badge bg-success">${pub.status}</span>| `;
+          
+          // 5. 기타 배지들
           if (pub.award) badgesHTML += `<span class="badge bg-warning">${pub.award}</span>| `;
           if (pub.sub) badgesHTML += `<span class="badge bg-info">${pub.sub}</span>| `;
           if (pub.progress) badgesHTML += `<span class="badge bg-secondary">${pub.progress}</span>| `;
           
+          // 마지막 구분선 제거
           if (badgesHTML.endsWith("| ")) badgesHTML = badgesHTML.slice(0, -2);
+
 
           const figures = pub.figure ? pub.figure.map(img => `<img src="img/${img}" class="pub-figure" alt="Figure">`).join("") : "";
 
-          // --- [수정 핵심] 제목 유무에 따른 분기 처리 ---
+          // ---------------------------------------------------------
+          // 레퍼런스 정보 조립 (기존 로직 유지)
+          // ---------------------------------------------------------
           
-          let titleHTML = "";      // 제목 링크 HTML
-          let citationString = ""; // 상세 정보 (vol, no, pp...)
-          
-          // (A) 제목이 있는 경우 -> 기존 로직 실행
-          if (pub.title && pub.title.trim() !== "") {
-              
-              let titleSuffix = "."; // 기본 제목 뒤 기호
+          let titleHTML = "";      
+          let citationString = ""; 
+          let titleSuffix = ".";   
 
-              // 상세 정보가 다 있는 경우
-              // vol, no, pp가 다 채워지지 않으면 레퍼런스 상세 정보가 출력되지 않음
-              if (pub.vol && pub.no && pub.pp) {
-                 const journalName = pub.journal_full ? pub.journal_full : (pub.journal ? pub.journal : "");
-                 const parts = [];
-                 
-                 if (journalName) parts.push(`<i>${journalName}</i>`);
-                 parts.push(`vol. ${pub.vol}`);
-                 parts.push(`no. ${pub.no}`);
-                 parts.push(`pp. ${pub.pp}`);
-                 
-                 if (pub.month) parts.push(`${pub.month} ${year}`);
-                 else parts.push(`${year}`);
-                 
-                 titleSuffix = ","; // 뒤에 이어지므로 쉼표
-                 citationString = " " + parts.join(", ") + ".";
+          if (pub.title && pub.title.trim() !== "") {
+              const parts = [];
+              let isDetailsComplete = false;
+
+              // Case 1: 컨퍼런스
+              if (pub.conference_fullname) {
+                  if (pub.pp) {
+                      isDetailsComplete = true;
+                      parts.push(`<i>${pub.conference_fullname}</i>`);
+                      if (pub.city) parts.push(pub.city);
+                      if (pub.country) parts.push(pub.country);
+                      parts.push(`${year}`);
+                      parts.push(`pp. ${pub.pp}`);
+                  }
+              }
+              // Case 2: 저널
+              else {
+                  if (pub.vol && pub.no && pub.pp) {
+                      isDetailsComplete = true;
+                      const journalName = pub.journal_full ? pub.journal_full : (pub.journal ? pub.journal : ""); // 저널명은 기존 journal 필드 활용 가능
+                      if (journalName) parts.push(`<i>${journalName}</i>`);
+                      parts.push(`vol. ${pub.vol}`);
+                      parts.push(`no. ${pub.no}`);
+                      parts.push(`pp. ${pub.pp}`);
+                      
+                      if (pub.month) parts.push(`${pub.month} ${year}`);
+                      else parts.push(`${year}`);
+                  }
+              }
+
+              if (isDetailsComplete) {
+                  titleSuffix = ","; 
+                  citationString = " " + parts.join(", ") + "."; 
               }
               
-              // 제목 HTML 생성 (따옴표 안에 기호 포함)
               titleHTML = `, <a href="${pub.link}" target="_blank" class="pub-title-link">"<b>${pub.title}</b>${titleSuffix}"</a>`;
-          
           } 
-          // (B) 제목이 없는 경우 -> 저자 뒤에 마침표 찍고 끝냄
           else {
-              authorsText += "."; // 저자 목록 끝에 마침표 추가
-              // titleHTML과 citationString은 빈 문자열 그대로 둠
+              authorsText += "."; 
           }
-
 
           // HTML 조립
           const pub_detail = `

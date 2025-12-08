@@ -7,6 +7,11 @@
       "title": "",
       "image": "",
       "journal": "IEEE TIM",
+      "journal_full": "", 
+      "vol": "",         
+      "no": "",           
+      "pp": "",     
+      "month": "",      
       "authors": [
         "Ji-Ho Kim",
         "Jae-Hyeon Pyeon",
@@ -22,6 +27,11 @@
       "title": "",
       "image": "",
       "journal": "IEEE JETCAS",
+      "journal_full": "", 
+      "vol": "",         
+      "no": "",           
+      "pp": "",     
+      "month": "",       
       "authors": [
         "Shin-Uk Kang",
         "Dong-Hyun Lee",
@@ -39,6 +49,11 @@
       "image": "",
       "progress": "",
       "journal": "IEEE JSSC",
+      "journal_full": "", 
+      "vol": "",         
+      "no": "",           
+      "pp": "",     
+      "month": "",       
       "authors": [
         "Jae-Hyeon Pyeon...", 
         "Min-Seong Choo."
@@ -53,6 +68,11 @@
       "image": "",
       "progress": "",
       "journal": "IEEE TCAS-I",
+      "journal_full": "", 
+      "vol": "",         
+      "no": "",           
+      "pp": "",     
+      "month": "",       
       "authors": [
         "Sang-Hyun Ok...", 
         "Min-Seong Choo."
@@ -67,6 +87,11 @@
       "image": "",
       "progress": "",
       "journal": "IEEE TCAS-I",
+      "journal_full": "", 
+      "vol": "",         
+      "no": "",           
+      "pp": "",     
+      "month": "",       
       "authors": [
         "Dong-Ho Kim, Seung-Mo Jin...", 
         "Min-Seong Choo."
@@ -81,6 +106,10 @@
       "title": "A Pattern-Dependent Pulse Filtering Technique for Low-Jitter Injection-Locked CDR in 28-nm CMOS",
       "image": "",
       "journal": "IEEE TVLSI",
+      "vol": "",         
+      "no": "",           
+      "pp": "",     
+      "month": "",      
       "authors": ["Junhak Kim", "Young-Wook Kim", "Sinho Lee", "Yoojin Jung", "Min-Seong Choo", "Kwanseo Park"],
       "figure": ["minseong-chu-profile-img.png"],
       "link": ""
@@ -112,7 +141,7 @@
       "no": "10",           
       "pp": "3602-3612",     
       "month": "Oct.", 
-      "authors": ["H.-S. Choi", "J.-G. Lee", "S.-H. Gong", "K.-H. Lee", "D.-H. Koh", "J.-W. Sull", "H.-R. Do", "C.-H Kye", "D.-K. Jeong", "K.-S. Park", "M.-S. Choo"
+      "authors": ["H.-S. Choi", "J.-G. Lee", "S.-H. Gong", "K.-H. Lee", "D.-H. Koh", "J.-W. Sull", "H.-R. Do", "C.-H Kye", "D.-K. Jeong", "K.-S. Park", "and M.-S. Choo"
       ],
       "figure": ["jg-lee-profile-img.jpeg", "sh-gong-profile-image.jpg", "minseong-chu-profile-img.png"],
       "link": "https://ieeexplore.ieee.org/document/11029275"
@@ -295,6 +324,11 @@
     "title": "Review of Injection-Locked Oscillators",
     "image": "img/j8.png",
     "journal": "Journal of Semiconductor Engineering (JSE)",
+    "journal_full": "", 
+    "vol": "",         
+    "no": "",           
+    "pp": "",     
+    "month": "",    
     "authors": [
       "Min-Seong Choo",
       "Deog-Kyoon Jeong"
@@ -309,6 +343,11 @@
     "title": "A 15-GHz, 17.8-mW, 213-fs Injection-Locked PLL With Maximized Injection Strength Using Adjustment of Phase Domain Response",
     "image": "img/j7.png",
     "journal": "IEEE Transactions on Circuits and Systems-II: Express Briefs (TCAS-II)",
+    "journal_full": "", 
+    "vol": "",         
+    "no": "",           
+    "pp": "",     
+    "month": "",    
     "authors": [
       "Min-Seong Choo",
       "Yeonggeun Song",
@@ -327,6 +366,11 @@
     "title": "A Current-Mode Digital AOT 4-Phase Buck Voltage Regulator",
     "image": "img/j5.png",
     "journal": "IEEE Solid-State Circuits Letters (SSC-L)",
+    "journal_full": "", 
+    "vol": "",         
+    "no": "",           
+    "pp": "",     
+    "month": "",    
     "authors": [
       "Minho Choi",
       "Chan-Ho Kye",
@@ -344,6 +388,11 @@
     "title": "A 10-Gb/s, 0.03-mm2, 1.28-pJ/bit Half-Rate All-Digital Injection-Locked Clock and Data Recovery with Maximum Timing-Margin Tracking Loop",
     "image": "img/c4.png",
     "journal": "IEEE Asian Solid-State Circuits Conference (A-SSCC) invited to JSSC",
+    "journal_full": "", 
+    "vol": "",         
+    "no": "",           
+    "pp": "",     
+    "month": "",    
     "authors": [
       "Min-Seong Choo",
       "Han-Gon Ko",
@@ -361,6 +410,11 @@
     "title": "An optimum injection-timing tracking loop for 5-GHz, 1.13-mW/GHz RO-based injection-locked PLL with 152-fs integrated jitter",
     "image": "img/j4.png",
     "journal": "IEEE Transactions on Circuits and Systems-II: Express Briefs (TCAS-II)",
+    "journal_full": "", 
+    "vol": "",         
+    "no": "",           
+    "pp": "",     
+    "month": "",    
     "authors": [
       "Min-Seong Choo",
       "Han-Gon Ko",
@@ -378,6 +432,11 @@
     "title": "A 2.5–5.6 GHz subharmonically injection-locked all-digital PLL with dual-edge complementary switched injection",
     "image": "img/j3.png",
     "journal": "IEEE Transactions on Circuits and Systems-I: Regular Links (TCAS-I)",
+    "journal_full": "", 
+    "vol": "",         
+    "no": "",           
+    "pp": "",     
+    "month": "",    
     "authors": [
       "Sung-Yong Cho",
       "Sungwoo Kim",
@@ -397,6 +456,11 @@
     "title": "A 55.1 mW 1.62-to-8.1 Gb/s video interface receiver generating up to 680 MHz stream clock over 20 dB loss channel",
     "image": "img/j2.png",
     "journal": "IEEE Transactions on Circuits and Systems-II: Express Briefs (TCAS-II)",
+    "journal_full": "", 
+    "vol": "",         
+    "no": "",           
+    "pp": "",     
+    "month": "",    
     "authors": [
       "Kwanseo Park",
       "Jinhyung Lee",
@@ -417,6 +481,11 @@
     "title": "A 285-fs rms Integrated Jitter Injection-Locked Ring PLL with Charge-Stored Complementary Switch Injection Technique",
     "image": "img/j1.png",
     "journal": "Journal of Semiconductor Technology and Science (JSTS)",
+    "journal_full": "", 
+    "vol": "",         
+    "no": "",           
+    "pp": "",     
+    "month": "",    
     "authors": [
       "Sungwoo Kim",
       "Sungchun Jang",
