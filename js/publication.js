@@ -115,7 +115,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
 
-  // 본문 상세정보는 vol,no,pp의 정보가 다 채워질 때만 표시
+  // [최종_v8] 배지와 구분선 사이 공백 제거 버전
   function loadPublication(url, containerClass) {
     $.getJSON(url).done(function (pubs) {
       const container = $(containerClass);
@@ -142,7 +142,7 @@ $(document).ready(function () {
 
       // 3. 화면 그리기
       sortedYears.forEach((year) => {
-        // 헤더 (연도 + 화살표)
+        // 헤더
         const yearHeaderHTML = `
           <h3 class="publication-year-header">
             <span>${year}</span>
@@ -159,54 +159,38 @@ $(document).ready(function () {
         const yearContentDiv = $("<div class='pub-year-content'></div>");
 
         papersByYear[year].forEach((pub) => {
-          
-          // 저자 목록
           const authorsText = pub.authors.join(", ");
 
-          // --- [1] 배지 생성 (항상 표시) ---
           let badgesHTML = "";
           
-          if (pub.type) badgesHTML += `<span class="badge text-bg-primary">${pub.type}</span> | `;
-          if (pub.status) badgesHTML += `<span class="badge bg-success">${pub.status}</span> | `;
-          if (pub.award) badgesHTML += `<span class="badge bg-warning">${pub.award}</span> | `;
-          if (pub.sub) badgesHTML += `<span class="badge bg-info">${pub.sub}</span> | `;
-          if (pub.progress) badgesHTML += `<span class="badge bg-secondary">${pub.progress}</span> | `;
+          if (pub.type) badgesHTML += `<span class="badge text-bg-primary">${pub.type}</span>| `;
+          if (pub.status) badgesHTML += `<span class="badge bg-success">${pub.status}</span>| `;
+          if (pub.award) badgesHTML += `<span class="badge bg-warning">${pub.award}</span>| `;
+          if (pub.sub) badgesHTML += `<span class="badge bg-info">${pub.sub}</span>| `;
+          if (pub.progress) badgesHTML += `<span class="badge bg-secondary">${pub.progress}</span>| `;
 
-          // 마지막 구분선 제거
-          if (badgesHTML.endsWith(" | ")) {
-            badgesHTML = badgesHTML.slice(0, -3);
+          // 마지막에 남은 "| " (2글자) 제거
+          if (badgesHTML.endsWith("| ")) {
+            badgesHTML = badgesHTML.slice(0, -2);
           }
 
-          // 이미지 처리
           const figures = pub.figure ? pub.figure.map(img => `<img src="img/${img}" class="pub-figure" alt="Figure">`).join("") : "";
 
-
-          // --- [2] 레퍼런스 텍스트 생성 (엄격한 조건) ---
-          // 조건: vol, no, pp가 모두 있을 때만 -> Journal, vol, no, pp, month, year 출력
-          // 그렇지 않으면 -> 아무것도 출력 안 함 (제목 뒤 마침표로 끝남)
-          
-          let citationString = "."; // 기본값: 제목 뒤 마침표
-
+          // 레퍼런스 텍스트 생성
+          let citationString = "."; 
           if (pub.vol && pub.no && pub.pp) {
              const journalName = pub.journal_full ? pub.journal_full : (pub.journal ? pub.journal : "");
              const parts = [];
-             
-             // 1. 저널명
              if (journalName) parts.push(`<i>${journalName}</i>`);
-             
-             // 2. 상세 정보
              parts.push(`vol. ${pub.vol}`);
              parts.push(`no. ${pub.no}`);
              parts.push(`pp. ${pub.pp}`);
              
-             // 3. 날짜 + 연도 (본문용)
              if (pub.month) parts.push(`${pub.month} ${year}`);
              else parts.push(`${year}`);
              
-             // 제목 뒤 쉼표로 시작해서 정보 나열 후 마침표
              citationString = ", " + parts.join(", ") + ".";
           }
-
 
           // HTML 조립
           const pub_detail = `
@@ -215,14 +199,12 @@ $(document).ready(function () {
                  <span class="pub-icon-box"><img src="img/pub-svg.svg"></span>
                  ${badgesHTML}
               </div>
-
               <div class="pub-citation-text">
                 <span class="pub-author">${authorsText}</span>, 
                 <a href="${pub.link}" target="_blank" class="pub-title-link">
                   "<b>${pub.title}</b>"
                 </a>${citationString}
               </div>
-
               <div class="pub-figures">${figures}</div>
             </div>`;
           
@@ -232,7 +214,7 @@ $(document).ready(function () {
         container.append(yearContentDiv);
       });
 
-      // 4. 클릭 이벤트 (토글)
+      // 4. 클릭 이벤트
       container.on("click.pubToggle", ".publication-year-header", function() {
         $(this).toggleClass("collapsed");
         $(this).next(".pub-year-content").stop(true, false).slideToggle(300);
@@ -240,7 +222,7 @@ $(document).ready(function () {
     });
   }
 
-  // 특허 로드 함수 (기존 유지)
+  // 특허 로드 함수 (특허 쪽도 동일하게 공백 제거 적용)
   function loadPatent(url, containerClass) {
      $.getJSON(url).done(function (pubs) {
       const container = $(containerClass);
@@ -249,10 +231,13 @@ $(document).ready(function () {
         const figures = pub.figure ? pub.figure.map(img => `<img src="img/${img}" class="pub-figure" alt="Figure">`).join("") : "";
         
         let badgesHTML = "";
-        if (pub.type) badgesHTML += `<span class="badge text-bg-primary">${pub.type}</span> | `;
-        if (pub.status) badgesHTML += `<span class="badge process-badge">${pub.status}</span> | `;
-        if (pub.registration) badgesHTML += `<span class="badge bg-success">${pub.registration}</span> | `;
-        if (badgesHTML.endsWith(" | ")) badgesHTML = badgesHTML.slice(0, -3);
+        // 여기도 공백 제거
+        if (pub.type) badgesHTML += `<span class="badge text-bg-primary">${pub.type}</span>| `;
+        if (pub.status) badgesHTML += `<span class="badge process-badge">${pub.status}</span>| `;
+        if (pub.registration) badgesHTML += `<span class="badge bg-success">${pub.registration}</span>| `;
+        
+        // 마지막 "| " 제거
+        if (badgesHTML.endsWith("| ")) badgesHTML = badgesHTML.slice(0, -2);
 
         const pub_detail = `
         <div class="pub-wrapper">
