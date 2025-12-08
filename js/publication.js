@@ -115,11 +115,13 @@ $(document).ready(function () {
 
 $(document).ready(function () {
 
+  // [Final Stable Version] 변수 선언 오류 수정 및 모든 요청사항 반영
   function loadPublication(url, containerClass) {
     $.getJSON(url).done(function (pubs) {
       const container = $(containerClass);
       container.empty();
       
+      // 중복 이벤트 방지
       container.off("click.pubToggle", ".publication-year-header");
 
       // 1. 데이터 연도별 그룹화
@@ -157,82 +159,85 @@ $(document).ready(function () {
         const yearContentDiv = $("<div class='pub-year-content'></div>");
 
         papersByYear[year].forEach((pub) => {
-          const authorsText = pub.authors.join(", ");
+          
+          // [수정 완료] const -> let (나중에 마침표 추가를 위해 수정 가능해야 함)
+          let authorsText = pub.authors.join(", ");
 
-          // --- [수정됨] 배지 생성 로직 ---
+          // --- 배지 생성 ---
           let badgesHTML = "";
           
-          // 1. 연도 (Type) - 파란색
+          // 1. 연도 (Type)
           if (pub.type) badgesHTML += `<span class="badge text-bg-primary">${pub.type}</span>| `;
           
-          // 2. [수정] 저널 배지 (journal 필드) - 녹색
+          // 2. 저널/컨퍼런스 배지 (journal 또는 conference 필드 사용)
           if (pub.journal) badgesHTML += `<span class="badge bg-success">${pub.journal}</span>| `;
-
-          // 3. [추가] 컨퍼런스 배지 (conference 필드) - 녹색 (저널과 동일 디자인)
           if (pub.conference) badgesHTML += `<span class="badge bg-success">${pub.conference}</span>| `;
-
-          // 4. 상태 (Status) - 녹색
-          if (pub.status) badgesHTML += `<span class="badge bg-success">${pub.status}</span>| `;
           
-          // 5. 기타 배지들
+          // 3. 상태/수상 등 기타 배지
+          if (pub.status) badgesHTML += `<span class="badge bg-success">${pub.status}</span>| `;
           if (pub.award) badgesHTML += `<span class="badge bg-warning">${pub.award}</span>| `;
           if (pub.sub) badgesHTML += `<span class="badge bg-info">${pub.sub}</span>| `;
           if (pub.progress) badgesHTML += `<span class="badge bg-secondary">${pub.progress}</span>| `;
           
-          // 마지막 구분선 제거
+          // 구분선 끝처리
           if (badgesHTML.endsWith("| ")) badgesHTML = badgesHTML.slice(0, -2);
 
 
           const figures = pub.figure ? pub.figure.map(img => `<img src="img/${img}" class="pub-figure" alt="Figure">`).join("") : "";
 
-          // ---------------------------------------------------------
-          // 레퍼런스 정보 조립 (기존 로직 유지)
-          // ---------------------------------------------------------
-          
+          // --- 레퍼런스 정보 조립 ---
           let titleHTML = "";      
           let citationString = ""; 
           let titleSuffix = ".";   
 
+          // 제목이 있는 경우
           if (pub.title && pub.title.trim() !== "") {
               const parts = [];
               let isDetailsComplete = false;
 
-              // Case 1: 컨퍼런스
+              // Case 1: 컨퍼런스 (conference_fullname 존재 시)
               if (pub.conference_fullname) {
+                  // pp가 있어야 상세 정보 출력
                   if (pub.pp) {
                       isDetailsComplete = true;
                       parts.push(`<i>${pub.conference_fullname}</i>`);
                       if (pub.city) parts.push(pub.city);
                       if (pub.country) parts.push(pub.country);
-                      parts.push(`${year}`);
+                      parts.push(`${year}`); // Month 없이 연도만
                       parts.push(`pp. ${pub.pp}`);
                   }
               }
-              // Case 2: 저널
+              // Case 2: 저널 (conference_fullname 없음)
               else {
+                  // vol, no, pp 모두 있어야 상세 정보 출력
                   if (pub.vol && pub.no && pub.pp) {
                       isDetailsComplete = true;
-                      const journalName = pub.journal_full ? pub.journal_full : (pub.journal ? pub.journal : ""); // 저널명은 기존 journal 필드 활용 가능
+                      const journalName = pub.journal_full ? pub.journal_full : (pub.journal ? pub.journal : "");
                       if (journalName) parts.push(`<i>${journalName}</i>`);
                       parts.push(`vol. ${pub.vol}`);
                       parts.push(`no. ${pub.no}`);
                       parts.push(`pp. ${pub.pp}`);
                       
+                      // Month + Year
                       if (pub.month) parts.push(`${pub.month} ${year}`);
                       else parts.push(`${year}`);
                   }
               }
 
+              // 상세 정보가 있으면 제목 뒤 쉼표, 없으면 마침표
               if (isDetailsComplete) {
                   titleSuffix = ","; 
                   citationString = " " + parts.join(", ") + "."; 
               }
               
+              // 제목 링크 생성 (따옴표 안에 기호 포함)
               titleHTML = `, <a href="${pub.link}" target="_blank" class="pub-title-link">"<b>${pub.title}</b>${titleSuffix}"</a>`;
           } 
+          // 제목이 없는 경우
           else {
-              authorsText += "."; 
+              authorsText += "."; // 저자 목록 뒤에 마침표 찍고 끝
           }
+
 
           // HTML 조립
           const pub_detail = `
@@ -261,7 +266,7 @@ $(document).ready(function () {
     });
   }
 
-  // 특허 로드 함수 (기존 유지)
+  // 특허 로드 함수 (기존 로직 유지, 배지 공백 제거만 적용)
   function loadPatent(url, containerClass) {
      $.getJSON(url).done(function (pubs) {
       const container = $(containerClass);
