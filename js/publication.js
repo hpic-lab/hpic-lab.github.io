@@ -110,6 +110,9 @@ $(document).ready(function () {
   loadPatent("json/publications/patent.json", ".patent-container");
 });
 */
+
+/* Edit 25.12.08 D.H Lee Classify Publications by year */
+
 $(document).ready(function () {
   
   // [수정됨] 논문 목록을 연도별로 그룹화 + 최신순 정렬하여 생성하는 함수
