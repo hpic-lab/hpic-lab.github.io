@@ -115,7 +115,6 @@ $(document).ready(function () {
 
 $(document).ready(function () {
 
-  // [최종_v9] 쉼표 위치 수정 (따옴표 안으로 이동)
   function loadPublication(url, containerClass) {
     $.getJSON(url).done(function (pubs) {
       const container = $(containerClass);
@@ -159,9 +158,10 @@ $(document).ready(function () {
         const yearContentDiv = $("<div class='pub-year-content'></div>");
 
         papersByYear[year].forEach((pub) => {
-          const authorsText = pub.authors.join(", ");
+          // 저자 목록 (기본적으로 쉼표로 연결)
+          let authorsText = pub.authors.join(", ");
 
-          // 배지 생성 (공백 제거 버전 유지)
+          // 배지 생성
           let badgesHTML = "";
           if (pub.type) badgesHTML += `<span class="badge text-bg-primary">${pub.type}</span>| `;
           if (pub.status) badgesHTML += `<span class="badge bg-success">${pub.status}</span>| `;
@@ -173,32 +173,44 @@ $(document).ready(function () {
 
           const figures = pub.figure ? pub.figure.map(img => `<img src="img/${img}" class="pub-figure" alt="Figure">`).join("") : "";
 
-          // --- [수정 핵심] 쉼표 위치 이동 ---
+          // --- [수정 핵심] 제목 유무에 따른 분기 처리 ---
           
-          let citationString = ""; // 기본값 빈 문자열 (마침표도 나중에 처리)
-          let titleSuffix = ".";   // 제목 뒤에 붙을 기호 (기본은 마침표)
+          let titleHTML = "";      // 제목 링크 HTML
+          let citationString = ""; // 상세 정보 (vol, no, pp...)
+          
+          // (A) 제목이 있는 경우 -> 기존 로직 실행
+          if (pub.title && pub.title.trim() !== "") {
+              
+              let titleSuffix = "."; // 기본 제목 뒤 기호
 
-          // 상세 정보가 모두 있을 때 -> 상세 내용 출력
-          if (pub.vol && pub.no && pub.pp) {
-             const journalName = pub.journal_full ? pub.journal_full : (pub.journal ? pub.journal : "");
-             const parts = [];
-             
-             if (journalName) parts.push(`<i>${journalName}</i>`);
-             parts.push(`vol. ${pub.vol}`);
-             parts.push(`no. ${pub.no}`);
-             parts.push(`pp. ${pub.pp}`);
-             
-             if (pub.month) parts.push(`${pub.month} ${year}`);
-             else parts.push(`${year}`);
-             
-             // 뒤에 내용이 이어지므로 제목 뒤는 '쉼표(,)'가 되어야 함
-             titleSuffix = ","; 
-             
-             // 상세 정보들은 그냥 나열하고 마지막에 마침표
-             citationString = " " + parts.join(", ") + ".";
-          } 
-          // 상세 정보가 없을 때 -> 제목 뒤 마침표(.)로 끝남 (titleSuffix 기본값 사용)
+              // 상세 정보가 다 있는 경우
+              // vol, no, pp가 다 채워지지 않으면 레퍼런스 상세 정보가 출력되지 않음
+              if (pub.vol && pub.no && pub.pp) {
+                 const journalName = pub.journal_full ? pub.journal_full : (pub.journal ? pub.journal : "");
+                 const parts = [];
+                 
+                 if (journalName) parts.push(`<i>${journalName}</i>`);
+                 parts.push(`vol. ${pub.vol}`);
+                 parts.push(`no. ${pub.no}`);
+                 parts.push(`pp. ${pub.pp}`);
+                 
+                 if (pub.month) parts.push(`${pub.month} ${year}`);
+                 else parts.push(`${year}`);
+                 
+                 titleSuffix = ","; // 뒤에 이어지므로 쉼표
+                 citationString = " " + parts.join(", ") + ".";
+              }
+              
+              // 제목 HTML 생성 (따옴표 안에 기호 포함)
+              titleHTML = `, <a href="${pub.link}" target="_blank" class="pub-title-link">"<b>${pub.title}</b>${titleSuffix}"</a>`;
           
+          } 
+          // (B) 제목이 없는 경우 -> 저자 뒤에 마침표 찍고 끝냄
+          else {
+              authorsText += "."; // 저자 목록 끝에 마침표 추가
+              // titleHTML과 citationString은 빈 문자열 그대로 둠
+          }
+
 
           // HTML 조립
           const pub_detail = `
@@ -208,10 +220,7 @@ $(document).ready(function () {
                  ${badgesHTML}
               </div>
               <div class="pub-citation-text">
-                <span class="pub-author">${authorsText}</span>, 
-                <a href="${pub.link}" target="_blank" class="pub-title-link">
-                  "<b>${pub.title}</b>${titleSuffix}"
-                </a>${citationString}
+                <span class="pub-author">${authorsText}</span>${titleHTML}${citationString}
               </div>
               <div class="pub-figures">${figures}</div>
             </div>`;
