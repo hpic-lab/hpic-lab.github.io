@@ -115,12 +115,12 @@ $(document).ready(function () {
 
 $(document).ready(function () {
 
-  // [Final_v21] 상세정보 출력 기준을 'show_detail' 변수로 변경
   function loadPublication(url, containerClass) {
     $.getJSON(url).done(function (pubs) {
       const container = $(containerClass);
       container.empty();
       
+      // 중복 이벤트 방지
       container.off("click.pubToggle", ".publication-year-header");
 
       // 1. 그룹화
@@ -161,22 +161,25 @@ $(document).ready(function () {
 
           // --- 배지 생성 ---
           let badgesHTML = "";
+          
+          // 1. 연도 (Type)
           if (pub.type) badgesHTML += `<span class="badge text-bg-primary">${pub.type}</span>| `;
-          if (pub.journal) badgesHTML += `<span class="badge bg-success">${pub.journal}</span>| `;
+          
+          // 2. 상태 (Status) - 여기에 적힌 'IEEE JSSC' 등이 배지로 나옴
           if (pub.status) badgesHTML += `<span class="badge bg-success">${pub.status}</span>| `;
+          
+          // 3. 기타 배지
           if (pub.award) badgesHTML += `<span class="badge bg-warning">${pub.award}</span>| `;
           if (pub.sub) badgesHTML += `<span class="badge bg-info">${pub.sub}</span>| `;
           if (pub.progress) badgesHTML += `<span class="badge bg-secondary">${pub.progress}</span>| `;
           
+          // 구분선 끝처리
           if (badgesHTML.endsWith("| ")) badgesHTML = badgesHTML.slice(0, -2);
 
           const figures = pub.figure ? pub.figure.map(img => `<img src="img/${img}" class="pub-figure" alt="Figure">`).join("") : "";
 
 
-          // ---------------------------------------------------------
-          // [핵심 로직] show_detail 변수가 있어야만 상세 정보 출력
-          // ---------------------------------------------------------
-          
+          // --- 레퍼런스 정보 조립 ---
           let titleHTML = "";      
           let citationString = ""; 
           let titleSuffix = ".";   
@@ -185,7 +188,7 @@ $(document).ready(function () {
               const parts = [];
               let isDetailsComplete = false;
 
-              // [조건 변경] pp가 아니라 show_detail 변수 확인
+              // [조건] show_detail 변수가 있어야 상세 정보 출력
               if (pub.show_detail) {
                   isDetailsComplete = true;
 
@@ -194,9 +197,7 @@ $(document).ready(function () {
                       parts.push(`<i>${pub.conference_fullname}</i>`);
                       if (pub.city) parts.push(pub.city);
                       if (pub.country) parts.push(pub.country);
-                      parts.push(`${year}`); // Month 제외
-                      
-                      // pp가 있으면 넣고 없으면 안 넣음 (유연하게 처리)
+                      parts.push(`${year}`); 
                       if (pub.pp) parts.push(`pp. ${pub.pp}`);
                   }
                   // Case 2: 저널
@@ -208,13 +209,11 @@ $(document).ready(function () {
                       if (pub.no) parts.push(`no. ${pub.no}`);
                       if (pub.pp) parts.push(`pp. ${pub.pp}`);
                       
-                      // Month + Year
                       if (pub.month) parts.push(`${pub.month} ${year}`);
                       else parts.push(`${year}`);
                   }
               }
 
-              // 상세 정보가 있으면 제목 뒤 쉼표, 없으면 마침표
               if (isDetailsComplete) {
                   titleSuffix = ","; 
                   citationString = " " + parts.join(", ") + "."; 
@@ -253,7 +252,7 @@ $(document).ready(function () {
     });
   }
 
-  // 특허 로드 함수 (기존 유지)
+  // 특허 로드 함수
   function loadPatent(url, containerClass) {
      $.getJSON(url).done(function (pubs) {
       const container = $(containerClass);
