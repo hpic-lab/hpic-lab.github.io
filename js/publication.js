@@ -115,15 +115,15 @@ $(document).ready(function () {
 
 $(document).ready(function () {
 
+  // [Final_v21] 상세정보 출력 기준을 'show_detail' 변수로 변경
   function loadPublication(url, containerClass) {
     $.getJSON(url).done(function (pubs) {
       const container = $(containerClass);
       container.empty();
       
-      // 중복 이벤트 방지
       container.off("click.pubToggle", ".publication-year-header");
 
-      // 1. 데이터 연도별 그룹화
+      // 1. 그룹화
       const papersByYear = {};
       pubs.forEach((pub) => {
         const year = pub.type ? pub.type : "Others";
@@ -131,7 +131,7 @@ $(document).ready(function () {
         papersByYear[year].push(pub);
       });
 
-      // 2. 정렬 (최신순)
+      // 2. 정렬
       const sortedYears = Object.keys(papersByYear).sort((a, b) => {
         if (a === "Others") return 1;
         if (b === "Others") return -1;
@@ -141,7 +141,6 @@ $(document).ready(function () {
 
       // 3. 화면 그리기
       sortedYears.forEach((year) => {
-        // 헤더
         const yearHeaderHTML = `
           <h3 class="publication-year-header">
             <span>${year}</span>
@@ -154,72 +153,60 @@ $(document).ready(function () {
         `;
         container.append(yearHeaderHTML);
 
-        // 내용 박스
         const yearContentDiv = $("<div class='pub-year-content'></div>");
 
         papersByYear[year].forEach((pub) => {
           
-          // [안전장치] let으로 선언 (수정 가능)
           let authorsText = pub.authors.join(", ");
 
-          // --- 배지 생성 (Conference 중복 제거) ---
+          // --- 배지 생성 ---
           let badgesHTML = "";
-          
-          // 1. 연도 (Type)
           if (pub.type) badgesHTML += `<span class="badge text-bg-primary">${pub.type}</span>| `;
-          
-          // 2. 저널 배지 (저널은 보통 status에 'Accepted' 등을 쓰고 여기에 저널명을 씀)
           if (pub.journal) badgesHTML += `<span class="badge bg-success">${pub.journal}</span>| `;
-          
-          // [삭제됨] conference 배지는 status와 중복되므로 제거했습니다.
-          // if (pub.conference) badgesHTML += ... 
-          
-          // 3. 상태/학회명 (Status) - 여기서 컨퍼런스 이름이 나옴
           if (pub.status) badgesHTML += `<span class="badge bg-success">${pub.status}</span>| `;
-          
-          // 4. 기타 배지
           if (pub.award) badgesHTML += `<span class="badge bg-warning">${pub.award}</span>| `;
           if (pub.sub) badgesHTML += `<span class="badge bg-info">${pub.sub}</span>| `;
           if (pub.progress) badgesHTML += `<span class="badge bg-secondary">${pub.progress}</span>| `;
           
-          // 구분선 끝처리
           if (badgesHTML.endsWith("| ")) badgesHTML = badgesHTML.slice(0, -2);
-
 
           const figures = pub.figure ? pub.figure.map(img => `<img src="img/${img}" class="pub-figure" alt="Figure">`).join("") : "";
 
-          // --- 레퍼런스 정보 조립 ---
+
+          // ---------------------------------------------------------
+          // [핵심 로직] show_detail 변수가 있어야만 상세 정보 출력
+          // ---------------------------------------------------------
+          
           let titleHTML = "";      
           let citationString = ""; 
           let titleSuffix = ".";   
 
-          // 제목이 있는 경우
           if (pub.title && pub.title.trim() !== "") {
               const parts = [];
               let isDetailsComplete = false;
 
-              // Case 1: 컨퍼런스 (conference_fullname 존재 시)
-              if (pub.conference_fullname) {
-                  // pp가 있어야 상세 정보 출력
-                  if (pub.pp) {
-                      isDetailsComplete = true;
+              // [조건 변경] pp가 아니라 show_detail 변수 확인
+              if (pub.show_detail) {
+                  isDetailsComplete = true;
+
+                  // Case 1: 컨퍼런스 (conference_fullname 존재 시)
+                  if (pub.conference_fullname) {
                       parts.push(`<i>${pub.conference_fullname}</i>`);
                       if (pub.city) parts.push(pub.city);
                       if (pub.country) parts.push(pub.country);
-                      parts.push(`${year}`); // Month 없이 연도만
-                      parts.push(`pp. ${pub.pp}`);
+                      parts.push(`${year}`); // Month 제외
+                      
+                      // pp가 있으면 넣고 없으면 안 넣음 (유연하게 처리)
+                      if (pub.pp) parts.push(`pp. ${pub.pp}`);
                   }
-              }
-              // Case 2: 저널 (conference_fullname 없음)
-              else {
-                  // vol, no, pp 모두 있어야 상세 정보 출력
-                  if (pub.vol && pub.no && pub.pp) {
-                      isDetailsComplete = true;
+                  // Case 2: 저널
+                  else {
                       const journalName = pub.journal_full ? pub.journal_full : (pub.journal ? pub.journal : "");
                       if (journalName) parts.push(`<i>${journalName}</i>`);
-                      parts.push(`vol. ${pub.vol}`);
-                      parts.push(`no. ${pub.no}`);
-                      parts.push(`pp. ${pub.pp}`);
+                      
+                      if (pub.vol) parts.push(`vol. ${pub.vol}`);
+                      if (pub.no) parts.push(`no. ${pub.no}`);
+                      if (pub.pp) parts.push(`pp. ${pub.pp}`);
                       
                       // Month + Year
                       if (pub.month) parts.push(`${pub.month} ${year}`);
@@ -233,14 +220,11 @@ $(document).ready(function () {
                   citationString = " " + parts.join(", ") + "."; 
               }
               
-              // 제목 링크 생성 (따옴표 안에 기호 포함)
               titleHTML = `, <a href="${pub.link}" target="_blank" class="pub-title-link">"<b>${pub.title}</b>${titleSuffix}"</a>`;
           } 
-          // 제목이 없는 경우
           else {
-              authorsText += "."; // 저자 목록 뒤에 마침표 찍고 끝
+              authorsText += "."; 
           }
-
 
           // HTML 조립
           const pub_detail = `
@@ -261,7 +245,7 @@ $(document).ready(function () {
         container.append(yearContentDiv);
       });
 
-      // 4. 클릭 이벤트
+      // 클릭 이벤트
       container.on("click.pubToggle", ".publication-year-header", function() {
         $(this).toggleClass("collapsed");
         $(this).next(".pub-year-content").stop(true, false).slideToggle(300);
