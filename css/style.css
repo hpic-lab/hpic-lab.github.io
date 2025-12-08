@@ -330,6 +330,33 @@ h6 {
   text-align: left;
 }
 
+/* Publications 연도별 헤더 스타일 */
+.publication-year-header {
+  width: 100%;
+  margin-top: 50px;    /* 연도 사이 간격 */
+  margin-bottom: 20px; /* 제목과 첫 논문 사이 간격 */
+  clear: both;         /* 레이아웃 꼬임 방지 */
+}
+
+/* 맨 첫 번째 연도는 위쪽 간격 없애기 */
+.publication-year-header:first-child {
+  margin-top: 0;
+}
+
+.publication-year-header h3 {
+  font-size: 1.8rem;   /* 연도 글씨 크기 */
+  font-weight: 700;    /* 굵게 */
+  color: #333;         /* 글자색 (진한 회색) */
+  margin-bottom: 10px;
+  border-bottom: 3px solid #005bac; /* 파란색 밑줄 (한양대 색상) */
+  padding-bottom: 5px;
+}
+
+.publication-year-header hr {
+  display: none; /* h3에 밑줄을 넣었으므로 기본 hr은 숨김 */
+}
+
+
 /* Publications - Patent */
 #patent .card-text {
   margin-bottom: 4px;
