@@ -69,11 +69,11 @@
     "title": "An Implementation of a DSP-Based PAM-4 Digital Equalizer with 32-Way TI-ADC",
     "image": "",
     "conference": "ICEIC 2025",
-    "conference_fullname": "",
-    "city": "",      
-    "country": "",              
-    "pp": "",      
-    "authors": ["Sang-Hyeon Ok", "Dong-Hoe Heo", "Jae-Geon Lee", "Seung-Mo Jin", "Kwang-ho Lee" ,"Daniel Jeong" ,"Min-Seong Choo"],
+    "conference_fullname": "2025 International Conference on Electronics, Information, and Communication (ICEIC)",
+    "city": "Osaka",      
+    "country": "Japan",              
+    "pp": "1-4",      
+    "authors": ["S.-H. Ok", "D.-H. Heo", "J.-G. Lee", "S.-M. Jin", "K.-H. Lee", "D. Jeong", "and M.-S. Choo"],
     "figure": ["sh-ok-profile-img.jpg", "dh-heo-profile-img.jpg", "jg-lee-profile-img.jpeg", "sm-jin-profile-img.png", "minseong-chu-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/document/10879734"
   },
@@ -85,11 +85,11 @@
     "title": "A 14-to-32-Gb/s Deadzone-Free Referenceless CDR with Autocovariance-based Frequency Detector in 40-nm CMOS Technology",
     "image": "",
     "conference": "IEEE A-SSCC 2024",
-    "conference_fullname": "",
-    "city": "",      
-    "country": "",              
-    "pp": "",    
-    "authors": ["Hong-Seok Choi", "Jae-Geon Lee", "Kwang-Ho Lee", "Daehyun Koh", "Jung-Woo Sull", "Hyungrok Do", "Chan-Ho Kye", "Deog-Kyoon Jeong", "Min-Seong Choo"],
+    "conference_fullname": "2024 IEEE Asian Solid-State Circuits Conference (A-SSCC)",
+    "city": "Hiroshima",      
+    "country": "Japan",              
+    "pp": "1-3",    
+    "authors": ["H.-S. Choi", "J.-G. Lee", "K.-H. Lee", "D.-H. Koh", "J.-W. Sull", "H.-R. Do", "C.-H. Kye", "D.-K. Jeong", "and M.-S. Choo"],
     "figure": ["jg-lee-profile-img.jpeg", "minseong-chu-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/document/10848602"
   },
@@ -100,11 +100,11 @@
     "title": "A 2T1C eDRAM-based Compute-In-Memory Macro with 8-to-1 Column Multiplexing Scheme for Highly Sparse Binarized Deep Neural Networks",
     "image": "",
     "conference": "ISOCC 2024",
-    "conference_fullname": "",
-    "city": "",      
-    "country": "",              
-    "pp": "",    
-    "authors": ["Shin-Uk Kang", "Seung-Mo Jin", "Min-Gwon Song", "Dong-Hyun Lee", "Woo-Suk Jung", "Min-Seong Choo"],
+    "conference_fullname": "2024 21st International SoC Design Conference (ISOCC)",
+    "city": "Sapporo",      
+    "country": "Japan",              
+    "pp": "177-178",    
+    "authors": ["S.-U. Kang", "S.-M. Jin", "M.-G. Song", "D.-H. Lee", "W.-S. Jung", "and M.-S. Choo"],
     "figure": ["su-kang-profile-img.jpg", "sm-jin-profile-img.png", "mg-song-profile-img.jpg", "dh-lee-profile-img.png", "minseong-chu-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/document/10762215"
   },
@@ -119,7 +119,7 @@
     "city": "",      
     "country": "",              
     "pp": "",    
-    "authors": ["Min-Gwon Song", "Shin-Uk Kang", "Min-Seong Choo"],
+    "authors": ["M.-G. Song", "S.-U. Kang", "and M.-S. Choo"],
     "figure": ["mg-song-profile-img.jpg", "su-kang-profile-img.jpg", "minseong-chu-profile-img.png"],
     "link": "https://hpiclab.sharepoint.com/:f:/s/hpic-lab/EkXPdyE7H-NJvLqdQPPLb2oBt653wO1f3Rp1XB6FmSoq4g?e=1XN7JA"
   },
@@ -135,7 +135,7 @@
     "city": "",      
     "country": "",              
     "pp": "",    
-    "authors": ["Min-Gwon Song", "Jae-Geon Lee", "Seung-Mo Jin", "Min-Seong Choo"],
+    "authors": ["M.-G. Song", "J.-G. Lee", "S.-M. Jin", "and M.-S. Choo"],
     "figure": ["mg-song-profile-img.jpg", "jg-lee-profile-img.jpeg", "sm-jin-profile-img.png", "minseong-chu-profile-img.png"],
     "link": "https://drive.google.com/file/d/1aC8FmySN5FQz4NIIZGNZot0416-Uqh-s/view"
   },
@@ -150,7 +150,7 @@
     "city": "",      
     "country": "",              
     "pp": "",    
-    "authors": ["Seung-Mo Jin", "Shin-Uk Kang", "Min-Seong Choo"],
+    "authors": ["S.-M. Jin", "S.-U. Kang", "and M.-S. Choo"],
     "figure": ["sm-jin-profile-img.png", "su-kang-profile-img.jpg", "minseong-chu-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/document/10457226"
   },
@@ -165,7 +165,7 @@
     "city": "",      
     "country": "",              
     "pp": "",    
-    "authors": ["Jae-Geon Lee", "Shin-Uk Kang", "Min-Seong Choo"],
+    "authors": ["J.-G. Lee", "S.-U. Kang", "and M.-S. Choo"],
     "figure": ["jg-lee-profile-img.jpeg", "su-kang-profile-img.jpg", "minseong-chu-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/document/10457160"
   },
@@ -181,7 +181,7 @@
     "city": "",      
     "country": "",              
     "pp": "",    
-    "authors": ["Dong-Hoe Heo", "Tae-Hyeon Kim", "Kwang-ho Lee" ,"Min-Seong Choo"],
+    "authors": ["D.-H. Heo", "T.-H. Kim", "K.-H. Lee", "and M.-S. Choo"],
     "figure": ["dh-heo-profile-img.jpg", "minseong-chu-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/document/10457116"
   },
@@ -196,7 +196,7 @@
     "city": "",      
     "country": "",              
     "pp": "",    
-    "authors": ["Yu-Jin Byeon", "Min-Seong Choo"],
+    "authors": ["Y.-J. Byeon", "and M.-S. Choo"],
     "figure": ["yj-byeon-profile-img.png", "minseong-chu-profile-img.png"],
     "link": "https://drive.google.com/file/d/1lVfAHKRFshsPsVT17O25Oz3bHriDWW6B/view"
   },
@@ -211,7 +211,7 @@
     "city": "",      
     "country": "",              
     "pp": "",    
-    "authors": ["Dong-Eun Lee", "Tae-Hyeon Kim", "Min-Seong Choo"],
+    "authors": ["D.-E. Lee", "T.-H. Kim", "and M.-S. Choo"],
     "figure": ["de-lee-profile-img.png", "minseong-chu-profile-img.png"],
     "link": "https://drive.google.com/file/d/12L2cJQlLUiwNAWZ8iZT4k2sVcysgqY2f/view"
   },
@@ -226,7 +226,7 @@
     "city": "",      
     "country": "",              
     "pp": "",  
-    "authors": ["Jee-Hyun Kwon", "Tae-Hyeon Kim", "Min-Seong Choo"],
+    "authors": ["J.-H. Kwon", "T.-H. Kim", "and M.-S. Choo"],
     "figure": ["jh-kwon-profile-img.png", "minseong-chu-profile-img.png"],
     "link": "https://drive.google.com/file/d/1OrBk8YmFi4QQq-8GsRutEYgRFqF1hjKG/view"
   },
@@ -241,7 +241,7 @@
     "city": "",      
     "country": "",              
     "pp": "",  
-    "authors": ["Tae-Hyeon Kim", "Dong-Hoe Heo", "ji-hwan Lee", "Seung-Mo Jin", "Min-Seong Choo"],
+    "authors": ["T.-H. Kim", "D.-H. Heo", "J.-H. Lee", "S.-M. Jin", "and M.-S. Choo"],
     "figure": ["dh-heo-profile-img.jpg", "sm-jin-profile-img.png", "minseong-chu-profile-img.png"],
     "link": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11521991"
   },
@@ -256,7 +256,7 @@
     "city": "",      
     "country": "",              
     "pp": "",    
-    "authors": ["Seung-Wan Han", "Geun Young You", "Jae-Gun Lee", "Min-Gwon Song", "Min-Seong Choo"],
+    "authors": ["S.-W. Han", "G.-Y. You", "J.-G. Lee", "M.-G. Song", "and M.-S. Choo"],
     "figure": ["jg-lee-profile-img.jpeg", "mg-song-profile-img.jpg", "minseong-chu-profile-img.png"],
     "link": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11522007"
   },
@@ -271,7 +271,7 @@
     "city": "",      
     "country": "",              
     "pp": "",    
-    "authors": ["Geun-Young You", "Seung-Wan Han", "Jee-Hyun Kwon", "Dong-Eun Lee", "Yu-Jin Byeon", "Min-Seong Choo"],
+    "authors": ["G.-Y. You", "S.-W. Han", "J.-H. Kwon", "D.-E. Lee", "Y.-J. Byeon", "and M.-S. Choo"],
     "figure": ["jh-kwon-profile-img.png", "de-lee-profile-img.png", "yj-byeon-profile-img.png", "minseong-chu-profile-img.png"],
     "link": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11521992"
   },
@@ -286,7 +286,7 @@
     "city": "",      
     "country": "",              
     "pp": "",    
-    "authors": ["In-Woo Jang", "Min-Seong Choo"],
+    "authors": ["I.-W. Jang", "and M.-S. Choo"],
     "figure": ["minseong-chu-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/document/10049900"
   },
@@ -301,7 +301,7 @@
     "city": "",      
     "country": "",              
     "pp": "",    
-    "authors": ["Shin-Uk Kang", "Jin-Woo Han", "Min-Seong Choo"],
+    "authors": ["S.-U. Kang", "J.-W. Han", "and M.-S. Choo"],
     "figure": ["su-kang-profile-img.jpg", "minseong-chu-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/document/10049920"
   },
@@ -316,13 +316,7 @@
     "city": "",      
     "country": "",              
     "pp": "",    
-    "authors": [
-      "Yeong-Geun Song",
-      "Kyoung-Joon Ha",
-      "Han-Gon Ko",
-      "Min-Seong Choo",
-      "Deog-Kyoon Jeong"
-    ],
+    "authors": ["Y.-G. Song", "K.-J. Ha", "H.-G. Ko", "M.-S. Choo", "and D.-K. Jeong"],
     "figure": ["minseong-chu-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/abstract/document/9911362"
   },
@@ -337,13 +331,7 @@
     "city": "",      
     "country": "",              
     "pp": "",    
-    "authors": [
-      "Minho Choi",
-      "Chan-Ho Kye",
-      "Jonghyun Oh",
-      "Min-Seong Choo",
-      "Deog-Kyoon Jeong"
-    ],
+    "authors": ["M.-H. Choi", "C.-H. Kye", "J.-H. Oh", "M.-S. Choo", "and D.-K. Jeong"],
     "figure": ["minseong-chu-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/abstract/document/8662453"
   },
@@ -358,15 +346,7 @@
     "city": "",      
     "country": "",              
     "pp": "",    
-    "authors": [
-      "Kwanseo Park",
-      "Kwangho Lee",
-      "Sung-Yong Cho",
-      "Jinhyung Lee",
-      "Jeongho Hwang",
-      "Min-Seong Choo",
-      "Deog-Kyoon Jeong"
-    ],
+    "authors": ["K.-S. Park", "K.-H. Lee", "S.-Y. Cho", "J.-H. Lee", "J.-H. Hwang", "M.-S. Choo", "and D.-K. Jeong"],
     "figure": ["minseong-chu-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/abstract/document/8778157"
   },
@@ -381,7 +361,7 @@
     "city": "",      
     "country": "",              
     "pp": "",    
-    "authors": ["Min-Seong Choo", "Han-Gon Ko", "Sung-Yong Cho", "Kwang-Ho Lee", "Deog-Kyoon Jeong"],
+    "authors": ["M.-S. Choo", "H.-G. Ko", "S.-Y. Cho", "K.-H. Lee", "and D.-K. Jeong"],
     "figure": ["minseong-chu-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/abstract/document/8579270"
   },
@@ -396,16 +376,7 @@
     "city": "",      
     "country": "",              
     "pp": "",    
-    "authors": [
-      "Sungwoo Kim",
-      "Han-Gon Ko",
-      "Sung-Yong Cho",
-      "Jinhyung Lee",
-      "Soyeong Shin",
-      "Min-Seong Choo",
-      "Hankyu Chi",
-      "Deog-Kyoon Jeong"
-    ],
+    "authors": ["S.-W. Kim", "H.-G. Ko", "S.-Y. Cho", "J.-H. Lee", "S.-Y. Shin", "M.-S. Choo", "H.-K. Chi", "and D.-K. Jeong"],
     "figure": ["minseong-chu-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/abstract/document/7870477"
   },
@@ -420,14 +391,7 @@
     "city": "",      
     "country": "",              
     "pp": "",    
-    "authors": [
-      "Jinhyung Lee",
-      "Sungwoo Kim",
-      "Min-Seong Choo",
-      "Sung-Yong Cho",
-      "Han-Gon Ko",
-      "Deog-Kyoon Jeong"
-    ],
+    "authors": ["J.-H. Lee", "S.-W. Kim", "M.-S. Choo", "S.-Y. Cho", "H.-G. Ko", "and D.-K. Jeong"],
     "figure": ["minseong-chu-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/abstract/document/7538886"
   },
@@ -442,18 +406,7 @@
     "city": "",      
     "country": "",              
     "pp": "",    
-    "authors": [
-      "Sung-Yong Cho",
-      "Sungwoo Kim",
-      "Min-Seong Choo",
-      "Jinhyung Lee",
-      "Han-Gon Ko",
-      "Sungchun Jang",
-      "Sang-Hyeok Chu",
-      "Woorham Bae",
-      "Yoonsoo Kim",
-      "Deog-Kyoon Jeong"
-    ],
+    "authors": ["S.-Y. Cho", "S.-W. Kim", "M.-S. Choo", "J.-H. Lee", "H.-G. Ko", "S. Jang", "S.-H. Chu", "W.-R. Bae", "Y.-S. Kim", "and D.-K. Jeong"],
     "figure": ["minseong-chu-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/abstract/document/7313908"
   }
