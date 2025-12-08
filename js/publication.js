@@ -115,7 +115,6 @@ $(document).ready(function () {
 
 $(document).ready(function () {
 
-  // [Final Stable Version] 변수 선언 오류 수정 및 모든 요청사항 반영
   function loadPublication(url, containerClass) {
     $.getJSON(url).done(function (pubs) {
       const container = $(containerClass);
@@ -160,21 +159,25 @@ $(document).ready(function () {
 
         papersByYear[year].forEach((pub) => {
           
-          // [수정 완료] const -> let (나중에 마침표 추가를 위해 수정 가능해야 함)
+          // [안전장치] let으로 선언 (수정 가능)
           let authorsText = pub.authors.join(", ");
 
-          // --- 배지 생성 ---
+          // --- 배지 생성 (Conference 중복 제거) ---
           let badgesHTML = "";
           
           // 1. 연도 (Type)
           if (pub.type) badgesHTML += `<span class="badge text-bg-primary">${pub.type}</span>| `;
           
-          // 2. 저널/컨퍼런스 배지 (journal 또는 conference 필드 사용)
+          // 2. 저널 배지 (저널은 보통 status에 'Accepted' 등을 쓰고 여기에 저널명을 씀)
           if (pub.journal) badgesHTML += `<span class="badge bg-success">${pub.journal}</span>| `;
-          if (pub.conference) badgesHTML += `<span class="badge bg-success">${pub.conference}</span>| `;
           
-          // 3. 상태/수상 등 기타 배지
+          // [삭제됨] conference 배지는 status와 중복되므로 제거했습니다.
+          // if (pub.conference) badgesHTML += ... 
+          
+          // 3. 상태/학회명 (Status) - 여기서 컨퍼런스 이름이 나옴
           if (pub.status) badgesHTML += `<span class="badge bg-success">${pub.status}</span>| `;
+          
+          // 4. 기타 배지
           if (pub.award) badgesHTML += `<span class="badge bg-warning">${pub.award}</span>| `;
           if (pub.sub) badgesHTML += `<span class="badge bg-info">${pub.sub}</span>| `;
           if (pub.progress) badgesHTML += `<span class="badge bg-secondary">${pub.progress}</span>| `;
@@ -266,7 +269,7 @@ $(document).ready(function () {
     });
   }
 
-  // 특허 로드 함수 (기존 로직 유지, 배지 공백 제거만 적용)
+  // 특허 로드 함수 (기존 유지)
   function loadPatent(url, containerClass) {
      $.getJSON(url).done(function (pubs) {
       const container = $(containerClass);
