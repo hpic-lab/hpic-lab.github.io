@@ -329,6 +329,7 @@ h6 {
   white-space: normal;
   text-align: left;
 }
+/*Publications CSS for each year 25.12.08 D.H Lee (Start)*/
 
 /* Publications 연도별 헤더 스타일 */
 .publication-year-header {
@@ -355,6 +356,8 @@ h6 {
 .publication-year-header hr {
   display: none; /* h3에 밑줄을 넣었으므로 기본 hr은 숨김 */
 }
+
+/*Publications CSS for each year 25.12.08 D.H Lee (END)*/
 
 
 /* Publications - Patent */
