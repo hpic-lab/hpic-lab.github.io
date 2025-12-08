@@ -115,7 +115,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
 
-  // [최종_v8] 배지와 구분선 사이 공백 제거 버전
+  // [최종_v9] 쉼표 위치 수정 (따옴표 안으로 이동)
   function loadPublication(url, containerClass) {
     $.getJSON(url).done(function (pubs) {
       const container = $(containerClass);
@@ -161,26 +161,28 @@ $(document).ready(function () {
         papersByYear[year].forEach((pub) => {
           const authorsText = pub.authors.join(", ");
 
+          // 배지 생성 (공백 제거 버전 유지)
           let badgesHTML = "";
-          
           if (pub.type) badgesHTML += `<span class="badge text-bg-primary">${pub.type}</span>| `;
           if (pub.status) badgesHTML += `<span class="badge bg-success">${pub.status}</span>| `;
           if (pub.award) badgesHTML += `<span class="badge bg-warning">${pub.award}</span>| `;
           if (pub.sub) badgesHTML += `<span class="badge bg-info">${pub.sub}</span>| `;
           if (pub.progress) badgesHTML += `<span class="badge bg-secondary">${pub.progress}</span>| `;
-
-          // 마지막에 남은 "| " (2글자) 제거
-          if (badgesHTML.endsWith("| ")) {
-            badgesHTML = badgesHTML.slice(0, -2);
-          }
+          
+          if (badgesHTML.endsWith("| ")) badgesHTML = badgesHTML.slice(0, -2);
 
           const figures = pub.figure ? pub.figure.map(img => `<img src="img/${img}" class="pub-figure" alt="Figure">`).join("") : "";
 
-          // 레퍼런스 텍스트 생성
-          let citationString = "."; 
+          // --- [수정 핵심] 쉼표 위치 이동 ---
+          
+          let citationString = ""; // 기본값 빈 문자열 (마침표도 나중에 처리)
+          let titleSuffix = ".";   // 제목 뒤에 붙을 기호 (기본은 마침표)
+
+          // 상세 정보가 모두 있을 때 -> 상세 내용 출력
           if (pub.vol && pub.no && pub.pp) {
              const journalName = pub.journal_full ? pub.journal_full : (pub.journal ? pub.journal : "");
              const parts = [];
+             
              if (journalName) parts.push(`<i>${journalName}</i>`);
              parts.push(`vol. ${pub.vol}`);
              parts.push(`no. ${pub.no}`);
@@ -189,8 +191,14 @@ $(document).ready(function () {
              if (pub.month) parts.push(`${pub.month} ${year}`);
              else parts.push(`${year}`);
              
-             citationString = ", " + parts.join(", ") + ".";
-          }
+             // 뒤에 내용이 이어지므로 제목 뒤는 '쉼표(,)'가 되어야 함
+             titleSuffix = ","; 
+             
+             // 상세 정보들은 그냥 나열하고 마지막에 마침표
+             citationString = " " + parts.join(", ") + ".";
+          } 
+          // 상세 정보가 없을 때 -> 제목 뒤 마침표(.)로 끝남 (titleSuffix 기본값 사용)
+          
 
           // HTML 조립
           const pub_detail = `
@@ -202,7 +210,7 @@ $(document).ready(function () {
               <div class="pub-citation-text">
                 <span class="pub-author">${authorsText}</span>, 
                 <a href="${pub.link}" target="_blank" class="pub-title-link">
-                  "<b>${pub.title}</b>"
+                  "<b>${pub.title}</b>${titleSuffix}"
                 </a>${citationString}
               </div>
               <div class="pub-figures">${figures}</div>
@@ -222,7 +230,7 @@ $(document).ready(function () {
     });
   }
 
-  // 특허 로드 함수 (특허 쪽도 동일하게 공백 제거 적용)
+  // 특허 로드 함수 (기존 유지)
   function loadPatent(url, containerClass) {
      $.getJSON(url).done(function (pubs) {
       const container = $(containerClass);
@@ -231,12 +239,9 @@ $(document).ready(function () {
         const figures = pub.figure ? pub.figure.map(img => `<img src="img/${img}" class="pub-figure" alt="Figure">`).join("") : "";
         
         let badgesHTML = "";
-        // 여기도 공백 제거
         if (pub.type) badgesHTML += `<span class="badge text-bg-primary">${pub.type}</span>| `;
         if (pub.status) badgesHTML += `<span class="badge process-badge">${pub.status}</span>| `;
         if (pub.registration) badgesHTML += `<span class="badge bg-success">${pub.registration}</span>| `;
-        
-        // 마지막 "| " 제거
         if (badgesHTML.endsWith("| ")) badgesHTML = badgesHTML.slice(0, -2);
 
         const pub_detail = `
