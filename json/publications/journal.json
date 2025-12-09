@@ -98,7 +98,7 @@
       "title": "A Stagger-Tuned Cryogenic Broadband CMOS 3-stage Cascode LNA for Quantum Computing",
       "image": "",
       "journal": "IEEE MWTL",
-      "reference":"in <i>IEEE Microwave and Wireless Technology Letters</i>",   
+      "reference":"in <i>IEEE Microwave and Wireless Technology Letters</i>.",   
       "authors": ["W.-J. Chang", "J.-H. Kwon", "G.-Y. Kim", "I.-S. Jeon", "J.-H. Shin", "S.-J. Kim", "H.-D. Gwon", "M.-S. Choo", "and T.-H. Jang"],
       "figure": ["minseong-chu-profile-img.png"],
       "link": "https://ieeexplore.ieee.org/document/11272918"
@@ -109,7 +109,7 @@
       "title": "A 14-to-32-Gb/s Deadzone-Free Referenceless CDR with Autocovariance-based Seamless Frequency Detector in 40nm CMOS Technology",
       "image": "",
       "journal": "IEEE JSSC",
-      "reference":"",
+      "reference":"in <i>IEEE Journal of Solid-State Circuits</i>, vol. 60, no. 10, pp. 3602-3612, Oct. 2025.",
       "authors": ["H.-S. Choi", "J.-G. Lee", "S.-H. Gong", "K.-H. Lee", "D.-H. Koh", "J.-W. Sull", "H.-R. Do", "C.-H Kye", "D.-K. Jeong", "K.-S. Park", "and M.-S. Choo"
       ],
       "figure": ["jg-lee-profile-img.jpeg", "sh-gong-profile-image.jpg", "minseong-chu-profile-img.png"],
@@ -121,7 +121,7 @@
       "title": "A Supply Noise-Insensitive Ring DCO With a Self-Biased Shunt Regulator Array in Wide-Range Digital PLL",
       "image": "",
       "journal": "IEEE TVLSI",
-      "reference":"",      
+      "reference":"in <i>IEEE Transactions on Very Large Scale Integration (VLSI) Systems</i>, vol. 33, no. 8, pp. 2349-2353, Aug. 2025.",      
       "authors": ["K.-M. Baek", "J.-H. Kim", "K.-H. Kim", "D.-K. Jeong", "and M.-S. Choo"],
       "figure": ["jh-kim-profile-img.png", "minseong-chu-profile-img.png"],
       "link": "https://ieeexplore.ieee.org/document/11017684"
@@ -133,7 +133,7 @@
       "title": "High-Precision Built-In Phase Noise Measurement Circuit with Hybrid ΔΣ Time-to-Digital Converter For SoC Clocking Applications",
       "image": "",
       "journal": "IEEE TCAS-II",
-      "reference":"",      
+      "reference":"in <i>IEEE Transactions on Circuits and Systems II: Express Briefs</i>, vol. 71, no. 11, pp. 4613-4617, Nov. 2024.",      
       "authors": ["J.-H. Choi", "H.-J. Kim", "H.-D. Roh", "Y.-J. Cho", "M. Choi", "M.-S. Choo", "and J.-J. Roh"],
       "figure": ["minseong-chu-profile-img.png"],
       "link": "https://ieeexplore.ieee.org/abstract/document/10614194"
@@ -145,10 +145,10 @@
       "title": "A Compact Single-Channel 1 GS/s 8-Bit 3-Stage Capacitor Array-Assisted Charge-Injection DAC-Based SAR ADC",
       "image": "",
       "journal": "IEEE TCAS-I",
-      "reference":"",      
+      "reference":"in <i>IEEE Transactions on Circuits and Systems I: Regular Papers</i>, vol. 71, no. 11, pp. 4973-4984, Nov. 2024.",      
       "authors": ["C.-H. Kye", "Y.-J. Byeon", "K.-J. Choo", "and M.-S. Choo"],
       "figure": ["yj-byeon-profile-img.png","minseong-chu-profile-img.png"],
-      "link": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10586762"
+      "link": "https://ieeexplore.ieee.org/document/10586762"
     },
     {
     
@@ -157,10 +157,10 @@
       "title": "3.2-GHz Digital Phase-Locked Loop with Autocorrelation-based Direct Jitter Correction",
       "image": "",
       "journal": "IEEE TCAS-II",
-      "reference":"",      
+      "reference":"in <i>IEEE Transactions on Circuits and Systems II: Express Briefs</i>, vol. 71, no. 9, pp. 4091-4095, Sept. 2024.",      
       "authors": ["G.-J. Park", "S.-O. Yeom", "I.-W. Jang", "D.-J. Lee", "J.-D. Han", "and M.-S. Choo"],
       "figure": ["minseong-chu-profile-img.png"],
-      "link": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10507171"
+      "link": "https://ieeexplore.ieee.org/document/10507171"
     },
     {
     
@@ -169,7 +169,7 @@
       "title": "A 4.5-to-14 GHz PLL-Based Clock Driver with Wide-Range 3-Shaped LC-VCOs for DRAM Test",
       "image": "",
       "journal": "JSTS",
-      "reference":"",       
+      "reference":"<i>JOURNAL OF SEMICONDUCTOR TECHNOLOGY AND SCIENCE</i>, 24(3), 284-288. 10.5573/JSTS.2024.24.3.284.",       
       "authors": ["C.-H. Kye", "J. Kim", "D.-K. Jeong", "and M.-S. Choo"],
       "figure": ["minseong-chu-profile-img.png"],
       "link": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11825975"
@@ -181,7 +181,7 @@
       "title": "An Automated Design Methodology for Ring Voltage-Controlled Oscillators in Nanometer CMOS Technologies",
       "image": "img/j11.png",
       "journal": "IEEE ACCESS",
-      "reference":"",   
+      "reference":"in <i>IEEE Access</i>, vol. 11, pp. 7530-7539, 2023.",   
       "authors": ["D.-J. Lee", "G.-J. Park", "J.-D. Han", "and M.-S. Choo"],
       "figure": ["minseong-chu-profile-img.png"],
       "link": "https://ieeexplore.ieee.org/abstract/document/10002363/"
@@ -193,7 +193,7 @@
     "title": "A PVT Variation-Robust All-Digital Injection-Locked Clock Multiplier with Real-Time Offset Tracking using Time-Division Dual Calibration",
     "image": "img/j10.png",
     "journal": "IEEE Journal of Solid-State Circuits (JSSC)",
-    "reference":"",     
+    "reference":"in <i>IEEE Journal of Solid-State Circuits</i>, vol. 56, no. 8, pp. 2525-2538, Aug. 2021.",     
     "authors": ["M.-S. Choo", "S.-W. Kim", "H.-G. Ko", "S.-Y. Cho", "K.-S. Park", "J.-H. Lee", "S.-Y. Shin", "H.-K. Chi", "and D.-K. Jeong"],
     "figure": ["minseong-chu-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/document/9386211"
@@ -205,7 +205,7 @@
     "title": "A 4-20-Gb/s 1.87-pJ/b Continuous-Rate Digital CDR Circuit With Unlimited Frequency Acquisition Capability in 65-nm CMOS",
     "image": "img/j9.png",
     "journal": "IEEE Journal of Solid-State Circuits (JSSC)",
-    "reference":"",     
+    "reference":"in <i>IEEE Journal of Solid-State Circuits</i>, vol. 56, no. 5, pp. 1597-1607, May 2021.",     
     "authors": ["K.-S. Park", "K.-H. Lee", "S.-Y. Cho", "J.-H. Lee", "J.-H. Hwang", "M.-S. Choo", "and D.-K. Jeong"],
     "figure": ["minseong-chu-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/abstract/document/9239394"
@@ -217,7 +217,7 @@
     "title": "Review of Injection-Locked Oscillators",
     "image": "img/j8.png",
     "journal": "Journal of Semiconductor Engineering (JSE)",
-    "reference":"",  
+    "reference":"<i>Journal of semiconductor engineering</i>, vol. 1, no. 1, pp. 1–12, Jun. 2020.",  
     "authors": ["M.-S. Choo", "and D.-K. Jeong"],
     "figure": ["minseong-chu-profile-img.png"],
     "link": "https://koreascience.kr/article/JAKO202021262090393.page"
@@ -229,7 +229,7 @@
     "title": "A 15-GHz, 17.8-mW, 213-fs Injection-Locked PLL With Maximized Injection Strength Using Adjustment of Phase Domain Response",
     "image": "img/j7.png",
     "journal": "IEEE Transactions on Circuits and Systems-II: Express Briefs (TCAS-II)",
-    "reference":"",   
+    "reference":"in <i>IEEE Transactions on Circuits and Systems II: Express Briefs</i>, vol. 66, no. 12, pp. 1932-1936, Dec. 2019.",   
     "authors": ["M.-S. Choo", "Y.-G. Song", "S.-Y. Cho", "H.-G. Ko", "K.-S. Park", "and D.-K. Jeong"],
     "figure": ["minseong-chu-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/document/8883248"
@@ -241,7 +241,7 @@
     "title": "A Current-Mode Digital AOT 4-Phase Buck Voltage Regulator",
     "image": "img/j5.png",
     "journal": "IEEE Solid-State Circuits Letters (SSC-L)",
-    "reference":"",    
+    "reference":"in <i>IEEE Solid-State Circuits Letters</i>, vol. 2, no. 11, pp. 244-247, Nov. 2019.",    
     "authors": ["M.-H. Choi", "C.-H. Kye", "J.-H. Oh", "M.-S. Choo", "and D.-K. Jeong"],
     "figure": ["minseong-chu-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/abstract/document/8771119"
@@ -253,7 +253,7 @@
     "title": "A 10-Gb/s, 0.03-mm2, 1.28-pJ/bit Half-Rate All-Digital Injection-Locked Clock and Data Recovery with Maximum Timing-Margin Tracking Loop",
     "image": "img/c4.png",
     "journal": "IEEE Asian Solid-State Circuits Conference (A-SSCC) invited to JSSC",
-    "reference":"",   
+    "reference":"in <i>IEEE Journal of Solid-State Circuits</i>, vol. 54, no. 10, pp. 2812-2822, Oct. 2019.",   
     "authors": ["M.-S. Choo", "H.-G. Ko", "S.-Y. Cho", "K.-H. Lee", "and D.-K. Jeong"],
     "figure": ["minseong-chu-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/document/8781914"
@@ -265,7 +265,7 @@
     "title": "An optimum injection-timing tracking loop for 5-GHz, 1.13-mW/GHz RO-based injection-locked PLL with 152-fs integrated jitter",
     "image": "img/j4.png",
     "journal": "IEEE Transactions on Circuits and Systems-II: Express Briefs (TCAS-II)",
-    "reference":"",    
+    "reference":"in <i>IEEE Transactions on Circuits and Systems II: Express Briefs</i>, vol. 65, no. 12, pp. 1819-1823, Dec. 2018.",    
     "authors": ["M.-S. Choo", "H.-G. Ko", "S.-Y. Cho", "K.-H. Lee", "and D.-K. Jeong"],
     "figure": ["minseong-chu-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/abstract/document/8514813"
@@ -277,7 +277,7 @@
     "title": "A 2.5–5.6 GHz subharmonically injection-locked all-digital PLL with dual-edge complementary switched injection",
     "image": "img/j3.png",
     "journal": "IEEE Transactions on Circuits and Systems-I: Regular Links (TCAS-I)",
-    "reference":"",    
+    "reference":"in <i>IEEE Transactions on Circuits and Systems I: Regular Papers</i>, vol. 65, no. 9, pp. 2691-2702, Sept. 2018",    
     "authors": ["S.-Y. Cho", "S.-W. Kim", "M.-S. Choo", "H.-G. Ko", "J.-H. Lee", "W.-R. Bae", "and D.-K. Jeong"],
     "figure": ["minseong-chu-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/abstract/document/8292824"
@@ -289,7 +289,7 @@
     "title": "A 55.1 mW 1.62-to-8.1 Gb/s video interface receiver generating up to 680 MHz stream clock over 20 dB loss channel",
     "image": "img/j2.png",
     "journal": "IEEE Transactions on Circuits and Systems-II: Express Briefs (TCAS-II)",
-    "reference":"",   
+    "reference":"in <i>IEEE Transactions on Circuits and Systems II: Express Briefs</i>, vol. 64, no. 12, pp. 1432-1436, Dec. 2017.",   
     "authors": ["K.-S. Park", "J.-H. Lee", "K.-H. Lee", "M.-S. Choo", "S.-C. Jang", "S.-H. Chu", "S.-W. Kim", "and D.-K. Jeong"],
     "figure": ["minseong-chu-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/abstract/document/8022928"
@@ -301,7 +301,7 @@
     "title": "A 285-fs rms Integrated Jitter Injection-Locked Ring PLL with Charge-Stored Complementary Switch Injection Technique",
     "image": "img/j1.png",
     "journal": "Journal of Semiconductor Technology and Science (JSTS)",
-    "reference":"",  
+    "reference":"<i>JSTS:Journal of Semiconductor Technology and Science</i>, vol. 16, no. 6. The Institute of Electronics Engineers of Korea, pp. 860–866, 30-Dec-2016.",  
     "authors": ["S.-W. Kim", "S.-C. Jang", "S.-Y. Cho", "M.-S. Choo", "G.-S. Jeong", "W.-R. Bae", "and D.-K. Jeong"],
     "figure": ["minseong-chu-profile-img.png"],
     "link": "https://koreascience.kr/article/JAKO201607959403082.page"
