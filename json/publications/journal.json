@@ -95,7 +95,7 @@
       "sub": "",      
       "type": "2025",
       "status": "IEEE MWTL",
-      "title": "A Stagger-Tuned Cryogenic Broadband CMOS 3-stage Cascode LNA for Quantum Computing",
+      "title": "A Stagger-Tuned Cryogenic Broadband CMOS Three-Stage Cascode LNA for Quantum Computing",
       "image": "",
       "journal": "IEEE MWTL",
       "reference":"in <i>IEEE Microwave and Wireless Technology Letters</i>.",   
@@ -106,7 +106,7 @@
     {
       "type": "2025",
       "status": "IEEE JSSC",
-      "title": "A 14-to-32-Gb/s Deadzone-Free Referenceless CDR with Autocovariance-based Seamless Frequency Detector in 40nm CMOS Technology",
+      "title": "A 14-to-32-Gb/s Deadzone-Free Referenceless CDR With Autocovariance-Based Seamless Frequency Detector in 40-nm CMOS Technology",
       "image": "",
       "journal": "IEEE JSSC",
       "reference":"in <i>IEEE Journal of Solid-State Circuits</i>, vol. 60, no. 10, pp. 3602-3612, Oct. 2025.",
@@ -130,7 +130,7 @@
     
       "type": "2024",
       "status": "IEEE TCAS-II",
-      "title": "High-Precision Built-In Phase Noise Measurement Circuit with Hybrid ΔΣ Time-to-Digital Converter For SoC Clocking Applications",
+      "title": "High-Precision Built-In Phase Noise Measurement Circuit with a Hybrid ΔΣ Time-to-Digital Converter For SoC Clocking Applications",
       "image": "",
       "journal": "IEEE TCAS-II",
       "reference":"in <i>IEEE Transactions on Circuits and Systems II: Express Briefs</i>, vol. 71, no. 11, pp. 4613-4617, Nov. 2024.",      
@@ -142,7 +142,7 @@
     
       "type": "2024",
       "status": "IEEE TCAS-I",
-      "title": "A Compact Single-Channel 1 GS/s 8-Bit 3-Stage Capacitor Array-Assisted Charge-Injection DAC-Based SAR ADC",
+      "title": "Design Methodology for Compact Single-Channel 3-Stage Capacitor-Array-Assisted Charge-Injection DAC-Based SAR ADC",
       "image": "",
       "journal": "IEEE TCAS-I",
       "reference":"in <i>IEEE Transactions on Circuits and Systems I: Regular Papers</i>, vol. 71, no. 11, pp. 4973-4984, Nov. 2024.",      
@@ -166,7 +166,7 @@
     
       "type": "2024",
       "status": "JSTS",
-      "title": "A 4.5-to-14 GHz PLL-Based Clock Driver with Wide-Range 3-Shaped LC-VCOs for DRAM Test",
+      "title": "A 4.5-to-14 GHz PLL-based Clock Driver with Wide-range 3-shaped LC-VCOs for GDDR6 DRAM Test",
       "image": "",
       "journal": "JSTS",
       "reference":"<i>JOURNAL OF SEMICONDUCTOR TECHNOLOGY AND SCIENCE</i>, 24(3), 284-288. 10.5573/JSTS.2024.24.3.284.",       
@@ -250,11 +250,11 @@
   
     "type": "2019",
     "status": "IEEE JSSC",
-    "title": "A 10-Gb/s, 0.03-mm2, 1.28-pJ/bit Half-Rate All-Digital Injection-Locked Clock and Data Recovery with Maximum Timing-Margin Tracking Loop",
+    "title": "A 10-Gb/s, 0.03-mm2, 1.28-pJ/bit Half-Rate Injection-Locked CDR With Path Mismatch Tracking Loop in a 28-nm CMOS Technology",
     "image": "img/c4.png",
     "journal": "IEEE Asian Solid-State Circuits Conference (A-SSCC) invited to JSSC",
     "reference":"in <i>IEEE Journal of Solid-State Circuits</i>, vol. 54, no. 10, pp. 2812-2822, Oct. 2019.",   
-    "authors": ["M.-S. Choo", "H.-G. Ko", "S.-Y. Cho", "K.-H. Lee", "and D.-K. Jeong"],
+    "authors": ["M. -S. Choo", "K. Park", "H. -G. Ko", "S. -Y. Cho", "K. Lee", "and D. -K. Jeong"],
     "figure": ["minseong-chu-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/document/8781914"
   },
