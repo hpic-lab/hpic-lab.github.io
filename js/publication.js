@@ -115,6 +115,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
 
+  // [Final_Simple_v1] Reference 통합 필드 사용 + 단순 출력 로직
   function loadPublication(url, containerClass) {
     $.getJSON(url).done(function (pubs) {
       const container = $(containerClass);
@@ -159,68 +160,48 @@ $(document).ready(function () {
           
           let authorsText = pub.authors.join(", ");
 
-          // --- 배지 생성 ---
+          // --- 배지 생성 (Status만 사용, Journal 제외) ---
           let badgesHTML = "";
           
-          // 1. 연도 (Type)
           if (pub.type) badgesHTML += `<span class="badge text-bg-primary">${pub.type}</span>| `;
+          // if (pub.journal) ... (사용 안 함)
           
-          // 2. 상태 (Status) - 여기에 적힌 'IEEE JSSC' 등이 배지로 나옴
           if (pub.status) badgesHTML += `<span class="badge bg-success">${pub.status}</span>| `;
-          
-          // 3. 기타 배지
           if (pub.award) badgesHTML += `<span class="badge bg-warning">${pub.award}</span>| `;
           if (pub.sub) badgesHTML += `<span class="badge bg-info">${pub.sub}</span>| `;
           if (pub.progress) badgesHTML += `<span class="badge bg-secondary">${pub.progress}</span>| `;
           
-          // 구분선 끝처리
           if (badgesHTML.endsWith("| ")) badgesHTML = badgesHTML.slice(0, -2);
 
           const figures = pub.figure ? pub.figure.map(img => `<img src="img/${img}" class="pub-figure" alt="Figure">`).join("") : "";
 
 
-          // --- 레퍼런스 정보 조립 ---
+          // ---------------------------------------------------------
+          // [핵심 로직] Reference 필드 유무에 따른 단순 처리
+          // ---------------------------------------------------------
+          
           let titleHTML = "";      
-          let citationString = ""; 
-          let titleSuffix = ".";   
+          let citationHTML = "";   // reference 내용을 담을 변수
+          let titleSuffix = ".";   // 기본값: 마침표
 
+          // 제목이 있는 경우
           if (pub.title && pub.title.trim() !== "") {
-              const parts = [];
-              let isDetailsComplete = false;
-
-              // [조건] show_detail 변수가 있어야 상세 정보 출력
-              if (pub.show_detail) {
-                  isDetailsComplete = true;
-
-                  // Case 1: 컨퍼런스 (conference_fullname 존재 시)
-                  if (pub.conference_fullname) {
-                      parts.push(`<i>${pub.conference_fullname}</i>`);
-                      if (pub.city) parts.push(pub.city);
-                      if (pub.country) parts.push(pub.country);
-                      parts.push(`${year}`); 
-                      if (pub.pp) parts.push(`pp. ${pub.pp}`);
-                  }
-                  // Case 2: 저널
-                  else {
-                      const journalName = pub.journal_full ? pub.journal_full : (pub.journal ? pub.journal : "");
-                      if (journalName) parts.push(`<i>${journalName}</i>`);
-                      
-                      if (pub.vol) parts.push(`vol. ${pub.vol}`);
-                      if (pub.no) parts.push(`no. ${pub.no}`);
-                      if (pub.pp) parts.push(`pp. ${pub.pp}`);
-                      
-                      if (pub.month) parts.push(`${pub.month} ${year}`);
-                      else parts.push(`${year}`);
-                  }
-              }
-
-              if (isDetailsComplete) {
-                  titleSuffix = ","; 
-                  citationString = " " + parts.join(", ") + "."; 
+              
+              // [조건] reference 필드에 값이 있는가?
+              if (pub.reference && pub.reference.trim() !== "") {
+                  // 값이 있으면 -> 쉼표 사용, reference 내용 출력
+                  titleSuffix = ",";
+                  citationHTML = " " + pub.reference; // 앞에 띄어쓰기 한 칸 추가
+              } else {
+                  // 값이 없으면 -> 마침표 사용, 내용은 빈칸
+                  titleSuffix = ".";
+                  citationHTML = "";
               }
               
+              // 제목 링크 생성
               titleHTML = `, <a href="${pub.link}" target="_blank" class="pub-title-link">"<b>${pub.title}</b>${titleSuffix}"</a>`;
           } 
+          // 제목이 없는 경우
           else {
               authorsText += "."; 
           }
@@ -233,7 +214,7 @@ $(document).ready(function () {
                  ${badgesHTML}
               </div>
               <div class="pub-citation-text">
-                <span class="pub-author">${authorsText}</span>${titleHTML}${citationString}
+                <span class="pub-author">${authorsText}</span>${titleHTML}${citationHTML}
               </div>
               <div class="pub-figures">${figures}</div>
             </div>`;
