@@ -80,16 +80,16 @@
       "link": ""
     },
     {
-      "sub": "Accepted",      
+      "sub": "",      
       "type": "2025",
       "status": "IEEE TVLSI",
       "title": "A Pattern-Dependent Pulse Filtering Technique for Low-Jitter Injection-Locked CDR in 28-nm CMOS",
       "image": "",
       "journal": "IEEE TVLSI",
-      "reference":"",      
-      "authors": ["Junhak Kim", "Young-Wook Kim", "Sinho Lee", "Yoojin Jung", "Min-Seong Choo", "Kwanseo Park"],
+      "reference":"in <i>IEEE Transactions on Very Large Scale Integration (VLSI) Systems</i>",      
+      "authors": ["J. Kim", "Y. -W. Kim", "S. Lee", "Y. Jung", "M. -S. Choo", "and K. Park"],
       "figure": ["minseong-chu-profile-img.png"],
-      "link": ""
+      "link": "https://ieeexplore.ieee.org/document/11289554"
     },
     {
       "sub": "",      
