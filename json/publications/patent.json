@@ -1,5 +1,14 @@
 [
   {
+    "year": 2025,
+    "type": "등록",
+    "status": 4,
+    "registration": "",
+    "title": "6 트랜지스터 정적 램 기반 ADC 없는 프로세싱 인 메모리 가속기",
+    "figure": ["mg-song-profile-img.jpg", "su-kang-profile-img.jpg", "minseong-chu-profile-img.png"],
+    "inventors": ["강신욱", "송민권", "김수연", "추민성"]
+  },
+  {
     "year": 2024,
     "type": "출원",
     "status": 4,
@@ -34,15 +43,6 @@
     "title": "주입 잠금 발진 장치, 상기 주입 잠금 발진 장치를 이용한 위상 잠금 루프 회로 및 이의 제어 방법",
     "figure": ["kr-park-profile-img.png", "jh-kim-profile-img.png", "minseong-chu-profile-img.png"],
     "inventors": ["박규란", "김지호", "장인우", "추민성"]
-  },
-  {
-    "year": 2024,
-    "type": "출원",
-    "status": 4,
-    "registration": "KR · P20240316OP",
-    "title": "삼진/이진 신경망용 단일 종단 및 워드라인 분할 6T 정적 램 기반 ADC 없는 프로세싱 인 메모리 가속기",
-    "figure": ["mg-song-profile-img.jpg", "su-kang-profile-img.jpg", "minseong-chu-profile-img.png"],
-    "inventors": ["강신욱", "송민권", "김수연", "추민성"]
   },
   {
     "year": 2024,
