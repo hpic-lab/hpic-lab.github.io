@@ -424,10 +424,38 @@ h6 {
 .pub-year-content {
   display: block;
 }
+/* ========================================= */
+/* [특허(Patent) 전용 스타일] */
+/* ========================================= */
 
+/* 1. 대분류 제목 (Registered Patents, Applications) */
+.patent-category-title {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 2.0rem;      /* 연도보다 조금 더 크게 강조 */
+  font-weight: 800;       /* 두꺼운 글씨 */
+  color: #333;
+  margin-top: 60px;       /* 위쪽 그룹과 간격 띄우기 */
+  margin-bottom: 20px;
+  border-left: 5px solid #005bac; /* 왼쪽에 파란색 포인트 선 */
+  padding-left: 15px;     /* 선과 글자 사이 간격 */
+}
+
+/* 첫 번째 제목(Registered)은 위쪽 여백을 줄여줍니다 */
+.patent-category-title:first-child {
+  margin-top: 20px;
+}
+
+/* 2. 특허 상태 배지 (Status) -> 붉은색 */
+.process-badge {
+  background-color: #dc3545 !important; /* 진한 붉은색 */
+  color: white;
+}
+
+/* =================================================== */
 /*Publications CSS for each year 25.12.08 D.H Lee (END)*/
+/* =================================================== */
 
-/* Publications - Patent */
+/* prev. patent css
 #patent .card-text {
   margin-bottom: 4px;
 }
@@ -435,7 +463,7 @@ h6 {
 #patent .process-badge {
   background-color: var(--application-completed);
 }
-
+*/
 /* 칩 갤러리 상세 페이지 카드 디자인 */
 .chip-detail-card img {
   height: 100%;
