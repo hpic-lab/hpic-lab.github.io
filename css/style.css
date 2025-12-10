@@ -447,7 +447,7 @@ h6 {
 
 /* 2. 특허 상태 배지 (Status) -> 붉은색 */
 .process-badge {
-  background-color: #dc3545 !important; /* 진한 붉은색 */
+  background-color: #f4848f !important; /* 진한 붉은색 */
   color: white;
 }
 
