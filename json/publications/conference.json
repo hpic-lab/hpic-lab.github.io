@@ -1,546 +1,335 @@
-[
+[  
   {
     "type": "2025",
     "status": "IEEE A-SSCC",
     "award": "Accepted",
-    "title": "Critical-Timing-Relaxed pre-Decision Feedforward Equalizer for High-Speed DSP-based Wireline Receiver using Hardware-in-the-Loop Verification on RF-SoC",
+    "title": "",
     "image": "",
     "conference": "IEEE A-SSCC 2025",
-    "reference": "",
+    "reference":"",     
     "authors": [
-      "S.-H. Ok",
-      "J.-G. Lee",
-      "K.-H. Lee",
-      "H. Ju",
-      "G.-S. Jeong",
-      "W. Bae",
-      "and M.-S. Choo"
+      "Sang-Hyeon Ok", 
+      "Jae-Geon Lee",
+      "Kwang-Ho Lee",
+      "Haram Ju",
+      "Gyu-Seob Jeong",
+      "Woorham Bae",
+      "Min-Seong Choo Critical-Timing-Relaxed pre-Decision Feedforward Equalizer for High-Speed DSP-based Wireline Receiver using Hardware-in-the-Loop Verification on RF-SoC"
     ],
-    "figure": [
-      "sh-ok-profile-img.jpg",
-      "jg-lee-profile-img.jpeg",
-      "minseong-chu-profile-img.png"
-    ],
+    "figure": [ "sh-ok-profile-img.jpg", "jg-lee-profile-img.jpeg", "minseong-chu-profile-img.png"],
     "link": ""
-  },
+  },    
   {
     "type": "2025",
     "status": "IEEE A-SSCC",
     "award": "Accepted",
-    "title": "A 22Gb/s-54Gb/s Reconfigurable PAM-2/4/8 DSP-Based Transmitter with 14-Tap Feedforward Equalization",
+    "title": "",
     "image": "",
     "conference": "IEEE A-SSCC 2025",
-    "reference": "",
+    "reference":"",     
     "authors": [
-      "S.-M. Jin",
-      "D.-H. Kim",
-      "K.-H. Lee",
-      "H. Ju",
-      "G.-S. Jeong",
-      "W. Bae",
-      "J. Han",
-      "and M.-S. Choo"
+      "Seung-Mo Jin",
+      "Dong-Ho Kim", 
+      "Kwang-Ho Lee",
+      "Haram Ju",
+      "Gyu-Seob Jeong",
+      "Woorham Bae",
+      "Jaeduk Han", 
+      "Min-Seong Choo A 22Gb/s-54Gb/s Reconfigurable PAM-2/4/8 DSP-Based Transmitter with 14-Tap Feedforward Equalization"
     ],
-    "figure": [
-      "sm-jin-profile-img.png",
-      "dh-kim-profile-image.jpg",
-      "minseong-chu-profile-img.png"
-    ],
+    "figure": [ "sm-jin-profile-img.png", "dh-kim-profile-image.jpg", "minseong-chu-profile-img.png"],
     "link": ""
-  },
+  },    
   {
+ 
     "type": "2025",
     "status": "ITC-CSCC",
     "title": "Analysis of Adaptive Learning Rate Strategies for Sign-Sign LMS: Stability and Speed",
     "image": "",
     "conference": "ITC-CSCC 2025",
-    "reference": "<i>2025 International Technical Conference on Circuits/Systems, Computers, and Communications (ITC-CSCC)</i>, Seoul, Korea, Republic of, 2025, pp. 1-3.",
-    "authors": [
-      "J.-G. Lee",
-      "S.-H. Ok",
-      "S.-H. Gong",
-      "S.-M. Jin",
-      "D.-H. Kim",
-      "and M.-S. Choo"
-    ],
-    "figure": [
-      "jg-lee-profile-img.jpeg",
-      "sh-ok-profile-img.jpg",
-      "sh-gong-profile-image.jpg",
-      "sm-jin-profile-img.png",
-      "dh-kim-profile-image.jpg",
-      "minseong-chu-profile-img.png"
-    ],
+    "reference":"<i>2025 International Technical Conference on Circuits/Systems, Computers, and Communications (ITC-CSCC)</i>, Seoul, Korea, Republic of, 2025, pp. 1-3.",
+    "authors": ["J.-G. Lee", "S.-H. Ok", "S.-H. Gong", "S.-M. Jin", "D.-H. Kim", "and M.-S. Choo"],
+    "figure": ["jg-lee-profile-img.jpeg", "sh-ok-profile-img.jpg", "sh-gong-profile-image.jpg", "sm-jin-profile-img.png", "dh-kim-profile-image.jpg", "minseong-chu-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/document/11137667"
   },
   {
+ 
     "type": "2025",
     "status": "ICEIC",
     "award": "Best Paper Award",
     "title": "An Implementation of a DSP-Based PAM-4 Digital Equalizer with 32-Way TI-ADC",
     "image": "",
     "conference": "ICEIC 2025",
-    "reference": "<i>2025 International Conference on Electronics, Information, and Communication (ICEIC)</i>, Osaka, Japan, 2025, pp. 1-4.",
-    "authors": [
-      "S.-H. Ok",
-      "D.-H. Heo",
-      "J.-G. Lee",
-      "S.-M. Jin",
-      "K.-H. Lee",
-      "D. Jeong",
-      "and M.-S. Choo"
-    ],
-    "figure": [
-      "sh-ok-profile-img.jpg",
-      "dh-heo-profile-img.jpg",
-      "jg-lee-profile-img.jpeg",
-      "sm-jin-profile-img.png",
-      "minseong-chu-profile-img.png"
-    ],
+    "reference":"<i>2025 International Conference on Electronics, Information, and Communication (ICEIC)</i>, Osaka, Japan, 2025, pp. 1-4.",      
+    "authors": ["S.-H. Ok", "D.-H. Heo", "J.-G. Lee", "S.-M. Jin", "K.-H. Lee", "D. Jeong", "and M.-S. Choo"],
+    "figure": ["sh-ok-profile-img.jpg", "dh-heo-profile-img.jpg", "jg-lee-profile-img.jpeg", "sm-jin-profile-img.png", "minseong-chu-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/document/10879734"
   },
   {
+ 
     "type": "2024",
     "status": "IEEE A-SSCC",
     "award": "JSSC Invited",
     "title": "A 14-to-32-Gb/s Deadzone-Free Referenceless CDR with Autocovariance-based Frequency Detector in 40-nm CMOS Technology",
     "image": "",
     "conference": "IEEE A-SSCC 2024",
-    "reference": "<i>2024 IEEE Asian Solid-State Circuits Conference (A-SSCC)</i>, Hiroshima, Japan, 2024, pp. 1-3.",
-    "authors": [
-      "H.-S. Choi",
-      "J.-G. Lee",
-      "K.-H. Lee",
-      "D.-H. Koh",
-      "J.-W. Sull",
-      "H.-R. Do",
-      "C.-H. Kye",
-      "D.-K. Jeong",
-      "and M.-S. Choo"
-    ],
-    "figure": [
-      "jg-lee-profile-img.jpeg",
-      "minseong-chu-profile-img.png"
-    ],
+    "reference":"<i>2024 IEEE Asian Solid-State Circuits Conference (A-SSCC)</i>, Hiroshima, Japan, 2024, pp. 1-3.",    
+    "authors": ["H.-S. Choi", "J.-G. Lee", "K.-H. Lee", "D. Koh", "J.-W. Sull", "H. Do", "C.-H. Kye", "D.-K. Jeong", "and M.-S. Choo"],
+    "figure": ["jg-lee-profile-img.jpeg", "minseong-chu-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/document/10848602"
   },
   {
+ 
     "type": "2024",
     "status": "ISOCC",
     "title": "A 2T1C eDRAM-based Compute-In-Memory Macro with 8-to-1 Column Multiplexing Scheme for Highly Sparse Binarized Deep Neural Networks",
     "image": "",
     "conference": "ISOCC 2024",
-    "reference": "<i>2024 21st International SoC Design Conference (ISOCC)</i>, Sapporo, Japan, 2024, pp. 177-178.",
-    "authors": [
-      "S.-U. Kang",
-      "S.-M. Jin",
-      "M.-G. Song",
-      "D.-H. Lee",
-      "W.-S. Jung",
-      "and M.-S. Choo"
-    ],
-    "figure": [
-      "su-kang-profile-img.jpg",
-      "sm-jin-profile-img.png",
-      "mg-song-profile-img.jpg",
-      "dh-lee-profile-img.png",
-      "minseong-chu-profile-img.png"
-    ],
+    "reference":"<i>2024 21st International SoC Design Conference (ISOCC)</i>, Sapporo, Japan, 2024, pp. 177-178.",   
+    "authors": ["S.-U. Kang", "S.-M. Jin", "M.-G. Song", "D.-H. Lee", "W.-S. Jung", "and M.-S. Choo"],
+    "figure": ["su-kang-profile-img.jpg", "sm-jin-profile-img.png", "mg-song-profile-img.jpg", "dh-lee-profile-img.png", "minseong-chu-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/document/10762215"
   },
   {
+ 
     "type": "2024",
     "status": "DAC (WiP)",
     "title": "A General Purpose IMC Architecture with ADC-Awared Neural Networks",
     "image": "",
     "conference": "DAC (WiP)",
-    "reference": "",
-    "authors": [
-      "M.-G. Song",
-      "S.-U. Kang",
-      "and M.-S. Choo"
-    ],
-    "figure": [
-      "mg-song-profile-img.jpg",
-      "su-kang-profile-img.jpg",
-      "minseong-chu-profile-img.png"
-    ],
+    "reference":"",  
+    "authors": ["M.-G. Song", "S.-U. Kang", "and M.-S. Choo"],
+    "figure": ["mg-song-profile-img.jpg", "su-kang-profile-img.jpg", "minseong-chu-profile-img.png"],
     "link": "https://hpiclab.sharepoint.com/:f:/s/hpic-lab/EkXPdyE7H-NJvLqdQPPLb2oBt653wO1f3Rp1XB6FmSoq4g?e=1XN7JA"
   },
   {
+ 
     "type": "2024",
     "status": "2024 SOC 학술대회",
     "award": "Best Paper Award",
     "title": "Vertical AND Cell Package: AND CiM 을 통한 BNN 운용 방법론",
     "image": "",
     "conference": "2024 SOC 학술대회",
-    "reference": "",
-    "authors": [
-      "M.-G. Song",
-      "J.-G. Lee",
-      "S.-M. Jin",
-      "and M.-S. Choo"
-    ],
-    "figure": [
-      "mg-song-profile-img.jpg",
-      "jg-lee-profile-img.jpeg",
-      "sm-jin-profile-img.png",
-      "minseong-chu-profile-img.png"
-    ],
+    "reference":"",   
+    "authors": ["M.-G. Song", "J.-G. Lee", "S.-M. Jin", "and M.-S. Choo"],
+    "figure": ["mg-song-profile-img.jpg", "jg-lee-profile-img.jpeg", "sm-jin-profile-img.png", "minseong-chu-profile-img.png"],
     "link": "https://drive.google.com/file/d/1aC8FmySN5FQz4NIIZGNZot0416-Uqh-s/view"
   },
   {
+ 
     "type": "2024",
     "status": "ICEIC",
     "title": "Analysis of ADC Quantization Effect in Processing-In-Memory Macro in Various Low-Precision Deep Neural Networks",
     "image": "",
     "conference": "ICEIC 2024",
-    "reference": "<i>2024 International Conference on Electronics, Information, and Communication (ICEIC)</i>, Taipei, Taiwan, 2024, pp. 1-2.",
-    "authors": [
-      "S.-M. Jin",
-      "S.-U. Kang",
-      "and M.-S. Choo"
-    ],
-    "figure": [
-      "sm-jin-profile-img.png",
-      "su-kang-profile-img.jpg",
-      "minseong-chu-profile-img.png"
-    ],
+    "reference":"<i>2024 International Conference on Electronics, Information, and Communication (ICEIC)</i>, Taipei, Taiwan, 2024, pp. 1-2.",    
+    "authors": ["S.-M. Jin", "S.-U. Kang", "and M.-S. Choo"],
+    "figure": ["sm-jin-profile-img.png", "su-kang-profile-img.jpg", "minseong-chu-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/document/10457226"
   },
   {
+ 
     "type": "2024",
     "status": "ICEIC",
     "title": "Hardware and Software Co-Simulation Methodology for Processing-in-Memory Bitcell Application ",
     "image": "",
     "conference": "ICEIC 2024",
-    "reference": "<i>2024 International Conference on Electronics, Information, and Communication (ICEIC)</i>, Taipei, Taiwan, 2024, pp. 1-2.",
-    "authors": [
-      "J.-G. Lee",
-      "S.-U. Kang",
-      "and M.-S. Choo"
-    ],
-    "figure": [
-      "jg-lee-profile-img.jpeg",
-      "su-kang-profile-img.jpg",
-      "minseong-chu-profile-img.png"
-    ],
+    "reference":"<i>2024 International Conference on Electronics, Information, and Communication (ICEIC)</i>, Taipei, Taiwan, 2024, pp. 1-2.",   
+    "authors": ["J.-G. Lee", "S.-U. Kang", "and M.-S. Choo"],
+    "figure": ["jg-lee-profile-img.jpeg", "su-kang-profile-img.jpg", "minseong-chu-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/document/10457160"
   },
   {
+ 
     "type": "2024",
     "status": "ICEIC",
     "award": "Best Paper Award",
     "title": "An Analysis of 32-Gb/s and Full-Rate Phase Interpolator based Clock and Data Recovery",
     "image": "",
     "conference": "ICEIC 2024",
-    "reference": "<i>2024 International Conference on Electronics, Information, and Communication (ICEIC)</i>, Taipei, Taiwan, 2024, pp. 1-4.",
-    "authors": [
-      "D.-H. Heo",
-      "T.-H. Kim",
-      "K.-H. Lee",
-      "and M.-S. Choo"
-    ],
-    "figure": [
-      "dh-heo-profile-img.jpg",
-      "minseong-chu-profile-img.png"
-    ],
+    "reference":"<i>2024 International Conference on Electronics, Information, and Communication (ICEIC)</i>, Taipei, Taiwan, 2024, pp. 1-4.",    
+    "authors": ["D.-H. Heo", "T.-H. Kim", "K.-H. Lee", "and M.-S. Choo"],
+    "figure": ["dh-heo-profile-img.jpg", "minseong-chu-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/document/10457116"
   },
   {
+ 
     "type": "2024",
     "status": "KCS",
     "title": "Design of PAM4 Transmitter in 28-nm CMOS Technology",
     "image": "",
     "conference": "KCS 2024",
-    "reference": "",
-    "authors": [
-      "Y.-J. Byeon",
-      "and M.-S. Choo"
-    ],
-    "figure": [
-      "yj-byeon-profile-img.png",
-      "minseong-chu-profile-img.png"
-    ],
+    "reference":"",  
+    "authors": ["Y.-J. Byeon", "and M.-S. Choo"],
+    "figure": ["yj-byeon-profile-img.png", "minseong-chu-profile-img.png"],
     "link": "https://drive.google.com/file/d/1lVfAHKRFshsPsVT17O25Oz3bHriDWW6B/view"
   },
   {
+ 
     "type": "2024",
     "status": "KCS",
     "title": "Technology of Channel Equalization at the Receiver in 28nm CMOS",
     "image": "",
     "conference": "KCS 2024",
-    "reference": "",
-    "authors": [
-      "D.-E. Lee",
-      "T.-H. Kim",
-      "and M.-S. Choo"
-    ],
-    "figure": [
-      "de-lee-profile-img.png",
-      "minseong-chu-profile-img.png"
-    ],
+    "reference":"",  
+    "authors": ["D.-E. Lee", "T.-H. Kim", "and M.-S. Choo"],
+    "figure": ["de-lee-profile-img.png", "minseong-chu-profile-img.png"],
     "link": "https://drive.google.com/file/d/12L2cJQlLUiwNAWZ8iZT4k2sVcysgqY2f/view"
   },
   {
+ 
     "type": "2024",
     "status": "KCS",
     "title": "Modeling of DSP-Based Receiver and Analysis Data Phase With Stochastic Method",
     "image": "",
     "conference": "KCS 2024",
-    "reference": "",
-    "authors": [
-      "J.-H. Kwon",
-      "T.-H. Kim",
-      "and M.-S. Choo"
-    ],
-    "figure": [
-      "jh-kwon-profile-img.png",
-      "minseong-chu-profile-img.png"
-    ],
+    "reference":"",
+    "authors": ["J.-H. Kwon", "T.-H. Kim", "and M.-S. Choo"],
+    "figure": ["jh-kwon-profile-img.png", "minseong-chu-profile-img.png"],
     "link": "https://drive.google.com/file/d/1OrBk8YmFi4QQq-8GsRutEYgRFqF1hjKG/view"
   },
   {
+ 
     "type": "2023",
     "status": "하계학술대회",
     "title": "Analysis of Channel Equalization on High-Speed Serial Data Communication",
     "image": "",
     "conference": "2023 하계학술대회",
-    "reference": "대한전자공학회 학술대회, 제주.",
-    "authors": [
-      "T.-H. Kim",
-      "D.-H. Heo",
-      "J.-H. Lee",
-      "S.-M. Jin",
-      "and M.-S. Choo"
-    ],
-    "figure": [
-      "dh-heo-profile-img.jpg",
-      "sm-jin-profile-img.png",
-      "minseong-chu-profile-img.png"
-    ],
+    "reference":"대한전자공학회 학술대회, 제주.", 
+    "authors": ["T.-H. Kim", "D.-H. Heo", "J.-H. Lee", "S.-M. Jin", "and M.-S. Choo"],
+    "figure": ["dh-heo-profile-img.jpg", "sm-jin-profile-img.png", "minseong-chu-profile-img.png"],
     "link": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11521991"
   },
   {
+ 
     "type": "2023",
     "status": "하계학술대회",
     "title": "PDR 기반 Injection Point에 따른 Injection-Locked Oscillator의 Locking Time 분석",
     "image": "",
     "conference": "2023 하계학술대회",
-    "reference": "대한전자공학회 학술대회, 제주.",
-    "authors": [
-      "S.-W. Han",
-      "G.-Y. You",
-      "J.-G. Lee",
-      "M.-G. Song",
-      "and M.-S. Choo"
-    ],
-    "figure": [
-      "jg-lee-profile-img.jpeg",
-      "mg-song-profile-img.jpg",
-      "minseong-chu-profile-img.png"
-    ],
+    "reference":"대한전자공학회 학술대회, 제주.",  
+    "authors": ["S.-W. Han", "G. Y. You", "J.-G. Lee", "M.-G. Song", "and M.-S. Choo"],
+    "figure": ["jg-lee-profile-img.jpeg", "mg-song-profile-img.jpg", "minseong-chu-profile-img.png"],
     "link": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11522007"
   },
   {
+ 
     "type": "2023",
     "status": "하계학술대회",
     "title": "Phase Domain Response 분석을 통한 Injection-Locked Oscillator의 Locking Point 예측",
     "image": "",
     "conference": "2023 하계학술대회",
-    "reference": "대한전자공학회 학술대회, 제주.",
-    "authors": [
-      "G.-Y. You",
-      "S.-W. Han",
-      "J.-H. Kwon",
-      "D.-E. Lee",
-      "Y.-J. Byeon",
-      "and M.-S. Choo"
-    ],
-    "figure": [
-      "jh-kwon-profile-img.png",
-      "de-lee-profile-img.png",
-      "yj-byeon-profile-img.png",
-      "minseong-chu-profile-img.png"
-    ],
+    "reference":"대한전자공학회 학술대회, 제주.",   
+    "authors": ["G.-Y. You", "S.-W. Han", "J.-H. Kwon", "D.-E. Lee", "Y.-J. Byeon", "and M.-S. Choo"],
+    "figure": ["jh-kwon-profile-img.png", "de-lee-profile-img.png", "yj-byeon-profile-img.png", "minseong-chu-profile-img.png"],
     "link": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11521992"
   },
   {
+ 
     "type": "2023",
     "status": "ICEIC",
     "title": "Direct Phase Control in Digital Phase-Locked Loop Mitigating Loop Delay Effect inside Digital Filter",
     "image": "",
     "conference": "ICEIC 2023",
-    "reference": "<i>2023 International Conference on Electronics, Information, and Communication (ICEIC)</i>, Singapore, 2023, pp. 1-2.",
-    "authors": [
-      "I.-W. Jang",
-      "and M.-S. Choo"
-    ],
-    "figure": [
-      "minseong-chu-profile-img.png"
-    ],
+    "reference":"<i>2023 International Conference on Electronics, Information, and Communication (ICEIC)</i>, Singapore, 2023, pp. 1-2.",   
+    "authors": ["I.-W. Jang", "and M.-S. Choo"],
+    "figure": ["minseong-chu-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/document/10049900"
   },
   {
+ 
     "type": "2023",
     "status": "ICEIC",
     "title": "Radiation-Hardened Processing-In-Memory Crossbar Array With Hybrid Synapse Devices for Space Application",
     "image": "",
     "conference": "ICEIC 2023",
-    "reference": "<i>2023 International Conference on Electronics, Information, and Communication (ICEIC)</i>, Singapore, 2023, pp. 1-4.",
-    "authors": [
-      "S.-U. Kang",
-      "J.-W. Han",
-      "and M.-S. Choo"
-    ],
-    "figure": [
-      "su-kang-profile-img.jpg",
-      "minseong-chu-profile-img.png"
-    ],
+    "reference":"<i>2023 International Conference on Electronics, Information, and Communication (ICEIC)</i>, Singapore, 2023, pp. 1-4.",   
+    "authors": ["S.-U. Kang", "J.-W. Han", "and M.-S. Choo"],
+    "figure": ["su-kang-profile-img.jpg", "minseong-chu-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/document/10049920"
   },
   {
+ 
     "type": "2022",
     "status": "IEEE ESSCIRC",
     "title": "A− 247.1 dB FoM,− 77.9 dBc Reference Spur Ring-Oscillator-Based Injection-Locked Clock Multiplier with Multi-Phase-Based Calibration",
     "image": "img/c1.png",
     "conference": "European Solid-State Circuits Conference (IEEE ESSCIRC)",
-    "reference": "<i>ESSCIRC 2022- IEEE 48th European Solid State Circuits Conference (ESSCIRC)</i>, Milan, Italy, 2022, pp. 249-252.",
-    "authors": [
-      "Y.-G. Song",
-      "K.-J. Ha",
-      "H.-G. Ko",
-      "M.-S. Choo",
-      "and D.-K. Jeong"
-    ],
-    "figure": [
-      "minseong-chu-profile-img.png"
-    ],
+    "reference":"<i>ESSCIRC 2022- IEEE 48th European Solid State Circuits Conference (ESSCIRC)</i>, Milan, Italy, 2022, pp. 249-252.",   
+    "authors": ["Y.-G. Song", "K.-J. Ha", "H.-G. Ko", "M.-S. Choo", "and D.-K. Jeong"],
+    "figure": ["minseong-chu-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/abstract/document/9911362"
   },
   {
+ 
     "type": "2019",
     "status": "IEEE ISSCC",
     "title": "A Synthesizable Digital AOT 4-Phase Buck Voltage Regulator for Digital Systems with 0.0054mm2 Controller and 80ns Recovery Time",
     "image": "img/c5.png",
     "conference": "IEEE International Solid-State Circuits Conference (IEEE ISSCC)",
-    "reference": "<i>2019 IEEE International Solid-State Circuits Conference - (ISSCC)</i>, San Francisco, CA, USA, 2019, pp. 432-434.",
-    "authors": [
-      "M.-H. Choi",
-      "C.-H. Kye",
-      "J.-H. Oh",
-      "M.-S. Choo",
-      "and D.-K. Jeong"
-    ],
-    "figure": [
-      "minseong-chu-profile-img.png"
-    ],
+    "reference":"<i>2019 IEEE International Solid-State Circuits Conference - (ISSCC)</i>, San Francisco, CA, USA, 2019, pp. 432-434.",    
+    "authors": ["M. Choi", "C.-H. Kye", "J. Oh", "M.-S. Choo", "and D.-K. Jeong"],
+    "figure": ["minseong-chu-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/abstract/document/8662453"
   },
   {
+ 
     "type": "2019",
     "status": "IEEE VLSIC",
     "title": "A 4-to-20Gb/s 1.87pJ/b referenceless digital CDR with unlimited frequency detection capability in 65nm CMOS",
     "image": "img/c6.png",
     "conference": "IEEE Symposium on VLSI Circuits (VLSIC)",
-    "reference": "<i>2019 Symposium on VLSI Circuits</i>, Kyoto, Japan, 2019, pp. C194-C195.",
-    "authors": [
-      "K.-S. Park",
-      "K.-H. Lee",
-      "S.-Y. Cho",
-      "J.-H. Lee",
-      "J.-H. Hwang",
-      "M.-S. Choo",
-      "and D.-K. Jeong"
-    ],
-    "figure": [
-      "minseong-chu-profile-img.png"
-    ],
+    "reference":"<i>2019 Symposium on VLSI Circuits</i>, Kyoto, Japan, 2019, pp. C194-C195.",    
+    "authors": ["K. Park", "K. Lee", "S.-Y. Cho", "J. Lee", "J. Hwang", "M.-S. Choo", "and D.-K. Jeong"],
+    "figure": ["minseong-chu-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/abstract/document/8778157"
   },
   {
+ 
     "type": "2018",
     "status": "IEEE A-SSCC",
     "title": "A 10-Gb/s, 0.03-mm2, 1.28-pJ/bit Half-Rate All-Digital Injection-Locked Clock and Data Recovery with Maximum Timing-Margin Tracking Loop",
     "image": "",
     "conference": "IEEE A-SSCC 2018",
-    "reference": "<i>2018 IEEE Asian Solid-State Circuits Conference (A-SSCC)</i>, Tainan, Taiwan, 2018, pp. 73-76.",
-    "authors": [
-      "M.-S. Choo",
-      "H.-G. Ko",
-      "S.-Y. Cho",
-      "K.-H. Lee",
-      "and D.-K. Jeong"
-    ],
-    "figure": [
-      "minseong-chu-profile-img.png"
-    ],
+    "reference":"<i>2018 IEEE Asian Solid-State Circuits Conference (A-SSCC)</i>, Tainan, Taiwan, 2018, pp. 73-76.",   
+    "authors": ["M.-S. Choo", "H.-G. Ko", "S.-Y. Cho", "K.-H. Lee", "and D.-K. Jeong"],
+    "figure": ["minseong-chu-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/abstract/document/8579270"
   },
   {
+ 
     "type": "2017",
     "status": "IEEE ISSCC",
     "title": "A 2.5GHz injection-locked ADPLL with 197fsrms integrated jitter and −65dBc reference spur using time-division dual calibration",
     "image": "img/c3.png",
     "conference": "IEEE International Solid-State Circuits Conference (IEEE ISSCC)",
-    "reference": "<i>2017 IEEE International Solid-State Circuits Conference (ISSCC)</i>, San Francisco, CA, USA, 2017, pp. 494-495.",
-    "authors": [
-      "S.-W. Kim",
-      "H.-G. Ko",
-      "S.-Y. Cho",
-      "J.-H. Lee",
-      "S.-Y. Shin",
-      "M.-S. Choo",
-      "H.-K. Chi",
-      "and D.-K. Jeong"
-    ],
-    "figure": [
-      "minseong-chu-profile-img.png"
-    ],
+    "reference":"<i>2017 IEEE International Solid-State Circuits Conference (ISSCC)</i>, San Francisco, CA, USA, 2017, pp. 494-495.",   
+    "authors": ["S. Kim", "H.-G. Ko", "S.-Y. Cho", "J. Lee", "S. Shin", "M.-S. Choo", "H. Chi", "and D.-K. Jeong"],
+    "figure": ["minseong-chu-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/abstract/document/7870477"
   },
   {
+ 
     "type": "2016",
     "status": "IEEE ISCAS",
     "title": "A theoretical analysis of phase shift in pulse injection-locked oscillators",
     "image": "img/c2.png",
     "conference": "IEEE International Symposium on Circuits and Systems (ISCAS)",
-    "reference": "<i>2016 IEEE International Symposium on Circuits and Systems (ISCAS)</i>, Montreal, QC, Canada, 2016, pp. 1662-1665.",
-    "authors": [
-      "J.-H. Lee",
-      "S.-W. Kim",
-      "M.-S. Choo",
-      "S.-Y. Cho",
-      "H.-G. Ko",
-      "and D.-K. Jeong"
-    ],
-    "figure": [
-      "minseong-chu-profile-img.png"
-    ],
+    "reference":"<i>2016 IEEE International Symposium on Circuits and Systems (ISCAS)</i>, Montreal, QC, Canada, 2016, pp. 1662-1665.",   
+    "authors": ["J. Lee", "S. Kim", "M.-S. Choo", "S.-Y. Cho", "H.-G. Ko", "and D.-K. Jeong"],
+    "figure": ["minseong-chu-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/abstract/document/7538886"
   },
   {
+ 
     "type": "2015",
     "status": "IEEE ESSCIRC",
     "title": "A 5-GHz subharmonically injection-locked all-digital PLL with complementary switched injection",
     "image": "img/c1.png",
     "conference": "European Solid-State Circuits Conference (IEEE ESSCIRC)",
-    "reference": "<i>ESSCIRC Conference 2015 - 41st European Solid-State Circuits Conference (ESSCIRC)</i>, Graz, Austria, 2015, pp. 384-387.",
-    "authors": [
-      "S.-Y. Cho",
-      "S.-W. Kim",
-      "M.-S. Choo",
-      "J.-H. Lee",
-      "H.-G. Ko",
-      "S. Jang",
-      "S.-H. Chu",
-      "W.-R. Bae",
-      "Y.-S. Kim",
-      "and D.-K. Jeong"
-    ],
-    "figure": [
-      "minseong-chu-profile-img.png"
-    ],
+    "reference":"<i>ESSCIRC Conference 2015 - 41st European Solid-State Circuits Conference (ESSCIRC)</i>, Graz, Austria, 2015, pp. 384-387.",   
+    "authors": ["S.-Y. Cho", "S. Kim", "M.-S. Choo", "J. Lee", "H.-G. Ko", "S. Jang", "S.-H. Chu", "W. Bae", "Y. Kim", "and D.-K. Jeong"],
+    "figure": ["minseong-chu-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/abstract/document/7313908"
   }
 ]
