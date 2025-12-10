@@ -115,9 +115,8 @@ $(document).ready(function () {
 
 $(document).ready(function () {
 
-  // [Final_v23] 특허(Patent) 섹션 개편 (Registered / Applications 분리 + 연도별 토글)
   
-  // 1. 논문 로드 함수 (저널/컨퍼런스용 - 기존 유지)
+  // 1. 저널/컨퍼런스 로드 함수
   function loadPublication(url, containerClass) {
     $.getJSON(url).done(function (pubs) {
       const container = $(containerClass);
@@ -125,6 +124,7 @@ $(document).ready(function () {
       
       container.off("click.pubToggle", ".publication-year-header");
 
+      // 그룹화
       const papersByYear = {};
       pubs.forEach((pub) => {
         const year = pub.type ? pub.type : "Others";
@@ -132,6 +132,7 @@ $(document).ready(function () {
         papersByYear[year].push(pub);
       });
 
+      // 정렬
       const sortedYears = Object.keys(papersByYear).sort((a, b) => {
         if (a === "Others") return 1;
         if (b === "Others") return -1;
@@ -139,6 +140,7 @@ $(document).ready(function () {
         return a < b ? 1 : -1;
       });
 
+      // 그리기
       sortedYears.forEach((year) => {
         const yearHeaderHTML = `
           <h3 class="publication-year-header">
@@ -157,11 +159,16 @@ $(document).ready(function () {
         papersByYear[year].forEach((pub) => {
           let authorsText = pub.authors.join(", ");
 
-          // 배지 생성
+          // --- 배지 생성 (연도 배지 삭제됨) ---
           let badgesHTML = "";
-          if (pub.type) badgesHTML += `<span class="badge text-bg-primary">${pub.type}</span>| `;
-          // status만 배지로 사용 (Journal/Conference 배지 제거됨)
+          
+          // [삭제] 연도 배지 코드 제거됨 (아코디언과 중복)
+          // if (pub.type) badgesHTML += ...
+          
+          // Status (녹색)
           if (pub.status) badgesHTML += `<span class="badge bg-success">${pub.status}</span>| `;
+          
+          // 기타 배지
           if (pub.award) badgesHTML += `<span class="badge bg-warning">${pub.award}</span>| `;
           if (pub.sub) badgesHTML += `<span class="badge bg-info">${pub.sub}</span>| `;
           if (pub.progress) badgesHTML += `<span class="badge bg-secondary">${pub.progress}</span>| `;
@@ -170,31 +177,21 @@ $(document).ready(function () {
 
           const figures = pub.figure ? pub.figure.map(img => `<img src="img/${img}" class="pub-figure" alt="Figure">`).join("") : "";
 
-          // 레퍼런스 정보 조립 (통합 필드 'reference' 우선 사용)
+          // --- 레퍼런스 (통합 필드 우선) ---
           let titleHTML = "";      
           let citationHTML = "";   
           let titleSuffix = ".";   
 
           if (pub.title && pub.title.trim() !== "") {
-              // 1. 통합 reference 필드가 있으면 그걸 사용
               if (pub.reference && pub.reference.trim() !== "") {
                   titleSuffix = ",";
                   citationHTML = " " + pub.reference;
-              } 
-              // 2. 없으면 기존 로직 (Show Detail / PP 확인 등)
-              // (여기서는 사용자 요청에 따라 reference 필드 방식만 남기거나, 
-              //  기존 로직을 유지할 수 있습니다. 현재는 reference 필드 사용을 권장하므로 간단하게 처리합니다.)
-              else {
-                  // 하위 호환을 위해 남겨두거나, 깔끔하게 비워둘 수 있습니다.
-                  // 만약 기존 JSON 데이터도 지원해야 한다면 이전 버전의 로직을 여기에 넣으면 됩니다.
-                  // 현재는 'reference' 필드 사용을 최우선으로 합니다.
+              } else {
                   titleSuffix = ".";
                   citationHTML = "";
               }
-              
               titleHTML = `, <a href="${pub.link}" target="_blank" class="pub-title-link">"<b>${pub.title}</b>${titleSuffix}"</a>`;
-          } 
-          else {
+          } else {
               authorsText += "."; 
           }
 
@@ -224,28 +221,21 @@ $(document).ready(function () {
   }
 
 
-  // 2. [NEW] 특허 로드 함수 (Registered / Applications 분리)
+  // 2. 특허 로드 함수
   function loadPatent(url, containerClass) {
      $.getJSON(url).done(function (pubs) {
       const container = $(containerClass);
-      container.empty(); // 초기화
+      container.empty(); 
 
-      // 데이터를 '등록'과 '출원'으로 분류
-      // (JSON의 "type" 필드에 "등록" 또는 "출원"이라는 글자가 포함되어 있다고 가정)
       const registeredPubs = pubs.filter(p => p.type && p.type.includes("등록"));
       const applicationPubs = pubs.filter(p => p.type && p.type.includes("출원"));
 
-      // ----------------------------------------------------
-      // 내부 함수: 특정 그룹(등록/출원)을 화면에 그리는 함수
-      // ----------------------------------------------------
       function renderPatentGroup(groupPubs, groupTitle) {
-          if (groupPubs.length === 0) return; // 데이터 없으면 생략
+          if (groupPubs.length === 0) return; 
 
-          // 1. 대분류 제목 (아코디언 아님)
           const groupHeader = `<h2 class="patent-category-title">${groupTitle}</h2>`;
           container.append(groupHeader);
 
-          // 2. 연도별 그룹화
           const papersByYear = {};
           groupPubs.forEach((pub) => {
             const year = pub.year ? pub.year : "Others";
@@ -253,12 +243,9 @@ $(document).ready(function () {
             papersByYear[year].push(pub);
           });
 
-          // 3. 연도 정렬 (최신순)
           const sortedYears = Object.keys(papersByYear).sort((a, b) => b - a);
 
-          // 4. 연도별 아코디언 생성
           sortedYears.forEach((year) => {
-             // 연도 헤더 (토글)
              const yearHeader = `
               <h3 class="publication-year-header">
                 <span>${year}</span>
@@ -275,20 +262,22 @@ $(document).ready(function () {
              papersByYear[year].forEach((pub) => {
                 let inventorsText = pub.inventors.join(", ");
                 
-                // 배지 생성 (특허용)
                 let badgesHTML = "";
-                // Type (출원/등록) -> 파란색
-                if (pub.type) badgesHTML += `<span class="badge text-bg-primary">${pub.type}</span>| `;
-                // Status (숫자 등) -> 붉은색 (process-badge)
+                
+                // [삭제] 특허에서도 연도/타입(출원/등록) 배지는 삭제 (제목으로 구분이 되므로)
+                // 대신 '출원/등록' 텍스트 자체가 중요하면 남겨야 하지만, 
+                // "Patent Applications"라는 큰 제목이 있으므로 배지는 중복될 수 있습니다.
+                // 사용자 요청: "연도 배지는 빼달라" -> type 배지 삭제
+                // 만약 '출원/등록' 글자는 배지로 남기고 싶다면 아래 주석을 해제하세요.
+                // if (pub.type) badgesHTML += `<span class="badge text-bg-primary">${pub.type}</span>| `;
+                
                 if (pub.status) badgesHTML += `<span class="badge process-badge">${pub.status}</span>| `;
-                // Registration (특허번호) -> 녹색
                 if (pub.registration) badgesHTML += `<span class="badge bg-success">${pub.registration}</span>| `;
                 
                 if (badgesHTML.endsWith("| ")) badgesHTML = badgesHTML.slice(0, -2);
 
                 const figures = pub.figure ? pub.figure.map(img => `<img src="img/${img}" class="pub-figure" alt="Figure">`).join("") : "";
 
-                // 특허 텍스트 조립: Inventors, (Year). Title.
                 const pub_detail = `
                 <div class="pub-wrapper">
                   <div class="pub-badges">
@@ -310,14 +299,9 @@ $(document).ready(function () {
           });
       }
 
-      // 두 그룹을 순서대로 렌더링
-      // 1. Registered (등록)
       renderPatentGroup(registeredPubs, "Registered Patents");
-      
-      // 2. Applications (출원)
       renderPatentGroup(applicationPubs, "Patent Applications");
 
-      // 클릭 이벤트 (공통 사용)
       container.off("click.pubToggle").on("click.pubToggle", ".publication-year-header", function() {
         $(this).toggleClass("collapsed");
         $(this).next(".pub-year-content").stop(true, false).slideToggle(300);

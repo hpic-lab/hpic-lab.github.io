@@ -169,14 +169,14 @@
       "title": "A 4.5-to-14 GHz PLL-based Clock Driver with Wide-range 3-shaped LC-VCOs for GDDR6 DRAM Test",
       "image": "",
       "journal": "JSTS",
-      "reference":"<i>JOURNAL OF SEMICONDUCTOR TECHNOLOGY AND SCIENCE</i>, 24(3), 284-288. 10.5573/JSTS.2024.24.3.284.",       
+      "reference":"in <i>Journal of Semiconductor Technology and Science</i>, 24(3), 284-288. 10.5573/JSTS.2024.24.3.284.",       
       "authors": ["C.-H. Kye", "J. Kim", "D.-K. Jeong", "and M.-S. Choo"],
       "figure": ["minseong-chu-profile-img.png"],
       "link": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11825975"
     },
     {
      
-      "type": "2022",
+      "type": "2023",
       "status": "IEEE ACCESS",
       "title": "An Automated Design Methodology for Ring Voltage-Controlled Oscillators in Nanometer CMOS Technologies",
       "image": "img/j11.png",
