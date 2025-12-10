@@ -99,7 +99,7 @@
       "image": "",
       "journal": "IEEE MWTL",
       "reference":"in <i>IEEE Microwave and Wireless Technology Letters</i>.",   
-      "authors": ["W.-J. Chang", "J. Kwon", "G. Kim", "I. Jeon", "J. Shin", "S.-J. Kim", "H.-D. Gwon", "M.-S. Choo", "and T. H. Jang"],
+      "authors": ["W.-J. Chang", "J. Kwon", "G. Kim", "I. Jeon", "J. Shin", "S. J. Kim", "H.-D. Gwon", "M.-S. Choo", "and T. H. Jang"],
       "figure": ["minseong-chu-profile-img.png"],
       "link": "https://ieeexplore.ieee.org/document/11272918"
     },    
@@ -121,7 +121,7 @@
       "image": "",
       "journal": "IEEE TVLSI",
       "reference":"in <i>IEEE Transactions on Very Large Scale Integration (VLSI) Systems</i>, vol. 33, no. 8, pp. 2349-2353, Aug. 2025.",      
-      "authors": ["K.-M. Baek", "J.-H. Kim", "K.-H. Kim", "D.-K. Jeong", "and M.-S. Choo"],
+      "authors": ["K. Baek", "J. Kim", "K. Kim", "D.-K. Jeong", "and M.-S. Choo"],
       "figure": ["jh-kim-profile-img.png", "minseong-chu-profile-img.png"],
       "link": "https://ieeexplore.ieee.org/document/11017684"
     },
@@ -133,7 +133,7 @@
       "image": "",
       "journal": "IEEE TCAS-II",
       "reference":"in <i>IEEE Transactions on Circuits and Systems II: Express Briefs</i>, vol. 71, no. 11, pp. 4613-4617, Nov. 2024.",      
-      "authors": ["J. Choi", "H. Kim", "H. Roh", "Y. Cho", "M. Choi", "M.-S. Choo", "and J. Roh"],
+      "authors": ["J. Choi","S. Na", "H. Kim", "H. Roh", "Y. Cho", "M. Choi", "M.-S. Choo", "and J. Roh"],
       "figure": ["minseong-chu-profile-img.png"],
       "link": "https://ieeexplore.ieee.org/abstract/document/10614194"
     },
@@ -145,7 +145,7 @@
       "image": "",
       "journal": "IEEE TCAS-I",
       "reference":"in <i>IEEE Transactions on Circuits and Systems I: Regular Papers</i>, vol. 71, no. 11, pp. 4973-4984, Nov. 2024.",      
-      "authors": ["C. Kye", "Y.-J. Byeon", "K. Choo", "and M.-S. Choo"],
+      "authors": ["C.-H. Kye", "Y.-J. Byeon", "K. Choo", "and M.-S. Choo"],
       "figure": ["yj-byeon-profile-img.png","minseong-chu-profile-img.png"],
       "link": "https://ieeexplore.ieee.org/document/10586762"
     },
@@ -253,7 +253,7 @@
     "image": "img/c4.png",
     "journal": "IEEE Asian Solid-State Circuits Conference (A-SSCC) invited to JSSC",
     "reference":"in <i>IEEE Journal of Solid-State Circuits</i>, vol. 54, no. 10, pp. 2812-2822, Oct. 2019.",   
-    "authors": ["M.-S. Choo", "H.-G. Ko", "S.-Y. Cho", "K. Lee", "and D.-K. Jeong"],
+    "authors": ["M.-S. Choo","K. Park", "H.-G. Ko", "S.-Y. Cho", "K. Lee", "and D.-K. Jeong"],
     "figure": ["minseong-chu-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/document/8781914"
   },
