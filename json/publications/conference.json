@@ -74,7 +74,7 @@
     "image": "",
     "conference": "IEEE A-SSCC 2024",
     "reference":"<i>2024 IEEE Asian Solid-State Circuits Conference (A-SSCC)</i>, Hiroshima, Japan, 2024, pp. 1-3.",    
-    "authors": ["H.-S. Choi", "J.-G. Lee", "K.-H. Lee", "D. Koh", "J.-W. Sull", "H. Do", "C.-H. Kye", "D.-K. Jeong", "and M.-S. Choo"],
+    "authors": ["H.-S. Choi", "J.-G. Lee", "K.-H. Lee", "D. Koh", "J.-W. Sull", "H.-R. Do", "C.-H. Kye", "D.-K. Jeong", "and M.-S. Choo"],
     "figure": ["jg-lee-profile-img.jpeg", "minseong-chu-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/document/10848602"
   },
@@ -256,7 +256,7 @@
     "image": "img/c1.png",
     "conference": "European Solid-State Circuits Conference (IEEE ESSCIRC)",
     "reference":"<i>ESSCIRC 2022- IEEE 48th European Solid State Circuits Conference (ESSCIRC)</i>, Milan, Italy, 2022, pp. 249-252.",   
-    "authors": ["Y.-G. Song", "K.-J. Ha", "H.-G. Ko", "M.-S. Choo", "and D.-K. Jeong"],
+    "authors": ["Y. Song", "K. Ha", "H.-G. Ko", "M.-S. Choo", "and D.-K. Jeong"],
     "figure": ["minseong-chu-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/abstract/document/9911362"
   },
