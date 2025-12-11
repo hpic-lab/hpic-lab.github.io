@@ -47,7 +47,7 @@
     "title": "Analysis of Adaptive Learning Rate Strategies for Sign-Sign LMS: Stability and Speed",
     "image": "",
     "conference": "ITC-CSCC 2025",
-    "reference":"<i>2025 International Technical Conference on Circuits/Systems, Computers, and Communications (ITC-CSCC)</i>, Seoul, Korea, Republic of, 2025, pp. 1-3.",
+    "reference":"<i>2025 International Technical Conference on Circuits/Systems, Computers, and Communications (ITC-CSCC)</i>, pp. 1-3, 2025.",
     "authors": ["J.-G. Lee", "S.-H. Ok", "S.-H. Gong", "S.-M. Jin", "D.-H. Kim", "and M.-S. Choo"],
     "figure": ["jg-lee-profile-img.jpeg", "sh-ok-profile-img.jpg", "sh-gong-profile-image.jpg", "sm-jin-profile-img.png", "dh-kim-profile-image.jpg", "minseong-chu-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/document/11137667"
@@ -60,7 +60,7 @@
     "title": "An Implementation of a DSP-Based PAM-4 Digital Equalizer with 32-Way TI-ADC",
     "image": "",
     "conference": "ICEIC 2025",
-    "reference":"<i>2025 International Conference on Electronics, Information, and Communication (ICEIC)</i>, Osaka, Japan, 2025, pp. 1-4.",      
+    "reference":"<i>2025 International Conference on Electronics, Information, and Communication (ICEIC)</i>, pp. 1-4, 2025. ",      
     "authors": ["S.-H. Ok", "D.-H. Heo", "J.-G. Lee", "S.-M. Jin", "K.-H. Lee", "D. Jeong", "and M.-S. Choo"],
     "figure": ["sh-ok-profile-img.jpg", "dh-heo-profile-img.jpg", "jg-lee-profile-img.jpeg", "sm-jin-profile-img.png", "minseong-chu-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/document/10879734"
@@ -73,7 +73,7 @@
     "title": "A 14-to-32-Gb/s Deadzone-Free Referenceless CDR with Autocovariance-based Frequency Detector in 40-nm CMOS Technology",
     "image": "",
     "conference": "IEEE A-SSCC 2024",
-    "reference":"<i>2024 IEEE Asian Solid-State Circuits Conference (A-SSCC)</i>, Hiroshima, Japan, 2024, pp. 1-3.",    
+    "reference":"<i>2024 IEEE Asian Solid-State Circuits Conference (A-SSCC)</i>, pp. 1-3, 2024.",    
     "authors": ["H.-S. Choi", "J.-G. Lee", "K.-H. Lee", "D. Koh", "J.-W. Sull", "H.-R. Do", "C.-H. Kye", "D.-K. Jeong", "and M.-S. Choo"],
     "figure": ["jg-lee-profile-img.jpeg", "minseong-chu-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/document/10848602"
@@ -85,7 +85,7 @@
     "title": "A 2T1C eDRAM-based Compute-In-Memory Macro with 8-to-1 Column Multiplexing Scheme for Highly Sparse Binarized Deep Neural Networks",
     "image": "",
     "conference": "ISOCC 2024",
-    "reference":"<i>2024 21st International SoC Design Conference (ISOCC)</i>, Sapporo, Japan, 2024, pp. 177-178.",   
+    "reference":"<i>2024 21st International SoC Design Conference (ISOCC)</i>, pp. 177-178, 2024.",   
     "authors": ["S.-U. Kang", "S.-M. Jin", "M.-G. Song", "D.-H. Lee", "W.-S. Jung", "and M.-S. Choo"],
     "figure": ["su-kang-profile-img.jpg", "sm-jin-profile-img.png", "mg-song-profile-img.jpg", "dh-lee-profile-img.png", "minseong-chu-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/document/10762215"
@@ -122,7 +122,7 @@
     "title": "Analysis of ADC Quantization Effect in Processing-In-Memory Macro in Various Low-Precision Deep Neural Networks",
     "image": "",
     "conference": "ICEIC 2024",
-    "reference":"<i>2024 International Conference on Electronics, Information, and Communication (ICEIC)</i>, Taipei, Taiwan, 2024, pp. 1-2.",    
+    "reference":"<i>2024 International Conference on Electronics, Information, and Communication (ICEIC)</i>, pp. 1-2, 2024.",    
     "authors": ["S.-M. Jin", "S.-U. Kang", "and M.-S. Choo"],
     "figure": ["sm-jin-profile-img.png", "su-kang-profile-img.jpg", "minseong-chu-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/document/10457226"
@@ -134,7 +134,7 @@
     "title": "Hardware and Software Co-Simulation Methodology for Processing-in-Memory Bitcell Application ",
     "image": "",
     "conference": "ICEIC 2024",
-    "reference":"<i>2024 International Conference on Electronics, Information, and Communication (ICEIC)</i>, Taipei, Taiwan, 2024, pp. 1-2.",   
+    "reference":"<i>2024 International Conference on Electronics, Information, and Communication (ICEIC)</i>, pp. 1-2, 2024.",   
     "authors": ["J.-G. Lee", "S.-U. Kang", "and M.-S. Choo"],
     "figure": ["jg-lee-profile-img.jpeg", "su-kang-profile-img.jpg", "minseong-chu-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/document/10457160"
@@ -147,7 +147,7 @@
     "title": "An Analysis of 32-Gb/s and Full-Rate Phase Interpolator based Clock and Data Recovery",
     "image": "",
     "conference": "ICEIC 2024",
-    "reference":"<i>2024 International Conference on Electronics, Information, and Communication (ICEIC)</i>, Taipei, Taiwan, 2024, pp. 1-4.",    
+    "reference":"<i>2024 International Conference on Electronics, Information, and Communication (ICEIC)</i>, pp. 1-4, 2024.",    
     "authors": ["D.-H. Heo", "T.-H. Kim", "K.-H. Lee", "and M.-S. Choo"],
     "figure": ["dh-heo-profile-img.jpg", "minseong-chu-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/document/10457116"
@@ -195,8 +195,8 @@
     "title": "Analysis of Channel Equalization on High-Speed Serial Data Communication",
     "image": "",
     "conference": "2023 하계학술대회",
-    "reference":"대한전자공학회 학술대회, 제주.", 
-    "authors": ["T.-H. Kim", "D.-H. Heo", "J.-H. Lee", "S.-M. Jin", "and M.-S. Choo"],
+    "reference":"대한전자공학회 학술대회.", 
+    "authors": ["T.-H. Kim", "J.-H. Lee", "D.-H. Heo", "S.-M. Jin", "and M.-S. Choo"],
     "figure": ["dh-heo-profile-img.jpg", "sm-jin-profile-img.png", "minseong-chu-profile-img.png"],
     "link": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11521991"
   },
@@ -207,7 +207,7 @@
     "title": "PDR 기반 Injection Point에 따른 Injection-Locked Oscillator의 Locking Time 분석",
     "image": "",
     "conference": "2023 하계학술대회",
-    "reference":"대한전자공학회 학술대회, 제주.",  
+    "reference":"대한전자공학회 학술대회.",  
     "authors": ["S.-W. Han", "G. Y. You", "J.-G. Lee", "M.-G. Song", "and M.-S. Choo"],
     "figure": ["jg-lee-profile-img.jpeg", "mg-song-profile-img.jpg", "minseong-chu-profile-img.png"],
     "link": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11522007"
@@ -219,7 +219,7 @@
     "title": "Phase Domain Response 분석을 통한 Injection-Locked Oscillator의 Locking Point 예측",
     "image": "",
     "conference": "2023 하계학술대회",
-    "reference":"대한전자공학회 학술대회, 제주.",   
+    "reference":"대한전자공학회 학술대회.",   
     "authors": ["G.-Y. You", "S.-W. Han", "J.-H. Kwon", "D.-E. Lee", "Y.-J. Byeon", "and M.-S. Choo"],
     "figure": ["jh-kwon-profile-img.png", "de-lee-profile-img.png", "yj-byeon-profile-img.png", "minseong-chu-profile-img.png"],
     "link": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11521992"
@@ -231,7 +231,7 @@
     "title": "Direct Phase Control in Digital Phase-Locked Loop Mitigating Loop Delay Effect inside Digital Filter",
     "image": "",
     "conference": "ICEIC 2023",
-    "reference":"<i>2023 International Conference on Electronics, Information, and Communication (ICEIC)</i>, Singapore, 2023, pp. 1-2.",   
+    "reference":"<i>2023 International Conference on Electronics, Information, and Communication (ICEIC)</i>, pp. 1-2, 2023.",   
     "authors": ["I.-W. Jang", "and M.-S. Choo"],
     "figure": ["minseong-chu-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/document/10049900"
@@ -243,7 +243,7 @@
     "title": "Radiation-Hardened Processing-In-Memory Crossbar Array With Hybrid Synapse Devices for Space Application",
     "image": "",
     "conference": "ICEIC 2023",
-    "reference":"<i>2023 International Conference on Electronics, Information, and Communication (ICEIC)</i>, Singapore, 2023, pp. 1-4.",   
+    "reference":"<i>2023 International Conference on Electronics, Information, and Communication (ICEIC)</i>, pp. 1-4, 2023.",   
     "authors": ["S.-U. Kang", "J.-W. Han", "and M.-S. Choo"],
     "figure": ["su-kang-profile-img.jpg", "minseong-chu-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/document/10049920"
@@ -255,7 +255,7 @@
     "title": "A− 247.1 dB FoM,− 77.9 dBc Reference Spur Ring-Oscillator-Based Injection-Locked Clock Multiplier with Multi-Phase-Based Calibration",
     "image": "img/c1.png",
     "conference": "European Solid-State Circuits Conference (IEEE ESSCIRC)",
-    "reference":"<i>ESSCIRC 2022- IEEE 48th European Solid State Circuits Conference (ESSCIRC)</i>, Milan, Italy, 2022, pp. 249-252.",   
+    "reference":"<i>ESSCIRC 2022- IEEE 48th European Solid State Circuits Conference (ESSCIRC)</i>, pp. 249-252, 2022.",   
     "authors": ["Y. Song", "K. Ha", "H.-G. Ko", "M.-S. Choo", "and D.-K. Jeong"],
     "figure": ["minseong-chu-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/abstract/document/9911362"
@@ -267,7 +267,7 @@
     "title": "A Synthesizable Digital AOT 4-Phase Buck Voltage Regulator for Digital Systems with 0.0054mm2 Controller and 80ns Recovery Time",
     "image": "img/c5.png",
     "conference": "IEEE International Solid-State Circuits Conference (IEEE ISSCC)",
-    "reference":"<i>2019 IEEE International Solid-State Circuits Conference - (ISSCC)</i>, San Francisco, CA, USA, 2019, pp. 432-434.",    
+    "reference":"<i>2019 IEEE International Solid-State Circuits Conference - (ISSCC)</i>, pp. 432-434, 2019.",    
     "authors": ["M. Choi", "C.-H. Kye", "J. Oh", "M.-S. Choo", "and D.-K. Jeong"],
     "figure": ["minseong-chu-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/abstract/document/8662453"
@@ -291,7 +291,7 @@
     "title": "A 10-Gb/s, 0.03-mm2, 1.28-pJ/bit Half-Rate All-Digital Injection-Locked Clock and Data Recovery with Maximum Timing-Margin Tracking Loop",
     "image": "",
     "conference": "IEEE A-SSCC 2018",
-    "reference":"<i>2018 IEEE Asian Solid-State Circuits Conference (A-SSCC)</i>, Tainan, Taiwan, 2018, pp. 73-76.",   
+    "reference":"<i>2018 IEEE Asian Solid-State Circuits Conference (A-SSCC)</i>, pp. 73-76, 2018.",   
     "authors": ["M.-S. Choo", "H.-G. Ko", "S.-Y. Cho", "K.-H. Lee", "and D.-K. Jeong"],
     "figure": ["minseong-chu-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/abstract/document/8579270"
@@ -303,7 +303,7 @@
     "title": "A 2.5GHz injection-locked ADPLL with 197fsrms integrated jitter and −65dBc reference spur using time-division dual calibration",
     "image": "img/c3.png",
     "conference": "IEEE International Solid-State Circuits Conference (IEEE ISSCC)",
-    "reference":"<i>2017 IEEE International Solid-State Circuits Conference (ISSCC)</i>, San Francisco, CA, USA, 2017, pp. 494-495.",   
+    "reference":"<i>2017 IEEE International Solid-State Circuits Conference (ISSCC)</i>, pp. 494-495, 2017.",   
     "authors": ["S. Kim", "H.-G. Ko", "S.-Y. Cho", "J. Lee", "S. Shin", "M.-S. Choo", "H. Chi", "and D.-K. Jeong"],
     "figure": ["minseong-chu-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/abstract/document/7870477"
@@ -315,7 +315,7 @@
     "title": "A theoretical analysis of phase shift in pulse injection-locked oscillators",
     "image": "img/c2.png",
     "conference": "IEEE International Symposium on Circuits and Systems (ISCAS)",
-    "reference":"<i>2016 IEEE International Symposium on Circuits and Systems (ISCAS)</i>, Montreal, QC, Canada, 2016, pp. 1662-1665.",   
+    "reference":"<i>2016 IEEE International Symposium on Circuits and Systems (ISCAS)</i>, pp. 1662-1665, 2016.",   
     "authors": ["J. Lee", "S. Kim", "M.-S. Choo", "S.-Y. Cho", "H.-G. Ko", "and D.-K. Jeong"],
     "figure": ["minseong-chu-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/abstract/document/7538886"
@@ -327,7 +327,7 @@
     "title": "A 5-GHz subharmonically injection-locked all-digital PLL with complementary switched injection",
     "image": "img/c1.png",
     "conference": "European Solid-State Circuits Conference (IEEE ESSCIRC)",
-    "reference":"<i>ESSCIRC Conference 2015 - 41st European Solid-State Circuits Conference (ESSCIRC)</i>, Graz, Austria, 2015, pp. 384-387.",   
+    "reference":"<i>ESSCIRC Conference 2015 - 41st European Solid-State Circuits Conference (ESSCIRC)</i>, pp. 384-387, 2015.",   
     "authors": ["S.-Y. Cho", "S. Kim", "M.-S. Choo", "J. Lee", "H.-G. Ko", "S. Jang", "S.-H. Chu", "W. Bae", "Y. Kim", "and D.-K. Jeong"],
     "figure": ["minseong-chu-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/abstract/document/7313908"

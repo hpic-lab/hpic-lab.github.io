@@ -110,7 +110,7 @@
       "image": "",
       "journal": "IEEE JSSC",
       "reference":"in <i>IEEE Journal of Solid-State Circuits</i>, vol. 60, no. 10, pp. 3602-3612, Oct. 2025.",
-      "authors": ["H.-S. Choi", "J.-G. Lee", "S.-H. Gong", "K.-H. Lee", "D. Koh", "J.-W. Sull", "H. Do", "C.-H. Kye", "D.-K. Jeong", "K.-S. Park", "and M.-S. Choo"],
+      "authors": ["H.-S. Choi", "J.-G. Lee", "S.-H. Gong", "K.-H. Lee", "D. Koh", "J.-W. Sull", "H. Do", "C.-H. Kye", "D.-K. Jeong", "K. Park", "and M.-S. Choo"],
       "figure": ["jg-lee-profile-img.jpeg", "sh-gong-profile-image.jpg", "minseong-chu-profile-img.png"],
       "link": "https://ieeexplore.ieee.org/document/11029275"
     },
@@ -204,7 +204,7 @@
     "title": "A 4-20-Gb/s 1.87-pJ/b Continuous-Rate Digital CDR Circuit With Unlimited Frequency Acquisition Capability in 65-nm CMOS",
     "image": "img/j9.png",
     "journal": "IEEE Journal of Solid-State Circuits (JSSC)",
-    "reference":"in <i>IEEE Journal of Solid-State Circuits</i>, vol. 56, no. 5, pp. 1597-1607, May 2021.",     
+    "reference":"in <i>IEEE Journal of Solid-State Circuits</i>, vol. 56, no. 5, pp. 1597-1607, May. 2021.",     
     "authors": ["K. Park", "K. Lee", "S.-Y. Cho", "J. Lee", "J. Hwang", "M.-S. Choo", "and D.-K. Jeong"],
     "figure": ["minseong-chu-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/abstract/document/9239394"
