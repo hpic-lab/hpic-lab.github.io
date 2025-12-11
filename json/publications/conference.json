@@ -195,7 +195,7 @@
     "title": "Analysis of Channel Equalization on High-Speed Serial Data Communication",
     "image": "",
     "conference": "2023 하계학술대회",
-    "reference":"대한전자공학회 학술대회.", 
+    "reference":"<i>대한전자공학회 학술대회</i>.", 
     "authors": ["T.-H. Kim", "J.-H. Lee", "D.-H. Heo", "S.-M. Jin", "and M.-S. Choo"],
     "figure": ["dh-heo-profile-img.jpg", "sm-jin-profile-img.png", "minseong-chu-profile-img.png"],
     "link": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11521991"
@@ -207,7 +207,7 @@
     "title": "PDR 기반 Injection Point에 따른 Injection-Locked Oscillator의 Locking Time 분석",
     "image": "",
     "conference": "2023 하계학술대회",
-    "reference":"대한전자공학회 학술대회.",  
+    "reference":"<i>대한전자공학회 학술대회</i>.",  
     "authors": ["S.-W. Han", "G. Y. You", "J.-G. Lee", "M.-G. Song", "and M.-S. Choo"],
     "figure": ["jg-lee-profile-img.jpeg", "mg-song-profile-img.jpg", "minseong-chu-profile-img.png"],
     "link": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11522007"
@@ -219,7 +219,7 @@
     "title": "Phase Domain Response 분석을 통한 Injection-Locked Oscillator의 Locking Point 예측",
     "image": "",
     "conference": "2023 하계학술대회",
-    "reference":"대한전자공학회 학술대회.",   
+    "reference":"<i>대한전자공학회 학술대회</i>.",   
     "authors": ["G.-Y. You", "S.-W. Han", "J.-H. Kwon", "D.-E. Lee", "Y.-J. Byeon", "and M.-S. Choo"],
     "figure": ["jh-kwon-profile-img.png", "de-lee-profile-img.png", "yj-byeon-profile-img.png", "minseong-chu-profile-img.png"],
     "link": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11521992"
