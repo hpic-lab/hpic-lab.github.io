@@ -1,12 +1,48 @@
 [
   {
-  "id": 24,
-  "img_src": "img/award/251203_교수님_공로상.jpg",
+  "id": 28,
+  "img_src": "img/award/251213_이재건_SPC.jpg",
+  "award_date": "20251213",
+  "award_name": "IEEE Best Student Paper Award",
+  "recipient_name": "이재건",
+  "award_content": "IEEE Best Student Paper Bronze Award",
+  "awarding_institution": "IEEE Seoul Section"
+  },  
+  {
+  "id": 27,
+  "img_src": "img/award/251213_공승환_SPC.jpg",
+  "award_date": "20251213",
+  "award_name": "IEEE Best Student Paper Award",
+  "recipient_name": "공승환",
+  "award_content": "IEEE Best Student Paper Bronze Award",
+  "awarding_institution": "IEEE Seoul Section"
+  },  
+  {
+  "id": 26,
+  "img_src": "img/award/251213_김동호_SPC.jpg",
+  "award_date": "20251213",
+  "award_name": "IEEE Best Student Paper Award",
+  "recipient_name": "김동호",
+  "award_content": "IEEE Best Student Paper Bronze Award",
+  "awarding_institution": "IEEE Seoul Section"
+  },      
+  {
+  "id": 25,
+  "img_src": "img/award/251203_교수님_전자공학회_공로상.jpg",
   "award_date": "20251203",
   "award_name": "대한전자공학회 공로상",
   "recipient_name": "교수님",
-  "award_content": "대한전자공학회/반도체소사이어티 공로상",
-  "awarding_institution": "대한전자공학회, 반도체 소사이어티"
+  "award_content": "대한전자공학회 공로상",
+  "awarding_institution": "대한전자공학회"
+  },    
+  {
+  "id": 24,
+  "img_src": "img/award/251203_교수님_공로상.jpg",
+  "award_date": "20251203",
+  "award_name": "반도체소사이어티 공로상",
+  "recipient_name": "교수님",
+  "award_content": "반도체소사이어티 공로상",
+  "awarding_institution": "반도체 소사이어티"
   },  
   {
   "id": 23,
