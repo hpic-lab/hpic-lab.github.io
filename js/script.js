@@ -33,6 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // 아코디언(토글 목록)
+  /*
   $(".accordion").accordion({
     collapsible: true,
     heightStyle: "content",
@@ -55,6 +56,40 @@ document.addEventListener("DOMContentLoaded", function () {
         50 // 애니메이션 진행 시간
       );
     },
+  });
+*/
+
+  // 1. 모든 아코디언에 공통으로 적용될 애니메이션 설정
+  var commonSettings = {
+    collapsible: true,
+    heightStyle: "content",
+    activate: function (event, ui) {
+      var headerIndex = $(this).find(".ui-accordion-header").index(ui.newHeader);
+      var headerHeight = $(this).find(".ui-accordion-header").outerHeight();
+      
+      if(ui.newHeader.length > 0) {
+        var scrollTop = $(this).find(".ui-accordion-header").offset().top - headerHeight - 40 + headerIndex * headerHeight;
+        $("html, body").animate({ scrollTop: scrollTop }, 50);
+      }
+    }
+  };
+
+  // 2. [.accordion] 클래스를 가진 모든 요소를 하나씩 검사하면서 초기화
+  $(".accordion").each(function() {
+    var $this = $(this); // 현재 순서의 아코디언
+
+    // 만약 이 아코디언의 HTML 태그에 'start-closed'라는 클래스가 붙어 있다면?
+    if ($this.hasClass("start-closed")) {
+      // 닫힌 상태로 시작 (active: false)
+      $this.accordion(
+        $.extend({}, commonSettings, { active: false })
+      );
+    } else {
+      // 그런 클래스가 없다면? 기본값인 열린 상태로 시작 (active: 0)
+      $this.accordion(
+        $.extend({}, commonSettings, { active: 0 })
+      );
+    }
   });
 
   // 햄버거 버튼 클릭 이벤트 핸들러

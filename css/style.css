@@ -329,8 +329,133 @@ h6 {
   white-space: normal;
   text-align: left;
 }
+/*Publications CSS for each year 25.12.08 D.H Lee (Start)*/
 
-/* Publications - Patent */
+/* ========================================= */
+/* [최종_v7] Publications 스타일 */
+/* ========================================= */
+
+/* 1. 논문 제목 링크 (파란색 + 클릭 가능 표시) */
+.pub-title-link {
+  color: #005bac !important; /* 한양대 파란색 */
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.pub-title-link:hover {
+  text-decoration: underline;
+  color: #003d73 !important; /* 마우스 올렸을 때 더 진한 색 */
+}
+
+/* 2. 배지 영역 스타일 */
+.pub-badges {
+  margin-bottom: 6px;
+  font-size: 0.9rem;
+  color: #aaa; /* 배지 사이의 구분선(|) 색상 */
+}
+
+.pub-badges .badge {
+  margin: 0 2px; /* 배지 좌우 간격 */
+  font-size: 0.75rem;
+  vertical-align: middle;
+}
+
+/* 아이콘 박스 (문서 아이콘) */
+.pub-icon-box img {
+  width: 16px;
+  height: 16px;
+  vertical-align: text-top;
+  margin-right: 6px;
+}
+
+/* 3. 레퍼런스 텍스트 (저자, 상세정보 등) */
+.pub-citation-text {
+  margin-top: 4px;
+  line-height: 1.6;
+  color: #333;
+  font-size: 1rem; /* 웹사이트 기본 폰트 크기 */
+}
+
+/* 4. 연도 헤더 (토글 버튼) 디자인 */
+.publication-year-header {
+  background: none;
+  border: none;
+  border-bottom: 3px solid #005bac; /* 파란색 밑줄 */
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #333;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+  cursor: pointer;     /* 손가락 모양 커서 */
+  user-select: none;   /* 텍스트 드래그 방지 */
+  
+  display: flex;       /* 아이콘 정렬용 */
+  align-items: center; 
+}
+
+/* 첫 번째 연도는 위쪽 여백 제거 */
+.publication-year-header:first-of-type {
+  margin-top: 0;
+}
+
+/* 5. 토글 화살표 아이콘 스타일 */
+.pub-toggle-icon {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  transition: transform 0.3s ease; /* 부드러운 회전 효과 */
+  color: #888;
+  flex-shrink: 0; /* 화면이 좁아져도 아이콘 찌그러짐 방지 */
+}
+
+/* 헤더에 마우스 올렸을 때 아이콘 색상 변경 */
+.publication-year-header:hover .pub-toggle-icon {
+  color: #005bac;
+}
+
+/* 접혔을 때 아이콘 회전 (아래 -> 왼쪽) */
+.publication-year-header.collapsed .pub-toggle-icon {
+  transform: rotate(-90deg);
+}
+
+/* 6. 내용 영역 (기본적으로 보임) */
+.pub-year-content {
+  display: block;
+}
+/* ========================================= */
+/* [특허(Patent) 전용 스타일] */
+/* ========================================= */
+
+/* 1. 대분류 제목 (Registered Patents, Applications) */
+.patent-category-title {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 2.0rem;      /* 연도보다 조금 더 크게 강조 */
+  font-weight: 700;       /* 두꺼운 글씨 */
+  color: #333;
+  margin-top: 60px;       /* 위쪽 그룹과 간격 띄우기 */
+  margin-bottom: 20px;
+  border-left: 5px solid #005bac; /* 왼쪽에 파란색 포인트 선 */
+  padding-left: 15px;     /* 선과 글자 사이 간격 */
+}
+
+/* 첫 번째 제목(Registered)은 위쪽 여백을 줄여줍니다 */
+.patent-category-title:first-child {
+  margin-top: 20px;
+}
+
+/* 2. 특허 상태 배지 (Status) -> 붉은색 */
+.process-badge {
+  background-color: #f4848f !important; /* 진한 붉은색 */
+  color: white;
+}
+
+/* =================================================== */
+/*Publications CSS for each year 25.12.08 D.H Lee (END)*/
+/* =================================================== */
+
+/* prev. patent css
 #patent .card-text {
   margin-bottom: 4px;
 }
@@ -338,7 +463,7 @@ h6 {
 #patent .process-badge {
   background-color: var(--application-completed);
 }
-
+*/
 /* 칩 갤러리 상세 페이지 카드 디자인 */
 .chip-detail-card img {
   height: 100%;
