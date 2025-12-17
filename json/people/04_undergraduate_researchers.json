@@ -2,11 +2,7 @@
   {
     "name": "Do-Hyeong Lee",
     "research_interests": ["referenceless CDR"],
-    "tape_out_schedule": [      
-      {
-      "date": "2025.8",
-      "process": "28-nm T"
-    }],
+    "tape_out_schedule": [],
     "achievements": ["2024 SCCUD 포스터 발표 최우수상"],
     "details": "Pursuing a Bachelor's degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include analog and digital circuit designs of clock and data recovery (CDR).",
     "email": "zkoms2134@hanyang.ac.kr",
