@@ -1,5 +1,14 @@
 [
   {
+  "id": 29,
+  "img_src": "img/award/251213_이재건_BK.jpg",
+  "award_date": "20251218",
+  "award_name": "한양대학교 BK21 우수논문상",
+  "recipient_name": "이재건",
+  "award_content": "2025 한양대학교 BK21 우수논문상",
+  "awarding_institution": "한양대학교 고신뢰성 에너지용 지능형 시스템반도체 교육연구단(BK21)"
+  },  
+  {
   "id": 28,
   "img_src": "img/award/251213_이재건_SPC.jpg",
   "award_date": "20251213",
