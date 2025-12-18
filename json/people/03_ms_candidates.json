@@ -1,0 +1,184 @@
+[
+
+
+  {
+    "name": "Sang-Hyun Ok",
+    "research_interests": ["CDR, PAM4 receiver"],
+    "tape_out_schedule": [
+      {
+        "date": "2024.06",
+        "process": "28-nm T"
+      },
+      {
+        "date": "2024.09",
+        "process": "40-nm T"
+      },
+      {
+        "date": "2025.02",
+        "process": "28-nm T"
+      }
+    ],
+    "achievements": ["ICEIC'25 Best Paper Award - Silver Prize, ASSCC'25"],
+    "details": "Received a B.S. degree in the school of electronics and communication engineering at Hanyang University, Ansan, South Korea. He is currently pursuing a Master's degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. He joined LX Semicon, Seoul, South Korea in 2016, where he was involved in the LCD DDI team. His research interests include digital and analog circuit design of Clock and Data Recovery (CDR) and digital circuit design of PAM4 Receiver with adaptive decision feedback equalizer.",
+    "email": "noradlll@hanyang.ac.kr",
+    "profile_img": "img/sh-ok-profile-img.jpg",
+    "position": "M.S. Candidate"
+  },
+  {
+    "name": "Dong-Hyun Lee",
+    "research_interests": ["AI hardware design and PIM"],
+    "tape_out_schedule": [
+      {
+        "date": "2024.05",
+        "process": "65-nm T"
+      },
+      {
+        "date": "2024.11",
+        "process": "65-nm T"
+      }
+    ],
+    "achievements": ["ISOCC'24, 제 26회 대한민국 반도체설계대전 기업특별상 수상"],
+    "details": "Received a B.S. degree in the school of Electrical and Electronic Engineering at Dankook University, jukjeon, South Korea. He is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include artificial intelligence hardware design and processing in memory (PIM).",
+    "email": "dhlee1415@hanyang.ac.kr",
+    "profile_img": "img/dh-lee-profile-img.png",
+    "position": "M.S. Candidate"
+  },
+  {
+    "name": "Jae-Hyeon Pyeon",
+    "research_interests": ["High-performance DPLL"],
+    "tape_out_schedule": [
+      {
+        "date": "2024.07",
+        "process": "28-nm S"
+      },
+      {
+        "date": "2024.09",
+        "process": "40-nm T"
+      },
+      {
+        "date": "2025.07",
+        "process": "28-nm S"
+      }
+    ],
+    "achievements": ["ICEIC'25, ISOCC'25 Chip Design Contest"],
+    "details": "Received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include analog and digital circuit designs of phase-locked-loop (PLL).",
+    "email": "ccomo7004@hanyang.ac.kr",
+    "profile_img": "img/jh-pyeon-profile-img.png",
+    "position": "M.S. Candidate"
+  },
+  {
+    "name": "So-Yeon Kwon",
+    "research_interests": ["Digital PIM"],
+    "tape_out_schedule": [
+      {
+        "date": "2024",
+        "process": ""
+      }
+    ],
+    "achievements": [],
+    "details": "Received a B.S. degree in the school of Applied Physics at Hanyang University, Ansan, South Korea. She is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. Her research interests include artificial intelligence hardware design and processing in memory (PIM).",
+    "email": "sykwon00@hanyang.ac.kr",
+    "profile_img": "img/sw-kwon-profile-image.jpeg",
+    "position": "M.S. Candidate"
+  },
+  {
+    "name": "In-Ho Han",
+    "research_interests": ["PLL"],
+    "tape_out_schedule": [
+      {
+        "date": "2025.07",
+        "process": "28-nm S"
+      }
+    ],
+    "achievements": ["ICEIC'25"],
+    "details": "Received a B.S. degree in electrical engineering from Gachon University, Sungnam, South Korea. He is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include analog and digital circuit designs of phase-locked-loop (PLL).",
+    "email": "inho0303@hanyang.ac.kr",
+    "profile_img": "img/ih-han-profile-img.jpg",
+    "position": "M.S. Candidate"
+  },
+  {
+    "name": "Seung-Hwan Gong",
+    "research_interests": ["CDR, DSP-based Receiver"],
+    "tape_out_schedule": [
+      {
+        "date": "2025.02",
+        "process": "28-nm T"
+      }
+    ],
+    "achievements": ["JSSC'25, ISOCC'25 best paper award, ISOCC'25 Chip Design Contest, 2025 IEEE Seoul Section Student Paper Bronze Award"],
+    "details": "Received a B.S. degree in the school of electrical engineering at Gangwon University, Ansan, South Korea. He is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include CDR, DSP-based Receiver.",
+    "email": "fire051324@gmail.com",
+    "profile_img": "img/sh-gong-profile-image.jpg",
+    "position": "M.S. Candidate"
+  },
+  {
+    "name": "Dong-Ho Kim",
+    "research_interests": ["DSP-based Transmitter"],
+    "tape_out_schedule": [
+      {
+        "date": "2025.09",
+        "process": "28-nm T"
+      }
+    ],
+    "achievements": ["ASSCC'25, 제 26회 대한민국 반도체설계대전 특허청장상 수상, 2025 IEEE Seoul Section Student Paper Bronze Award"],
+    "details": "Received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. He is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include DSP-DAC based transmitter.",
+    "email": "dpdl112@hanyang.ac.kr",
+    "profile_img": "img/dh-kim-profile-image.jpg",
+    "position": "M.S. Candidate",
+    "cv": "https://drive.google.com/file/d/1IIwGJfwAkVuCNuxvlFhy0Qp3Lv7o2et1/view?usp=drive_link"
+  },
+  {
+    "name": "Jae-Geon Lee",
+    "research_interests": ["DSP-based Receiver"],
+    "tape_out_schedule": [
+      {
+        "date": "2024.09",
+        "process": "40-nm T"
+      },
+      {
+        "date": "2025.07",
+        "process": "28-nm T"
+      }
+    ],
+    "achievements": ["ICEIC'24, ASSCC'24[JSSC invited], JSSC'25, ITC-CSCC '25, ASSCC'25, 석사과정생 연구장려금 '25-2 - '26-1 [NRF], 2025 IEEE Seoul Section Student Paper Bronze Award"],
+    "details": "Received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. He is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include Clock and data recovery (CDR) and DSP-based Receiver.",
+    "email": "dlworjs@hanyang.ac.kr",
+    "profile_img": "img/jg-lee-profile-img.jpeg",
+    "position": "M.S. Candidate<br>Server Manager",
+    "cv": "https://drive.google.com/file/d/1jEkTZcFZ_ZMjD8B_4ww3rk1lMNHhLbm1/view?usp=sharing"
+  },
+  {
+    "name": "Seung-Mo Jin",
+    "research_interests": ["DSP-based Transmitter"],
+    "tape_out_schedule": [
+      {
+        "date": "2025.09",
+        "process": "28-nm T"
+      }
+    ],
+    "achievements": ["2023-2 SCCUD 구두 발표 최우수상, ICEIC'24, 2024.05. SOC 학술대회 우수발표 논문상, 2024-1 SCCuD DAY 구두 발표 최우수상, 2024-1 공학대학 켑스톤 페어 동상, 2024-2 SCCuD DAY 구두 발표 대상, ISOCC'2024, ASSCC'25, 석사과정생 연구장려금 '25-2 - '26-1 [NRF], 제 26회 대한민국 반도체설계대전 특허청장상 수상, ISOCC'25 best paper award, 2025 IEEE Seoul Section Student Paper Bronze Award"],
+    "details": "Received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. He is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include DSP-DAC based transmitter.",
+    "email": "victorymo@hanyang.ac.kr",
+    "profile_img": "img/sm-jin-profile-img.jpg",
+    "position": "M.S. Candidate<br>Lab Captain",
+    "cv": "https://drive.google.com/file/d/1Eft6w9CcVNDBiUG3iebRLbt_Zigzns70/view?usp=drive_link"
+  },
+  {
+  "name": "Hyeon-Seo Kim",
+  "research_interests": ["Analog Digital Converter (ADC)"],
+  "achievements": [],
+  "details": "Received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. He is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include analog digital converter (ADC)",
+  "email": "hyeonseo1833@gmail.com",
+  "profile_img": "img/sh-kim2-profile-image.png",
+  "position": "M.S. Candidate"
+},
+{
+  "name": "Seol-Hyeon Kim",
+  "research_interests": ["AI hardware design and PIM"],
+  "achievements": [],
+  "details": "Received a B.S. degree in the school of system semiconductor enginerring at Sangmyung University, Cheonan, South Korea. She is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. Her research interests include artificial intelligence hardware design and processing in memory (PIM).",
+  "email": "congcongsister@naver.com",
+  "profile_img": "img/sh-kim-profile-image.jpg",
+  "position": "M.S. Candidate"
+}
+]

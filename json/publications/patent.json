@@ -1,0 +1,56 @@
+[
+  {
+    "year": 2025,
+    "type": "등록",
+    "status": 4,
+    "registration": "",
+    "title": "6 트랜지스터 정적 램 기반 ADC 없는 프로세싱 인 메모리 가속기",
+    "figure": ["mg-song-profile-img.jpg", "su-kang-profile-img.jpg", "minseong-chu-profile-img.png"],
+    "inventors": ["강신욱", "송민권", "김수연", "추민성"]
+  },
+  {
+    "year": 2024,
+    "type": "출원",
+    "status": 4,
+    "registration": "KR · P20240510OP",
+    "title": "삼진 신경망용 2T 1C 동적 임베디드 램 기반 ADC 없는 커패시터 커플링을 이용한 프로세싱 인 메모리 가속기",
+    "figure": ["su-kang-profile-img.jpg", "dh-lee-profile-img.png", "minseong-chu-profile-img.png"],
+    "inventors": ["이동현", "강신욱", "김수연", "추민성"]
+  },
+  {
+    "year": 2024,
+    "type": "출원",
+    "status": 4,
+    "registration": "KR · P20240485OP",
+    "title": "제로 레이턴시 및 PPM 추적 기능을 갖춘 8상 위상 보간기 기반 CDR ",
+    "figure": ["dh-heo-profile-img.jpg", "sh-ok-profile-img.jpg", "jh-kim-profile-img.png", "minseong-chu-profile-img.png"],
+    "inventors": ["허동회", "옥상현", "김지호", "추민성"]
+  },
+  {
+    "year": 2024,
+    "type": "출원",
+    "status": 3,
+    "registration": "KR · P20240484OP",
+    "title": "주입 잠금 오실레이터 기반 물리적 복제 불가능 함수",
+    "figure": ["km-kim-profile-img.jpg", "minseong-chu-profile-img.png"],
+    "inventors": ["김강민", "김수연", "추민성"]
+  },
+  {
+    "year": 2024,
+    "type": "출원",
+    "status": 4,
+    "registration": "KR · P20240332OP",
+    "title": "주입 잠금 발진 장치, 상기 주입 잠금 발진 장치를 이용한 위상 잠금 루프 회로 및 이의 제어 방법",
+    "figure": ["kr-park-profile-img.png", "jh-kim-profile-img.png", "minseong-chu-profile-img.png"],
+    "inventors": ["박규란", "김지호", "장인우", "추민성"]
+  },
+  {
+    "year": 2024,
+    "type": "출원",
+    "status": 4,
+    "registration": "KR · P20240060OP",
+    "title": "데이터 처리 장치 및 그 제어 방법",
+    "figure": ["mg-song-profile-img.jpg", "su-kang-profile-img.jpg", "minseong-chu-profile-img.png"],
+    "inventors": ["송민권", "강신욱", "김수연", "추민성"]
+  }
+]

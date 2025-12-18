@@ -1,10 +1,10 @@
-$(document).ready(function() {
+$(document).ready(function () {
   // award.json 불러오기
-  $.getJSON('award.json')
-    .done(function(awards) {
-      const cardContainer = $('.gallery-card-container');
+  $.getJSON("json/news/award.json")
+    .done(function (awards) {
+      const cardContainer = $(".gallery-card-container");
 
-      awards.forEach(award => {
+      awards.forEach((award) => {
         const card = `
           <div class="card">
             <img src="${award.img_src}" class="card-img-top" alt="..." />
@@ -43,8 +43,8 @@ $(document).ready(function() {
         ],
       });
     })
-    .fail(function(jqxhr, textStatus, error) {
-      console.error('Error fetching the JSON file:', textStatus, error);
+    .fail(function (jqxhr, textStatus, error) {
+      console.error("Error fetching the JSON file:", textStatus, error);
     });
 });
 
