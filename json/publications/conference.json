@@ -21,11 +21,11 @@
   },    
   {
     "type": "2025",
-    "status": "IEEE A-SSCC",
+    "status": "IEEE ASSCC",
     "award": "Accepted",
     "title": "",
     "image": "",
-    "conference": "IEEE A-SSCC 2025",
+    "conference": "IEEE ASSCC 2025",
     "reference":"",     
     "authors": [
       "Seung-Mo Jin",
@@ -55,11 +55,11 @@
   {
  
     "type": "2025",
-    "status": "ICEIC",
+    "status": "IEEE/IEIE ICEIC",
     "award": "Best Paper Award",
     "title": "An Implementation of a DSP-Based PAM-4 Digital Equalizer with 32-Way TI-ADC",
     "image": "",
-    "conference": "ICEIC 2025",
+    "conference": "IEEE/IEIE ICEIC 2025",
     "reference":"<i>2025 International Conference on Electronics, Information, and Communication (ICEIC)</i>, pp. 1-4, 2025. ",      
     "authors": ["S.-H. Ok", "D.-H. Heo", "J.-G. Lee", "S.-M. Jin", "K.-H. Lee", "D. Jeong", "and M.-S. Choo"],
     "figure": ["sh-ok-profile-img.jpg", "dh-heo-profile-img.jpg", "jg-lee-profile-img.jpeg", "sm-jin-profile-img.png", "minseong-chu-profile-img.png"],
@@ -118,10 +118,10 @@
   {
  
     "type": "2024",
-    "status": "ICEIC",
+    "status": "IEEE/IEIE ICEIC",
     "title": "Analysis of ADC Quantization Effect in Processing-In-Memory Macro in Various Low-Precision Deep Neural Networks",
     "image": "",
-    "conference": "ICEIC 2024",
+    "conference": "IEEE/IEIE ICEIC 2024",
     "reference":"<i>2024 International Conference on Electronics, Information, and Communication (ICEIC)</i>, pp. 1-2, 2024.",    
     "authors": ["S.-M. Jin", "S.-U. Kang", "and M.-S. Choo"],
     "figure": ["sm-jin-profile-img.png", "su-kang-profile-img.jpg", "minseong-chu-profile-img.png"],
@@ -130,10 +130,10 @@
   {
  
     "type": "2024",
-    "status": "ICEIC",
+    "status": "IEEE/IEIE ICEIC",
     "title": "Hardware and Software Co-Simulation Methodology for Processing-in-Memory Bitcell Application ",
     "image": "",
-    "conference": "ICEIC 2024",
+    "conference": "IEEE/IEIE ICEIC 2024",
     "reference":"<i>2024 International Conference on Electronics, Information, and Communication (ICEIC)</i>, pp. 1-2, 2024.",   
     "authors": ["J.-G. Lee", "S.-U. Kang", "and M.-S. Choo"],
     "figure": ["jg-lee-profile-img.jpeg", "su-kang-profile-img.jpg", "minseong-chu-profile-img.png"],
@@ -142,11 +142,11 @@
   {
  
     "type": "2024",
-    "status": "ICEIC",
+    "status": "IEEE/IEIE ICEIC",
     "award": "Best Paper Award",
     "title": "An Analysis of 32-Gb/s and Full-Rate Phase Interpolator based Clock and Data Recovery",
     "image": "",
-    "conference": "ICEIC 2024",
+    "conference": "IEEE/IEIE ICEIC 2024",
     "reference":"<i>2024 International Conference on Electronics, Information, and Communication (ICEIC)</i>, pp. 1-4, 2024.",    
     "authors": ["D.-H. Heo", "T.-H. Kim", "K.-H. Lee", "and M.-S. Choo"],
     "figure": ["dh-heo-profile-img.jpg", "minseong-chu-profile-img.png"],
