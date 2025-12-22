@@ -93,10 +93,10 @@
   {
  
     "type": "2024",
-    "status": "DAC (WiP)",
+    "status": "ACM/IEEE DAC (WiP)",
     "title": "A General Purpose IMC Architecture with ADC-Awared Neural Networks",
     "image": "",
-    "conference": "DAC (WiP)",
+    "conference": "ACM IEEE DAC (WiP)",
     "reference":"",  
     "authors": ["M.-G. Song", "S.-U. Kang", "and M.-S. Choo"],
     "figure": ["mg-song-profile-img.jpg", "su-kang-profile-img.jpg", "minseong-chu-profile-img.png"],
