@@ -655,7 +655,7 @@ h6 {
 .user-card {
   display: flex;
   align-items: center;
-  justify-content: left-start;
+  justify-content: flex-start;
   padding: 20px;
   width: 100%;
   position: relative;
