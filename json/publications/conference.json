@@ -68,11 +68,11 @@
   {
  
     "type": "2024",
-    "status": "IEEE A-SSCC",
+    "status": "IEEE ASSCC",
     "award": "JSSC Invited",
     "title": "A 14-to-32-Gb/s Deadzone-Free Referenceless CDR with Autocovariance-based Frequency Detector in 40-nm CMOS Technology",
     "image": "",
-    "conference": "IEEE A-SSCC 2024",
+    "conference": "IEEE ASSCC 2024",
     "reference":"<i>2024 IEEE Asian Solid-State Circuits Conference (A-SSCC)</i>, pp. 1-3, 2024.",    
     "authors": ["H.-S. Choi", "J.-G. Lee", "K.-H. Lee", "D. Koh", "J.-W. Sull", "H.-R. Do", "C.-H. Kye", "D.-K. Jeong", "and M.-S. Choo"],
     "figure": ["jg-lee-profile-img.jpeg", "minseong-chu-profile-img.png"],
@@ -81,10 +81,10 @@
   {
  
     "type": "2024",
-    "status": "ISOCC",
+    "status": "IEEE/ISE ISOCC",
     "title": "A 2T1C eDRAM-based Compute-In-Memory Macro with 8-to-1 Column Multiplexing Scheme for Highly Sparse Binarized Deep Neural Networks",
     "image": "",
-    "conference": "ISOCC 2024",
+    "conference": "IEEE/ISE ISOCC 2024",
     "reference":"<i>2024 21st International SoC Design Conference (ISOCC)</i>, pp. 177-178, 2024.",   
     "authors": ["S.-U. Kang", "S.-M. Jin", "M.-G. Song", "D.-H. Lee", "W.-S. Jung", "and M.-S. Choo"],
     "figure": ["su-kang-profile-img.jpg", "sm-jin-profile-img.png", "mg-song-profile-img.jpg", "dh-lee-profile-img.png", "minseong-chu-profile-img.png"],
@@ -191,10 +191,10 @@
   {
  
     "type": "2023",
-    "status": "하계학술대회",
+    "status": "IEIE 하계학술대회",
     "title": "Analysis of Channel Equalization on High-Speed Serial Data Communication",
     "image": "",
-    "conference": "2023 하계학술대회",
+    "conference": "2023 IEIE 하계학술대회",
     "reference":"<i>대한전자공학회 학술대회</i>.", 
     "authors": ["T.-H. Kim", "J.-H. Lee", "D.-H. Heo", "S.-M. Jin", "and M.-S. Choo"],
     "figure": ["dh-heo-profile-img.jpg", "sm-jin-profile-img.png", "minseong-chu-profile-img.png"],
@@ -203,10 +203,10 @@
   {
  
     "type": "2023",
-    "status": "하계학술대회",
+    "status": "IEIE 하계학술대회",
     "title": "PDR 기반 Injection Point에 따른 Injection-Locked Oscillator의 Locking Time 분석",
     "image": "",
-    "conference": "2023 하계학술대회",
+    "conference": "2023 IEIE 하계학술대회",
     "reference":"<i>대한전자공학회 학술대회</i>.",  
     "authors": ["S.-W. Han", "G. Y. You", "J.-G. Lee", "M.-G. Song", "and M.-S. Choo"],
     "figure": ["jg-lee-profile-img.jpeg", "mg-song-profile-img.jpg", "minseong-chu-profile-img.png"],
@@ -215,10 +215,10 @@
   {
  
     "type": "2023",
-    "status": "하계학술대회",
+    "status": "IEIE 하계학술대회",
     "title": "Phase Domain Response 분석을 통한 Injection-Locked Oscillator의 Locking Point 예측",
     "image": "",
-    "conference": "2023 하계학술대회",
+    "conference": "2023 IEIE 하계학술대회",
     "reference":"<i>대한전자공학회 학술대회</i>.",   
     "authors": ["G.-Y. You", "S.-W. Han", "J.-H. Kwon", "D.-E. Lee", "Y.-J. Byeon", "and M.-S. Choo"],
     "figure": ["jh-kwon-profile-img.png", "de-lee-profile-img.png", "yj-byeon-profile-img.png", "minseong-chu-profile-img.png"],
@@ -227,10 +227,10 @@
   {
  
     "type": "2023",
-    "status": "ICEIC",
+    "status": "IEEE/IEIE ICEIC",
     "title": "Direct Phase Control in Digital Phase-Locked Loop Mitigating Loop Delay Effect inside Digital Filter",
     "image": "",
-    "conference": "ICEIC 2023",
+    "conference": "IEEE/IEIE ICEIC 2023",
     "reference":"<i>2023 International Conference on Electronics, Information, and Communication (ICEIC)</i>, pp. 1-2, 2023.",   
     "authors": ["I.-W. Jang", "and M.-S. Choo"],
     "figure": ["minseong-chu-profile-img.png"],
@@ -239,10 +239,10 @@
   {
  
     "type": "2023",
-    "status": "ICEIC",
+    "status": "IEEE/IEIE ICEIC",
     "title": "Radiation-Hardened Processing-In-Memory Crossbar Array With Hybrid Synapse Devices for Space Application",
     "image": "",
-    "conference": "ICEIC 2023",
+    "conference": "IEEE/IEIE ICEIC 2023",
     "reference":"<i>2023 International Conference on Electronics, Information, and Communication (ICEIC)</i>, pp. 1-4, 2023.",   
     "authors": ["S.-U. Kang", "J.-W. Han", "and M.-S. Choo"],
     "figure": ["su-kang-profile-img.jpg", "minseong-chu-profile-img.png"],
@@ -287,10 +287,10 @@
   {
  
     "type": "2018",
-    "status": "IEEE A-SSCC",
+    "status": "IEEE ASSCC",
     "title": "A 10-Gb/s, 0.03-mm2, 1.28-pJ/bit Half-Rate All-Digital Injection-Locked Clock and Data Recovery with Maximum Timing-Margin Tracking Loop",
     "image": "",
-    "conference": "IEEE A-SSCC 2018",
+    "conference": "IEEE ASSCC 2018",
     "reference":"<i>2018 IEEE Asian Solid-State Circuits Conference (A-SSCC)</i>, pp. 73-76, 2018.",   
     "authors": ["M.-S. Choo", "H.-G. Ko", "S.-Y. Cho", "K.-H. Lee", "and D.-K. Jeong"],
     "figure": ["minseong-chu-profile-img.png"],
