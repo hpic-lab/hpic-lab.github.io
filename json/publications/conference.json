@@ -275,10 +275,10 @@
   {
  
     "type": "2019",
-    "status": "IEEE VLSIC",
-    "title": "A 4-to-20Gb/s 1.87pJ/b referenceless digital CDR with unlimited frequency detection capability in 65nm CMOS",
+    "status": "IEEE VLSI",
+    "title": "A 4-to-20Gb/s 1.87pJ/b Referenceless Digital CDR With Unlimited Frequency Detection Capability in 65nm CMOS",
     "image": "img/c6.png",
-    "conference": "IEEE Symposium on VLSI Circuits (VLSIC)",
+    "conference": "IEEE Symposium on VLSI Circuits (VLSI)",
     "reference":"<i>2019 Symposium on VLSI Circuits</i>, Kyoto, Japan, 2019, pp. C194-C195.",    
     "authors": ["K. Park", "K. Lee", "S.-Y. Cho", "J. Lee", "J. Hwang", "M.-S. Choo", "and D.-K. Jeong"],
     "figure": ["minseong-chu-profile-img.png"],
@@ -300,7 +300,7 @@
  
     "type": "2017",
     "status": "IEEE ISSCC",
-    "title": "A 2.5GHz injection-locked ADPLL with 197fsrms integrated jitter and −65dBc reference spur using time-division dual calibration",
+    "title": "A 2.5GHz Injection-Locked ADPLL with 197fsrms Integrated Jitter and -65dBc Reference Spur Using Time-Division Dual Calibration",
     "image": "img/c3.png",
     "conference": "IEEE International Solid-State Circuits Conference (IEEE ISSCC)",
     "reference":"<i>2017 IEEE International Solid-State Circuits Conference (ISSCC)</i>, pp. 494-495, 2017.",   
@@ -312,7 +312,7 @@
  
     "type": "2016",
     "status": "IEEE ISCAS",
-    "title": "A theoretical analysis of phase shift in pulse injection-locked oscillators",
+    "title": "A Theoretical Analysis of Phase Shift in Pulse Injection-Locked Oscillators",
     "image": "img/c2.png",
     "conference": "IEEE International Symposium on Circuits and Systems (ISCAS)",
     "reference":"<i>2016 IEEE International Symposium on Circuits and Systems (ISCAS)</i>, pp. 1662-1665, 2016.",   
@@ -324,7 +324,7 @@
  
     "type": "2015",
     "status": "IEEE ESSCIRC",
-    "title": "A 5-GHz subharmonically injection-locked all-digital PLL with complementary switched injection",
+    "title": "A 5-GHz Subharmonically Injection-Locked AllDigital PLL with Complementary Switched Injection",
     "image": "img/c1.png",
     "conference": "European Solid-State Circuits Conference (IEEE ESSCIRC)",
     "reference":"<i>ESSCIRC Conference 2015 - 41st European Solid-State Circuits Conference (ESSCIRC)</i>, pp. 384-387, 2015.",   
