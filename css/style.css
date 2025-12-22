@@ -655,7 +655,7 @@ h6 {
 .user-card {
   display: flex;
   align-items: center;
-  justify-content: left;
+  justify-content: flex-start;
   padding: 20px;
   width: 100%;
   position: relative;
@@ -707,7 +707,7 @@ h6 {
 
 /* 학생들 프로필 */
 .user-card-img {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   z-index: 3;
@@ -722,7 +722,7 @@ h6 {
 .user-card-info {
   text-align: left;
   padding-left: 12px;
-  margin-left: 20px;
+  margin-left: 5px;
   width: 60%;
 }
 
