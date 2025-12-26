@@ -74,12 +74,7 @@ $(document).ready(function () {
         sponsor: "HYU",
         status: "completed",
       },
-      {
-        date: "-",
-        title: "전력반도체 인력 양성센터",
-        sponsor: "HYU",
-        status: "completed",
-      },
+      
     ];
   
     const container = $(".research-projects-container");
