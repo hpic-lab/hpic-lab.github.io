@@ -29,27 +29,27 @@ $(document).ready(function () {
         title:
           "Development of low-power/high-performance 2T DRAM PIM cell, integrated circuits, and architecture",
         sponsor: "National Research Foundation (NRF) of Korea",
-        status: "completed",
+        status: "Completed",
       },
       {
         date: "Sep. 2022 - Sep. 2023",
         title:
           "Design Methodology of High-Performance Integrated Circuits based on Reinforcement Learning",
         sponsor: "Quallitas Semiconductor",
-        status: "completed",
+        status: "Completed",
       },
       {
         date: "Sep. 2022 - Sep. 2023",
         title:
           "Development of High PSRR Low Phase Noise Voltage-Controlled Oscillator (VCO)",
         sponsor: "ACONIC Inc.",
-        status: "completed",        
+        status: "Completed",        
       },
       {
         date: "Jul. 2022 - Feb. 2025",
         title: "반도체전공트랙사업",
         sponsor: "KIAT",
-        status: "completed",
+        status: "Completed",
       },
       {
         date: "Mar. 2022 - Aug. 2027",
@@ -66,13 +66,13 @@ $(document).ready(function () {
         title:
           "강화학습 기반 고성능 아날로그 집적회로 설계 및 측정 플랫폼 개발",
         sponsor: "National Research Foundation (NRF) of Korea",
-        status: "completed",
+        status: "Completed",
       },
       {
         date: "Mar. 2022 - Feb. 2023",
         title: "신임교원 정착연구지원사업",
         sponsor: "HYU",
-        status: "completed",
+        status: "Completed",
       },
       
     ];
