@@ -374,6 +374,13 @@ h6 {
   line-height: 1.6;
   color: #333;
   font-size: 1rem; /* 웹사이트 기본 폰트 크기 */
+  /* ▼▼▼ [추가] 양쪽 정렬 속성 ▼▼▼ */
+  text-align: justify;
+  text-justify: inter-word; /* 단어 간격을 조절해 정렬 */
+  
+  /*긴 영어 단어가 있을 때 자동으로 하이픈(-)을 넣어 간격 벌어짐 방지 */
+  hyphens: auto; 
+  -webkit-hyphens: auto;
 }
 
 /* 4. 연도 헤더 (토글 버튼) 디자인 */
