@@ -374,6 +374,13 @@ h6 {
   line-height: 1.6;
   color: #333;
   font-size: 1rem; /* 웹사이트 기본 폰트 크기 */
+  /* ▼▼▼ 양쪽 정렬 속성: 양쪽 정렬(justify), 왼쪽 정렬(left), 오른쪽 정렬(right), 가운데 정렬(center) ▼▼▼ */
+  text-align: justify;
+  text-justify: inter-word; /* 단어 간격을 조절해 정렬 */
+  
+  /*긴 영어 단어가 있을 때 자동으로 하이픈(-)을 넣어 간격 벌어짐 방지 */
+  hyphens: auto; 
+  -webkit-hyphens: auto;
 }
 
 /* 4. 연도 헤더 (토글 버튼) 디자인 */
@@ -382,7 +389,7 @@ h6 {
   border: none;
   border-bottom: 3px solid #005bac; /* 파란색 밑줄 */
   font-family: "Noto Sans KR", sans-serif;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: #333;
   margin-top: 40px;

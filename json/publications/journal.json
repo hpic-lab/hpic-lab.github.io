@@ -1,7 +1,7 @@
 
   [ 
     {
-      "sub": "submitted",
+      "sub": "Submitted",
       "type": "2025",
       "status": "IEEE TIM",
       "title": "",
@@ -86,7 +86,7 @@
       "title": "A Pattern-Dependent Pulse Filtering Technique for Low-Jitter Injection-Locked CDR in 28-nm CMOS",
       "image": "",
       "journal": "IEEE TVLSI",
-      "reference":"in <i>IEEE Transactions on Very Large Scale Integration (VLSI) Systems</i>.",      
+      "reference":"in <i>IEEE Transactions on Very Large Scale Integration (VLSI) Systems</i> (Early Access).",      
       "authors": ["J. Kim", "Y.-W. Kim", "S. Lee", "Y. Jung", "M.-S. Choo", "and K. Park"],
       "figure": ["minseong-chu-profile-img.png"],
       "link": "https://ieeexplore.ieee.org/document/11289554"
@@ -98,7 +98,7 @@
       "title": "A Stagger-Tuned Cryogenic Broadband CMOS Three-Stage Cascode LNA for Quantum Computing",
       "image": "",
       "journal": "IEEE MWTL",
-      "reference":"in <i>IEEE Microwave and Wireless Technology Letters</i>.",   
+      "reference":"in <i>IEEE Microwave and Wireless Technology Letters</i> (Early Access).",   
       "authors": ["W.-J. Chang", "J. Kwon", "G. Kim", "I. Jeon", "J. Shin", "S. J. Kim", "H.-D. Gwon", "M.-S. Choo", "and T. H. Jang"],
       "figure": ["minseong-chu-profile-img.png"],
       "link": "https://ieeexplore.ieee.org/document/11272918"
@@ -296,11 +296,11 @@
   {
   
     "type": "2016",
-    "status": "JSTS",
+    "status": "IEEK JSTS",
     "title": "A 285-fs rms Integrated Jitter Injection-Locked Ring PLL with Charge-Stored Complementary Switch Injection Technique",
     "image": "img/j1.png",
     "journal": "Journal of Semiconductor Technology and Science (JSTS)",
-    "reference":"<i>JSTS:Journal of Semiconductor Technology and Science</i>, vol. 16, no. 6. The Institute of Electronics Engineers of Korea, pp. 860–866, 30-Dec-2016.",  
+    "reference":"<i>Journal of Semiconductor Technology and Science</i>, vol. 16, no. 6, pp. 860–866, Dec. 2016.",  
     "authors": ["S. Kim", "S. Jang", "S.-Y. Cho", "M.-S. Choo", "G.-S. Jeong", "W. Bae", "and D.-K. Jeong"],
     "figure": ["minseong-chu-profile-img.png"],
     "link": "https://koreascience.kr/article/JAKO201607959403082.page"

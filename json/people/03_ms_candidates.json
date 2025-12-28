@@ -22,7 +22,7 @@
     "details": "Received a B.S. degree in the school of electronics and communication engineering at Hanyang University, Ansan, South Korea. He is currently pursuing a Master's degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. He joined LX Semicon, Seoul, South Korea in 2016, where he was involved in the LCD DDI team. His research interests include digital and analog circuit design of Clock and Data Recovery (CDR) and digital circuit design of PAM4 Receiver with adaptive decision feedback equalizer.",
     "email": "noradlll@hanyang.ac.kr",
     "profile_img": "img/sh-ok-profile-img.jpg",
-    "position": "M.S. Candidate"
+    "position": ""
   },
   {
     "name": "Dong-Hyun Lee",
@@ -41,7 +41,7 @@
     "details": "Received a B.S. degree in the school of Electrical and Electronic Engineering at Dankook University, jukjeon, South Korea. He is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include artificial intelligence hardware design and processing in memory (PIM).",
     "email": "dhlee1415@hanyang.ac.kr",
     "profile_img": "img/dh-lee-profile-img.png",
-    "position": "M.S. Candidate"
+    "position": ""
   },
   {
     "name": "Jae-Hyeon Pyeon",
@@ -64,7 +64,7 @@
     "details": "Received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include analog and digital circuit designs of phase-locked-loop (PLL).",
     "email": "ccomo7004@hanyang.ac.kr",
     "profile_img": "img/jh-pyeon-profile-img.png",
-    "position": "M.S. Candidate"
+    "position": ""
   },
   {
     "name": "So-Yeon Kwon",
@@ -79,7 +79,7 @@
     "details": "Received a B.S. degree in the school of Applied Physics at Hanyang University, Ansan, South Korea. She is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. Her research interests include artificial intelligence hardware design and processing in memory (PIM).",
     "email": "sykwon00@hanyang.ac.kr",
     "profile_img": "img/sw-kwon-profile-image.jpeg",
-    "position": "M.S. Candidate"
+    "position": ""
   },
   {
     "name": "In-Ho Han",
@@ -94,7 +94,7 @@
     "details": "Received a B.S. degree in electrical engineering from Gachon University, Sungnam, South Korea. He is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include analog and digital circuit designs of phase-locked-loop (PLL).",
     "email": "inho0303@hanyang.ac.kr",
     "profile_img": "img/ih-han-profile-img.jpg",
-    "position": "M.S. Candidate"
+    "position": ""
   },
   {
     "name": "Seung-Hwan Gong",
@@ -109,7 +109,7 @@
     "details": "Received a B.S. degree in the school of electrical engineering at Gangwon University, Ansan, South Korea. He is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include CDR, DSP-based Receiver.",
     "email": "fire051324@gmail.com",
     "profile_img": "img/sh-gong-profile-image.jpg",
-    "position": "M.S. Candidate"
+    "position": ""
   },
   {
     "name": "Dong-Ho Kim",
@@ -124,7 +124,7 @@
     "details": "Received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. He is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include DSP-DAC based transmitter.",
     "email": "dpdl112@hanyang.ac.kr",
     "profile_img": "img/dh-kim-profile-image.jpg",
-    "position": "M.S. Candidate",
+    "position": "",
     "cv": "https://drive.google.com/file/d/1IIwGJfwAkVuCNuxvlFhy0Qp3Lv7o2et1/view?usp=drive_link"
   },
   {
@@ -144,7 +144,7 @@
     "details": "Received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. He is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include Clock and data recovery (CDR) and DSP-based Receiver.",
     "email": "dlworjs@hanyang.ac.kr",
     "profile_img": "img/jg-lee-profile-img.jpeg",
-    "position": "M.S. Candidate<br>Server Manager",
+    "position": "Server Manager",
     "cv": "https://drive.google.com/file/d/1jEkTZcFZ_ZMjD8B_4ww3rk1lMNHhLbm1/view?usp=sharing"
   },
   {
@@ -160,7 +160,7 @@
     "details": "Received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. He is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include DSP-DAC based transmitter.",
     "email": "victorymo@hanyang.ac.kr",
     "profile_img": "img/sm-jin-profile-img.jpg",
-    "position": "M.S. Candidate<br>Lab Captain",
+    "position": "Lab Captain",
     "cv": "https://drive.google.com/file/d/1Eft6w9CcVNDBiUG3iebRLbt_Zigzns70/view?usp=drive_link"
   },
   {
@@ -170,7 +170,7 @@
   "details": "Received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. He is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include analog digital converter (ADC)",
   "email": "hyeonseo1833@gmail.com",
   "profile_img": "img/sh-kim2-profile-image.png",
-  "position": "M.S. Candidate"
+  "position": ""
 },
 {
   "name": "Seol-Hyeon Kim",
@@ -179,6 +179,6 @@
   "details": "Received a B.S. degree in the school of system semiconductor enginerring at Sangmyung University, Cheonan, South Korea. She is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. Her research interests include artificial intelligence hardware design and processing in memory (PIM).",
   "email": "congcongsister@naver.com",
   "profile_img": "img/sh-kim-profile-image.jpg",
-  "position": "M.S. Candidate"
+  "position": ""
 }
 ]
