@@ -669,6 +669,16 @@ h6 {
   overflow: hidden;
 }
 
+.news-card {
+  padding-top: 0 !important;      
+  padding-bottom: 10px !important; 
+}
+
+.news-card ul {
+  margin-top: 5px !important;     
+  padding-left: 20px;
+}
+
 .profile-left {
   display: flex;
   flex-direction: column;
