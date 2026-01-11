@@ -793,7 +793,7 @@ h6 {
   padding-bottom: 0px !important;
 
   max-height: 24em;      
-  overflow-y: auto;       
+  overflow-y: auto !important;       
   padding-right: 10px; 
 }
 
@@ -826,7 +826,7 @@ h6 {
 
 /* 스크롤바 뒷배경 (트랙) */
 .news-card::-webkit-scrollbar-track {
-  background-color: transparent !important;
+  background-color: #f1f1f1; /* 아주 연한 배경색 */
   border-radius: 4px;
 }
 .col-lg-8 h5:not(:first-child),
