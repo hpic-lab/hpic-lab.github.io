@@ -789,10 +789,10 @@ h6 {
 
 .news-card {
   align-items: flex-start !important;
-  padding-top: 16px !important;      
-  padding-bottom: 15px !important;
+  padding-top: 12px !important;      
+  padding-bottom: 12px !important;
 
-  max-height: 24em;      
+  max-height: 22em;      
   overflow-y: auto;       
   padding-right: 10px; 
 }
