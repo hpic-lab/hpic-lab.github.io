@@ -826,7 +826,7 @@ h6 {
 
 /* 스크롤바 뒷배경 (트랙) */
 .news-card::-webkit-scrollbar-track {
-  background-color: #f1f1f1; /* 아주 연한 배경색 */
+  background-color: transparent !important;
   border-radius: 4px;
 }
 .col-lg-8 h5:not(:first-child),
