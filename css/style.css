@@ -789,7 +789,11 @@ h6 {
 
 .news-card {
   padding-top: 0 !important;      
-  padding-bottom: 10px !important; 
+  padding-bottom: 10px !important;
+
+  max-height: 300px;      
+  overflow-y: auto;       
+  padding-right: 10px; 
 }
 
 .news-card ul {
@@ -797,7 +801,31 @@ h6 {
   margin-top: 0px !important;     
   padding-left: 20px;
 }
+/* ========================================= */
+/* 뉴스 영역 스크롤바 디자인 커스텀 */
+/* ========================================= */
 
+/* 스크롤바 전체 너비 설정 */
+.news-card::-webkit-scrollbar {
+  width: 8px; /* 얇게 설정 */
+}
+
+/* 스크롤바 막대 (움직이는 부분) 디자인 */
+.news-card::-webkit-scrollbar-thumb {
+  background-color: #ccc;    
+  border-radius: 4px;        /* 둥글게 */
+}
+
+/* 스크롤바 막대에 마우스 올렸을 때 */
+.news-card::-webkit-scrollbar-thumb:hover {
+  background-color: #999;    
+}
+
+/* 스크롤바 뒷배경 (트랙) */
+.news-card::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* 아주 연한 배경색 */
+  border-radius: 4px;
+}
 .col-lg-8 h5:not(:first-child),
 .chip-gallery-title-row {
   margin-top: 40px;
