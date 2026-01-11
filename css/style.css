@@ -788,8 +788,9 @@ h6 {
 }
 
 .news-card {
-  padding-top: 0 !important;      
-  padding-bottom: 10px !important;
+  align-items: flex-start !important;
+  padding-top: 15px !important;      
+  padding-bottom: 15px !important;
 
   max-height: 24em;      
   overflow-y: auto;       
@@ -798,7 +799,7 @@ h6 {
 
 .news-card ul {
 
-  padding-top: 12px !important;   /* 5px -> 12px로 넉넉하게 변경 */
+  padding-top: 0px !important;   /* 5px -> 12px로 넉넉하게 변경 */
   margin-top: 0px !important;
   list-style-type: circle !important;     
   padding-left: 20px;
