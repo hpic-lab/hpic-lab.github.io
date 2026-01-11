@@ -792,9 +792,9 @@ h6 {
   overflow-y: auto !important; 
   
   /* 높이 및 여백 */
-  max-height: 200px;       
-  padding-top: 4px !important;     
-  padding-bottom: 4px !important;
+  max-height: 300px;       
+  padding-top: 0px !important;     
+  padding-bottom: 0px !important;
   padding-right: 10px;    
 }
 
