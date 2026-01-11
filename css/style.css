@@ -799,7 +799,7 @@ h6 {
 
 .news-card ul {
 
-  padding-top: 0px !important;   /* 5px -> 12px로 넉넉하게 변경 */
+  padding-top: 0px !important;   
   margin-top: 0px !important;
   list-style-type: circle !important;     
   padding-left: 20px;
