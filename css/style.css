@@ -665,7 +665,7 @@ h6 {
 /* ========================================= */
 .profile-right p span {
   font-size: 18px;       /* 제목 크기 (본문 16px보다 약간 크게) */
-  font-weight: 700;      /* 글자 굵기 (Bold) */
+  font-weight: 400;      /* 글자 굵기 (Bold) */
   color: #111;           /* 아주 진한 검정색으로 강조 */
   display: inline-block; /* 디자인 안정성을 위해 추가 */
   margin-top: 5px;       /* 위쪽 항목과의 간격 확보 */
