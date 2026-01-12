@@ -626,7 +626,7 @@ h6 {
 /* 이름 (예: Min-Seong Choo) */
 #modal-name {
   font-size: 26px;      /* 글자 크기 (제목이니까 큼직하게) */
-  font-weight: 700;     /* 글자 굵기 (700은 Bold, 400은 보통) */
+  font-weight: 400;     /* 글자 굵기 (700은 Bold, 400은 보통) */
   color: #000;          /* 완전 검은색으로 강조 */
   margin-bottom: 5px;   /* 이름과 직책 사이의 간격 */
   margin-top: 15px;     /* 사진과 이름 사이의 간격 */
@@ -734,24 +734,34 @@ h6 {
 /* [Modal] Tape-out Schedule (일정) 내용 */
 /* ========================================= */
 #modal-tape_out_schedule {
-  font-size: 16px;       /* 글자 크기 통일 */
-  color: #333;           /* 진한 회색 */
-  line-height: 1.6;      /* 줄 간격 */
-  /* 일정은 보통 짧은 글이라 왼쪽 정렬(기본값)이 가장 깔끔합니다. */
+  
+  /* 1. 글자 크기 통일 */
+  font-size: 16px;
+
+  /* 2. 글자 색상 */              
+  color: #333;
+  
+  /* 3. 줄 간격 */
+  line-height: 1.6;     
 }
 
 /* ========================================= */
 /* [Modal] Achievements (업적/수상) 내용 */
 /* ========================================= */
 #modal-achievements {
-  font-size: 16px;       /* 글자 크기 통일 */
-  color: #333;           /* 진한 회색 */
-  line-height: 1.6;      /* 줄 간격 */
+  /* 1. 글자 크기 통일 */
+  font-size: 16px;
+
+  /* 2. 글자 색상 */       
+  color: #333;
   
-  /* 내용이 길면 양쪽 정렬 (짧으면 이 줄을 지우세요) */
+  /* 3. 줄 간격 */
+  line-height: 1.6;      
+  
+  /* 4. 양쪽 정렬 (논문처럼 좌우 끝을 딱 맞춤)  */
   text-align: justify;   
   
-  /* 영어 단어가 잘릴 때 자동으로 하이픈(-) 추가 */
+  /* 5. 영어 단어가 잘릴 때 자동으로 하이픈(-) 추가 */
   -webkit-hyphens: auto; 
   -ms-hyphens: auto;
   hyphens: auto;
