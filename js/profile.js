@@ -125,7 +125,7 @@ $(document).ready(function () {
     );
   });
 
-  // 5. 모달 내용 채워넣는 함수
+// 5. 모달 내용 채워넣는 함수 (순서 수정됨: 이름 -> 직책 -> 아이콘)
   function updateModalContent(
     name,
     profile_img,
@@ -135,27 +135,24 @@ $(document).ready(function () {
     research_interests,
     tape_out_schedule,
     achievements,
-    links // 새로 추가됨
+    links
   ) {
     $("#modal-name").text(name);
     $("#modal-profile-img").attr("src", profile_img);
     $("#modal-details").text(details);
     $("#modal-email").text(email);
-    $("#modal-position").html(position); // 직책 업데이트
+    $("#modal-position").html(position);
 
-    // ▼▼▼ [핵심] 모달 왼쪽 (이름/직책 아래)에 아이콘 삽입 ▼▼▼
-    
-    // 1) 기존에 만들어진 아이콘이 있다면 삭제 (중복 방지)
+    // 1) 기존 아이콘 삭제
     $("#modal-network-icons").remove(); 
 
     // 2) 아이콘 HTML 생성
     const iconsHTML = createNetworkIcons(links);
 
-    // 3) 아이콘이 존재하면 이름/직책 아래에 추가
+    // 3) 아이콘 삽입 (순서 변경 핵심!)
     if (iconsHTML.trim() !== "") {
-        // #modal-name 요소 뒤(after)에 아이콘 리스트 추가
-        // 위치를 더 내리고 싶다면 #modal-position 뒤에 넣어도 됨
-        $("#modal-name").after(`
+        // ▼▼▼ [수정됨] 직책(#modal-position) 뒤에 넣어서 순서를 맞춤
+        $("#modal-position").after(`
             <ul id="modal-network-icons" class="network-icon" style="justify-content: center; padding: 10px 0;">
                 ${iconsHTML}
             </ul>
