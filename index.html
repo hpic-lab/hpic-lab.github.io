@@ -1360,5 +1360,20 @@
     <script src="js/research_projects.js"></script>
     <script src="js/profile.js"></script>
     <script src="js/script.js"></script>
+
+  <div class="last-updated-fixed">
+  <script>
+    var date = new Date(document.lastModified);
+    
+    var year = date.getFullYear();
+    var month = ("0" + (date.getMonth() + 1)).slice(-2);
+    var day = ("0" + date.getDate()).slice(-2);
+    var hours = ("0" + date.getHours()).slice(-2);
+    var minutes = ("0" + date.getMinutes()).slice(-2);
+    
+    document.write("Last updated: " + year + ". " + month + ". " + day + ". " + hours + ":" + minutes);
+  </script>
+</div>
+  
   </body>
 </html>

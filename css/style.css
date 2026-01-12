@@ -792,9 +792,9 @@ h6 {
   overflow-y: auto !important; 
   
   /* 높이 및 여백 */
-  max-height: 300px;       
-  padding-top: 0px !important;     
-  padding-bottom: 0px !important;
+  max-height: 250px;       
+  padding-top: 2px !important;     
+  padding-bottom: 2px !important;
   padding-right: 10px;    
 }
 
@@ -950,6 +950,34 @@ section {
   margin-top: 12px;
   letter-spacing: 2px;
   font-size: 16px;
+}
+
+/* ========================================= */
+/* [Last Updated] 우측 하단 투명 위젯 스타일 */
+/* ========================================= */
+.last-updated-fixed {
+  /* 1. 위치 고정 (화면 오른쪽 아래) */
+  position: fixed;
+  bottom: 10px;  /* 바닥에서 10px 띄움 */
+  left: 10px;   /* 오른쪽에서 10px 띄움 */
+  z-index: 9999; /* 다른 요소들보다 위에 오도록 설정 */
+  
+  /* 2. 폰트 및 디자인 */
+  font-size: 12px;
+  color: #555;   /* 글자색 (진한 회색) */
+  background-color: rgba(255, 255, 255, 0.9); /* 배경 (반투명 흰색, 글자 잘 보이게) */
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd; /* 살짝 테두리 줌 */
+
+  /* 3. 투명도 효과 */
+  opacity: 0; /* 평소에는 완전 투명 */
+  transition: opacity 0.3s ease-in-out; /* 0.3초 동안 부드럽게 나타남 */
+}
+
+/* 4. 마우스를 올렸을 때 (:hover) */
+.last-updated-fixed:hover {
+  opacity: 1; /* 불투명하게 변신 (보임) */
 }
 
 @media (max-width: 1399px) {
