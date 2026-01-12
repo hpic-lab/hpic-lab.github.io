@@ -1,6 +1,4 @@
 $(document).ready(function () {
-
-  $("#exampleModal .modal-dialog").addClass("modal-lg");
   
   // 1. 프로필 로드 함수 (아이콘 표시 여부 옵션 추가)
   function loadProfiles(url, containerClass, showIconsInMainView) {
