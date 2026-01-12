@@ -634,7 +634,11 @@ h6 {
   line-height: 1.6;  
   
   /* 4. 글자 색상 (진한 회색) */
-  color: #333;       
+  color: #333;
+  
+  -webkit-hyphens: auto;  /* 크롬, 사파리용 */
+  -ms-hyphens: auto;      /* 구형 엣지, 익스플로러용 */
+  hyphens: auto;          /* 표준 설정 */       
 }
 
 .research-projects-ul li {
