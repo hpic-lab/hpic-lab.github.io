@@ -635,10 +635,28 @@ h6 {
   
   /* 4. 글자 색상 (진한 회색) */
   color: #333;
-  
+
   -webkit-hyphens: auto;  /* 크롬, 사파리용 */
   -ms-hyphens: auto;      /* 구형 엣지, 익스플로러용 */
   hyphens: auto;          /* 표준 설정 */       
+}
+
+/* ========================================= */
+/* [Modal] Research Interests (리스트) 스타일 */
+/* ========================================= */
+
+#modal-research_interests li {
+  /* 1. 글자 크기 (Details와 맞추려면 16px 추천) */
+  font-size: 16px;   
+  
+  /* 2. 줄 간격 */
+  line-height: 1.5;  
+  
+  /* 3. 항목 사이 간격 (리스트가 너무 다닥다닥 붙지 않게 함) */
+  margin-bottom: 5px; 
+  
+  /* 4. 글자 색상 */
+  color: #333;
 }
 
 .research-projects-ul li {
