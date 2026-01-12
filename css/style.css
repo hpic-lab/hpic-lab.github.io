@@ -669,16 +669,6 @@ h6 {
   overflow: hidden;
 }
 
-.news-card {
-  padding-top: 0 !important;      
-  padding-bottom: 10px !important; 
-}
-
-.news-card ul {
-  margin-top: 0px !important;     
-  padding-left: 20px;
-}
-
 .profile-left {
   display: flex;
   flex-direction: column;
@@ -770,6 +760,12 @@ h6 {
   margin-right: 4px;
 }
 
+.news-ul {
+  list-style: none !important;
+  padding-left: 0 !important;
+  margin: 0 !important;
+}
+
 .news-ul p,
 .research-projects-ul li p {
   margin-bottom: 8px;
@@ -791,6 +787,49 @@ h6 {
   text-decoration: underline;
 }
 
+.news-card {
+  display: block !important; 
+  overflow-y: auto !important; 
+  
+  /* 높이 및 여백 */
+  max-height: 300px;       
+  padding-top: 0px !important;     
+  padding-bottom: 0px !important;
+  padding-right: 10px;    
+}
+
+/* 리스트 내부 스타일 */
+.news-card ul {
+  padding-top: 0px !important;   
+  margin-top: 0px !important;
+  list-style-type: circle !important;     
+  padding-left: 20px;
+}
+
+/* ========================================= */
+/* [Scrollbar] 스크롤바 디자인 */
+/* ========================================= */
+
+/* 1. 스크롤바 전체 너비 */
+.news-card::-webkit-scrollbar {
+  width: 8px; 
+  background-color: transparent; 
+}
+
+/* 2. 움직이는 막대 (회색, #ccc) */
+.news-card::-webkit-scrollbar-thumb {
+  background-color: #ccc;    
+  border-radius: 4px;        
+}
+.news-card::-webkit-scrollbar-thumb:hover {
+  background-color: #999;    
+}
+
+/* 3. 스크롤바 뒷배경 (회색, #f1f1f1) */
+.news-card::-webkit-scrollbar-track {
+  background-color: #f1f1f1; 
+  border-radius: 4px;
+}
 .col-lg-8 h5:not(:first-child),
 .chip-gallery-title-row {
   margin-top: 40px;
