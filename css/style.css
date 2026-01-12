@@ -679,7 +679,7 @@ h6 {
   /* 1. 글자 크기 */
   font-size: 16px;   
   
-  /* 2. 양쪽 정렬 */
+  /* 2. 양쪽 정렬(justify), 왼쪽 정렬(left), 오른쪽 정렬(right), 가운데 정렬(center) */
   text-align: justify; 
   
   /* 3. 줄 간격 */
