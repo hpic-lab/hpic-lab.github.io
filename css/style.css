@@ -619,6 +619,150 @@ h6 {
   font-weight: 500;
 }
 
+/* ========================================= */
+/* [Modal] 왼쪽 프로필 영역 꾸미기 */
+/* ========================================= */
+
+/* 이름 (예: Min-Seong Choo) */
+#modal-name {
+  font-size: 26px;      /* 글자 크기 (제목이니까 큼직하게) */
+  font-weight: 400;     /* 글자 굵기 (700은 Bold, 400은 보통) */
+  color: #000;          /* 완전 검은색으로 강조 */
+  margin-bottom: 5px;   /* 이름과 직책 사이의 간격 */
+  margin-top: 15px;     /* 사진과 이름 사이의 간격 */
+  text-align: center;   /* 가운데 정렬 */
+}
+
+/* 프로필 사진 */
+#modal-profile-img {
+  /* 1. 크기 조절 */
+  width: 180px;         /* 사진 가로 길이 */
+  height: 180px;        /* 사진 세로 길이 (가로랑 똑같이 맞추세요) */
+  
+  /* 2. 모양 조절 */
+  border-radius: 50%;   /* 50%면 '완전 원형', 10px 정도면 '둥근 모서리 사각형' */
+  
+  /* 3. 사진 비율 유지 (찌그러짐 방지) */
+  object-fit: cover;    
+  
+  /* 가운데 정렬을 위한 필수 설정 */
+  display: block;
+  margin: 0 auto;       
+}
+
+/* 직책 (예: Assistant Professor) */
+#modal-position {
+  font-size: 18px;      /* 이름보다는 작게 */
+  font-weight: 400;     /* 보통 굵기 */
+  color: #555;          /* 진한 회색 (너무 까맣지 않게) */
+  margin-bottom: 15px;  /* 직책과 아래 아이콘 사이의 간격 */
+  text-align: center;   /* 가운데 정렬 */
+}
+
+/* ========================================= */
+/* [Modal] 모든 섹션 제목 공통 스타일           */
+/* (Research Interests, Details, Email 등)   */
+/* ========================================= */
+.profile-right p span {
+  font-size: 18px;       /* 제목 크기 (본문 16px보다 약간 크게) */
+  font-weight: 400;      /* 글자 굵기 (Bold) */
+  color: #111;           /* 아주 진한 검정색으로 강조 */
+  display: inline-block; /* 디자인 안정성을 위해 추가 */
+  margin-top: 5px;       /* 위쪽 항목과의 간격 확보 */
+}
+
+/* ========================================= */
+/* [Modal] 팝업창 상세 내용(Details) 스타일 */
+/* ========================================= */
+
+#modal-details {
+  /* 1. 글자 크기 */
+  font-size: 16px;   
+  
+  /* 2. 양쪽 정렬(justify), 왼쪽 정렬(left), 오른쪽 정렬(right), 가운데 정렬(center) */
+  text-align: justify; 
+  
+  /* 3. 줄 간격 */
+  line-height: 1.6;  
+  
+  /* 4. 글자 색상 (진한 회색) */
+  color: #333;
+
+  -webkit-hyphens: auto;  /* 크롬, 사파리용 */
+  -ms-hyphens: auto;      /* 구형 엣지, 익스플로러용 */
+  hyphens: auto;          /* 표준 설정 */       
+}
+
+/* ========================================= */
+/* [Modal] Research Interests (리스트) 스타일 */
+/* ========================================= */
+
+#modal-research_interests li {
+  /* 1. 글자 크기 (Details와 맞추려면 16px 추천) */
+  font-size: 16px;   
+  
+  /* 2. 줄 간격 */
+  line-height: 1.5;  
+  
+  /* 3. 항목 사이 간격 (리스트가 너무 다닥다닥 붙지 않게 함) */
+  margin-bottom: 5px; 
+  
+  /* 4. 글자 색상 */
+  color: #333;
+}
+
+/* ========================================= */
+/* [Modal] 이메일(Email) 스타일 */
+/* ========================================= */
+
+#modal-email {
+  /* 1. 글자 크기 */
+  font-size: 16px;   
+  
+  /* 2. 글자 색상 (통일) */
+  color: #333;       
+  
+  /* 3. (선택사항) 폰트를 약간 굵게 표시되기를 원하면 주석 해제 */
+  /* font-weight: 500; */
+}
+
+/* ========================================= */
+/* [Modal] Tape-out Schedule (일정) 내용 */
+/* ========================================= */
+#modal-tape_out_schedule {
+  
+  /* 1. 글자 크기 통일 */
+  font-size: 16px;
+
+  /* 2. 글자 색상 */              
+  color: #333;
+  
+  /* 3. 줄 간격 */
+  line-height: 1.6;     
+}
+
+/* ========================================= */
+/* [Modal] Achievements (업적/수상) 내용 */
+/* ========================================= */
+#modal-achievements {
+  /* 1. 글자 크기 통일 */
+  font-size: 16px;
+
+  /* 2. 글자 색상 */       
+  color: #333;
+  
+  /* 3. 줄 간격 */
+  line-height: 1.6;      
+  
+  /* 4. 양쪽 정렬 (논문처럼 좌우 끝을 딱 맞춤)  */
+  text-align: justify;   
+  
+  /* 5. 영어 단어가 잘릴 때 자동으로 하이픈(-) 추가 */
+  -webkit-hyphens: auto; 
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+
 .research-projects-ul li {
   margin-bottom: 12px;
 }
