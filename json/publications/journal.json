@@ -2,7 +2,7 @@
   [ 
     {
       "sub": "Submitted",
-      "type": "2025",
+      "type": "2026",
       "status": "IEEE TIM",
       "title": "",
       "image": "",
@@ -18,7 +18,7 @@
     },
     {
       "sub": "In Revision",
-      "type": "2025",
+      "type": "2026",
       "status": "IEEE JETCAS",
       "title": "",
       "image": "",
@@ -35,7 +35,7 @@
       "link": ""
     },
     {
-      "type": "2025",
+      "type": "2026",
       "status": "IEEE JSSC",
       "title": "",
       "image": "",
@@ -50,7 +50,7 @@
       "link": ""
     },
     {
-      "type": "2025",
+      "type": "2026",
       "status": "IEEE TCAS-I",
       "title": "",
       "image": "",
@@ -65,7 +65,7 @@
       "link": ""
     },
     {
-      "type": "2025",
+      "type": "2026",
       "status": "IEEE TCAS-I",
       "title": "",
       "image": "",
@@ -79,18 +79,18 @@
       "figure": ["sm-jin-profile-img.png", "dh-kim-profile-image.jpg", "minseong-chu-profile-img.png"],
       "link": ""
     },
-    {
+    { 
       "sub": "",      
-      "type": "2025",
+      "type": "2026",
       "status": "IEEE TVLSI",
       "title": "A Pattern-Dependent Pulse Filtering Technique for Low-Jitter Injection-Locked CDR in 28-nm CMOS",
       "image": "",
       "journal": "IEEE TVLSI",
-      "reference":"in <i>IEEE Transactions on Very Large Scale Integration (VLSI) Systems</i> (Early Access).",      
+      "reference":"in <i>IEEE Transactions on Very Large Scale Integration (VLSI) Systems</i>, vol. 34, no. 2, pp. 711-715, Feb. 2026.",      
       "authors": ["J. Kim", "Y.-W. Kim", "S. Lee", "Y. Jung", "M.-S. Choo", "and K. Park"],
       "figure": ["minseong-chu-profile-img.png"],
       "link": "https://ieeexplore.ieee.org/document/11289554"
-    },
+    }, 
     {
       "sub": "",      
       "type": "2025",
