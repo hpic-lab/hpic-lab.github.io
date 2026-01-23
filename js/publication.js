@@ -222,7 +222,7 @@ $(document).ready(function () {
 
 
   // 2. 특허 로드 함수
-  function loadPatent(url, containerClass) {
+    function loadPatent(url, containerClass) {
      $.getJSON(url).done(function (pubs) {
       const container = $(containerClass);
       container.empty(); 
@@ -277,7 +277,7 @@ $(document).ready(function () {
                     ${badgesHTML}
                   </div>
                   <div class="pub-citation-text">
-                    <span class="pub-author">${inventorsText}</span>, 
+                    <span class="pub-author">${inventorsText}</span>. 
                     <span><b>${pub.title}.</b></span>
                   </div>
                   <div class="pub-figures">${figures}</div>
