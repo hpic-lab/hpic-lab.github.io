@@ -263,14 +263,6 @@ $(document).ready(function () {
                 let inventorsText = pub.inventors.join(", ");
                 
                 let badgesHTML = "";
-                
-                // [삭제] 특허에서도 연도/타입(출원/등록) 배지는 삭제 (제목으로 구분이 되므로)
-                // 대신 '출원/등록' 텍스트 자체가 중요하면 남겨야 하지만, 
-                // "Patent Applications"라는 큰 제목이 있으므로 배지는 중복될 수 있습니다.
-                // 사용자 요청: "연도 배지는 빼달라" -> type 배지 삭제
-                // 만약 '출원/등록' 글자는 배지로 남기고 싶다면 아래 주석을 해제하세요.
-                // if (pub.type) badgesHTML += `<span class="badge text-bg-primary">${pub.type}</span>| `;
-                
                 if (pub.status) badgesHTML += `<span class="badge process-badge">${pub.status}</span>| `;
                 if (pub.registration) badgesHTML += `<span class="badge bg-success">${pub.registration}</span>| `;
                 
@@ -286,7 +278,6 @@ $(document).ready(function () {
                   </div>
                   <div class="pub-citation-text">
                     <span class="pub-author">${inventorsText}</span>, 
-                    <span>(${year}).</span> 
                     <span><b>${pub.title}.</b></span>
                   </div>
                   <div class="pub-figures">${figures}</div>
