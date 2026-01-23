@@ -1,4 +1,12 @@
-[
+[ {
+    "year": 2026,
+    "type": "등록",
+    "status": 3,
+    "registration": "",
+    "title": "주입 잠금 오실레이터 기반 물리적 복제 불가능 함수",
+    "figure": ["km-kim-profile-img.jpg", "minseong-chu-profile-img.png"],
+    "inventors": ["김강민", "김수연", "추민성"]
+  },
   {
     "year": 2025,
     "type": "등록",
@@ -7,6 +15,15 @@
     "title": "6 트랜지스터 정적 램 및 이를 이용한 프로세싱 인 메모리 가속 장치",
     "figure": ["mg-song-profile-img.jpg", "su-kang-profile-img.jpg", "minseong-chu-profile-img.png"],
     "inventors": ["강신욱", "송민권", "김수연", "추민성"]
+  },
+  {
+    "year": 2025,
+    "type": "등록",
+    "status": 4,
+    "registration": "KR · 제 10-2842772 호",
+    "title": "ADC 양자 인공신경망과 범용 Compute-in-Memory",
+    "figure": ["mg-song-profile-img.jpg", "su-kang-profile-img.jpg", "minseong-chu-profile-img.png"],
+    "inventors": ["송민권", "강신욱", "김수연", "추민성"]
   },
   {
     "year": 2024,
@@ -26,15 +43,7 @@
     "figure": ["dh-heo-profile-img.jpg", "sh-ok-profile-img.jpg", "jh-kim-profile-img.png", "minseong-chu-profile-img.png"],
     "inventors": ["허동회", "옥상현", "김지호", "추민성"]
   },
-  {
-    "year": 2024,
-    "type": "출원",
-    "status": 3,
-    "registration": "KR · P20240484OP",
-    "title": "주입 잠금 오실레이터 기반 물리적 복제 불가능 함수",
-    "figure": ["km-kim-profile-img.jpg", "minseong-chu-profile-img.png"],
-    "inventors": ["김강민", "김수연", "추민성"]
-  },
+
   {
     "year": 2024,
     "type": "출원",
