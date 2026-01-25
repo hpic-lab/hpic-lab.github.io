@@ -389,7 +389,7 @@ h6 {
   border: none;
   border-bottom: 3px solid #005bac; /* 파란색 밑줄 */
   font-family: "Noto Sans KR", sans-serif;
-  font-size: 1.5rem;
+  font-size: 24px;
   font-weight: 700;
   color: #333;
   margin-top: 40px;
@@ -438,7 +438,7 @@ h6 {
 /* 1. 대분류 제목 (Registered Patents, Applications) */
 .patent-category-title {
   font-family: "Noto Sans KR", sans-serif;
-  font-size: 2.0rem;      /* 연도보다 조금 더 크게 강조 */
+  font-size: 28px;      /* 연도보다 조금 더 크게 강조 */
   font-weight: 700;       /* 두꺼운 글씨 */
   color: #333;
   margin-top: 60px;       /* 위쪽 그룹과 간격 띄우기 */
