@@ -97,7 +97,7 @@
     "conference": "IEIE 하계학술대회",
     "reference":"<i>대한전자공학회 학술대회</i>",      
     "authors": ["D.-H. Kim", "and M.-S. Choo"],
-    "figure": ["dh-kim-profile-img.png", "minseong-chu-profile-img.png"],
+    "figure": ["dh-kim-profile-image.jpg", "minseong-chu-profile-img.png"],
     "link": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12331789"
   }, 
   {
@@ -109,7 +109,7 @@
     "conference": "IEIE 하계학술대회",
     "reference":"<i>대한전자공학회 학술대회</i>",      
     "authors": ["D.-H. Lee", "and M.-S. Choo"],
-    "figure": ["img/dh_lee_bs_profile_image.jpg", "minseong-chu-profile-img.png"],
+    "figure": ["dh_lee_bs_profile_image.jpg", "minseong-chu-profile-img.png"],
     "link": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12331656"
   },
   {
@@ -133,7 +133,7 @@
     "conference": "IEIE 하계학술대회",
     "reference":"<i>대한전자공학회 학술대회</i>",      
     "authors": ["S.-H. Gong", "D.-H. Heo", "and M.-S. Choo"],
-    "figure": ["sh-gong-profile-img.jpg", "dh-heo-profile-img.jpg", "minseong-chu-profile-img.png"],
+    "figure": ["sh-gong-profile-image.jpg", "dh-heo-profile-img.jpg", "minseong-chu-profile-img.png"],
     "link": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12331653"
   },
   {
