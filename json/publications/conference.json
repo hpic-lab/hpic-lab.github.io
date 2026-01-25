@@ -37,7 +37,7 @@
       "Jaeduk Han", 
       "Min-Seong Choo A 22Gb/s-54Gb/s Reconfigurable PAM-2/4/8 DSP-Based Transmitter with 14-Tap Feedforward Equalization"
     ],
-    "figure": [ "sm-jin-profile-img.png", "dh-kim-profile-image.jpg", "minseong-chu-profile-img.png"],
+    "figure": [ "sm-jin-profile-img.jpg", "dh-kim-profile-image.jpg", "minseong-chu-profile-img.png"],
     "link": ""
   },    
   {
@@ -49,8 +49,92 @@
     "conference": "ITC-CSCC 2025",
     "reference":"in <i>2025 International Technical Conference on Circuits/Systems, Computers, and Communications (ITC-CSCC)</i>, pp. 1-3, 2025.",
     "authors": ["J.-G. Lee", "S.-H. Ok", "S.-H. Gong", "S.-M. Jin", "D.-H. Kim", "and M.-S. Choo"],
-    "figure": ["jg-lee-profile-img.jpeg", "sh-ok-profile-img.jpg", "sh-gong-profile-image.jpg", "sm-jin-profile-img.png", "dh-kim-profile-image.jpg", "minseong-chu-profile-img.png"],
+    "figure": ["jg-lee-profile-img.jpeg", "sh-ok-profile-img.jpg", "sh-gong-profile-image.jpg", "sm-jin-profile-img.jpg", "dh-kim-profile-image.jpg", "minseong-chu-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/document/11137667"
+  },
+  {
+    "type": "2025",
+    "status": "IEIE 하계학술대회",
+    "award": "",
+    "title": "64-way ADC-DSP 기반 수신 회로의 구현: SS-LMS의 학습률의 변화에 기반한 적응형 알고리즘",
+    "image": "",
+    "conference": "IEIE 하계학술대회",
+    "reference":"<i>대한전자공학회 학술대회.</i>",      
+    "authors": ["J.-G. Lee", "S.-H. Ok", "D.-H. Heo", "S.-M. Jin", "and M.-S. Choo"],
+    "figure": ["jg-lee-profile-img.jpeg","sh-ok-profile-img.jpg", "dh-heo-profile-img.jpg", "sm-jin-profile-img.jpg", "minseong-chu-profile-img.png"],
+    "link": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12331495"
+  }, 
+  {
+    "type": "2025",
+    "status": "IEIE 하계학술대회",
+    "award": "",
+    "title": "아날로그 인메모리 컴퓨팅 연산 방식에 대한 분석",
+    "image": "",
+    "conference": "IEIE 하계학술대회",
+    "reference":"<i>대한전자공학회 학술대회.</i>",      
+    "authors": ["D.-H. Lee", "and M.-S. Choo"],
+    "figure": ["dh-lee-profile-img.png", "minseong-chu-profile-img.png"],
+    "link": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12331532"
+  }, 
+  {
+    "type": "2025",
+    "status": "IEIE 하계학술대회",
+    "award": "",
+    "title": "카운터 기반 비등간격 오버샘플링 PLL",
+    "image": "",
+    "conference": "IEIE 하계학술대회",
+    "reference":"<i>대한전자공학회 학술대회.</i>",      
+    "authors": ["J.-H. Pyeon", "and M.-S. Choo"],
+    "figure": ["jh-pyeon-profile-img.png", "minseong-chu-profile-img.png"],
+    "link": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12331661"
+  }, 
+  {
+    "type": "2025",
+    "status": "IEIE 하계학술대회",
+    "award": "",
+    "title": "50Gbaud 송신기를 위한 고속 시리얼라이저",
+    "image": "",
+    "conference": "IEIE 하계학술대회",
+    "reference":"<i>대한전자공학회 학술대회.</i>",      
+    "authors": ["D.-H. Kim", "and M.-S. Choo"],
+    "figure": ["dh-kim-profile-image.jpg", "minseong-chu-profile-img.png"],
+    "link": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12331789"
+  }, 
+  {
+    "type": "2025",
+    "status": "IEIE 하계학술대회",
+    "award": "",
+    "title": "저복잡도 구조를 갖는 알렉산더 위상 검출기 기반 위상 - 주파수 검출기 설계",
+    "image": "",
+    "conference": "IEIE 하계학술대회",
+    "reference":"<i>대한전자공학회 학술대회.</i>",      
+    "authors": ["D.-H. Lee", "and M.-S. Choo"],
+    "figure": ["dh_lee_bs_profile_image.jpg", "minseong-chu-profile-img.png"],
+    "link": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12331656"
+  },
+  {
+    "type": "2025",
+    "status": "IEIE 하계학술대회",
+    "award": "",
+    "title": "주입 잠금 발진기 기반 분주비 절감형 디지털 위상 잠금 회로",
+    "image": "",
+    "conference": "IEIE 하계학술대회",
+    "reference":"<i>대한전자공학회 학술대회.</i>",      
+    "authors": ["I.-H. Han", "and M.-S. Choo"],
+    "figure": ["ih-han-profile-img.jpg", "minseong-chu-profile-img.png"],
+    "link": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12331634"
+  },
+  {
+    "type": "2025",
+    "status": "IEIE 하계학술대회",
+    "award": "",
+    "title": "2.4 GHz BB Phase Detector를 이용한 Fast Lock & Low Noise RF Phase Locked Loop(PLL)",
+    "image": "",
+    "conference": "IEIE 하계학술대회",
+    "reference":"<i>대한전자공학회 학술대회.</i>",      
+    "authors": ["S.-H. Gong", "D.-H. Heo", "and M.-S. Choo"],
+    "figure": ["sh-gong-profile-image.jpg", "dh-heo-profile-img.jpg", "minseong-chu-profile-img.png"],
+    "link": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12331653"
   },
   {
  
@@ -62,7 +146,7 @@
     "conference": "IEEE/IEIE ICEIC 2025",
     "reference":"in <i>2025 International Conference on Electronics, Information, and Communication (ICEIC)</i>, pp. 1-4, 2025. ",      
     "authors": ["S.-H. Ok", "D.-H. Heo", "J.-G. Lee", "S.-M. Jin", "K.-H. Lee", "D. Jeong", "and M.-S. Choo"],
-    "figure": ["sh-ok-profile-img.jpg", "dh-heo-profile-img.jpg", "jg-lee-profile-img.jpeg", "sm-jin-profile-img.png", "minseong-chu-profile-img.png"],
+    "figure": ["sh-ok-profile-img.jpg", "dh-heo-profile-img.jpg", "jg-lee-profile-img.jpeg", "sm-jin-profile-img.jpg", "minseong-chu-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/document/10879734"
   },
   {
@@ -87,7 +171,7 @@
     "conference": "IEEE/ISE ISOCC 2024",
     "reference":"in <i>2024 21st International SoC Design Conference (ISOCC)</i>, pp. 177-178, 2024.",   
     "authors": ["S.-U. Kang", "S.-M. Jin", "M.-G. Song", "D.-H. Lee", "W.-S. Jung", "and M.-S. Choo"],
-    "figure": ["su-kang-profile-img.jpg", "sm-jin-profile-img.png", "mg-song-profile-img.jpg", "dh-lee-profile-img.png", "minseong-chu-profile-img.png"],
+    "figure": ["su-kang-profile-img.jpg", "sm-jin-profile-img.jpg", "mg-song-profile-img.jpg", "dh-lee-profile-img.png", "minseong-chu-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/document/10762215"
   },
   {
@@ -112,7 +196,7 @@
     "conference": "2024 SOC 학술대회",
     "reference":"",   
     "authors": ["M.-G. Song", "J.-G. Lee", "S.-M. Jin", "and M.-S. Choo"],
-    "figure": ["mg-song-profile-img.jpg", "jg-lee-profile-img.jpeg", "sm-jin-profile-img.png", "minseong-chu-profile-img.png"],
+    "figure": ["mg-song-profile-img.jpg", "jg-lee-profile-img.jpeg", "sm-jin-profile-img.jpg", "minseong-chu-profile-img.png"],
     "link": "https://drive.google.com/file/d/1aC8FmySN5FQz4NIIZGNZot0416-Uqh-s/view"
   },
   {
@@ -124,7 +208,7 @@
     "conference": "IEEE/IEIE ICEIC 2024",
     "reference":"in <i>2024 International Conference on Electronics, Information, and Communication (ICEIC)</i>, pp. 1-2, 2024.",    
     "authors": ["S.-M. Jin", "S.-U. Kang", "and M.-S. Choo"],
-    "figure": ["sm-jin-profile-img.png", "su-kang-profile-img.jpg", "minseong-chu-profile-img.png"],
+    "figure": ["sm-jin-profile-img.jpg", "su-kang-profile-img.jpg", "minseong-chu-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/document/10457226"
   },
   {
@@ -197,7 +281,7 @@
     "conference": "2023 IEIE 하계학술대회",
     "reference":"in <i>대한전자공학회 학술대회</i>.", 
     "authors": ["T.-H. Kim", "J.-H. Lee", "D.-H. Heo", "S.-M. Jin", "and M.-S. Choo"],
-    "figure": ["dh-heo-profile-img.jpg", "sm-jin-profile-img.png", "minseong-chu-profile-img.png"],
+    "figure": ["dh-heo-profile-img.jpg", "sm-jin-profile-img.jpg", "minseong-chu-profile-img.png"],
     "link": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11521991"
   },
   {
