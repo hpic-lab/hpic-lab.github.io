@@ -103,6 +103,18 @@
       "figure": ["minseong-chu-profile-img.png"],
       "link": "https://ieeexplore.ieee.org/document/11272918"
     },    
+        {
+      "sub": "",      
+      "type": "2025",
+      "status": "JICAS",
+      "title": "Implementation and Characterization of a Digital Phase-Locked Loop (DPLL) in 65-nm CMOS Technology",
+      "image": "",
+      "journal": "JICAS",
+      "reference":"IDEC Journal of Integrated Circuits and Systems, 11(4), 52-57, 2025.",   
+      "authors": ["I.-H. Han", "M.-S. Choo"],
+      "figure": ["ih-han-profile-img.jpg", "minseong-chu-profile-img.png"],
+      "link": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003245290"
+    },    
     {
       "type": "2025",
       "status": "IEEE JSSC",
