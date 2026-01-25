@@ -53,6 +53,90 @@
     "link": "https://ieeexplore.ieee.org/document/11137667"
   },
   {
+    "type": "2025",
+    "status": "IEIE 하계학술대회",
+    "award": "",
+    "title": "64-way ADC-DSP 기반 수신 회로의 구현: SS-LMS의 학습률의 변화에 기반한 적응형 알고리즘",
+    "image": "",
+    "conference": "IEIE 하계학술대회",
+    "reference":"<i>대한전자공학회 학술대홰</i>",      
+    "authors": ["J.-G. Lee", "and M.-S. Choo"],
+    "figure": ["jg-lee-profile-img.jpeg", "minseong-chu-profile-img.png"],
+    "link": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12331495"
+  }, 
+  {
+    "type": "2025",
+    "status": "IEIE 하계학술대회",
+    "award": "",
+    "title": "아날로그 인메모리 컴퓨팅 연산 방식에 대한 분석",
+    "image": "",
+    "conference": "IEIE 하계학술대회",
+    "reference":"<i>대한전자공학회 학술대홰</i>",      
+    "authors": ["D.-H. Lee", "and M.-S. Choo"],
+    "figure": ["dh-lee-profile-img.png", "minseong-chu-profile-img.png"],
+    "link": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12331532"
+  }, 
+  {
+    "type": "2025",
+    "status": "IEIE 하계학술대회",
+    "award": "",
+    "title": "카운터 기반 비등간격 오버샘플링 PLL",
+    "image": "",
+    "conference": "IEIE 하계학술대회",
+    "reference":"<i>대한전자공학회 학술대홰</i>",      
+    "authors": ["J.-H. Pyeon", "and M.-S. Choo"],
+    "figure": ["jh-pyeon-profile-img.png", "minseong-chu-profile-img.png"],
+    "link": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12331661"
+  }, 
+  {
+    "type": "2025",
+    "status": "IEIE 하계학술대회",
+    "award": "",
+    "title": "50Gbaud 송신기를 위한 고속 시리얼라이저",
+    "image": "",
+    "conference": "IEIE 하계학술대회",
+    "reference":"<i>대한전자공학회 학술대홰</i>",      
+    "authors": ["D.-H. Kim", "and M.-S. Choo"],
+    "figure": ["dh-kim-profile-img.png", "minseong-chu-profile-img.png"],
+    "link": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12331789"
+  }, 
+  {
+    "type": "2025",
+    "status": "IEIE 하계학술대회",
+    "award": "",
+    "title": "저복잡도 구조를 갖는 알렉산더 위상 검출기 기반 위상 - 주파수 검출기 설계",
+    "image": "",
+    "conference": "IEIE 하계학술대회",
+    "reference":"<i>대한전자공학회 학술대홰</i>",      
+    "authors": ["D.-H. Lee", "and M.-S. Choo"],
+    "figure": ["img/dh_lee_bs_profile_image.jpg", "minseong-chu-profile-img.png"],
+    "link": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12331656"
+  },
+  {
+    "type": "2025",
+    "status": "IEIE 하계학술대회",
+    "award": "",
+    "title": "주입 잠금 발진기 기반 분주비 절감형 디지털 위상 잠금 회로",
+    "image": "",
+    "conference": "IEIE 하계학술대회",
+    "reference":"<i>대한전자공학회 학술대홰</i>",      
+    "authors": ["I.-H. Han", "and M.-S. Choo"],
+    "figure": ["ih-han-profile-img.jpg", "minseong-chu-profile-img.png"],
+    "link": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12331634"
+  },
+  {
+    "type": "2025",
+    "status": "IEIE 하계학술대회",
+    "award": "",
+    "title": "2.4 GHz BB Phase Detector를 이용한 Fast Lock & Low Noise RF Phase Locked Loop(PLL)",
+    "image": "",
+    "conference": "IEIE 하계학술대회",
+    "reference":"<i>대한전자공학회 학술대홰</i>",      
+    "authors": ["S.-H. Gong", "D.-H. Heo", "and M.-S. Choo"],
+    "figure": ["sh-gong-profile-img.jpg", "dh-heo-profile-img.jpg", "minseong-chu-profile-img.png"],
+    "link": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12331653"
+  },
+  {
  
     "type": "2025",
     "status": "IEEE/IEIE ICEIC",
