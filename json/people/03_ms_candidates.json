@@ -1,28 +1,5 @@
 [
   {
-    "name": "Sang-Hyun Ok",
-    "research_interests": ["CDR, PAM4 receiver"],
-    "tape_out_schedule": [
-      {
-        "date": "2024.06",
-        "process": "28-nm T"
-      },
-      {
-        "date": "2024.09",
-        "process": "40-nm T"
-      },
-      {
-        "date": "2025.02",
-        "process": "28-nm T"
-      }
-    ],
-    "achievements": ["ICEIC'25 Best Paper Award - Silver Prize, ASSCC'25"],
-    "details": "Received a B.S. degree in the school of electronics and communication engineering at Hanyang University, Ansan, South Korea. He is currently pursuing a Master's degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. He joined LX Semicon, Seoul, South Korea in 2016, where he was involved in the LCD DDI team. His research interests include digital and analog circuit design of Clock and Data Recovery (CDR) and digital circuit design of PAM4 Receiver with adaptive decision feedback equalizer.",
-    "email": "noradlll@hanyang.ac.kr",
-    "profile_img": "img/sh-ok-profile-img.jpg",
-    "position": ""
-  },
-  {
     "name": "Dong-Hyun Lee",
     "research_interests": ["AI hardware design and PIM"],
     "tape_out_schedule": [

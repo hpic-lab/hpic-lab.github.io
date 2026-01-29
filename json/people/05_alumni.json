@@ -1,86 +1,97 @@
 [
+    {
+    "name": "Sang-Hyun Ok",
+    "affiliation": "Hanyang Univ.",
+    "program": "M.S. (2024-25)",
+    "current": "LX Semicon"
+  },      
   {
     "name": "Dong-Hoe Heo",
-    "affiliation": "Hanyang University",
+    "affiliation": "Hanyang Univ.",
     "program": "M.S. (2023-25)",
-    "current": "ram-sCHIP"
+    "current": "ram-sCHIP",
+    "thesis_link": "http://www.dcollection.net/handler/hanyang/200000893313"
   },         
   {
     "name": "Kang-Min Kim",
-    "affiliation": "Hanyang University",
+    "affiliation": "Hanyang Univ.",
     "program": "M.S. (2023-24)",
-    "current": "SUGARS"
+    "current": "SUGARS",
+    "thesis_link": "http://www.dcollection.net/handler/hanyang/200000828674"
   },     
   {
     "name": "Kyu-Ran Park",
-    "affiliation": "Hanyang University",
+    "affiliation": "Hanyang Univ.",
     "program": "M.S. (2023-24)",
-    "current": "LX Semicon"
+    "current": "LX Semicon",
+    "thesis_link": "http://www.dcollection.net/handler/hanyang/200000842814"
   }, 
   {
     "name": "Shin-Uk Kang",
-    "affiliation": "Hanyang University",
+    "affiliation": "Hanyang Univ.",
     "program": "M.S. (2023-24)",
-    "current": "Ph.D. Candidate @ KAIST"
+    "current": "Ph.D. Candidate @ KAIST",
+    "thesis_link": "http://www.dcollection.net/handler/hanyang/200000844758"
   }, 
   {
     "name": "Ji-Ho Kim",
-    "affiliation": "Hanyang University",
+    "affiliation": "Hanyang Univ.",
     "program": "M.S. (2022-24)",
-    "current": "4Lynx"
+    "current": "4Lynx",
+    "thesis_link": "http://www.dcollection.net/handler/hanyang/200000845212"
   },         
   {
     "name": "Woo-Suk Jung",
-    "affiliation": "Hanyang University",
-    "program": "Bachelor (2024)",
-    "current": "M.S. Candidate @ Yonsei University"
+    "affiliation": "Hanyang Univ.",
+    "program": "B.S. (2024)",
+    "current": "M.S. Candidate @ Yonsei Univ."
   },  
   {
     "name": "Min-Gwon Song",
-    "affiliation": "Hanyang University",
-    "program": "Bachelor (2023-24)",
-    "current": "M.S. Candidate @ Hanyang University"
+    "affiliation": "Hanyang Univ.",
+    "program": "B.S. (2023-24)",
+    "current": "M.S. Candidate @ Hanyang Univ."
   },    
   {
     "name": "Ji-Hyeon Kwon",
-    "affiliation": "Hanyang University",
-    "program": "Bachelor (2023-24)",
+    "affiliation": "Hanyang Univ.",
+    "program": "B.S. (2023-24)",
     "current": "GaonChips"
   },            
   {
     "name": "Yu-Jin Byeon",
-    "affiliation": "Hanyang University",
-    "program": "Bachelor (2023-24)",
+    "affiliation": "Hanyang Univ.",
+    "program": "B.S. (2023-24)",
     "current": "M.S. Candidate @ KAIST"
   },       
   {
     "name": "Dong-Eun Lee",
-    "affiliation": "Hanyang University",
-    "program": "Bachelor (2023-24)",
+    "affiliation": "Hanyang Univ.",
+    "program": "B.S. (2023-24)",
     "current": "SK-hynix"
   },  
   {
     "name": "Seung-Wan Han",
-    "affiliation": "Hanyang University",
-    "program": "Bachelor (2022-23)",
+    "affiliation": "Hanyang Univ.",
+    "program": "B.S. (2022-23)",
     "current": "ASML"
   },  
   {
     "name": "Tae-Hyun Kim",
-    "affiliation": "Hanyang University",
-    "program": "Bachelor (2022-23)",
+    "affiliation": "Hanyang Univ.",
+    "program": "B.S. (2022-23)",
     "current": "M.S.-Ph.D. Candidate @ POSTECH"
   },
   {
     "name": "Geun-Young Yoo",
-    "affiliation": "Hanyang University",
-    "program": "Bachelor (2022-23)",
-    "current": "M.S.-Ph.D. Candidate @ Hanyang University"
+    "affiliation": "Hanyang Univ.",
+    "program": "B.S. (2022-23)",
+    "current": "M.S.-Ph.D. Candidate @ Hanyang Univ."
   },    
   {
     "name": "In-Woo Jang",
-    "affiliation": "Hanyang University",
-    "program": "Bachelor (2022-23)",
+    "affiliation": "Hanyang Univ.",
+    "program": "B.S. (2022-23)",
     "current": "M.S.-Ph.D. Candidate @ KAIST"
   }
 ]

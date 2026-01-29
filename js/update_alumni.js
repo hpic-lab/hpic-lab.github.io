@@ -8,12 +8,16 @@ document.addEventListener('DOMContentLoaded', () => {
             let htmlContent = '';
 
             data.forEach(person => {
+                const thesisHtml = person.thesis_link 
+                    ? `<a href="${person.thesis_link}" target="_blank" style="color: #007bff; text-decoration: none;">[Link]</a>` 
+                    : '-';
                 htmlContent += `
                     <tr>
                         <td><strong>${person.name}</strong></td>
                         <td>${person.affiliation || 'N/A'}</td>
                         <td>${person.program || '-'}</td>
                         <td>${person.current || person.details || ''}</td>
+                        <td>${thesisHtml}</td> </tr>                        
                     </tr>
                 `;
             });
