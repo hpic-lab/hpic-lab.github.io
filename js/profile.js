@@ -130,7 +130,7 @@ $(document).ready(function () {
   });
 
   // 5. 모달 내용 채워넣는 함수
-  function updateModalContent(name, profile_img, details, email, position, research_interests, tape_out_schedule, achievements, affilication, program_period, links) {
+  function updateModalContent(name, profile_img, details, email, position, research_interests, tape_out_schedule, achievements, affiliation, program_period, links) {
     $("#modal-name").text(name);
     $("#modal-profile-img").attr("src", profile_img);
     $("#modal-details").text(details);
@@ -171,12 +171,11 @@ $(document).ready(function () {
       $("#modal-achievements").text("");
       $("#modal-achievements-title").hide();
     }
-  }
 
     if (affiliation) {
-        $("#modal-affiliation").text(affiliation);
-        $("#modal-affiliation-title").show();
-        $("#modal-affiliation").show();
+      $("#modal-affiliation").text(affiliation);
+      $("#modal-affiliation-title").show();
+      $("#modal-affiliation").show();
     } else {
         $("#modal-affiliation-title").hide();
         $("#modal-affiliation").hide();
@@ -190,6 +189,7 @@ $(document).ready(function () {
         $("#modal-program_period-title").hide();
         $("#modal-program_period").hide();
     }
+  }
 
   function parseData(data) {
     if (Array.isArray(data)) return data;
