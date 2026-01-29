@@ -1,6 +1,8 @@
 [
     {
     "name": "Sang-Hyun Ok",
+    "affiliation":"LX Semicon",
+    "program_period":"M.S. (2024-2025)",
     "research_interests": ["CDR, PAM4 receiver"],
     "tape_out_schedule": [
       {

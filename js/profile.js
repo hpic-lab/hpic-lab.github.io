@@ -123,6 +123,8 @@ $(document).ready(function () {
       person.research_interests,
       person.tape_out_schedule,
       person.achievements,
+      person.affiliation,
+      person.program_period,
       links
     );
   });
