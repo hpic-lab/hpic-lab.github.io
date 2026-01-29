@@ -130,12 +130,15 @@ $(document).ready(function () {
   });
 
   // 5. 모달 내용 채워넣는 함수
-  function updateModalContent(name, profile_img, details, email, position, research_interests, tape_out_schedule, achievements, links) {
+  function updateModalContent(name, profile_img, details, email, position, research_interests, tape_out_schedule, achievements, affilication, program_period, links) {
     $("#modal-name").text(name);
     $("#modal-profile-img").attr("src", profile_img);
     $("#modal-details").text(details);
     $("#modal-email").text(email);
     $("#modal-position").html(position);
+    $("#modal-affilication").html(affilication);
+    $("#modal-program_period").html(program_period);
+
 
     $("#modal-network-icons").remove(); 
     const iconsHTML = createNetworkIcons(links);
