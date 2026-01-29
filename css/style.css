@@ -462,16 +462,21 @@ h6 {
 /* [Publications] 네비게이션 바 설정 */
 /* ========================================= */
 
-/* PC 화면에서만 작동하도록 설정 */
 @media (min-width: 992px) {
+  
+  #publications, 
+  #publications .container, 
+  #publications .row {
+    overflow: visible !important;
+  }
+
   .sticky-sidebar {
-    position: -webkit-sticky;
+    position: -webkit-sticky; /* 사파리 호환 */
     position: sticky;
     
-    /* 화면 맨 위에서 얼마나 띄울지 결정 (상단 네비게이션 바 높이 고려) */
-    top: 100px; 
-    
-    align-self: flex-start;
+    top: 100px;   /* 상단에서 띄울 간격 */
+    height: auto; /* 높이 자동 */
+    z-index: 10;  /* 다른 요소보다 위에 보이게 */
   }
 }
 
