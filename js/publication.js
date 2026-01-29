@@ -59,7 +59,6 @@ $(document).ready(function () {
           if (pub.progress) badgesHTML += `<span class="badge bg-secondary">${pub.progress}</span>| `;
           if (badgesHTML.endsWith("| ")) badgesHTML = badgesHTML.slice(0, -2);
 
-          // ▼▼▼ [수정] 사진에 모달 연결 열쇠(Key) 심기 ▼▼▼
           const figures = pub.figure ? pub.figure.map(img => {
                const imgKey = getFileName(img);
                // 사진 파일명을 data-img-key로 넣어줍니다. (people.js가 이걸 보고 정보를 찾습니다)
@@ -72,7 +71,6 @@ $(document).ready(function () {
                             data-img-key="${imgKey}"
                        >`;
           }).join("") : "";
-          // ▲▲▲ 수정 끝 ▲▲▲
 
           // 레퍼런스
           let titleHTML = "";      

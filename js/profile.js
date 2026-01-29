@@ -193,7 +193,8 @@ $(document).ready(function () {
   loadProfiles("json/people/00_principal_investigator.json", ".principal-investigator", true);
   loadProfiles("json/people/02_ms_phd_candidates.json", ".ms-phd-candidates", false);
   loadProfiles("json/people/03_ms_candidates.json", ".ms-candidates", false);
-  loadProfiles("json/people/03_ms_candidates_2503.json", ".ms-candidates-2503", false);
   loadProfiles("json/people/04_researchers.json", ".researchers", false);
   loadProfiles("json/people/05_undergraduate_researchers.json", ".undergraduate-researchers", false);
+  loadProfiles("json/people/06_alumni_info.json", ".alumni_info", false);
+
 });
