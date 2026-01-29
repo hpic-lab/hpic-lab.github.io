@@ -209,7 +209,7 @@ $(document).ready(function () {
     }
   }
 
- function loadDataOnly(url) {
+  function loadDataOnly(url) {
     return $.getJSON(url).done(function (people) {
       people.forEach((person) => {
         let key = getFileName(person.profile_img);
