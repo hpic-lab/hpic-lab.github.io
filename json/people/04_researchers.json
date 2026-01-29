@@ -4,7 +4,7 @@
     "research_interests": ["Referenceless CDR"],
     "tape_out_schedule": [],
     "achievements": ["2024 SCCUD 포스터 발표 최우수상"],
-    "details": "Pursuing a Bachelor's degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include analog and digital circuit designs of clock and data recovery (CDR).",
+    "details": "Received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include analog and digital circuit designs of clock and data recovery (CDR).",
     "email": "zkoms2134@hanyang.ac.kr",
     "profile_img": "img/dh_lee_bs_profile_image.jpg",
     "position": ""
@@ -12,7 +12,7 @@
   {
     "name": "Suk-Min Yoon",
     "research_interests": ["PiM"],
-    "details": "Pursuing a Bachelor's degree in the school of electrical engineering at Yeungnam University, Gyeongsan, South Korea. His research interests include analog and digital circuit designs of Processing In Memory(PIM).",
+    "details": "Received a B.S. degree in electrical engineering from Yeungnam University, Gyeongsan, South Korea. His research interests include analog and digital circuit designs of Processing In Memory(PIM).",
     "achievements": [],
     "email": "ysm000917@naver.com",
     "profile_img": "img/sm_yoon_profile_image.jpg",
@@ -25,6 +25,15 @@
     "details": "Pursuing a Bachelor's degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include analog and digital circuit designs of processing in memory (PiM).",
     "email": "ilovec215@gmail.com",
     "profile_img": "img/hg-yoo-profile-img.jpg",
+    "position": ""
+  },
+  {
+    "name": "Ju-Yong Lee",
+    "research_interests": ["Wireline Interface"],
+    "achievements": [],
+    "details": "Received a B.S. degree in electrical engineering from Gachon University, Sungnam, South Korea. His research interests include Wireline Interface.",
+    "email": "dhxvdu@naver.com",
+    "profile_img": "img/jy-lee-profile-img.jpg",
     "position": ""
   }
 ]
