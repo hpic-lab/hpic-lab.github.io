@@ -215,6 +215,6 @@ $(document).ready(function () {
   loadProfiles("json/people/03_ms_candidates.json", ".ms-candidates", false);
   loadProfiles("json/people/03_ms_candidates_2503.json", ".ms-candidates-2503", false);
   loadProfiles("json/people/04_researchers.json", ".researchers", false);
-//  loadProfiles("json/people/05_undergraduate_researchers.json", ".undergraduate-researchers", false);
-// 학부연구생 생기면 위 코드 주석 지우기
+  loadProfiles("json/people/05_undergraduate_researchers.json", ".undergraduate-researchers", false);
+// 박사과정, 학부연구생 생기면 index.html에서 M.S.-Ph.D. Candidates, Undergraduate Researchers 부분 주석 지우기
 });
