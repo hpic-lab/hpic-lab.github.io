@@ -1,10 +1,45 @@
 [
-
+  {
+    "name": "Dong-Hoe Heo",
+    "affiliation": "Hanyang University",
+    "program": "M.S. (2023-25)",
+    "current": "ram-sCHIP"
+  },         
+  {
+    "name": "Kang-Min Kim",
+    "affiliation": "Hanyang University",
+    "program": "M.S. (2023-24)",
+    "current": "SUGARS"
+  },     
+  {
+    "name": "Kyu-Ran Park",
+    "affiliation": "Hanyang University",
+    "program": "M.S. (2023-24)",
+    "current": "LX Semicon"
+  }, 
+  {
+    "name": "Shin-Uk Kang",
+    "affiliation": "Hanyang University",
+    "program": "M.S. (2023-24)",
+    "current": "Ph.D. Candidate @ KAIST"
+  }, 
+  {
+    "name": "Ji-Ho Kim",
+    "affiliation": "Hanyang University",
+    "program": "M.S. (2022-24)",
+    "current": "4Lynx"
+  },         
+  {
+    "name": "Woo-Suk Jung",
+    "affiliation": "Hanyang University",
+    "program": "Bachelor (2024)",
+    "current": "M.S. Candidate @ Yonsei University"
+  },  
   {
     "name": "Min-Gwon Song",
     "affiliation": "Hanyang University",
     "program": "Bachelor (2023-24)",
-    "current": "M.S.-Ph.D. Candidate @ Hanyang University"
+    "current": "M.S. Candidate @ Hanyang University"
   },    
   {
     "name": "Ji-Hyeon Kwon",
@@ -23,12 +58,6 @@
     "affiliation": "Hanyang University",
     "program": "Bachelor (2023-24)",
     "current": "SK-hynix"
-  },  
-  {
-    "name": "Woo-Suk Jung",
-    "affiliation": "Hanyang University",
-    "program": "Bachelor (2024)",
-    "current": "M.S. Candidate @ Yonsei University"
   },  
   {
     "name": "Seung-Wan Han",
