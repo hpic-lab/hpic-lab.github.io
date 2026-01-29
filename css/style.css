@@ -332,7 +332,7 @@ h6 {
 /*Publications CSS for each year 25.12.08 D.H Lee (Start)*/
 
 /* ========================================= */
-/* [최종_v7] Publications 스타일 */
+/* Publications 스타일 */
 /* ========================================= */
 
 /* 1. 논문 제목 링크 (파란색 + 클릭 가능 표시) */
@@ -458,19 +458,23 @@ h6 {
   color: white;
 }
 
-/* =================================================== */
-/*Publications CSS for each year 25.12.08 D.H Lee (END)*/
-/* =================================================== */
+/* ========================================= */
+/* [Publications] 네비게이션 바 설정 */
+/* ========================================= */
 
-/* prev. patent css
-#patent .card-text {
-  margin-bottom: 4px;
+/* PC 화면에서만 작동하도록 설정 */
+@media (min-width: 992px) {
+  .sticky-sidebar {
+    position: -webkit-sticky;
+    position: sticky;
+    
+    /* 화면 맨 위에서 얼마나 띄울지 결정 (상단 네비게이션 바 높이 고려) */
+    top: 100px; 
+    
+    align-self: flex-start;
+  }
 }
 
-#patent .process-badge {
-  background-color: var(--application-completed);
-}
-*/
 /* 칩 갤러리 상세 페이지 카드 디자인 */
 .chip-detail-card img {
   height: 100%;
