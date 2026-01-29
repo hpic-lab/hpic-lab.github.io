@@ -209,6 +209,19 @@ $(document).ready(function () {
     }
   }
 
+  function loadDataOnly(url) {
+    return $.getJSON(url).done(function (people) {
+      people.forEach((person) => {
+        // HTML 생성 과정(createProfileHTML, append)을 생략합니다!
+        // 오직 DB 등록만 수행합니다. (매우 빠름)
+        const imgKey = getFileName(person.profile_img);
+        if (imgKey) {
+            window.peopleDB[imgKey] = person;
+        }
+      });
+    });
+  }
+
   // 실행
 $.when(
     loadProfiles("json/people/00_principal_investigator.json", ".principal-investigator", true),
@@ -217,13 +230,10 @@ $.when(
     loadProfiles("json/people/04_researchers.json", ".researchers", false),
     loadProfiles("json/people/05_undergraduate_researchers.json", ".undergraduate-researchers", false),
     
-    // ▼▼▼ [핵심] 졸업생 정보를 불러오되, '투명 주머니'에 넣어서 숨깁니다! ▼▼▼
-    loadProfiles("json/people/06_alumni_info.json", ".alumni-db-loader", false) 
+    loadDataOnly("json/people/06_alumni_info.json") 
     
-).done(function() {
-    // 2. DB 등록이 다 끝난 뒤에, Alumni 표를 그립니다.
-    // (이제 loadAlumni 함수가 peopleDB에서 졸업생 정보를 찾을 수 있습니다!)
-    loadAlumni("json/people/06_alumni_info.json", "#alumni-list-container");
-});
+  ).done(function() {
+      loadAlumni("json/people/06_alumni_info.json", "#alumni-list-container");
+  });
 
 });
