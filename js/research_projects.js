@@ -60,6 +60,7 @@ $(document).ready(function () {
         date: "Mar. 2022 - Dec. 2025",
         title: "AI Hardware Center (인공지능 반도체 융합연구센터)",
         sponsor: "National Research Foundation (NRF) of Korea",
+        status: "Completed",        
       },
       {
         date: "Sep. 2022 - Feb. 2024",
