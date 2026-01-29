@@ -9,6 +9,15 @@
     "profile_img": "img/dh_lee_bs_profile_image.jpg",
     "position": ""
   },
+  {
+    "name": "Suk-Min Yoon",
+    "research_interests": ["PiM"],
+    "details": "Pursuing a Bachelor's degree in the school of electrical engineering at Yeungnam University, Gyeongsan, South Korea. His research interests include analog and digital circuit designs of Processing In Memory(PIM).",
+    "achievements": [],
+    "email": "ysm000917@naver.com",
+    "profile_img": "img/sm_yoon_profile_image.jpg",
+    "position": ""
+  },
     {
     "name": "Han-Gil Yoo",
     "research_interests": ["PiM"],
