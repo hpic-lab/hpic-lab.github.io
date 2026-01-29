@@ -1,21 +1,4 @@
 [
-  {
-    "name": "Do-Hyeong Lee",
-    "research_interests": ["Referenceless CDR"],
-    "tape_out_schedule": [],
-    "achievements": ["2024 SCCUD 포스터 발표 최우수상"],
-    "details": "Pursuing a Bachelor's degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include analog and digital circuit designs of clock and data recovery (CDR).",
-    "email": "zkoms2134@hanyang.ac.kr",
-    "profile_img": "img/dh_lee_bs_profile_image.jpg",
-    "position": ""
-  },
-    {
-    "name": "Han-Gil Yoo",
-    "research_interests": ["PiM"],
-    "achievements": [],
-    "details": "Pursuing a Bachelor's degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include analog and digital circuit designs of processing in memory (PiM).",
-    "email": "ilovec215@gmail.com",
-    "profile_img": "img/hg-yoo-profile-img.jpg",
-    "position": ""
-  }
+  
 ]
+
