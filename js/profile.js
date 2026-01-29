@@ -210,11 +210,20 @@ $(document).ready(function () {
   }
 
   // 실행
-  loadProfiles("json/people/00_principal_investigator.json", ".principal-investigator", true);
-  loadProfiles("json/people/02_ms_phd_candidates.json", ".ms-phd-candidates", false);
-  loadProfiles("json/people/03_ms_candidates.json", ".ms-candidates", false);
-  loadProfiles("json/people/04_researchers.json", ".researchers", false);
-  loadProfiles("json/people/05_undergraduate_researchers.json", ".undergraduate-researchers", false);
-  loadProfiles("json/people/06_alumni_info.json", ".alumni_info", false);
+$.when(
+    loadProfiles("json/people/00_principal_investigator.json", ".principal-investigator", true),
+    loadProfiles("json/people/02_ms_phd_candidates.json", ".ms-phd-candidates", false),
+    loadProfiles("json/people/03_ms_candidates.json", ".ms-candidates", false),
+    loadProfiles("json/people/04_researchers.json", ".researchers", false),
+    loadProfiles("json/people/05_undergraduate_researchers.json", ".undergraduate-researchers", false),
+    
+    // ▼▼▼ [핵심] 졸업생 정보를 불러오되, '투명 주머니'에 넣어서 숨깁니다! ▼▼▼
+    loadProfiles("json/people/06_alumni_info.json", ".alumni-db-loader", false) 
+    
+).done(function() {
+    // 2. DB 등록이 다 끝난 뒤에, Alumni 표를 그립니다.
+    // (이제 loadAlumni 함수가 peopleDB에서 졸업생 정보를 찾을 수 있습니다!)
+    loadAlumni("json/people/06_alumni_info.json", "#alumni-list-container");
+});
 
 });
