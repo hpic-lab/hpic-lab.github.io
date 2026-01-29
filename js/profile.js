@@ -73,19 +73,17 @@ $(document).ready(function () {
     `;
   }
 
-  // 4. 모달(팝업) 이벤트 핸들러 (업그레이드됨!)
+  // 4. 모달(팝업) 이벤트 핸들러 (수정됨: 정보 없으면 열지 않음)
   $("#exampleModal").on("show.bs.modal", function (event) {
     const button = $(event.relatedTarget); // 클릭한 사진
-
-    // 1) 클릭한 사진에서 '키(파일명)'를 확인
-    const imgKey = button.data("img-key");
+    const imgKey = button.data("img-key"); // 키 확인
     
-    // 2) DB에서 정보 찾기 (Publication에서 클릭했어도 여기서 찾아집니다)
+    // 1. DB에서 정보 찾기
     let person = window.peopleDB[imgKey];
 
-    // 3) 만약 DB에 없으면(예: 외부인), 기존 방식(data- 속성)으로 시도하거나 중단
+    // 2. DB에 정보가 없으면?
     if (!person) {
-        // 기존 방식 호환성 유지 (People 탭 로딩 전 클릭 등 대비)
+        // 혹시 기존 방식(data-name 등)으로 정보가 들어있는지 확인
         if (button.data("name")) {
              person = {
                 name: button.data("name"),
@@ -102,7 +100,8 @@ $(document).ready(function () {
                 orcid: button.data("orcid")
              };
         } else {
-            // 정보가 아예 없으면 모달을 띄우지 않음 (또는 빈 모달 방지)
+            // ▼▼▼ [핵심 수정] 정보가 아예 없으면 모달 열기를 취소합니다! ▼▼▼
+            event.preventDefault(); 
             return; 
         }
     }
