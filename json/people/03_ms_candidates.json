@@ -1,24 +1,5 @@
 [
   {
-    "name": "Dong-Hyun Lee",
-    "research_interests": ["AI hardware design and PIM"],
-    "tape_out_schedule": [
-      {
-        "date": "2024.05",
-        "process": "65-nm T"
-      },
-      {
-        "date": "2024.11",
-        "process": "65-nm T"
-      }
-    ],
-    "achievements": ["ISOCC'24, 제 26회 대한민국 반도체설계대전 기업특별상 수상"],
-    "details": "Received a B.S. degree in the school of Electrical and Electronic Engineering at Dankook University, jukjeon, South Korea. He is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include artificial intelligence hardware design and processing in memory (PIM).",
-    "email": "dhlee1415@hanyang.ac.kr",
-    "profile_img": "img/dh-lee-profile-img.png",
-    "position": ""
-  },
-  {
     "name": "Jae-Hyeon Pyeon",
     "research_interests": ["High-performance DPLL"],
     "tape_out_schedule": [
