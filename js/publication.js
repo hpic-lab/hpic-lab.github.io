@@ -1,4 +1,3 @@
-/* Edit 25.12.08 D.H Lee Classify Publications by year */
 
 $(document).ready(function () {
   
