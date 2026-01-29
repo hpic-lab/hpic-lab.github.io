@@ -70,7 +70,7 @@
     "achievements": [""],
     "details": "",
     "email": "",
-    "profile_img": "ws-jung-profile-img.png"
+    "profile_img": "img/ws-jung-profile-img.png"
   },
     {
     "name": "Min-Gwon Song",
@@ -80,7 +80,7 @@
     "achievements": [""],
     "details": "",
     "email": "",
-    "profile_img": "mg-song-profile-img.jpg"
+    "profile_img": "img/mg-song-profile-img.jpg"
   },
     {
     "name": "Ji-Hyeon Kwon",
@@ -90,7 +90,7 @@
     "achievements": [""],
     "details": "",
     "email": "",
-    "profile_img": "jh-kwon-profile-img.png"
+    "profile_img": "img/jh-kwon-profile-img.png"
   },
     {
     "name": "Yu-Jin Byeon",
@@ -100,7 +100,7 @@
     "achievements": [""],
     "details": "",
     "email": "",
-    "profile_img": "yj-byeon-profile-img.png"
+    "profile_img": "img/yj-byeon-profile-img.png"
   },
     {
     "name": "Dong-Eun Lee",
@@ -110,7 +110,7 @@
     "achievements": [""],
     "details": "",
     "email": "",
-    "profile_img": "de-lee-profile-img.png"
+    "profile_img": "img/de-lee-profile-img.png"
   },
     {
     "name": "Seung-Wan Han",
