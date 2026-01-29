@@ -31,7 +31,7 @@
         "Mingoo Seok", 
         "Min-Seong Choo."
       ],
-      "figure": [ "su-kang-profile-img.jpg", "dh-lee-profile-img.png","mg-song-profile-img.jpg", "minseong-chu-profile-img.png"],
+      "figure": [ "su-kang-profile-img.jpg", "dh-lee-profile-img.png","mg-song-profile-img.jpg", "ms-choo-profile-img.png"],
       "link": ""
     },
     {
@@ -46,7 +46,7 @@
         "Jae-Hyeon Pyeon...", 
         "Min-Seong Choo."
       ],
-      "figure": [ "jh-pyeon-profile-img.png", "ih-han-profile-img.jpg", "minseong-chu-profile-img.png"],
+      "figure": [ "jh-pyeon-profile-img.png", "ih-han-profile-img.jpg", "ms-choo-profile-img.png"],
       "link": ""
     },
     {
@@ -61,7 +61,7 @@
         "Sang-Hyun Ok...", 
         "Min-Seong Choo."
       ],
-      "figure": [ "sh-ok-profile-img.jpg", "jg-lee-profile-img.jpeg", "minseong-chu-profile-img.png"],
+      "figure": [ "sh-ok-profile-img.jpg", "jg-lee-profile-img.jpeg", "ms-choo-profile-img.png"],
       "link": ""
     },
     {
@@ -76,7 +76,7 @@
         "Dong-Ho Kim, Seung-Mo Jin...", 
         "Min-Seong Choo."
       ],
-      "figure": ["sm-jin-profile-img.jpg", "dh-kim-profile-image.jpg", "minseong-chu-profile-img.png"],
+      "figure": ["sm-jin-profile-img.jpg", "dh-kim-profile-image.jpg", "ms-choo-profile-img.png"],
       "link": ""
     },
     { 
@@ -88,7 +88,7 @@
       "journal": "IEEE TVLSI",
       "reference":"<i>IEEE Transactions on Very Large Scale Integration (VLSI) Systems</i>, vol. 34, no. 2, pp. 711-715, Feb. 2026.",      
       "authors": ["J. Kim", "Y.-W. Kim", "S. Lee", "Y. Jung", "M.-S. Choo", "and K. Park"],
-      "figure": ["minseong-chu-profile-img.png"],
+      "figure": ["ms-choo-profile-img.png"],
       "link": "https://ieeexplore.ieee.org/document/11289554"
     }, 
     {
@@ -100,7 +100,7 @@
       "journal": "IEEE MWTL",
       "reference":"<i>IEEE Microwave and Wireless Technology Letters</i> (Early Access).",   
       "authors": ["W.-J. Chang", "J. Kwon", "G. Kim", "I. Jeon", "J. Shin", "S. J. Kim", "H.-D. Gwon", "M.-S. Choo", "and T. H. Jang"],
-      "figure": ["minseong-chu-profile-img.png"],
+      "figure": ["ms-choo-profile-img.png"],
       "link": "https://ieeexplore.ieee.org/document/11272918"
     },    
         {
@@ -112,7 +112,7 @@
       "journal": "JICAS",
       "reference":"IDEC Journal of Integrated Circuits and Systems (JICAS), 11(4), 52-57, 2025.",   
       "authors": ["I.-H. Han and M.-S. Choo"],
-      "figure": ["ih-han-profile-img.jpg", "minseong-chu-profile-img.png"],
+      "figure": ["ih-han-profile-img.jpg", "ms-choo-profile-img.png"],
       "link": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003245290"
     },    
     {
@@ -123,7 +123,7 @@
       "journal": "IEEE JSSC",
       "reference":"<i>IEEE Journal of Solid-State Circuits</i>, vol. 60, no. 10, pp. 3602-3612, Oct. 2025.",
       "authors": ["H.-S. Choi", "J.-G. Lee", "S.-H. Gong", "K.-H. Lee", "D. Koh", "J.-W. Sull", "H. Do", "C.-H. Kye", "D.-K. Jeong", "K. Park", "and M.-S. Choo"],
-      "figure": ["jg-lee-profile-img.jpeg", "sh-gong-profile-image.jpg", "minseong-chu-profile-img.png"],
+      "figure": ["jg-lee-profile-img.jpeg", "sh-gong-profile-image.jpg", "ms-choo-profile-img.png"],
       "link": "https://ieeexplore.ieee.org/document/11029275"
     },
     {
@@ -134,7 +134,7 @@
       "journal": "IEEE TVLSI",
       "reference":"<i>IEEE Transactions on Very Large Scale Integration (VLSI) Systems</i>, vol. 33, no. 8, pp. 2349-2353, Aug. 2025.",      
       "authors": ["K. Baek", "J. Kim", "K. Kim", "D.-K. Jeong", "and M.-S. Choo"],
-      "figure": ["jh-kim-profile-img.png", "minseong-chu-profile-img.png"],
+      "figure": ["jh-kim-profile-img.png", "ms-choo-profile-img.png"],
       "link": "https://ieeexplore.ieee.org/document/11017684"
     },
     {
@@ -146,7 +146,7 @@
       "journal": "IEEE TCAS-II",
       "reference":"<i>IEEE Transactions on Circuits and Systems II: Express Briefs</i>, vol. 71, no. 11, pp. 4613-4617, Nov. 2024.",      
       "authors": ["J. Choi","S. Na", "H. Kim", "H. Roh", "Y. Cho", "M. Choi", "M.-S. Choo", "and J. Roh"],
-      "figure": ["minseong-chu-profile-img.png"],
+      "figure": ["ms-choo-profile-img.png"],
       "link": "https://ieeexplore.ieee.org/abstract/document/10614194"
     },
     {
@@ -158,7 +158,7 @@
       "journal": "IEEE TCAS-I",
       "reference":"<i>IEEE Transactions on Circuits and Systems I: Regular Papers</i>, vol. 71, no. 11, pp. 4973-4984, Nov. 2024.",      
       "authors": ["C.-H. Kye", "Y.-J. Byeon", "K. Choo", "and M.-S. Choo"],
-      "figure": ["yj-byeon-profile-img.png","minseong-chu-profile-img.png"],
+      "figure": ["yj-byeon-profile-img.png","ms-choo-profile-img.png"],
       "link": "https://ieeexplore.ieee.org/document/10586762"
     },
     {
@@ -170,7 +170,7 @@
       "journal": "IEEE TCAS-II",
       "reference":"<i>IEEE Transactions on Circuits and Systems II: Express Briefs</i>, vol. 71, no. 9, pp. 4091-4095, Sept. 2024.",      
       "authors": ["G. Park", "S. Yeom", "I.-W. Jang", "D. Lee", "J. Han", "and M.-S. Choo"],
-      "figure": ["minseong-chu-profile-img.png"],
+      "figure": ["ms-choo-profile-img.png"],
       "link": "https://ieeexplore.ieee.org/document/10507171"
     },
     {
@@ -182,7 +182,7 @@
       "journal": "JSTS",
       "reference":"<i>Journal of Semiconductor Technology and Science</i>, 24(3), 284-288, 2024.",       
       "authors": ["C.-H. Kye", "J. Kim", "D.-K. Jeong", "and M.-S. Choo"],
-      "figure": ["minseong-chu-profile-img.png"],
+      "figure": ["ms-choo-profile-img.png"],
       "link": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11825975"
     },
     {
@@ -194,7 +194,7 @@
       "journal": "IEEE ACCESS",
       "reference":"<i>IEEE Access</i>, vol. 11, pp. 7530-7539, 2023.",   
       "authors": ["D. Lee", "G. Park", "J. Han", "and M.-S. Choo"],
-      "figure": ["minseong-chu-profile-img.png"],
+      "figure": ["ms-choo-profile-img.png"],
       "link": "https://ieeexplore.ieee.org/abstract/document/10002363/"
     },  
   {
@@ -206,7 +206,7 @@
     "journal": "IEEE Journal of Solid-State Circuits (JSSC)",
     "reference":"<i>IEEE Journal of Solid-State Circuits</i>, vol. 56, no. 8, pp. 2525-2538, Aug. 2021.",     
     "authors": ["M.-S. Choo", "S. Kim", "H.-G. Ko", "S.-Y. Cho", "K. Park", "J. Lee", "S. Shin", "H. Chi", "and D.-K. Jeong"],
-    "figure": ["minseong-chu-profile-img.png"],
+    "figure": ["ms-choo-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/document/9386211"
   },
   {
@@ -218,7 +218,7 @@
     "journal": "IEEE Journal of Solid-State Circuits (JSSC)",
     "reference":"<i>IEEE Journal of Solid-State Circuits</i>, vol. 56, no. 5, pp. 1597-1607, May. 2021.",     
     "authors": ["K. Park", "K. Lee", "S.-Y. Cho", "J. Lee", "J. Hwang", "M.-S. Choo", "and D.-K. Jeong"],
-    "figure": ["minseong-chu-profile-img.png"],
+    "figure": ["ms-choo-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/abstract/document/9239394"
   },
   {
@@ -230,7 +230,7 @@
     "journal": "Journal of Semiconductor Engineering (JSE)",
     "reference":"<i>Journal of semiconductor engineering</i>, vol. 1, no. 1, pp. 1–12, Jun. 2020.",  
     "authors": ["M.-S. Choo", "and D.-K. Jeong"],
-    "figure": ["minseong-chu-profile-img.png"],
+    "figure": ["ms-choo-profile-img.png"],
     "link": "https://koreascience.kr/article/JAKO202021262090393.page"
   },
   {
@@ -242,7 +242,7 @@
     "journal": "IEEE Transactions on Circuits and Systems-II: Express Briefs (TCAS-II)",
     "reference":"<i>IEEE Transactions on Circuits and Systems II: Express Briefs</i>, vol. 66, no. 12, pp. 1932-1936, Dec. 2019.",   
     "authors": ["M.-S. Choo", "Y. Song", "S.-Y. Cho", "H.-G. Ko", "K. Park", "and D.-K. Jeong"],
-    "figure": ["minseong-chu-profile-img.png"],
+    "figure": ["ms-choo-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/document/8883248"
   },
   {
@@ -254,7 +254,7 @@
     "journal": "IEEE Solid-State Circuits Letters (SSC-L)",
     "reference":"<i>IEEE Solid-State Circuits Letters</i>, vol. 2, no. 11, pp. 244-247, Nov. 2019.",    
     "authors": ["M. Choi", "C.-H. Kye", "J. Oh", "M.-S. Choo", "and D.-K. Jeong"],
-    "figure": ["minseong-chu-profile-img.png"],
+    "figure": ["ms-choo-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/abstract/document/8771119"
   },
   {
@@ -266,7 +266,7 @@
     "journal": "IEEE Asian Solid-State Circuits Conference (A-SSCC) invited to JSSC",
     "reference":"<i>IEEE Journal of Solid-State Circuits</i>, vol. 54, no. 10, pp. 2812-2822, Oct. 2019.",   
     "authors": ["M.-S. Choo","K. Park", "H.-G. Ko", "S.-Y. Cho", "K. Lee", "and D.-K. Jeong"],
-    "figure": ["minseong-chu-profile-img.png"],
+    "figure": ["ms-choo-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/document/8781914"
   },
   {
@@ -278,7 +278,7 @@
     "journal": "IEEE Transactions on Circuits and Systems-II: Express Briefs (TCAS-II)",
     "reference":"<i>IEEE Transactions on Circuits and Systems II: Express Briefs</i>, vol. 65, no. 12, pp. 1819-1823, Dec. 2018.",    
     "authors": ["M.-S. Choo", "H.-G. Ko", "S.-Y. Cho", "K. Lee", "and D.-K. Jeong"],
-    "figure": ["minseong-chu-profile-img.png"],
+    "figure": ["ms-choo-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/abstract/document/8514813"
   },
   {
@@ -290,7 +290,7 @@
     "journal": "IEEE Transactions on Circuits and Systems-I: Regular Links (TCAS-I)",
     "reference":"<i>IEEE Transactions on Circuits and Systems I: Regular Papers</i>, vol. 65, no. 9, pp. 2691-2702, Sept. 2018",    
     "authors": ["S.-Y. Cho", "S. Kim", "M.-S. Choo", "H.-G. Ko", "J. Lee", "W. Bae", "and D.-K. Jeong"],
-    "figure": ["minseong-chu-profile-img.png"],
+    "figure": ["ms-choo-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/abstract/document/8292824"
   },
   {
@@ -302,7 +302,7 @@
     "journal": "IEEE Transactions on Circuits and Systems-II: Express Briefs (TCAS-II)",
     "reference":"<i>IEEE Transactions on Circuits and Systems II: Express Briefs</i>, vol. 64, no. 12, pp. 1432-1436, Dec. 2017.",   
     "authors": ["K. Park", "J. Lee", "K. Lee", "M.-S. Choo", "S. Jang", "S.-H. Chu", "S. Kim", "and D.-K. Jeong"],
-    "figure": ["minseong-chu-profile-img.png"],
+    "figure": ["ms-choo-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/abstract/document/8022928"
   },
   {
@@ -314,7 +314,7 @@
     "journal": "Journal of Semiconductor Technology and Science (JSTS)",
     "reference":"<i>Journal of Semiconductor Technology and Science</i>, vol. 16, no. 6, pp. 860–866, Dec. 2016.",  
     "authors": ["S. Kim", "S. Jang", "S.-Y. Cho", "M.-S. Choo", "G.-S. Jeong", "W. Bae", "and D.-K. Jeong"],
-    "figure": ["minseong-chu-profile-img.png"],
+    "figure": ["ms-choo-profile-img.png"],
     "link": "https://koreascience.kr/article/JAKO201607959403082.page"
   }
 ]
