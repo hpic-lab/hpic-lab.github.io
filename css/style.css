@@ -864,7 +864,9 @@ h6 {
   height: 150px;
   width: 150px;
   object-fit: contain;
-  border-radius: 10;
+  border-radius: 50%;
+  padding: 12px;
+  box-sizing: border-box;
 }
 
 /* 학생들 프로필 */
