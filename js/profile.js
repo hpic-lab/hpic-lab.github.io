@@ -136,9 +136,6 @@ $(document).ready(function () {
     $("#modal-details").text(details);
     $("#modal-email").text(email);
     $("#modal-position").html(position);
-    $("#modal-affilication").html(affilication);
-    $("#modal-program_period").html(program_period);
-
 
     $("#modal-network-icons").remove(); 
     const iconsHTML = createNetworkIcons(links);
@@ -175,6 +172,24 @@ $(document).ready(function () {
       $("#modal-achievements-title").hide();
     }
   }
+
+    if (affiliation) {
+        $("#modal-affiliation").text(affiliation);
+        $("#modal-affiliation-title").show();
+        $("#modal-affiliation").show();
+    } else {
+        $("#modal-affiliation-title").hide();
+        $("#modal-affiliation").hide();
+    }
+
+    if (program_period) {
+        $("#modal-program_period").text(program_period);
+        $("#modal-program_period-title").show();
+        $("#modal-program_period").show();
+    } else {
+        $("#modal-program_period-title").hide();
+        $("#modal-program_period").hide();
+    }
 
   function parseData(data) {
     if (Array.isArray(data)) return data;
