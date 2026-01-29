@@ -206,12 +206,10 @@ $(document).ready(function () {
     }
   }
 
-  // ▼▼▼ [실행 부] 여기서 true/false로 아이콘 표시 여부 결정 ▼▼▼
+  // true/false로 CV 아이콘 표시 여부 결정 ▼▼▼
   
-  // 1. 교수님 (Principal Investigator): 아이콘 표시 (true)
   loadProfiles("json/people/00_principal_investigator.json", ".principal-investigator", true);
 
-  // 2. 학생들: 아이콘 숨김 (false) -> 클릭해서 모달에서만 보이게 됨
   //loadProfiles("json/people/01_phd_ms.json", ".phd-ms-students", false);
   loadProfiles("json/people/02_ms_phd_candidates.json", ".ms-phd-candidates", false);
   loadProfiles("json/people/03_ms_candidates.json", ".ms-candidates", false);
