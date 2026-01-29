@@ -53,7 +53,7 @@ $(document).ready(function () {
         let style = ""; 
         let modalAttrs = ""; 
         if (foundKey) {
-            style = `style="cursor: pointer; color: #0d6efd; font-weight: bold; text-decoration: underline;"`;
+            style = `style="cursor: pointer; color: inherit; font-weight: bold; text-decoration: none;"`;
             modalAttrs = `
                 data-bs-toggle="modal" 
                 data-bs-target="#exampleModal" 
