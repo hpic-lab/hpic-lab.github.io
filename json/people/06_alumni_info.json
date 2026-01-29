@@ -7,6 +7,7 @@
     "achievements": ["ICEIC'25 Best Paper Award - Silver Prize, ASSCC'25"],
     "details": "Received the B.S. and M.S. degrees in the school of electronics and communication engineering at Hanyang University, Ansan, South Korea. He joined LX Semicon, Seoul, South Korea in 2016, where he was involved in the LCD DDI team. His research interests include digital and analog circuit design of Clock and Data Recovery (CDR) and digital circuit design of PAM4 Receiver with adaptive decision feedback equalizer.",
     "email": "noradlll@hanyang.ac.kr",
+    "position": "",
     "profile_img": "img/sh-ok-profile-img.jpg"
   },
     {
@@ -17,6 +18,7 @@
     "achievements": ["ISOCC'24, 제 26회 대한민국 반도체설계대전 기업특별상 수상"],
     "details": "Received a B.S. degree in the school of Electrical and Electronic Engineering at Dankook University, jukjeon, South Korea. He is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include artificial intelligence hardware design and processing in memory (PIM).",
     "email": "dhlee1415@hanyang.ac.kr",
+    "position": "",
     "profile_img": "img/dh-lee-profile-img.png",
     "position": ""
   },
@@ -25,11 +27,11 @@
     "affiliation":"4Lynx",
     "program_period":"M.S. (2022-2024)",
     "research_interests": ["High PSRR DPLL"],
-    
     "achievements": [],
     "details": "Received a B.S. degree in electrical engineering from Chosun University, Gwangju, South Korea. He is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include analog and digital circuit designs of phase-locked-loop (PLL).",
     "email": "wlgh654@hanyang.ac.kr",
-    "profile_img": "img/jh-kim-profile-img.png",
+    "position": "",
+    "profile_img": "img/jh-kim-profile-img.png"
   },
   {
     "name": "Kyu-Ran Park",
