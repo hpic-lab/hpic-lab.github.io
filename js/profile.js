@@ -209,15 +209,14 @@ $(document).ready(function () {
     }
   }
 
-  function loadDataOnly(url) {
+ function loadDataOnly(url) {
     return $.getJSON(url).done(function (people) {
       people.forEach((person) => {
-        // HTML 생성 과정(createProfileHTML, append)을 생략합니다!
-        // 오직 DB 등록만 수행합니다. (매우 빠름)
-        const imgKey = getFileName(person.profile_img);
-        if (imgKey) {
-            window.peopleDB[imgKey] = person;
+        let key = getFileName(person.profile_img);
+        if (!key) {
+            key = person.name; 
         }
+        window.peopleDB[key] = person;
       });
     });
   }
