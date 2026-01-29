@@ -212,7 +212,7 @@ $(document).ready(function () {
   loadProfiles("json/people/00_principal_investigator.json", ".principal-investigator", true);
 
   // 2. 학생들: 아이콘 숨김 (false) -> 클릭해서 모달에서만 보이게 됨
-  loadProfiles("json/people/01_phd_ms.json", ".phd-ms-students", false);
+  //loadProfiles("json/people/01_phd_ms.json", ".phd-ms-students", false);
   loadProfiles("json/people/02_ms_phd_candidates.json", ".ms-phd-candidates", false);
   loadProfiles("json/people/03_ms_candidates.json", ".ms-candidates", false);
   loadProfiles("json/people/03_ms_candidates_2503.json", ".ms-candidates-2503", false);
