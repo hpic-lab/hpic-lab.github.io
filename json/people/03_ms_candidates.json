@@ -136,5 +136,23 @@
   "email": "congcongsister@naver.com",
   "profile_img": "img/sh-kim-profile-image.jpg",
   "position": ""
+},
+{
+    "name": "Dong-Eon Jin",
+    "research_interests": ["Analog Digital Converter (ADC)"],
+    "achievements": [],
+    "details": "Received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. He is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include analog digital converter (ADC).",
+    "email": "dujin0509@hanyang.ac.kr",
+    "profile_img": "img/de-jin-profile-image.jpg",
+    "position": ""
+},
+{
+    "name": "Joon-Seok Kwon",
+    "research_interests": ["Wireline Interface"],
+    "achievements": [],
+    "details": "Received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. He is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include Wireline Interface.",
+    "email": "qwe3016@hanyang.ac.kr",
+    "profile_img": "img/js-kwon-profile-image.jpg",
+    "position": ""
 }
 ]

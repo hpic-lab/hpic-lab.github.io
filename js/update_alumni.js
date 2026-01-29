@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const container = document.getElementById('alumni-list-container');
 
     // JSON 파일 가져오기
-    fetch('json//people/05_alumni.json') // 파일 경로를 본인 환경에 맞게 수정하세요
+    fetch('json//people/06_alumni.json') // 파일 경로를 본인 환경에 맞게 수정하세요
         .then(response => response.json())
         .then(data => {
             let htmlContent = '';

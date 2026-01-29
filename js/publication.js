@@ -1,121 +1,13 @@
-/*
-$(document).ready(function () {
-  // 프로필을 생성하는 함수
-  function loadPublication(url, containerClass) {
-    $.getJSON(url).done(function (pubs) {
-      const container = $(containerClass);
-
-      pubs.forEach((pub) => {
-        const authorsList = pub.authors
-          .map((author) => `<span>${author}</span>`)
-          .join(", ");
-
-        const publicationSource = pub.journal ? pub.journal : pub.conference;
-        
-        //const awardBadge = pub.award ? `<span class="badge bg-warning">${pub.award}</span> ` : "";
-        //사진
-        const figures = pub.figure
-        ? pub.figure
-            .map((img) => `<img src="img/${img}" class="pub-figure" alt="Figure">`)
-            .join("")
-        : "";
-        //////////////
-        const awardBadge = pub.award 
-        ? `<span class="badge bg-warning">${pub.award}</span>|` 
-        : "";
-        const sub = pub.sub 
-        ? `<span class="badge bg-info">${pub.sub}</span>` 
-        : "";        
-        const progress = pub.progress 
-        ? `<span class="badge bg-secondary">${pub.progress}</span>` 
-        : "";        
-
-        const pub_detail = `
-        <div class="pub-wrapper">
-          <span class="pub-icon-box"><img src="img/pub-svg.svg"></span>
-          <span class="badge text-bg-primary">${pub.type}</span>|
-          <span class="badge bg-success">${pub.status}</span>|
-          ${awardBadge}
-          ${sub}
-          ${progress}
-          <br>
-          <span class="pub-author">${authorsList}</span>
-          <span><a href="${pub.link}" target="_blank"><b>${pub.title}.</b></a></span>
-          <div class="pub-figures">
-            ${figures} <!-- 이미지 추가 -->
-          </div>
-        </div>`;
-        //const submission = pub.sub ? pub.sub : "Available";
-        // const pub_detail = `
-        // <div class="pub-wrapper">
-        //   <span class="pub-icon-box"><img src="img/pub-svg.svg"></span>
-        //   <span class="badge text-bg-primary"> ${pub.type}</span>|
-        //   <span class="badge bg-success">${pub.status}</span>|
-        //   <span class="badge bg-warning">${pub.award}</span>
-        //   <br>
-        //   <span class="pub-author">
-        //     ${authorsList}
-        //   </span>
-        //   <span><a href="${pub.link}" target="_blank"><b> ${pub.title}.</b></a></span>
-        //   <div class="pub-figures">
-        //   ${figures} <!-- 이미지 추가 -->
-        //   </div>
-        // </div>
-        // `;
-        container.append(pub_detail);
-      });
-    });
-  }
-
-  function loadPatent(url, containerClass) {
-    $.getJSON(url).done(function (pubs) {
-      const container = $(containerClass);
-
-      pubs.forEach((pub) => {
-        const inventorList = pub.inventors
-          .map((inventor) => `<span>${inventor}</span>`)
-          .join(", ");
-
-        //사진
-        const figures = pub.figure
-        ? pub.figure
-            .map((img) => `<img src="img/${img}" class="pub-figure" alt="Figure">`)
-            .join("")
-        : "";
-        //////////////
-
-        const pub_detail = `
-        <div class="pub-wrapper">
-          <span class="pub-icon-box"><img src="img/pub-svg.svg"></span>
-          <span class="badge text-bg-primary"> ${pub.type}</span>|
-          <span class="badge process-badge">${pub.status}</span>|
-          <span class="badge bg-success">${pub.registration}</span>
-          <br>
-          <span class="pub-author">
-            ${inventorList}
-          </span>
-          <span> (${pub.year}).</span>
-          <span><b> ${pub.title}.</b></span>
-          <div class="pub-figures">
-          ${figures} <!-- 이미지 추가 -->
-          </div>
-        </div>
-        `;
-        container.append(pub_detail);
-      });
-    });
-  }
-  loadPublication("json/publications/journal.json", ".journal-container");
-  loadPublication("json/publications/conference.json", ".conference-container");
-  loadPatent("json/publications/patent.json", ".patent-container");
-});
-*/
-
 /* Edit 25.12.08 D.H Lee Classify Publications by year */
 
 $(document).ready(function () {
-
   
+  // 파일명 추출 헬퍼 함수
+  function getFileName(path) {
+    if (!path) return "";
+    return path.split('/').pop();
+  }
+
   // 1. 저널/컨퍼런스 로드 함수
   function loadPublication(url, containerClass) {
     $.getJSON(url).done(function (pubs) {
@@ -159,25 +51,30 @@ $(document).ready(function () {
         papersByYear[year].forEach((pub) => {
           let authorsText = pub.authors.join(", ");
 
-          // --- 배지 생성 (연도 배지 삭제됨) ---
+          // 배지 생성
           let badgesHTML = "";
-          
-          // [삭제] 연도 배지 코드 제거됨 (아코디언과 중복)
-          // if (pub.type) badgesHTML += ...
-          
-          // Status (녹색)
           if (pub.status) badgesHTML += `<span class="badge bg-success">${pub.status}</span>| `;
-          
-          // 기타 배지
           if (pub.award) badgesHTML += `<span class="badge bg-warning">${pub.award}</span>| `;
           if (pub.sub) badgesHTML += `<span class="badge bg-info">${pub.sub}</span>| `;
           if (pub.progress) badgesHTML += `<span class="badge bg-secondary">${pub.progress}</span>| `;
-          
           if (badgesHTML.endsWith("| ")) badgesHTML = badgesHTML.slice(0, -2);
 
-          const figures = pub.figure ? pub.figure.map(img => `<img src="img/${img}" class="pub-figure" alt="Figure">`).join("") : "";
+          // ▼▼▼ [수정] 사진에 모달 연결 열쇠(Key) 심기 ▼▼▼
+          const figures = pub.figure ? pub.figure.map(img => {
+               const imgKey = getFileName(img);
+               // 사진 파일명을 data-img-key로 넣어줍니다. (people.js가 이걸 보고 정보를 찾습니다)
+               return `<img src="img/${img}" 
+                            class="pub-figure" 
+                            alt="Figure"
+                            style="cursor: pointer;"
+                            data-bs-toggle="modal" 
+                            data-bs-target="#exampleModal"
+                            data-img-key="${imgKey}"
+                       >`;
+          }).join("") : "";
+          // ▲▲▲ 수정 끝 ▲▲▲
 
-          // --- 레퍼런스 (통합 필드 우선) ---
+          // 레퍼런스
           let titleHTML = "";      
           let citationHTML = "";   
           let titleSuffix = ".";   
@@ -222,7 +119,7 @@ $(document).ready(function () {
 
 
   // 2. 특허 로드 함수
-    function loadPatent(url, containerClass) {
+  function loadPatent(url, containerClass) {
      $.getJSON(url).done(function (pubs) {
       const container = $(containerClass);
       container.empty(); 
@@ -261,14 +158,24 @@ $(document).ready(function () {
 
              papersByYear[year].forEach((pub) => {
                 let inventorsText = pub.inventors.join(", ");
-                
                 let badgesHTML = "";
                 if (pub.status) badgesHTML += `<span class="badge process-badge">${pub.status}</span>| `;
                 if (pub.registration) badgesHTML += `<span class="badge bg-success">${pub.registration}</span>| `;
-                
                 if (badgesHTML.endsWith("| ")) badgesHTML = badgesHTML.slice(0, -2);
 
-                const figures = pub.figure ? pub.figure.map(img => `<img src="img/${img}" class="pub-figure" alt="Figure">`).join("") : "";
+                // ▼▼▼ [수정] 특허 사진에도 모달 연결 열쇠(Key) 심기 ▼▼▼
+                const figures = pub.figure ? pub.figure.map(img => {
+                    const imgKey = getFileName(img);
+                    return `<img src="img/${img}" 
+                                 class="pub-figure" 
+                                 alt="Figure"
+                                 style="cursor: pointer;"
+                                 data-bs-toggle="modal" 
+                                 data-bs-target="#exampleModal"
+                                 data-img-key="${imgKey}"
+                            >`;
+                }).join("") : "";
+                // ▲▲▲ 수정 끝 ▲▲▲
 
                 const pub_detail = `
                 <div class="pub-wrapper">
@@ -285,7 +192,6 @@ $(document).ready(function () {
                 
                 contentDiv.append(pub_detail);
              });
-             
              container.append(contentDiv);
           });
       }
