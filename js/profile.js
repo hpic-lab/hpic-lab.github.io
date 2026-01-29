@@ -236,7 +236,7 @@ $(document).ready(function () {
     }
   }
 
-  $.when(
+$.when(
     loadProfiles("json/people/00_principal_investigator.json", ".principal-investigator", true),
     loadProfiles("json/people/02_ms_phd_candidates.json", ".ms-phd-candidates", false),
     loadProfiles("json/people/03_ms_candidates.json", ".ms-candidates", false),
@@ -246,7 +246,7 @@ $(document).ready(function () {
     loadDataOnly("json/people/06_alumni_info.json") 
     
   ).done(function() {
-      loadAlumni("json/people/06_alumni_info.json", "#alumni-list-container");
+      loadAlumni("json/people/06_alumni.json", "#alumni-list-container");
   });
 
 });
