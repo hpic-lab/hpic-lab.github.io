@@ -4,7 +4,7 @@
     "program_period":"M.S. (2024-2025)",
     "research_interests": ["AI hardware design and PIM"],
     "achievements": ["ISOCC'24, 제 26회 대한민국 반도체설계대전 기업특별상 수상"],
-    "details": "Received a B.S. degree in the school of Electrical and Electronic Engineering at Dankook University, jukjeon, South Korea. He is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include artificial intelligence hardware design and processing in memory (PIM).",
+    "details": "Received a B.S. degree in the School of Electrical and Electronic Engineering from Dankook University, Jukjeon, South Korea, and the M.S. degree in the School of Electrical Engineering from Hanyang University, Ansan, South Korea. His research interests include artificial intelligence hardware design and processing in memory (PIM).",
     "email": "dhlee1415@hanyang.ac.kr",
     "position": "",
     "profile_img": "img/dh-lee-profile-img.png"
@@ -24,22 +24,23 @@
     "name": "Dong-Hoe Heo",
     "research_interests": ["Wide-range PI-based CDR"],
     "achievements": ["ICEIC'24 Best Paper Award - Gold Prize"],
-    "details": "Received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. He is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include clock and data recovery (CDR) circuit design.",
+    "details": "Received the B.S. and M.S. degrees in the school of electronics and communication engineering at Hanyang University, Ansan, South Korea. His research interests include clock and data recovery (CDR) circuit design.",
     "email": "ehdghl97@hanyang.ac.kr",
     "profile_img": "img/dh-heo-profile-img.jpg"
   },
   {
     "name": "Kang-Min Kim",
     "research_interests": ["Physically Unclonable Function (PUF)"],
-    "details": "Received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. He is currently pursuing a M.S -Ph.D. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include hardware security.",
+    "details": "Received the B.S. and M.S. degrees in the school of electronics and communication engineering at Hanyang University, Ansan, South Korea. His research interests include hardware security.",
     "email": "mim455@hanyang.ac.kr",
     "profile_img": "img/km-kim-profile-img.jpg"
   },  
   {
     "name": "Kyu-Ran Park",
+    "affiliation":"LX Semicon",
+    "program_period":"M.S. (2023-2024)",
     "research_interests": ["High-performance DPLL"],
-    "achievements": [],
-    "details": "Received a B.S. degree in electrical engineering from Cheongju University, Cheongju, South Korea. She is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. She joined LX Semicon, Seoul, South Korea, in 2015, where she was involved in the YPD team. Her research interests include analog and digital circuit designs of phase-locked-loop (PLL).",
+    "details": "Received a B.S. degree in electrical engineering from Cheongju University, Cheongju, South Korea, and the M.S. degree in electrical engineering from Hanyang University, Ansan, South Korea. She joined LX Semicon, Seoul, South Korea, in 2015, where she has been involved in the YPD team. Her research interests include analog and digital circuit designs of phase-locked-loop (PLL).",
     "email": "lan2137@hanyang.ac.kr",
     "profile_img": "img/kr-park-profile-img.png"
   },  
@@ -47,7 +48,7 @@
     "name": "Shin-Uk Kang",
     "research_interests": ["AI hardware design and PIM"],
     "achievements": ["ICEIC'23", "ICEIC'24"],
-    "details": "Received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. He is currently pursuing a M.S -Ph.D. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include artificial intelligence hardware design and processing in memory (PIM).",
+    "details": "Received the B.S. and M.S. degrees in the school of electronics and communication engineering at Hanyang University, Ansan, South Korea. His research interests include artificial intelligence hardware design and processing in memory (PIM).",
     "email": "ksu2068@hanyang.ac.kr",
     "profile_img": "img/su-kang-profile-img.jpg"
   },  
@@ -56,8 +57,7 @@
     "affiliation":"4Lynx",
     "program_period":"M.S. (2022-2024)",
     "research_interests": ["High PSRR DPLL"],
-    "achievements": [],
-    "details": "Received a B.S. degree in electrical engineering from Chosun University, Gwangju, South Korea. He is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include analog and digital circuit designs of phase-locked-loop (PLL).",
+    "details": "Received a B.S. degree in electrical engineering from Chosun University, Gwangju, South Korea, and the M.S. degree in the school of electrical engineering from Hanyang University, Ansan, South Korea. His research interests include analog and digital circuit designs of phase-locked-loop (PLL).",
     "email": "wlgh654@hanyang.ac.kr",
     "position": "",
     "profile_img": "img/jh-kim-profile-img.png"
@@ -67,7 +67,6 @@
     "affiliation":"M.S. Candidate @ Yonsei Univ.",
     "program_period":"B.S. (2024)",    
     "research_interests": ["Wireline Interface"],
-    "achievements": [""],
     "details": "Received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. He is currently pursuing a M.S. -Ph.D. degree in the school of electrical engineering at Yonsei University, Seoul, South Korea.",
     "email": "",
     "profile_img": "img/ws-jung-profile-img.png"
@@ -77,7 +76,6 @@
     "affiliation":"M.S. Candidate @ Hanyang Univ.",
     "program_period":"B.S. (2023-24)",    
     "research_interests": ["PIM"],
-    "achievements": [""],
     "details": "Received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. He is currently pursuing a M.S. -Ph.D. degree in the school of electrical engineering at Hanyang University, Seoul, South Korea.",
     "email": "mgsong1005@hanyang.ac.kr",
     "profile_img": "img/mg-song-profile-img.jpg"
@@ -87,8 +85,7 @@
     "affiliation":"GaonChips",
     "program_period":"B.S. (2023-24)",    
     "research_interests": ["Wireline Interface"],
-    "achievements": [""],
-    "details": "Received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. ",
+    "details": "Received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea.",
     "email": "bornin321@hanyang.ac.kr",
     "profile_img": "img/jh-kwon-profile-img.png"
   },
@@ -97,7 +94,6 @@
     "affiliation":"M.S. Candidate @ KAIST",
     "program_period":"B.S. (2023-24)",    
     "research_interests": ["Wireline Interface"],
-    "achievements": [""],
     "details": "Received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. She is currently pursuing a M.S. -Ph.D. degree in the school of electrical engineering at KAIST, Daejeon, South Korea.",
     "email": "byj8629@hanyang.ac.kr",
     "profile_img": "img/yj-byeon-profile-img.png"
@@ -107,7 +103,6 @@
     "affiliation":"SK-hynix",
     "program_period":"B.S. (2023-24)",    
     "research_interests": ["Wireline Interface"],
-    "achievements": [""],
     "details": "Received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea.",
     "email": "dms2021@hanyang.ac.kr",
     "profile_img": "img/de-lee-profile-img.png"
@@ -117,7 +112,6 @@
     "affiliation":"ASML",
     "program_period":"B.S. (2022-23)",    
     "research_interests": ["Wireline Interface"],
-    "achievements": [""],
     "details": "Received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea.",
     "email": "omega9981@hanyang.ac.kr",
     "profile_img": ""
@@ -127,7 +121,6 @@
     "affiliation":"M.S.-Ph.D. Candidate @ POSTECH",
     "program_period":"B.S. (2022-23)",    
     "research_interests": ["Wireline Interface"],
-    "achievements": [""],
     "details": "Received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. He is currently pursuing a M.S. -Ph.D. degree in the school of electrical engineering at POSTECH, Pohang, South Korea.",
     "email": "rrr5124@hanyang.ac.kr",
     "profile_img": ""
@@ -137,7 +130,6 @@
     "affiliation":"M.S.-Ph.D. Candidate @ Hanyang Univ.",
     "program_period":"B.S. (2022-23)",    
     "research_interests": ["Wireline Interface"],
-    "achievements": [""],
     "details": "Received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. He is currently pursuing a M.S. -Ph.D. degree in the school of electrical engineering at Hanyang University, Seoul, South Korea.",
     "email": "dbrmsdud22@hanyang.ac.kr",
     "profile_img": ""
@@ -147,7 +139,6 @@
     "affiliation":"M.S.-Ph.D. Candidate @ KAIST",
     "program_period":"B.S. (2022-23)",
     "research_interests": ["Wireline Interface"],
-    "achievements": [""],
     "details": "Received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. He is currently pursuing a M.S. -Ph.D. degree in the school of electrical engineering at KAIST, Daejeon, South Korea. The primary research focus is on high-speed wireline IC.",
     "email": "jjjang0527@hanyang.ac.kr",
     "profile_img": ""
