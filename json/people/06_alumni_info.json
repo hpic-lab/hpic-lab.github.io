@@ -22,6 +22,8 @@
   },
   {
     "name": "Dong-Hoe Heo",
+    "affiliation":"ram-sCHIP",
+    "program_period":"M.S. (2023-2025)",
     "research_interests": ["Wide-range PI-based CDR"],
     "achievements": ["ICEIC'24 Best Paper Award - Gold Prize"],
     "details": "Received the B.S. and M.S. degrees in the school of electronics and communication engineering at Hanyang University, Ansan, South Korea. His research interests include clock and data recovery (CDR) circuit design.",
@@ -30,6 +32,8 @@
   },
   {
     "name": "Kang-Min Kim",
+    "affiliation":"SUGARS",
+    "program_period":"M.S. (2023-2024)",
     "research_interests": ["Physically Unclonable Function (PUF)"],
     "details": "Received the B.S. and M.S. degrees in the school of electronics and communication engineering at Hanyang University, Ansan, South Korea. His research interests include hardware security.",
     "email": "mim455@hanyang.ac.kr",
@@ -46,6 +50,8 @@
   },  
   {
     "name": "Shin-Uk Kang",
+    "affiliation":"Ph.D. Candidate @ KAIST",
+    "program_period":"M.S. (2023-2024)",
     "research_interests": ["AI hardware design and PIM"],
     "achievements": ["ICEIC'23", "ICEIC'24"],
     "details": "Received the B.S. and M.S. degrees in the school of electronics and communication engineering at Hanyang University, Ansan, South Korea. His research interests include artificial intelligence hardware design and processing in memory (PIM).",
