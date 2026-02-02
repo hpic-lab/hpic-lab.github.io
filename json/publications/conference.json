@@ -2,31 +2,23 @@
   {
     "type": "2025",
     "status": "IEEE ASSCC",
-    "award": "Accepted",
-    "title": "",
+    "award": "",
+    "title": "Critical-Timing-Relaxed pre-Decision Feedforward Equalizer for High-Speed DSP-based Wireline Receiver using Hardware-in-the-Loop Verification on RF-SoC",
     "image": "",
     "conference": "IEEE ASSCC 2025",
-    "reference":"",     
-    "authors": [
-      "Sang-Hyeon Ok", 
-      "Jae-Geon Lee",
-      "Kwang-Ho Lee",
-      "Haram Ju",
-      "Gyu-Seob Jeong",
-      "Woorham Bae",
-      "Min-Seong Choo Critical-Timing-Relaxed pre-Decision Feedforward Equalizer for High-Speed DSP-based Wireline Receiver using Hardware-in-the-Loop Verification on RF-SoC"
-    ],
+    "reference":"in <i>2025 IEEE Asian Solid-State Circuits Conference (A-SSCC)</i>, pp. 82-84, 2025.",     
+    "authors": ["Sang-Hyeon Ok", "Jae-Geon Lee", "Kwang-Ho Lee", "Haram Ju", "Gyu-Seob Jeong", "Woorham Bae", "Min-Seong Choo"],
     "figure": [ "sh-ok-profile-img.jpg", "jg-lee-profile-img.jpeg", "ms-choo-profile-img.png"],
-    "link": ""
+    "link": "https://ieeexplore.ieee.org/document/11349558"
   },    
   {
     "type": "2025",
     "status": "IEEE ASSCC",
-    "award": "Accepted",
-    "title": "",
+    "award": "",
+    "title": "A 22Gb/s-54Gb/s Reconfigurable PAM-2/4/8 DSP-Based Transmitter with 14-Tap Feedforward Equalization",
     "image": "",
     "conference": "IEEE ASSCC 2025",
-    "reference":"",     
+    "reference":"in <i>2025 IEEE Asian Solid-State Circuits Conference (A-SSCC)</i>, pp. 1-3, 2025.",     
     "authors": [
       "Seung-Mo Jin",
       "Dong-Ho Kim", 
@@ -35,10 +27,10 @@
       "Gyu-Seob Jeong",
       "Woorham Bae",
       "Jaeduk Han", 
-      "Min-Seong Choo A 22Gb/s-54Gb/s Reconfigurable PAM-2/4/8 DSP-Based Transmitter with 14-Tap Feedforward Equalization"
+      "Min-Seong Choo"
     ],
     "figure": [ "sm-jin-profile-img.jpg", "dh-kim-profile-image.jpg", "ms-choo-profile-img.png"],
-    "link": ""
+    "link": "https://ieeexplore.ieee.org/document/11349396"
   },    
   {
  
