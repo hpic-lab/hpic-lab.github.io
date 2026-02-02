@@ -225,7 +225,7 @@
     "conference": "IEEE/IEIE ICEIC 2024",
     "reference":"in <i>2024 International Conference on Electronics, Information, and Communication (ICEIC)</i>, pp. 1-4, 2024.",    
     "authors": ["D.-H. Heo", "T.-H. Kim", "K.-H. Lee", "and M.-S. Choo"],
-    "figure": ["dh-heo-profile-img.jpg", "ms-choo-profile-img.png"],
+    "figure": ["dh-heo-profile-img.jpg", "th-kim-profile-img.jpg", "ms-choo-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/document/10457116"
   },
   {
@@ -249,7 +249,7 @@
     "conference": "KCS 2024",
     "reference":"",  
     "authors": ["D.-E. Lee", "T.-H. Kim", "and M.-S. Choo"],
-    "figure": ["de-lee-profile-img.png", "ms-choo-profile-img.png"],
+    "figure": ["de-lee-profile-img.png", "th-kim-profile-img.jpg", "ms-choo-profile-img.png"],
     "link": "https://drive.google.com/file/d/12L2cJQlLUiwNAWZ8iZT4k2sVcysgqY2f/view"
   },
   {
@@ -261,7 +261,7 @@
     "conference": "KCS 2024",
     "reference":"",
     "authors": ["J.-H. Kwon", "T.-H. Kim", "and M.-S. Choo"],
-    "figure": ["jh-kwon-profile-img.png", "ms-choo-profile-img.png"],
+    "figure": ["jh-kwon-profile-img.png", "th-kim-profile-img.jpg", "ms-choo-profile-img.png"],
     "link": "https://drive.google.com/file/d/1OrBk8YmFi4QQq-8GsRutEYgRFqF1hjKG/view"
   },
   {
@@ -273,7 +273,7 @@
     "conference": "2023 IEIE 하계학술대회",
     "reference":"in <i>대한전자공학회 하계학술대회</i>.", 
     "authors": ["T.-H. Kim", "J.-H. Lee", "D.-H. Heo", "S.-M. Jin", "and M.-S. Choo"],
-    "figure": ["dh-heo-profile-img.jpg", "sm-jin-profile-img.jpg", "ms-choo-profile-img.png"],
+    "figure": ["th-kim-profile-img.jpg","dh-heo-profile-img.jpg", "sm-jin-profile-img.jpg", "ms-choo-profile-img.png"],
     "link": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11521991"
   },
   {
@@ -285,7 +285,7 @@
     "conference": "2023 IEIE 하계학술대회",
     "reference":"in <i>대한전자공학회 하계학술대회</i>.",  
     "authors": ["S.-W. Han", "G. Y. You", "J.-G. Lee", "M.-G. Song", "and M.-S. Choo"],
-    "figure": ["jg-lee-profile-img.jpeg", "mg-song-profile-img.jpg", "ms-choo-profile-img.png"],
+    "figure": ["sw-han-profile-img.png", "jg-lee-profile-img.jpeg", "mg-song-profile-img.jpg", "ms-choo-profile-img.png"],
     "link": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11522007"
   },
   {
@@ -297,7 +297,7 @@
     "conference": "2023 IEIE 하계학술대회",
     "reference":"in <i>대한전자공학회 하계학술대회</i>.",   
     "authors": ["G.-Y. You", "S.-W. Han", "J.-H. Kwon", "D.-E. Lee", "Y.-J. Byeon", "and M.-S. Choo"],
-    "figure": ["jh-kwon-profile-img.png", "de-lee-profile-img.png", "yj-byeon-profile-img.png", "ms-choo-profile-img.png"],
+    "figure": ["gy-you-profile-img.jpg","sw-han-profile-img.png","jh-kwon-profile-img.png", "de-lee-profile-img.png", "yj-byeon-profile-img.png", "ms-choo-profile-img.png"],
     "link": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11521992"
   },
   {
