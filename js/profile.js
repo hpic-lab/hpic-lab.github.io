@@ -161,7 +161,15 @@ $(document).ready(function () {
     }
 
     $("#modal-details").text(details);
-    $("#modal-email").text(email);
+
+    if (email) {
+        $("#modal-email").text(email);
+        $("#modal-email-title").show(); 
+        $("#modal-email").show();
+    } else {
+        $("#modal-email-title").hide();
+        $("#modal-email").hide();
+    }
     $("#modal-position").html(position);
 
     $("#modal-network-icons").remove(); 
