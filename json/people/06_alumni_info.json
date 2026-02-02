@@ -120,7 +120,7 @@
     "research_interests": ["Wireline Interface"],
     "details": "Received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea.",
     "email": "omega9981@hanyang.ac.kr",
-    "profile_img": ""
+    "profile_img": "sw-han-profile-img.jpg"
   },
     {
     "name": "Tae-Hyun Kim",
@@ -129,7 +129,7 @@
     "research_interests": ["Wireline Interface"],
     "details": "Received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. He is currently pursuing a M.S. -Ph.D. degree in the school of electrical engineering at POSTECH, Pohang, South Korea.",
     "email": "rrr5124@hanyang.ac.kr",
-    "profile_img": ""
+    "profile_img": "th-kim-profile-img.jpg"
   },
     {
     "name": "Geun-Young Yoo",
@@ -138,7 +138,7 @@
     "research_interests": ["Wireline Interface"],
     "details": "Received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. He is currently pursuing a M.S. -Ph.D. degree in the school of electrical engineering at Hanyang University, Seoul, South Korea.",
     "email": "dbrmsdud22@hanyang.ac.kr",
-    "profile_img": ""
+    "profile_img": "img/gy-you-profile-img.jpg"
   },
     {
     "name": "In-Woo Jang",
@@ -147,6 +147,6 @@
     "research_interests": ["Wireline Interface"],
     "details": "Received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. He is currently pursuing a M.S. -Ph.D. degree in the school of electrical engineering at KAIST, Daejeon, South Korea. The primary research focus is on high-speed wireline IC.",
     "email": "jjjang0527@hanyang.ac.kr",
-    "profile_img": ""
+    "profile_img": "img/iw-jang-profile-img.jpg"
   }          
 ]
