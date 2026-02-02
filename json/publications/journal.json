@@ -1,7 +1,7 @@
 
   [ 
     {
-      "sub": "Submitted",
+      "sub": "In Revision (First)",
       "type": "2026",
       "status": "IEEE TIM",
       "title": "",
@@ -17,7 +17,7 @@
       "link": ""
     },
     {
-      "sub": "In Revision",
+      "sub": "In Revision (Second)",
       "type": "2026",
       "status": "IEEE JETCAS",
       "title": "",
@@ -170,7 +170,7 @@
       "journal": "IEEE TCAS-II",
       "reference":"<i>IEEE Transactions on Circuits and Systems II: Express Briefs</i>, vol. 71, no. 9, pp. 4091-4095, Sept. 2024.",      
       "authors": ["G. Park", "S. Yeom", "I.-W. Jang", "D. Lee", "J. Han", "and M.-S. Choo"],
-      "figure": ["ms-choo-profile-img.png"],
+      "figure": ["iw-jang-profile-img.jpg","ms-choo-profile-img.png"],
       "link": "https://ieeexplore.ieee.org/document/10507171"
     },
     {
