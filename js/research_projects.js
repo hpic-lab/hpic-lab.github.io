@@ -72,7 +72,7 @@ $(document).ready(function () {
       {
         date: "Mar. 2022 - Feb. 2023",
         title: "신임교원 정착연구지원사업",
-        sponsor: "HYU",
+        sponsor: "Hanyang University",
         status: "Completed",
       },
       
