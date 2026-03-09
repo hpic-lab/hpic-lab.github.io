@@ -62,7 +62,7 @@ $(document).ready(function () {
            
            if (pubsInCategory && pubsInCategory.length > 0) {
               // 카테고리 소제목 추가
-              yearContentDiv.append(`<h4 style="margin-top:20px; font-weight:bold; font-size:1.2rem; color:#003366;">[${category}]</h4>`);
+              yearContentDiv.append(`<h4 style="margin-top:20px; font-weight:bold; font-size:1.1rem; color:#003366;">[${category}]</h4>`);
 
               pubsInCategory.forEach((pub) => {
                  let pub_detail = "";
