@@ -62,17 +62,17 @@ $(document).ready(function () {
            
            if (pubsInCategory && pubsInCategory.length > 0) {
               // 카테고리 소제목 추가
-        yearContentDiv.append(`
-                <h4 style="margin-top: 20px; margin-bottom: 12px;">
+              yearContentDiv.append(`
+                <h4 style="margin-top: 12px; margin-bottom: 10px;">
                   <span style="
                     display: inline-block; 
-                    background-color: #5f6368; /* 차분한 슬레이트 그레이 */
+                    background-color: #2e55be; 
                     color: white; 
-                    padding: 4px 11px; 
-                    font-size: 0.85rem; /* 크기를 아주 살짝 더 줄임 */
+                    padding: 4px 12px; /* 위아래, 좌우 여백 */
+                    font-size: 0.7rem; /* 글자 크기 */
                     font-weight: 600; 
-                    border-radius: 4px; 
-                    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+                    border-radius: 6px; /* 끝을 살짝만 둥글게 처리 */
+                    box-shadow: 0 1px 3px rgba(0,0,0,0.1); /* 그림자도 얕고 부드럽게 */
                   ">
                     ${category}
                   </span>
