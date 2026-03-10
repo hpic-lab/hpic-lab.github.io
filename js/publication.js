@@ -66,12 +66,12 @@ $(document).ready(function () {
                 <h4 style="margin-top: 10px; margin-bottom: 10px;">
                   <span style="
                     display: inline-block; 
-                    background-color: #4a69bd; /* 세련되고 차분한 블루 톤 */
+                    background-color: #102e81; 
                     color: white; 
-                    padding: 4px 12px; /* 위아래, 좌우 여백을 확 줄여서 아담하게 */
-                    font-size: 0.9rem; /* 글자 크기를 줄여서 본문과 잘 어울리게 */
+                    padding: 4px 12px; /* 위아래, 좌우 여백 */
+                    font-size: 0.9rem; /* 글자 크기 */
                     font-weight: 600; 
-                    border-radius: 6px; /* 끝을 살짝만 둥글게 처리 (단정한 느낌) */
+                    border-radius: 6px; /* 끝을 살짝만 둥글게 처리 */
                     box-shadow: 0 1px 3px rgba(0,0,0,0.1); /* 그림자도 얕고 부드럽게 */
                   ">
                     ${category}
