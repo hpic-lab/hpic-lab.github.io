@@ -69,7 +69,7 @@ $(document).ready(function () {
                     background-color: #2e55be; 
                     color: white; 
                     padding: 4px 12px; /* 위아래, 좌우 여백 */
-                    font-size: 0.9rem; /* 글자 크기 */
+                    font-size: 0.8rem; /* 글자 크기 */
                     font-weight: 600; 
                     border-radius: 6px; /* 끝을 살짝만 둥글게 처리 */
                     box-shadow: 0 1px 3px rgba(0,0,0,0.1); /* 그림자도 얕고 부드럽게 */
