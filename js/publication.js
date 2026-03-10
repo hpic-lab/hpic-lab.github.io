@@ -63,7 +63,7 @@ $(document).ready(function () {
            if (pubsInCategory && pubsInCategory.length > 0) {
               // 카테고리 소제목 추가
               yearContentDiv.append(`
-                <h4 style="margin-top: 25px; margin-bottom: 18px;">
+                <h4 style="margin-top: 10px; margin-bottom: 10px;">
                   <span style="
                     display: inline-block; 
                     background-color: #34495e; /* 세련된 다크 네이비 배경 */
