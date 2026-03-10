@@ -62,8 +62,23 @@ $(document).ready(function () {
            
            if (pubsInCategory && pubsInCategory.length > 0) {
               // 카테고리 소제목 추가
-              yearContentDiv.append(`<h4 style="margin-top:20px; font-weight:bold; font-size:1.1rem; color:#003366;">[${category}]</h4>`);
-
+              yearContentDiv.append(`
+                <h4 style="margin-top: 25px; margin-bottom: 18px;">
+                  <span style="
+                    display: inline-block; 
+                    background-color: #34495e; /* 세련된 다크 네이비 배경 */
+                    color: white; /* 글자색 하얗게 */
+                    padding: 6px 20px; /* 위아래, 좌우 여백을 넓게 주어 큼직하게 */
+                    font-size: 1.05rem; /* 글자 크기 */
+                    font-weight: bold; 
+                    border-radius: 25px; /* 양끝을 완전히 둥글게(캡슐 모양) */
+                    box-shadow: 0 2px 5px rgba(0,0,0,0.15); /* 은은한 그림자 효과 */
+                    letter-spacing: 0.5px; /* 글자 간격 살짝 넓게 */
+                  ">
+                    ${category}
+                  </span>
+                </h4>
+              `);
               pubsInCategory.forEach((pub, index) => { 
                  let pub_detail = "";
                  
