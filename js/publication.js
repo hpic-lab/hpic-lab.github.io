@@ -64,9 +64,9 @@ $(document).ready(function () {
               // 카테고리 소제목 추가
               yearContentDiv.append(`<h4 style="margin-top:20px; font-weight:bold; font-size:1.1rem; color:#003366;">[${category}]</h4>`);
 
-              pubsInCategory.forEach((pub) => {
+              pubsInCategory.forEach((pub, index) => {
                  let pub_detail = "";
-                 
+                 let numbering = `<span style="font-weight: bold; margin-right: 5px;">${index + 1}.</span>`;
                  
                  if (category === "Patent") {
                     let inventorsText = pub.inventors ? pub.inventors.join(", ") : "";
@@ -87,7 +87,7 @@ $(document).ready(function () {
                         ${badgesHTML}
                       </div>
                       <div class="pub-citation-text">
-                        <span class="pub-author">${inventorsText}</span>. 
+                        ${numbering}<span class="pub-author">${inventorsText}</span>. 
                         <span><b>${pub.title}.</b></span>
                       </div>
                       <div class="pub-figures">${figures}</div>
@@ -131,7 +131,7 @@ $(document).ready(function () {
                          ${badgesHTML}
                       </div>
                       <div class="pub-citation-text">
-                        <span class="pub-author">${authorsText}</span>${titleHTML}${citationHTML}
+                        ${numbering}<span class="pub-author">${authorsText}</span>${titleHTML}${citationHTML}
                       </div>
                       <div class="pub-figures">${figures}</div>
                     </div>`;
