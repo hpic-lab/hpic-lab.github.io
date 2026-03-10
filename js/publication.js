@@ -64,9 +64,10 @@ $(document).ready(function () {
               // 카테고리 소제목 추가
               yearContentDiv.append(`<h4 style="margin-top:20px; font-weight:bold; font-size:1.1rem; color:#003366;">[${category}]</h4>`);
 
-              pubsInCategory.forEach((pub, index) => {
+              pubsInCategory.forEach((pub, index) => { 
                  let pub_detail = "";
-                 let numbering = `<span style="font-weight: bold; margin-right: 5px;">${index + 1}.</span>`;
+                 
+                 let numbering = `<span style="min-width: 22px; flex-shrink: 0;">${index + 1}.</span>`;
                  
                  if (category === "Patent") {
                     let inventorsText = pub.inventors ? pub.inventors.join(", ") : "";
@@ -86,9 +87,13 @@ $(document).ready(function () {
                         <span class="pub-icon-box"><img src="img/pub-svg.svg"></span>
                         ${badgesHTML}
                       </div>
-                      <div class="pub-citation-text">
-                        ${numbering}<span class="pub-author">${inventorsText}</span>. 
-                        <span><b>${pub.title}.</b></span>
+                      
+                      <div class="pub-citation-text" style="display: flex; align-items: flex-start;">
+                        ${numbering}
+                        <div>
+                          <span class="pub-author">${inventorsText}</span>. 
+                          <span><b>${pub.title}.</b></span>
+                        </div>
                       </div>
                       <div class="pub-figures">${figures}</div>
                     </div>`;
@@ -130,8 +135,12 @@ $(document).ready(function () {
                          <span class="pub-icon-box"><img src="img/pub-svg.svg"></span>
                          ${badgesHTML}
                       </div>
-                      <div class="pub-citation-text">
-                        ${numbering}<span class="pub-author">${authorsText}</span>${titleHTML}${citationHTML}
+                      
+                      <div class="pub-citation-text" style="display: flex; align-items: flex-start;">
+                        ${numbering}
+                        <div>
+                          <span class="pub-author">${authorsText}</span>${titleHTML}${citationHTML}
+                        </div>
                       </div>
                       <div class="pub-figures">${figures}</div>
                     </div>`;
