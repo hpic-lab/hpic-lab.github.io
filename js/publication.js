@@ -63,10 +63,10 @@ $(document).ready(function () {
            if (pubsInCategory && pubsInCategory.length > 0) {
               // 카테고리 소제목 추가
               yearContentDiv.append(`
-                <h4 style="margin-top: 10px; margin-bottom: 10px;">
+                <h4 style="margin-top: 12px; margin-bottom: 10px;">
                   <span style="
                     display: inline-block; 
-                    background-color: #102e81; 
+                    background-color: #2e55be; 
                     color: white; 
                     padding: 4px 12px; /* 위아래, 좌우 여백 */
                     font-size: 0.9rem; /* 글자 크기 */
