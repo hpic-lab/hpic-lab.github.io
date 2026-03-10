@@ -66,14 +66,13 @@ $(document).ready(function () {
                 <h4 style="margin-top: 10px; margin-bottom: 10px;">
                   <span style="
                     display: inline-block; 
-                    background-color: #34495e; /* 세련된 다크 네이비 배경 */
-                    color: white; /* 글자색 하얗게 */
-                    padding: 6px 20px; /* 위아래, 좌우 여백을 넓게 주어 큼직하게 */
-                    font-size: 1.05rem; /* 글자 크기 */
-                    font-weight: bold; 
-                    border-radius: 25px; /* 양끝을 완전히 둥글게(캡슐 모양) */
-                    box-shadow: 0 2px 5px rgba(0,0,0,0.15); /* 은은한 그림자 효과 */
-                    letter-spacing: 0.5px; /* 글자 간격 살짝 넓게 */
+                    background-color: #4a69bd; /* 세련되고 차분한 블루 톤 */
+                    color: white; 
+                    padding: 4px 12px; /* 위아래, 좌우 여백을 확 줄여서 아담하게 */
+                    font-size: 0.9rem; /* 글자 크기를 줄여서 본문과 잘 어울리게 */
+                    font-weight: 600; 
+                    border-radius: 6px; /* 끝을 살짝만 둥글게 처리 (단정한 느낌) */
+                    box-shadow: 0 1px 3px rgba(0,0,0,0.1); /* 그림자도 얕고 부드럽게 */
                   ">
                     ${category}
                   </span>
