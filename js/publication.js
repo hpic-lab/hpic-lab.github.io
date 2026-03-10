@@ -68,7 +68,7 @@ $(document).ready(function () {
                     display: inline-block; 
                     background-color: #2e55be; 
                     color: white; 
-                    padding: 4px 12px; /* 위아래, 좌우 여백 */
+                    padding: 2px 6px; /* 위아래, 좌우 여백 */
                     font-size: 0.8rem; /* 글자 크기 */
                     font-weight: 600; 
                     border-radius: 6px; /* 끝을 살짝만 둥글게 처리 */
