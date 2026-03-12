@@ -1,21 +1,6 @@
 
   [ 
-    {
-      "sub": "In Revision (First)",
-      "type": "2026",
-      "status": "IEEE TIM",
-      "title": "",
-      "image": "",
-      "journal": "IEEE TIM",
-      "reference":"",      
-      "authors": [
-        "Ji-Ho Kim",
-        "Jae-Hyeon Pyeon",
-        "Min-Seong Choo."
-      ],
-      "figure": [ "jh-kim-profile-img.png", "jh-pyeon-profile-img.png", "ms-choo-profile-img.png"],
-      "link": ""
-    },
+
     {
       "sub": "In Revision (Second)",
       "type": "2026",
@@ -77,6 +62,30 @@
         "Min-Seong Choo."
       ],
       "figure": ["sm-jin-profile-img.jpg", "dh-kim-profile-image.jpg", "ms-choo-profile-img.png"],
+      "link": ""
+    },
+        {
+      "sub": "Accepted",
+      "type": "2026",
+      "status": "IEEE TIM",
+      "title": "Built-In Phase Noise Measurement System for Multi-GHz Phase-Locked Loops",
+      "image": "",
+      "journal": "IEEE TIM",
+      "reference":"<i>IEEE Transactions on Instrumentation & Measurement (TIM)</i>, 2026.",      
+      "authors": [
+        "J. Choi",
+        "J.-H. Kim",
+        "T. Kim",
+        "J.-H. Pyeon",
+        "W.-T. Lim",
+        "H. Kim",
+        "H. Roh",
+        "K.-H. Lee",
+        "M. Choi",
+        "M.-S. Choo",
+        "J. Roh"
+      ],
+      "figure": [ "jh-kim-profile-img.png", "jh-pyeon-profile-img.png", "ms-choo-profile-img.png"],
       "link": ""
     },
     { 
