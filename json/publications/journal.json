@@ -130,8 +130,8 @@
       "title": "A 14-to-32-Gb/s Deadzone-Free Referenceless CDR With Autocovariance-Based Seamless Frequency Detector in 40-nm CMOS Technology",
       "image": "",
       "journal": "IEEE JSSC",
-      "reference":"<i>IEEE Journal of Solid-State Circuits</i>, vol. 60, no. 10, pp. 3602-3612, Oct. 2025.",
-      "authors": ["H.-S. Choi", "J.-G. Lee", "S.-H. Gong", "K.-H. Lee", "D. Koh", "J.-W. Sull", "H. Do", "C.-H. Kye", "D.-K. Jeong", "K. Park", "and M.-S. Choo"],
+      "reference":"<i>IEEE Journal of Solid-State Circuits</i>, vol. 60, no. 10, pp. 3602-3612, Oct. 2025 (*Equally Credited Authors).",
+      "authors": ["H.-S. Choi*", "J.-G. Lee*", "S.-H. Gong", "K.-H. Lee", "D. Koh", "J.-W. Sull", "H. Do", "C.-H. Kye", "D.-K. Jeong", "K. Park", "and M.-S. Choo"],
       "figure": ["jg-lee-profile-img.jpeg", "sh-gong-profile-image.jpg", "ms-choo-profile-img.png"],
       "link": "https://ieeexplore.ieee.org/document/11029275"
     },
@@ -141,8 +141,8 @@
       "title": "A Supply Noise-Insensitive Ring DCO With a Self-Biased Shunt Regulator Array in Wide-Range Digital PLL",
       "image": "",
       "journal": "IEEE TVLSI",
-      "reference":"<i>IEEE Transactions on Very Large Scale Integration (VLSI) Systems</i>, vol. 33, no. 8, pp. 2349-2353, Aug. 2025.",      
-      "authors": ["K. Baek", "J. Kim", "K. Kim", "D.-K. Jeong", "and M.-S. Choo"],
+      "reference":"<i>IEEE Transactions on Very Large Scale Integration (VLSI) Systems</i>, vol. 33, no. 8, pp. 2349-2353, Aug. 2025 (Equally Credited Authors).",      
+      "authors": ["K. Baek*", "J. Kim*", "K. Kim", "D.-K. Jeong", "and M.-S. Choo"],
       "figure": ["jh-kim-profile-img.png", "ms-choo-profile-img.png"],
       "link": "https://ieeexplore.ieee.org/document/11017684"
     },
@@ -177,8 +177,8 @@
       "title": "3.2-GHz Digital Phase-Locked Loop with Autocorrelation-based Direct Jitter Correction",
       "image": "",
       "journal": "IEEE TCAS-II",
-      "reference":"<i>IEEE Transactions on Circuits and Systems II: Express Briefs</i>, vol. 71, no. 9, pp. 4091-4095, Sept. 2024.",      
-      "authors": ["G. Park", "S. Yeom", "I.-W. Jang", "D. Lee", "J. Han", "and M.-S. Choo"],
+      "reference":"<i>IEEE Transactions on Circuits and Systems II: Express Briefs</i>, vol. 71, no. 9, pp. 4091-4095, Sept. 2024 (*Equally Credited Authors).",      
+      "authors": ["G. Park*", "S. Yeom*", "I.-W. Jang", "D. Lee", "J. Han", "and M.-S. Choo"],
       "figure": ["iw-jang-profile-img.jpg","ms-choo-profile-img.png"],
       "link": "https://ieeexplore.ieee.org/document/10507171"
     },
