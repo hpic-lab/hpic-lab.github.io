@@ -1,27 +1,27 @@
 [  
   {
     "type": "2025",
-    "status": "IEEE ASSCC",
+    "status": "IEEE A-SSCC",
     "award": "",
     "title": "Critical-Timing-Relaxed pre-Decision Feedforward Equalizer for High-Speed DSP-based Wireline Receiver using Hardware-in-the-Loop Verification on RF-SoC",
     "image": "",
-    "conference": "IEEE ASSCC 2025",
-    "reference":"in <i>2025 IEEE Asian Solid-State Circuits Conference (A-SSCC)</i>, pp. 82-84, 2025.",     
-    "authors": ["S.-H. Ok", "J.-G. Lee", "K.-H Lee", "Haram Ju", "G.-S Jeong", "W. Bae", "M.-S Choo"],
+    "conference": "IEEE A-SSCC 2025",
+    "reference":"in <i>2025 IEEE Asian Solid-State Circuits Conference (A-SSCC)</i>, pp. 82-84, 2025 (*Equally Credited Authors).",     
+    "authors": ["S.-H. Ok*", "J.-G. Lee*", "K.-H Lee", "Haram Ju", "G.-S Jeong", "W. Bae", "M.-S Choo"],
     "figure": [ "sh-ok-profile-img.jpg", "jg-lee-profile-img.jpeg", "ms-choo-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/document/11349558"
   },    
   {
     "type": "2025",
-    "status": "IEEE ASSCC",
+    "status": "IEEE A-SSCC",
     "award": "",
     "title": "A 22Gb/s-54Gb/s Reconfigurable PAM-2/4/8 DSP-Based Transmitter with 14-Tap Feedforward Equalization",
     "image": "",
-    "conference": "IEEE ASSCC 2025",
-    "reference":"in <i>2025 IEEE Asian Solid-State Circuits Conference (A-SSCC)</i>, pp. 1-3, 2025.",     
+    "conference": "IEEE A-SSCC 2025",
+    "reference":"in <i>2025 IEEE Asian Solid-State Circuits Conference (A-SSCC)</i>, pp. 1-3, 2025 (*Equally Credited Authors).",     
     "authors": [
-      "S.-M Jin",
-      "D.-H Kim", 
+      "S.-M Jin*",
+      "D.-H Kim*", 
       "K.-H Lee",
       "H. Ju",
       "G.-S Jeong",
@@ -144,13 +144,13 @@
   {
  
     "type": "2024",
-    "status": "IEEE ASSCC",
+    "status": "IEEE A-SSCC",
     "award": "JSSC Invited",
     "title": "A 14-to-32-Gb/s Deadzone-Free Referenceless CDR with Autocovariance-based Frequency Detector in 40-nm CMOS Technology",
     "image": "",
-    "conference": "IEEE ASSCC 2024",
-    "reference":"in <i>2024 IEEE Asian Solid-State Circuits Conference (A-SSCC)</i>, pp. 1-3, 2024.",    
-    "authors": ["H.-S. Choi", "J.-G. Lee", "K.-H. Lee", "D. Koh", "J.-W. Sull", "H.-R. Do", "C.-H. Kye", "D.-K. Jeong", "and M.-S. Choo"],
+    "conference": "IEEE A-SSCC 2024",
+    "reference":"in <i>2024 IEEE Asian Solid-State Circuits Conference (A-SSCC)</i>, pp. 1-3, 2024 (*Equally Credited Authors).",    
+    "authors": ["H.-S. Choi*", "J.-G. Lee*", "K.-H. Lee", "D. Koh", "J.-W. Sull", "H.-R. Do", "C.-H. Kye", "D.-K. Jeong", "and M.-S. Choo"],
     "figure": ["jg-lee-profile-img.jpeg", "ms-choo-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/document/10848602"
   },
@@ -363,10 +363,10 @@
   {
  
     "type": "2018",
-    "status": "IEEE ASSCC",
+    "status": "IEEE A-SSCC",
     "title": "A 10-Gb/s, 0.03-mm2, 1.28-pJ/bit Half-Rate All-Digital Injection-Locked Clock and Data Recovery with Maximum Timing-Margin Tracking Loop",
     "image": "",
-    "conference": "IEEE ASSCC 2018",
+    "conference": "IEEE A-SSCC 2018",
     "reference":"in <i>2018 IEEE Asian Solid-State Circuits Conference (A-SSCC)</i>, pp. 73-76, 2018.",   
     "authors": ["M.-S. Choo", "H.-G. Ko", "S.-Y. Cho", "K.-H. Lee", "and D.-K. Jeong"],
     "figure": ["ms-choo-profile-img.png"],
