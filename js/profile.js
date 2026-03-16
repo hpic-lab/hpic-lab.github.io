@@ -162,6 +162,7 @@ $(document).ready(function () {
     }
 
     $("#modal-details").text(details);
+    $("#modal-education").text(education);
 
     if (email) {
         $("#modal-email").text(email);
