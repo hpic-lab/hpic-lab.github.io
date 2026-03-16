@@ -161,9 +161,10 @@ $(document).ready(function () {
         $("#modal-profile-img").hide(); 
     }
 
-    $("#modal-details").text(details);
     $("#modal-education").text(education);
 
+    $("#modal-details").text(details);
+    
     if (email) {
         $("#modal-email").text(email);
         $("#modal-email-title").show(); 
