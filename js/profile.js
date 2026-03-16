@@ -161,8 +161,6 @@ $(document).ready(function () {
         $("#modal-profile-img").hide(); 
     }
 
-    $("#modal-education").text(education);
-
     $("#modal-details").text(details);
     
     if (email) {
