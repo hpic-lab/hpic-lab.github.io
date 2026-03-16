@@ -143,6 +143,7 @@ $(document).ready(function () {
       person.position,
       person.research_interests,
       person.education,
+      person.experience,
       person.tape_out_schedule,
       person.achievements,
       person.affiliation,
@@ -151,7 +152,7 @@ $(document).ready(function () {
     );
   });
 
-  function updateModalContent(name, profile_img, details, email, position, research_interests, education, tape_out_schedule, achievements, affiliation, program_period, links) {
+  function updateModalContent(name, profile_img, details, email, position, research_interests, education, experience, tape_out_schedule, achievements, affiliation, program_period, links) {
     $("#modal-name").text(name);
     
     if (profile_img) {
@@ -189,6 +190,9 @@ $(document).ready(function () {
 
     const parsed_education = parseData(education);
     updateList("#modal-education", parsed_education, "No education available.");
+
+    const parsed_experience = parseData(experience);
+    updateList("#modal-experience", parsed_experience, "No experience available.");
 
     const parsedTapeOutSchedule = parseData(tape_out_schedule);
     const formattedTapeOutSchedule = parsedTapeOutSchedule
