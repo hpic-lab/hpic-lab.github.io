@@ -186,7 +186,16 @@ $(document).ready(function () {
     }
 
     const parsed_research_interests = parseData(research_interests);
-    updateList("#modal-research_interests", parsed_research_interests, "No research interests available.");
+    
+    if (parsed_research_interests.length > 0) {
+        $("#modal-research_interests-title").show();
+        $("#modal-research_interests").show();
+        updateList("#modal-research_interests", parsed_research_interests, "");
+    } else {
+        // 내용이 없으면 제목과 리스트 모두 화면에서 숨김 처리
+        $("#modal-research_interests-title").hide();
+        $("#modal-research_interests").hide();
+    }
 
     const parsed_education = parseData(education);
     updateList("#modal-education", parsed_education, "No education available.");
