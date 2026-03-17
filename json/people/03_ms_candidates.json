@@ -29,7 +29,7 @@
   {
     "name": "So-Yeon Kwon",
     "education": [
-    "B.S., Department of Electrical Engineering, Hanyang University, Ansan, Korea (2019.03 ~ 2025.02)"
+    "B.S., Department of Applied Physics, Hanyang University, Ansan, Korea (2019.03 ~ 2025.02)"
     ],
     "research_interests": ["Digital PIM"],
     "tape_out_schedule": [
@@ -162,6 +162,9 @@
   "name": "Hyeon-Seo Kim",
   "research_interests": ["Analog Digital Converter (ADC)"],
   "Awards": [],
+  "education": [
+    "B.S., Department of Electrical Engineering, Hanyang University, Ansan, Korea (2017.03 ~ 2024.02)"
+    ],
   "biography": "Received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. He is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include analog digital converter (ADC)",
   "email": "hyeonseo1833@gmail.com",
   "profile_img": "img/sh-kim2-profile-image.png",
