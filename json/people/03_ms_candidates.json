@@ -16,7 +16,7 @@
         "process": "28-nm S"
       }
     ],
-    "achievements": ["ICEIC'25, ISOCC'25 Chip Design Contest"],
+    "Awards": ["ICEIC'25, ISOCC'25 Chip Design Contest"],
     "biography": "Received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include analog and digital circuit designs of phase-locked-loop (PLL).",
     "email": "ccomo7004@hanyang.ac.kr",
     "profile_img": "img/jh-pyeon-profile-img.png",
@@ -31,7 +31,7 @@
         "process": ""
       }
     ],
-    "achievements": [],
+    "Awards": [],
     "biography": "Received a B.S. degree in the school of Applied Physics at Hanyang University, Ansan, South Korea. She is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. Her research interests include artificial intelligence hardware design and processing in memory (PIM).",
     "email": "sykwon00@hanyang.ac.kr",
     "profile_img": "img/sw-kwon-profile-image.jpeg",
@@ -46,7 +46,7 @@
         "process": "28-nm S"
       }
     ],
-    "achievements": ["ICEIC'25"],
+    "Awards": ["ICEIC'25"],
     "biography": "Received a B.S. degree in electrical engineering from Gachon University, Sungnam, South Korea. He is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include analog and digital circuit designs of phase-locked-loop (PLL).",
     "email": "inho0303@hanyang.ac.kr",
     "profile_img": "img/ih-han-profile-img.jpg",
@@ -62,7 +62,7 @@
         "process": "28-nm T"
       }
     ],
-    "achievements": ["JSSC'25, ISOCC'25 best paper award, ISOCC'25 Chip Design Contest, 2025 IEEE Seoul Section Student Paper Bronze Award"],
+    "Awards": ["JSSC'25, ISOCC'25 best paper award, ISOCC'25 Chip Design Contest, 2025 IEEE Seoul Section Student Paper Bronze Award"],
     "biography": "Received a B.S. degree in the school of electrical engineering at Gangwon University, Ansan, South Korea. He is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include CDR, DSP-based Receiver.",
     "email": "fire051324@gmail.com",
     "profile_img": "img/sh-gong-profile-image.jpg",
@@ -77,7 +77,7 @@
         "process": "28-nm T"
       }
     ],
-    "achievements": ["ASSCC'25, 제 26회 대한민국 반도체설계대전 특허청장상 수상, 2025 IEEE Seoul Section Student Paper Bronze Award"],
+    "Awards": ["ASSCC'25, 제 26회 대한민국 반도체설계대전 특허청장상 수상, 2025 IEEE Seoul Section Student Paper Bronze Award"],
     "biography": "Received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. He is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include DSP-DAC based transmitter.",
     "email": "dpdl112@hanyang.ac.kr",
     "profile_img": "img/dh-kim-profile-image.jpg",
@@ -97,7 +97,7 @@
         "process": "28-nm T"
       }
     ],
-    "achievements": ["ICEIC'24, ASSCC'24[JSSC invited], JSSC'25, ITC-CSCC '25, ASSCC'25, 석사과정생 연구장려금 '25-2 - '26-1 [NRF], 2025 IEEE Seoul Section Student Paper Bronze Award, 2025 한양대학교 BK21 우수논문상"],
+    "Awards": ["ICEIC'24, ASSCC'24[JSSC invited], JSSC'25, ITC-CSCC '25, ASSCC'25, 석사과정생 연구장려금 '25-2 - '26-1 [NRF], 2025 IEEE Seoul Section Student Paper Bronze Award, 2025 한양대학교 BK21 우수논문상"],
     "biography": "Received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. He is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include Clock and data recovery (CDR) and DSP-based Receiver.",
     "email": "dlworjs@hanyang.ac.kr",
     "profile_img": "img/jg-lee-profile-img.jpeg",
@@ -113,7 +113,7 @@
         "process": "28-nm T"
       }
     ],
-    "achievements": ["2023-2 SCCUD 구두 발표 최우수상, ICEIC'24, 2024.05. SOC 학술대회 우수발표 논문상, 2024-1 SCCuD DAY 구두 발표 최우수상, 2024-1 공학대학 켑스톤 페어 동상, 2024-2 SCCuD DAY 구두 발표 대상, ISOCC'2024, ASSCC'25, 석사과정생 연구장려금 '25-2 - '26-1 [NRF], 제 26회 대한민국 반도체설계대전 특허청장상 수상, ISOCC'25 best paper award, 2025 IEEE Seoul Section Student Paper Bronze Award"],
+    "Awards": ["2023-2 SCCUD 구두 발표 최우수상, ICEIC'24, 2024.05. SOC 학술대회 우수발표 논문상, 2024-1 SCCuD DAY 구두 발표 최우수상, 2024-1 공학대학 켑스톤 페어 동상, 2024-2 SCCuD DAY 구두 발표 대상, ISOCC'2024, ASSCC'25, 석사과정생 연구장려금 '25-2 - '26-1 [NRF], 제 26회 대한민국 반도체설계대전 특허청장상 수상, ISOCC'25 best paper award, 2025 IEEE Seoul Section Student Paper Bronze Award"],
     "biography": "Received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. He is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include DSP-DAC based transmitter.",
     "email": "victorymo@hanyang.ac.kr",
     "profile_img": "img/sm-jin-profile-img.jpg",
@@ -123,7 +123,7 @@
   {
   "name": "Hyeon-Seo Kim",
   "research_interests": ["Analog Digital Converter (ADC)"],
-  "achievements": [],
+  "Awards": [],
   "biography": "Received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. He is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include analog digital converter (ADC)",
   "email": "hyeonseo1833@gmail.com",
   "profile_img": "img/sh-kim2-profile-image.png",
@@ -132,7 +132,7 @@
 {
   "name": "Seol-Hyeon Kim",
   "research_interests": ["AI hardware design and PIM"],
-  "achievements": [],
+  "Awards": [],
   "biography": "Received a B.S. degree in the school of system semiconductor enginerring at Sangmyung University, Cheonan, South Korea. She is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. Her research interests include artificial intelligence hardware design and processing in memory (PIM).",
   "email": "congcongsister@naver.com",
   "profile_img": "img/sh-kim-profile-image.jpg",
@@ -141,7 +141,7 @@
 {
     "name": "Dong-Eon Jin",
     "research_interests": ["Analog Digital Converter (ADC)"],
-    "achievements": [],
+    "Awards": [],
     "biography": "Received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. He is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include analog digital converter (ADC).",
     "email": "dujin0509@hanyang.ac.kr",
     "profile_img": "img/de-jin-profile-image.jpg",
@@ -150,7 +150,7 @@
 {
     "name": "Joon-Seok Kwon",
     "research_interests": ["Wireline Interface"],
-    "achievements": [],
+    "Awards": [],
     "biography": "Received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. He is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include Wireline Interface.",
     "email": "qwe3016@hanyang.ac.kr",
     "profile_img": "img/js-kwon-profile-image.jpg",
