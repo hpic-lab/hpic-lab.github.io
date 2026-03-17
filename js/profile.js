@@ -145,14 +145,14 @@ $(document).ready(function () {
       person.education,
       person.experience,
       person.tape_out_schedule,
-      person.achievements,
+      person.Awards,
       person.affiliation,
       person.program_period,
       links
     );
   });
 
-  function updateModalContent(name, profile_img, biography, email, position, research_interests, education, experience, tape_out_schedule, achievements, affiliation, program_period, links) {
+  function updateModalContent(name, profile_img, biography, email, position, research_interests, education, experience, tape_out_schedule, Awards, affiliation, program_period, links) {
     $("#modal-name").text(name);
     
     if (profile_img) {
@@ -215,13 +215,13 @@ $(document).ready(function () {
       $("#modal-tape_out_schedule-title").hide();
     }
 
-    const parsedAchievements = parseData(achievements);
-    if (parsedAchievements.length > 0) {
-      $("#modal-achievements").text(parsedAchievements.join(", "));
-      $("#modal-achievements-title").show();
+    const parsedAwards = parseData(Awards);
+    if (parsedAwards.length > 0) {
+      $("#modal-Awards").text(parsedAwards.join(", "));
+      $("#modal-Awards-title").show();
     } else {
-      $("#modal-achievements").text("");
-      $("#modal-achievements-title").hide();
+      $("#modal-Awards").text("");
+      $("#modal-Awards-title").hide();
     }
 
     if (affiliation) {
