@@ -1,6 +1,9 @@
 [
   {
     "name": "Do-Hyeong Lee",
+    "education": [
+    "B.S., Department of Electrical Engineering, Hanyang University, Ansan, Korea (2020.03 ~ 2026.02)"
+    ],
     "research_interests": ["Referenceless CDR"],
     "tape_out_schedule": [],
     "Awards": ["2024 SCCUD 포스터 발표 최우수상"],

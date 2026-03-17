@@ -28,6 +28,9 @@
   },
   {
     "name": "So-Yeon Kwon",
+    "education": [
+    "B.S., Department of Electrical Engineering, Hanyang University, Ansan, Korea (2019.03 ~ 2025.02)"
+    ],
     "research_interests": ["Digital PIM"],
     "tape_out_schedule": [
       {
