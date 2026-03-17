@@ -138,7 +138,7 @@ $(document).ready(function () {
     updateModalContent(
       person.name,
       person.profile_img, 
-      person.details,
+      person.biography,
       person.email,
       person.position,
       person.research_interests,
@@ -152,7 +152,7 @@ $(document).ready(function () {
     );
   });
 
-  function updateModalContent(name, profile_img, details, email, position, research_interests, education, experience, tape_out_schedule, achievements, affiliation, program_period, links) {
+  function updateModalContent(name, profile_img, biography, email, position, research_interests, education, experience, tape_out_schedule, achievements, affiliation, program_period, links) {
     $("#modal-name").text(name);
     
     if (profile_img) {
@@ -162,7 +162,7 @@ $(document).ready(function () {
         $("#modal-profile-img").hide(); 
     }
 
-    $("#modal-details").text(details);
+    $("#modal-biography").text(biography);
     
     if (email) {
         $("#modal-email").text(email);
