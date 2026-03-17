@@ -12,7 +12,7 @@
     "Postdoctoral Researcher, Center for Nanotechnology, NASA Ames Research Center, Mountain View, CA, USA (2019.11 ~ 2020.10)",
     "Postdoctoral Researcher, Inter-University Semiconductor Research Center, Seoul National University, Seoul, Korea (2019.04 ~ 2019.10)"
     ],
-    "research_interests": [
+    "_research_interests": [
       "High-Speed Interface Design",
       "Phase-Locked Loop (PLL) and Clock and Data Recovery (CDR) Circuits",
       "Injection-Locked Oscillator (ILO)",
