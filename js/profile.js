@@ -217,11 +217,12 @@ $(document).ready(function () {
 
     const parsedAwards = parseData(Awards);
     if (parsedAwards.length > 0) {
-      $("#modal-Awards").text(parsedAwards.join(", "));
       $("#modal-Awards-title").show();
+      $("#modal-Awards").show();
+      updateList("#modal-Awards", parsedAwards, "");
     } else {
-      $("#modal-Awards").text("");
       $("#modal-Awards-title").hide();
+      $("#modal-Awards").hide();
     }
 
     if (affiliation) {
