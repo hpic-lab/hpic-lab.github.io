@@ -75,7 +75,7 @@
     "education": [
     "B.S., Department of Electronics Engineering, Kangwon National University, Chuncheon, Korea (2018.03 ~ 2024.02)"
     ],
-    "publication": ["JSSC'25"],
+    "publication": ["JSSC'25 <a href='https://ieeexplore.ieee.org/document/11029275' target='_blank' rel='noopener noreferrer' class='news-link'>[Paper]</a>"],
     "Awards": ["ISOCC'25 best paper award", "ISOCC'25 Chip Design Contest", "2025 IEEE Seoul Section Student Paper Bronze Award"],
     "biography": "Received a B.S. degree in the school of electrical engineering at Gangwon University, Ansan, South Korea. He is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include CDR, DSP-based Receiver.",
     "email": "fire051324@gmail.com",
@@ -91,7 +91,7 @@
         "process": "28-nm T"
       }
     ],
-    "publication": ["ASSCC'25"],
+    "publication": ["ASSCC'25 <a href='https://ieeexplore.ieee.org/document/11349396' target='_blank' rel='noopener noreferrer' class='news-link'>[Paper]</a>"],
     "Awards": ["제 26회 대한민국 반도체설계대전 특허청장상 수상", "2025 IEEE Seoul Section Student Paper Bronze Award"],
     "biography": "Received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. He is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include DSP-DAC based transmitter.",
     "email": "dpdl112@hanyang.ac.kr",
@@ -115,7 +115,12 @@
     "education": [
     "B.S., Department of Electrical Engineering, Hanyang University, Ansan, Korea (2019.03 ~ 2025.02)"
     ],
-    "publication": ["ICEIC'24", "ASSCC'24[JSSC invited]", "JSSC'25", "ITC-CSCC '25", "ASSCC'25"],
+    "publication": [
+    "ICEIC'24 <a href='https://ieeexplore.ieee.org/document/10457160' target='_blank' rel='noopener noreferrer' class='news-link'>[Paper]</a>",
+    "ASSCC'24[JSSC invited] <a href='https://ieeexplore.ieee.org/document/10848602' target='_blank' rel='noopener noreferrer' class='news-link'>[Paper]</a>",
+    "JSSC'25 <a href='https://ieeexplore.ieee.org/document/11029275' target='_blank' rel='noopener noreferrer' class='news-link'>[Paper]</a>",
+    "ITC-CSCC '25 <a href='https://ieeexplore.ieee.org/document/11137667' target='_blank' rel='noopener noreferrer' class='news-link'>[Paper]</a>",
+    "ASSCC'25 <a href='https://ieeexplore.ieee.org/document/11349558' target='_blank' rel='noopener noreferrer' class='news-link'>[Paper]</a>"],
     "Awards": ["석사과정생 연구장려금 '25-2 - '26-1 [NRF]", "2025 IEEE Seoul Section Student Paper Bronze Award", "2025 한양대학교 BK21 우수논문상"],
     "biography": "Received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. He is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include Clock and data recovery (CDR) and DSP-based Receiver.",
     "email": "dlworjs@hanyang.ac.kr",
@@ -135,7 +140,11 @@
     "education": [
     "B.S., Department of Electrical Engineering, Hanyang University, Ansan, Korea (2019.03 ~ 2025.02)"
     ],
-    "publication": ["ICEIC'24", "ISOCC'2024", "ASSCC'25"],
+    "publication": [
+      "ICEIC'24 <a href='https://ieeexplore.ieee.org/document/10457226' target='_blank' rel='noopener noreferrer' class='news-link'>[Paper]</a>", 
+      "ISOCC'2024 <a href='https://ieeexplore.ieee.org/document/10762215' target='_blank' rel='noopener noreferrer' class='news-link'>[Paper]</a>", 
+      "ASSCC'25 <a href='https://ieeexplore.ieee.org/document/11349396' target='_blank' rel='noopener noreferrer' class='news-link'>[Paper]</a>"
+    ],
     "Awards": ["2023-2 SCCUD 구두 발표 최우수상", "2024.05. SOC 학술대회 우수발표 논문상", "2024-1 SCCuD DAY 구두 발표 최우수상", "2024-1 공학대학 켑스톤 페어 동상", "2024-2 SCCuD DAY 구두 발표 대상", "석사과정생 연구장려금 '25-2 - '26-1 [NRF]", "제 26회 대한민국 반도체설계대전 특허청장상 수상", "ISOCC'25 best paper award", "2025 IEEE Seoul Section Student Paper Bronze Award"],
     "biography": "Received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. He is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include DSP-DAC based transmitter.",
     "email": "victorymo@hanyang.ac.kr",
