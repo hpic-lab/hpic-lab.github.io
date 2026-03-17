@@ -144,6 +144,7 @@ $(document).ready(function () {
       person.research_interests,
       person.education,
       person.experience,
+      person.publication,
       person.tape_out_schedule,
       person.Awards,
       person.affiliation,
@@ -152,7 +153,7 @@ $(document).ready(function () {
     );
   });
 
-  function updateModalContent(name, profile_img, biography, email, position, research_interests, education, experience, tape_out_schedule, Awards, affiliation, program_period, links) {
+  function updateModalContent(name, profile_img, biography, email, position, research_interests, education, publication,experience, tape_out_schedule, Awards, affiliation, program_period, links) {
     $("#modal-name").text(name);
     
     if (profile_img) {
@@ -215,6 +216,15 @@ $(document).ready(function () {
       $("#modal-tape_out_schedule-title").hide();
     }
 
+    const parsedPublication = parseData(publication);
+    if (parsedPublication.length > 0) {
+      $("#modal-publication-title").show();
+      $("#modal-publication").show();
+      updateList("#modal-publication", parsedPublication, "");
+    } else {
+      $("#modal-publication-title").hide();
+      $("#modal-publication").hide();
+    }
     const parsedAwards = parseData(Awards);
     if (parsedAwards.length > 0) {
       $("#modal-Awards-title").show();
