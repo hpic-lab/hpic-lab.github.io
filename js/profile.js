@@ -143,8 +143,8 @@ $(document).ready(function () {
       person.position,
       person.research_interests,
       person.education,
-      person.experience,
       person.publication,
+      person.experience,
       person.tape_out_schedule,
       person.Awards,
       person.affiliation,
@@ -225,6 +225,7 @@ $(document).ready(function () {
       $("#modal-publication-title").hide();
       $("#modal-publication").hide();
     }
+
     const parsedAwards = parseData(Awards);
     if (parsedAwards.length > 0) {
       $("#modal-Awards-title").show();
