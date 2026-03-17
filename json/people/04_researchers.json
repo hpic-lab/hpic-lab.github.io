@@ -14,6 +14,9 @@
   },
   {
     "name": "Suk-Min Yoon",
+    "education": [
+    "B.S., Department of Electrical Engineering, Yeungnam University, Gyeongsan, Korea (2019.03 ~ 2025.08)"
+    ],
     "research_interests": ["PiM"],
     "biography": "Suk-Min Yoon received a B.S. degree in electrical engineering from Yeungnam University, Gyeongsan, South Korea. His research interests include analog and digital circuit designs of Processing In Memory(PIM).",
     "Awards": [],
@@ -23,6 +26,9 @@
   },
     {
     "name": "Han-Gil Yoo",
+    "education": [
+    "B.S., Department of Electrical Engineering, Hanyang University, Ansan, Korea (2019.03 ~ Present)"
+    ],
     "research_interests": ["PiM"],
     "Awards": [],
     "biography": "Han-Gil Yoo is pursuing a Bachelor's degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include analog and digital circuit designs of processing in memory (PiM).",
@@ -32,6 +38,9 @@
   },
   {
     "name": "Ju-Yong Lee",
+    "education": [
+    "B.S., Department of Electrical Engineering, Gachon University, Seongnam, Korea (2021.03 ~ 2025.02)"
+    ],
     "research_interests": ["Wireline Interface"],
     "Awards": [],
     "biography": "Ju-Yong Lee received a B.S. degree in electrical engineering from Gachon University, Sungnam, South Korea. His research interests include Wireline Interface.",
