@@ -72,6 +72,9 @@
         "process": "28-nm T"
       }
     ],
+    "education": [
+    "B.S., Department of Electronics Engineering, Kangwon National University, Chuncheon, Korea (2018.03 ~ 2024.02)"
+    ],
     "publication": ["JSSC'25"],
     "Awards": ["ISOCC'25 best paper award", "ISOCC'25 Chip Design Contest", "2025 IEEE Seoul Section Student Paper Bronze Award"],
     "biography": "Received a B.S. degree in the school of electrical engineering at Gangwon University, Ansan, South Korea. He is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include CDR, DSP-based Receiver.",
@@ -175,6 +178,9 @@
     "research_interests": ["Wireline Interface"],
     "education": [
     "B.S., Department of Electrical Engineering, Hanyang University, Ansan, Korea (2017.03 ~ 2023.02)"
+    ],
+    "experience": [
+    "Engineer, IP Development Team, FINECHIPS INC., Yongin-si, Gyeonggi-do, Korea (2023.01 ~ 2025.06 )"
     ],
     "Awards": [],
     "biography": "Received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. He is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include Wireline Interface.",

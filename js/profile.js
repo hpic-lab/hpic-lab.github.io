@@ -153,7 +153,7 @@ $(document).ready(function () {
     );
   });
 
-  function updateModalContent(name, profile_img, biography, email, position, research_interests, education, publication,experience, tape_out_schedule, Awards, affiliation, program_period, links) {
+  function updateModalContent(name, profile_img, biography, email, position, research_interests, education, publication, experience, tape_out_schedule, Awards, affiliation, program_period, links) {
     $("#modal-name").text(name);
     
     if (profile_img) {
