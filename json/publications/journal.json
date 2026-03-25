@@ -52,13 +52,13 @@
       "title": "IGA-SRAM: A Compact SRAM-based IMC Engine for Binary/Ternary Deep Neural Networks with ADC-Less and Error-Aware Training Algorithm",
       "image": "",
       "journal": "IEEE JETCAS",
-      "reference":"<i>IEEE Journal on Emerging and Selected Topics in Circuits and Systems (JETCAS)</i>, 2026.",       
+      "reference":"<i>IEEE Journal on Emerging and Selected Topics in Circuits and Systems (JETCAS)</i>, 2026 (*Equally Credited Authors).",       
       "authors": [
-        "S.-U. Kang<sup>*</sup>",
-        "D.-H. Lee<sup>*</sup>",
+        "S.-U. Kang*",
+        "D.-H. Lee*",
         "M.-G. Song",
         "M. Seok", 
-        "M.-S. Choo."
+        "and M.-S. Choo."
       ],
       "figure": [ "su-kang-profile-img.jpg", "dh-lee-profile-img.png","mg-song-profile-img.jpg", "ms-choo-profile-img.png"],
       "link": ""
@@ -82,7 +82,7 @@
         "K.-H. Lee",
         "M. Choi",
         "M.-S. Choo",
-        "J. Roh"
+        "and J. Roh"
       ],
       "figure": [ "jh-kim-profile-img.png", "jh-pyeon-profile-img.png", "ms-choo-profile-img.png"],
       "link": ""
