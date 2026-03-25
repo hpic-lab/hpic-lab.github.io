@@ -1,5 +1,7 @@
 
   [ 
+
+
     {
       "type": "2026",
       "status": "IEEE JSSC",
@@ -49,10 +51,10 @@
       "sub": "Accepted",
       "type": "2026",
       "status": "IEEE JETCAS",
-      "title": "",
+      "title": "IGA-SRAM: A Compact SRAM-based IMC Engine for Binary/Ternary Deep Neural Networks with ADC-Less and Error-Aware Training Algorithm",
       "image": "",
       "journal": "IEEE JETCAS",
-      "reference":"",       
+      "reference":"<i>IEEE Journal on Emerging and Selected Topics in Circuits and Systems (JETCAS)</i>, 2026.",       
       "authors": [
         "Shin-Uk Kang",
         "Dong-Hyun Lee",
@@ -63,7 +65,7 @@
       "figure": [ "su-kang-profile-img.jpg", "dh-lee-profile-img.png","mg-song-profile-img.jpg", "ms-choo-profile-img.png"],
       "link": ""
     },
-        {
+    {
       "sub": "Accepted",
       "type": "2026",
       "status": "IEEE TIM",
