@@ -54,11 +54,11 @@
       "journal": "IEEE JETCAS",
       "reference":"<i>IEEE Journal on Emerging and Selected Topics in Circuits and Systems (JETCAS)</i>, 2026.",       
       "authors": [
-        "Shin-Uk Kang",
-        "Dong-Hyun Lee",
-        "Min-Gwon Song",
-        "Mingoo Seok", 
-        "Min-Seong Choo."
+        "S.-U. Kang<sup>*</sup>",
+        "D.-H. Lee<sup>*</sup>",
+        "M.-G. Song",
+        "M. Seok", 
+        "M.-S. Choo."
       ],
       "figure": [ "su-kang-profile-img.jpg", "dh-lee-profile-img.png","mg-song-profile-img.jpg", "ms-choo-profile-img.png"],
       "link": ""
