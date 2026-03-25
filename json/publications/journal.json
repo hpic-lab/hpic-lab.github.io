@@ -1,7 +1,5 @@
 
   [ 
-
-
     {
       "type": "2026",
       "status": "IEEE JSSC",
@@ -65,7 +63,7 @@
       "figure": [ "su-kang-profile-img.jpg", "dh-lee-profile-img.png","mg-song-profile-img.jpg", "ms-choo-profile-img.png"],
       "link": ""
     },
-    {
+        {
       "sub": "Accepted",
       "type": "2026",
       "status": "IEEE TIM",
