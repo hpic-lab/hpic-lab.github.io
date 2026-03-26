@@ -202,7 +202,17 @@ $(document).ready(function () {
     updateList("#modal-education", parsed_education, "No education available.");
 
     const parsed_experience = parseData(experience);
-    updateList("#modal-experience", parsed_experience, "No experience available.");
+
+        if (parsed_research_interests.length > 0) {
+        $("#modal-experience-title").show();
+        $("#modal-experience").show();
+        updateList("#modal-experience", parsed_research_interests, "");
+    } else {
+        // 내용이 없으면 제목과 리스트 모두 화면에서 숨김 처리
+        $("#modal-experience-title").hide();
+        $("#modal-experience").hide();
+    }
+    //updateList("#modal-experience", parsed_experience, "No experience available.");
 
     const parsedTapeOutSchedule = parseData(tape_out_schedule);
     const formattedTapeOutSchedule = parsedTapeOutSchedule
