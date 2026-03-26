@@ -78,7 +78,7 @@
     "education": [
     "B.S., School of Electronics Engineering, Kangwon National University, Chuncheon, Korea (2018.03 ~ 2024.02)"
     ],
-    "publication": ["JSSC'25 <a href='https://ieeexplore.ieee.org/document/11029275' target='_blank' rel='noopener noreferrer' class='news-link'>[Paper]</a>"],
+    "publication": ["A 14-to-32-Gb/s Deadzone-Free Referenceless CDR With Autocovariance-Based Seamless Frequency Detector in 40-nm CMOS Technology, IEEE Journal of Solid-State Circuits, vol. 60, no. 10, pp. 3602-3612, Oct. 2025 <a href='https://ieeexplore.ieee.org/document/11029275' target='_blank' rel='noopener noreferrer' class='news-link'>[Paper]</a>"],
     "Awards": ["ISOCC'25 best paper award", "ISOCC'25 Chip Design Contest", "2025 IEEE Seoul Section Student Paper Bronze Award"],
     "biography": "Seung-Hwan Gong received a B.S. degree in the school of electrical engineering at Kangwon National University, Chuncheon, South Korea. He is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include CDR, DSP-based Receiver.",
     "email": "fire051324@gmail.com",
