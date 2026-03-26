@@ -72,7 +72,7 @@
     "education": [
     "B.S., School of Electronics Engineering, Kangwon National University, Chuncheon, Korea (2018.03 ~ 2024.02)"
     ],
-    "publication": ["A 14-to-32-Gb/s Deadzone-Free Referenceless CDR With Autocovariance-Based Seamless Frequency Detector in 40-nm CMOS Technology, IEEE Journal of Solid-State Circuits, vol. 60, no. 10, pp. 3602-3612, Oct. 2025 <a href='https://ieeexplore.ieee.org/document/11029275' target='_blank' rel='noopener noreferrer' class='news-link'>[Paper]</a>"],
+    "publication": ["H.-S. Choi*, J.-G. Lee*, S.-H. Gong, K.-H. Lee, D. Koh, J.-W. Sull, H. Do, C.-H. Kye, D.-K. Jeong, K. Park, and M.-S. Choo, A 14-to-32-Gb/s Deadzone-Free Referenceless CDR With Autocovariance-Based Seamless Frequency Detector in 40-nm CMOS Technology, IEEE Journal of Solid-State Circuits, vol. 60, no. 10, pp. 3602-3612, Oct. 2025 (*Equally Credited Authors). <a href='https://ieeexplore.ieee.org/document/11029275' target='_blank' rel='noopener noreferrer' class='news-link'>[Paper]</a>"],
     "Awards": ["ISOCC'25 best paper award", "ISOCC'25 Chip Design Contest", "2025 IEEE Seoul Section Student Paper Bronze Award"],
     "biography": "Seung-Hwan Gong received a B.S. degree in the school of electrical engineering at Kangwon National University, Chuncheon, South Korea. He is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include CDR, DSP-based Receiver.",
     "email": "fire051324@gmail.com",
@@ -91,7 +91,7 @@
     "education": [
     "B.S., School of Electrical Engineering, Hanyang University, Ansan, Korea (2017.03 ~ 2023.08)"
     ],
-    "publication": ["ASSCC'25 <a href='https://ieeexplore.ieee.org/document/11349396' target='_blank' rel='noopener noreferrer' class='news-link'>[Paper]</a>"],
+    "publication": ["S.-M Jin*, D.-H Kim*, K.-H Lee, H. Ju, G.-S Jeong, W. Bae, J. Han, M.-S. Choo, A 22Gb/s-54Gb/s Reconfigurable PAM-2/4/8 DSP-Based Transmitter with 14-Tap Feedforward Equalization, in 2025 IEEE Asian Solid-State Circuits Conference (A-SSCC), pp. 1-3, 2025 (*Equally Credited Authors). <a href='https://ieeexplore.ieee.org/document/11349396' target='_blank' rel='noopener noreferrer' class='news-link'>[Paper]</a>"],
     "Awards": ["제 26회 대한민국 반도체설계대전 특허청장상 수상", "2025 IEEE Seoul Section Student Paper Bronze Award"],
     "biography": "Dong-Ho Kim received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. He is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include DSP-DAC based transmitter.",
     "email": "dpdl112@hanyang.ac.kr",
@@ -116,11 +116,11 @@
     "B.S., School of Electrical Engineering, Hanyang University, Ansan, Korea (2019.03 ~ 2025.02)"
     ],
     "publication": [
-    "ICEIC'24 <a href='https://ieeexplore.ieee.org/document/10457160' target='_blank' rel='noopener noreferrer' class='news-link'>[Paper]</a>",
-    "ASSCC'24[JSSC invited] <a href='https://ieeexplore.ieee.org/document/10848602' target='_blank' rel='noopener noreferrer' class='news-link'>[Paper]</a>",
-    "JSSC'25 <a href='https://ieeexplore.ieee.org/document/11029275' target='_blank' rel='noopener noreferrer' class='news-link'>[Paper]</a>",
-    "ITC-CSCC '25 <a href='https://ieeexplore.ieee.org/document/11137667' target='_blank' rel='noopener noreferrer' class='news-link'>[Paper]</a>",
-    "ASSCC'25 <a href='https://ieeexplore.ieee.org/document/11349558' target='_blank' rel='noopener noreferrer' class='news-link'>[Paper]</a>"],
+    "J.-G. Lee, S.-U. Kang, and M.-S. Choo, Hardware and Software Co-Simulation Methodology for Processing-in-Memory Bitcell Application , in 2024 International Conference on Electronics, Information, and Communication (ICEIC), pp. 1-2, 2024. <a href='https://ieeexplore.ieee.org/document/10457160' target='_blank' rel='noopener noreferrer' class='news-link'>[Paper]</a>",
+    "H.-S. Choi*, J.-G. Lee*, K.-H. Lee, D. Koh, J.-W. Sull, H.-R. Do, C.-H. Kye, D.-K. Jeong, and M.-S. Choo, A 14-to-32-Gb/s Deadzone-Free Referenceless CDR with Autocovariance-based Frequency Detector in 40-nm CMOS Technology, in 2024 IEEE Asian Solid-State Circuits Conference (A-SSCC), pp. 1-3, 2024 (*Equally Credited Authors). <a href='https://ieeexplore.ieee.org/document/10848602' target='_blank' rel='noopener noreferrer' class='news-link'>[Paper]</a>",
+    "H.-S. Choi*, J.-G. Lee*, S.-H. Gong, K.-H. Lee, D. Koh, J.-W. Sull, H. Do, C.-H. Kye, D.-K. Jeong, K. Park, and M.-S. Choo, A 14-to-32-Gb/s Deadzone-Free Referenceless CDR With Autocovariance-Based Seamless Frequency Detector in 40-nm CMOS Technology, IEEE Journal of Solid-State Circuits, vol. 60, no. 10, pp. 3602-3612, Oct. 2025 (*Equally Credited Authors). <a href='https://ieeexplore.ieee.org/document/11029275' target='_blank' rel='noopener noreferrer' class='news-link'>[Paper]</a>",
+    "J.-G. Lee, S.-H. Ok, S.-H. Gong, S.-M. Jin, D.-H. Kim, and M.-S. Choo, Analysis of Adaptive Learning Rate Strategies for Sign-Sign LMS: Stability and Speed, in 2025 International Technical Conference on Circuits/Systems, Computers, and Communications (ITC-CSCC), pp. 1-3, 2025. <a href='https://ieeexplore.ieee.org/document/11137667' target='_blank' rel='noopener noreferrer' class='news-link'>[Paper]</a>",
+    "S.-H. Ok*, J.-G. Lee*, K.-H Lee, Haram Ju, G.-S Jeong, W. Bae, M.-S Choo, Critical-Timing-Relaxed pre-Decision Feedforward Equalizer for High-Speed DSP-based Wireline Receiver using Hardware-in-the-Loop Verification on RF-SoC, in 2025 IEEE Asian Solid-State Circuits Conference (A-SSCC), pp. 82-84, 2025 (*Equally Credited Authors). <a href='https://ieeexplore.ieee.org/document/11349558' target='_blank' rel='noopener noreferrer' class='news-link'>[Paper]</a>"],
     "Awards": [
       "석사과정생 연구장려금 '25-2 - '26-1 [NRF]", 
       "2025 IEEE Seoul Section Student Paper Bronze Award", 
@@ -145,9 +145,9 @@
     "B.S., School of Electrical Engineering, Hanyang University, Ansan, Korea (2019.03 ~ 2025.02)"
     ],
     "publication": [
-      "ICEIC'24 <a href='https://ieeexplore.ieee.org/document/10457226' target='_blank' rel='noopener noreferrer' class='news-link'>[Paper]</a>", 
-      "ISOCC'2024 <a href='https://ieeexplore.ieee.org/document/10762215' target='_blank' rel='noopener noreferrer' class='news-link'>[Paper]</a>", 
-      "ASSCC'25 <a href='https://ieeexplore.ieee.org/document/11349396' target='_blank' rel='noopener noreferrer' class='news-link'>[Paper]</a>"
+      "S.-M. Jin, S.-U. Kang, and M.-S. Choo, Analysis of ADC Quantization Effect in Processing-In-Memory Macro in Various Low-Precision Deep Neural Networks, in 2024 International Conference on Electronics, Information, and Communication (ICEIC), pp. 1-2, 2024. <a href='https://ieeexplore.ieee.org/document/10457226' target='_blank' rel='noopener noreferrer' class='news-link'>[Paper]</a>", 
+      "S.-U. Kang, S.-M. Jin, M.-G. Song, D.-H. Lee, W.-S. Jung, and M.-S. Choo, A 2T1C eDRAM-based Compute-In-Memory Macro with 8-to-1 Column Multiplexing Scheme for Highly Sparse Binarized Deep Neural Networks, in 2024 21st International SoC Design Conference (ISOCC), pp. 177-178, 2024. <a href='https://ieeexplore.ieee.org/document/10762215' target='_blank' rel='noopener noreferrer' class='news-link'>[Paper]</a>", 
+      "S.-M Jin*, D.-H Kim*, K.-H Lee, H. Ju, G.-S Jeong, W. Bae, J. Han, M.-S. Choo, A 22Gb/s-54Gb/s Reconfigurable PAM-2/4/8 DSP-Based Transmitter with 14-Tap Feedforward Equalization, in 2025 IEEE Asian Solid-State Circuits Conference (A-SSCC), pp. 1-3, 2025 (*Equally Credited Authors). <a href='https://ieeexplore.ieee.org/document/11349396' target='_blank' rel='noopener noreferrer' class='news-link'>[Paper]</a>"
     ],
     "Awards": ["2023-2 SCCUD 구두 발표 최우수상", "2024.05. SOC 학술대회 우수발표 논문상", "2024-1 SCCuD DAY 구두 발표 최우수상", "2024-1 공학대학 켑스톤 페어 동상", "2024-2 SCCuD DAY 구두 발표 대상", "석사과정생 연구장려금 '25-2 - '26-1 [NRF]", "제 26회 대한민국 반도체설계대전 특허청장상 수상", "ISOCC'25 best paper award", "2025 IEEE Seoul Section Student Paper Bronze Award"],
     "biography": "Seung-Mo Jin received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. He is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include DSP-DAC based transmitter.",
