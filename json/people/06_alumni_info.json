@@ -3,7 +3,17 @@
     "affiliation":"",
     "program_period":"M.S. (2024-2025)",
     "research_interests": ["AI hardware design and PIM"],
-    "Awards": ["ISOCC'24", "제 26회 대한민국 반도체설계대전 기업특별상 수상"],
+    "education": [
+    "B.S., School of Electrical and Electronic Engineering from Dankook University, Jukjeon, South Korea, (2018.03 ~ 2024.02)"
+    ,"M.S., School of Electrical Engineering from Hanyang University, Ansan, South Korea, (2024.03 ~ 2026.02)"    
+    ],
+    "publication": [
+    "S.-U. Kang*, D.-H. Lee*, M.-G. Song, M. Seok, and M.-S. Choo., IGA-SRAM: A Compact SRAM-based IMC Engine for Binary/Ternary Deep Neural Networks with ADC-Less and Error-Aware Training Algorithm, IEEE Journal on Emerging and Selected Topics in Circuits and Systems (JETCAS), 2026(*Equally Credited Authors)."
+    ],
+    "Awards": [
+      "ISOCC'24", 
+      "제 26회 대한민국 반도체설계대전 기업특별상 수상"
+    ],
     "biography": "Dong-Hyun Lee received a B.S. degree in the School of Electrical and Electronic Engineering from Dankook University, Jukjeon, South Korea, and the M.S. degree in the School of Electrical Engineering from Hanyang University, Ansan, South Korea. His research interests include artificial intelligence hardware design and processing in memory (PIM).",
     "email": "",
     "position": "",
@@ -14,7 +24,15 @@
     "affiliation":"LX Semicon",
     "program_period":"M.S. (2024-2025)",
     "research_interests": ["CDR, PAM4 receiver"],
-    "Awards": ["ICEIC'25 Best Paper Award - Silver Prize, ASSCC'25"],
+    "education": [
+    "B.S., School of Electrical Engineering from Hanyang University, Ansan, South Korea, (2009.03 ~ 2016.02)"
+    ,"M.S., School of Electrical Engineering from Hanyang University, Ansan, South Korea, (2024.03 ~ 2026.02)"    
+    ],
+    "publication": [
+    "S.-H. Ok*, J.-G. Lee*, K.-H Lee, Haram Ju, G.-S Jeong, W. Bae, M.-S Choo, Critical-Timing-Relaxed pre-Decision Feedforward Equalizer for High-Speed DSP-based Wireline Receiver using Hardware-in-the-Loop Verification on RF-SoC, in 2025 IEEE Asian Solid-State Circuits Conference (A-SSCC), (*Equally Credited Authors)."
+    ,"S.-H. Ok, D.-H. Heo, J.-G. Lee, S.-M. Jin, K.-H. Lee, D. Jeong, and M.-S. Choo, An Implementation of a DSP-Based PAM-4 Digital Equalizer with 32-Way TI-ADC, in 2025 International Conference on Electronics, Information, and Communication (ICEIC)."
+    ],
+    "Awards": ["ICEIC'25 Best Paper Award - Silver Prize"],
     "biography": "Sang-Hyun Ok received the B.S. degree in the school of electronics and communication engineering at Hanyang University, Ansan, South Korea, and the M.S. degree in electrical engineering from Hanyang University, Ansan, South Korea. He joined LX Semicon, Seoul, South Korea in 2016, where he has been involved in the LCD DDI team. His research interests include digital and analog circuit design of Clock and Data Recovery (CDR) and digital circuit designs of PAM4 Receiver with adaptive decision feedback equalizer.",
     "email": "",
     "position": "",
@@ -25,6 +43,13 @@
     "affiliation":"ram-sCHIP",
     "program_period":"M.S. (2023-2025)",
     "research_interests": ["Wide-range PI-based CDR"],
+    "education": [
+    "B.S., School of Electrical Engineering from Hanyang University, Ansan, South Korea, (2017.03 ~ 2023.02)"
+    ,"M.S., School of Electrical Engineering from Hanyang University, Ansan, South Korea, (2023.03 ~ 2025.08)"    
+    ],
+    "publication": [
+    "D.-H. Heo, T.-H. Kim, K.-H. Lee, and M.-S. Choo, An Analysis of 32-Gb/s and Full-Rate Phase Interpolator based Clock and Data Recovery, in 2024 International Conference on Electronics, Information, and Communication (ICEIC), 2024."
+    ],
     "Awards": ["ICEIC'24 Best Paper Award - Gold Prize"],
     "biography": "Dong-Hoe Heo received the B.S. and M.S. degrees in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include clock and data recovery (CDR) circuit design.",
     "email": "",
@@ -35,6 +60,10 @@
     "affiliation":"SUGARS",
     "program_period":"M.S. (2023-2024)",
     "research_interests": ["Physically Unclonable Function (PUF)"],
+    "education": [
+    "B.S., School of Electrical Engineering from Hanyang University, Ansan, South Korea, (2017.03 ~ 2023.02)"
+    ,"M.S., School of Electrical Engineering from Hanyang University, Ansan, South Korea, (2023.03 ~ 2025.02)"    
+    ],
     "biography": "Kang-Min Kim received the B.S. and M.S. degrees in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include hardware security.",
     "email": "",
     "profile_img": "img/km-kim-profile-img.jpg"
@@ -44,6 +73,9 @@
     "affiliation":"LX Semicon",
     "program_period":"M.S. (2023-2024)",
     "research_interests": ["High-performance DPLL"],
+    "education": [
+    "M.S., School of Electrical Engineering from Hanyang University, Ansan, South Korea, (2023.03 ~ 2025.02)"    
+    ],
     "biography": "Kyu-Ran Park received a B.S. degree in electrical engineering from Cheongju University, Cheongju, South Korea, and the M.S. degree in electrical engineering from Hanyang University, Ansan, South Korea. She joined LX Semicon, Seoul, South Korea, in 2015, where she has been involved in the YPD team. Her research interests include analog and digital circuit designs of phase-locked-loop (PLL).",
     "email": "",
     "profile_img": "img/kr-park-profile-img.png"
@@ -53,7 +85,14 @@
     "affiliation":"Ph.D. Candidate @ KAIST",
     "program_period":"M.S. (2023-2024)",
     "research_interests": ["AI hardware design and PIM"],
-    "Awards": ["ICEIC'23", "ICEIC'24"],
+    "education": [
+    "B.S., School of Electrical Engineering from Hanyang University, Ansan, South Korea, (2019.03 ~ 2023.02)"
+    ,"M.S., School of Electrical Engineering from Hanyang University, Ansan, South Korea, (2023.03 ~ 2025.02)"    
+    ],
+    "publication": [
+    "S.-U. Kang*, D.-H. Lee*, M.-G. Song, M. Seok, and M.-S. Choo., IGA-SRAM: A Compact SRAM-based IMC Engine for Binary/Ternary Deep Neural Networks with ADC-Less and Error-Aware Training Algorithm, IEEE Journal on Emerging and Selected Topics in Circuits and Systems (JETCAS), 2026(*Equally Credited Authors)."
+    ,"S.-U. Kang, J.-W. Han, and M.-S. Choo, Radiation-Hardened Processing-In-Memory Crossbar Array With Hybrid Synapse Devices for Space Application, in 2023 International Conference on Electronics, Information, and Communication (ICEIC), pp. 1-4, 2023."
+    ],
     "biography": "Shin-Uk Kang received the B.S. and M.S. degrees in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include artificial intelligence hardware design and processing in memory (PIM).",
     "email": "",
     "profile_img": "img/su-kang-profile-img.jpg"
@@ -63,8 +102,14 @@
     "affiliation":"4Lynx",
     "program_period":"M.S. (2022-2024)",
     "research_interests": ["High PSRR DPLL"],
+    "education": [
+    "M.S., School of Electrical Engineering from Hanyang University, Ansan, South Korea, (2022.09 ~ 2025.02)"    
+    ],
+    "publication": [
+    "K. Baek*, J. Kim*, K. Kim, D.-K. Jeong, and M.-S. Choo, A Supply Noise-Insensitive Ring DCO With a Self-Biased Shunt Regulator Array in Wide-Range Digital PLL, IEEE Transactions on Very Large Scale Integration (VLSI) Systems, vol. 33, no. 8, pp. 2349-2353, Aug. 2025 (Equally Credited Authors)."
+    ,"J. Choi, J.-H. Kim, T. Kim, J.-H. Pyeon, W.-T. Lim, H. Kim, H. Roh, K.-H. Lee, M. Choi, M.-S. Choo, and J. Roh, Built-In Phase Noise Measurement System for Multi-GHz Phase-Locked Loops, IEEE Transactions on Instrumentation & Measurement (TIM), 2026."
+    ],
     "biography": "Ji-Ho Kim received a B.S. degree in electrical engineering from Chosun University, Gwangju, South Korea, and the M.S. degree in the school of electrical engineering from Hanyang University, Ansan, South Korea. His research interests include analog and digital circuit designs of phase-locked-loop (PLL).",
-    "Awards": ["TVSLI'25"],
     "email": "",
     "position": "",
     "profile_img": "img/jh-kim-profile-img.png"
