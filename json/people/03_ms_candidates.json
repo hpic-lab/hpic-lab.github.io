@@ -47,12 +47,6 @@
   {
     "name": "In-Ho Han",
     "research_interests": ["PLL"],
-    "tape_out_schedule": [
-      {
-        "date": "2025.07",
-        "process": "28-nm S"
-      }
-    ],
     "education": [
     "B.S., School of Electronic Engineering, Gachon University, Seoungnam, Korea (2017.03 ~ 2023.02)"
     ],

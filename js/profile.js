@@ -202,8 +202,7 @@ $(document).ready(function () {
     updateList("#modal-education", parsed_education, "No education available.");
 
     const parsed_experience = parseData(experience);
-
-        if (parsed_experience.length > 0) {
+    if (parsed_experience.length > 0) {
         $("#modal-experience-title").show();
         $("#modal-experience").show();
         updateList("#modal-experience", parsed_experience, "");
