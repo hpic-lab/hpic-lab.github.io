@@ -52,7 +52,8 @@
     "experience": [
     "FAE(Field Application Engineer), Dongwoon Anatech, Seoul, Korea (2023.04 ~ 2024.08 )"
     ],    
-    "publication": ["I.-H. Han and M.-S. Choo, Implementation and Characterization of a Digital Phase-Locked Loop (DPLL) in 65-nm CMOS Technology, IDEC Journal of Integrated Circuits and Systems (JICAS), 11(4), 52-57, 2025. <a href='https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003245290' target='_blank' rel='noopener noreferrer' class='news-link'>[Paper]</a>"],
+    "publication": ["I.-H. Han and M.-S. Choo, Implementation and Characterization of a Digital Phase-Locked Loop (DPLL) in 65-nm CMOS Technology, IDEC Journal of Integrated Circuits and Systems (JICAS), 11(4), 52-57, 2025. <a href='https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003245290' target='_blank' rel='noopener noreferrer' class='news-link'>[Paper]</a>",
+                    "I.-H. Han and M.-S. Choo, A Digital Phase-Locked Loop with Autocorrelation-Based Proportional Gain Control for Adaptive Jitter Reduction, 2025 International Conference on Electronics, Information, and Communication (ICEIC), Osaka, Japan, 2025"],
     "biography": "In-Ho Han received a B.S. degree in electrical engineering from Gachon University, Sungnam, South Korea. He is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include analog and digital circuit designs of phase-locked-loop (PLL).",
     "email": "inho0303@hanyang.ac.kr",
     "profile_img": "img/ih-han-profile-img.jpg",
@@ -94,7 +95,7 @@
     "Awards": ["제 26회 대한민국 반도체설계대전 특허청장상 수상", "2025 IEEE Seoul Section Student Paper Bronze Award"],
     "biography": "Dong-Ho Kim received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. He is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include DSP-DAC based transmitter.",
     "email": "dpdl112@hanyang.ac.kr",
-    "profile_img": "img/dh-kim-profile-image.jpg",
+    "profile_img": "img/dh-kim-new-profile-image.jpg",
     "position": "",
     "cv": "https://drive.google.com/file/d/1IIwGJfwAkVuCNuxvlFhy0Qp3Lv7o2et1/view?usp=drive_link"
   },
