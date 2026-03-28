@@ -46,7 +46,7 @@
       "link": ""
     },
     {
-      "sub": "Accepted",
+      "sub": "",
       "type": "2026",
       "status": "IEEE JETCAS",
       "title": "IGA-SRAM: A Compact SRAM-based IMC Engine for Binary/Ternary Deep Neural Networks with ADC-Less and Error-Aware Training Algorithm",
@@ -61,7 +61,7 @@
         "and M.-S. Choo."
       ],
       "figure": [ "su-kang-profile-img.jpg", "dh-lee-profile-img.png","mg-song-profile-img.jpg", "ms-choo-profile-img.png"],
-      "link": ""
+      "link": "https://ieeexplore.ieee.org/document/11456958"
     },
         
     { 
