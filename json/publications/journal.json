@@ -63,14 +63,27 @@
       "figure": [ "su-kang-profile-img.jpg", "dh-lee-profile-img.png","mg-song-profile-img.jpg", "ms-choo-profile-img.png"],
       "link": ""
     },
-        {
-      "sub": "Accepted",
+        
+    { 
+      "sub": "",      
+      "type": "2026",
+      "status": "IEEE TVLSI",
+      "title": "A Pattern-Dependent Pulse Filtering Technique for Low-Jitter Injection-Locked CDR in 28-nm CMOS",
+      "image": "",
+      "journal": "IEEE TVLSI",
+      "reference":"<i>IEEE Transactions on Very Large Scale Integration (VLSI) Systems</i>, vol. 34, no. 2, pp. 711-715, Feb. 2026.",      
+      "authors": ["J. Kim", "Y.-W. Kim", "S. Lee", "Y. Jung", "M.-S. Choo", "and K. Park"],
+      "figure": ["ms-choo-profile-img.png"],
+      "link": "https://ieeexplore.ieee.org/document/11289554"
+    },
+    {
+      "sub": "",
       "type": "2026",
       "status": "IEEE TIM",
       "title": "Built-In Phase Noise Measurement System for Multi-GHz Phase-Locked Loops",
       "image": "",
       "journal": "IEEE TIM",
-      "reference":"<i>IEEE Transactions on Instrumentation & Measurement (TIM)</i>, 2026.",      
+      "reference":"<i>IEEE Transactions on Instrumentation and Measurement (TIM)</i>, 2026.",      
       "authors": [
         "J. Choi",
         "J.-H. Kim",
@@ -85,19 +98,7 @@
         "and J. Roh"
       ],
       "figure": [ "jh-kim-profile-img.png", "jh-pyeon-profile-img.png", "ms-choo-profile-img.png"],
-      "link": ""
-    },
-    { 
-      "sub": "",      
-      "type": "2026",
-      "status": "IEEE TVLSI",
-      "title": "A Pattern-Dependent Pulse Filtering Technique for Low-Jitter Injection-Locked CDR in 28-nm CMOS",
-      "image": "",
-      "journal": "IEEE TVLSI",
-      "reference":"<i>IEEE Transactions on Very Large Scale Integration (VLSI) Systems</i>, vol. 34, no. 2, pp. 711-715, Feb. 2026.",      
-      "authors": ["J. Kim", "Y.-W. Kim", "S. Lee", "Y. Jung", "M.-S. Choo", "and K. Park"],
-      "figure": ["ms-choo-profile-img.png"],
-      "link": "https://ieeexplore.ieee.org/document/11289554"
+      "link": "https://ieeexplore.ieee.org/document/11456593"
     }, 
     {
       "sub": "",      
