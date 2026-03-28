@@ -19,6 +19,7 @@
     "education": [
     "B.S., School of Electrical Engineering, Hanyang University, Ansan, Korea (2018.03 ~ 2024.08)"
     ],
+    "publications": ["J. Choi, J.-H. Kim, T. Kim, J.-H. Pyeon, W.-T. Lim, H. Kim, H. Roh, K.-H. Lee, M. Choi, M.-S. Choo, and J. Roh, Built-In Phase Noise Measurement System for Multi-GHz Phase-Locked Loops, IEEE Transactions on Instrumentation and Measurement (TIM), 2026.<a href='https://ieeexplore.ieee.org/document/11456593' target='_blank' rel='noopener noreferrer' class='news-link'>[Paper]</a>"],
     "Awards": ["ISOCC'25 Chip Design Contest"],
     "biography": "Jae-Hyeon Pyeon received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include analog and digital circuit designs of phase-locked-loop (PLL).",
     "email": "ccomo7004@hanyang.ac.kr",
