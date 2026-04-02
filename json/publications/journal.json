@@ -45,6 +45,37 @@
       "figure": ["sm-jin-profile-img.jpg", "dh-kim-profile-image.jpg", "ms-choo-profile-img.png"],
       "link": ""
     },
+        {
+      "sub": "",      
+      "type": "2026",
+      "status": "JICAS",
+      "title": "Comparison of 3T2C Embedded DRAM in 28nm FD-SOI and Low Power Plus for Energy-Efficient Computing in Memory Architecture",
+      "image": "",
+      "journal": "JICAS",
+      "reference":"IDEC Journal of Integrated Circuits and Systems (JICAS),  12(2), 1-5.",   
+      "authors": ["S.-Y. Kwon",
+                  "D.-H. Lee",
+                  "S.-H. Kim",
+                  "and M.-S. Choo"],
+      "figure": ["img/sw-kwon-profile-image.jpeg","img/dh-lee-profile-img.png","img/sh-kim-profile-image.jpg", "ms-choo-profile-img.png"],
+      "link": "https://jicas.idec.or.kr/index.php/JICAS/article/view/350"
+    },      
+        {
+      "sub": "",      
+      "type": "2026",
+      "status": "JICAS",
+      "title": "Low-Complexity Referenceless Clock and Data Recovery with a Novel Alexander Phase-Frequency Detector",
+      "image": "",
+      "journal": "JICAS",
+      "reference":"IDEC Journal of Integrated Circuits and Systems (JICAS), 12(2), 40-46.",   
+      "authors": ["D.-H. Lee",
+                  "D.-H. Heo",
+                  "S.-H. Ok",
+                  "S.-H. Gong", 
+                  "and M.-S. Choo"],
+      "figure": ["img/dh_lee_bs_profile_image.jpg","img/dh-heo-profile-img.jpg","img/sh-ok-profile-img.jpg","img/sh-gong-profile-image.jpg", "ms-choo-profile-img.png"],
+      "link": "https://jicas.idec.or.kr/index.php/JICAS/article/view/349"
+    },      
     {
       "sub": "",
       "type": "2026",
