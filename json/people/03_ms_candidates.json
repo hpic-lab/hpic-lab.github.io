@@ -32,12 +32,7 @@
     "B.S., School of Applied Physics, Hanyang University, Ansan, Korea (2019.03 ~ 2025.02)"
     ],
     "research_interests": ["Digital PIM"],
-    "tape_out_schedule": [
-      {
-        "date": "2024",
-        "process": ""
-      }
-    ],
+    "publication": ["S.-Y. Kwon, D.-H. Lee, S.-H. Kim, and M.-S. Choo, Comparison of 3T2C Embedded DRAM in 28nm FD-SOI and Low Power Plus for Energy-Efficient Computing in Memory Architecture, IDEC Journal of Integrated Circuits and Systems (JICAS), 12(2), 1-5. <a href='https://jicas.idec.or.kr/index.php/JICAS/article/view/350' target='_blank' rel='noopener noreferrer' class='news-link'>[Paper]</a>"],
     "Awards": [],
     "biography": "So-Yeon Kwon received a B.S. degree in the school of Applied Physics at Hanyang University, Ansan, South Korea. She is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. Her research interests include artificial intelligence hardware design and processing in memory (PIM).",
     "email": "sykwon00@hanyang.ac.kr",
