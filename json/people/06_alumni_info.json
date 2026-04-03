@@ -1,7 +1,7 @@
 [ {
     "name": "Dong-Hyun Lee",
     "affiliation":"",
-    "program_period":"M.S. (2024-2025)",
+    "program_period":"M.S. (2024-2026)",
     "research_interests": ["AI hardware design and PIM"],
     "education": [
     "B.S., School of Electrical and Electronic Engineering from Dankook University, Jukjeon, South Korea, (2018.03 ~ 2024.02)"
@@ -20,9 +20,9 @@
     "profile_img": "img/dh-lee-profile-img.png"
   },
   {
-    "name": "Sang-Hyun Ok",
+    "name": "Sang-Hyeon Ok",
     "affiliation":"LX Semicon",
-    "program_period":"M.S. (2024-2025)",
+    "program_period":"M.S. (2024-2026)",
     "research_interests": ["CDR, PAM4 receiver"],
     "education": [
     "B.S., School of Electrical Engineering from Hanyang University, Ansan, South Korea, (2009.03 ~ 2016.02)"
@@ -33,7 +33,7 @@
     ,"S.-H. Ok, D.-H. Heo, J.-G. Lee, S.-M. Jin, K.-H. Lee, D. Jeong, and M.-S. Choo, An Implementation of a DSP-Based PAM-4 Digital Equalizer with 32-Way TI-ADC, in 2025 International Conference on Electronics, Information, and Communication (ICEIC)."
     ],
     "Awards": ["ICEIC'25 Best Paper Award - Silver Prize"],
-    "biography": "Sang-Hyun Ok received the B.S. degree in the school of electronics and communication engineering at Hanyang University, Ansan, South Korea, and the M.S. degree in electrical engineering from Hanyang University, Ansan, South Korea. He joined LX Semicon, Seoul, South Korea in 2016, where he has been involved in the LCD DDI team. His research interests include digital and analog circuit design of Clock and Data Recovery (CDR) and digital circuit designs of PAM4 Receiver with adaptive decision feedback equalizer.",
+    "biography": "Sang-Hyeon Ok received the B.S. degree in the school of electronics and communication engineering at Hanyang University, Ansan, South Korea, and the M.S. degree in electrical engineering from Hanyang University, Ansan, South Korea. He joined LX Semicon, Seoul, South Korea in 2016, where he has been involved in the LCD DDI team. His research interests include digital and analog circuit design of Clock and Data Recovery (CDR) and digital circuit designs of PAM4 Receiver with adaptive decision feedback equalizer.",
     "email": "",
     "position": "",
     "profile_img": "img/sh-ok-profile-img.jpg"
