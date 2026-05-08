@@ -1,6 +1,12 @@
 $(document).ready(function () {
     const researchProjects = [
       {
+        date: "May. 2026 - Apr. 2030",
+        title:
+          "이기종 디바이스 간 초고대역폭, 저지연, 직렬 인터페이스 기술 개발",
+        sponsor: "Ministry of Science and ICT (MSIT)",
+      },      
+      {
         date: "Jun. 2025 - Dec. 2029",
         title:
           "2.5D 광패키징 기반 CPO를 위한 Opto-chiplet이 집적된 인터포저 기술",
