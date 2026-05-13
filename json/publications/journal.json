@@ -1,7 +1,7 @@
 
   [  {
       "type": "2026",
-      "status": "IEEE JSSC",
+      "status": "IEEE TCAS-I",
       "title": "",
       "image": "",
       "progress": "Submitted",
@@ -12,21 +12,6 @@
         "Min-Seong Choo"
       ],
       "figure": [ "dh-lee-profile-img.png", "su-kang-profile-img.jpg", "sm_yoon_profile_image.jpg", "ms-choo-profile-img.png"],
-      "link": ""
-    },
-    {
-      "type": "2026",
-      "status": "IEEE JSSC",
-      "title": "",
-      "image": "",
-      "progress": "",
-      "journal": "IEEE JSSC",
-      "reference":"",           
-      "authors": [
-        "Jae-Hyeon Pyeon...", 
-        "Min-Seong Choo"
-      ],
-      "figure": [ "jh-pyeon-profile-img.png", "ih-han-profile-img.jpg", "ms-choo-profile-img.png"],
       "link": ""
     },
     {
@@ -42,6 +27,21 @@
         "Min-Seong Choo"
       ],
       "figure": [ "sh-ok-profile-img.jpg", "jg-lee-profile-img.jpeg", "ms-choo-profile-img.png"],
+      "link": ""
+    },
+    {
+      "type": "2026",
+      "status": "IEEE JSSC",
+      "title": "",
+      "image": "",
+      "progress": "",
+      "journal": "IEEE JSSC",
+      "reference":"",           
+      "authors": [
+        "Jae-Hyeon Pyeon...", 
+        "Min-Seong Choo"
+      ],
+      "figure": [ "jh-pyeon-profile-img.png", "ih-han-profile-img.jpg", "ms-choo-profile-img.png"],
       "link": ""
     },
     {
