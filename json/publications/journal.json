@@ -1,5 +1,19 @@
 
-  [ 
+  [  {
+      "type": "2026",
+      "status": "IEEE JSSC",
+      "title": "",
+      "image": "",
+      "progress": "",
+      "journal": "IEEE JSSC",
+      "reference":"",           
+      "authors": [
+        "Dong-Hyun Lee...", 
+        "Min-Seong Choo"
+      ],
+      "figure": [ "dh-lee-profile-img.png", "su-kang-profile-img.jpg", "sm_yoon_profile_image.jpg", "ms-choo-profile-img.png"],
+      "link": ""
+    },
     {
       "type": "2026",
       "status": "IEEE JSSC",
