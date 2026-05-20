@@ -23,10 +23,10 @@
       "journal": "IEEE TCAS-I",
       "reference":"",       
       "authors": [
-        "Sang-Hyeon Ok, Jae-Geon Lee...", 
+        "Jae-Geon Lee, Sang-Hyeon Ok...", 
         "Min-Seong Choo"
       ],
-      "figure": [ "sh-ok-profile-img.jpg", "jg-lee-profile-img.jpeg", "ms-choo-profile-img.png"],
+      "figure": ["jg-lee-profile-img.jpeg", "sh-ok-profile-img.jpg", "ms-choo-profile-img.png"],
       "link": ""
     },
     {
@@ -38,10 +38,10 @@
       "journal": "IEEE TCAS-II",
       "reference":"",       
       "authors": [
-        "Dong-Ho Kim, Seung-Mo Jin...", 
+        "Dong-Ho Kim, Seung-Mo Jin, Sang-Hyun Ok...", 
         "Min-Seong Choo"
       ],
-      "figure": ["dh-kim-profile-image.jpg", "sm-jin-profile-img.jpg", "ms-choo-profile-img.png"],
+      "figure": ["dh-kim-profile-image.jpg", "sm-jin-profile-img.jpg","sh-ok-profile-img.jpg", "ms-choo-profile-img.png"],
       "link": ""
     },
     {
