@@ -31,6 +31,21 @@
     },
     {
       "type": "2026",
+      "status": "IEEE TCAS-II",
+      "title": "",
+      "image": "",
+      "progress": "Submitted",
+      "journal": "IEEE TCAS-II",
+      "reference":"",       
+      "authors": [
+        "Dong-Ho Kim, Seung-Mo Jin...", 
+        "Min-Seong Choo"
+      ],
+      "figure": ["dh-kim-profile-image.jpg", "sm-jin-profile-img.jpg", "ms-choo-profile-img.png"],
+      "link": ""
+    },
+    {
+      "type": "2026",
       "status": "IEEE JSSC",
       "title": "",
       "image": "",
@@ -44,21 +59,7 @@
       "figure": [ "jh-pyeon-profile-img.png", "ih-han-profile-img.jpg", "ms-choo-profile-img.png"],
       "link": ""
     },
-    {
-      "type": "2026",
-      "status": "IEEE TCAS-I",
-      "title": "",
-      "image": "",
-      "progress": "",
-      "journal": "IEEE TCAS-I",
-      "reference":"",       
-      "authors": [
-        "Dong-Ho Kim, Seung-Mo Jin...", 
-        "Min-Seong Choo"
-      ],
-      "figure": ["sm-jin-profile-img.jpg", "dh-kim-profile-image.jpg", "ms-choo-profile-img.png"],
-      "link": ""
-    },
+
         {
       "sub": "",      
       "type": "2026",
