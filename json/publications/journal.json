@@ -1,11 +1,42 @@
 
-  [  {
+  [ 
+    {
+      "type": "2026",
+      "status": "IEEE TCAS-II",
+      "title": "",
+      "image": "",
+      "progress": "Submitted",
+      "journal": "IEEE TCAS-II",
+      "reference":"",           
+      "authors": [
+        "Han-Gil Yoo, Seok-Min Yoon...", 
+        "Min-Seong Choo"
+      ],
+      "figure": [ "hg-yoo-profile-img.png", "sm_yoon_profile_image.jpg", "ms-choo-profile-img.png"],
+      "link": ""
+    },
+    {
+      "type": "2026",
+      "status": "IEEE TCAS-II",
+      "title": "",
+      "image": "",
+      "progress": "Submitted",
+      "journal": "IEEE TCAS-II",
+      "reference":"",           
+      "authors": [
+        "Seung-Hwan Gong, Dong-Hoe Heo, Sang-Hyeon Ok...", 
+        "Min-Seong Choo"
+      ],
+      "figure": [ "sh-gong-profile-image.jpg", "dh-heo-profile-img.jpg", "sh-ok-profile-img.jpg", "ms-choo-profile-img.png"],
+      "link": ""
+    }, 
+    {
       "type": "2026",
       "status": "IEEE TCAS-I",
       "title": "",
       "image": "",
       "progress": "Submitted",
-      "journal": "IEEE JSSC",
+      "journal": "IEEE TCAS-I",
       "reference":"",           
       "authors": [
         "Dong-Hyun Lee, Shin-Uk Kang, Seok-Min Yoon...", 
