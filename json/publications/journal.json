@@ -1,5 +1,19 @@
 
-  [ 
+  [  {
+      "type": "2026",
+      "status": "IEEE TCAS-II",
+      "title": "",
+      "image": "",
+      "progress": "Submitted",
+      "journal": "IEEE TCAS-II",
+      "reference":"",           
+      "authors": [
+        "", 
+        "Min-Seong Choo"
+      ],
+      "figure": ["ms-choo-profile-img.png"],
+      "link": ""
+    },
     {
       "type": "2026",
       "status": "IEEE TCAS-II",
