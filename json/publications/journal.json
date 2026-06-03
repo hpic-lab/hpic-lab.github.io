@@ -8,7 +8,7 @@
       "journal": "IEEE TCAS-II",
       "reference":"",           
       "authors": [
-        "", 
+        "...", 
         "Min-Seong Choo"
       ],
       "figure": ["ms-choo-profile-img.png"],
