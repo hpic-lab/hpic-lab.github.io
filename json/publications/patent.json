@@ -1,4 +1,13 @@
-[ {
+[{
+    "year": 2026,
+    "type": "등록",
+    "status": 3,
+    "registration": "",
+    "title": "삼진 신경망용 3T 2C 동적 임베디드 램 기반 ADC 없는 커패시터 커플링을 이용한 프로세싱 인 메모리 가속기",
+    "figure": ["dh-lee-profile-img.png", "su-kang-profile-img.jpg", "ms-choo-profile-img.png"],
+    "inventors": ["이동현", "강신욱", "추민성"]
+  },
+   {
     "year": 2026,
     "type": "등록",
     "status": 3,
