@@ -33,5 +33,16 @@
     "email": " elalionhangang@gmail.com",
     "profile_img": "img/hg_cho_profile_image.png",
     "position": ""
- }     
+ },
+ {
+    "name": "Seung-Min Yoo",
+    "education": [
+    "B.S., School of Electronic and Electrical Engineering , HongIk university, Seoul, Korea (2023.03 - 2026.02)"
+    ],
+    "research_interests": ["Wireline Interface"],
+    "biography": "Seung-Min Yoo received a B.S. degree in the  school of electronic and electrical engineering at HongIk university, Seoul, South Korea. He is currently pursuing a Ph.D. integrated degree in the department of intelligent display engineering at Yonsei University, Seoul, South Korea. His research interests include Wireline Interface.",
+    "email": "  whiwoo.yoo@gmail.com",
+    "profile_img": "img/sm_yoo_profile_image.jpeg",
+    "position": ""
+ }       
 ]
