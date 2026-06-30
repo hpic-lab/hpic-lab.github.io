@@ -1,25 +1,25 @@
 [ {
     "type": "2026",
-    "status": "IEEE A-SSCC",
+    "status": "Submitted",
     "award": "",
     "title": "",
     "image": "",
     "conference": "",
     "reference":"",     
     "authors": ["J.-S Kwon", "J.-G. Lee...", "M.-S Choo"],
-    "figure": [ "js-kwon-profile-imgage.jpg","jg-lee-profile-img.jpeg", "ms-choo-profile-img.png"],
+    "figure": [ "js-kwon-profile-image.jpg","jg-lee-profile-img.jpeg", "ms-choo-profile-img.png"],
     "link": ""
   },   
 {
     "type": "2026",
-    "status": "IEEE A-SSCC",
+    "status": "Submitted",
     "award": "",
     "title": "",
     "image": "",
     "conference": "",
     "reference":"",     
     "authors": ["J.-G. Lee", "J.-S Kwon...",  "M.-S Choo"],
-    "figure": [ "jg-lee-profile-img.jpeg","js-kwon-profile-imgage.jpg", "ms-choo-profile-img.png"],
+    "figure": [ "jg-lee-profile-img.jpeg","js-kwon-profile-image.jpg", "ms-choo-profile-img.png"],
     "link": ""
   },    
   {
