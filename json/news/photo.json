@@ -3,14 +3,14 @@
     "id": 8,
     "img_src": "img/photo/260713_HPIC_Lab_Dinner.jpg",
     "date": "20260713",
-    "name": "HPIC members Dinner party at Seoul",
+    "name": "HPIC members' Dinner in Seoul",
     "content": "서울 저녁 회식"
   }, 
     {
     "id": 7,
     "img_src": "img/photo/260123_회식_서울.jpg",
     "date": "20260123",
-    "name": "HPIC members Dinner party with graduated members at Seoul",
+    "name": "HPIC members' Dinner with Alumni in Seoul",
     "content": "서울 저녁 회식"
   },  
   {
@@ -45,7 +45,7 @@
     "id": 2,
     "img_src": "img/photo/20251010_대부도_야유회.jpg",
     "date": "20251010",
-    "name": "HPIC members Picnic at Daebudo",
+    "name": "HPIC Lab Picnic at Daebudo",
     "content": "대부도"
   },
   {
