@@ -24,6 +24,18 @@
     "figure": [ "jg-lee-profile-img.jpeg","js-kwon-profile-image.jpg", "ms-choo-profile-img.png"],
     "link": ""
   },
+   {
+    "type": "2026",
+    "status": "IEIE 하계학술대회",
+    "award": "",
+    "title": "SNN-DCIM: 스파이킹 신경망을 위한 Digital Compute-in-Memory Architecture ",
+    "image": "",
+    "conference": "IEIE 하계학술대회",
+    "reference":"<i>대한전자공학회 하계학술대회.</i>",      
+    "authors": ["S.-H. Kim", "M.-S. Choo"],
+    "figure": ["sh-kim-profile-image.jpg", "ms-choo-profile-img.png"],
+    "link": ""
+  },    
   {
     "type": "2026",
     "status": "IEIE 하계학술대회",
@@ -33,7 +45,7 @@
     "conference": "IEIE 하계학술대회",
     "reference":"<i>대한전자공학회 하계학술대회.</i>",      
     "authors": ["S.-Y Kwon", "M.-S. Choo"],
-    "figure": ["js-kwon-profile-image.jpg", "ms-choo-profile-img.png"],
+    "figure": ["sw-kwon-profile-image.jpeg", "ms-choo-profile-img.png"],
     "link": "https://hpiclab-my.sharepoint.com/:b:/g/personal/sykwon_hpiclab_onmicrosoft_com/IQBtexujLdyESrPzeh9me6tAAfWFed9NXgaFwrHdN9zwrDw?e=c7bH6V"
   },    
   {
