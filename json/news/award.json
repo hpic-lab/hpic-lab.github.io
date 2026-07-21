@@ -1,5 +1,14 @@
 [
   {
+  "id": 30,
+  "img_src": "img/HYU_logo.png",
+  "award_date": "20260721",
+  "award_name": "TEST!",
+  "recipient_name": "TEST!",
+  "award_content": "Claude 연동 테스트 항목입니다. 확인 후 삭제하세요.",
+  "awarding_institution": "HPIC Lab"
+  },
+  {
   "id": 29,
   "img_src": "img/award/251218_이재건_BK.jpg",
   "award_date": "20251218",
