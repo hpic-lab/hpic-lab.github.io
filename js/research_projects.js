@@ -23,6 +23,7 @@ $(document).ready(function () {
         title:
           "극저온 초전도 양자컴퓨터 판독 수신기",
         sponsor: "Samsung Electronics",
+        status: "Completed",
       },
       {
         date: "Apr. 2024 - Mar. 2029",
