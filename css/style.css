@@ -468,10 +468,13 @@ h6 {
 /* ========================================= */
 
 @media (min-width: 992px) {
-  
-  #publications, 
-  #publications .container, 
-  #publications .row {
+
+  #publications,
+  #publications .container,
+  #publications .row,
+  #people,
+  #people .container,
+  #people .row {
     overflow: visible !important;
   }
 
@@ -1048,12 +1051,28 @@ h6 {
   margin: 28px 0 16px;
 }
 
+/* 스크롤 시 현재 그룹 제목이 상단에 고정되고, 다음 그룹 제목이 올라오면 교체됨 */
+@media (min-width: 992px) {
+  #people h3:not(.accordion h3):not(.h3-items) {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 66px;
+    background: #fff;
+    z-index: 5;
+    padding-top: 8px;
+  }
+}
+
 .people-grid {
   display: flex !important;
   flex-wrap: wrap;
   gap: 14px;
   justify-content: center !important;
   margin: 0 0 8px;
+}
+
+.principal-investigator.people-grid {
+  justify-content: center !important;
 }
 
 .people-card {
