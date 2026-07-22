@@ -124,6 +124,7 @@ $(document).ready(function () {
       // "(*Equally Credited Authors)" 문구는 목록 상단에 일괄 공지하므로 개별 항목에서는 제거
       // vol./no./pp. 및 권호(예: 12(2), 40-46) 정보도 제거하고 연도·월만 남김
       var refText = (pub.reference || "")
+        .replace(/<\/?i>/gi, "")
         .replace(/[,]?\s*\(\*?\s*Equally Credited Authors\s*\)/gi, "")
         .replace(/,?\s*vol\.\s*[^,\.]+/gi, "")
         .replace(/,?\s*no\.\s*[^,\.]+/gi, "")
