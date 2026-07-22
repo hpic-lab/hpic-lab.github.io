@@ -79,10 +79,61 @@ $(document).ready(function () {
     return html;
   }
 
+  // ===== 저자 풀네임 변환표 =====
+  // 약어 표기를 풀네임으로 표시합니다. 키는 마침표를 뺀 형태로 적습니다.
+  // (예: "M.-S. Choo" → 키 "M-S Choo") 새 이름은 여기에 추가하세요.
+  var NAME_MAP = {
+    "M-S Choo": "Min-Seong Choo",
+    "S-H Ok": "Sang-Hyeon Ok",
+    "J-G Lee": "Jae-Geon Lee",
+    "K-H Lee": "Kwang-Ho Lee",
+    "H Ju": "Haram Ju",
+    "G-S Jeong": "Gyu-Seob Jeong",
+    "W Bae": "Woorham Bae",
+    "J Han": "Jaeduk Han",
+    "S-M Jin": "Seung-Mo Jin",
+    "D-H Kim": "Dong-Ho Kim",
+    "S-H Gong": "Seung-Hwan Gong",
+    "D-H Heo": "Dong-Hoe Heo",
+    "S-U Kang": "Shin-Uk Kang",
+    "M-G Song": "Min-Gwon Song",
+    "D-H Lee": "Dong-Hyun Lee",
+    "J-H Pyeon": "Jae-Hyeon Pyeon",
+    "I-H Han": "In-Ho Han",
+    "J-H Kwon": "Ji-Hyun Kwon",
+    "J-S Kwon": "Joon-Seok Kwon",
+    "S-Y Kwon": "So-Yeon Kwon",
+    "S-H Kim": "Seol-Hyeon Kim",
+    "T-H Kim": "Tae-Hyun Kim",
+    "I-W Jang": "In-Woo Jang",
+    "Y-J Byeon": "Yu-Jin Byeon",
+    "D-E Lee": "Dong-Eun Lee",
+    "J-H Kim": "Ji-Ho Kim",
+    "D-K Jeong": "Deog-Kyoon Jeong",
+    "M Seok": "Mingoo Seok"
+  };
+
+  function toFullName(author) {
+    var s = author.trim();
+    var prefix = "";
+    var suffix = "";
+    if (/^and\s+/i.test(s)) {
+      prefix = "and ";
+      s = s.replace(/^and\s+/i, "");
+    }
+    var star = s.match(/\*+$/);
+    if (star) {
+      suffix = star[0];
+      s = s.slice(0, s.length - suffix.length).trim();
+    }
+    var key = s.replace(/\./g, "").replace(/\s+/g, " ").trim();
+    return prefix + (NAME_MAP[key] || s) + suffix;
+  }
+
   // 저자 목록
   function authorsHTML(list) {
     if (!list || list.length === 0) return "";
-    return list.join(", ");
+    return list.map(toFullName).join(", ");
   }
 
   // Journal/Conference 공통 렌더링 (ISL 스타일: 좌측 번호·등급·학회, 우측 본문)
