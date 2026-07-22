@@ -1277,6 +1277,10 @@ h6 {
   font-size: 1.15rem;
 }
 
+.people-card-pi .people-position {
+  display: none;
+}
+
 .people-icons {
   display: flex;
   justify-content: center;
