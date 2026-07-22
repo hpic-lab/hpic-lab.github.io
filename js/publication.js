@@ -125,7 +125,18 @@ $(document).ready(function () {
 
       // 출처 줄: reference 우선, 없으면 학회/저널 풀네임 + 연도
       // "(*Equally Credited Authors)" 문구는 목록 상단에 일괄 공지하므로 개별 항목에서는 제거
-      var refText = (pub.reference || "").replace(/[,]?\s*\(\*?\s*Equally Credited Authors\s*\)/gi, "").trim();
+      // vol./no./pp. 및 권호(예: 12(2), 40-46) 정보도 제거하고 연도·월만 남김
+      var refText = (pub.reference || "")
+        .replace(/[,]?\s*\(\*?\s*Equally Credited Authors\s*\)/gi, "")
+        .replace(/,?\s*vol\.\s*[^,\.]+/gi, "")
+        .replace(/,?\s*no\.\s*[^,\.]+/gi, "")
+        .replace(/,?\s*pp\.\s*[^,\.]+/gi, "")
+        .replace(/,\s*\d+\(\d+\),\s*[\d–−-]+/g, "")
+        .replace(/\s{2,}/g, " ")
+        .replace(/\s+,/g, ",")
+        .replace(/,\s*\./g, ".")
+        .replace(/\.\s*\.+/g, ".")
+        .trim();
       var srcText = refText !== "" ? refText : ((pub.conference || pub.journal || "") + ", " + year);
 
       container.append(
