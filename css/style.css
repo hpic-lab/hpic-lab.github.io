@@ -1032,6 +1032,94 @@ h6 {
   line-height: 1.55;
 }
 
+/* ===== Alumni 카드 그리드 ===== */
+.alumni-cards {
+  width: 100%;
+}
+
+.alumni-section-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  padding-bottom: 5px;
+  margin: 22px 0 12px;
+}
+
+.alumni-section-title:first-child {
+  margin-top: 0;
+}
+
+.alumni-title-ms {
+  color: #0C447C;
+  border-bottom: 2px solid #0C447C;
+}
+
+.alumni-title-bs {
+  color: #444441;
+  border-bottom: 2px solid #B4B2A9;
+}
+
+.alumni-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 12px;
+}
+
+.alumni-card {
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  padding: 14px;
+  background: #fff;
+  transition: box-shadow 0.15s, border-color 0.15s;
+}
+
+.alumni-card.clickable {
+  cursor: pointer;
+}
+
+.alumni-card.clickable:hover {
+  border-color: #2e55be;
+  box-shadow: 0 2px 8px rgba(46, 85, 190, 0.12);
+}
+
+.alumni-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #0C447C;
+}
+
+.alumni-program {
+  font-size: 0.82rem;
+  color: #999;
+  margin: 2px 0 8px;
+}
+
+.alumni-current {
+  display: inline-block;
+  font-size: 0.85rem;
+  color: #444;
+}
+
+.alumni-current.study {
+  font-weight: 600;
+  background: #E1F5EE;
+  color: #085041;
+  padding: 2px 9px;
+  border-radius: 4px;
+}
+
+.alumni-thesis {
+  display: block;
+  margin-top: 8px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #2e55be;
+  text-decoration: none;
+}
+
+.alumni-thesis:hover {
+  text-decoration: underline;
+}
+
 /* ===== Publications 시안 2: 탭 + 등급 배지 ===== */
 .pub2-side-nav {
   margin-top: 14px;

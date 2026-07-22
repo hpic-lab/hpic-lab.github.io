@@ -35,46 +35,66 @@ $(document).ready(function () {
     });
   }
 
+  // Alumni: 학위별 섹션 + 카드 그리드. 프로필 정보가 있으면 카드 클릭 시 모달 표시
   function loadAlumni(url, containerId) {
     $.getJSON(url).done(function (alumniList) {
       const container = $(containerId);
-      container.empty(); 
+      container.empty();
 
-      alumniList.forEach((person) => {
-        let foundKey = null;
-        
-        for (const [key, val] of Object.entries(window.peopleDB)) {
+      const groups = { ms: [], bs: [], etc: [] };
+      alumniList.forEach((p) => {
+        const prog = p.program || "";
+        if (prog.indexOf("M.S.") === 0) groups.ms.push(p);
+        else if (prog.indexOf("B.S.") === 0) groups.bs.push(p);
+        else groups.etc.push(p);
+      });
+
+      const sections = [
+        { key: "ms", label: "M.S. Alumni", cls: "alumni-title-ms" },
+        { key: "bs", label: "B.S. Alumni", cls: "alumni-title-bs" },
+        { key: "etc", label: "Alumni", cls: "alumni-title-bs" }
+      ];
+
+      sections.forEach((sec) => {
+        const list = groups[sec.key];
+        if (list.length === 0) return;
+
+        container.append(`<div class="alumni-section-title ${sec.cls}">${sec.label}</div>`);
+        const grid = $('<div class="alumni-grid"></div>');
+
+        list.forEach((person) => {
+          let foundKey = null;
+          for (const [key, val] of Object.entries(window.peopleDB)) {
             if (val.name === person.name) {
-                foundKey = key;
-                break;
+              foundKey = key;
+              break;
             }
-        }
+          }
 
-        let style = ""; 
-        let modalAttrs = ""; 
-        if (foundKey) {
-            style = `style="cursor: pointer; color: inherit; font-weight: bold; text-decoration: underline;"`;
-            modalAttrs = `
-                data-bs-toggle="modal" 
-                data-bs-target="#exampleModal" 
-                data-img-key="${foundKey}"
-            `;
-        } 
-        
-        const thesisLink = person.thesis_link 
-            ? `<a href="${person.thesis_link}" target="_blank" class="thesis-link">[Link]</a>` 
-            : "-";
+          const m = (person.program || "").match(/\(([^)]+)\)/);
+          const period = m ? m[1] : "";
+          const degree = sec.key === "etc" ? (person.program || "") : sec.label.split(" ")[0];
+          const isStudy = /Candidate|@/.test(person.current || "");
 
-        const html = `
-          <tr>
-            <td ${style} ${modalAttrs}>${person.name}</td>
-            <td>${person.affiliation}</td>
-            <td>${person.program}</td>
-            <td>${person.current}</td>
-            <td>${thesisLink}</td>
-          </tr>
-        `;
-        container.append(html);
+          const thesisHTML = person.thesis_link
+            ? `<a href="${person.thesis_link}" target="_blank" rel="noopener noreferrer" class="alumni-thesis" onclick="event.stopPropagation()">Thesis</a>`
+            : "";
+
+          const clickAttrs = foundKey
+            ? `data-bs-toggle="modal" data-bs-target="#exampleModal" data-img-key="${foundKey}"`
+            : "";
+
+          grid.append(`
+            <div class="alumni-card ${foundKey ? "clickable" : ""}" ${clickAttrs}>
+              <div class="alumni-name">${person.name}</div>
+              <div class="alumni-program">${degree} ${period}</div>
+              <div class="alumni-current ${isStudy ? "study" : ""}">${person.current || ""}</div>
+              ${thesisHTML}
+            </div>
+          `);
+        });
+
+        container.append(grid);
       });
     });
   }
