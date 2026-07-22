@@ -1063,9 +1063,8 @@ h6 {
   }
 
   .pub2-side-tabs .pub2-tab {
-    width: 100%;
-    max-width: 160px;
-    text-align: left;
+    width: auto;
+    text-align: center;
   }
 
   .pub2-year-links {
