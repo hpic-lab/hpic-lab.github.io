@@ -53,7 +53,36 @@ $(document).ready(function () {
     }
   }
 
-  // Journal/Conference 공통 렌더링
+  // 분야 태그(pills) — JSON에 "tags": ["Wireline", "CDR"] 형태로 넣으면 표시됩니다
+  var TAG_COLORS = [
+    { border: "#0F6E56", color: "#0F6E56" },
+    { border: "#BA7517", color: "#BA7517" },
+    { border: "#534AB7", color: "#534AB7" },
+    { border: "#993556", color: "#993556" }
+  ];
+
+  function tagsHTML(pub) {
+    var html = "";
+    (pub.tags || []).forEach(function (t, i) {
+      var c = TAG_COLORS[i % TAG_COLORS.length];
+      html += '<span class="pub2-tag" style="border-color:' + c.border + ";color:" + c.color + ';">' + t + "</span>";
+    });
+    if (pub.award && pub.award.trim() !== "" && pub.award !== "Accepted") html += badge(pub.award, "pub2-award");
+    if (pub.sub && pub.sub.trim() !== "") html += badge(pub.sub, "pub2-progress");
+    if (pub.progress && pub.progress.trim() !== "") html += badge(pub.progress, "pub2-progress");
+    return html;
+  }
+
+  // 저자 목록 — 첫 저자 굵게
+  function authorsHTML(list) {
+    if (!list || list.length === 0) return "";
+    var out = list.map(function (a, i) {
+      return i === 0 ? "<b>" + a + "</b>" : a;
+    });
+    return out.join(", ");
+  }
+
+  // Journal/Conference 공통 렌더링 (ISL 스타일: 좌측 번호·등급·학회, 우측 본문)
   function renderPaperList(pubs, container, venueClass, idPrefix) {
     var numbered = pubs.filter(function (p) { return p.title && p.title.trim() !== ""; }).length;
     var n = numbered;
@@ -69,37 +98,36 @@ $(document).ready(function () {
       var hasTitle = pub.title && pub.title.trim() !== "";
       var num = hasTitle ? n-- : "&ndash;";
 
-      var badges = "";
       var tier = tierOf(pub.status);
-      if (tier === "top") badges += badge("Top-tier", "pub2-tier-top");
-      if (tier === "major") badges += badge("Major", "pub2-tier-major");
+      var tierHTML = "";
+      if (tier === "top") tierHTML = '<div class="pub2-tier tier-top">Top-tier</div>';
+      if (tier === "major") tierHTML = '<div class="pub2-tier tier-major">Major</div>';
       var v = venueLabel(pub.status);
-      if (v) badges += badge(v, venueClass);
-      if (pub.award && pub.award.trim() !== "" && pub.award !== "Accepted") badges += badge(pub.award, "pub2-award");
-      if (pub.sub && pub.sub.trim() !== "") badges += badge(pub.sub, "pub2-progress");
-      if (pub.progress && pub.progress.trim() !== "") badges += badge(pub.progress, "pub2-progress");
 
-      var authorsText = pub.authors ? pub.authors.join(", ") : "";
       var titleHTML = "";
       if (hasTitle) {
-        var inner = "<b>" + pub.title + "</b>";
         titleHTML = pub.link && pub.link.trim() !== ""
-          ? '<a href="' + pub.link + '" target="_blank" rel="noopener noreferrer" class="pub2-title-link">' + inner + "</a>"
-          : inner;
+          ? '<a href="' + pub.link + '" target="_blank" rel="noopener noreferrer" class="pub2-title-link">' + pub.title + "</a>"
+          : pub.title;
       }
 
+      // 출처 줄: reference 우선, 없으면 학회/저널 풀네임 + 연도
       // "(*Equally Credited Authors)" 문구는 목록 상단에 일괄 공지하므로 개별 항목에서는 제거
-      var refText = (pub.reference || "").replace(/[,]?\s*\(\*?\s*Equally Credited Authors\s*\)/gi, "");
-      var metaHTML = authorsText;
-      if (refText.trim() !== "") metaHTML += " &mdash; " + refText;
+      var refText = (pub.reference || "").replace(/[,]?\s*\(\*?\s*Equally Credited Authors\s*\)/gi, "").trim();
+      var srcText = refText !== "" ? refText : ((pub.conference || pub.journal || "") + ", " + year);
 
       container.append(
         '<div class="pub2-entry">' +
           '<div class="pub2-num">' + num + "</div>" +
+          '<div class="pub2-side">' +
+            tierHTML +
+            '<div class="pub2-venue">' + v + "</div>" +
+          "</div>" +
           '<div class="pub2-body">' +
-            '<div class="pub2-badges">' + badges + "</div>" +
+            '<div class="pub2-badges">' + tagsHTML(pub) + "</div>" +
             (titleHTML ? '<div class="pub2-title">' + titleHTML + "</div>" : "") +
-            '<div class="pub2-meta">' + metaHTML + "</div>" +
+            '<div class="pub2-src">' + srcText + "</div>" +
+            '<div class="pub2-authors">' + authorsHTML(pub.authors) + "</div>" +
             '<div class="pub-figures">' + figuresHTML(pub) + "</div>" +
           "</div>" +
         "</div>"
@@ -118,19 +146,20 @@ $(document).ready(function () {
         container.append('<div class="pub2-year" id="' + idPrefix + "-" + year + '">' + year + "</div>");
       }
 
-      var badges = "";
-      if (pub.type) badges += badge(pub.type, "pub2-venue-patent");
-      if (pub.registration && pub.registration.trim() !== "") badges += badge(pub.registration, "pub2-progress");
-
-      var inventorsText = pub.inventors ? pub.inventors.join(", ") : "";
+      var regHTML = pub.registration && pub.registration.trim() !== ""
+        ? '<div class="pub2-src">' + pub.registration + "</div>"
+        : "";
 
       container.append(
         '<div class="pub2-entry">' +
           '<div class="pub2-num">' + n-- + "</div>" +
+          '<div class="pub2-side">' +
+            '<div class="pub2-venue">' + (pub.type || "") + "</div>" +
+          "</div>" +
           '<div class="pub2-body">' +
-            '<div class="pub2-badges">' + badges + "</div>" +
-            '<div class="pub2-title"><b>' + pub.title + "</b></div>" +
-            '<div class="pub2-meta">' + inventorsText + "</div>" +
+            '<div class="pub2-title">' + pub.title + "</div>" +
+            regHTML +
+            '<div class="pub2-authors">' + authorsHTML(pub.inventors) + "</div>" +
             '<div class="pub-figures">' + figuresHTML(pub) + "</div>" +
           "</div>" +
         "</div>"

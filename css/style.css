@@ -1122,20 +1122,49 @@ h6 {
 
 .pub2-entry {
   display: flex;
-  gap: 12px;
+  gap: 18px;
   align-items: flex-start;
-  padding: 10px 0;
+  padding: 16px 0;
   border-bottom: 1px solid #eee;
 }
 
 .pub2-num {
   flex-shrink: 0;
-  min-width: 26px;
-  font-size: 0.95rem;
-  font-weight: 600;
-  color: #aaa;
-  text-align: right;
-  padding-top: 2px;
+  min-width: 36px;
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: #333;
+  text-align: center;
+  padding-top: 18px;
+}
+
+.pub2-side {
+  flex-shrink: 0;
+  width: 105px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.pub2-tier {
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+
+.pub2-tier.tier-top {
+  color: #A32D2D;
+}
+
+.pub2-tier.tier-major {
+  color: #EF9F27;
+}
+
+.pub2-venue {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #1c3557;
+  line-height: 1.25;
+  word-break: keep-all;
 }
 
 .pub2-body {
@@ -1145,6 +1174,55 @@ h6 {
 
 .pub2-badges {
   margin-bottom: 4px;
+}
+
+.pub2-badges:empty {
+  display: none;
+}
+
+.pub2-tag {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 2px 10px;
+  border: 1.5px solid;
+  border-radius: 6px;
+  margin-right: 6px;
+  margin-bottom: 4px;
+  background: #fff;
+  white-space: nowrap;
+}
+
+.pub2-src {
+  font-size: 0.88rem;
+  color: #999;
+  line-height: 1.5;
+  margin-bottom: 2px;
+}
+
+.pub2-authors {
+  font-size: 0.92rem;
+  color: #444;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 576px) {
+  .pub2-entry {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .pub2-num,
+  .pub2-side {
+    padding-top: 0;
+    text-align: left;
+    width: auto;
+  }
+
+  .pub2-body {
+    flex-basis: 100%;
+  }
 }
 
 .pub2-badge {
@@ -1167,9 +1245,11 @@ h6 {
 .pub2-progress      { background: #F1EFE8; color: #5F5E5A; }
 
 .pub2-title {
-  font-size: 0.95rem;
-  line-height: 1.45;
-  margin-bottom: 2px;
+  font-size: 1.02rem;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 3px;
+  color: #222;
 }
 
 .pub2-title-link {
