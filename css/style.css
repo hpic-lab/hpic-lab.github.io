@@ -53,6 +53,23 @@ h6 {
   margin-right: 4px;
 }
 
+.brand-univ {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 12px;
+  padding-left: 14px;
+  border-left: 1px solid rgba(255, 255, 255, 0.35);
+  vertical-align: middle;
+}
+
+.yonsei-logo {
+  height: 30px;
+  width: auto;
+  background: #fff;
+  border-radius: 5px;
+  padding: 3px 8px;
+}
+
 /* gallery */
 .gallery-title-row {
   display: flex;
