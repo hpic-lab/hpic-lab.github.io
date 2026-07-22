@@ -1149,6 +1149,18 @@ h6 {
   border-bottom: 3px solid #2e55be;
 }
 
+/* 스크롤 시 현재 연도가 상단에 고정되고, 다음 연도가 올라오면 교체됨 */
+@media (min-width: 992px) {
+  .pub2-year {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 66px;
+    background: #fff;
+    z-index: 5;
+    padding-top: 8px;
+  }
+}
+
 .pub2-year:first-child {
   margin-top: 0;
 }
