@@ -1022,6 +1022,118 @@ h6 {
   margin: 0;
   line-height: 1.55;
 }
+
+/* ===== Publications 시안 2: 탭 + 등급 배지 ===== */
+.pub2-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.pub2-tab {
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 5px 18px;
+  border-radius: 18px;
+  border: 1px solid #ccc;
+  background: transparent;
+  color: #666;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.pub2-tab:hover {
+  border-color: #2e55be;
+  color: #2e55be;
+}
+
+.pub2-tab.active {
+  background: #2e55be;
+  border-color: #2e55be;
+  color: #fff;
+}
+
+.pub2-year {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #333;
+  margin: 20px 0 8px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #2e55be;
+}
+
+.pub2-year:first-child {
+  margin-top: 0;
+}
+
+.pub2-entry {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.pub2-num {
+  flex-shrink: 0;
+  min-width: 26px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #aaa;
+  text-align: right;
+  padding-top: 2px;
+}
+
+.pub2-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.pub2-badges {
+  margin-bottom: 4px;
+}
+
+.pub2-badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 1px 8px;
+  border-radius: 4px;
+  margin-right: 5px;
+  margin-bottom: 3px;
+  white-space: nowrap;
+}
+
+.pub2-tier-top      { background: #FAEEDA; color: #633806; }
+.pub2-tier-major    { background: #F1EFE8; color: #444441; }
+.pub2-venue-journal { background: #E6F1FB; color: #0C447C; }
+.pub2-venue-conf    { background: #E1F5EE; color: #085041; }
+.pub2-venue-patent  { background: #EEEDFE; color: #3C3489; }
+.pub2-award         { background: #FAECE7; color: #712B13; }
+.pub2-progress      { background: #F1EFE8; color: #5F5E5A; }
+
+.pub2-title {
+  font-size: 0.95rem;
+  line-height: 1.45;
+  margin-bottom: 2px;
+}
+
+.pub2-title-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.pub2-title-link:hover {
+  color: #2e55be;
+  text-decoration: underline;
+}
+
+.pub2-meta {
+  font-size: 0.85rem;
+  color: #777;
+  line-height: 1.5;
+  margin-bottom: 6px;
+}
 .col-lg-8 h5:not(:first-child),
 .chip-gallery-title-row {
   margin-top: 40px;

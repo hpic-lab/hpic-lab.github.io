@@ -1,182 +1,165 @@
 $(document).ready(function () {
-  
-  // 파일명 추출 헬퍼 함수
-  function getFileName(path) {
-    if (!path) return "";
-    return path.split('/').pop();
+
+  // ===== 등급(배지) 분류 기준 — 필요시 여기만 수정하세요 =====
+  // Top-tier: ISSCC, VLSI Symposium, JSSC, HotChips
+  // Major:    A-SSCC, ESSCIRC/ESSERC, CICC, DAC, ISCAS, ISLPED, ASP-DAC,
+  //           TVLSI, TCAS-I/II, JETCAS, TIM, MWTL, ACCESS
+  function tierOf(statusStr) {
+    if (!statusStr) return null;
+    var s = statusStr.toUpperCase();
+    if (s.indexOf("TVLSI") >= 0) return "major";
+    if (s.indexOf("ISSCC") >= 0 || s.indexOf("JSSC") >= 0 ||
+        s.indexOf("HOTCHIPS") >= 0 || s.indexOf("HOT CHIPS") >= 0 ||
+        s.indexOf("VLSI") >= 0) return "top";
+    if (s.indexOf("A-SSCC") >= 0 || s.indexOf("ESSCIRC") >= 0 ||
+        s.indexOf("ESSERC") >= 0 || s.indexOf("CICC") >= 0 ||
+        s.indexOf("DAC") >= 0 || s.indexOf("ISCAS") >= 0 ||
+        s.indexOf("ISLPED") >= 0 || s.indexOf("TCAS") >= 0 ||
+        s.indexOf("JETCAS") >= 0 || s.indexOf("TIM") >= 0 ||
+        s.indexOf("MWTL") >= 0 || s.indexOf("ACCESS") >= 0) return "major";
+    return null;
   }
 
-  // 통합 로드 함수
-  function loadAllPublications() {
-    $.when(
-      $.getJSON("json/publications/journal.json"),
-      $.getJSON("json/publications/conference.json"),
-      $.getJSON("json/publications/patent.json")
-    ).done(function (jRes, cRes, pRes) {
-      
-      const container = $(".all-publications-container");
-      container.empty();
-      container.off("click.pubToggle", ".publication-year-header");
+  // venue 약칭 배지 텍스트 (status 필드에서 접두어 제거)
+  function venueLabel(statusStr) {
+    if (!statusStr) return "";
+    return statusStr
+      .replace(/^(IEEE\/IEIE|IEEE\/ISE|ACM\/IEEE|ACM IEEE|IEEE|IEIE|IEEK|ACM)\s+/i, "")
+      .replace(/^20\d\d\s+/, "")
+      .trim();
+  }
 
-      // 1. 세 개의 데이터를 하나의 리스트로 합치기 (이름표 달기)
-      let allPubs = [];
-      if(jRes[0]) jRes[0].forEach(p => { p.category = "Journal"; allPubs.push(p); });
-      if(cRes[0]) cRes[0].forEach(p => { p.category = "Conference"; allPubs.push(p); });
-      if(pRes[0]) pRes[0].forEach(p => { p.category = "Patent"; allPubs.push(p); });
+  function getFileName(path) {
+    if (!path) return "";
+    return path.split("/").pop();
+  }
 
-      // 2. 그룹화 로직
-      const papersByYear = {};
-      allPubs.forEach((pub) => {
-        const year = pub.year ? pub.year : (pub.type ? pub.type : "Others");
-        if (!papersByYear[year]) papersByYear[year] = { Journal: [], Conference: [], Patent: [] };
-        papersByYear[year][pub.category].push(pub);
-      });
+  function figuresHTML(pub) {
+    return (pub.figure || [])
+      .map(function (img) {
+        var imgKey = getFileName(img);
+        return '<img src="img/' + img + '" class="pub-figure" alt="Figure" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#exampleModal" data-img-key="' + imgKey + '">';
+      })
+      .join("");
+  }
 
-      // 3. 정렬 로직
-      const sortedYears = Object.keys(papersByYear).sort((a, b) => {
-        if (a === "Others") return 1;
-        if (b === "Others") return -1;
-        if (!isNaN(a) && !isNaN(b)) return b - a; 
-        return a < b ? 1 : -1;
-      });
+  function badge(text, cls) {
+    return '<span class="pub2-badge ' + cls + '">' + text + "</span>";
+  }
 
-      // 4. 그리기
-      sortedYears.forEach((year) => {
-        const yearHeaderHTML = `
-          <h3 class="publication-year-header">
-            <span>${year}</span>
-            <span class="pub-toggle-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                <polyline points="6 9 12 15 18 9"></polyline>
-              </svg>
-            </span>
-          </h3>
-        `;
-        container.append(yearHeaderHTML);
+  // Journal/Conference 공통 렌더링
+  function renderPaperList(pubs, container, venueClass) {
+    var numbered = pubs.filter(function (p) { return p.title && p.title.trim() !== ""; }).length;
+    var n = numbered;
+    var curYear = null;
 
-        const yearContentDiv = $("<div class='pub-year-content'></div>");
+    pubs.forEach(function (pub) {
+      var year = pub.type || "Others";
+      if (year !== curYear) {
+        curYear = year;
+        container.append('<div class="pub2-year">' + year + "</div>");
+      }
 
-        // 저널 -> 컨퍼런스 -> 특허 순으로 화면에 뿌려줌
-        ["Journal", "Conference", "Patent"].forEach(category => {
-           const pubsInCategory = papersByYear[year][category];
-           
-           if (pubsInCategory && pubsInCategory.length > 0) {
-              // 카테고리 소제목 추가
-              yearContentDiv.append(`
-                <h4 style="margin-top: 12px; margin-bottom: 10px;">
-                  <span style="
-                    display: inline-block; 
-                    background-color: #2e55be; 
-                    color: white; 
-                    padding: 1px 4px; /* 위아래, 좌우 여백 */
-                    font-size: 0.85rem; /* 글자 크기 */
-                    font-weight: 600; 
-                    border-radius: 6px; /* 끝을 살짝만 둥글게 처리 */
-                    box-shadow: 0 1px 3px rgba(0,0,0,0.1); /* 그림자도 얕고 부드럽게 */
-                  ">
-                    ${category}
-                  </span>
-                </h4>
-              `);
-              pubsInCategory.forEach((pub, index) => { 
-                 let pub_detail = "";
-                 
-                 let numbering = `<span style="min-width: 22px; flex-shrink: 0;">${index + 1}.</span>`;
-                 
-                 if (category === "Patent") {
-                    let inventorsText = pub.inventors ? pub.inventors.join(", ") : "";
-                    let badgesHTML = "";
-                    if (pub.status) badgesHTML += `<span class="badge process-badge">${pub.status}</span>| `;
-                    if (pub.registration) badgesHTML += `<span class="badge bg-success">${pub.registration}</span>| `;
-                    if (badgesHTML.endsWith("| ")) badgesHTML = badgesHTML.slice(0, -2);
+      var hasTitle = pub.title && pub.title.trim() !== "";
+      var num = hasTitle ? n-- : "&ndash;";
 
-                    const figures = pub.figure ? pub.figure.map(img => {
-                        const imgKey = getFileName(img);
-                        return `<img src="img/${img}" class="pub-figure" alt="Figure" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#exampleModal" data-img-key="${imgKey}">`;
-                    }).join("") : "";
+      var badges = "";
+      var tier = tierOf(pub.status);
+      if (tier === "top") badges += badge("Top-tier", "pub2-tier-top");
+      if (tier === "major") badges += badge("Major", "pub2-tier-major");
+      var v = venueLabel(pub.status);
+      if (v) badges += badge(v, venueClass);
+      if (pub.award && pub.award.trim() !== "" && pub.award !== "Accepted") badges += badge(pub.award, "pub2-award");
+      if (pub.sub && pub.sub.trim() !== "") badges += badge(pub.sub, "pub2-progress");
+      if (pub.progress && pub.progress.trim() !== "") badges += badge(pub.progress, "pub2-progress");
 
-                    pub_detail = `
-                    <div class="pub-wrapper">
-                      <div class="pub-badges">
-                        <span class="pub-icon-box"><img src="img/pub-svg.svg"></span>
-                        ${badgesHTML}
-                      </div>
-                      
-                      <div class="pub-citation-text" style="display: flex; align-items: flex-start;">
-                        ${numbering}
-                        <div>
-                          <span class="pub-author">${inventorsText}</span>. 
-                          <span><b>${pub.title}.</b></span>
-                        </div>
-                      </div>
-                      <div class="pub-figures">${figures}</div>
-                    </div>`;
+      var authorsText = pub.authors ? pub.authors.join(", ") : "";
+      var titleHTML = "";
+      if (hasTitle) {
+        var inner = "<b>" + pub.title + "</b>";
+        titleHTML = pub.link && pub.link.trim() !== ""
+          ? '<a href="' + pub.link + '" target="_blank" rel="noopener noreferrer" class="pub2-title-link">' + inner + "</a>"
+          : inner;
+      }
 
-                 } else {
-                    let authorsText = pub.authors ? pub.authors.join(", ") : "";
-                    let badgesHTML = "";
-                    if (pub.status) badgesHTML += `<span class="badge bg-success">${pub.status}</span>| `;
-                    if (pub.award) badgesHTML += `<span class="badge bg-warning">${pub.award}</span>| `;
-                    if (pub.sub) badgesHTML += `<span class="badge bg-info">${pub.sub}</span>| `;
-                    if (pub.progress) badgesHTML += `<span class="badge bg-secondary">${pub.progress}</span>| `;
-                    if (badgesHTML.endsWith("| ")) badgesHTML = badgesHTML.slice(0, -2);
+      var metaHTML = authorsText;
+      if (pub.reference && pub.reference.trim() !== "") metaHTML += " &mdash; " + pub.reference;
 
-                    const figures = pub.figure ? pub.figure.map(img => {
-                        const imgKey = getFileName(img);
-                        return `<img src="img/${img}" class="pub-figure" alt="Figure" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#exampleModal" data-img-key="${imgKey}">`;
-                    }).join("") : "";
-
-                    let titleHTML = "";      
-                    let citationHTML = "";   
-                    let titleSuffix = ".";   
-
-                    if (pub.title && pub.title.trim() !== "") {
-                        if (pub.reference && pub.reference.trim() !== "") {
-                            titleSuffix = ",";
-                            citationHTML = " " + pub.reference;
-                        } else {
-                            titleSuffix = ".";
-                            citationHTML = "";
-                        }
-                        titleHTML = `, <a href="${pub.link}" target="_blank" class="pub-title-link">"<b>${pub.title}</b>${titleSuffix}"</a>`;
-                    } else {
-                        authorsText += "."; 
-                    }
-
-                    pub_detail = `
-                    <div class="pub-wrapper">
-                      <div class="pub-badges">
-                         <span class="pub-icon-box"><img src="img/pub-svg.svg"></span>
-                         ${badgesHTML}
-                      </div>
-                      
-                      <div class="pub-citation-text" style="display: flex; align-items: flex-start;">
-                        ${numbering}
-                        <div>
-                          <span class="pub-author">${authorsText}</span>${titleHTML}${citationHTML}
-                        </div>
-                      </div>
-                      <div class="pub-figures">${figures}</div>
-                    </div>`;
-                 }
-
-                 yearContentDiv.append(pub_detail);
-              });
-           }
-        });
-
-        container.append(yearContentDiv);
-      });
-
-      // 토글 애니메이션
-      container.on("click.pubToggle", ".publication-year-header", function() {
-        $(this).toggleClass("collapsed");
-        $(this).next(".pub-year-content").stop(true, false).slideToggle(300);
-      });
+      container.append(
+        '<div class="pub2-entry">' +
+          '<div class="pub2-num">' + num + "</div>" +
+          '<div class="pub2-body">' +
+            '<div class="pub2-badges">' + badges + "</div>" +
+            (titleHTML ? '<div class="pub2-title">' + titleHTML + "</div>" : "") +
+            '<div class="pub2-meta">' + metaHTML + "</div>" +
+            '<div class="pub-figures">' + figuresHTML(pub) + "</div>" +
+          "</div>" +
+        "</div>"
+      );
     });
   }
 
-  // 실행부
-  loadAllPublications();
+  function renderPatentList(pubs, container) {
+    var n = pubs.length;
+    var curYear = null;
 
+    pubs.forEach(function (pub) {
+      var year = String(pub.year || pub.type || "Others");
+      if (year !== curYear) {
+        curYear = year;
+        container.append('<div class="pub2-year">' + year + "</div>");
+      }
+
+      var badges = "";
+      if (pub.type) badges += badge(pub.type, "pub2-venue-patent");
+      if (pub.registration && pub.registration.trim() !== "") badges += badge(pub.registration, "pub2-progress");
+
+      var inventorsText = pub.inventors ? pub.inventors.join(", ") : "";
+
+      container.append(
+        '<div class="pub2-entry">' +
+          '<div class="pub2-num">' + n-- + "</div>" +
+          '<div class="pub2-body">' +
+            '<div class="pub2-badges">' + badges + "</div>" +
+            '<div class="pub2-title"><b>' + pub.title + "</b></div>" +
+            '<div class="pub2-meta">' + inventorsText + "</div>" +
+            '<div class="pub-figures">' + figuresHTML(pub) + "</div>" +
+          "</div>" +
+        "</div>"
+      );
+    });
+  }
+
+  $.when(
+    $.getJSON("json/publications/journal.json"),
+    $.getJSON("json/publications/conference.json"),
+    $.getJSON("json/publications/patent.json")
+  ).done(function (jRes, cRes, pRes) {
+    var container = $(".all-publications-container");
+    container.empty();
+
+    // 탭 바
+    container.append(
+      '<div class="pub2-tabs">' +
+        '<button type="button" class="pub2-tab active" data-target="journal">Journal</button>' +
+        '<button type="button" class="pub2-tab" data-target="conference">Conference</button>' +
+        '<button type="button" class="pub2-tab" data-target="patent">Patent</button>' +
+      "</div>" +
+      '<div class="pub2-list" id="pub2-journal"></div>' +
+      '<div class="pub2-list" id="pub2-conference" style="display:none"></div>' +
+      '<div class="pub2-list" id="pub2-patent" style="display:none"></div>'
+    );
+
+    renderPaperList(jRes[0] || [], $("#pub2-journal"), "pub2-venue-journal");
+    renderPaperList(cRes[0] || [], $("#pub2-conference"), "pub2-venue-conf");
+    renderPatentList(pRes[0] || [], $("#pub2-patent"));
+
+    container.on("click", ".pub2-tab", function () {
+      var target = $(this).data("target");
+      container.find(".pub2-tab").removeClass("active");
+      $(this).addClass("active");
+      container.find(".pub2-list").hide();
+      $("#pub2-" + target).show();
+    });
+  });
 });
