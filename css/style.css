@@ -1118,12 +1118,12 @@ h6 {
 }
 
 .pub2-year {
-  font-size: 1.05rem;
+  font-size: 1.5rem;
   font-weight: 700;
-  color: #333;
-  margin: 20px 0 8px;
-  padding-bottom: 5px;
-  border-bottom: 2px solid #2e55be;
+  color: #222;
+  margin: 28px 0 10px;
+  padding-bottom: 6px;
+  border-bottom: 3px solid #2e55be;
 }
 
 .pub2-year:first-child {
@@ -1140,12 +1140,12 @@ h6 {
 
 .pub2-num {
   flex-shrink: 0;
-  min-width: 36px;
-  font-size: 1.45rem;
-  font-weight: 700;
-  color: #333;
+  min-width: 30px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #999;
   text-align: center;
-  padding-top: 18px;
+  padding-top: 14px;
 }
 
 .pub2-side {
