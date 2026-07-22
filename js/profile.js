@@ -142,14 +142,31 @@ $(document).ready(function () {
       ? `<ul class="network-icon people-icons" aria-hidden="true">${createNetworkIcons(person)}</ul>`
       : "";
 
+    // 직책(position)에서 역할(Server Manager, Lab Captain 등)을 분리해
+    // 사진 우측 상단 아이콘 배지로 표시 (마우스를 올리면 역할명 표시)
+    const parts = position.split(/<br\s*\/?>/i);
+    const basePosition = parts[0].trim();
+    const roleBadges = parts.slice(1).map((r) => {
+      const role = r.trim();
+      if (!role) return "";
+      let icon = "★";
+      let cls = "role-etc";
+      if (/server/i.test(role)) { icon = "⚙"; cls = "role-server"; }
+      else if (/captain/i.test(role)) { icon = "★"; cls = "role-captain"; }
+      return `<span class="people-role ${cls}" title="${role}">${icon}</span>`;
+    }).join("");
+
     return `
       <div class="people-card ${showIconsInMainView ? "people-card-pi" : ""}"
         data-bs-toggle="modal"
         data-bs-target="#exampleModal"
         data-img-key="${imgKey}">
-        <img class="people-photo" src="${person.profile_img}" alt="${name}-profile-img" />
+        <div class="people-photo-wrap">
+          <img class="people-photo" src="${person.profile_img}" alt="${name}-profile-img" />
+          ${roleBadges ? `<span class="people-roles">${roleBadges}</span>` : ""}
+        </div>
         <div class="people-name">${name}</div>
-        <div class="people-position">${position}</div>
+        <div class="people-position">${basePosition}</div>
         ${interestHTML}
         ${networkIconsHTML}
       </div>
