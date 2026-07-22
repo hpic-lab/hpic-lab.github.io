@@ -1729,6 +1729,16 @@ section {
   }
 }
 
+/* ========================================= */
+/* 컨테이너 폭 확장 — Bootstrap 기본 1140px 제한 해제 */
+/* 넓은 모니터에서 화면의 ~92%까지 사용 (최대 1760px) */
+/* ========================================= */
+@media (min-width: 1200px) {
+  .container {
+    max-width: min(92vw, 1760px) !important;
+  }
+}
+
 :root {
   --theme-color: #3f51b5;
   --detail-button-color: #677dff;
