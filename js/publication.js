@@ -33,46 +33,9 @@ $(document).ready(function () {
     }
   }
 
-  // ===== 분야 태그 =====
-  // JSON 항목에 "tags": ["Wireline", "CDR"] 를 넣으면 그 값이 우선 적용되고,
-  // 없으면 아래 키워드 규칙으로 제목에서 자동 추출합니다 (최대 2개).
-  var TAG_RULES = [
-    { tag: "CDR",               re: /CDR|clock and data recovery|alexander|위상 검출기|위상 - 주파수|위상 보간기/i },
-    { tag: "PIM",               re: /in-?memory|\bCIM\b|\bPIM\b|\bIMC\b|compute-in|processing-in|eDRAM|SRAM|인메모리|인-메모리|neural|신경망|\bBNN\b|\bSNN\b|\bQNN\b|프로세싱 인/i },
-    { tag: "Wireline",          re: /transmitter|receiver|transceiver|serializer|wireline|\bPAM\b|PAM-?\d|Gb\/s|Gbaud|serial|\bDSP\b|송신기|수신기|수신 회로|시리얼라이저/i },
-    { tag: "PLL",               re: /\bPLL\b|phase-?locked|oscillator|injection-?lock|clock multiplier|\bDCO\b|\bVCO\b|jitter|주입 잠금|발진기|오버샘플링/i },
-    { tag: "Equalizer",         re: /equaliz|\bFFE\b|\bDFE\b|\bLMS\b|이퀄라이저/i },
-    { tag: "ADC",               re: /\bADC\b|\bSAR\b|time-to-digital|\bTDC\b/i },
-    { tag: "Power",             re: /regulator|\bbuck\b|\bLDO\b/i },
-    { tag: "Quantum",           re: /quantum|cryogenic|양자|극저온/i },
-    { tag: "RF",                re: /\bLNA\b|\bRF\b|millimeter|밀리미터/i },
-    { tag: "Measurement",       re: /measurement|\bBIST\b|측정/i },
-    { tag: "Design Automation", re: /automat|methodolog|co-simulation|reinforcement/i }
-  ];
-
-  function autoTags(title) {
-    if (!title) return [];
-    var out = [];
-    TAG_RULES.forEach(function (r) {
-      if (out.length < 2 && r.re.test(title)) out.push(r.tag);
-    });
-    return out;
-  }
-
-  var TAG_COLORS = [
-    { border: "#0F6E56", color: "#0F6E56" },
-    { border: "#BA7517", color: "#BA7517" },
-    { border: "#534AB7", color: "#534AB7" },
-    { border: "#993556", color: "#993556" }
-  ];
-
+  // 상태·수상 배지 (연구분야 태그는 사용하지 않음)
   function tagsHTML(pub) {
     var html = "";
-    var tags = (pub.tags && pub.tags.length) ? pub.tags : autoTags(pub.title);
-    tags.forEach(function (t, i) {
-      var c = TAG_COLORS[i % TAG_COLORS.length];
-      html += '<span class="pub2-tag" style="border-color:' + c.border + ";color:" + c.color + ';">' + t + "</span>";
-    });
     if (pub.award && pub.award.trim() !== "" && pub.award !== "Accepted") html += badge(pub.award, "pub2-award");
     if (pub.sub && pub.sub.trim() !== "") html += badge(pub.sub, "pub2-progress");
     if (pub.progress && pub.progress.trim() !== "") html += badge(pub.progress, "pub2-progress");
