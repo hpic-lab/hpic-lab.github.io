@@ -53,21 +53,54 @@ h6 {
   margin-right: 4px;
 }
 
+/* ===== 내비게이션 흰색 테마 ===== */
+nav#navbar-main {
+  background: #fff !important;
+  border-bottom: 1px solid #e8e8e8;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.06);
+}
+
+nav#navbar-main .navbar-brand {
+  color: #222 !important;
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+/* 흰색 HPIC 칩 로고 → 검정으로 반전 */
+nav#navbar-main .navbar-brand > img:first-child {
+  filter: invert(0.85);
+}
+
+nav#navbar-main .navbar-toggler-icon {
+  filter: invert(0.8);
+}
+
+nav#navbar-main .nav-link {
+  color: #222 !important;
+}
+
+nav#navbar-main .nav-link:hover,
+nav#navbar-main .nav-link.active {
+  color: #2e55be !important;
+}
+
+nav#navbar-main .navbar-collapse {
+  background: #fff;
+}
+
 .brand-univ {
   display: inline-flex;
   align-items: center;
   margin-left: 12px;
   padding-left: 14px;
-  border-left: 1px solid rgba(255, 255, 255, 0.35);
+  border-left: 1px solid #ddd;
   vertical-align: middle;
 }
 
 .yonsei-logo {
-  height: 30px;
+  height: 34px;
   width: auto;
-  background: #fff;
-  border-radius: 5px;
-  padding: 3px 8px;
 }
 
 /* gallery */
