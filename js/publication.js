@@ -1,25 +1,5 @@
 $(document).ready(function () {
 
-  // ===== 등급(배지) 분류 기준 — 필요시 여기만 수정하세요 =====
-  // Top-tier: ISSCC, VLSI Symposium, JSSC, HotChips
-  // Major:    A-SSCC, ESSCIRC/ESSERC, CICC, DAC, ISCAS, ISLPED, ASP-DAC,
-  //           TVLSI, TCAS-I/II, JETCAS, TIM, MWTL, ACCESS
-  function tierOf(statusStr) {
-    if (!statusStr) return null;
-    var s = statusStr.toUpperCase();
-    if (s.indexOf("TVLSI") >= 0) return "major";
-    if (s.indexOf("ISSCC") >= 0 || s.indexOf("JSSC") >= 0 ||
-        s.indexOf("HOTCHIPS") >= 0 || s.indexOf("HOT CHIPS") >= 0 ||
-        s.indexOf("VLSI") >= 0) return "top";
-    if (s.indexOf("A-SSCC") >= 0 || s.indexOf("ESSCIRC") >= 0 ||
-        s.indexOf("ESSERC") >= 0 || s.indexOf("CICC") >= 0 ||
-        s.indexOf("DAC") >= 0 || s.indexOf("ISCAS") >= 0 ||
-        s.indexOf("ISLPED") >= 0 || s.indexOf("TCAS") >= 0 ||
-        s.indexOf("JETCAS") >= 0 || s.indexOf("TIM") >= 0 ||
-        s.indexOf("MWTL") >= 0 || s.indexOf("ACCESS") >= 0) return "major";
-    return null;
-  }
-
   // venue 약칭 배지 텍스트 (status 필드에서 접두어 제거)
   function venueLabel(statusStr) {
     if (!statusStr) return "";
@@ -53,7 +33,39 @@ $(document).ready(function () {
     }
   }
 
-  // 분야 태그(pills) — JSON에 "tags": ["Wireline", "CDR"] 형태로 넣으면 표시됩니다
+  // ===== 분야 태그 =====
+  // JSON 항목에 "tags": ["Wireline", "CDR"] 를 넣으면 그 값이 우선 적용되고,
+  // 없으면 아래 키워드 규칙으로 제목에서 자동 추출합니다 (최대 2개).
+  var TAG_RULES = [
+    { tag: "CDR",               re: /CDR|clock and data recovery|alexander|위상 검출기|위상 - 주파수|위상 보간기/i },
+    { tag: "PIM",               re: /in-?memory|\bCIM\b|\bPIM\b|\bIMC\b|compute-in|processing-in|eDRAM|SRAM|인메모리|인-메모리|neural|신경망|\bBNN\b|\bSNN\b|\bQNN\b|프로세싱 인/i },
+    { tag: "Wireline",          re: /transmitter|receiver|transceiver|serializer|wireline|\bPAM\b|PAM-?\d|Gb\/s|Gbaud|serial|\bDSP\b|송신기|수신기|수신 회로|시리얼라이저/i },
+    { tag: "PLL",               re: /\bPLL\b|phase-?locked|oscillator|injection-?lock|clock multiplier|\bDCO\b|\bVCO\b|jitter|주입 잠금|발진기|오버샘플링/i },
+    { tag: "Equalizer",         re: /equaliz|\bFFE\b|\bDFE\b|\bLMS\b|이퀄라이저/i },
+    { tag: "ADC",               re: /\bADC\b|\bSAR\b|time-to-digital|\bTDC\b/i },
+    { tag: "Power",             re: /regulator|\bbuck\b|\bLDO\b/i },
+    { tag: "Quantum",           re: /quantum|cryogenic|양자|극저온/i },
+    { tag: "RF",                re: /\bLNA\b|\bRF\b|millimeter|밀리미터/i },
+    { tag: "Measurement",       re: /measurement|\bBIST\b|측정/i },
+    { tag: "Design Automation", re: /automat|methodolog|co-simulation|reinforcement/i }
+  ];
+
+  function autoTags(title) {
+    if (!title) return [];
+    var out = [];
+    TAG_RULES.forEach(function (r) {
+      if (out.length < 2 && r.re.test(title)) out.push(r.tag);
+    });
+    return out;
+  }
+
+  // 국내/국제 구분: 한글 포함 또는 국내 저널 약칭이면 Domestic
+  function isDomestic(pub) {
+    var s = (pub.status || "") + " " + (pub.journal || "") + " " + (pub.conference || "") + " " + (pub.title || "");
+    if (/[가-힣]/.test(s)) return true;
+    return /JICAS|JSTS|JSE|KCS/.test((pub.status || "") + " " + (pub.journal || ""));
+  }
+
   var TAG_COLORS = [
     { border: "#0F6E56", color: "#0F6E56" },
     { border: "#BA7517", color: "#BA7517" },
@@ -63,7 +75,8 @@ $(document).ready(function () {
 
   function tagsHTML(pub) {
     var html = "";
-    (pub.tags || []).forEach(function (t, i) {
+    var tags = (pub.tags && pub.tags.length) ? pub.tags : autoTags(pub.title);
+    tags.forEach(function (t, i) {
       var c = TAG_COLORS[i % TAG_COLORS.length];
       html += '<span class="pub2-tag" style="border-color:' + c.border + ";color:" + c.color + ';">' + t + "</span>";
     });
@@ -98,11 +111,10 @@ $(document).ready(function () {
       var hasTitle = pub.title && pub.title.trim() !== "";
       var num = hasTitle ? n-- : "&ndash;";
 
-      var tier = tierOf(pub.status);
-      var tierHTML = "";
-      if (tier === "top") tierHTML = '<div class="pub2-tier tier-top">Top-tier</div>';
-      if (tier === "major") tierHTML = '<div class="pub2-tier tier-major">Major</div>';
       var v = venueLabel(pub.status);
+      var scopeHTML = isDomestic(pub)
+        ? '<div class="pub2-scope scope-dom">Domestic</div>'
+        : '<div class="pub2-scope scope-intl">International</div>';
 
       var titleHTML = "";
       if (hasTitle) {
@@ -120,7 +132,7 @@ $(document).ready(function () {
         '<div class="pub2-entry">' +
           '<div class="pub2-num">' + num + "</div>" +
           '<div class="pub2-side">' +
-            tierHTML +
+            scopeHTML +
             '<div class="pub2-venue">' + v + "</div>" +
           "</div>" +
           '<div class="pub2-body">' +
@@ -157,6 +169,7 @@ $(document).ready(function () {
             '<div class="pub2-venue">' + (pub.type || "") + "</div>" +
           "</div>" +
           '<div class="pub2-body">' +
+            '<div class="pub2-badges">' + tagsHTML(pub) + "</div>" +
             '<div class="pub2-title">' + pub.title + "</div>" +
             regHTML +
             '<div class="pub2-authors">' + authorsHTML(pub.inventors) + "</div>" +
