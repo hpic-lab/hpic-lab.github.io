@@ -1052,7 +1052,7 @@ h6 {
   display: flex !important;
   flex-wrap: wrap;
   gap: 14px;
-  justify-content: flex-start !important;
+  justify-content: center !important;
   margin: 0 0 8px;
 }
 
@@ -1102,6 +1102,10 @@ h6 {
   color: #0F6E56;
   padding: 2px 9px;
   border-radius: 4px;
+  white-space: nowrap;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .people-card-pi {

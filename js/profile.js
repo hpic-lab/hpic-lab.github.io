@@ -7,6 +7,32 @@ $(document).ready(function () {
     return path.split('/').pop();
   }
 
+  // 연구분야를 짧은 약어로 축약 (카드 배지용, 필요시 규칙 추가)
+  function shortenInterest(text) {
+    const s = text.toLowerCase();
+    const rules = [
+      { re: /cdr|clock and data/, label: "CDR" },
+      { re: /pim|in-?memory|processing in memory/, label: "PIM" },
+      { re: /dpll/, label: "DPLL" },
+      { re: /pll|phase-?locked|injection/, label: "PLL" },
+      { re: /adc/, label: "ADC" },
+      { re: /ai hardware|artificial intelligence|neural|neuromorphic/, label: "AI HW" },
+      { re: /equaliz|dfe|ffe/, label: "Equalizer" },
+      { re: /wireline|serial|transmitter|receiver|pam|transceiver|serdes/, label: "Wireline" },
+      { re: /quantum|cryogenic/, label: "Quantum" },
+      { re: /clock/, label: "Clocking" },
+      { re: /power|regulator|ldo|dc-dc/, label: "Power" },
+      { re: /analog/, label: "Analog" },
+      { re: /digital/, label: "Digital" }
+    ];
+    for (const r of rules) {
+      if (r.re.test(s)) return r.label;
+    }
+    // 규칙에 없으면 첫 구절을 짧게 잘라서 표시
+    const first = text.split(",")[0].trim();
+    return first.length > 14 ? first.slice(0, 13) + "…" : first;
+  }
+
   function loadProfiles(url, containerClass, showIconsInMainView) {
     return $.getJSON(url).done(function (people) {
       const container = $(containerClass);
@@ -105,10 +131,10 @@ $(document).ready(function () {
     const position = person.position || "";
     const imgKey = getFileName(person.profile_img);
 
-    // 대표 연구분야 배지: research_interests 첫 항목의 첫 구절
+    // 대표 연구분야 배지: research_interests 첫 항목을 약어로 축약 (한 줄 표시)
     let interest = "";
     if (Array.isArray(person.research_interests) && person.research_interests.length > 0) {
-      interest = String(person.research_interests[0]).split(",")[0].trim();
+      interest = shortenInterest(String(person.research_interests[0]));
     }
     const interestHTML = interest ? `<div class="people-interest">${interest}</div>` : "";
 
