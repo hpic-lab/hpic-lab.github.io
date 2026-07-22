@@ -1053,10 +1053,11 @@ h6 {
 }
 
 .pub2-year-link {
-  font-size: 0.85rem;
-  color: #888;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #777;
   text-decoration: none;
-  padding: 2px 4px;
+  padding: 3px 4px;
 }
 
 .pub2-year-link:hover {
