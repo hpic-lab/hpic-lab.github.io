@@ -11,6 +11,7 @@ $(document).ready(function () {
     return $.getJSON(url).done(function (people) {
       const container = $(containerClass);
       container.empty();
+      container.addClass("people-grid");
 
       people.forEach((person) => {
         const imgKey = getFileName(person.profile_img);
@@ -101,39 +102,40 @@ $(document).ready(function () {
 
   function createProfileHTML(person, showIconsInMainView) {
     const name = person.name;
-    const position = person.position;
+    const position = person.position || "";
     const imgKey = getFileName(person.profile_img);
 
+    // 대표 연구분야 배지: research_interests 첫 항목의 첫 구절
+    let interest = "";
+    if (Array.isArray(person.research_interests) && person.research_interests.length > 0) {
+      interest = String(person.research_interests[0]).split(",")[0].trim();
+    }
+    const interestHTML = interest ? `<div class="people-interest">${interest}</div>` : "";
+
     const networkIconsHTML = showIconsInMainView
-      ? `<ul class="network-icon" aria-hidden="true">${createNetworkIcons(person)}</ul>`
+      ? `<ul class="network-icon people-icons" aria-hidden="true">${createNetworkIcons(person)}</ul>`
       : "";
 
     return `
-      <div class="col-12 col-lg-3">
-        <img
-          class="portrait"
-          src="${person.profile_img}"
-          alt="${person.name}-profile-img"
-          style="cursor: pointer;"
-          data-bs-toggle="modal"
-          data-bs-target="#exampleModal"
-          data-img-key="${imgKey}" 
-        />
-        <div class="portrait-title">
-          <h2>${name}</h2> 
-          <h3>${position}</h3>
-          ${networkIconsHTML}
-        </div>
+      <div class="people-card ${showIconsInMainView ? "people-card-pi" : ""}"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+        data-img-key="${imgKey}">
+        <img class="people-photo" src="${person.profile_img}" alt="${name}-profile-img" />
+        <div class="people-name">${name}</div>
+        <div class="people-position">${position}</div>
+        ${interestHTML}
+        ${networkIconsHTML}
       </div>
     `;
   }
 
   function createNetworkIcons(person) {
     return `
-      ${person.google_scholar ? `<li><a href="${person.google_scholar}" target="_blank"><img src="img/google-scholar-svg.svg" /></a></li>` : ""}
-      ${person.cv ? `<li><a href="${person.cv}" target="_blank"><img src="img/cv-svg.svg" /></a></li>` : ""}
-      ${person.linkedin ? `<li><a href="${person.linkedin}" target="_blank"><img src="img/linkedin-svg.svg" /></a></li>` : ""}
-      ${person.orcid ? `<li><a href="${person.orcid}" target="_blank"><img src="img/orcid-svg.svg" /></a></li>` : ""}
+      ${person.google_scholar ? `<li><a href="${person.google_scholar}" target="_blank" onclick="event.stopPropagation()"><img src="img/google-scholar-svg.svg" /></a></li>` : ""}
+      ${person.cv ? `<li><a href="${person.cv}" target="_blank" onclick="event.stopPropagation()"><img src="img/cv-svg.svg" /></a></li>` : ""}
+      ${person.linkedin ? `<li><a href="${person.linkedin}" target="_blank" onclick="event.stopPropagation()"><img src="img/linkedin-svg.svg" /></a></li>` : ""}
+      ${person.orcid ? `<li><a href="${person.orcid}" target="_blank" onclick="event.stopPropagation()"><img src="img/orcid-svg.svg" /></a></li>` : ""}
     `;
   }
 
