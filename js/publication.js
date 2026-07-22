@@ -86,13 +86,10 @@ $(document).ready(function () {
     return html;
   }
 
-  // 저자 목록 — 첫 저자 굵게
+  // 저자 목록
   function authorsHTML(list) {
     if (!list || list.length === 0) return "";
-    var out = list.map(function (a, i) {
-      return i === 0 ? "<b>" + a + "</b>" : a;
-    });
-    return out.join(", ");
+    return list.join(", ");
   }
 
   // Journal/Conference 공통 렌더링 (ISL 스타일: 좌측 번호·등급·학회, 우측 본문)
