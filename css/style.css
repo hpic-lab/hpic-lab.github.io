@@ -11,6 +11,7 @@ nav#navbar-main li.nav-item {
 nav#navbar-main .nav-link {
   padding-left: 14px !important;
   padding-right: 14px !important;
+  font-weight: 700;
 }
 
 /* Apply "Noto Sans KR" font to all heading  elements  */
