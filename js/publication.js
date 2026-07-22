@@ -59,13 +59,6 @@ $(document).ready(function () {
     return out;
   }
 
-  // 국내/국제 구분: 한글 포함 또는 국내 저널 약칭이면 Domestic
-  function isDomestic(pub) {
-    var s = (pub.status || "") + " " + (pub.journal || "") + " " + (pub.conference || "") + " " + (pub.title || "");
-    if (/[가-힣]/.test(s)) return true;
-    return /JICAS|JSTS|JSE|KCS/.test((pub.status || "") + " " + (pub.journal || ""));
-  }
-
   var TAG_COLORS = [
     { border: "#0F6E56", color: "#0F6E56" },
     { border: "#BA7517", color: "#BA7517" },
@@ -109,9 +102,6 @@ $(document).ready(function () {
       var num = hasTitle ? n-- : "&ndash;";
 
       var v = venueLabel(pub.status);
-      var scopeHTML = isDomestic(pub)
-        ? '<div class="pub2-scope scope-dom">Domestic</div>'
-        : '<div class="pub2-scope scope-intl">International</div>';
 
       var titleHTML = "";
       if (hasTitle) {
@@ -141,7 +131,6 @@ $(document).ready(function () {
         '<div class="pub2-entry">' +
           '<div class="pub2-num">' + num + "</div>" +
           '<div class="pub2-side">' +
-            scopeHTML +
             '<div class="pub2-venue">' + v + "</div>" +
           "</div>" +
           '<div class="pub2-body">' +

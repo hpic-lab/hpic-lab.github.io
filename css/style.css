@@ -1190,21 +1190,6 @@ h6 {
   padding-top: 10px;
 }
 
-.pub2-scope {
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.3px;
-  margin-bottom: 2px;
-}
-
-.pub2-scope.scope-intl {
-  color: #185FA5;
-}
-
-.pub2-scope.scope-dom {
-  color: #999;
-}
-
 .pub2-venue {
   font-size: 1.1rem;
   font-weight: 800;
