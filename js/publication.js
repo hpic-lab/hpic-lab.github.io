@@ -47,8 +47,14 @@ $(document).ready(function () {
     return '<span class="pub2-badge ' + cls + '">' + text + "</span>";
   }
 
+  function scrollToEl(el) {
+    if (el && el.length) {
+      $("html, body").animate({ scrollTop: el.offset().top - 100 }, 200);
+    }
+  }
+
   // Journal/Conference 공통 렌더링
-  function renderPaperList(pubs, container, venueClass) {
+  function renderPaperList(pubs, container, venueClass, idPrefix) {
     var numbered = pubs.filter(function (p) { return p.title && p.title.trim() !== ""; }).length;
     var n = numbered;
     var curYear = null;
@@ -57,7 +63,7 @@ $(document).ready(function () {
       var year = pub.type || "Others";
       if (year !== curYear) {
         curYear = year;
-        container.append('<div class="pub2-year">' + year + "</div>");
+        container.append('<div class="pub2-year" id="' + idPrefix + "-" + year + '">' + year + "</div>");
       }
 
       var hasTitle = pub.title && pub.title.trim() !== "";
@@ -101,7 +107,7 @@ $(document).ready(function () {
     });
   }
 
-  function renderPatentList(pubs, container) {
+  function renderPatentList(pubs, container, idPrefix) {
     var n = pubs.length;
     var curYear = null;
 
@@ -109,7 +115,7 @@ $(document).ready(function () {
       var year = String(pub.year || pub.type || "Others");
       if (year !== curYear) {
         curYear = year;
-        container.append('<div class="pub2-year">' + year + "</div>");
+        container.append('<div class="pub2-year" id="' + idPrefix + "-" + year + '">' + year + "</div>");
       }
 
       var badges = "";
@@ -140,29 +146,60 @@ $(document).ready(function () {
     var container = $(".all-publications-container");
     container.empty();
 
-    // 탭 바
+    // ===== 왼쪽 고정 사이드바: 세로 탭 + 연도 바로가기 =====
+    var sidebar = $("#publications .sticky-sidebar");
+    sidebar.find(".pub2-side-nav").remove();
+    sidebar.append(
+      '<div class="pub2-side-nav">' +
+        '<div class="pub2-side-tabs">' +
+          '<button type="button" class="pub2-tab active" data-target="journal">Journal</button>' +
+          '<button type="button" class="pub2-tab" data-target="conference">Conference</button>' +
+          '<button type="button" class="pub2-tab" data-target="patent">Patent</button>' +
+        "</div>" +
+        '<div class="pub2-year-links"></div>' +
+      "</div>"
+    );
+
     container.append(
-      '<div class="pub2-tabs">' +
-        '<button type="button" class="pub2-tab active" data-target="journal">Journal</button>' +
-        '<button type="button" class="pub2-tab" data-target="conference">Conference</button>' +
-        '<button type="button" class="pub2-tab" data-target="patent">Patent</button>' +
-      "</div>" +
       '<p class="pub2-notice">* Equally Credited Authors</p>' +
       '<div class="pub2-list" id="pub2-journal"></div>' +
       '<div class="pub2-list" id="pub2-conference" style="display:none"></div>' +
       '<div class="pub2-list" id="pub2-patent" style="display:none"></div>'
     );
 
-    renderPaperList(jRes[0] || [], $("#pub2-journal"), "pub2-venue-journal");
-    renderPaperList(cRes[0] || [], $("#pub2-conference"), "pub2-venue-conf");
-    renderPatentList(pRes[0] || [], $("#pub2-patent"));
+    renderPaperList(jRes[0] || [], $("#pub2-journal"), "pub2-venue-journal", "pubyear-journal");
+    renderPaperList(cRes[0] || [], $("#pub2-conference"), "pub2-venue-conf", "pubyear-conference");
+    renderPatentList(pRes[0] || [], $("#pub2-patent"), "pubyear-patent");
 
-    container.on("click", ".pub2-tab", function () {
+    // 활성 탭의 연도 바로가기 링크 갱신
+    function refreshYearLinks(target) {
+      var linksDiv = sidebar.find(".pub2-year-links");
+      linksDiv.empty();
+      $("#pub2-" + target)
+        .find(".pub2-year")
+        .each(function () {
+          var id = $(this).attr("id");
+          var label = $(this).text();
+          linksDiv.append('<a href="#' + id + '" class="pub2-year-link">' + label + "</a>");
+        });
+    }
+    refreshYearLinks("journal");
+
+    // 탭 전환
+    sidebar.on("click", ".pub2-tab", function () {
       var target = $(this).data("target");
-      container.find(".pub2-tab").removeClass("active");
+      sidebar.find(".pub2-tab").removeClass("active");
       $(this).addClass("active");
       container.find(".pub2-list").hide();
       $("#pub2-" + target).show();
+      refreshYearLinks(target);
+      scrollToEl($("#publications"));
+    });
+
+    // 연도 바로가기 (고정 내비게이션 높이만큼 오프셋)
+    sidebar.on("click", ".pub2-year-link", function (e) {
+      e.preventDefault();
+      scrollToEl($($(this).attr("href")));
     });
   });
 });

@@ -1024,10 +1024,57 @@ h6 {
 }
 
 /* ===== Publications 시안 2: 탭 + 등급 배지 ===== */
-.pub2-tabs {
+.pub2-side-nav {
+  margin-top: 14px;
+}
+
+/* 기본(모바일): 가로 배치 */
+.pub2-side-tabs {
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
-  margin-bottom: 18px;
+  margin-bottom: 10px;
+}
+
+.pub2-year-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 10px;
+  margin-bottom: 14px;
+}
+
+.pub2-year-link {
+  font-size: 0.85rem;
+  color: #888;
+  text-decoration: none;
+  padding: 2px 4px;
+}
+
+.pub2-year-link:hover {
+  color: #2e55be;
+  text-decoration: underline;
+}
+
+/* 데스크톱(lg+): 세로 배치 */
+@media (min-width: 992px) {
+  .pub2-side-tabs {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .pub2-side-tabs .pub2-tab {
+    width: 100%;
+    max-width: 160px;
+    text-align: left;
+  }
+
+  .pub2-year-links {
+    flex-direction: column;
+    gap: 2px;
+    border-left: 2px solid #e5e5e5;
+    padding-left: 10px;
+    margin-left: 4px;
+  }
 }
 
 .pub2-tab {
