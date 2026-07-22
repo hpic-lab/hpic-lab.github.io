@@ -194,9 +194,9 @@ $(document).ready(function () {
     sidebar.append(
       '<div class="pub2-side-nav">' +
         '<div class="pub2-side-tabs">' +
-          '<button type="button" class="pub2-tab active" data-target="journal">Journal</button>' +
-          '<button type="button" class="pub2-tab" data-target="conference">Conference</button>' +
-          '<button type="button" class="pub2-tab" data-target="patent">Patent</button>' +
+          '<button type="button" class="pub2-tab pub2-tab-journal active" data-target="journal">Journal</button>' +
+          '<button type="button" class="pub2-tab pub2-tab-conference" data-target="conference">Conference</button>' +
+          '<button type="button" class="pub2-tab pub2-tab-patent" data-target="patent">Patent</button>' +
         "</div>" +
         '<div class="pub2-year-links"></div>' +
       "</div>"

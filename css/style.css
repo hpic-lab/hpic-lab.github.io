@@ -1088,15 +1088,26 @@ h6 {
   transition: all 0.15s;
 }
 
-.pub2-tab:hover {
-  border-color: #2e55be;
-  color: #2e55be;
+/* 탭별 색상 — News 배지 색상과 통일 (Journal 파랑 / Conference 청록 / Patent 보라) */
+.pub2-tab-journal:hover,
+.pub2-tab-journal.active {
+  background: #E6F1FB;
+  border-color: #0C447C;
+  color: #0C447C;
 }
 
-.pub2-tab.active {
-  background: #2e55be;
-  border-color: #2e55be;
-  color: #fff;
+.pub2-tab-conference:hover,
+.pub2-tab-conference.active {
+  background: #E1F5EE;
+  border-color: #085041;
+  color: #085041;
+}
+
+.pub2-tab-patent:hover,
+.pub2-tab-patent.active {
+  background: #EEEDFE;
+  border-color: #3C3489;
+  color: #3C3489;
 }
 
 .pub2-notice {
@@ -1165,6 +1176,18 @@ h6 {
   color: #1c3557;
   line-height: 1.25;
   word-break: keep-all;
+}
+
+#pub2-journal .pub2-venue {
+  color: #0C447C;
+}
+
+#pub2-conference .pub2-venue {
+  color: #085041;
+}
+
+#pub2-patent .pub2-venue {
+  color: #3C3489;
 }
 
 .pub2-body {
