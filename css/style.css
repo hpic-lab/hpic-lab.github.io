@@ -1053,6 +1053,13 @@ h6 {
   color: #fff;
 }
 
+.pub2-notice {
+  font-size: 0.8rem;
+  color: #999;
+  font-style: italic;
+  margin: -8px 0 14px;
+}
+
 .pub2-year {
   font-size: 1.05rem;
   font-weight: 700;

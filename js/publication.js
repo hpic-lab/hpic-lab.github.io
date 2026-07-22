@@ -82,8 +82,10 @@ $(document).ready(function () {
           : inner;
       }
 
+      // "(*Equally Credited Authors)" 문구는 목록 상단에 일괄 공지하므로 개별 항목에서는 제거
+      var refText = (pub.reference || "").replace(/[,]?\s*\(\*?\s*Equally Credited Authors\s*\)/gi, "");
       var metaHTML = authorsText;
-      if (pub.reference && pub.reference.trim() !== "") metaHTML += " &mdash; " + pub.reference;
+      if (refText.trim() !== "") metaHTML += " &mdash; " + refText;
 
       container.append(
         '<div class="pub2-entry">' +
@@ -145,6 +147,7 @@ $(document).ready(function () {
         '<button type="button" class="pub2-tab" data-target="conference">Conference</button>' +
         '<button type="button" class="pub2-tab" data-target="patent">Patent</button>' +
       "</div>" +
+      '<p class="pub2-notice">* Equally Credited Authors</p>' +
       '<div class="pub2-list" id="pub2-journal"></div>' +
       '<div class="pub2-list" id="pub2-conference" style="display:none"></div>' +
       '<div class="pub2-list" id="pub2-patent" style="display:none"></div>'
