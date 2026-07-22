@@ -47,10 +47,12 @@ $(document).ready(function () {
             return ' <a href="' + l.url + '" target="_blank" rel="noopener noreferrer" class="news-link">[' + l.label + "]</a>";
           })
           .join("");
+        // <u>이름</u> → 클릭 가능한 프로필 링크로 변환 (HPIC Lab 제외)
+        var text = it.text.replace(/<u>(?!HPIC Lab<)(.*?)<\/u>/g, '<u class="news-member" title="View profile">$1</u>');
         list.append(
           '<div class="news-item">' +
             '<span class="news-badge" style="background:' + c.bg + ";color:" + c.fg + ';">' + c.label + "</span>" +
-            '<p class="news-text">' + it.text + links + "</p>" +
+            '<p class="news-text">' + text + links + "</p>" +
           "</div>"
         );
       });
@@ -68,6 +70,26 @@ $(document).ready(function () {
         heightStyle: "content",
         active: $this.hasClass("start-closed") ? false : 0
       });
+    });
+
+    // 연구원 이름 클릭 → 프로필 모달 (profile.js의 window.peopleDB 활용)
+    container.on("click", "u.news-member", function () {
+      var givenName = $(this).text().trim();
+      var db = window.peopleDB || {};
+      var foundKey = null;
+      for (var key in db) {
+        var fullName = db[key].name || "";
+        if (fullName === givenName || fullName.indexOf(givenName + " ") === 0) {
+          foundKey = key;
+          break;
+        }
+      }
+      if (!foundKey) return; // 프로필이 없는 이름은 클릭해도 무반응
+      this.setAttribute("data-img-key", foundKey);
+      var modalEl = document.getElementById("exampleModal");
+      if (modalEl && window.bootstrap && window.bootstrap.Modal) {
+        window.bootstrap.Modal.getOrCreateInstance(modalEl).show(this);
+      }
     });
   });
 });
