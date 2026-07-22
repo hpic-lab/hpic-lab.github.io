@@ -980,8 +980,47 @@ h6 {
 
 /* 3. 스크롤바 뒷배경 (회색, #f1f1f1) */
 .news-card::-webkit-scrollbar-track {
-  background-color: #f1f1f1; 
+  background-color: #f1f1f1;
   border-radius: 4px;
+}
+
+/* ===== News 시안 A: 카테고리 배지 + 월 구분 ===== */
+.news-list .news-month {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #8a8a8a;
+  letter-spacing: 0.5px;
+  margin: 18px 0 10px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.news-list .news-month:first-child {
+  margin-top: 0;
+}
+
+.news-list .news-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.news-list .news-badge {
+  flex-shrink: 0;
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 4px;
+  margin-top: 3px;
+  white-space: nowrap;
+  min-width: 82px;
+  text-align: center;
+}
+
+.news-list .news-text {
+  margin: 0;
+  line-height: 1.55;
 }
 .col-lg-8 h5:not(:first-child),
 .chip-gallery-title-row {
