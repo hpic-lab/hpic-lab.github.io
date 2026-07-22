@@ -1089,25 +1089,38 @@ h6 {
 }
 
 /* 탭별 색상 — News 배지 색상과 통일 (Journal 파랑 / Conference 청록 / Patent 보라) */
+/* 항상 색이 채워져 있고, 활성 탭은 테두리로 구분 */
+.pub2-tab-journal {
+  background: #E6F1FB;
+  border-color: #E6F1FB;
+  color: #0C447C;
+}
+
+.pub2-tab-conference {
+  background: #E1F5EE;
+  border-color: #E1F5EE;
+  color: #085041;
+}
+
+.pub2-tab-patent {
+  background: #EEEDFE;
+  border-color: #EEEDFE;
+  color: #3C3489;
+}
+
 .pub2-tab-journal:hover,
 .pub2-tab-journal.active {
-  background: #E6F1FB;
   border-color: #0C447C;
-  color: #0C447C;
 }
 
 .pub2-tab-conference:hover,
 .pub2-tab-conference.active {
-  background: #E1F5EE;
   border-color: #085041;
-  color: #085041;
 }
 
 .pub2-tab-patent:hover,
 .pub2-tab-patent.active {
-  background: #EEEDFE;
   border-color: #3C3489;
-  color: #3C3489;
 }
 
 .pub2-notice {
