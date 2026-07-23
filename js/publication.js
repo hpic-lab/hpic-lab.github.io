@@ -94,10 +94,14 @@ $(document).ready(function () {
     return prefix + (NAME_MAP[key] || s) + suffix;
   }
 
-  // 저자 목록
+  // 저자 목록 (저자가 2명이면 쉼표 없이 "A and B"로 표기)
   function authorsHTML(list) {
     if (!list || list.length === 0) return "";
-    return list.map(toFullName).join(", ");
+    var names = list.map(toFullName);
+    if (names.length === 2 && /^and\s/i.test(names[1])) {
+      return names[0] + " " + names[1];
+    }
+    return names.join(", ");
   }
 
   // Journal/Conference 공통 렌더링 (ISL 스타일: 좌측 번호·등급·학회, 우측 본문)
