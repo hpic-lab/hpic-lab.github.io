@@ -1,5 +1,23 @@
 * {
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: "Pretendard", "Noto Sans KR", sans-serif;
+}
+
+/* 테마(academic)가 Montserrat/Roboto를 적용하는 요소들까지 Noto Sans KR로 통일 */
+body,
+.navbar,
+.navbar-brand,
+.nav-link,
+.nav-item,
+.dropdown-menu,
+.btn,
+button,
+input,
+select,
+textarea,
+.badge,
+.card,
+.list-group-item {
+  font-family: "Pretendard", "Noto Sans KR", sans-serif !important;
 }
 
 /* 내비게이션 픽셀크기증가 - 추교수님 요구사항 */
@@ -21,7 +39,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Noto Sans KR", sans-serif !important;
+  font-family: "Pretendard", "Noto Sans KR", sans-serif !important;
   margin-bottom: 0.5rem;
   line-height: 1.25;
   color: #313131;
@@ -442,7 +460,7 @@ nav#navbar-main .navbar-collapse {
   background: none;
   border: none;
   border-bottom: 3px solid #005bac; /* 파란색 밑줄 */
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: "Pretendard", "Noto Sans KR", sans-serif;
   font-size: 24px;
   font-weight: 700;
   color: #333;
@@ -491,7 +509,7 @@ nav#navbar-main .navbar-collapse {
 
 /* 1. 대분류 제목 (Registered Patents, Applications) */
 .patent-category-title {
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: "Pretendard", "Noto Sans KR", sans-serif;
   font-size: 28px;      /* 연도보다 조금 더 크게 강조 */
   font-weight: 700;       /* 두꺼운 글씨 */
   color: #333;
