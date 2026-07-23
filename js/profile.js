@@ -47,6 +47,14 @@ $(document).ready(function () {
         const profile = createProfileHTML(person, showIconsInMainView);
         container.append(profile);
       });
+
+      // 학생 그룹 제목에 인원 수 표시 (예: M.S. Candidates (14))
+      if (containerClass === ".ms-phd-candidates" || containerClass === ".ms-candidates") {
+        const heading = container.prev("h3");
+        if (heading.length && !/\(\d+\)/.test(heading.text())) {
+          heading.append(` (${people.length})`);
+        }
+      }
     });
   }
 
@@ -68,6 +76,12 @@ $(document).ready(function () {
       const container = $(containerId);
       container.empty();
 
+      // Alumni 아코디언 헤더에 전체 인원 수 표시
+      const alumniHeading = $("#alumni");
+      if (alumniHeading.length && !/\(\d+\)/.test(alumniHeading.text())) {
+        alumniHeading.append(` (${alumniList.length})`);
+      }
+
       const groups = { ms: [], bs: [], etc: [] };
       alumniList.forEach((p) => {
         const prog = p.program || "";
@@ -86,7 +100,7 @@ $(document).ready(function () {
         const list = groups[sec.key];
         if (list.length === 0) return;
 
-        container.append(`<div class="alumni-section-title ${sec.cls}">${sec.label}</div>`);
+        container.append(`<div class="alumni-section-title ${sec.cls}">${sec.label} (${list.length})</div>`);
         const grid = $('<div class="people-grid people-grid-compact"></div>');
 
         list.forEach((person) => {
@@ -392,6 +406,44 @@ $.when(
     
   ).done(function() {
       loadAlumni("json/people/06_alumni.json", "#alumni-list-container");
+      buildPeopleSideNav();
   });
+
+  // ===== People 좌측 사이드바: PI / Lab Captain / Server Manager 바로가기 =====
+  function buildPeopleSideNav() {
+    const sidebar = $("#people .sticky-sidebar");
+    if (!sidebar.length) return;
+    sidebar.find(".people-side-nav").remove();
+
+    const roles = [
+      { label: "PI", icon: "", re: /professor/i, cls: "side-pi" },
+      { label: "Lab Captain", icon: "★", re: /captain/i, cls: "side-captain" },
+      { label: "Server Manager", icon: "⚙", re: /server/i, cls: "side-server" }
+    ];
+
+    let html = "";
+    roles.forEach((role) => {
+      for (const [key, p] of Object.entries(window.peopleDB)) {
+        if (role.re.test(p.position || "")) {
+          html += `
+            <div class="people-side-item" data-img-key="${key}" title="View profile">
+              <span class="people-side-label ${role.cls}">${role.icon ? role.icon + " " : ""}${role.label}</span>
+              <span class="people-side-name">${p.name}</span>
+            </div>`;
+          break; // 역할당 한 명
+        }
+      }
+    });
+
+    if (html === "") return;
+    sidebar.append(`<div class="people-side-nav">${html}</div>`);
+
+    sidebar.on("click", ".people-side-item", function () {
+      const modalEl = document.getElementById("exampleModal");
+      if (modalEl && window.bootstrap && window.bootstrap.Modal) {
+        window.bootstrap.Modal.getOrCreateInstance(modalEl).show(this);
+      }
+    });
+  }
 
 });

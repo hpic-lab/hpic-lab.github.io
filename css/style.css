@@ -1241,6 +1241,60 @@ nav#navbar-main .navbar-collapse {
   color: #999;
 }
 
+/* ===== People 좌측 바로가기 (PI / Lab Captain / Server Manager) ===== */
+.people-side-nav {
+  margin-top: 16px;
+}
+
+.people-side-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 4px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.people-side-item:hover {
+  background: #f4f6fb;
+}
+
+.people-side-item:hover .people-side-name {
+  color: #2e55be;
+  text-decoration: underline;
+}
+
+.people-side-label {
+  flex-shrink: 0;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 2px 9px;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.people-side-label.side-pi {
+  background: #E6F1FB;
+  color: #0C447C;
+}
+
+.people-side-label.side-captain {
+  background: #FAEEDA;
+  color: #854F0B;
+}
+
+.people-side-label.side-server {
+  background: #F1EFE8;
+  color: #444441;
+}
+
+.people-side-name {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #333;
+  white-space: nowrap;
+}
+
 /* ===== People 프로필 카드 (시안 A) ===== */
 #people h3:not(.accordion h3):not(.h3-items) {
   text-align: left !important;
