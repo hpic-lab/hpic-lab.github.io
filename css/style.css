@@ -1146,7 +1146,9 @@ nav#navbar-main .navbar-collapse {
     position: -webkit-sticky;
     position: sticky;
     top: 66px;
-    background: transparent;
+    background: rgba(255, 255, 255, 0.75);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
     z-index: 5;
     padding-top: 8px;
   }
@@ -1219,7 +1221,9 @@ nav#navbar-main .navbar-collapse {
     position: -webkit-sticky;
     position: sticky;
     top: 66px;
-    background: transparent;
+    background: rgba(255, 255, 255, 0.75);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
     z-index: 5;
     padding-top: 8px;
   }
@@ -1569,7 +1573,9 @@ nav#navbar-main .navbar-collapse {
     position: -webkit-sticky;
     position: sticky;
     top: 66px;
-    background: transparent;
+    background: rgba(255, 255, 255, 0.75);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
     z-index: 5;
     padding-top: 8px;
   }
