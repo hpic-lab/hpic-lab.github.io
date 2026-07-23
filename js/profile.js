@@ -278,19 +278,22 @@ $(document).ready(function () {
       person.academic_services
     );
 
-    renderChipGallery(person.chips, !!(person.affiliation && String(person.affiliation).trim()));
+    // PI(교수)와 졸업생은 Chip Gallery 미표시
+    var _hideChip = /Professor/i.test(person.position || "") ||
+                    !!(person.affiliation && String(person.affiliation).trim());
+    renderChipGallery(person.chips, _hideChip);
   });
 
   // ===== Chip Gallery: 본인 칩 사진 (chips 필드) =====
   // json/people/*.json 의 각 인물에 아래 형태로 추가하면 표시됩니다.
   //   "chips": [ { "img": "img/chip_new/xxx.png", "name": "High-Speed TX", "date": "Sep. '25 (28-nm T)" } ]
-  function renderChipGallery(chips, isAlumni) {
+  function renderChipGallery(chips, hideSection) {
     var $title = $("#modal-chip-title");
     var $gallery = $("#modal-chip-gallery");
     var arr = parseData(chips);
 
-    // 졸업생은 Chip Gallery 미표시
-    if (isAlumni) { $title.hide(); $gallery.hide().empty(); return; }
+    // PI·졸업생 등은 Chip Gallery 미표시
+    if (hideSection) { $title.hide(); $gallery.hide().empty(); return; }
 
     $title.show();
     if (arr.length === 0) {
