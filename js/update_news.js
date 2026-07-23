@@ -43,7 +43,16 @@ $(document).ready(function () {
         }
         var catKey = CATEGORY[it.category] ? it.category : "News";
         var c = CATEGORY[catKey];
+        // [Paper] 링크는 별도 표기 대신 논문 제목("...")에 하이퍼링크로 연결
+        var paperUrl = null;
         var links = (it.links || [])
+          .filter(function (l) {
+            if (l.label === "Paper" && !paperUrl) {
+              paperUrl = l.url;
+              return false;
+            }
+            return true;
+          })
           .map(function (l) {
             return ' <a href="' + l.url + '" target="_blank" rel="noopener noreferrer" class="news-link">[' + l.label + "]</a>";
           })
@@ -60,6 +69,10 @@ $(document).ready(function () {
         }
         // <u>이름</u> → 클릭 가능한 프로필 링크로 변환 (HPIC Lab 제외)
         var text = it.text.replace(/<u>(?!HPIC Lab<)(.*?)<\/u>/g, '<u class="news-member" title="View profile">$1</u>');
+        // 논문 제목("...")에 하이퍼링크 적용
+        if (paperUrl) {
+          text = text.replace(/"([^"]+)"/, '<a href="' + paperUrl + '" target="_blank" rel="noopener noreferrer" class="news-title-link">"$1"</a>');
+        }
         list.append(
           '<div class="news-item" data-cat="' + catKey + '">' +
             '<span class="news-badge" style="background:' + c.bg + ";color:" + c.fg + ';">' + c.label + "</span>" +

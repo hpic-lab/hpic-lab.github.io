@@ -1258,6 +1258,17 @@ nav#navbar-main .navbar-collapse {
   text-align: center;
 }
 
+/* News 논문 제목 하이퍼링크 (기본은 본문색, 호버 시 파란색) */
+.news-list .news-title-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.news-list .news-title-link:hover {
+  color: #007bff;
+  text-decoration: underline;
+}
+
 /* News 본문에서 연구원 이름 클릭 → 프로필 모달 */
 .news-list u.news-member {
   cursor: pointer;
