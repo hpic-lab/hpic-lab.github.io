@@ -105,9 +105,11 @@ $(document).ready(function () {
 
         list.forEach((person) => {
           let foundKey = null;
+          let foundVal = null;
           for (const [key, val] of Object.entries(window.peopleDB)) {
             if (val.name === person.name) {
               foundKey = key;
+              foundVal = val;
               break;
             }
           }
@@ -116,9 +118,18 @@ $(document).ready(function () {
             ? `data-bs-toggle="modal" data-bs-target="#exampleModal" data-img-key="${foundKey}"`
             : "";
 
+          // 프로필 사진: peopleDB에 등록된 사진 우선, 없으면 person.profile_img
+          const photo = (foundVal && foundVal.profile_img) || person.profile_img || "";
+          const photoHTML = photo
+            ? `<img class="people-mini-photo" src="${photo}" alt="${person.name}" onerror="this.remove()" />`
+            : "";
+
           grid.append(`
             <div class="people-card people-card-compact ${foundKey ? "" : "alumni-noclick"}" ${clickAttrs}>
-              <span class="people-name">${person.name}</span>
+              ${photoHTML}
+              <div class="people-compact-info">
+                <span class="people-name">${person.name}</span>
+              </div>
             </div>
           `);
         });
