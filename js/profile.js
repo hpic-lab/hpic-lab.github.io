@@ -314,14 +314,16 @@ $(document).ready(function () {
         `);
     }
 
+    // PI(교수)는 Research Interests를 홈페이지에서 보여주므로 카드에서 숨김
+    const isProfessor = (position || "").indexOf("Professor") !== -1;
     const parsed_research_interests = parseData(research_interests);
-    
-    if (parsed_research_interests.length > 0) {
+
+    if (!isProfessor && parsed_research_interests.length > 0) {
         $("#modal-research_interests-title").show();
         $("#modal-research_interests").show();
         updateList("#modal-research_interests", parsed_research_interests, "");
     } else {
-        // 내용이 없으면 제목과 리스트 모두 화면에서 숨김 처리
+        // PI이거나 내용이 없으면 제목과 리스트 모두 화면에서 숨김 처리
         $("#modal-research_interests-title").hide();
         $("#modal-research_interests").hide();
     }
