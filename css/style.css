@@ -1797,6 +1797,11 @@ nav#navbar-main .navbar-collapse {
   text-decoration: underline;
 }
 
+.pub2-year-link.active {
+  color: #2e55be;
+  font-weight: 700;
+}
+
 /* 데스크톱(lg+): 세로 배치 */
 @media (min-width: 992px) {
   .pub2-side-tabs {

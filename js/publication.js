@@ -273,6 +273,11 @@ $(document).ready(function () {
       if (!current) current = headers[0];
       headers.removeClass("pub2-year-active");
       $(current).addClass("pub2-year-active");
+
+      // 사이드바 연도 링크도 동일하게 강조
+      var id = $(current).attr("id");
+      sidebar.find(".pub2-year-link").removeClass("active");
+      if (id) sidebar.find('.pub2-year-link[href="#' + id + '"]').addClass("active");
     }
 
     var yearTick = false;
