@@ -105,7 +105,13 @@ nav#navbar-main .navbar-brand {
 /* HPIC 칩 로고 (SVG 자체를 연세 블루로 채색) */
 nav#navbar-main .navbar-brand > img:first-child {
   width: auto;
-  height: 34px;
+  height: 46px;
+}
+
+nav#navbar-main .navbar-brand {
+  font-size: 1.6rem;
+  padding-top: 4px;
+  padding-bottom: 4px;
 }
 
 nav#navbar-main .navbar-toggler-icon {
@@ -133,7 +139,7 @@ nav#navbar-main .navbar-collapse {
 }
 
 .yonsei-logo {
-  height: 46px;
+  height: 60px;
   width: auto;
 }
 
