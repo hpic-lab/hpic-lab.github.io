@@ -550,9 +550,14 @@ $(document).ready(function () {
       s = s.slice(0, m.index).trim().replace(/,\s*$/, "");
     }
     var parts = s.split(",").map(function (x) { return x.trim(); }).filter(Boolean);
-    var kw = /(University|Institute|College|Center|Research|Corp|Inc|Semiconductor|Electronics|Labs?|Company|Univ|대학교|연구소|연구원)/i;
+    // 대학/연구기관 키워드를 우선 인식 (학과명에 Semiconductor 등이 들어가도 기관을 정확히 선택)
+    var strongKw = /(University|Institute|College|대학교|Univ\.?)/i;
+    var wideKw = /(University|Institute|College|Center|Research|Corp|Inc|Semiconductor|Electronics|Labs?|Company|Univ|대학교|연구소|연구원)/i;
     var instIdx = -1;
-    for (var i = 1; i < parts.length; i++) { if (kw.test(parts[i])) { instIdx = i; break; } }
+    for (var i = 1; i < parts.length; i++) { if (strongKw.test(parts[i])) { instIdx = i; break; } }
+    if (instIdx === -1) {
+      for (var j = 1; j < parts.length; j++) { if (wideKw.test(parts[j])) { instIdx = j; break; } }
+    }
     if (instIdx === -1) instIdx = parts.length >= 2 ? 1 : -1;
     var title, inst;
     if (instIdx >= 1) { title = parts.slice(0, instIdx).join(", "); inst = parts[instIdx]; }
