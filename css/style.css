@@ -1414,6 +1414,18 @@ nav#navbar-main .navbar-collapse {
   line-height: 1.5;
 }
 
+/* Awards: 사진이 있으면 문장 전체가 클릭 가능 */
+#exampleModal .mpub-award-link {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#exampleModal .mpub-award-link:hover {
+  color: #007bff;
+  text-decoration: underline;
+}
+
 /* 모바일: 홈페이지 Publications와 동일하게 좌측 블록을 위로 접고 본문은 전체 폭 */
 @media (max-width: 576px) {
   #exampleModal .mpub-entry {

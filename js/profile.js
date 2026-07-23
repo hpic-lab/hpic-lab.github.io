@@ -427,12 +427,13 @@ $(document).ready(function () {
       .slice()
       .reverse() // 오래된 것부터
       .map((a) => {
-        var photo = a.img
-          ? ' <a href="' + a.img + '" target="_blank" rel="noopener noreferrer" class="news-link">[Photo]</a>'
-          : "";
+        // 사진이 있으면 문장 전체가 클릭 가능한 링크
+        var body = a.img
+          ? '<a href="' + a.img + '" target="_blank" rel="noopener noreferrer" class="mpub-award-link">' + a.text + "</a>"
+          : a.text;
         return '<div class="mpub-entry">' +
           '<div class="mpub-side mpub-date">' + a.ym + "</div>" +
-          '<div class="mpub-body">' + a.text + photo + "</div>" +
+          '<div class="mpub-body">' + body + "</div>" +
         "</div>";
       });
     const manualAwards = parseData(Awards).map((t) =>
