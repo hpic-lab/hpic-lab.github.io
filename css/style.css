@@ -1495,6 +1495,8 @@ nav#navbar-main .navbar-collapse {
 /* News 본문에서 연구원 이름 클릭 → 프로필 모달 */
 .news-list u.news-member {
   cursor: pointer;
+  /* 'g','y' 등 내려긋는 획 아래에서도 밑줄이 끊기지 않도록 */
+  text-decoration-skip-ink: none;
 }
 
 .news-list u.news-member:hover {
