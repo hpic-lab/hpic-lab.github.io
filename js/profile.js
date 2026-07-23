@@ -315,29 +315,34 @@ $(document).ready(function () {
         $("#modal-research_interests").hide();
     }
 
-    // Academic Services (CV 기반, PI 전용 — 데이터가 없으면 숨김)
+    // Academic Services (CV 기반, PI 전용 — 데이터가 없으면 카드 숨김)
     const parsed_services = parseData(academic_services);
     if (parsed_services.length > 0) {
+        $("#pcard-services").show();
         $("#modal-academic_services-title").show();
         $("#modal-academic_services").show();
         updateList("#modal-academic_services", parsed_services, "");
     } else {
-        $("#modal-academic_services-title").hide();
-        $("#modal-academic_services").hide();
+        $("#pcard-services").hide();
     }
 
     const parsed_education = parseData(education);
-    updateList("#modal-education", parsed_education, "No education available.");
+    if (parsed_education.length > 0) {
+        $("#pcard-education").show();
+        updateList("#modal-education", parsed_education, "");
+    } else {
+        $("#pcard-education").hide();
+    }
 
     const parsed_experience = parseData(experience);
     if (parsed_experience.length > 0) {
+        $("#pcard-experience").show();
         $("#modal-experience-title").show();
         $("#modal-experience").show();
         updateList("#modal-experience", parsed_experience, "");
     } else {
-        // 내용이 없으면 제목과 리스트 모두 화면에서 숨김 처리
-        $("#modal-experience-title").hide();
-        $("#modal-experience").hide();
+        // 내용이 없으면 카드 전체 숨김
+        $("#pcard-experience").hide();
     }
     //updateList("#modal-experience", parsed_experience, "No experience available.");
 
@@ -346,11 +351,12 @@ $(document).ready(function () {
       .map((schedule) => `${schedule.date} (${schedule.process})`)
       .join(", ");
     if (formattedTapeOutSchedule) {
+      $("#pcard-tapeout").show();
       $("#modal-tape_out_schedule").text(formattedTapeOutSchedule);
       $("#modal-tape_out_schedule-title").show();
     } else {
+      $("#pcard-tapeout").hide();
       $("#modal-tape_out_schedule").text("");
-      $("#modal-tape_out_schedule-title").hide();
     }
 
     // ===== Publications: 홈페이지 Publications 데이터와 자동 연동 (동일 양식) =====
@@ -439,6 +445,7 @@ $(document).ready(function () {
       $("#modal-Awards").hide();
     }
 
+    // Alumni: Current Affiliation + Program (Period) 카드
     if (affiliation) {
       $("#modal-affiliation").text(affiliation);
       $("#modal-affiliation-title").show();
@@ -456,6 +463,8 @@ $(document).ready(function () {
         $("#modal-program_period-title").hide();
         $("#modal-program_period").hide();
     }
+
+    $("#pcard-affiliation").toggle(!!(affiliation || program_period));
   }
 
   function parseData(data) {
