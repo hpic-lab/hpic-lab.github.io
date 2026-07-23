@@ -188,18 +188,25 @@ $(document).ready(function () {
 
       var badges = tagsHTML(pub);
 
-      // 프로필 모달용 색인 등록 (제목 있는 논문만, Publications 섹션과 동일 양식)
+      // 프로필 모달용 색인 등록 (Publications 섹션과 동일 양식)
+      // 제목이 없는 투고/심사 중(Submitted/In Revision) 논문도 포함
+      var kindClass = venueClass === "pub2-venue-journal" ? "mpub-journal" : "mpub-conf";
+      var mBody;
       if (hasTitle) {
-        var kindClass = venueClass === "pub2-venue-journal" ? "mpub-journal" : "mpub-conf";
-        registerPub(
-          pub,
-          '<div class="mpub-venue ' + kindClass + '">' + v + "</div>" +
-            (badges ? '<div class="pub2-side-badges">' + badges + "</div>" : ""),
-          '<div class="mpub-title">' + titleHTML + "</div>" +
-            '<div class="mpub-src">' + srcText + "</div>" +
-            '<div class="mpub-authors">' + authorsHTML(pub.authors) + "</div>"
-        );
+        mBody = '<div class="mpub-title">' + titleHTML + "</div>" +
+                '<div class="mpub-src">' + srcText + "</div>" +
+                '<div class="mpub-authors">' + authorsHTML(pub.authors) + "</div>";
+      } else {
+        // 제목 미공개(심사 중): 상태 문구 + 저자만 표시
+        mBody = '<div class="mpub-title mpub-review">Manuscript under review</div>' +
+                '<div class="mpub-authors">' + authorsHTML(pub.authors) + "</div>";
       }
+      registerPub(
+        pub,
+        '<div class="mpub-venue ' + kindClass + '">' + v + "</div>" +
+          (badges ? '<div class="pub2-side-badges">' + badges + "</div>" : ""),
+        mBody
+      );
 
       // News에서 제목 클릭 시 찾아올 수 있도록 항목에 고유 id 부여 + 색인 등록
       var entryId = "";

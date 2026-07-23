@@ -1300,6 +1300,7 @@ nav#navbar-main .navbar-collapse {
 }
 
 #exampleModal .phb-identity .ul-interests {
+  width: 100%;
   justify-content: center;
 }
 
@@ -1459,6 +1460,13 @@ nav#navbar-main .navbar-collapse {
 #exampleModal .mpub-title a:hover {
   color: #007bff;
   text-decoration: underline;
+}
+
+/* 심사 중(제목 미공개) 논문 표시 */
+#exampleModal .mpub-title.mpub-review {
+  font-weight: 600;
+  font-style: italic;
+  color: #888;
 }
 
 #exampleModal .mpub-src {
