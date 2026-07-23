@@ -1093,7 +1093,7 @@ nav#navbar-main .navbar-collapse {
   border-bottom: 3px solid #2e55be !important;
   border-radius: 0 !important;
   color: #222 !important;
-  font-size: 1.5rem !important;
+  font-size: 1.2rem !important;
   font-weight: 700;
   text-align: left;
   padding: 8px 4px 6px 0 !important;
@@ -1827,7 +1827,7 @@ nav#navbar-main .navbar-collapse {
 }
 
 .pub2-year {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 700;
   color: #222;
   margin: 28px 0 10px;
