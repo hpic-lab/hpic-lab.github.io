@@ -1503,6 +1503,42 @@ nav#navbar-main .navbar-collapse {
   text-decoration: underline;
 }
 
+/* Alumni 한 줄 카드 (학생 카드와 동일 형태) */
+.alumni-period-inline {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #aaa;
+  white-space: nowrap;
+}
+
+.alumni-thesis-inline {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #2e55be;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.alumni-thesis-inline:hover {
+  text-decoration: underline;
+}
+
+.alumni-current-inline {
+  flex-shrink: 0;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #666;
+  white-space: nowrap;
+}
+
+.alumni-current-inline.study {
+  color: #0F6E56;
+}
+
+.people-card-compact.alumni-noclick {
+  cursor: default;
+}
+
 /* ===== Publications 시안 2: 탭 + 등급 배지 ===== */
 .pub2-side-nav {
   margin-top: 14px;

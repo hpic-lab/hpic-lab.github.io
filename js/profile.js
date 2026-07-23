@@ -87,7 +87,7 @@ $(document).ready(function () {
         if (list.length === 0) return;
 
         container.append(`<div class="alumni-section-title ${sec.cls}">${sec.label}</div>`);
-        const grid = $('<div class="alumni-grid"></div>');
+        const grid = $('<div class="people-grid people-grid-compact"></div>');
 
         list.forEach((person) => {
           let foundKey = null;
@@ -100,11 +100,17 @@ $(document).ready(function () {
 
           const m = (person.program || "").match(/\(([^)]+)\)/);
           const period = m ? m[1] : "";
-          const degree = sec.key === "etc" ? (person.program || "") : sec.label.split(" ")[0];
           const isStudy = /Candidate|@/.test(person.current || "");
 
+          // 진학 표기를 짧게: "M.S.-Ph.D. Candidate @ KAIST" → "M.S.-Ph.D. @ KAIST"
+          const currentShort = (person.current || "")
+            .replace(/\s*Candidate\s*/g, " ")
+            .replace(/\s+Univ\.?$/i, "")
+            .replace(/\s{2,}/g, " ")
+            .trim();
+
           const thesisHTML = person.thesis_link
-            ? `<a href="${person.thesis_link}" target="_blank" rel="noopener noreferrer" class="alumni-thesis" onclick="event.stopPropagation()">Thesis</a>`
+            ? `<a href="${person.thesis_link}" target="_blank" rel="noopener noreferrer" class="alumni-thesis-inline" onclick="event.stopPropagation()">Thesis</a>`
             : "";
 
           const clickAttrs = foundKey
@@ -112,11 +118,13 @@ $(document).ready(function () {
             : "";
 
           grid.append(`
-            <div class="alumni-card ${foundKey ? "clickable" : ""}" ${clickAttrs}>
-              <div class="alumni-name">${person.name}</div>
-              <div class="alumni-program">${degree} ${period}</div>
-              <div class="alumni-current ${isStudy ? "study" : ""}">${person.current || ""}</div>
-              ${thesisHTML}
+            <div class="people-card people-card-compact ${foundKey ? "" : "alumni-noclick"}" ${clickAttrs}>
+              <span class="people-left">
+                <span class="people-name">${person.name}</span>
+                <span class="alumni-period-inline">${period}</span>
+                ${thesisHTML}
+              </span>
+              <span class="alumni-current-inline ${isStudy ? "study" : ""}">${currentShort}</span>
             </div>
           `);
         });
