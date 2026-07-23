@@ -277,7 +277,41 @@ $(document).ready(function () {
       links,
       person.academic_services
     );
+
+    renderChipGallery(person.chips, !!(person.affiliation && String(person.affiliation).trim()));
   });
+
+  // ===== Chip Gallery: 본인 칩 사진 (chips 필드) =====
+  // json/people/*.json 의 각 인물에 아래 형태로 추가하면 표시됩니다.
+  //   "chips": [ { "img": "img/chip_new/xxx.png", "name": "High-Speed TX", "date": "Sep. '25 (28-nm T)" } ]
+  function renderChipGallery(chips, isAlumni) {
+    var $title = $("#modal-chip-title");
+    var $gallery = $("#modal-chip-gallery");
+    var arr = parseData(chips);
+
+    // 졸업생은 Chip Gallery 미표시
+    if (isAlumni) { $title.hide(); $gallery.hide().empty(); return; }
+
+    $title.show();
+    if (arr.length === 0) {
+      // 아직 등록 전: 안내 문구
+      $gallery.show().html('<p class="chip-empty">To be updated.</p>');
+      return;
+    }
+    var html = arr.map(function (c) {
+      var img = typeof c === "string" ? c : (c.img || "");
+      var name = (c && c.name) ? c.name : "";
+      var date = (c && c.date) ? c.date : "";
+      return '<figure class="chip-card">' +
+        '<img src="' + img + '" alt="' + name + '" loading="lazy">' +
+        (name || date ? '<figcaption>' +
+          (name ? '<span class="chip-name">' + name + "</span>" : "") +
+          (date ? '<span class="chip-date">' + date + "</span>" : "") +
+        "</figcaption>" : "") +
+        "</figure>";
+    }).join("");
+    $gallery.show().html(html);
+  }
 
   function updateModalContent(name, profile_img, biography, email, position, research_interests, education, publication, experience, tape_out_schedule, Awards, affiliation, program_period, links, academic_services) {
     $("#modal-name").text(name);

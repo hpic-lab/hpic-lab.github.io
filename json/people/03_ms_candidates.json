@@ -195,7 +195,24 @@
     "email": "victorymo@hanyang.ac.kr",
     "profile_img": "img/sm-jin-profile-img.jpg",
     "position": "Lab Captain",
-    "cv": "https://drive.google.com/file/d/1_ktk3-ShP13L9jBR3MU4PVthhBfJ7LM7/view?usp=drive_link"
+    "cv": "https://drive.google.com/file/d/1_ktk3-ShP13L9jBR3MU4PVthhBfJ7LM7/view?usp=drive_link",
+    "chips": [
+      {
+        "img": "img/chip_new/DSP_TX_25Sep_Real.png",
+        "name": "High-Speed Transmitter",
+        "date": "Sep. (28-nm T)'25"
+      },
+      {
+        "img": "img/chip_new/DSP_TX_25Sep_Real.png",
+        "name": "High-Speed Transmitter",
+        "date": "Sep. (28-nm T)'25"
+      },
+      {
+        "img": "img/chip_new/DSP_TX_25Sep_Real.png",
+        "name": "High-Speed Transmitter",
+        "date": "Sep. (28-nm T)'25"
+      }
+    ]
   },
   {
     "name": "Hyeon-Seo Kim",
