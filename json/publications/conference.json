@@ -677,11 +677,11 @@
   },
   {
     "type": "2019",
-    "status": "IEEE VLSI",
+    "status": "IEEE SOVC",
     "title": "A 4-to-20Gb/s 1.87pJ/b Referenceless Digital CDR With Unlimited Frequency Detection Capability in 65nm CMOS",
     "image": "img/c6.png",
     "conference": "IEEE Symposium on VLSI Circuits (VLSI)",
-    "reference": "<i>IEEE Symposium on VLSI Circuits (S.VLSI)</i>, June 2019.",
+    "reference": "<i>IEEE Symposium on VLSI Circuits (SOVC)</i>, June 2019.",
     "authors": [
       "K. Park",
       "K. Lee",
