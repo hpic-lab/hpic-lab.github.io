@@ -210,13 +210,13 @@ $(document).ready(function () {
     sidebar.find(".pub2-side-nav").remove();
     sidebar.append(
       '<div class="pub2-side-nav">' +
+        '<p class="pub2-notice">&dagger; Equally Credited Authors</p>' +
         '<div class="pub2-side-tabs">' +
           '<button type="button" class="pub2-tab pub2-tab-journal active" data-target="journal">Journal Publication</button>' +
           '<button type="button" class="pub2-tab pub2-tab-conference" data-target="conference">Conference Proceedings</button>' +
           '<button type="button" class="pub2-tab pub2-tab-patent" data-target="patent">Patent</button>' +
         "</div>" +
         '<div class="pub2-year-links"></div>' +
-        '<p class="pub2-notice">&dagger; Equally Credited Authors</p>' +
       "</div>"
     );
 
