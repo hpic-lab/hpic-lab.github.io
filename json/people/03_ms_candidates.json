@@ -30,7 +30,19 @@
     "biography": "Jae-Hyeon Pyeon received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include analog and digital circuit designs of phase-locked-loop (PLL).",
     "email": "ccomo7004@hanyang.ac.kr",
     "profile_img": "img/jh-pyeon-profile-img.png",
-    "position": ""
+    "position": "",
+    "chips": [
+      {
+        "img": "img/chip_new/DSP_TX_25Sep_Real.png",
+        "name": "High-Speed Transmitter",
+        "date": "Sep. (28-nm T)'25"
+      },
+      {
+        "img": "img/chip_new/DSP_TX_25Sep_Real.png",
+        "name": "High-Speed Transmitter",
+        "date": "Sep. (28-nm T)'25"
+      }
+    ]
   },
   {
     "name": "So-Yeon Kwon",
@@ -49,7 +61,19 @@
     "biography": "So-Yeon Kwon received a B.S. degree in the school of Applied Physics at Hanyang University, Ansan, South Korea. She is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. Her research interests include artificial intelligence hardware design and processing in memory (PIM).",
     "email": "sykwon00@hanyang.ac.kr",
     "profile_img": "img/sw-kwon-profile-image.jpeg",
-    "position": ""
+    "position": "",
+    "chips": [
+      {
+        "img": "img/chip_new/DSP_TX_25Sep_Real.png",
+        "name": "High-Speed Transmitter",
+        "date": "Sep. (28-nm T)'25"
+      },
+      {
+        "img": "img/chip_new/DSP_TX_25Sep_Real.png",
+        "name": "High-Speed Transmitter",
+        "date": "Sep. (28-nm T)'25"
+      }
+    ]
   },
   {
     "name": "In-Ho Han",
@@ -72,7 +96,19 @@
     "profile_img": "img/ih-han-profile-img.jpg",
     "position": "",
     "cv": "https://drive.google.com/file/d/1YalveNStnhNMOz_vrlERhe6yrfSEJqPg/view?usp=drive_link",
-    "tag": "Phase-Locked Loop"
+    "tag": "Phase-Locked Loop",
+    "chips": [
+      {
+        "img": "img/chip_new/DSP_TX_25Sep_Real.png",
+        "name": "High-Speed Transmitter",
+        "date": "Sep. (28-nm T)'25"
+      },
+      {
+        "img": "img/chip_new/DSP_TX_25Sep_Real.png",
+        "name": "High-Speed Transmitter",
+        "date": "Sep. (28-nm T)'25"
+      }
+    ]
   },
   {
     "name": "Seung-Hwan Gong",
@@ -97,7 +133,19 @@
     "biography": "Seung-Hwan Gong received a B.S. degree in the school of electrical engineering at Kangwon National University, Chuncheon, South Korea. He is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include CDR, DSP-based Receiver.",
     "email": "fire051324@gmail.com",
     "profile_img": "img/sh-gong-profile-image.jpg",
-    "position": ""
+    "position": "",
+    "chips": [
+      {
+        "img": "img/chip_new/DSP_TX_25Sep_Real.png",
+        "name": "High-Speed Transmitter",
+        "date": "Sep. (28-nm T)'25"
+      },
+      {
+        "img": "img/chip_new/DSP_TX_25Sep_Real.png",
+        "name": "High-Speed Transmitter",
+        "date": "Sep. (28-nm T)'25"
+      }
+    ]
   },
   {
     "name": "Dong-Ho Kim",
@@ -123,7 +171,19 @@
     "email": "dpdl112@hanyang.ac.kr",
     "profile_img": "img/dh-kim-new-profile-image.jpg",
     "position": "",
-    "cv": "https://drive.google.com/file/d/1IIwGJfwAkVuCNuxvlFhy0Qp3Lv7o2et1/view?usp=drive_link"
+    "cv": "https://drive.google.com/file/d/1IIwGJfwAkVuCNuxvlFhy0Qp3Lv7o2et1/view?usp=drive_link",
+    "chips": [
+      {
+        "img": "img/chip_new/DSP_TX_25Sep_Real.png",
+        "name": "High-Speed Transmitter",
+        "date": "Sep. (28-nm T)'25"
+      },
+      {
+        "img": "img/chip_new/DSP_TX_25Sep_Real.png",
+        "name": "High-Speed Transmitter",
+        "date": "Sep. (28-nm T)'25"
+      }
+    ]
   },
   {
     "name": "Jae-Geon Lee",
@@ -160,7 +220,19 @@
     "email": "dlworjs@hanyang.ac.kr",
     "profile_img": "img/jg-lee-profile-img.jpeg",
     "position": "Server Manager",
-    "cv": "https://drive.google.com/file/d/12ue5Z6KN3z0orGQJY3S3WTa_Z84VX9Mh/view?usp=sharing"
+    "cv": "https://drive.google.com/file/d/12ue5Z6KN3z0orGQJY3S3WTa_Z84VX9Mh/view?usp=sharing",
+    "chips": [
+      {
+        "img": "img/chip_new/DSP_TX_25Sep_Real.png",
+        "name": "High-Speed Transmitter",
+        "date": "Sep. (28-nm T)'25"
+      },
+      {
+        "img": "img/chip_new/DSP_TX_25Sep_Real.png",
+        "name": "High-Speed Transmitter",
+        "date": "Sep. (28-nm T)'25"
+      }
+    ]
   },
   {
     "name": "Seung-Mo Jin",
@@ -207,11 +279,6 @@
         "img": "img/chip_new/DSP_TX_25Sep_Real.png",
         "name": "High-Speed Transmitter",
         "date": "Sep. (28-nm T)'25"
-      },
-      {
-        "img": "img/chip_new/DSP_TX_25Sep_Real.png",
-        "name": "High-Speed Transmitter",
-        "date": "Sep. (28-nm T)'25"
       }
     ]
   },
@@ -229,7 +296,19 @@
     "biography": "Hyeon-Seo Kim received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. He is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include analog digital converter (ADC)",
     "email": "hyeonseo1833@gmail.com",
     "profile_img": "img/sh-kim2-profile-image.png",
-    "position": ""
+    "position": "",
+    "chips": [
+      {
+        "img": "img/chip_new/DSP_TX_25Sep_Real.png",
+        "name": "High-Speed Transmitter",
+        "date": "Sep. (28-nm T)'25"
+      },
+      {
+        "img": "img/chip_new/DSP_TX_25Sep_Real.png",
+        "name": "High-Speed Transmitter",
+        "date": "Sep. (28-nm T)'25"
+      }
+    ]
   },
   {
     "name": "Seol-Hyeon Kim",
@@ -245,7 +324,19 @@
     "biography": "Seol-Hyeon Kim received a B.S. degree in the school of system semiconductor enginerring at Sangmyung University, Cheonan, South Korea. She is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. Her research interests include artificial intelligence hardware design and processing in memory (PIM).",
     "email": "congcongsister@naver.com",
     "profile_img": "img/sh-kim-profile-image.jpg",
-    "position": ""
+    "position": "",
+    "chips": [
+      {
+        "img": "img/chip_new/DSP_TX_25Sep_Real.png",
+        "name": "High-Speed Transmitter",
+        "date": "Sep. (28-nm T)'25"
+      },
+      {
+        "img": "img/chip_new/DSP_TX_25Sep_Real.png",
+        "name": "High-Speed Transmitter",
+        "date": "Sep. (28-nm T)'25"
+      }
+    ]
   },
   {
     "name": "Dong-Eon Jin",
@@ -261,7 +352,19 @@
     "biography": "Dong-Eon Jin received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. He is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include analog digital converter (ADC).",
     "email": "dujin0509@hanyang.ac.kr",
     "profile_img": "img/de-jin-profile-image.jpg",
-    "position": ""
+    "position": "",
+    "chips": [
+      {
+        "img": "img/chip_new/DSP_TX_25Sep_Real.png",
+        "name": "High-Speed Transmitter",
+        "date": "Sep. (28-nm T)'25"
+      },
+      {
+        "img": "img/chip_new/DSP_TX_25Sep_Real.png",
+        "name": "High-Speed Transmitter",
+        "date": "Sep. (28-nm T)'25"
+      }
+    ]
   },
   {
     "name": "Joon-Seok Kwon",
@@ -280,7 +383,19 @@
     "biography": "Joon-Seok Kwon received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. He is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include Wireline Interface.",
     "email": "qwe3016@hanyang.ac.kr",
     "profile_img": "img/js-kwon-profile-image.jpg",
-    "position": ""
+    "position": "",
+    "chips": [
+      {
+        "img": "img/chip_new/DSP_TX_25Sep_Real.png",
+        "name": "High-Speed Transmitter",
+        "date": "Sep. (28-nm T)'25"
+      },
+      {
+        "img": "img/chip_new/DSP_TX_25Sep_Real.png",
+        "name": "High-Speed Transmitter",
+        "date": "Sep. (28-nm T)'25"
+      }
+    ]
   },
   {
     "name": "Suk-Min Yoon",
@@ -296,7 +411,19 @@
     "Awards": [],
     "email": "ysm000917@naver.com",
     "profile_img": "img/sm_yoon_profile_image.jpg",
-    "position": ""
+    "position": "",
+    "chips": [
+      {
+        "img": "img/chip_new/DSP_TX_25Sep_Real.png",
+        "name": "High-Speed Transmitter",
+        "date": "Sep. (28-nm T)'25"
+      },
+      {
+        "img": "img/chip_new/DSP_TX_25Sep_Real.png",
+        "name": "High-Speed Transmitter",
+        "date": "Sep. (28-nm T)'25"
+      }
+    ]
   },
   {
     "name": "Ju-Yong Lee",
@@ -312,7 +439,19 @@
     "biography": "Ju-Yong Lee received a B.S. degree in electrical engineering from Gachon University, Sungnam, South Korea. He is currently pursuing an M.S. degree in the school of electrical and electronic engineering at Yonsei University, Seoul, South Korea. His research interests include Wireline Interface.",
     "email": "dhxvdu@naver.com",
     "profile_img": "img/jy-lee-profile-img.jpg",
-    "position": ""
+    "position": "",
+    "chips": [
+      {
+        "img": "img/chip_new/DSP_TX_25Sep_Real.png",
+        "name": "High-Speed Transmitter",
+        "date": "Sep. (28-nm T)'25"
+      },
+      {
+        "img": "img/chip_new/DSP_TX_25Sep_Real.png",
+        "name": "High-Speed Transmitter",
+        "date": "Sep. (28-nm T)'25"
+      }
+    ]
   },
   {
     "name": "Jun-gyu Han",
@@ -327,6 +466,18 @@
     "biography": "Jun-gyu Han received a B.S. degree in the school of electronic and electrical engineering at Hongik University, Seoul, South Korea. He is currently pursuing a M.S.degree in the department of intelligent display engineering at Yonsei University, Seoul, South Korea. His research interests include Wireline Interface.",
     "email": "hjg0913@gmail.com",
     "profile_img": "img/jg_han_profile_image.jpg",
-    "position": ""
+    "position": "",
+    "chips": [
+      {
+        "img": "img/chip_new/DSP_TX_25Sep_Real.png",
+        "name": "High-Speed Transmitter",
+        "date": "Sep. (28-nm T)'25"
+      },
+      {
+        "img": "img/chip_new/DSP_TX_25Sep_Real.png",
+        "name": "High-Speed Transmitter",
+        "date": "Sep. (28-nm T)'25"
+      }
+    ]
   }
 ]
