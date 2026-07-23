@@ -1079,6 +1079,23 @@ nav#navbar-main .navbar-collapse {
   border-radius: 4px;
 }
 
+/* 고정 서브 제목 위쪽 투명 구간 가리개 (내비게이션과 제목 사이로 콘텐츠가 비치는 것 방지) */
+@media (min-width: 992px) {
+  .pub2-year::before,
+  .news-accordion .ui-accordion-header::before,
+  #people h3:not(.accordion h3):not(.h3-items)::before,
+  #research h5::before,
+  #research .gallery-title-row::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 100%;
+    height: 34px;
+    background: var(--section-bg, #fff);
+  }
+}
+
 /* News 목록: 내부 스크롤 없이 전체 표시 */
 .news-card.news-list {
   max-height: none !important;
