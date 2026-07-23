@@ -181,10 +181,11 @@ $(document).ready(function () {
         data-bs-toggle="modal"
         data-bs-target="#exampleModal"
         data-img-key="${imgKey}">
-        <span class="people-left">
+        <img class="people-mini-photo" src="${person.profile_img}" alt="${name}" onerror="this.remove()" />
+        <div class="people-compact-info">
           <span class="people-name">${name}</span>${roleBadges ? `<span class="people-roles-inline">${roleBadges}</span>` : ""}
-        </span>
-        ${interest ? `<span class="people-interest-inline">${interest}</span>` : ""}
+          ${interest ? `<div class="people-interest-inline">${interest}</div>` : ""}
+        </div>
       </div>
     `;
   }
@@ -429,8 +430,11 @@ $.when(
         if (role.re.test(p.position || "")) {
           html += `
             <div class="people-side-item" data-img-key="${key}" title="View profile">
-              <span class="people-side-label ${role.cls}">${role.icon ? role.icon + " " : ""}${role.label}</span>
-              <span class="people-side-name">${p.name}</span>
+              <img class="people-mini-photo" src="${p.profile_img}" alt="${p.name}" onerror="this.remove()" />
+              <div>
+                <div class="people-side-name">${p.name}</div>
+                <span class="people-side-label ${role.cls}">${role.icon ? role.icon + " " : ""}${role.label}</span>
+              </div>
             </div>`;
           break; // 역할당 한 명
         }

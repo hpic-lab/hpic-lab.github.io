@@ -89,17 +89,55 @@ $(document).ready(function () {
   
     const container = $(".research-projects-container");
 
-    function projectCard(item) {
+    // ===== 과제 행 (시안 3: 클릭 시 상세 펼침) =====
+    // 각 과제에 아래 필드를 추가하면 행 우측에 ▸ 가 생기고 클릭 시 상세가 펼쳐집니다.
+    //   desc:    "과제 설명 (한 줄~한 문단)",
+    //   role:    "HPIC이 담당하는 역할",
+    //   sponsor_logo: "img/sponsors/msit.png",
+    //   partners: [ { name: "ETRI", logo: "img/sponsors/etri.png" }, ... ]
+    function projectRow(item) {
+      const hasDetail =
+        item.desc || item.role || item.sponsor_logo ||
+        (Array.isArray(item.partners) && item.partners.length > 0);
+
+      let detailHTML = "";
+      if (hasDetail) {
+        let logos = "";
+        if (item.sponsor_logo) {
+          logos += `<img class="rp-logo" src="${item.sponsor_logo}" alt="${item.sponsor}" title="${item.sponsor}" onerror="this.remove()">`;
+        }
+        (item.partners || []).forEach((p) => {
+          if (p.logo) {
+            logos += `<img class="rp-logo" src="${p.logo}" alt="${p.name}" title="${p.name}" onerror="this.remove()">`;
+          } else if (p.name) {
+            logos += `<span class="rp-partner-name">${p.name}</span>`;
+          }
+        });
+
+        detailHTML = `
+          <div class="rp-detail" style="display: none;">
+            ${item.desc ? `<p class="rp-desc">${item.desc}</p>` : ""}
+            ${item.role ? `<p class="rp-role"><b>HPIC Role</b> — ${item.role}</p>` : ""}
+            ${logos ? `<div class="rp-logos">${logos}</div>` : ""}
+          </div>`;
+      }
+
       return `
-        <div class="pub-wrapper">
-          <span class="pub-icon-box"><img src="img/pub-svg.svg"></span>
-          <span class="badge bg-success">${item.date}</span>
-          <br>
-          <span class="pub-author"><b>${item.title}</b></span>
-          <p>${item.sponsor}</p>
+        <div class="rp-item ${hasDetail ? "rp-expandable" : ""}">
+          <div class="rp-head">
+            <div class="rp-head-main">
+              <span class="rp-date">${item.date}</span>
+              <span class="rp-title">${item.title}</span>
+              <div class="rp-sponsor">${item.sponsor}</div>
+            </div>
+            ${hasDetail ? '<span class="rp-arrow">&#9662;</span>' : ""}
+          </div>
+          ${detailHTML}
         </div>
       `;
     }
+
+    const projectCard = projectRow;
 
     // 진행중 과제는 바로 표시
     const ongoing = researchProjects.filter((p) => p.status !== "Completed");
@@ -125,5 +163,12 @@ $(document).ready(function () {
         completedDiv.stop(true, false).slideToggle(250);
       });
     }
+
+    // 상세 펼침/접힘
+    container.on("click", ".rp-item.rp-expandable .rp-head", function () {
+      const item = $(this).closest(".rp-item");
+      item.toggleClass("open");
+      item.find(".rp-detail").stop(true, false).slideToggle(220);
+    });
   });
   
