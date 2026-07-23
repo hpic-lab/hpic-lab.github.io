@@ -1264,8 +1264,8 @@ nav#navbar-main .navbar-collapse {
 /* 시안 B: 3단 헤더 (사진 / 신원·연구분야 / Education) */
 #exampleModal .profile-header-b {
   display: grid;
-  grid-template-columns: 140px minmax(180px, 240px) 1fr;
-  gap: 28px;
+  grid-template-columns: 120px minmax(150px, 200px) 1fr;
+  gap: 18px;
   align-items: center;
   border-bottom: 1px solid #e8e8e8;
   padding-bottom: 20px;
