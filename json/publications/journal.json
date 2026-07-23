@@ -373,7 +373,7 @@
   
     "type": "2018",
     "status": "IEEE TCAS-II",
-    "title": "An optimum injection-timing tracking loop for 5-GHz, 1.13-mW/GHz RO-based injection-locked PLL with 152-fs integrated jitter",
+    "title": "An Optimum Injection-Timing Tracking Loop for 5-GHz, 1.13-mW/GHz RO-Based Injection-Locked PLL With 152-fs Integrated Jitter",
     "image": "img/j4.png",
     "journal": "IEEE Transactions on Circuits and Systems-II: Express Briefs (TCAS-II)",
     "reference":"<i>IEEE Transactions on Circuits and Systems II: Express Briefs</i>, vol. 65, no. 12, pp. 1819-1823, Dec. 2018.",    
@@ -385,7 +385,7 @@
   
     "type": "2018",
     "status": "IEEE TCAS-I",
-    "title": "A 2.5–5.6 GHz subharmonically injection-locked all-digital PLL with dual-edge complementary switched injection",
+    "title": "A 2.5–5.6 GHz Subharmonically Injection-Locked All-Digital PLL With Dual-Edge Complementary Switched Injection",
     "image": "img/j3.png",
     "journal": "IEEE Transactions on Circuits and Systems-I: Regular Links (TCAS-I)",
     "reference":"<i>IEEE Transactions on Circuits and Systems I: Regular Papers</i>, vol. 65, no. 9, pp. 2691-2702, Sept. 2018",    
@@ -397,7 +397,7 @@
   
     "type": "2017",
     "status": "IEEE TCAS-II",
-    "title": "A 55.1 mW 1.62-to-8.1 Gb/s video interface receiver generating up to 680 MHz stream clock over 20 dB loss channel",
+    "title": "A 55.1 mW 1.62-to-8.1 Gb/s Video Interface Receiver Generating up to 680 MHz Stream Clock Over 20 dB Loss Channel",
     "image": "img/j2.png",
     "journal": "IEEE Transactions on Circuits and Systems-II: Express Briefs (TCAS-II)",
     "reference":"<i>IEEE Transactions on Circuits and Systems II: Express Briefs</i>, vol. 64, no. 12, pp. 1432-1436, Dec. 2017.",   
@@ -409,7 +409,7 @@
   
     "type": "2016",
     "status": "IEEK JSTS",
-    "title": "A 285-fs rms Integrated Jitter Injection-Locked Ring PLL with Charge-Stored Complementary Switch Injection Technique",
+    "title": "A 285-fsrms Integrated Jitter Injection-Locked Ring PLL with Charge-Stored Complementary Switch Injection Technique",
     "image": "img/j1.png",
     "journal": "Journal of Semiconductor Technology and Science (JSTS)",
     "reference":"<i>Journal of Semiconductor Technology and Science</i>, vol. 16, no. 6, pp. 860–866, Dec. 2016.",  
