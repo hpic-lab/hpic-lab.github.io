@@ -4,49 +4,70 @@
     "month": "09",
     "category": "News",
     "text": "<u>Do-Hyeong</u> joined HPIC Lab as an M.S.-Ph.D. student. Welcome!",
-    "links": []
+    "links": [],
+    "figures": [
+      "dh_lee_bs_profile_image.jpg"
+    ]
   },
   {
     "year": "2026",
     "month": "09",
     "category": "News",
     "text": "<u>Chang-Hui</u> joined HPIC Lab as an M.S.-Ph.D. student. Welcome!",
-    "links": []
+    "links": [],
+    "figures": [
+      "ch_oh_profile_image.jpg"
+    ]
   },
   {
     "year": "2026",
     "month": "09",
     "category": "News",
     "text": "<u>Han-Gang</u> joined HPIC Lab as an M.S.-Ph.D. student. Welcome!",
-    "links": []
+    "links": [],
+    "figures": [
+      "hg_cho_profile_image.png"
+    ]
   },
   {
     "year": "2026",
     "month": "09",
     "category": "News",
     "text": "<u>Seung-Min</u> joined HPIC Lab as an M.S.-Ph.D. student. Welcome!",
-    "links": []
+    "links": [],
+    "figures": [
+      "sm_yoo_profile_image.jpeg"
+    ]
   },
   {
     "year": "2026",
     "month": "09",
     "category": "News",
     "text": "<u>Suk-Min</u> joined HPIC Lab as an M.S. student. Welcome!",
-    "links": []
+    "links": [],
+    "figures": [
+      "sm_yoon_profile_image.jpg"
+    ]
   },
   {
     "year": "2026",
     "month": "09",
     "category": "News",
     "text": "<u>Ju-Yong</u> joined HPIC Lab as an M.S. student. Welcome!",
-    "links": []
+    "links": [],
+    "figures": [
+      "jy-lee-profile-img.jpg"
+    ]
   },
   {
     "year": "2026",
     "month": "09",
     "category": "News",
     "text": "<u>Jun-gyu</u> joined HPIC Lab as an M.S. student. Welcome!",
-    "links": []
+    "links": [],
+    "figures": [
+      "jg_han_profile_image.jpg"
+    ]
   },
   {
     "year": "2026",
@@ -153,14 +174,20 @@
     "month": "02",
     "category": "News",
     "text": "<u>Dong-Hyun</u> graduated with an M.S. degree. Congratulations!",
-    "links": []
+    "links": [],
+    "figures": [
+      "dh-lee-profile-img.png"
+    ]
   },
   {
     "year": "2026",
     "month": "02",
     "category": "News",
     "text": "<u>Sang-Hyeon</u> graduated with an M.S. degree. Congratulations!",
-    "links": []
+    "links": [],
+    "figures": [
+      "sh-ok-profile-img.jpg"
+    ]
   },
   {
     "year": "2026",
@@ -469,7 +496,10 @@
     "month": "08",
     "category": "News",
     "text": "<u>Dong-Hoe</u> graduated with an M.S. degree. Congratulations!",
-    "links": []
+    "links": [],
+    "figures": [
+      "dh-heo-profile-img.jpg"
+    ]
   },
   {
     "year": "2025",
@@ -692,63 +722,90 @@
     "month": "03",
     "category": "News",
     "text": "<u>So-Yeon</u> joined HPIC Lab as an M.S. student. Welcome!",
-    "links": []
+    "links": [],
+    "figures": [
+      "sw-kwon-profile-image.jpeg"
+    ]
   },
   {
     "year": "2025",
     "month": "03",
     "category": "News",
     "text": "<u>Jae-Geon</u> joined HPIC Lab as an M.S. student. Welcome!",
-    "links": []
+    "links": [],
+    "figures": [
+      "jg-lee-profile-img.jpeg"
+    ]
   },
   {
     "year": "2025",
     "month": "03",
     "category": "News",
     "text": "<u>Seung-Mo</u> joined HPIC Lab as an M.S. student. Welcome!",
-    "links": []
+    "links": [],
+    "figures": [
+      "sm-jin-profile-img.jpg"
+    ]
   },
   {
     "year": "2025",
     "month": "03",
     "category": "News",
     "text": "<u>Seol-Hyeon</u> joined HPIC Lab as an M.S. student. Welcome!",
-    "links": []
+    "links": [],
+    "figures": [
+      "sh-kim-profile-image.jpg"
+    ]
   },
   {
     "year": "2025",
     "month": "03",
     "category": "News",
     "text": "<u>Dong-Eon</u> joined HPIC Lab as an M.S. student. Welcome!",
-    "links": []
+    "links": [],
+    "figures": [
+      "de-jin-profile-image.jpg"
+    ]
   },
   {
     "year": "2025",
     "month": "02",
     "category": "News",
     "text": "<u>Kang-Min</u> graduated with an M.S. degree. Congratulations!",
-    "links": []
+    "links": [],
+    "figures": [
+      "km-kim-profile-img.jpg"
+    ]
   },
   {
     "year": "2025",
     "month": "02",
     "category": "News",
     "text": "<u>Kyu-Ran</u> graduated with an M.S. degree. Congratulations!",
-    "links": []
+    "links": [],
+    "figures": [
+      "kr-park-profile-img.png"
+    ]
   },
   {
     "year": "2025",
     "month": "02",
     "category": "News",
     "text": "<u>Shin-Uk</u> graduated with an M.S. degree. Congratulations!",
-    "links": []
+    "links": [],
+    "figures": [
+      "su-kang-profile-img.jpg"
+    ]
   },
   {
     "year": "2025",
     "month": "02",
     "category": "News",
     "text": "<u>Ji-Ho</u> graduated with an M.S. degree. Congratulations!",
-    "links": []
+    "links": [],
+    "figures": [
+      "jh-kim-profile-img.png"
+    ]
   },
   {
     "year": "2025",
@@ -814,7 +871,10 @@
     "month": "09",
     "category": "News",
     "text": "<u>Jae-Hyeon</u> joined HPIC Lab as an M.S. student. Welcome!",
-    "links": []
+    "links": [],
+    "figures": [
+      "jh-pyeon-profile-img.png"
+    ]
   },
   {
     "year": "2024",
@@ -863,28 +923,40 @@
     "month": "03",
     "category": "News",
     "text": "<u>Seung-Hwan</u> joined HPIC Lab as an M.S. student. Welcome!",
-    "links": []
+    "links": [],
+    "figures": [
+      "sh-gong-profile-image.jpg"
+    ]
   },
   {
     "year": "2024",
     "month": "03",
     "category": "News",
     "text": "<u>Hyeon-Seo</u> joined HPIC Lab as an M.S. student. Welcome!",
-    "links": []
+    "links": [],
+    "figures": [
+      "sh-kim2-profile-image.png"
+    ]
   },
   {
     "year": "2024",
     "month": "03",
     "category": "News",
     "text": "<u>Dong-Hyun</u> joined HPIC Lab as an M.S. student. Welcome!",
-    "links": []
+    "links": [],
+    "figures": [
+      "dh-lee-profile-img.png"
+    ]
   },
   {
     "year": "2024",
     "month": "03",
     "category": "News",
     "text": "<u>Sang-Hyeon</u> joined HPIC Lab as an M.S. student. Welcome!",
-    "links": []
+    "links": [],
+    "figures": [
+      "sh-ok-profile-img.jpg"
+    ]
   },
   {
     "year": "2024",
@@ -928,56 +1000,80 @@
     "month": "09",
     "category": "News",
     "text": "<u>Dong-Ho</u> joined HPIC Lab as an M.S. student. Welcome!",
-    "links": []
+    "links": [],
+    "figures": [
+      "dh-kim-new-profile-image.jpg"
+    ]
   },
   {
     "year": "2023",
     "month": "03",
     "category": "News",
     "text": "<u>In-Ho</u> joined HPIC Lab as an M.S. student. Welcome!",
-    "links": []
+    "links": [],
+    "figures": [
+      "ih-han-profile-img.jpg"
+    ]
   },
   {
     "year": "2023",
     "month": "03",
     "category": "News",
     "text": "<u>Joon-Seok</u> joined HPIC Lab as an M.S. student. Welcome!",
-    "links": []
+    "links": [],
+    "figures": [
+      "js-kwon-profile-image.jpg"
+    ]
   },
   {
     "year": "2023",
     "month": "03",
     "category": "News",
     "text": "<u>Dong-Hoe</u> joined HPIC Lab as an M.S. student. Welcome!",
-    "links": []
+    "links": [],
+    "figures": [
+      "dh-heo-profile-img.jpg"
+    ]
   },
   {
     "year": "2023",
     "month": "03",
     "category": "News",
     "text": "<u>Kang-Min</u> joined HPIC Lab as an M.S. student. Welcome!",
-    "links": []
+    "links": [],
+    "figures": [
+      "km-kim-profile-img.jpg"
+    ]
   },
   {
     "year": "2023",
     "month": "03",
     "category": "News",
     "text": "<u>Kyu-Ran</u> joined HPIC Lab as an M.S. student. Welcome!",
-    "links": []
+    "links": [],
+    "figures": [
+      "kr-park-profile-img.png"
+    ]
   },
   {
     "year": "2023",
     "month": "03",
     "category": "News",
     "text": "<u>Shin-Uk</u> joined HPIC Lab as an M.S. student. Welcome!",
-    "links": []
+    "links": [],
+    "figures": [
+      "su-kang-profile-img.jpg"
+    ]
   },
   {
     "year": "2022",
     "month": "09",
     "category": "News",
     "text": "<u>Ji-Ho</u> joined HPIC Lab as an M.S. student. Welcome!",
-    "links": []
+    "links": [],
+    "figures": [
+      "jh-kim-profile-img.png"
+    ]
   },
   {
     "year": "2022",
