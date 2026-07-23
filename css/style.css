@@ -1261,24 +1261,26 @@ nav#navbar-main .navbar-collapse {
 /* ========================================= */
 /* 프로필 모달 CV형 레이아웃: 사진 상단 중앙 + 아래 섹션 */
 /* ========================================= */
-/* 시안 1: 상단 헤더 밴드 (사진 좌 + 이름·직함·아이콘 우) */
-#exampleModal .profile-left {
-  display: flex;
-  flex-direction: row;
+/* 시안 B: 3단 헤더 (사진 / 신원·연구분야 / Education) */
+#exampleModal .profile-header-b {
+  display: grid;
+  grid-template-columns: 140px minmax(180px, 240px) 1fr;
+  gap: 28px;
   align-items: center;
-  gap: 24px;
-  text-align: left;
   border-bottom: 1px solid #e8e8e8;
-  padding-bottom: 18px;
-  margin-bottom: 6px;
+  padding-bottom: 20px;
+  margin-bottom: 18px;
 }
 
-#exampleModal .profile-left .portrait {
-  width: 110px;
-  height: 110px;
+#exampleModal .profile-header-b .portrait {
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   object-fit: cover;
-  flex-shrink: 0;
+}
+
+#exampleModal .phb-photo {
+  text-align: center;
 }
 
 #exampleModal .portrait-title {
@@ -1294,22 +1296,34 @@ nav#navbar-main .navbar-collapse {
   padding-left: 0 !important;
 }
 
-/* 본문 2단: 좌측(연구분야·Academic Services) / 우측(Education·Experience) */
-#exampleModal .profile-cols {
-  display: grid;
-  grid-template-columns: 1fr 1.9fr;
-  column-gap: 36px;
+/* Education 열: 좌측 세로 구분선 */
+#exampleModal .phb-education {
+  border-left: 0.5px solid #e8e8e8;
+  padding-left: 24px;
 }
 
-#exampleModal .profile-col-side { grid-column: 1; grid-row: 1; }
-#exampleModal .profile-col-main { grid-column: 2; grid-row: 1; }
-
+/* 모바일: 3단을 세로로 (사진 → 신원 → Education) */
 @media (max-width: 767px) {
-  #exampleModal .profile-cols {
+  #exampleModal .profile-header-b {
     grid-template-columns: 1fr;
+    gap: 16px;
+    text-align: center;
   }
-  #exampleModal .profile-col-side { grid-column: 1; grid-row: 2; }
-  #exampleModal .profile-col-main { grid-column: 1; grid-row: 1; }
+  #exampleModal .portrait-title,
+  #exampleModal .phb-identity .ul-interests {
+    text-align: center;
+    justify-content: center;
+  }
+  #exampleModal #modal-network-icons {
+    justify-content: center !important;
+  }
+  #exampleModal .phb-education {
+    border-left: none;
+    padding-left: 0;
+    border-top: 0.5px solid #e8e8e8;
+    padding-top: 16px;
+    text-align: left;
+  }
 }
 
 /* Research Interests → 칩 형태 */
@@ -1460,13 +1474,24 @@ nav#navbar-main .navbar-collapse {
 }
 
 /* 섹션 제목: CV 헤더처럼 밑줄 */
-#exampleModal .profile-right p span {
+#exampleModal .profile-right p span,
+#exampleModal .phb-education > p span {
   display: block;
   font-size: 1.08rem;
   border-bottom: 2px solid #e8e8e8;
   padding-bottom: 4px;
   margin-top: 20px;
   margin-right: 0;
+}
+
+/* 헤더 안 Education 제목은 위 여백 없이 */
+#exampleModal .phb-education > p span {
+  margin-top: 0;
+}
+
+/* 헤더 신원 열: 연구분야 칩 위 여백 */
+#exampleModal .phb-identity .ul-interests {
+  margin-top: 12px;
 }
 
 /* 항목 끝 기간을 오른쪽 정렬 (CV 스타일) */
