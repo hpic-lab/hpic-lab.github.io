@@ -1289,11 +1289,23 @@ nav#navbar-main .navbar-collapse {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  gap: 4px;
+  align-self: center;
 }
 
 #exampleModal .portrait-title {
   text-align: left;
   width: 100%;
+  margin: 0;
+}
+
+#exampleModal .portrait-title h3 {
+  margin: 2px 0 0;
+}
+
+/* 연구분야 칩은 이름 바로 아래에 붙여 한 덩어리로 */
+#exampleModal .phb-identity .ul-interests {
+  margin-top: 8px;
 }
 
 #exampleModal .portrait-title h2 {
@@ -1305,6 +1317,12 @@ nav#navbar-main .navbar-collapse {
 #exampleModal #modal-network-icons {
   justify-content: flex-start !important;
   padding-left: 0 !important;
+  margin: 6px 0 0 !important;
+}
+
+/* 사용하지 않는 빈 아이콘 목록(여백 방지) */
+#exampleModal #network-icon {
+  display: none;
 }
 
 /* Education 열: 좌측 세로 구분선 */
