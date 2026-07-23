@@ -260,5 +260,34 @@ $(document).ready(function () {
       e.preventDefault();
       scrollToEl($($(this).attr("href")));
     });
+
+    // ===== 스크롤 위치에 따라 현재 연도 헤더 강조 (시안 3) =====
+    function updateActiveYear() {
+      var headers = container.find(".pub2-list:visible .pub2-year");
+      if (!headers.length) return;
+      var threshold = $(window).scrollTop() + 110;
+      var current = null;
+      headers.each(function () {
+        if ($(this).offset().top <= threshold) current = this;
+      });
+      if (!current) current = headers[0];
+      headers.removeClass("pub2-year-active");
+      $(current).addClass("pub2-year-active");
+    }
+
+    var yearTick = false;
+    $(window).on("scroll resize", function () {
+      if (!yearTick) {
+        requestAnimationFrame(function () {
+          updateActiveYear();
+          yearTick = false;
+        });
+        yearTick = true;
+      }
+    });
+    sidebar.on("click", ".pub2-tab", function () {
+      setTimeout(updateActiveYear, 50);
+    });
+    updateActiveYear();
   });
 });
