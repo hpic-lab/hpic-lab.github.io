@@ -1101,6 +1101,7 @@ nav#navbar-main .navbar-collapse {
 
 /* News 인라인 학생 얼굴 사진 */
 .news-inline-fig {
+  display: inline-block; /* academic.min.css의 전역 img{display:block} 무효화 → 한 줄 유지 */
   width: 27px;
   height: 27px;
   border-radius: 50%;
@@ -2154,6 +2155,14 @@ nav#navbar-main .navbar-collapse {
   margin: 2px 0 0;
   white-space: nowrap; /* 배지는 항상 한 줄로 */
   line-height: 1.3;
+}
+
+/* "~2023" 그룹 내부의 작은 연도 구분 라벨 */
+.pub2-subyear {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #aaa;
+  margin: 18px 0 2px;
 }
 
 .pub2-body {

@@ -101,8 +101,9 @@ $(document).ready(function () {
     return names.join(", ");
   }
 
-  // 이 연도 이상은 펼침, 미만(2023년까지)은 접힘으로 시작
+  // 이 연도 이상은 개별 연도로 펼침, 미만은 "~2023" 한 그룹으로 묶어서 접힘
   var OPEN_FROM_YEAR = 2024;
+  var OLD_GROUP_LABEL = "~" + (OPEN_FROM_YEAR - 1);
 
   // Journal/Conference 공통 렌더링 (ISL 스타일: 좌측 번호·등급·학회, 우측 본문)
   function renderPaperList(pubs, container, venueClass, idPrefix) {
@@ -110,16 +111,28 @@ $(document).ready(function () {
     var n = numbered;
     var curYear = null;
     var body = null;
+    var oldBody = null;
 
     pubs.forEach(function (pub) {
       var year = pub.type || "Others";
-      if (year !== curYear) {
+      var isOld = !(Number(year) >= OPEN_FROM_YEAR);
+      if (isOld) {
+        // 2023년 이전: "~2023" 단일 그룹으로 묶음
+        if (!oldBody) {
+          container.append('<div class="pub2-year collapsed" id="' + idPrefix + '-old">' + OLD_GROUP_LABEL + "</div>");
+          oldBody = $('<div class="pub2-year-body" style="display:none"></div>');
+          container.append(oldBody);
+          curYear = null;
+        }
+        body = oldBody;
+        if (year !== curYear) {
+          curYear = year;
+          oldBody.append('<div class="pub2-subyear">' + year + "</div>");
+        }
+      } else if (year !== curYear) {
         curYear = year;
-        var open = Number(year) >= OPEN_FROM_YEAR;
-        container.append(
-          '<div class="pub2-year' + (open ? "" : " collapsed") + '" id="' + idPrefix + "-" + year + '">' + year + "</div>"
-        );
-        body = $('<div class="pub2-year-body"' + (open ? "" : ' style="display:none"') + "></div>");
+        container.append('<div class="pub2-year" id="' + idPrefix + "-" + year + '">' + year + "</div>");
+        body = $('<div class="pub2-year-body"></div>');
         container.append(body);
       }
 
@@ -175,16 +188,27 @@ $(document).ready(function () {
     var n = pubs.length;
     var curYear = null;
     var body = null;
+    var oldBody = null;
 
     pubs.forEach(function (pub) {
       var year = String(pub.year || pub.type || "Others");
-      if (year !== curYear) {
+      var isOld = !(Number(year) >= OPEN_FROM_YEAR);
+      if (isOld) {
+        if (!oldBody) {
+          container.append('<div class="pub2-year collapsed" id="' + idPrefix + '-old">' + OLD_GROUP_LABEL + "</div>");
+          oldBody = $('<div class="pub2-year-body" style="display:none"></div>');
+          container.append(oldBody);
+          curYear = null;
+        }
+        body = oldBody;
+        if (year !== curYear) {
+          curYear = year;
+          oldBody.append('<div class="pub2-subyear">' + year + "</div>");
+        }
+      } else if (year !== curYear) {
         curYear = year;
-        var open = Number(year) >= OPEN_FROM_YEAR;
-        container.append(
-          '<div class="pub2-year' + (open ? "" : " collapsed") + '" id="' + idPrefix + "-" + year + '">' + year + "</div>"
-        );
-        body = $('<div class="pub2-year-body"' + (open ? "" : ' style="display:none"') + "></div>");
+        container.append('<div class="pub2-year" id="' + idPrefix + "-" + year + '">' + year + "</div>");
+        body = $('<div class="pub2-year-body"></div>');
         container.append(body);
       }
 
