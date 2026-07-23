@@ -204,7 +204,6 @@ $(document).ready(function () {
   function createNetworkIcons(person) {
     return `
       ${person.google_scholar ? `<li><a href="${person.google_scholar}" target="_blank" onclick="event.stopPropagation()"><img src="img/google-scholar-svg.svg" /></a></li>` : ""}
-      ${person.cv ? `<li><a href="${person.cv}" target="_blank" onclick="event.stopPropagation()"><img src="img/cv-svg.svg" /></a></li>` : ""}
       ${person.linkedin ? `<li><a href="${person.linkedin}" target="_blank" onclick="event.stopPropagation()"><img src="img/linkedin-svg.svg" /></a></li>` : ""}
       ${person.orcid ? `<li><a href="${person.orcid}" target="_blank" onclick="event.stopPropagation()"><img src="img/orcid-svg.svg" /></a></li>` : ""}
     `;
