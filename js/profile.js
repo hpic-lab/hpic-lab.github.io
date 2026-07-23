@@ -297,7 +297,7 @@ $(document).ready(function () {
 
     if (iconsHTML.trim() !== "") {
         $("#modal-position").after(`
-            <ul id="modal-network-icons" class="network-icon" style="justify-content: center; padding: 10px 0;">
+            <ul id="modal-network-icons" class="network-icon" style="padding: 8px 0;">
                 ${iconsHTML}
             </ul>
         `);
