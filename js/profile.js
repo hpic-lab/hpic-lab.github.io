@@ -355,17 +355,51 @@ $(document).ready(function () {
 
     // ===== Publications: 홈페이지 Publications 데이터와 자동 연동 (동일 양식) =====
     // 논문 figure의 사진 파일명이 이 사람의 profile_img와 일치하는 논문을 모두 표시
+    // PI 카드에는 Publications 섹션을 표시하지 않음
+    const isPI = (position || "").indexOf("Professor") !== -1;
     const imgKey = (profile_img || "").split("/").pop();
-    const autoPubs = ((window.pubIndex || {})[imgKey] || [])
+
+    // 저자 목록에서 본인 이름 강조 (Bold + Underline). 국내 학회는 한글 이름으로 매칭
+    const KR_NAME = {
+      "Seung-Mo Jin": "진승모", "Dong-Ho Kim": "김동호", "Jae-Geon Lee": "이재건",
+      "Sang-Hyun Ok": "옥상현", "Sang-Hyeon Ok": "옥상현", "Seung-Hwan Gong": "공승환",
+      "Dong-Hoe Heo": "허동회", "Jae-Hyeon Pyeon": "편재현", "In-Ho Han": "한인호",
+      "Dong-Hyun Lee": "이동현", "Do-Hyeong Lee": "이동현",
+      "Shin-Uk Kang": "강신욱", "So-Yeon Kwon": "권소연", "Seol-Hyeon Kim": "김설현",
+      "Joon-Seok Kwon": "권준석", "Dong-Eun Lee": "이동은", "Tae-Hyun Kim": "김태현",
+      "Min-Gwon Song": "송민권", "Suk-Min Yoon": "윤석민", "Han-Gil Yoo": "유한길",
+      "Woo-Suk Jung": "정우석", "Kyu-Ran Park": "박규란", "In-Woo Jang": "장인우",
+      "Geun-Young Yoo": "유근영", "Seung-Wan Han": "한승완", "Ji-Hyeon Kwon": "권지현"
+    };
+    // 영문 표기가 두 가지인 경우 (프로필 이름 ↔ 논문 저자 표기)
+    const EN_ALIAS = {
+      "Sang-Hyun Ok": ["Sang-Hyeon Ok"],
+      "Sang-Hyeon Ok": ["Sang-Hyun Ok"]
+    };
+    // 프로필 사진 파일이 교체되어 논문 figure와 달라진 경우
+    const IMG_ALIAS = {
+      "dh-kim-new-profile-image.jpg": "dh-kim-profile-image.jpg"
+    };
+    function highlightSelf(html) {
+      var targets = [name].concat(EN_ALIAS[name] || []);
+      if (KR_NAME[name]) targets.push(KR_NAME[name]);
+      targets.forEach(function (t) {
+        html = html.split(t).join("<b><u>" + t + "</u></b>");
+      });
+      return html;
+    }
+
+    const pubKey = (window.pubIndex || {})[imgKey] ? imgKey : (IMG_ALIAS[imgKey] || imgKey);
+    const autoPubs = isPI ? [] : ((window.pubIndex || {})[pubKey] || [])
       .slice()
       .sort((a, b) => a.year - b.year)
       .map((p, i) =>
         '<div class="mpub-entry">' +
           '<div class="mpub-num">' + (i + 1) + "</div>" +
           '<div class="mpub-side">' + p.side + "</div>" +
-          '<div class="mpub-body">' + p.body + "</div>" +
+          '<div class="mpub-body">' + highlightSelf(p.body) + "</div>" +
         "</div>");
-    const parsedPublication = autoPubs.length > 0 ? autoPubs : parseData(publication);
+    const parsedPublication = isPI ? [] : (autoPubs.length > 0 ? autoPubs : parseData(publication));
     if (parsedPublication.length > 0) {
       $("#modal-publication-title").show();
       $("#modal-publication").show();
