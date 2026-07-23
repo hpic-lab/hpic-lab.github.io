@@ -1414,6 +1414,34 @@ nav#navbar-main .navbar-collapse {
   line-height: 1.5;
 }
 
+/* 모바일: 홈페이지 Publications와 동일하게 좌측 블록을 위로 접고 본문은 전체 폭 */
+@media (max-width: 576px) {
+  #exampleModal .mpub-entry {
+    flex-wrap: wrap;
+    gap: 6px 12px;
+  }
+
+  #exampleModal .mpub-num,
+  #exampleModal .mpub-side {
+    text-align: left;
+    width: auto;
+  }
+
+  #exampleModal .mpub-venue,
+  #exampleModal .mpub-side.mpub-date {
+    display: inline-block;
+  }
+
+  #exampleModal .mpub-side .pub2-side-badges {
+    display: inline-block;
+    margin-left: 8px;
+  }
+
+  #exampleModal .mpub-body {
+    flex-basis: 100%;
+  }
+}
+
 #exampleModal .profile-right {
   padding-left: 12px;
   padding-right: 12px;
