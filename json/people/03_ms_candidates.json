@@ -34,7 +34,7 @@
   },
   {
     "name": "So-Yeon Kwon",
-    "tag": "100G PIM-TX",
+    "tag": ">100G CIM-based Transmitter",
     "education": [
       "M.S., School of Electrical Engineering, Hanyang University (2025.03 ~ Present)",
       "B.S., Department of Applied Physics, Hanyang University, Ansan, Korea (2019.03 ~ 2025.02)"
@@ -75,7 +75,7 @@
   },
   {
     "name": "Seung-Hwan Gong",
-    "tag": "100G RX",
+    "tag": ">100G Receiver (CDR)",
     "research_interests": [
       "CDR, DSP-based Receiver"
     ],
@@ -100,7 +100,7 @@
   },
   {
     "name": "Dong-Ho Kim",
-    "tag": "100G TX",
+    "tag": ">100G DSP-based Transmitter",
     "research_interests": [
       "DSP-based Transmitter"
     ],
@@ -126,7 +126,7 @@
   },
   {
     "name": "Jae-Geon Lee",
-    "tag": "100G DSP RX",
+    "tag": ">100G DSP-based Receiver",
     "research_interests": [
       "DSP-based Receiver"
     ],
@@ -163,7 +163,7 @@
   },
   {
     "name": "Seung-Mo Jin",
-    "tag": "100G TX",
+    "tag": ">100G DSP-based Transmitter",
     "research_interests": [
       "DSP-based Transmitter"
     ],
@@ -248,7 +248,7 @@
   },
   {
     "name": "Dong-Eon Jin",
-    "tag": "ADC",
+    "tag": "Time-Interleaving ADC",
     "research_interests": [
       "Analog Digital Converter (ADC)"
     ],
@@ -264,7 +264,7 @@
   },
   {
     "name": "Joon-Seok Kwon",
-    "tag": "100G DSP RX",
+    "tag": ">100G DSP-based Receiver",
     "research_interests": [
       "Wireline Interface"
     ],
@@ -283,7 +283,7 @@
   },
   {
     "name": "Suk-Min Yoon",
-    "tag": "AI Accelerator",
+    "tag": "KWS AI Accelerator",
     "education": [
       "M.S., School of Electrical and Electronic Engineering, Yonsei University (2026.09 ~ Present)",
       "B.S., School of Electrical Engineering, Yeungnam University, Gyeongsan, Korea (2019.03 ~ 2025.08)"
@@ -299,7 +299,7 @@
   },
   {
     "name": "Ju-Yong Lee",
-    "tag": "Optical RX",
+    "tag": ">100G Optical Receiver",
     "education": [
       "M.S., School of Electrical and Electronic Engineering, Yonsei University (2026.09 ~ Present)",
       "B.S., School of Electrical Engineering, Gachon University, Seongnam, Korea (2021.03 ~ 2025.02)"
