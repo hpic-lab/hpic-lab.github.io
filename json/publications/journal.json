@@ -280,7 +280,7 @@
       "title": "A 4.5-to-14 GHz PLL-based Clock Driver with Wide-range 3-shaped LC-VCOs for GDDR6 DRAM Test",
       "image": "",
       "journal": "JSTS",
-      "reference":"<i>Journal of Semiconductor Technology and Science</i>, 24(3), 284-288, Jun. 2024.",       
+      "reference":"<i>Journal of Semiconductor Technology and Science</i>, 24(3), 284-288, June 2024.",       
       "authors": ["Chan-Ho Kye", "Jihee Kim", "Deog-Kyoon Jeong", "and Min-Seong Choo"],
       "figure": ["ms-choo-profile-img.png"],
       "link": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11825975"
@@ -316,7 +316,7 @@
     "title": "A 4-20-Gb/s 1.87-pJ/b Continuous-Rate Digital CDR Circuit With Unlimited Frequency Acquisition Capability in 65-nm CMOS",
     "image": "img/j9.png",
     "journal": "IEEE Journal of Solid-State Circuits (JSSC)",
-    "reference":"<i>IEEE Journal of Solid-State Circuits</i>, vol. 56, no. 5, pp. 1597-1607, May. 2021.",     
+    "reference":"<i>IEEE Journal of Solid-State Circuits</i>, vol. 56, no. 5, pp. 1597-1607, May 2021.",     
     "authors": ["Kwanseo Park", "Kwangho Lee", "Sung-Yong Cho", "Jinhyung Lee", "Jeongho Hwang", "Min-Seong Choo", "and Deog-Kyoon Jeong"],
     "figure": ["ms-choo-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/abstract/document/9239394"
@@ -328,7 +328,7 @@
     "title": "Review of Injection-Locked Oscillators",
     "image": "img/j8.png",
     "journal": "Journal of Semiconductor Engineering (JSE)",
-    "reference":"<i>Journal of semiconductor engineering</i>, vol. 1, no. 1, pp. 1–12, Jun. 2020.",  
+    "reference":"<i>Journal of semiconductor engineering</i>, vol. 1, no. 1, pp. 1–12, June 2020.",  
     "authors": ["Min-Seong Choo", "and Deog-Kyoon Jeong"],
     "figure": ["ms-choo-profile-img.png"],
     "link": "https://koreascience.kr/article/JAKO202021262090393.page"
