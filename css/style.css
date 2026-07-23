@@ -86,15 +86,17 @@ nav#navbar-main {
 }
 
 nav#navbar-main .navbar-brand {
-  color: #222 !important;
+  color: #003876 !important; /* 연세 블루로 통일 */
+  font-weight: 700;
   display: inline-flex;
   align-items: center;
   white-space: nowrap;
 }
 
-/* 흰색 HPIC 칩 로고 → 검정으로 반전 */
+/* HPIC 칩 로고 (SVG 자체를 연세 블루로 채색) */
 nav#navbar-main .navbar-brand > img:first-child {
-  filter: invert(0.85);
+  width: auto;
+  height: 34px;
 }
 
 nav#navbar-main .navbar-toggler-icon {
