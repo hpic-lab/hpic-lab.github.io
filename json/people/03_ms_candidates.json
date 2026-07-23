@@ -1,6 +1,7 @@
 [
   {
     "name": "Jae-Hyeon Pyeon",
+    "tag": "PLL",
     "research_interests": ["High-performance DPLL"],
     "tape_out_schedule": [
       {
@@ -28,6 +29,7 @@
   },
   {
     "name": "So-Yeon Kwon",
+    "tag": "100G PIM-TX",
     "education": [
     "B.S., School of Applied Physics, Hanyang University, Ansan, Korea (2019.03 ~ 2025.02)"
     ],
@@ -58,6 +60,7 @@
   },
   {
     "name": "Seung-Hwan Gong",
+    "tag": "100G RX",
     "research_interests": ["CDR, DSP-based Receiver"],
     "tape_out_schedule": [
       {
@@ -77,6 +80,7 @@
   },
   {
     "name": "Dong-Ho Kim",
+    "tag": "100G TX",
     "research_interests": ["DSP-based Transmitter"],
     "tape_out_schedule": [
       {
@@ -97,6 +101,7 @@
   },
   {
     "name": "Jae-Geon Lee",
+    "tag": "100G DSP RX",
     "research_interests": ["DSP-based Receiver"],
     "tape_out_schedule": [
       {
@@ -130,6 +135,7 @@
   },
   {
     "name": "Seung-Mo Jin",
+    "tag": "100G TX",
     "research_interests": ["DSP-based Transmitter"],
     "tape_out_schedule": [
       {
@@ -154,6 +160,7 @@
   },
   {
   "name": "Hyeon-Seo Kim",
+  "tag": "Time-Domain ADC",
   "research_interests": ["Analog Digital Converter (ADC)"],
   "Awards": [],
   "education": [
@@ -166,6 +173,7 @@
 },
 {
   "name": "Seol-Hyeon Kim",
+  "tag": "AI Accelerator",
   "research_interests": ["AI hardware design and PIM"],
   "education": [
     "B.S., School of System Semiconductor Enginerring, Sangmyung University, Cheonan, Korea (2021.03 ~ 2025.02)"
@@ -178,6 +186,7 @@
 },
 {
     "name": "Dong-Eon Jin",
+    "tag": "ADC",
     "research_interests": ["Analog Digital Converter (ADC)"],
     "education": [
     "B.S., School of Electrical Engineering, Hanyang University, Ansan, Korea (2019.03 ~ 2025.02)"
@@ -190,6 +199,7 @@
 },
 {
     "name": "Joon-Seok Kwon",
+    "tag": "100G DSP RX",
     "research_interests": ["Wireline Interface"],
     "education": [
     "B.S., School of Electrical Engineering, Hanyang University, Ansan, Korea (2017.03 ~ 2023.02)"
@@ -205,6 +215,7 @@
 },
 {
     "name": "Suk-Min Yoon",
+    "tag": "AI Accelerator",
     "education": [
     "B.S., Department of Electrical Engineering, Yeungnam University, Gyeongsan, Korea (2019.03 ~ 2025.08)"
     ],
@@ -217,6 +228,7 @@
   },
 {
     "name": "Ju-Yong Lee",
+    "tag": "Optical RX",
     "education": [
     "B.S., Department of Electrical Engineering, Gachon University, Seongnam, Korea (2021.03 ~ 2025.02)"
     ],

@@ -1425,7 +1425,7 @@ nav#navbar-main .navbar-collapse {
 /* 학생용 컴팩트 카드 (시안 3: 이름 좌측 + 분야 우측, 한 줄) */
 .people-grid-compact {
   display: grid !important;
-  grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 10px;
 }
 

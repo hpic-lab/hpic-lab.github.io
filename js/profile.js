@@ -133,9 +133,11 @@ $(document).ready(function () {
     const position = person.position || "";
     const imgKey = getFileName(person.profile_img);
 
-    // 대표 연구분야 배지: research_interests 첫 항목을 약어로 축약 (한 줄 표시)
+    // 대표 연구분야: JSON의 "tag" 필드가 있으면 그대로 사용, 없으면 research_interests에서 약어 추출
     let interest = "";
-    if (Array.isArray(person.research_interests) && person.research_interests.length > 0) {
+    if (person.tag) {
+      interest = person.tag;
+    } else if (Array.isArray(person.research_interests) && person.research_interests.length > 0) {
       interest = shortenInterest(String(person.research_interests[0]));
     }
     const interestHTML = interest ? `<div class="people-interest">${interest}</div>` : "";
