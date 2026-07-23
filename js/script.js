@@ -1,3 +1,7 @@
+// JSON 데이터가 브라우저 캐시에 남아 옛 내용이 보이는 문제 방지
+// (모든 $.getJSON 요청에 타임스탬프를 붙여 항상 최신 파일을 받음)
+$.ajaxSetup({ cache: false });
+
 document.addEventListener("DOMContentLoaded", function () {
   // 갤러리 제목 행 hover 설정
   $(".gallery-title-row a").hover(

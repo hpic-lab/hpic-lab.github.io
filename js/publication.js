@@ -104,17 +104,26 @@ $(document).ready(function () {
     return names.join(", ");
   }
 
+  // 이 연도 이상은 펼침, 미만(2023년까지)은 접힘으로 시작
+  var OPEN_FROM_YEAR = 2024;
+
   // Journal/Conference 공통 렌더링 (ISL 스타일: 좌측 번호·등급·학회, 우측 본문)
   function renderPaperList(pubs, container, venueClass, idPrefix) {
     var numbered = pubs.filter(function (p) { return p.title && p.title.trim() !== ""; }).length;
     var n = numbered;
     var curYear = null;
+    var body = null;
 
     pubs.forEach(function (pub) {
       var year = pub.type || "Others";
       if (year !== curYear) {
         curYear = year;
-        container.append('<div class="pub2-year" id="' + idPrefix + "-" + year + '">' + year + "</div>");
+        var open = Number(year) >= OPEN_FROM_YEAR;
+        container.append(
+          '<div class="pub2-year' + (open ? "" : " collapsed") + '" id="' + idPrefix + "-" + year + '">' + year + "</div>"
+        );
+        body = $('<div class="pub2-year-body"' + (open ? "" : ' style="display:none"') + "></div>");
+        container.append(body);
       }
 
       var hasTitle = pub.title && pub.title.trim() !== "";
@@ -146,14 +155,15 @@ $(document).ready(function () {
         .trim();
       var srcText = refText !== "" ? refText : ((pub.conference || pub.journal || "") + ", " + year);
 
-      container.append(
+      var badges = tagsHTML(pub);
+      body.append(
         '<div class="pub2-entry">' +
           '<div class="pub2-num">' + num + "</div>" +
           '<div class="pub2-side">' +
             '<div class="pub2-venue">' + v + "</div>" +
+            (badges ? '<div class="pub2-side-badges">' + badges + "</div>" : "") +
           "</div>" +
           '<div class="pub2-body">' +
-            '<div class="pub2-badges">' + tagsHTML(pub) + "</div>" +
             (titleHTML ? '<div class="pub2-title">' + titleHTML + "</div>" : "") +
             '<div class="pub2-src">' + srcText + "</div>" +
             '<div class="pub2-authors">' + authorsHTML(pub.authors) + "</div>" +
@@ -167,19 +177,25 @@ $(document).ready(function () {
   function renderPatentList(pubs, container, idPrefix) {
     var n = pubs.length;
     var curYear = null;
+    var body = null;
 
     pubs.forEach(function (pub) {
       var year = String(pub.year || pub.type || "Others");
       if (year !== curYear) {
         curYear = year;
-        container.append('<div class="pub2-year" id="' + idPrefix + "-" + year + '">' + year + "</div>");
+        var open = Number(year) >= OPEN_FROM_YEAR;
+        container.append(
+          '<div class="pub2-year' + (open ? "" : " collapsed") + '" id="' + idPrefix + "-" + year + '">' + year + "</div>"
+        );
+        body = $('<div class="pub2-year-body"' + (open ? "" : ' style="display:none"') + "></div>");
+        container.append(body);
       }
 
       var regHTML = pub.registration && pub.registration.trim() !== ""
         ? '<div class="pub2-src">' + pub.registration + "</div>"
         : "";
 
-      container.append(
+      body.append(
         '<div class="pub2-entry">' +
           '<div class="pub2-num">' + n-- + "</div>" +
           '<div class="pub2-side">' +
@@ -255,10 +271,21 @@ $(document).ready(function () {
       scrollToEl($("#publications"));
     });
 
-    // 연도 바로가기 (고정 내비게이션 높이만큼 오프셋)
+    // 연도 헤더 클릭으로 접기/펼치기
+    container.on("click", ".pub2-year", function () {
+      $(this).toggleClass("collapsed");
+      $(this).next(".pub2-year-body").stop(true, false).slideToggle(250);
+    });
+
+    // 연도 바로가기 (접혀 있으면 펼친 뒤 이동)
     sidebar.on("click", ".pub2-year-link", function (e) {
       e.preventDefault();
-      scrollToEl($($(this).attr("href")));
+      var header = $($(this).attr("href"));
+      if (header.hasClass("collapsed")) {
+        header.removeClass("collapsed");
+        header.next(".pub2-year-body").show();
+      }
+      scrollToEl(header);
     });
 
     // ===== 스크롤 위치에 따라 현재 연도 헤더 강조 (시안 3) =====

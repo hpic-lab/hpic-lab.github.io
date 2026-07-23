@@ -11,7 +11,7 @@
     "authors": [
       "J.-S Kwon",
       "J.-G. Lee...",
-      "Min-Seong Choo"
+      "and Min-Seong Choo"
     ],
     "figure": [
       "js-kwon-profile-image.jpg",
@@ -32,7 +32,7 @@
     "authors": [
       "J.-G. Lee",
       "J.-S Kwon...",
-      "Min-Seong Choo"
+      "and Min-Seong Choo"
     ],
     "figure": [
       "jg-lee-profile-img.jpeg",
@@ -51,7 +51,7 @@
     "reference": "<i>대한전자공학회 하계학술대회</i>, June 2026.",
     "authors": [
       "김설현",
-      "추민성"
+      "and 추민성"
     ],
     "figure": [
       "sh-kim-profile-image.jpg",
@@ -69,7 +69,7 @@
     "reference": "<i>대한전자공학회 하계학술대회</i>, June 2026.",
     "authors": [
       "권소연",
-      "추민성"
+      "and 추민성"
     ],
     "figure": [
       "sw-kwon-profile-image.jpeg",
@@ -87,7 +87,7 @@
     "reference": "<i>대한전자공학회 하계학술대회</i>, June 2026.",
     "authors": [
       "권준석",
-      "추민성"
+      "and 추민성"
     ],
     "figure": [
       "js-kwon-profile-image.jpg",
@@ -110,7 +110,7 @@
       "Haram Ju",
       "G.-S Jeong",
       "W. Bae",
-      "Min-Seong Choo"
+      "and Min-Seong Choo"
     ],
     "figure": [
       "sh-ok-profile-img.jpg",
@@ -135,7 +135,7 @@
       "G.-S Jeong",
       "W. Bae",
       "J. Han",
-      "Min-Seong Choo"
+      "and Min-Seong Choo"
     ],
     "figure": [
       "sm-jin-profile-img.jpg",
@@ -182,7 +182,7 @@
       "옥상현",
       "허동회",
       "진승모",
-      "추민성"
+      "and 추민성"
     ],
     "figure": [
       "jg-lee-profile-img.jpeg",
@@ -203,7 +203,7 @@
     "reference": "<i>대한전자공학회 하계학술대회</i>, June 2025.",
     "authors": [
       "이동현",
-      "추민성"
+      "and 추민성"
     ],
     "figure": [
       "dh-lee-profile-img.png",
@@ -221,7 +221,7 @@
     "reference": "<i>대한전자공학회 하계학술대회</i>, June 2025.",
     "authors": [
       "편재현",
-      "추민성"
+      "and 추민성"
     ],
     "figure": [
       "jh-pyeon-profile-img.png",
@@ -239,7 +239,7 @@
     "reference": "<i>대한전자공학회 하계학술대회</i>, June 2025.",
     "authors": [
       "김동호",
-      "추민성"
+      "and 추민성"
     ],
     "figure": [
       "dh-kim-profile-image.jpg",
@@ -257,7 +257,7 @@
     "reference": "<i>대한전자공학회 하계학술대회</i>, June 2025.",
     "authors": [
       "이동현",
-      "추민성"
+      "and 추민성"
     ],
     "figure": [
       "dh_lee_bs_profile_image.jpg",
@@ -275,7 +275,7 @@
     "reference": "<i>대한전자공학회 하계학술대회</i>, June 2025.",
     "authors": [
       "한인호",
-      "추민성"
+      "and 추민성"
     ],
     "figure": [
       "ih-han-profile-img.jpg",
@@ -294,7 +294,7 @@
     "authors": [
       "공승환",
       "허동회",
-      "추민성"
+      "and 추민성"
     ],
     "figure": [
       "sh-gong-profile-image.jpg",
@@ -317,7 +317,7 @@
       "J.-G. Lee",
       "S.-M. Jin",
       "K.-H. Lee",
-      "D. Jeong",
+      "Daniel Jeong",
       "and Min-Seong Choo"
     ],
     "figure": [
@@ -366,7 +366,7 @@
       "S.-M. Jin",
       "M.-G. Song",
       "D.-H. Lee",
-      "W.-S. Jung",
+      "Woo-Suk Jung",
       "and Min-Seong Choo"
     ],
     "figure": [
@@ -374,6 +374,7 @@
       "sm-jin-profile-img.jpg",
       "mg-song-profile-img.jpg",
       "dh-lee-profile-img.png",
+      "ws-jung-profile-img.png",
       "ms-choo-profile-img.png"
     ],
     "link": "https://ieeexplore.ieee.org/document/10762215"
@@ -404,12 +405,12 @@
     "title": "Vertical AND Cell Package: AND CiM 을 통한 BNN 운용 방법론",
     "image": "",
     "conference": "2024 SOC 학술대회",
-    "reference": "<i>SOC 학술대회</i>, May 2024.",
+    "reference": "<i>대한전자공학회 SOC 학술대회</i>, May 2024.",
     "authors": [
       "송민권",
       "이재건",
       "진승모",
-      "추민성"
+      "and 추민성"
     ],
     "figure": [
       "mg-song-profile-img.jpg",
@@ -487,7 +488,7 @@
     "reference": "<i>한국반도체학술대회 (KCS)</i>, Dec. 2024.",
     "authors": [
       "변유진",
-      "추민성"
+      "and 추민성"
     ],
     "figure": [
       "yj-byeon-profile-img.png",
@@ -505,7 +506,7 @@
     "authors": [
       "이동은",
       "김태현",
-      "추민성"
+      "and 추민성"
     ],
     "figure": [
       "de-lee-profile-img.png",
@@ -524,7 +525,7 @@
     "authors": [
       "권지현",
       "김태현",
-      "추민성"
+      "and 추민성"
     ],
     "figure": [
       "jh-kwon-profile-img.png",
@@ -542,10 +543,10 @@
     "reference": "<i>대한전자공학회 하계학술대회</i>, June 2023.",
     "authors": [
       "김태현",
-      "J.-H. Lee",
+      "이지환",
       "허동회",
       "진승모",
-      "추민성"
+      "and 추민성"
     ],
     "figure": [
       "th-kim-profile-img.jpg",
@@ -567,7 +568,7 @@
       "유근영",
       "이재건",
       "송민권",
-      "추민성"
+      "and 추민성"
     ],
     "figure": [
       "sw-han-profile-img.png",
@@ -590,7 +591,7 @@
       "권지현",
       "이동은",
       "변유진",
-      "추민성"
+      "and 추민성"
     ],
     "figure": [
       "gy-you-profile-img.jpg",
@@ -629,7 +630,7 @@
     "authors": [
       "Shin-Uk Kang",
       "Jin-Woo Han",
-      "Min-Seong Choo"
+      "and Min-Seong Choo"
     ],
     "figure": [
       "su-kang-profile-img.jpg",
@@ -649,7 +650,7 @@
       "Kyoungjoon Ha",
       "Han-Gon Ko",
       "Min-Seong Choo",
-      "Deog-Kyoon Jeong"
+      "and Deog-Kyoon Jeong"
     ],
     "figure": [
       "ms-choo-profile-img.png"
@@ -668,7 +669,7 @@
       "Chan-Ho Kye",
       "Jonghyun Oh",
       "Min-Seong Choo",
-      "Deog-Kyoon Jeong"
+      "and Deog-Kyoon Jeong"
     ],
     "figure": [
       "ms-choo-profile-img.png"
@@ -689,7 +690,7 @@
       "Jinhyung Lee",
       "Jeongho Hwang",
       "Min-Seong Choo",
-      "Deog-Kyoon Jeong"
+      "and Deog-Kyoon Jeong"
     ],
     "figure": [
       "ms-choo-profile-img.png"
@@ -708,7 +709,7 @@
       "Han-Gon Ko",
       "Sung-Yong Cho",
       "Kwangho Lee",
-      "Deog-Kyoon Jeong"
+      "and Deog-Kyoon Jeong"
     ],
     "figure": [
       "ms-choo-profile-img.png"
@@ -730,7 +731,7 @@
       "Soyeong Shin",
       "Min-Seong Choo",
       "Hankyu Chi",
-      "Deog-Kyoon Jeong"
+      "and Deog-Kyoon Jeong"
     ],
     "figure": [
       "ms-choo-profile-img.png"
@@ -743,14 +744,14 @@
     "title": "A Theoretical Analysis of Phase Shift in Pulse Injection-Locked Oscillators",
     "image": "img/c2.png",
     "conference": "IEEE International Symposium on Circuits and Systems (ISCAS)",
-    "reference": "<i>IEEE International Symposium on Circuits and Systems (ISCAS)</i>, pp. 1662-1665, 2016.",
+    "reference": "<i>IEEE International Symposium on Circuits and Systems (ISCAS)</i>, May 2016.",
     "authors": [
       "Jinhyung Lee",
       "Sungwoo Kim",
       "Min-Seong Choo",
       "Sung-Yong Cho",
       "Han-Gon Ko",
-      "Deog-Kyoon Jeong"
+      "and Deog-Kyoon Jeong"
     ],
     "figure": [
       "ms-choo-profile-img.png"
@@ -774,7 +775,7 @@
       "Sang-Hyeok Chu",
       "Woorham Bae",
       "Yoonsoo Kim",
-      "Deog-Kyoon Jeong"
+      "and Deog-Kyoon Jeong"
     ],
     "figure": [
       "ms-choo-profile-img.png"
