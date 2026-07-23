@@ -1443,6 +1443,16 @@ nav#navbar-main .navbar-collapse {
   font-size: 0.95em;
 }
 
+/* News → Publications 이동 시 대상 항목 잠깐 강조 */
+.pub2-entry-flash {
+  animation: pub2Flash 1.6s ease;
+}
+
+@keyframes pub2Flash {
+  0%, 100% { background: transparent; }
+  20% { background: #FFF6D8; }
+}
+
 /* News 논문 제목 하이퍼링크 (기본은 본문색, 호버 시 파란색) */
 .news-list .news-title-link {
   color: inherit;

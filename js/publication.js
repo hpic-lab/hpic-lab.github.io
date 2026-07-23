@@ -27,6 +27,13 @@ $(document).ready(function () {
     return '<span class="pub2-badge ' + cls + '">' + text + "</span>";
   }
 
+  // ===== News → Publications 이동용 제목 색인 =====
+  // 제목을 정규화(소문자·영숫자만)한 키로 해당 논문 항목을 찾을 수 있게 한다.
+  window.pubTitleIndex = window.pubTitleIndex || {};
+  function normTitle(t) {
+    return (t || "").toLowerCase().replace(/<[^>]+>/g, "").replace(/[^a-z0-9가-힣]/g, "");
+  }
+
   // ===== 프로필 모달 자동 연동용 색인 =====
   // 논문의 figure(구성원 얼굴 사진 파일명)를 키로 논문 목록을 쌓는다.
   // profile.js가 window.pubIndex[사진파일명]으로 해당 구성원의 논문을 가져가
@@ -194,8 +201,16 @@ $(document).ready(function () {
         );
       }
 
+      // News에서 제목 클릭 시 찾아올 수 있도록 항목에 고유 id 부여 + 색인 등록
+      var entryId = "";
+      var tabTarget = venueClass === "pub2-venue-journal" ? "journal" : "conference";
+      if (hasTitle) {
+        entryId = "pubentry-" + tabTarget + "-" + normTitle(pub.title);
+        window.pubTitleIndex[normTitle(pub.title)] = { id: entryId, tab: tabTarget };
+      }
+
       body.append(
-        '<div class="pub2-entry">' +
+        '<div class="pub2-entry"' + (entryId ? ' id="' + entryId + '"' : "") + ">" +
           '<div class="pub2-num">' + num + "</div>" +
           '<div class="pub2-side">' +
             '<div class="pub2-venue">' + v + "</div>" +
@@ -318,16 +333,41 @@ $(document).ready(function () {
     }
     refreshYearLinks("journal");
 
-    // 탭 전환
-    sidebar.on("click", ".pub2-tab", function () {
-      var target = $(this).data("target");
+    // 탭 활성화 (스크롤 없이 표시만)
+    function activateTab(target) {
       sidebar.find(".pub2-tab").removeClass("active");
-      $(this).addClass("active");
+      sidebar.find('.pub2-tab[data-target="' + target + '"]').addClass("active");
       container.find(".pub2-list").hide();
       $("#pub2-" + target).show();
       refreshYearLinks(target);
+    }
+
+    // 탭 전환
+    sidebar.on("click", ".pub2-tab", function () {
+      activateTab($(this).data("target"));
       scrollToEl($("#publications"));
     });
+
+    // ===== News → 제목 클릭 시 해당 논문으로 이동 =====
+    window.openPublicationByTitle = function (title) {
+      var rec = window.pubTitleIndex[normTitle(title)];
+      if (!rec) return false;
+      activateTab(rec.tab);
+      var entry = document.getElementById(rec.id);
+      if (!entry) return false;
+      // 접힌 연도 그룹 안에 있으면 펼치기
+      var $body = $(entry).closest(".pub2-year-body");
+      if ($body.length && $body.is(":hidden")) {
+        $body.prev(".pub2-year").removeClass("collapsed");
+        $body.show();
+      }
+      var $entry = $(entry);
+      $("html, body").animate({ scrollTop: $entry.offset().top - 120 }, 300);
+      // 잠깐 강조
+      $entry.addClass("pub2-entry-flash");
+      setTimeout(function () { $entry.removeClass("pub2-entry-flash"); }, 1600);
+      return true;
+    };
 
     // 연도 헤더 클릭으로 접기/펼치기
     container.on("click", ".pub2-year", function () {

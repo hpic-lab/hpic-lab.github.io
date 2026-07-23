@@ -58,16 +58,10 @@ $(document).ready(function () {
         }
         var catKey = CATEGORY[it.category] ? it.category : "News";
         var c = CATEGORY[catKey];
-        // [Paper] 링크는 별도 표기 대신 논문 제목("...")에 하이퍼링크로 연결
-        var paperUrl = null;
+        // [Paper] 링크는 별도 표기하지 않고, 논문 제목("...") 클릭 → Publications 항목으로 이동
+        var isPaper = it.category === "Journal" || it.category === "Conference";
         var links = (it.links || [])
-          .filter(function (l) {
-            if (l.label === "Paper" && !paperUrl) {
-              paperUrl = l.url;
-              return false;
-            }
-            return true;
-          })
+          .filter(function (l) { return l.label !== "Paper"; })
           .map(function (l) {
             return ' <a href="' + l.url + '" target="_blank" rel="noopener noreferrer" class="news-link">[' + l.label + "]</a>";
           })
@@ -84,9 +78,9 @@ $(document).ready(function () {
         }
         // <u>이름</u> → 클릭 가능한 프로필 링크로 변환 (HPIC Lab 제외)
         var text = it.text.replace(/<u>(?!HPIC Lab<)(.*?)<\/u>/g, '<u class="news-member" title="View profile">$1</u>');
-        // 논문 제목("...")에 하이퍼링크 적용
-        if (paperUrl) {
-          text = text.replace(/"([^"]+)"/, '<a href="' + paperUrl + '" target="_blank" rel="noopener noreferrer" class="news-title-link">"$1"</a>');
+        // 논문 제목("...") 클릭 → Publications 섹션의 해당 논문으로 이동
+        if (isPaper) {
+          text = text.replace(/"([^"]+)"/, '<a href="#publications" class="news-title-link news-pub-jump">"$1"</a>');
         }
         list.append(
           '<div class="news-item" data-cat="' + catKey + '">' +
@@ -214,6 +208,15 @@ $(document).ready(function () {
       });
       updateActiveNewsYear();
     }
+
+    // 논문 제목 클릭 → Publications 섹션의 해당 논문으로 이동
+    container.on("click", ".news-pub-jump", function (e) {
+      e.preventDefault();
+      var title = $(this).text().replace(/^"|"$/g, "").trim();
+      if (window.openPublicationByTitle) {
+        window.openPublicationByTitle(title);
+      }
+    });
 
     // [Photo] 클릭 → 이미지 라이트박스 (빈 곳 클릭 또는 ESC로 닫기)
     container.on("click", ".news-photo-link", function (e) {
