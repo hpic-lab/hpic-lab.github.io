@@ -7,7 +7,7 @@
     "progress": "Submitted",
     "conference": "",
     "reference":"",     
-    "authors": ["J.-S Kwon", "J.-G. Lee...", "M.-S Choo"],
+    "authors": ["J.-S Kwon", "J.-G. Lee...", "Min-Seong Choo"],
     "figure": [ "js-kwon-profile-image.jpg","jg-lee-profile-img.jpeg", "ms-choo-profile-img.png"],
     "link": ""
   },   
@@ -20,7 +20,7 @@
     "progress": "Submitted",
     "conference": "",
     "reference":"",     
-    "authors": ["J.-G. Lee", "J.-S Kwon...",  "M.-S Choo"],
+    "authors": ["J.-G. Lee", "J.-S Kwon...",  "Min-Seong Choo"],
     "figure": [ "jg-lee-profile-img.jpeg","js-kwon-profile-image.jpg", "ms-choo-profile-img.png"],
     "link": ""
   },
@@ -32,7 +32,7 @@
     "image": "",
     "conference": "IEIE 하계학술대회",
     "reference":"<i>대한전자공학회 하계학술대회.</i>",      
-    "authors": ["S.-H. Kim", "M.-S. Choo"],
+    "authors": ["S.-H. Kim", "Min-Seong Choo"],
     "figure": ["sh-kim-profile-image.jpg", "ms-choo-profile-img.png"],
     "link": ""
   },    
@@ -44,7 +44,7 @@
     "image": "",
     "conference": "IEIE 하계학술대회",
     "reference":"<i>대한전자공학회 하계학술대회.</i>",      
-    "authors": ["S.-Y Kwon", "M.-S. Choo"],
+    "authors": ["S.-Y Kwon", "Min-Seong Choo"],
     "figure": ["sw-kwon-profile-image.jpeg", "ms-choo-profile-img.png"],
     "link": ""
   },    
@@ -56,7 +56,7 @@
     "image": "",
     "conference": "IEIE 하계학술대회",
     "reference":"<i>대한전자공학회 하계학술대회.</i>",      
-    "authors": ["J.-S Kwon", "M.-S. Choo"],
+    "authors": ["J.-S Kwon", "Min-Seong Choo"],
     "figure": ["js-kwon-profile-image.jpg", "ms-choo-profile-img.png"],
     "link": ""
   },     
@@ -68,7 +68,7 @@
     "image": "",
     "conference": "IEEE A-SSCC 2025",
     "reference":"in <i>2025 IEEE Asian Solid-State Circuits Conference (A-SSCC)</i>, pp. 82-84, 2025 (*Equally Credited Authors).",     
-    "authors": ["S.-H. Ok*", "J.-G. Lee*", "K.-H Lee", "Haram Ju", "G.-S Jeong", "W. Bae", "M.-S Choo"],
+    "authors": ["S.-H. Ok*", "J.-G. Lee*", "K.-H Lee", "Haram Ju", "G.-S Jeong", "W. Bae", "Min-Seong Choo"],
     "figure": [ "sh-ok-profile-img.jpg", "jg-lee-profile-img.jpeg", "ms-choo-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/document/11349558"
   },    
@@ -88,7 +88,7 @@
       "G.-S Jeong",
       "W. Bae",
       "J. Han", 
-      "M.-S. Choo"
+      "Min-Seong Choo"
     ],
     "figure": [ "sm-jin-profile-img.jpg", "dh-kim-profile-image.jpg", "ms-choo-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/document/11349396"
@@ -101,7 +101,7 @@
     "image": "",
     "conference": "ITC-CSCC 2025",
     "reference":"in <i>2025 International Technical Conference on Circuits/Systems, Computers, and Communications (ITC-CSCC)</i>, pp. 1-3, 2025.",
-    "authors": ["J.-G. Lee", "S.-H. Ok", "S.-H. Gong", "S.-M. Jin", "D.-H. Kim", "and M.-S. Choo"],
+    "authors": ["J.-G. Lee", "S.-H. Ok", "S.-H. Gong", "S.-M. Jin", "D.-H. Kim", "and Min-Seong Choo"],
     "figure": ["jg-lee-profile-img.jpeg", "sh-ok-profile-img.jpg", "sh-gong-profile-image.jpg", "sm-jin-profile-img.jpg", "dh-kim-profile-image.jpg", "ms-choo-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/document/11137667"
   },
@@ -113,7 +113,7 @@
     "image": "",
     "conference": "IEIE 하계학술대회",
     "reference":"<i>대한전자공학회 하계학술대회.</i>",      
-    "authors": ["J.-G. Lee", "S.-H. Ok", "D.-H. Heo", "S.-M. Jin", "and M.-S. Choo"],
+    "authors": ["J.-G. Lee", "S.-H. Ok", "D.-H. Heo", "S.-M. Jin", "and Min-Seong Choo"],
     "figure": ["jg-lee-profile-img.jpeg","sh-ok-profile-img.jpg", "dh-heo-profile-img.jpg", "sm-jin-profile-img.jpg", "ms-choo-profile-img.png"],
     "link": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12331495"
   }, 
@@ -125,7 +125,7 @@
     "image": "",
     "conference": "IEIE 하계학술대회",
     "reference":"<i>대한전자공학회 하계학술대회.</i>",      
-    "authors": ["D.-H. Lee", "and M.-S. Choo"],
+    "authors": ["D.-H. Lee", "and Min-Seong Choo"],
     "figure": ["dh-lee-profile-img.png", "ms-choo-profile-img.png"],
     "link": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12331532"
   }, 
@@ -137,7 +137,7 @@
     "image": "",
     "conference": "IEIE 하계학술대회",
     "reference":"<i>대한전자공학회 하계학술대회.</i>",      
-    "authors": ["J.-H. Pyeon", "and M.-S. Choo"],
+    "authors": ["J.-H. Pyeon", "and Min-Seong Choo"],
     "figure": ["jh-pyeon-profile-img.png", "ms-choo-profile-img.png"],
     "link": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12331661"
   }, 
@@ -149,7 +149,7 @@
     "image": "",
     "conference": "IEIE 하계학술대회",
     "reference":"<i>대한전자공학회 하계학술대회.</i>",      
-    "authors": ["D.-H. Kim", "and M.-S. Choo"],
+    "authors": ["D.-H. Kim", "and Min-Seong Choo"],
     "figure": ["dh-kim-profile-image.jpg", "ms-choo-profile-img.png"],
     "link": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12331789"
   }, 
@@ -161,7 +161,7 @@
     "image": "",
     "conference": "IEIE 하계학술대회",
     "reference":"<i>대한전자공학회 하계학술대회.</i>",      
-    "authors": ["D.-H. Lee", "and M.-S. Choo"],
+    "authors": ["D.-H. Lee", "and Min-Seong Choo"],
     "figure": ["dh_lee_bs_profile_image.jpg", "ms-choo-profile-img.png"],
     "link": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12331656"
   },
@@ -173,7 +173,7 @@
     "image": "",
     "conference": "IEIE 하계학술대회",
     "reference":"<i>대한전자공학회 하계학술대회.</i>",      
-    "authors": ["I.-H. Han", "and M.-S. Choo"],
+    "authors": ["I.-H. Han", "and Min-Seong Choo"],
     "figure": ["ih-han-profile-img.jpg", "ms-choo-profile-img.png"],
     "link": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12331634"
   },
@@ -185,7 +185,7 @@
     "image": "",
     "conference": "IEIE 하계학술대회",
     "reference":"<i>대한전자공학회 하계학술대회.</i>",      
-    "authors": ["S.-H. Gong", "D.-H. Heo", "and M.-S. Choo"],
+    "authors": ["S.-H. Gong", "D.-H. Heo", "and Min-Seong Choo"],
     "figure": ["sh-gong-profile-image.jpg", "dh-heo-profile-img.jpg", "ms-choo-profile-img.png"],
     "link": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12331653"
   },
@@ -198,7 +198,7 @@
     "image": "",
     "conference": "IEEE/IEIE ICEIC 2025",
     "reference":"in <i>2025 International Conference on Electronics, Information, and Communication (ICEIC)</i>, pp. 1-4, 2025. ",      
-    "authors": ["S.-H. Ok", "D.-H. Heo", "J.-G. Lee", "S.-M. Jin", "K.-H. Lee", "D. Jeong", "and M.-S. Choo"],
+    "authors": ["S.-H. Ok", "D.-H. Heo", "J.-G. Lee", "S.-M. Jin", "K.-H. Lee", "D. Jeong", "and Min-Seong Choo"],
     "figure": ["sh-ok-profile-img.jpg", "dh-heo-profile-img.jpg", "jg-lee-profile-img.jpeg", "sm-jin-profile-img.jpg", "ms-choo-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/document/10879734"
   },
@@ -211,7 +211,7 @@
     "image": "",
     "conference": "IEEE A-SSCC 2024",
     "reference":"in <i>2024 IEEE Asian Solid-State Circuits Conference (A-SSCC)</i>, pp. 1-3, 2024 (*Equally Credited Authors).",    
-    "authors": ["H.-S. Choi*", "J.-G. Lee*", "K.-H. Lee", "D. Koh", "J.-W. Sull", "H.-R. Do", "C.-H. Kye", "D.-K. Jeong", "and M.-S. Choo"],
+    "authors": ["H.-S. Choi*", "J.-G. Lee*", "K.-H. Lee", "D. Koh", "J.-W. Sull", "H.-R. Do", "C.-H. Kye", "D.-K. Jeong", "and Min-Seong Choo"],
     "figure": ["jg-lee-profile-img.jpeg", "ms-choo-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/document/10848602"
   },
@@ -223,7 +223,7 @@
     "image": "",
     "conference": "IEEE/ISE ISOCC 2024",
     "reference":"in <i>2024 21st International SoC Design Conference (ISOCC)</i>, pp. 177-178, 2024.",   
-    "authors": ["S.-U. Kang", "S.-M. Jin", "M.-G. Song", "D.-H. Lee", "W.-S. Jung", "and M.-S. Choo"],
+    "authors": ["S.-U. Kang", "S.-M. Jin", "M.-G. Song", "D.-H. Lee", "W.-S. Jung", "and Min-Seong Choo"],
     "figure": ["su-kang-profile-img.jpg", "sm-jin-profile-img.jpg", "mg-song-profile-img.jpg", "dh-lee-profile-img.png", "ms-choo-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/document/10762215"
   },
@@ -235,7 +235,7 @@
     "image": "",
     "conference": "ACM IEEE DAC (WiP)",
     "reference":"",  
-    "authors": ["M.-G. Song", "S.-U. Kang", "and M.-S. Choo"],
+    "authors": ["M.-G. Song", "S.-U. Kang", "and Min-Seong Choo"],
     "figure": ["mg-song-profile-img.jpg", "su-kang-profile-img.jpg", "ms-choo-profile-img.png"],
     "link": "https://hpiclab.sharepoint.com/:f:/s/hpic-lab/EkXPdyE7H-NJvLqdQPPLb2oBt653wO1f3Rp1XB6FmSoq4g?e=1XN7JA"
   },
@@ -248,7 +248,7 @@
     "image": "",
     "conference": "2024 SOC 학술대회",
     "reference":"",   
-    "authors": ["M.-G. Song", "J.-G. Lee", "S.-M. Jin", "and M.-S. Choo"],
+    "authors": ["M.-G. Song", "J.-G. Lee", "S.-M. Jin", "and Min-Seong Choo"],
     "figure": ["mg-song-profile-img.jpg", "jg-lee-profile-img.jpeg", "sm-jin-profile-img.jpg", "ms-choo-profile-img.png"],
     "link": "https://drive.google.com/file/d/1aC8FmySN5FQz4NIIZGNZot0416-Uqh-s/view"
   },
@@ -260,7 +260,7 @@
     "image": "",
     "conference": "IEEE/IEIE ICEIC 2024",
     "reference":"in <i>2024 International Conference on Electronics, Information, and Communication (ICEIC)</i>, pp. 1-2, 2024.",    
-    "authors": ["S.-M. Jin", "S.-U. Kang", "and M.-S. Choo"],
+    "authors": ["S.-M. Jin", "S.-U. Kang", "and Min-Seong Choo"],
     "figure": ["sm-jin-profile-img.jpg", "su-kang-profile-img.jpg", "ms-choo-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/document/10457226"
   },
@@ -272,7 +272,7 @@
     "image": "",
     "conference": "IEEE/IEIE ICEIC 2024",
     "reference":"in <i>2024 International Conference on Electronics, Information, and Communication (ICEIC)</i>, pp. 1-2, 2024.",   
-    "authors": ["J.-G. Lee", "S.-U. Kang", "and M.-S. Choo"],
+    "authors": ["J.-G. Lee", "S.-U. Kang", "and Min-Seong Choo"],
     "figure": ["jg-lee-profile-img.jpeg", "su-kang-profile-img.jpg", "ms-choo-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/document/10457160"
   },
@@ -285,7 +285,7 @@
     "image": "",
     "conference": "IEEE/IEIE ICEIC 2024",
     "reference":"in <i>2024 International Conference on Electronics, Information, and Communication (ICEIC)</i>, pp. 1-4, 2024.",    
-    "authors": ["D.-H. Heo", "T.-H. Kim", "K.-H. Lee", "and M.-S. Choo"],
+    "authors": ["D.-H. Heo", "T.-H. Kim", "K.-H. Lee", "and Min-Seong Choo"],
     "figure": ["dh-heo-profile-img.jpg", "th-kim-profile-img.jpg", "ms-choo-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/document/10457116"
   },
@@ -297,7 +297,7 @@
     "image": "",
     "conference": "KCS 2024",
     "reference":"",  
-    "authors": ["Y.-J. Byeon", "and M.-S. Choo"],
+    "authors": ["Y.-J. Byeon", "and Min-Seong Choo"],
     "figure": ["yj-byeon-profile-img.png", "ms-choo-profile-img.png"],
     "link": "https://drive.google.com/file/d/1lVfAHKRFshsPsVT17O25Oz3bHriDWW6B/view"
   },
@@ -309,7 +309,7 @@
     "image": "",
     "conference": "KCS 2024",
     "reference":"",  
-    "authors": ["D.-E. Lee", "T.-H. Kim", "and M.-S. Choo"],
+    "authors": ["D.-E. Lee", "T.-H. Kim", "and Min-Seong Choo"],
     "figure": ["de-lee-profile-img.png", "th-kim-profile-img.jpg", "ms-choo-profile-img.png"],
     "link": "https://drive.google.com/file/d/12L2cJQlLUiwNAWZ8iZT4k2sVcysgqY2f/view"
   },
@@ -321,7 +321,7 @@
     "image": "",
     "conference": "KCS 2024",
     "reference":"",
-    "authors": ["J.-H. Kwon", "T.-H. Kim", "and M.-S. Choo"],
+    "authors": ["J.-H. Kwon", "T.-H. Kim", "and Min-Seong Choo"],
     "figure": ["jh-kwon-profile-img.png", "th-kim-profile-img.jpg", "ms-choo-profile-img.png"],
     "link": "https://drive.google.com/file/d/1OrBk8YmFi4QQq-8GsRutEYgRFqF1hjKG/view"
   },
@@ -333,7 +333,7 @@
     "image": "",
     "conference": "2023 IEIE 하계학술대회",
     "reference":"in <i>대한전자공학회 하계학술대회</i>.", 
-    "authors": ["T.-H. Kim", "J.-H. Lee", "D.-H. Heo", "S.-M. Jin", "and M.-S. Choo"],
+    "authors": ["T.-H. Kim", "J.-H. Lee", "D.-H. Heo", "S.-M. Jin", "and Min-Seong Choo"],
     "figure": ["th-kim-profile-img.jpg","dh-heo-profile-img.jpg", "sm-jin-profile-img.jpg", "ms-choo-profile-img.png"],
     "link": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11521991"
   },
@@ -345,7 +345,7 @@
     "image": "",
     "conference": "2023 IEIE 하계학술대회",
     "reference":"in <i>대한전자공학회 하계학술대회</i>.",  
-    "authors": ["S.-W. Han", "G. Y. You", "J.-G. Lee", "M.-G. Song", "and M.-S. Choo"],
+    "authors": ["S.-W. Han", "G. Y. You", "J.-G. Lee", "M.-G. Song", "and Min-Seong Choo"],
     "figure": ["sw-han-profile-img.png", "jg-lee-profile-img.jpeg", "mg-song-profile-img.jpg", "ms-choo-profile-img.png"],
     "link": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11522007"
   },
@@ -357,7 +357,7 @@
     "image": "",
     "conference": "2023 IEIE 하계학술대회",
     "reference":"in <i>대한전자공학회 하계학술대회</i>.",   
-    "authors": ["G.-Y. You", "S.-W. Han", "J.-H. Kwon", "D.-E. Lee", "Y.-J. Byeon", "and M.-S. Choo"],
+    "authors": ["G.-Y. You", "S.-W. Han", "J.-H. Kwon", "D.-E. Lee", "Y.-J. Byeon", "and Min-Seong Choo"],
     "figure": ["gy-you-profile-img.jpg","sw-han-profile-img.png","jh-kwon-profile-img.png", "de-lee-profile-img.png", "yj-byeon-profile-img.png", "ms-choo-profile-img.png"],
     "link": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11521992"
   },
@@ -369,7 +369,7 @@
     "image": "",
     "conference": "IEEE/IEIE ICEIC 2023",
     "reference":"in <i>2023 International Conference on Electronics, Information, and Communication (ICEIC)</i>, pp. 1-2, 2023.",   
-    "authors": ["I.-W. Jang", "and M.-S. Choo"],
+    "authors": ["I.-W. Jang", "and Min-Seong Choo"],
     "figure": ["iw-jang-profile-img.jpg", "ms-choo-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/document/10049900"
   },
@@ -381,7 +381,7 @@
     "image": "",
     "conference": "IEEE/IEIE ICEIC 2023",
     "reference":"in <i>2023 International Conference on Electronics, Information, and Communication (ICEIC)</i>, pp. 1-4, 2023.",   
-    "authors": ["S.-U. Kang", "J.-W. Han", "and M.-S. Choo"],
+    "authors": ["S.-U. Kang", "J.-W. Han", "and Min-Seong Choo"],
     "figure": ["su-kang-profile-img.jpg", "ms-choo-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/document/10049920"
   },
@@ -393,7 +393,7 @@
     "image": "img/c1.png",
     "conference": "European Solid-State Circuits Conference (IEEE ESSCIRC)",
     "reference":"in <i>ESSCIRC 2022- IEEE 48th European Solid State Circuits Conference (ESSCIRC)</i>, pp. 249-252, 2022.",   
-    "authors": ["Y. Song", "K. Ha", "H.-G. Ko", "M.-S. Choo", "and D.-K. Jeong"],
+    "authors": ["Y. Song", "K. Ha", "H.-G. Ko", "Min-Seong Choo", "and D.-K. Jeong"],
     "figure": ["ms-choo-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/abstract/document/9911362"
   },
@@ -405,7 +405,7 @@
     "image": "img/c5.png",
     "conference": "IEEE International Solid-State Circuits Conference (IEEE ISSCC)",
     "reference":"in <i>2019 IEEE International Solid-State Circuits Conference - (ISSCC)</i>, pp. 432-434, 2019.",    
-    "authors": ["M. Choi", "C.-H. Kye", "J. Oh", "M.-S. Choo", "and D.-K. Jeong"],
+    "authors": ["M. Choi", "C.-H. Kye", "J. Oh", "Min-Seong Choo", "and D.-K. Jeong"],
     "figure": ["ms-choo-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/abstract/document/8662453"
   },
@@ -417,7 +417,7 @@
     "image": "img/c6.png",
     "conference": "IEEE Symposium on VLSI Circuits (VLSI)",
     "reference":"in <i>2019 Symposium on VLSI Circuits</i>, Kyoto, Japan, 2019, pp. C194-C195.",    
-    "authors": ["K. Park", "K. Lee", "S.-Y. Cho", "J. Lee", "J. Hwang", "M.-S. Choo", "and D.-K. Jeong"],
+    "authors": ["K. Park", "K. Lee", "S.-Y. Cho", "J. Lee", "J. Hwang", "Min-Seong Choo", "and D.-K. Jeong"],
     "figure": ["ms-choo-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/abstract/document/8778157"
   },
@@ -429,7 +429,7 @@
     "image": "",
     "conference": "IEEE A-SSCC 2018",
     "reference":"in <i>2018 IEEE Asian Solid-State Circuits Conference (A-SSCC)</i>, pp. 73-76, 2018.",   
-    "authors": ["M.-S. Choo", "H.-G. Ko", "S.-Y. Cho", "K.-H. Lee", "and D.-K. Jeong"],
+    "authors": ["Min-Seong Choo", "H.-G. Ko", "S.-Y. Cho", "K.-H. Lee", "and D.-K. Jeong"],
     "figure": ["ms-choo-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/abstract/document/8579270"
   },
@@ -441,7 +441,7 @@
     "image": "img/c3.png",
     "conference": "IEEE International Solid-State Circuits Conference (IEEE ISSCC)",
     "reference":"in <i>2017 IEEE International Solid-State Circuits Conference (ISSCC)</i>, pp. 494-495, 2017.",   
-    "authors": ["S. Kim", "H.-G. Ko", "S.-Y. Cho", "J. Lee", "S. Shin", "M.-S. Choo", "H. Chi", "and D.-K. Jeong"],
+    "authors": ["S. Kim", "H.-G. Ko", "S.-Y. Cho", "J. Lee", "S. Shin", "Min-Seong Choo", "H. Chi", "and D.-K. Jeong"],
     "figure": ["ms-choo-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/abstract/document/7870477"
   },
@@ -453,7 +453,7 @@
     "image": "img/c2.png",
     "conference": "IEEE International Symposium on Circuits and Systems (ISCAS)",
     "reference":"in <i>2016 IEEE International Symposium on Circuits and Systems (ISCAS)</i>, pp. 1662-1665, 2016.",   
-    "authors": ["J. Lee", "S. Kim", "M.-S. Choo", "S.-Y. Cho", "H.-G. Ko", "and D.-K. Jeong"],
+    "authors": ["J. Lee", "S. Kim", "Min-Seong Choo", "S.-Y. Cho", "H.-G. Ko", "and D.-K. Jeong"],
     "figure": ["ms-choo-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/abstract/document/7538886"
   },
@@ -465,7 +465,7 @@
     "image": "img/c1.png",
     "conference": "European Solid-State Circuits Conference (IEEE ESSCIRC)",
     "reference":"in <i>ESSCIRC Conference 2015 - 41st European Solid-State Circuits Conference (ESSCIRC)</i>, pp. 384-387, 2015.",   
-    "authors": ["S.-Y. Cho", "S. Kim", "M.-S. Choo", "J. Lee", "H.-G. Ko", "S. Jang", "S.-H. Chu", "W. Bae", "Y. Kim", "and D.-K. Jeong"],
+    "authors": ["S.-Y. Cho", "S. Kim", "Min-Seong Choo", "J. Lee", "H.-G. Ko", "S. Jang", "S.-H. Chu", "W. Bae", "Y. Kim", "and D.-K. Jeong"],
     "figure": ["ms-choo-profile-img.png"],
     "link": "https://ieeexplore.ieee.org/abstract/document/7313908"
   }

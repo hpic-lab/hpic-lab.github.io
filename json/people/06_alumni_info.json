@@ -8,7 +8,7 @@
     ,"M.S., School of Electrical Engineering from Hanyang University, Ansan, South Korea, (2024.03 ~ 2026.02)"    
     ],
     "publication": [
-    "S.-U. Kang*, D.-H. Lee*, M.-G. Song, M. Seok, and M.-S. Choo., IGA-SRAM: A Compact SRAM-based IMC Engine for Binary/Ternary Deep Neural Networks with ADC-Less and Error-Aware Training Algorithm, IEEE Journal on Emerging and Selected Topics in Circuits and Systems (JETCAS), 2026(*Equally Credited Authors)."
+    "S.-U. Kang*, D.-H. Lee*, M.-G. Song, M. Seok, and Min-Seong Choo., IGA-SRAM: A Compact SRAM-based IMC Engine for Binary/Ternary Deep Neural Networks with ADC-Less and Error-Aware Training Algorithm, IEEE Journal on Emerging and Selected Topics in Circuits and Systems (JETCAS), 2026(*Equally Credited Authors)."
     ],
     "Awards": [
       "ISOCC'24", 
@@ -29,8 +29,8 @@
     ,"M.S., School of Electrical Engineering from Hanyang University, Ansan, South Korea, (2024.03 ~ 2026.02)"    
     ],
     "publication": [
-    "S.-H. Ok*, J.-G. Lee*, K.-H Lee, Haram Ju, G.-S Jeong, W. Bae, M.-S Choo, Critical-Timing-Relaxed pre-Decision Feedforward Equalizer for High-Speed DSP-based Wireline Receiver using Hardware-in-the-Loop Verification on RF-SoC, in 2025 IEEE Asian Solid-State Circuits Conference (A-SSCC), (*Equally Credited Authors)."
-    ,"S.-H. Ok, D.-H. Heo, J.-G. Lee, S.-M. Jin, K.-H. Lee, D. Jeong, and M.-S. Choo, An Implementation of a DSP-Based PAM-4 Digital Equalizer with 32-Way TI-ADC, in 2025 International Conference on Electronics, Information, and Communication (ICEIC)."
+    "S.-H. Ok*, J.-G. Lee*, K.-H Lee, Haram Ju, G.-S Jeong, W. Bae, Min-Seong Choo, Critical-Timing-Relaxed pre-Decision Feedforward Equalizer for High-Speed DSP-based Wireline Receiver using Hardware-in-the-Loop Verification on RF-SoC, in 2025 IEEE Asian Solid-State Circuits Conference (A-SSCC), (*Equally Credited Authors)."
+    ,"S.-H. Ok, D.-H. Heo, J.-G. Lee, S.-M. Jin, K.-H. Lee, D. Jeong, and Min-Seong Choo, An Implementation of a DSP-Based PAM-4 Digital Equalizer with 32-Way TI-ADC, in 2025 International Conference on Electronics, Information, and Communication (ICEIC)."
     ],
     "Awards": ["ICEIC'25 Best Paper Award - Silver Prize"],
     "biography": "Sang-Hyeon Ok received the B.S. degree in the school of electronics and communication engineering at Hanyang University, Ansan, South Korea, and the M.S. degree in electrical engineering from Hanyang University, Ansan, South Korea. He joined LX Semicon, Seoul, South Korea in 2016, where he has been involved in the LCD DDI team. His research interests include digital and analog circuit design of Clock and Data Recovery (CDR) and digital circuit designs of PAM4 Receiver with adaptive decision feedback equalizer.",
@@ -48,7 +48,7 @@
     ,"M.S., School of Electrical Engineering from Hanyang University, Ansan, South Korea, (2023.03 ~ 2025.08)"    
     ],
     "publication": [
-    "D.-H. Heo, T.-H. Kim, K.-H. Lee, and M.-S. Choo, An Analysis of 32-Gb/s and Full-Rate Phase Interpolator based Clock and Data Recovery, in 2024 International Conference on Electronics, Information, and Communication (ICEIC), 2024."
+    "D.-H. Heo, T.-H. Kim, K.-H. Lee, and Min-Seong Choo, An Analysis of 32-Gb/s and Full-Rate Phase Interpolator based Clock and Data Recovery, in 2024 International Conference on Electronics, Information, and Communication (ICEIC), 2024."
     ],
     "Awards": ["ICEIC'24 Best Paper Award - Gold Prize"],
     "biography": "Dong-Hoe Heo received the B.S. and M.S. degrees in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include clock and data recovery (CDR) circuit design.",
@@ -90,8 +90,8 @@
     ,"M.S., School of Electrical Engineering from Hanyang University, Ansan, South Korea, (2023.03 ~ 2025.02)"    
     ],
     "publication": [
-    "S.-U. Kang*, D.-H. Lee*, M.-G. Song, M. Seok, and M.-S. Choo., IGA-SRAM: A Compact SRAM-based IMC Engine for Binary/Ternary Deep Neural Networks with ADC-Less and Error-Aware Training Algorithm, IEEE Journal on Emerging and Selected Topics in Circuits and Systems (JETCAS), 2026(*Equally Credited Authors)."
-    ,"S.-U. Kang, J.-W. Han, and M.-S. Choo, Radiation-Hardened Processing-In-Memory Crossbar Array With Hybrid Synapse Devices for Space Application, in 2023 International Conference on Electronics, Information, and Communication (ICEIC), pp. 1-4, 2023."
+    "S.-U. Kang*, D.-H. Lee*, M.-G. Song, M. Seok, and Min-Seong Choo., IGA-SRAM: A Compact SRAM-based IMC Engine for Binary/Ternary Deep Neural Networks with ADC-Less and Error-Aware Training Algorithm, IEEE Journal on Emerging and Selected Topics in Circuits and Systems (JETCAS), 2026(*Equally Credited Authors)."
+    ,"S.-U. Kang, J.-W. Han, and Min-Seong Choo, Radiation-Hardened Processing-In-Memory Crossbar Array With Hybrid Synapse Devices for Space Application, in 2023 International Conference on Electronics, Information, and Communication (ICEIC), pp. 1-4, 2023."
     ],
     "biography": "Shin-Uk Kang received the B.S. and M.S. degrees in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include artificial intelligence hardware design and processing in memory (PIM).",
     "email": "",
@@ -106,8 +106,8 @@
     "M.S., School of Electrical Engineering from Hanyang University, Ansan, South Korea, (2022.09 ~ 2025.02)"    
     ],
     "publication": [
-    "K. Baek*, J. Kim*, K. Kim, D.-K. Jeong, and M.-S. Choo, A Supply Noise-Insensitive Ring DCO With a Self-Biased Shunt Regulator Array in Wide-Range Digital PLL, IEEE Transactions on Very Large Scale Integration (VLSI) Systems, vol. 33, no. 8, pp. 2349-2353, Aug. 2025 (Equally Credited Authors)."
-    ,"J. Choi, J.-H. Kim, T. Kim, J.-H. Pyeon, W.-T. Lim, H. Kim, H. Roh, K.-H. Lee, M. Choi, M.-S. Choo, and J. Roh, Built-In Phase Noise Measurement System for Multi-GHz Phase-Locked Loops, IEEE Transactions on Instrumentation & Measurement (TIM), 2026."
+    "K. Baek*, J. Kim*, K. Kim, D.-K. Jeong, and Min-Seong Choo, A Supply Noise-Insensitive Ring DCO With a Self-Biased Shunt Regulator Array in Wide-Range Digital PLL, IEEE Transactions on Very Large Scale Integration (VLSI) Systems, vol. 33, no. 8, pp. 2349-2353, Aug. 2025 (Equally Credited Authors)."
+    ,"J. Choi, J.-H. Kim, T. Kim, J.-H. Pyeon, W.-T. Lim, H. Kim, H. Roh, K.-H. Lee, M. Choi, Min-Seong Choo, and J. Roh, Built-In Phase Noise Measurement System for Multi-GHz Phase-Locked Loops, IEEE Transactions on Instrumentation & Measurement (TIM), 2026."
     ],
     "biography": "Ji-Ho Kim received a B.S. degree in electrical engineering from Chosun University, Gwangju, South Korea, and the M.S. degree in the school of electrical engineering from Hanyang University, Ansan, South Korea. His research interests include analog and digital circuit designs of phase-locked-loop (PLL).",
     "email": "",
