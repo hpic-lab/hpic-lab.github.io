@@ -418,8 +418,14 @@ $(document).ready(function () {
         $("#modal-academic_services").hide();
     }
 
+    // 학력 정보가 없으면 Education 섹션 자체를 숨김 (예: 학부 연구원 졸업생)
     const parsed_education = parseData(education);
-    renderTimeline("#modal-education", parsed_education, "No education available.");
+    if (parsed_education.length > 0) {
+      $("#modal-education").closest(".phb-education").show();
+      renderTimeline("#modal-education", parsed_education, "");
+    } else {
+      $("#modal-education").closest(".phb-education").hide();
+    }
 
     const parsed_experience = parseData(experience);
     if (parsed_experience.length > 0) {
