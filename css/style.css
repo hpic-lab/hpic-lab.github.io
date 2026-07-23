@@ -1070,6 +1070,55 @@ nav#navbar-main .navbar-collapse {
   border-radius: 4px;
 }
 
+/* News 연도 아코디언 헤더 — Publications 연도 서식과 통일 */
+.news-accordion .ui-accordion-header {
+  background: transparent !important;
+  border: none !important;
+  border-bottom: 3px solid #2e55be !important;
+  border-radius: 0 !important;
+  color: #222 !important;
+  font-size: 1.5rem !important;
+  font-weight: 700;
+  text-align: left;
+  padding: 8px 4px 6px 0 !important;
+  margin: 28px 0 10px !important;
+  cursor: pointer;
+}
+
+.news-accordion:first-child .ui-accordion-header {
+  margin-top: 0 !important;
+}
+
+.news-accordion .ui-accordion-header .ui-accordion-header-icon {
+  display: none;
+}
+
+.news-accordion .ui-accordion-header::after {
+  content: "▾";
+  float: right;
+  font-size: 1.2rem;
+  color: #888;
+  transform: rotate(-90deg);
+  transition: transform 0.25s;
+}
+
+.news-accordion .ui-accordion-header.ui-state-active::after {
+  transform: rotate(0deg);
+}
+
+/* 스크롤 시 현재 연도 헤더 상단 고정 (Publications와 동일) */
+@media (min-width: 992px) {
+  .news-accordion .ui-accordion-header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 66px;
+    background: rgba(255, 255, 255, 0.75) !important;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    z-index: 5;
+  }
+}
+
 /* ===== News 시안 A: 카테고리 배지 + 월 구분 ===== */
 .news-list .news-month {
   font-size: 0.95rem;

@@ -59,7 +59,6 @@ $(document).ready(function () {
 
       acc.append(body);
       container.append(acc);
-      if (yearIdx < years.length - 1) container.append("<hr />");
     });
 
     // 아코디언 초기화 (script.js의 초기화는 JSON 로드 전에 실행되므로 여기서 직접 수행)
