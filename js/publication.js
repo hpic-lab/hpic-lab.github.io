@@ -80,8 +80,8 @@ $(document).ready(function () {
     var s = author.trim();
     var prefix = "";
     var suffix = "";
+    // 데이터에 "and "가 남아 있더라도 표기에서는 제거하여 쉼표로 통일
     if (/^and\s+/i.test(s)) {
-      prefix = "and ";
       s = s.replace(/^and\s+/i, "");
     }
     // 공동 1저자 표시: * 또는 † → † 로 통일하여 표시
@@ -94,13 +94,10 @@ $(document).ready(function () {
     return prefix + (NAME_MAP[key] || s) + suffix;
   }
 
-  // 저자 목록 (저자가 2명이면 쉼표 없이 "A and B"로 표기)
+  // 저자 목록 (모두 쉼표로 연결, "and" 미사용)
   function authorsHTML(list) {
     if (!list || list.length === 0) return "";
     var names = list.map(toFullName);
-    if (names.length === 2 && /^and\s/i.test(names[1])) {
-      return names[0] + " " + names[1];
-    }
     return names.join(", ");
   }
 
