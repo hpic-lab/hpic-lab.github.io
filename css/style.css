@@ -1402,6 +1402,53 @@ nav#navbar-main .navbar-collapse {
   border-radius: 4px;
 }
 
+/* ===== Teaching (시안 1: 연도 헤더 + 학기·과정 배지) ===== */
+.teach-year {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #2e55be;
+  margin: 26px 0 12px;
+  padding-bottom: 6px;
+  border-bottom: 3px solid #2e55be;
+}
+
+.teach-year:first-child {
+  margin-top: 0;
+}
+
+.teach-year-past {
+  color: #aaa;
+  border-bottom-color: #e9e9e9;
+}
+
+.teach-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 9px;
+}
+
+.teach-badge {
+  flex-shrink: 0;
+  font-size: 0.76rem;
+  font-weight: 600;
+  padding: 2px 9px;
+  border-radius: 4px;
+  min-width: 60px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.teach-badge-level {
+  min-width: 82px;
+}
+
+.teach-title {
+  font-size: 0.97rem;
+  font-weight: 500;
+  color: #222;
+}
+
 /* 완료 과제 접힘 토글 */
 .completed-toggle {
   display: flex;
@@ -1989,7 +2036,7 @@ nav#navbar-main .navbar-collapse {
 }
 
 .pub2-notice {
-  font-size: 0.95rem;
+  font-size: 0.8rem;
   font-weight: 500;
   color: #777;
   font-style: normal;

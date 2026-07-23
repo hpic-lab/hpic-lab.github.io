@@ -1,0 +1,29 @@
+[
+  { "year": 2026, "term": "Spring", "level": "Undergraduate", "title": "Advanced Electronic Circuit and Laboratory" },
+
+  { "year": 2025, "term": "Winter", "level": "Undergraduate", "title": "Microelectronic Circuits" },
+  { "year": 2025, "term": "Fall", "level": "Graduate", "title": "Data Transmission Circuit Design for AI Display Application" },
+  { "year": 2025, "term": "Fall", "level": "Undergraduate", "title": "SOC Design" },
+  { "year": 2025, "term": "Fall", "level": "Undergraduate", "title": "Electronic Circuits and IOT Lab" },
+  { "year": 2025, "term": "Summer", "level": "Undergraduate", "title": "Microelectronic Circuits" },
+  { "year": 2025, "term": "Spring", "level": "Undergraduate", "title": "Logic Design and Lab" },
+  { "year": 2025, "term": "Spring", "level": "Undergraduate", "title": "Circuit Theory" },
+
+  { "year": 2024, "term": "Winter", "level": "Undergraduate", "title": "Microelectronic Circuits" },
+  { "year": 2024, "term": "Fall", "level": "Undergraduate", "title": "SOC Design" },
+  { "year": 2024, "term": "Fall", "level": "Undergraduate", "title": "Electronic Circuits and IOT Lab" },
+  { "year": 2024, "term": "Fall", "level": "Undergraduate", "title": "Advanced Electronic Circuit and Laboratory" },
+  { "year": 2024, "term": "Fall", "level": "Graduate", "title": "AI and System Semiconductors" },
+  { "year": 2024, "term": "Spring", "level": "Undergraduate", "title": "Logic Design and Lab" },
+  { "year": 2024, "term": "Spring", "level": "Undergraduate", "title": "Circuit Theory" },
+
+  { "year": 2023, "term": "Fall", "level": "Undergraduate", "title": "SOC Design" },
+  { "year": 2023, "term": "Fall", "level": "Undergraduate", "title": "Advanced Electronic Circuit and Laboratory" },
+  { "year": 2023, "term": "Spring", "level": "Graduate", "title": "Design of AI Integrated Circuit" },
+  { "year": 2023, "term": "Spring", "level": "Undergraduate", "title": "Circuit Theory" },
+
+  { "year": 2022, "term": "Fall", "level": "Undergraduate", "title": "SOC Design" },
+  { "year": 2022, "term": "Fall", "level": "Undergraduate", "title": "Advanced Electronic Circuit and Laboratory" },
+  { "year": 2022, "term": "Spring", "level": "Undergraduate", "title": "Circuit Theory" },
+  { "year": 2022, "term": "Spring", "level": "Undergraduate", "title": "Engineering Mathematics 1" }
+]
