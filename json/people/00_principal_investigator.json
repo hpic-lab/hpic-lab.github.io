@@ -2,25 +2,30 @@
   {
     "name": "Min-Seong Choo",
     "education": [
-    "Ph.D., Department of Electrical Engineering and Computer Science, Seoul National University, Seoul, Korea (2012.03 ~ 2019.08)",
-    "B.S., Department of Electrical Engineering, Seoul National University, Seoul, Korea (2007.03 ~ 2012.02)"
+      "Ph.D., Department of Electrical Engineering and Computer Science, Seoul National University, Seoul, Korea (2012.03 ~ 2019.08)",
+      "B.S., Department of Electrical Engineering, Seoul National University, Seoul, Korea (2007.03 ~ 2012.02)"
     ],
     "experience": [
-    "Assistant Professor, School of Electrical and Electronic Engineering, Yonsei University, Seoul, Korea (2026.03 ~ Present)",
-    "Assistant Professor, School of Electrical Engineering, Hanyang University, Ansan, Korea (2022.03 ~ 2026.02)",
-    "Post-Doctoral Research Scientist, Department of Electrical Engineering, Columbia University, New York, NY, USA (2020.10 ~ 2022.01)",
-    "Postdoctoral Researcher, Center for Nanotechnology, NASA Ames Research Center, Mountain View, CA, USA (2019.11 ~ 2020.10)",
-    "Postdoctoral Researcher, Inter-University Semiconductor Research Center, Seoul National University, Seoul, Korea (2019.04 ~ 2019.10)"
+      "Assistant Professor, School of Electrical and Electronic Engineering, Yonsei University, Seoul, Korea (2026.03 ~ Present)",
+      "Assistant Professor, School of Electrical Engineering, Hanyang University, Ansan, Korea (2022.03 ~ 2026.02)",
+      "Post-Doctoral Research Scientist, Department of Electrical Engineering, Columbia University, New York, NY, USA (2020.10 ~ 2022.01)",
+      "Postdoctoral Researcher, Center for Nanotechnology, NASA Ames Research Center, Mountain View, CA, USA (2019.11 ~ 2020.10)",
+      "Postdoctoral Researcher, Inter-University Semiconductor Research Center, Seoul National University, Seoul, Korea (2019.04 ~ 2019.10)"
     ],
-    "_research_interests": [
-      "High-Speed Interface Design",
+    "research_interests": [
+      ">100-Gb/s High-Speed SERDES Design (DSP-based, ADC/DAC-based)",
+      "Optical Transceiver",
       "Phase-Locked Loop (PLL) and Clock and Data Recovery (CDR) Circuits",
       "Injection-Locked Oscillator (ILO)",
-      "Neuromorphic Computing",
-      "In-Memory Computing (IMC)",
-      "Processing-In-Memory (PIM)",
-      "Optical Transceiver",
+      "In-Memory Computing (IMC), Processing-In-Memory (PIM)",
+      "HW/SW Co-design for Digital AI System",
       "Script-Based Design/Measurement Automation"
+    ],
+    "academic_services": [
+      "Senior Member, IEEE (2025.03 ~ Present)",
+      "상임이사, 대한전자공학회 (2025.01 ~ Present)",
+      "Reviewer, 200+ Verified Reviews — IEEE JSSC, TCAS-I, TCAS-II, TCAD, TVLSI, OJCAS, T-SIPI, SSC-L, IEEE Access, etc.",
+      "Technical Program Committee — ASP-DAC 2024, ICEIC 2024, ISOCC 2022/2023, IEIE Summer Annual Conference 2023"
     ],
     "achievements": [],
     "biography": "Min-Seong Choo (Senior Member, IEEE) received the B.S. and Ph.D. degrees in electrical and computer engineering from Seoul National University, Seoul, Korea, in 2012 and 2019, respectively. \n In 2019, he was a Post-Doctoral Researcher with the Inter-University Semiconductor Research Center, Seoul National University. From 2019 to 2020, he was a Research Scholar with the Center for Nanotechnology, NASA Ames Research Center, Moffett Field, CA, USA. From 2020 to 2022, he was a Post-Doctoral Research Scientist with Columbia University, New York, NY, USA. He was also an Assistant Professor with the School of Electrical Engineering, Hanyang University, Ansan, South Korea, from 2022 to 2026. Since 2026, he has been an Assistant Professor with the Department of Electrical and Electronic Engineering, Yonsei University, Seoul, South Korea. His research interests include high-speed transceiver (TRX), DSP-based TRX, optical interface, phase-locked loops (PLL), clock and data recovery (CDR), injection-locked oscillator (ILO), memory system architecture, in-memory computing (IMC). Dr. Choo has served as a Reviewer for various journals, including the IEEE JOURNAL OF SOLID-STATE CIRCUITS, the IEEE TRANSACTIONS ON CIRCUITS AND SYSTEMS I: REGULAR PAPERS, the IEEE TRANSACTIONS ON CIRCUITS AND SYSTEMS II: EXPRESS BRIEFS, the IEEE TRANSACTIONS ON VERY LARGE SCALE INTEGRATION SYSTEMS, the IEEE TRANSACTIONS ON COMPUTER-AIDED DESIGN OF INTEGRATED CIRCUITS AND SYSTEMS, and the IEEE ACCESS.",

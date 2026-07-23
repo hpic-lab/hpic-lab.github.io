@@ -265,11 +265,12 @@ $(document).ready(function () {
       person.Awards,
       person.affiliation,
       person.program_period,
-      links
+      links,
+      person.academic_services
     );
   });
 
-  function updateModalContent(name, profile_img, biography, email, position, research_interests, education, publication, experience, tape_out_schedule, Awards, affiliation, program_period, links) {
+  function updateModalContent(name, profile_img, biography, email, position, research_interests, education, publication, experience, tape_out_schedule, Awards, affiliation, program_period, links, academic_services) {
     $("#modal-name").text(name);
     
     if (profile_img) {
@@ -312,6 +313,17 @@ $(document).ready(function () {
         // 내용이 없으면 제목과 리스트 모두 화면에서 숨김 처리
         $("#modal-research_interests-title").hide();
         $("#modal-research_interests").hide();
+    }
+
+    // Academic Services (CV 기반, PI 전용 — 데이터가 없으면 숨김)
+    const parsed_services = parseData(academic_services);
+    if (parsed_services.length > 0) {
+        $("#modal-academic_services-title").show();
+        $("#modal-academic_services").show();
+        updateList("#modal-academic_services", parsed_services, "");
+    } else {
+        $("#modal-academic_services-title").hide();
+        $("#modal-academic_services").hide();
     }
 
     const parsed_education = parseData(education);
@@ -392,7 +404,17 @@ $(document).ready(function () {
     const list = $(selector);
     list.empty();
     if (items.length > 0) {
-      items.forEach((item) => list.append(`<li>${item}</li>`));
+      items.forEach((item) => {
+        // CV 스타일: 끝의 "(2012.03 ~ 2019.08)" / "(2026.03 ~ Present)" 기간을 오른쪽 정렬
+        const m = typeof item === "string"
+          ? item.match(/^(.*?)\s*\((\d{4}\.\d{2}\s*~\s*(?:\d{4}\.\d{2}|Present))\)\s*$/)
+          : null;
+        if (m) {
+          list.append(`<li><span class="cv-line"><span>${m[1]}</span><span class="cv-date">${m[2]}</span></span></li>`);
+        } else {
+          list.append(`<li>${item}</li>`);
+        }
+      });
     } else {
       list.append(`<li>${emptyMessage}</li>`);
     }

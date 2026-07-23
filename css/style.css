@@ -1258,6 +1258,57 @@ nav#navbar-main .navbar-collapse {
   text-align: center;
 }
 
+/* ========================================= */
+/* 프로필 모달 CV형 레이아웃: 사진 상단 중앙 + 아래 섹션 */
+/* ========================================= */
+#exampleModal .profile-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+#exampleModal .profile-left .portrait {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+#exampleModal .portrait-title h2 {
+  margin-top: 12px;
+}
+
+#exampleModal .profile-right {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+/* 섹션 제목: CV 헤더처럼 밑줄 */
+#exampleModal .profile-right p span {
+  display: block;
+  font-size: 1.08rem;
+  border-bottom: 2px solid #e8e8e8;
+  padding-bottom: 4px;
+  margin-top: 20px;
+  margin-right: 0;
+}
+
+/* 항목 끝 기간을 오른쪽 정렬 (CV 스타일) */
+#exampleModal .cv-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 14px;
+}
+
+#exampleModal .cv-date {
+  color: #888;
+  white-space: nowrap;
+  font-size: 0.95em;
+}
+
 /* News 논문 제목 하이퍼링크 (기본은 본문색, 호버 시 파란색) */
 .news-list .news-title-link {
   color: inherit;
