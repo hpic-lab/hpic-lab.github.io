@@ -1,6 +1,55 @@
 [
   {
     "year": "2026",
+    "month": "09",
+    "category": "News",
+    "text": "<u>Do-Hyeong</u> joined HPIC Lab as an M.S.-Ph.D. student. Welcome!",
+    "links": []
+  },
+  {
+    "year": "2026",
+    "month": "09",
+    "category": "News",
+    "text": "<u>Chang-Hui</u> joined HPIC Lab as an M.S.-Ph.D. student. Welcome!",
+    "links": []
+  },
+  {
+    "year": "2026",
+    "month": "09",
+    "category": "News",
+    "text": "<u>Han-Gang</u> joined HPIC Lab as an M.S.-Ph.D. student. Welcome!",
+    "links": []
+  },
+  {
+    "year": "2026",
+    "month": "09",
+    "category": "News",
+    "text": "<u>Seung-Min</u> joined HPIC Lab as an M.S.-Ph.D. student. Welcome!",
+    "links": []
+  },
+  {
+    "year": "2026",
+    "month": "09",
+    "category": "News",
+    "text": "<u>Suk-Min</u> joined HPIC Lab as an M.S. student. Welcome!",
+    "links": []
+  },
+  {
+    "year": "2026",
+    "month": "09",
+    "category": "News",
+    "text": "<u>Ju-Yong</u> joined HPIC Lab as an M.S. student. Welcome!",
+    "links": []
+  },
+  {
+    "year": "2026",
+    "month": "09",
+    "category": "News",
+    "text": "<u>Jun-gyu</u> joined HPIC Lab as an M.S. student. Welcome!",
+    "links": []
+  },
+  {
+    "year": "2026",
     "month": "04",
     "category": "Grant",
     "text": "<u>HPIC Lab</u> was selected for the \"200+ Gbps-Class Next-Generation Ultra-High-Speed Interface Semiconductor Design Technologies\" project, sponsored by the Ministry of Trade, Industry and Energy (MOTIE).",
@@ -97,6 +146,20 @@
     "month": "03",
     "category": "News",
     "text": "<u>Min-Seong</u> has been appointed to the School of Electrical and Electronic Engineering at Yonsei University.",
+    "links": []
+  },
+  {
+    "year": "2026",
+    "month": "02",
+    "category": "News",
+    "text": "<u>Dong-Hyun</u> graduated with an M.S. degree. Congratulations!",
+    "links": []
+  },
+  {
+    "year": "2026",
+    "month": "02",
+    "category": "News",
+    "text": "<u>Sang-Hyeon</u> graduated with an M.S. degree. Congratulations!",
     "links": []
   },
   {
@@ -403,6 +466,13 @@
   },
   {
     "year": "2025",
+    "month": "08",
+    "category": "News",
+    "text": "<u>Dong-Hoe</u> graduated with an M.S. degree. Congratulations!",
+    "links": []
+  },
+  {
+    "year": "2025",
     "month": "07",
     "category": "Conference",
     "text": "\"Analysis of Adaptive Learning Rate Strategies for Sign-Sign LMS: Stability and Speed\" has been accepted at the <b>ITC-CSCC</b>. Congratulations!",
@@ -619,6 +689,69 @@
   },
   {
     "year": "2025",
+    "month": "03",
+    "category": "News",
+    "text": "<u>So-Yeon</u> joined HPIC Lab as an M.S. student. Welcome!",
+    "links": []
+  },
+  {
+    "year": "2025",
+    "month": "03",
+    "category": "News",
+    "text": "<u>Jae-Geon</u> joined HPIC Lab as an M.S. student. Welcome!",
+    "links": []
+  },
+  {
+    "year": "2025",
+    "month": "03",
+    "category": "News",
+    "text": "<u>Seung-Mo</u> joined HPIC Lab as an M.S. student. Welcome!",
+    "links": []
+  },
+  {
+    "year": "2025",
+    "month": "03",
+    "category": "News",
+    "text": "<u>Seol-Hyeon</u> joined HPIC Lab as an M.S. student. Welcome!",
+    "links": []
+  },
+  {
+    "year": "2025",
+    "month": "03",
+    "category": "News",
+    "text": "<u>Dong-Eon</u> joined HPIC Lab as an M.S. student. Welcome!",
+    "links": []
+  },
+  {
+    "year": "2025",
+    "month": "02",
+    "category": "News",
+    "text": "<u>Kang-Min</u> graduated with an M.S. degree. Congratulations!",
+    "links": []
+  },
+  {
+    "year": "2025",
+    "month": "02",
+    "category": "News",
+    "text": "<u>Kyu-Ran</u> graduated with an M.S. degree. Congratulations!",
+    "links": []
+  },
+  {
+    "year": "2025",
+    "month": "02",
+    "category": "News",
+    "text": "<u>Shin-Uk</u> graduated with an M.S. degree. Congratulations!",
+    "links": []
+  },
+  {
+    "year": "2025",
+    "month": "02",
+    "category": "News",
+    "text": "<u>Ji-Ho</u> graduated with an M.S. degree. Congratulations!",
+    "links": []
+  },
+  {
+    "year": "2025",
     "month": "01",
     "category": "Award",
     "text": "<u>Sang-Hyeon</u> received the Best Paper Award (Silver Prize) at ICEIC 2025.",
@@ -678,6 +811,13 @@
   },
   {
     "year": "2024",
+    "month": "09",
+    "category": "News",
+    "text": "<u>Jae-Hyeon</u> joined HPIC Lab as an M.S. student. Welcome!",
+    "links": []
+  },
+  {
+    "year": "2024",
     "month": "08",
     "category": "Conference",
     "text": "\"A 14-to-32-Gb/s Deadzone-Free Referenceless CDR with Autocovariance-based Frequency Detector in 40-nm CMOS Technology\" has been accepted at the <b>IEEE A-SSCC</b>. Congratulations!",
@@ -720,6 +860,34 @@
   },
   {
     "year": "2024",
+    "month": "03",
+    "category": "News",
+    "text": "<u>Seung-Hwan</u> joined HPIC Lab as an M.S. student. Welcome!",
+    "links": []
+  },
+  {
+    "year": "2024",
+    "month": "03",
+    "category": "News",
+    "text": "<u>Hyeon-Seo</u> joined HPIC Lab as an M.S. student. Welcome!",
+    "links": []
+  },
+  {
+    "year": "2024",
+    "month": "03",
+    "category": "News",
+    "text": "<u>Dong-Hyun</u> joined HPIC Lab as an M.S. student. Welcome!",
+    "links": []
+  },
+  {
+    "year": "2024",
+    "month": "03",
+    "category": "News",
+    "text": "<u>Sang-Hyeon</u> joined HPIC Lab as an M.S. student. Welcome!",
+    "links": []
+  },
+  {
+    "year": "2024",
     "month": "01",
     "category": "Award",
     "text": "<u>Dong-Hoe</u> received the Best Paper Award (Silver Prize) at ICEIC 2024.",
@@ -753,6 +921,62 @@
     "month": "11",
     "category": "Service",
     "text": "<u>Min-Seong</u> served on the Technical Program Committee for ISOCC 2023.",
+    "links": []
+  },
+  {
+    "year": "2023",
+    "month": "09",
+    "category": "News",
+    "text": "<u>Dong-Ho</u> joined HPIC Lab as an M.S. student. Welcome!",
+    "links": []
+  },
+  {
+    "year": "2023",
+    "month": "03",
+    "category": "News",
+    "text": "<u>In-Ho</u> joined HPIC Lab as an M.S. student. Welcome!",
+    "links": []
+  },
+  {
+    "year": "2023",
+    "month": "03",
+    "category": "News",
+    "text": "<u>Joon-Seok</u> joined HPIC Lab as an M.S. student. Welcome!",
+    "links": []
+  },
+  {
+    "year": "2023",
+    "month": "03",
+    "category": "News",
+    "text": "<u>Dong-Hoe</u> joined HPIC Lab as an M.S. student. Welcome!",
+    "links": []
+  },
+  {
+    "year": "2023",
+    "month": "03",
+    "category": "News",
+    "text": "<u>Kang-Min</u> joined HPIC Lab as an M.S. student. Welcome!",
+    "links": []
+  },
+  {
+    "year": "2023",
+    "month": "03",
+    "category": "News",
+    "text": "<u>Kyu-Ran</u> joined HPIC Lab as an M.S. student. Welcome!",
+    "links": []
+  },
+  {
+    "year": "2023",
+    "month": "03",
+    "category": "News",
+    "text": "<u>Shin-Uk</u> joined HPIC Lab as an M.S. student. Welcome!",
+    "links": []
+  },
+  {
+    "year": "2022",
+    "month": "09",
+    "category": "News",
+    "text": "<u>Ji-Ho</u> joined HPIC Lab as an M.S. student. Welcome!",
     "links": []
   },
   {
