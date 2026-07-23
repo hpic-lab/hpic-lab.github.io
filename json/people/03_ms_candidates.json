@@ -1,7 +1,7 @@
 [
   {
     "name": "Jae-Hyeon Pyeon",
-    "tag": "PLL",
+    "tag": "Phase-Locked Loop",
     "research_interests": [
       "High-performance DPLL"
     ],
@@ -71,7 +71,8 @@
     "email": "inho0303@hanyang.ac.kr",
     "profile_img": "img/ih-han-profile-img.jpg",
     "position": "",
-    "cv": "https://drive.google.com/file/d/1YalveNStnhNMOz_vrlERhe6yrfSEJqPg/view?usp=drive_link"
+    "cv": "https://drive.google.com/file/d/1YalveNStnhNMOz_vrlERhe6yrfSEJqPg/view?usp=drive_link",
+    "tag": "Phase-Locked Loop"
   },
   {
     "name": "Seung-Hwan Gong",
