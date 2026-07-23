@@ -1471,6 +1471,75 @@ nav#navbar-main .navbar-collapse {
   font-size: 0.95em;
 }
 
+/* Education / Experience 타임라인 (시안1) */
+#exampleModal .ul-education,
+#exampleModal .ul-experience {
+  list-style: none;
+  padding-left: 0;
+  margin: 8px 0 0 5px;
+  border-left: 2px solid #B5D4F4;
+}
+
+#exampleModal .tl-item {
+  position: relative;
+  padding: 0 0 16px 18px;
+}
+
+#exampleModal .tl-item:last-child {
+  padding-bottom: 2px;
+}
+
+#exampleModal .tl-dot {
+  position: absolute;
+  left: -6px;
+  top: 5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #378ADD;
+  border: 2px solid #fff;
+}
+
+#exampleModal .tl-item:not(:first-child) .tl-dot {
+  background: #85B7EB;
+}
+
+#exampleModal .tl-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+}
+
+#exampleModal .tl-title {
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+#exampleModal .tl-date {
+  color: #999;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+#exampleModal .tl-inst {
+  color: #666;
+  font-size: 0.95rem;
+  margin-top: 1px;
+}
+
+/* 모바일: 기간을 아래줄로 */
+@media (max-width: 576px) {
+  #exampleModal .tl-row {
+    flex-wrap: wrap;
+    gap: 1px 10px;
+  }
+  #exampleModal .tl-date {
+    flex-basis: 100%;
+    order: 3;
+  }
+}
+
 /* News → Publications 이동 시 대상 항목 잠깐 강조 */
 .pub2-entry-flash {
   animation: pub2Flash 1.6s ease;

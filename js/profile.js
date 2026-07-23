@@ -338,13 +338,13 @@ $(document).ready(function () {
     }
 
     const parsed_education = parseData(education);
-    updateList("#modal-education", parsed_education, "No education available.");
+    renderTimeline("#modal-education", parsed_education, "No education available.");
 
     const parsed_experience = parseData(experience);
     if (parsed_experience.length > 0) {
         $("#modal-experience-title").show();
         $("#modal-experience").show();
-        updateList("#modal-experience", parsed_experience, "");
+        renderTimeline("#modal-experience", parsed_experience, "");
     } else {
         // 내용이 없으면 제목과 리스트 모두 화면에서 숨김 처리
         $("#modal-experience-title").hide();
@@ -476,6 +476,49 @@ $(document).ready(function () {
       try { return JSON.parse(data); } catch (e) { return []; }
     }
     return [];
+  }
+
+  // Education/Experience 한 줄을 학위·기관·기간으로 분해
+  function parseCVEntry(str) {
+    var s = String(str).trim();
+    var period = "";
+    var m = s.match(/\(([^()]*[~–-][^()]*)\)\s*$/);
+    if (m) {
+      period = m[1].trim().replace(/\s*~\s*/, " – ");
+      s = s.slice(0, m.index).trim().replace(/,\s*$/, "");
+    }
+    var parts = s.split(",").map(function (x) { return x.trim(); }).filter(Boolean);
+    var kw = /(University|Institute|College|Center|Research|Corp|Inc|Semiconductor|Electronics|Labs?|Company|Univ|대학교|연구소|연구원)/i;
+    var instIdx = -1;
+    for (var i = 1; i < parts.length; i++) { if (kw.test(parts[i])) { instIdx = i; break; } }
+    if (instIdx === -1) instIdx = parts.length >= 2 ? 1 : -1;
+    var title, inst;
+    if (instIdx >= 1) { title = parts.slice(0, instIdx).join(", "); inst = parts[instIdx]; }
+    else { title = parts.join(", "); inst = ""; }
+    return { title: title, inst: inst, period: period };
+  }
+
+  // 타임라인(시안1) 렌더링 — 학위/직함(굵게) + 기관(회색) + 기간(우측)
+  function renderTimeline(selector, items, emptyMessage) {
+    var $el = $(selector);
+    $el.empty();
+    if (!items || items.length === 0) {
+      if (emptyMessage) $el.append('<li class="tl-item"><div class="tl-row"><span class="tl-title">' + emptyMessage + "</span></div></li>");
+      return;
+    }
+    items.forEach(function (it) {
+      var e = parseCVEntry(it);
+      $el.append(
+        '<li class="tl-item">' +
+          '<span class="tl-dot"></span>' +
+          '<div class="tl-row">' +
+            '<span class="tl-title">' + e.title + "</span>" +
+            (e.period ? '<span class="tl-date">' + e.period + "</span>" : "") +
+          "</div>" +
+          (e.inst ? '<div class="tl-inst">' + e.inst + "</div>" : "") +
+        "</li>"
+      );
+    });
   }
 
   function updateList(selector, items, emptyMessage) {
