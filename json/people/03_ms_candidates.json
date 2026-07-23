@@ -3,7 +3,7 @@
     "name": "Jae-Hyeon Pyeon",
     "tag": "Phase-Locked Loop",
     "research_interests": [
-      "High-performance DPLL"
+      "Phase-Locked Loop"
     ],
     "tape_out_schedule": [
       {
@@ -40,7 +40,7 @@
       "B.S., Department of Applied Physics, Hanyang University, Ansan, Korea (2019.03 ~ 2025.02)"
     ],
     "research_interests": [
-      "Digital PIM"
+      ">100G CIM-based Transmitter"
     ],
     "publication": [
       "S.-Y. Kwon, D.-H. Lee, S.-H. Kim, and Min-Seong Choo, Comparison of 3T2C Embedded DRAM in 28nm FD-SOI and Low Power Plus for Energy-Efficient Computing in Memory Architecture, IDEC Journal of Integrated Circuits and Systems (JICAS), 12(2), 1-5. <a href='https://jicas.idec.or.kr/index.php/JICAS/article/view/350' target='_blank' rel='noopener noreferrer' class='news-link'>[Paper]</a>"
@@ -54,7 +54,7 @@
   {
     "name": "In-Ho Han",
     "research_interests": [
-      "PLL"
+      "Phase-Locked Loop"
     ],
     "education": [
       "M.S., School of Electrical Engineering, Hanyang University (2023.03 ~ Present)",
@@ -78,7 +78,7 @@
     "name": "Seung-Hwan Gong",
     "tag": ">100G Receiver (CDR)",
     "research_interests": [
-      "CDR, DSP-based Receiver"
+      ">100G Receiver (CDR)"
     ],
     "tape_out_schedule": [
       {
@@ -103,7 +103,7 @@
     "name": "Dong-Ho Kim",
     "tag": ">100G DSP-based Transmitter",
     "research_interests": [
-      "DSP-based Transmitter"
+      ">100G DSP-based Transmitter"
     ],
     "tape_out_schedule": [
       {
@@ -129,7 +129,7 @@
     "name": "Jae-Geon Lee",
     "tag": ">100G DSP-based Receiver",
     "research_interests": [
-      "DSP-based Receiver"
+      ">100G DSP-based Receiver"
     ],
     "tape_out_schedule": [
       {
@@ -166,7 +166,7 @@
     "name": "Seung-Mo Jin",
     "tag": ">100G DSP-based Transmitter",
     "research_interests": [
-      "DSP-based Transmitter"
+      ">100G DSP-based Transmitter"
     ],
     "tape_out_schedule": [
       {
@@ -219,7 +219,7 @@
     "name": "Hyeon-Seo Kim",
     "tag": "Time-Domain ADC",
     "research_interests": [
-      "Analog Digital Converter (ADC)"
+      "Time-Domain ADC"
     ],
     "Awards": [],
     "education": [
@@ -235,7 +235,7 @@
     "name": "Seol-Hyeon Kim",
     "tag": "AI Accelerator",
     "research_interests": [
-      "AI hardware design and PIM"
+      "AI Accelerator"
     ],
     "education": [
       "M.S., School of Electrical Engineering, Hanyang University (2025.03 ~ Present)",
@@ -251,7 +251,7 @@
     "name": "Dong-Eon Jin",
     "tag": "Time-Interleaving ADC",
     "research_interests": [
-      "Analog Digital Converter (ADC)"
+      "Time-Interleaving ADC"
     ],
     "education": [
       "M.S., School of Electrical Engineering, Hanyang University (2025.03 ~ Present)",
@@ -267,7 +267,7 @@
     "name": "Joon-Seok Kwon",
     "tag": ">100G DSP-based Receiver",
     "research_interests": [
-      "Wireline Interface"
+      ">100G DSP-based Receiver"
     ],
     "education": [
       "M.S., School of Electrical Engineering, Hanyang University (2023.03 ~ Present)",
@@ -290,7 +290,7 @@
       "B.S., School of Electrical Engineering, Yeungnam University, Gyeongsan, Korea (2019.03 ~ 2025.08)"
     ],
     "research_interests": [
-      "PiM"
+      "KWS AI Accelerator"
     ],
     "biography": "Suk-Min Yoon received a B.S. degree in electrical engineering from Yeungnam University, Gyeongsan, South Korea. He is currently pursuing an M.S. degree in the school of electrical and electronic engineering at Yonsei University, Seoul, South Korea. His research interests include analog and digital circuit designs of Processing In Memory(PIM).",
     "Awards": [],
@@ -306,7 +306,7 @@
       "B.S., School of Electrical Engineering, Gachon University, Seongnam, Korea (2021.03 ~ 2025.02)"
     ],
     "research_interests": [
-      "Wireline Interface"
+      ">100G Optical Receiver"
     ],
     "Awards": [],
     "biography": "Ju-Yong Lee received a B.S. degree in electrical engineering from Gachon University, Sungnam, South Korea. He is currently pursuing an M.S. degree in the school of electrical and electronic engineering at Yonsei University, Seoul, South Korea. His research interests include Wireline Interface.",
