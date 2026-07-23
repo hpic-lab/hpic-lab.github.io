@@ -17,6 +17,7 @@ $(document).ready(function () {
         title:
           "유기발광 디스플레이 전문인력양성",
         sponsor: "Korea Display Industry Association",
+        status: "Completed",
       },
       {
         date: "May 2025 - Apr. 2026",
@@ -62,6 +63,7 @@ $(document).ready(function () {
         date: "Mar. 2022 - Aug. 2027",
         title: "BK21 (고신뢰성 에너지용 지능형 시스템반도체 교육연구단)",
         sponsor: "Ministry of Education",
+        status: "Completed",
       },
       {
         date: "Mar. 2022 - Dec. 2025",
