@@ -2099,6 +2099,7 @@ section {
 .home-description-container .uni {
   width: fit-content;
   letter-spacing: 0.5px;
+  font-size: 20px;
 }
 
 .home-description-container h1 {
@@ -2114,7 +2115,8 @@ section {
   width: fit-content;
   margin-top: 12px;
   letter-spacing: 0.5px;
-  font-size: 16px;
+  font-size: 20px;
+  line-height: 1.7;
 }
 
 /* ========================================= */
