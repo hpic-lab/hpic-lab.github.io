@@ -147,7 +147,38 @@ $(document).ready(function () {
 
       sidebar.on("click", ".news-cat-chip", function () {
         applyNewsFilter($(this).data("cat"));
+        setTimeout(updateActiveNewsYear, 50);
       });
+
+      // ===== 스크롤 위치의 연도를 사이드바에서 강조 =====
+      function updateActiveNewsYear() {
+        var headers = container.find(".news-accordion:visible .ui-accordion-header");
+        if (!headers.length) return;
+        var threshold = $(window).scrollTop() + 110;
+        var current = null;
+        headers.each(function () {
+          if ($(this).offset().top <= threshold) current = this;
+        });
+        if (!current) current = headers[0];
+        var year = $(current).attr("id");
+        sidebar.find(".news-year-link").removeClass("active");
+        if (year) sidebar.find('.news-year-link[data-year="' + year + '"]').addClass("active");
+      }
+
+      var newsTick = false;
+      $(window).on("scroll resize", function () {
+        if (!newsTick) {
+          requestAnimationFrame(function () {
+            updateActiveNewsYear();
+            newsTick = false;
+          });
+          newsTick = true;
+        }
+      });
+      container.on("accordionactivate", function () {
+        setTimeout(updateActiveNewsYear, 350);
+      });
+      updateActiveNewsYear();
     }
 
     // [Photo] 클릭 → 이미지 라이트박스 (빈 곳 클릭 또는 ESC로 닫기)
