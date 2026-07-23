@@ -310,7 +310,7 @@
     "title": "An Implementation of a DSP-Based PAM-4 Digital Equalizer with 32-Way TI-ADC",
     "image": "",
     "conference": "IEEE/IEIE ICEIC 2025",
-    "reference": "<i>2025 International Conference on Electronics, Information, and Communication (ICEIC)</i>, pp. 1-4, 2025. ",
+    "reference": "<i>International Conference on Electronics, Information, and Communication (ICEIC)</i>, Jan. 2025.",
     "authors": [
       "S.-H. Ok",
       "D.-H. Heo",
@@ -360,7 +360,7 @@
     "title": "A 2T1C eDRAM-based Compute-In-Memory Macro with 8-to-1 Column Multiplexing Scheme for Highly Sparse Binarized Deep Neural Networks",
     "image": "",
     "conference": "IEEE/ISE ISOCC 2024",
-    "reference": "<i>2024 21st International SoC Design Conference (ISOCC)</i>, pp. 177-178, 2024.",
+    "reference": "<i>21st International SoC Design Conference (ISOCC)</i>, pp. 177-178, 2024.",
     "authors": [
       "S.-U. Kang",
       "S.-M. Jin",
@@ -425,7 +425,7 @@
     "title": "Analysis of ADC Quantization Effect in Processing-In-Memory Macro in Various Low-Precision Deep Neural Networks",
     "image": "",
     "conference": "IEEE/IEIE ICEIC 2024",
-    "reference": "<i>2024 International Conference on Electronics, Information, and Communication (ICEIC)</i>, pp. 1-2, 2024.",
+    "reference": "<i>International Conference on Electronics, Information, and Communication (ICEIC)</i>, Jan. 2024.",
     "authors": [
       "S.-M. Jin",
       "S.-U. Kang",
@@ -444,7 +444,7 @@
     "title": "Hardware and Software Co-Simulation Methodology for Processing-in-Memory Bitcell Application ",
     "image": "",
     "conference": "IEEE/IEIE ICEIC 2024",
-    "reference": "<i>2024 International Conference on Electronics, Information, and Communication (ICEIC)</i>, pp. 1-2, 2024.",
+    "reference": "<i>International Conference on Electronics, Information, and Communication (ICEIC)</i>, Jan. 2024.",
     "authors": [
       "J.-G. Lee",
       "S.-U. Kang",
@@ -464,7 +464,7 @@
     "title": "An Analysis of 32-Gb/s and Full-Rate Phase Interpolator based Clock and Data Recovery",
     "image": "",
     "conference": "IEEE/IEIE ICEIC 2024",
-    "reference": "<i>2024 International Conference on Electronics, Information, and Communication (ICEIC)</i>, pp. 1-4, 2024.",
+    "reference": "<i>International Conference on Electronics, Information, and Communication (ICEIC)</i>, Jan. 2024.",
     "authors": [
       "D.-H. Heo",
       "T.-H. Kim",
@@ -608,7 +608,7 @@
     "title": "Direct Phase Control in Digital Phase-Locked Loop Mitigating Loop Delay Effect inside Digital Filter",
     "image": "",
     "conference": "IEEE/IEIE ICEIC 2023",
-    "reference": "<i>2023 International Conference on Electronics, Information, and Communication (ICEIC)</i>, pp. 1-2, 2023.",
+    "reference": "<i>International Conference on Electronics, Information, and Communication (ICEIC)</i>, Jan. 2023.",
     "authors": [
       "I.-W. Jang",
       "and Min-Seong Choo"
@@ -625,7 +625,7 @@
     "title": "Radiation-Hardened Processing-In-Memory Crossbar Array With Hybrid Synapse Devices for Space Application",
     "image": "",
     "conference": "IEEE/IEIE ICEIC 2023",
-    "reference": "<i>2023 International Conference on Electronics, Information, and Communication (ICEIC)</i>, pp. 1-4, 2023.",
+    "reference": "<i>International Conference on Electronics, Information, and Communication (ICEIC)</i>, Jan. 2023.",
     "authors": [
       "Shin-Uk Kang",
       "Jin-Woo Han",
@@ -743,7 +743,7 @@
     "title": "A Theoretical Analysis of Phase Shift in Pulse Injection-Locked Oscillators",
     "image": "img/c2.png",
     "conference": "IEEE International Symposium on Circuits and Systems (ISCAS)",
-    "reference": "<i>2016 IEEE International Symposium on Circuits and Systems (ISCAS)</i>, pp. 1662-1665, 2016.",
+    "reference": "<i>IEEE International Symposium on Circuits and Systems (ISCAS)</i>, pp. 1662-1665, 2016.",
     "authors": [
       "Jinhyung Lee",
       "Sungwoo Kim",
