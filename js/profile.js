@@ -461,14 +461,9 @@ $(document).ready(function () {
         $("#modal-affiliation").hide();
     }
 
-    if (program_period) {
-        $("#modal-program_period").text(program_period);
-        $("#modal-program_period-title").show();
-        $("#modal-program_period").show();
-    } else {
-        $("#modal-program_period-title").hide();
-        $("#modal-program_period").hide();
-    }
+    // Program (Period)은 Education에 이미 표시되므로 사용하지 않음
+    $("#modal-program_period-title").hide();
+    $("#modal-program_period").hide();
   }
 
   function parseData(data) {
