@@ -1,49 +1,62 @@
-[ {
+[
+  {
     "name": "Do-Hyeong Lee",
-    "tag": "Memory IF",
+    "tag": "Memory Interface & Optical RX",
     "education": [
-    "B.S., Department of Electrical Engineering, Hanyang University, Ansan, Korea (2020.03 ~ 2026.02)"
+      "B.S., Department of Electrical Engineering, Hanyang University, Ansan, Korea (2020.03 ~ 2026.02)"
     ],
-    "research_interests": ["Referenceless CDR"],
+    "research_interests": [
+      "Referenceless CDR"
+    ],
     "tape_out_schedule": [],
-    "publication": ["D.-H. Lee, D.-H. Heo, S.-H. Ok, S.-H. Gong, and Min-Seong Choo, Low-Complexity Referenceless Clock and Data Recovery with a Novel Alexander Phase-Frequency Detector, IDEC Journal of Integrated Circuits and Systems (JICAS), 12(2), 40-46. <a href='https://jicas.idec.or.kr/index.php/JICAS/article/view/349' target='_blank' rel='noopener noreferrer' class='news-link'>[Paper]</a>"],
-    "Awards": ["2024 SCCUD 포스터 발표 최우수상"],
+    "publication": [
+      "D.-H. Lee, D.-H. Heo, S.-H. Ok, S.-H. Gong, and Min-Seong Choo, Low-Complexity Referenceless Clock and Data Recovery with a Novel Alexander Phase-Frequency Detector, IDEC Journal of Integrated Circuits and Systems (JICAS), 12(2), 40-46. <a href='https://jicas.idec.or.kr/index.php/JICAS/article/view/349' target='_blank' rel='noopener noreferrer' class='news-link'>[Paper]</a>"
+    ],
+    "Awards": [
+      "2024 SCCUD 포스터 발표 최우수상"
+    ],
     "biography": "Do-Hyeong Lee received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. He is currently pursuing a Ph.D. integrated degree in the department of intelligent display engineering at Yonsei University, Seoul, South Korea. His research interests include analog and digital circuit designs of clock and data recovery (CDR).",
     "email": "zkoms2134@hanyang.ac.kr",
     "profile_img": "img/dh_lee_bs_profile_image.jpg",
     "position": ""
- },
+  },
   {
     "name": "Chang-Hui Oh",
     "education": [
-    "B.S., Department of Electrical Engineering, Incheon National University, Incheon, Korea (2021.03 ~ 2026.08)"
+      "B.S., Department of Electrical Engineering, Incheon National University, Incheon, Korea (2021.03 ~ 2026.08)"
     ],
-    "research_interests": ["Wireline Interface"],
+    "research_interests": [
+      "Wireline Interface"
+    ],
     "biography": "Chang-Hui Oh received a B.S. degree in the school of electrical engineering at Incheon National University, Incheon, South Korea. He is currently pursuing a Ph.D. integrated degree in the department of intelligent display engineering at Yonsei University, Seoul, South Korea. His research interests include Wireline Interface.",
     "email": "topsj90@inu.ac.kr",
     "profile_img": "img/ch_oh_profile_image.jpg",
     "position": ""
- },
- {
+  },
+  {
     "name": "Han-Gang Cho",
     "education": [
-    "B.S., School of Electrical and Electronics Engineering, Chung-ang University, Seoul, Korea (2020.03 ~ 2026.08)"
+      "B.S., School of Electrical and Electronics Engineering, Chung-ang University, Seoul, Korea (2020.03 ~ 2026.08)"
     ],
-    "research_interests": ["Wireline Interface"],
+    "research_interests": [
+      "Wireline Interface"
+    ],
     "biography": "Han-Gang Cho received a B.S. degree in the school of electrical engineering at Chung-ang University, Seoul, South Korea. He is currently pursuing a Ph.D. integrated degree in the department of intelligent display engineering at Yonsei University, Seoul, South Korea. His research interests include Wireline Interface.",
     "email": " elalionhangang@gmail.com",
     "profile_img": "img/hg_cho_profile_image.png",
     "position": ""
- },
- {
+  },
+  {
     "name": "Seung-Min Yoo",
     "education": [
-    "B.S., School of Electronic and Electrical Engineering , HongIk university, Seoul, Korea (2023.03 - 2026.02)"
+      "B.S., School of Electronic and Electrical Engineering , HongIk university, Seoul, Korea (2023.03 - 2026.02)"
     ],
-    "research_interests": ["Wireline Interface"],
+    "research_interests": [
+      "Wireline Interface"
+    ],
     "biography": "Seung-Min Yoo received a B.S. degree in the  school of electronic and electrical engineering at HongIk university, Seoul, South Korea. He is currently pursuing a Ph.D. integrated degree in the department of intelligent display engineering at Yonsei University, Seoul, South Korea. His research interests include Wireline Interface.",
     "email": "  whiwoo.yoo@gmail.com",
     "profile_img": "img/sm_yoo_profile_image.jpeg",
     "position": ""
- }       
+  }
 ]
