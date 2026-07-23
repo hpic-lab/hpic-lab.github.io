@@ -84,10 +84,11 @@ $(document).ready(function () {
       prefix = "and ";
       s = s.replace(/^and\s+/i, "");
     }
-    var star = s.match(/\*+$/);
+    // 공동 1저자 표시: * 또는 † → † 로 통일하여 표시
+    var star = s.match(/[*†]+$/);
     if (star) {
-      suffix = star[0];
-      s = s.slice(0, s.length - suffix.length).trim();
+      suffix = "†";
+      s = s.slice(0, s.length - star[0].length).trim();
     }
     var key = s.replace(/\./g, "").replace(/\s+/g, " ").trim();
     return prefix + (NAME_MAP[key] || s) + suffix;
@@ -215,7 +216,7 @@ $(document).ready(function () {
     );
 
     container.append(
-      '<p class="pub2-notice">* Equally Credited Authors</p>' +
+      '<p class="pub2-notice">&dagger; Equally Credited Authors</p>' +
       '<div class="pub2-list" id="pub2-journal"></div>' +
       '<div class="pub2-list" id="pub2-conference" style="display:none"></div>' +
       '<div class="pub2-list" id="pub2-patent" style="display:none"></div>'
