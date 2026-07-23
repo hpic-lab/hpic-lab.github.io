@@ -72,6 +72,12 @@ h6 {
   margin-right: 4px;
 }
 
+/* 섹션 제목(People, Research 등)을 메뉴와 같은 굵기·색으로 통일 */
+.section-heading h1 {
+  font-weight: 700;
+  color: #222;
+}
+
 /* ===== 내비게이션 흰색 테마 ===== */
 nav#navbar-main {
   background: #fff !important;
