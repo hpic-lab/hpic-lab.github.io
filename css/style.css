@@ -1415,16 +1415,19 @@ nav#navbar-main .navbar-collapse {
   text-align: justify;
 }
 
-/* ===== Chip Gallery (시안3: 오버레이 캡션, 한 줄 4개) ===== */
+/* ===== Chip Gallery (시안3: 오버레이 캡션, 한 줄 4개, 가운데 정렬) ===== */
 #exampleModal .modal-chip-gallery {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 12px;
   margin-bottom: 8px;
 }
 
 #exampleModal .modal-chip-gallery .chip-card {
   margin: 0;
+  flex: 0 1 calc(25% - 9px);
+  max-width: calc(25% - 9px);
   position: relative;
   border-radius: 10px;
   overflow: hidden;
@@ -1437,6 +1440,7 @@ nav#navbar-main .navbar-collapse {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
   display: block;
 }
 
@@ -1473,8 +1477,9 @@ nav#navbar-main .navbar-collapse {
 }
 
 @media (max-width: 767px) {
-  #exampleModal .modal-chip-gallery {
-    grid-template-columns: repeat(2, 1fr);
+  #exampleModal .modal-chip-gallery .chip-card {
+    flex: 0 1 calc(50% - 6px);
+    max-width: calc(50% - 6px);
   }
 }
 
