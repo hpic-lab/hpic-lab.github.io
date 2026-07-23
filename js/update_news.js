@@ -41,7 +41,8 @@ $(document).ready(function () {
           curMonth = it.month;
           list.append('<div class="news-month">' + year + "." + it.month + "</div>");
         }
-        var c = CATEGORY[it.category] || CATEGORY["News"];
+        var catKey = CATEGORY[it.category] ? it.category : "News";
+        var c = CATEGORY[catKey];
         var links = (it.links || [])
           .map(function (l) {
             return ' <a href="' + l.url + '" target="_blank" rel="noopener noreferrer" class="news-link">[' + l.label + "]</a>";
@@ -50,7 +51,7 @@ $(document).ready(function () {
         // <u>이름</u> → 클릭 가능한 프로필 링크로 변환 (HPIC Lab 제외)
         var text = it.text.replace(/<u>(?!HPIC Lab<)(.*?)<\/u>/g, '<u class="news-member" title="View profile">$1</u>');
         list.append(
-          '<div class="news-item">' +
+          '<div class="news-item" data-cat="' + catKey + '">' +
             '<span class="news-badge" style="background:' + c.bg + ";color:" + c.fg + ';">' + c.label + "</span>" +
             '<p class="news-text">' + text + links + "</p>" +
           "</div>"
@@ -93,6 +94,55 @@ $(document).ready(function () {
           acc.accordion("option", "active", 0);
         }
         $("html, body").animate({ scrollTop: header.offset().top - 100 }, 200);
+      });
+
+      // ===== 카테고리 필터 (Grant / Journal / Award 등) =====
+      var catOrder = ["All", "Grant", "Journal", "Conference", "Award", "Patent", "Invited Talk", "Service", "News"];
+      var chipsHTML = catOrder
+        .map(function (key) {
+          var c = key === "All" ? { label: "All", bg: "#e9e9e9", fg: "#444" } : CATEGORY[key];
+          return '<span class="news-cat-chip' + (key === "All" ? " active" : "") + '" data-cat="' + key +
+            '" style="background:' + c.bg + ";color:" + c.fg + ";--cc:" + c.fg + ';">' + c.label + "</span>";
+        })
+        .join("");
+      sidebar.find(".news-cat-links").remove();
+      sidebar.append('<div class="news-cat-links">' + chipsHTML + "</div>");
+
+      function applyNewsFilter(cat) {
+        sidebar.find(".news-cat-chip").removeClass("active");
+        sidebar.find('.news-cat-chip[data-cat="' + cat + '"]').addClass("active");
+
+        // 항목 표시/숨김
+        container.find(".news-item").each(function () {
+          $(this).toggle(cat === "All" || $(this).data("cat") === cat);
+        });
+
+        // 표시 항목이 없는 월 구분선 숨김
+        container.find(".news-month").each(function () {
+          var visible = $(this).nextUntil(".news-month", ".news-item").filter(function () {
+            return $(this).css("display") !== "none";
+          }).length > 0;
+          $(this).toggle(visible);
+        });
+
+        // 연도별: 매칭 없으면 연도 자체 숨김, 필터 중에는 전부 펼침
+        container.find(".news-accordion").each(function () {
+          var $acc = $(this);
+          var any = $acc.find(".news-item").filter(function () {
+            return $(this).css("display") !== "none";
+          }).length > 0;
+          $acc.toggle(any);
+          if (cat === "All") {
+            $acc.accordion("option", "active", $acc.hasClass("start-closed") ? false : 0);
+          } else if (any) {
+            $acc.accordion("option", "active", 0);
+          }
+          if (any) $acc.accordion("refresh");
+        });
+      }
+
+      sidebar.on("click", ".news-cat-chip", function () {
+        applyNewsFilter($(this).data("cat"));
       });
     }
 

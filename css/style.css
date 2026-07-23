@@ -1093,6 +1093,38 @@ nav#navbar-main .navbar-collapse {
   }
 }
 
+/* News 카테고리 필터 (사이드바) */
+.news-cat-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 16px;
+}
+
+.news-cat-chip {
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 3px 12px;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: border-color 0.15s;
+}
+
+.news-cat-chip:hover,
+.news-cat-chip.active {
+  border-color: var(--cc, #444);
+}
+
+@media (min-width: 992px) {
+  .news-cat-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+}
+
 /* News 목록: 내부 스크롤 없이 전체 표시 */
 .news-card.news-list {
   max-height: none !important;
