@@ -299,7 +299,18 @@ $(document).ready(function () {
         $("#modal-email-title").hide();
         $("#modal-email").hide();
     }
-    $("#modal-position").html(position);
+    // 직함 표시: Lab Captain / Server Manager 등은 아이콘·색상 배지로
+    (function () {
+      var parts = String(position || "").split(/<br\s*\/?>/i);
+      var html = parts.map(function (raw) {
+        var t = raw.trim();
+        if (!t) return "";
+        if (/lab\s*captain/i.test(t)) return '<span class="modal-role modal-role-captain">★ ' + t + "</span>";
+        if (/server\s*manager/i.test(t)) return '<span class="modal-role modal-role-server">⚙ ' + t + "</span>";
+        return '<span class="modal-role-plain">' + t + "</span>";
+      }).filter(Boolean).join(" ");
+      $("#modal-position").html(html);
+    })();
 
     $("#modal-network-icons").remove(); 
     const iconsHTML = createNetworkIcons(links);

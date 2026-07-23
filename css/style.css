@@ -1305,7 +1305,27 @@ nav#navbar-main .navbar-collapse {
 }
 
 #exampleModal .portrait-title h3 {
-  margin: 2px 0 0;
+  margin: 4px 0 0;
+}
+
+/* 직함 배지 (Lab Captain / Server Manager) */
+#exampleModal .modal-role {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 3px 12px;
+  border-radius: 6px;
+  white-space: nowrap;
+}
+
+#exampleModal .modal-role-captain {
+  background: #FAEEDA;
+  color: #854F0B;
+}
+
+#exampleModal .modal-role-server {
+  background: #E6F1FB;
+  color: #185FA5;
 }
 
 /* 연구분야 칩은 이름 바로 아래에 붙여 한 덩어리로 */
