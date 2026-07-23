@@ -48,14 +48,16 @@ $(document).ready(function () {
             return ' <a href="' + l.url + '" target="_blank" rel="noopener noreferrer" class="news-link">[' + l.label + "]</a>";
           })
           .join("");
+        // 1저자 등 학생 얼굴 사진 (문장 바로 뒤, [Paper] 링크보다 앞, 클릭 시 프로필 모달)
+        var figsHTML = "";
+        (it.figures || []).forEach(function (f) {
+          figsHTML += ' <img src="img/' + f + '" class="news-inline-fig" alt="" data-bs-toggle="modal" data-bs-target="#exampleModal" data-img-key="' + f + '">';
+        });
+        links = figsHTML + links;
         // 수상 사진 등 이미지가 연결된 항목: [Photo] 링크 → 라이트박스
         if (it.img) {
           links += ' <a href="#" class="news-link news-photo-link" data-img="' + it.img + '">[Photo]</a>';
         }
-        // 관련 학생 얼굴 사진 (문장 바로 뒤, 클릭 시 프로필 모달)
-        (it.figures || []).forEach(function (f) {
-          links += ' <img src="img/' + f + '" class="news-inline-fig" alt="" data-bs-toggle="modal" data-bs-target="#exampleModal" data-img-key="' + f + '">';
-        });
         // <u>이름</u> → 클릭 가능한 프로필 링크로 변환 (HPIC Lab 제외)
         var text = it.text.replace(/<u>(?!HPIC Lab<)(.*?)<\/u>/g, '<u class="news-member" title="View profile">$1</u>');
         list.append(
