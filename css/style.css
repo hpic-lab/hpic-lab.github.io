@@ -1079,6 +1079,13 @@ nav#navbar-main .navbar-collapse {
   border-radius: 4px;
 }
 
+/* News 목록: 내부 스크롤 없이 전체 표시 */
+.news-card.news-list {
+  max-height: none !important;
+  overflow-y: visible !important;
+  padding-right: 0;
+}
+
 /* News 연도 아코디언 헤더 — Publications 연도 서식과 통일 */
 .news-accordion .ui-accordion-header {
   background: transparent !important;
