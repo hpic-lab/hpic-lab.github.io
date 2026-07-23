@@ -2507,9 +2507,9 @@ nav#navbar-main .navbar-collapse {
 
 /* 탭 (시안 3: 비활성 회색, 활성만 카테고리 색 + 테두리 + 그림자) */
 .pub2-tab {
-  font-size: 1.08rem;
+  font-size: 0.92rem;
   font-weight: 600;
-  padding: 7px 22px;
+  padding: 6px 18px;
   border-radius: 6px;
   border: 2px solid transparent;
   background: #f1f1f1;
@@ -2557,7 +2557,7 @@ nav#navbar-main .navbar-collapse {
 }
 
 .pub2-notice {
-  font-size: 0.95rem;
+  font-size: 0.8rem;
   font-weight: 500;
   color: #777;
   font-style: normal;
