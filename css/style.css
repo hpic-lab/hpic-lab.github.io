@@ -94,8 +94,6 @@ nav#navbar-main .navbar-collapse {
   display: inline-flex;
   align-items: center;
   margin-left: 12px;
-  padding-left: 14px;
-  border-left: 1px solid #ddd;
   vertical-align: middle;
 }
 
