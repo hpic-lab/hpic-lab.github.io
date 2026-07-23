@@ -1082,10 +1082,7 @@ nav#navbar-main .navbar-collapse {
 /* 고정 서브 제목 위쪽 투명 구간 가리개 (내비게이션과 제목 사이로 콘텐츠가 비치는 것 방지) */
 @media (min-width: 992px) {
   .pub2-year::before,
-  .news-accordion .ui-accordion-header::before,
-  #people h3:not(.accordion h3):not(.h3-items)::before,
-  #research h5::before,
-  #research .gallery-title-row::before {
+  .news-accordion .ui-accordion-header::before {
     content: "";
     position: absolute;
     left: 0;
@@ -1233,20 +1230,6 @@ nav#navbar-main .navbar-collapse {
     overflow: visible !important;
   }
 
-  #research h5,
-  #research .gallery-title-row {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 100px;
-    background: var(--section-bg, #fff);
-    z-index: 5;
-    padding-top: 0;
-  }
-
-  #research .gallery-title-row h5 {
-    position: static;
-    padding-top: 0;
-  }
 }
 
 /* 완료 과제 접힘 토글 */
@@ -1388,17 +1371,6 @@ nav#navbar-main .navbar-collapse {
   margin: 28px 0 16px;
 }
 
-/* 스크롤 시 현재 그룹 제목이 상단에 고정되고, 다음 그룹 제목이 올라오면 교체됨 */
-@media (min-width: 992px) {
-  #people h3:not(.accordion h3):not(.h3-items) {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 100px;
-    background: var(--section-bg, #fff);
-    z-index: 5;
-    padding-top: 0;
-  }
-}
 
 .people-grid {
   display: flex !important;
