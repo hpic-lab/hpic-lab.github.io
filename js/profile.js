@@ -597,13 +597,22 @@ $(document).ready(function () {
     var title, inst;
     if (instIdx >= 1) { title = parts.slice(0, instIdx).join(", "); inst = parts[instIdx]; }
     else { title = parts.join(", "); inst = ""; }
-    // 주요 기관은 위치(국가/도시)를 함께 표기
+    // 주요 기관은 위치(국가)를 함께 표기. 해외 기관은 USA만, 국내는 South Korea.
     var INST_LOC = {
+      "Columbia University": "Columbia University, USA",
+      "NASA Ames Research Center": "NASA Ames Research Center, USA",
       "Seoul National University": "Seoul National University, South Korea",
       "Yonsei University": "Yonsei University, South Korea",
       "Hanyang University": "Hanyang University, South Korea",
-      "Columbia University": "Columbia University, New York, NY, USA",
-      "NASA Ames Research Center": "NASA Ames Research Center, Mountain View, CA, USA"
+      "Chung-ang University": "Chung-ang University, South Korea",
+      "Dankook University": "Dankook University, South Korea",
+      "Gachon University": "Gachon University, South Korea",
+      "HongIk university": "HongIk University, South Korea",
+      "Hongik University": "Hongik University, South Korea",
+      "Incheon National University": "Incheon National University, South Korea",
+      "Kangwon National University": "Kangwon National University, South Korea",
+      "Sangmyung University": "Sangmyung University, South Korea",
+      "Yeungnam University": "Yeungnam University, South Korea"
     };
     if (INST_LOC[inst]) inst = INST_LOC[inst];
     return { title: title, inst: inst, period: period };
