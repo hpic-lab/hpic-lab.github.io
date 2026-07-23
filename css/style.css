@@ -2673,11 +2673,11 @@ section {
 
 /* ========================================= */
 /* 컨테이너 폭 확장 — Bootstrap 기본 1140px 제한 해제 */
-/* FHD 기준 약 1400px 사용, 기본 글자 크기도 소폭 확대 */
+/* FHD 기준 약 1560px 사용, 기본 글자 크기도 소폭 확대 */
 /* ========================================= */
 @media (min-width: 1200px) {
   .container {
-    max-width: min(88vw, 1400px) !important;
+    max-width: min(92vw, 1560px) !important;
   }
 
   html {
