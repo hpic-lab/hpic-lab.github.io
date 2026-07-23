@@ -48,6 +48,10 @@ $(document).ready(function () {
             return ' <a href="' + l.url + '" target="_blank" rel="noopener noreferrer" class="news-link">[' + l.label + "]</a>";
           })
           .join("");
+        // 수상 사진 등 이미지가 연결된 항목: [Photo] 링크 → 라이트박스
+        if (it.img) {
+          links += ' <a href="#" class="news-link news-photo-link" data-img="' + it.img + '">[Photo]</a>';
+        }
         // <u>이름</u> → 클릭 가능한 프로필 링크로 변환 (HPIC Lab 제외)
         var text = it.text.replace(/<u>(?!HPIC Lab<)(.*?)<\/u>/g, '<u class="news-member" title="View profile">$1</u>');
         list.append(
@@ -145,6 +149,26 @@ $(document).ready(function () {
         applyNewsFilter($(this).data("cat"));
       });
     }
+
+    // [Photo] 클릭 → 이미지 라이트박스 (빈 곳 클릭 또는 ESC로 닫기)
+    container.on("click", ".news-photo-link", function (e) {
+      e.preventDefault();
+      var src = $(this).data("img");
+      var overlay = $(
+        '<div class="news-photo-overlay"><img src="' + src + '" alt="Award photo"></div>'
+      );
+      overlay.on("click", function () {
+        overlay.remove();
+        $(document).off("keydown.newsPhoto");
+      });
+      $(document).on("keydown.newsPhoto", function (ev) {
+        if (ev.key === "Escape") {
+          overlay.remove();
+          $(document).off("keydown.newsPhoto");
+        }
+      });
+      $("body").append(overlay);
+    });
 
     // 연구원 이름 클릭 → 프로필 모달 (profile.js의 window.peopleDB 활용)
     container.on("click", "u.news-member", function () {

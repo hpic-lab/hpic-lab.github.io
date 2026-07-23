@@ -1099,6 +1099,25 @@ nav#navbar-main .navbar-collapse {
   }
 }
 
+/* News [Photo] 라이트박스 */
+.news-photo-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.78);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 20000;
+  cursor: zoom-out;
+}
+
+.news-photo-overlay img {
+  max-width: 90vw;
+  max-height: 88vh;
+  border-radius: 8px;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
+}
+
 /* News 카테고리 필터 (사이드바) */
 .news-cat-links {
   display: flex;

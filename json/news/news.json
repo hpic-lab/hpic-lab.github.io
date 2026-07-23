@@ -1,379 +1,675 @@
 [
   {
-    "year": "2026", "month": "04", "category": "Grant",
+    "year": "2026",
+    "month": "04",
+    "category": "Grant",
     "text": "<u>HPIC Lab</u> was selected for the \"200+ Gbps-Class Next-Generation Ultra-High-Speed Interface Semiconductor Design Technologies\" project, sponsored by the Ministry of Trade, Industry and Energy (MOTIE).",
     "links": []
   },
   {
-    "year": "2026", "month": "04", "category": "Grant",
+    "year": "2026",
+    "month": "04",
+    "category": "Grant",
     "text": "<u>HPIC Lab</u> was selected for the \"Development of Ultra-High Bandwidth, Low-Latency Serial Interface Technology for Heterogeneous Devices\" project, sponsored by the Ministry of Science and ICT (MSIT).",
     "links": []
   },
   {
-    "year": "2026", "month": "04", "category": "Journal",
+    "year": "2026",
+    "month": "04",
+    "category": "Journal",
     "text": "A paper entitled \"Comparison of 3T2C Embedded DRAM in 28nm FD-SOI and Low Power Plus for Energy-Efficient Computing in Memory Architecture\" has been accepted for publication in the IDEC Journal of Integrated Circuits and Systems (JICAS).",
-    "links": [{ "label": "Paper", "url": "https://jicas.idec.or.kr/index.php/JICAS/article/view/350" }]
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://jicas.idec.or.kr/index.php/JICAS/article/view/350"
+      }
+    ]
   },
   {
-    "year": "2026", "month": "04", "category": "Journal",
+    "year": "2026",
+    "month": "04",
+    "category": "Journal",
     "text": "A paper entitled \"Low-Complexity Referenceless Clock and Data Recovery with a Novel Alexander Phase-Frequency Detector\" has been accepted for publication in the IDEC Journal of Integrated Circuits and Systems (JICAS).",
-    "links": [{ "label": "Paper", "url": "https://jicas.idec.or.kr/index.php/JICAS/article/view/349" }]
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://jicas.idec.or.kr/index.php/JICAS/article/view/349"
+      }
+    ]
   },
   {
-    "year": "2026", "month": "03", "category": "Journal",
+    "year": "2026",
+    "month": "03",
+    "category": "Journal",
     "text": "A paper entitled \"IGA-SRAM: A Compact SRAM-based IMC Engine for Binary/Ternary Deep Neural Networks with ADC-Less and Error-Aware Training Algorithm\" has been accepted for publication in the IEEE Journal on Emerging and Selected Topics in Circuits and Systems (JETCAS).",
-    "links": [{ "label": "Paper", "url": "https://ieeexplore.ieee.org/document/11456958" }]
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://ieeexplore.ieee.org/document/11456958"
+      }
+    ]
   },
   {
-    "year": "2026", "month": "03", "category": "Journal",
+    "year": "2026",
+    "month": "03",
+    "category": "Journal",
     "text": "A paper entitled \"A Pattern-Dependent Pulse Filtering Technique for Low-Jitter Injection-Locked CDR in 28-nm CMOS\" has been accepted for publication in the IEEE Transactions on Very Large Scale Integration (VLSI) Systems.",
-    "links": [{ "label": "Paper", "url": "https://ieeexplore.ieee.org/document/11289554" }]
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://ieeexplore.ieee.org/document/11289554"
+      }
+    ]
   },
   {
-    "year": "2026", "month": "03", "category": "Journal",
+    "year": "2026",
+    "month": "03",
+    "category": "Journal",
     "text": "A paper entitled \"Built-In Phase Noise Measurement System for Multi-GHz Phase-Locked Loops\" has been accepted for publication in the IEEE Transactions on Instrumentation & Measurement (TIM).",
-    "links": [{ "label": "Paper", "url": "https://ieeexplore.ieee.org/document/11456593" }]
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://ieeexplore.ieee.org/document/11456593"
+      }
+    ]
   },
   {
-    "year": "2026", "month": "03", "category": "News",
+    "year": "2026",
+    "month": "03",
+    "category": "News",
     "text": "<u>Min-Seong</u> has been appointed to the School of Electrical and Electronic Engineering at Yonsei University.",
     "links": []
   },
   {
-    "year": "2026", "month": "01", "category": "Invited Talk",
+    "year": "2026",
+    "month": "01",
+    "category": "Invited Talk",
     "text": "Dr. Jae-woo Park (Sungkyunkwan University) presented an invited talk entitled \"High-speed Multi-level Transceiver for Memory Interface Applications\" hosted by HPIC Lab.",
     "links": []
   },
   {
-    "year": "2026", "month": "01", "category": "Invited Talk",
+    "year": "2026",
+    "month": "01",
+    "category": "Invited Talk",
     "text": "<u>Min-Seong</u> presented an invited talk entitled \"100Gb/s급 디지털 인터페이스 회로 설계\" at KAIST (hosted by IDEC).",
     "links": []
   },
   {
-    "year": "2026", "month": "01", "category": "Invited Talk",
+    "year": "2026",
+    "month": "01",
+    "category": "Invited Talk",
     "text": "<u>Min-Seong</u> presented an invited talk entitled \"Unlocking AI's True Potential: The Critical Role of High-Speed Interfaces\" at Dongguk University.",
     "links": []
   },
   {
-    "year": "2026", "month": "01", "category": "Invited Talk",
+    "year": "2026",
+    "month": "01",
+    "category": "Invited Talk",
     "text": "<u>Min-Seong</u> presented an invited talk entitled \"Unlocking AI's True Potential: The Critical Role of High-Speed Interfaces\" at Yonsei University.",
     "links": []
   },
   {
-    "year": "2026", "month": "01", "category": "Patent",
+    "year": "2026",
+    "month": "01",
+    "category": "Patent",
     "text": "A patent entitled \"주입 잠금 오실레이터 기반 물리적 복제 불가능 함수\" has been registered with the Korean Intellectual Property Office.",
     "links": []
   },
   {
-    "year": "2025", "month": "12", "category": "Award",
+    "year": "2025",
+    "month": "12",
+    "category": "Award",
     "text": "<u>Jae-Geon</u> received the Best Student Paper Award (Bronze) from the IEEE Seoul Section.",
-    "links": []
+    "links": [],
+    "img": "img/award/251213_이재건_SPC.jpg"
   },
   {
-    "year": "2025", "month": "12", "category": "Award",
+    "year": "2025",
+    "month": "12",
+    "category": "Award",
     "text": "<u>Dong-Ho</u> received the Best Student Paper Award (Bronze) from the IEEE Seoul Section.",
-    "links": []
+    "links": [],
+    "img": "img/award/251213_김동호_SPC.jpg"
   },
   {
-    "year": "2025", "month": "12", "category": "Award",
+    "year": "2025",
+    "month": "12",
+    "category": "Award",
     "text": "<u>Seung-Hwan</u> received the Best Student Paper Award (Bronze) from the IEEE Seoul Section.",
-    "links": []
+    "links": [],
+    "img": "img/award/251213_공승환_SPC.jpg"
   },
   {
-    "year": "2025", "month": "12", "category": "Journal",
+    "year": "2025",
+    "month": "12",
+    "category": "Journal",
     "text": "A paper entitled \"A Stagger-Tuned Cryogenic Broadband CMOS Three-Stage Cascode LNA for Quantum Computing\" has been accepted for publication in the IEEE Microwave and Wireless Technology Letters (MWTL).",
-    "links": [{ "label": "Paper", "url": "https://ieeexplore.ieee.org/document/11272918" }]
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://ieeexplore.ieee.org/document/11272918"
+      }
+    ]
   },
   {
-    "year": "2025", "month": "12", "category": "Award",
+    "year": "2025",
+    "month": "12",
+    "category": "Award",
     "text": "<u>Min-Seong</u> received the Achievement Award (공로상) from the IEIE (대한전자공학회) Semiconductor Society.",
-    "links": []
+    "links": [],
+    "img": "img/award/251203_교수님_공로상.jpg"
   },
   {
-    "year": "2025", "month": "12", "category": "Award",
+    "year": "2025",
+    "month": "12",
+    "category": "Award",
     "text": "<u>Min-Seong</u> received the Achievement Award (공로상) from the IEIE (대한전자공학회).",
-    "links": []
+    "links": [],
+    "img": "img/award/251203_교수님_전자공학회_공로상.jpg"
   },
   {
-    "year": "2025", "month": "12", "category": "Patent",
+    "year": "2025",
+    "month": "12",
+    "category": "Patent",
     "text": "A patent entitled \"6 트랜지스터 정적 램 및 이를 이용한 프로세싱 인 메모리 가속 장치\" has been registered with the Korean Intellectual Property Office.",
     "links": []
   },
   {
-    "year": "2025", "month": "11", "category": "Journal",
+    "year": "2025",
+    "month": "11",
+    "category": "Journal",
     "text": "A paper entitled \"Implementation and Characterization of a Digital Phase-Locked Loop (DPLL) in 65-nm CMOS Technology\" has been accepted for publication in the IDEC Journal of Integrated Circuits and Systems (JICAS).",
-    "links": [{ "label": "Paper", "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003245290" }]
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003245290"
+      }
+    ]
   },
   {
-    "year": "2025", "month": "11", "category": "Service",
+    "year": "2025",
+    "month": "11",
+    "category": "Service",
     "text": "<u>Min-Seong</u> served as an Organizing Committee Member for the 2025 IEIE Fall Conference.",
     "links": []
   },
   {
-    "year": "2025", "month": "11", "category": "Invited Talk",
+    "year": "2025",
+    "month": "11",
+    "category": "Invited Talk",
     "text": "<u>Min-Seong</u> presented an invited talk entitled \"High-Speed Interface Circuit Design\" at the University of Seoul.",
     "links": []
   },
   {
-    "year": "2025", "month": "11", "category": "Invited Talk",
+    "year": "2025",
+    "month": "11",
+    "category": "Invited Talk",
     "text": "<u>Seung-Hwan</u>, <u>Jae-Geon</u>, <u>Seung-Mo</u>, <u>Dong-Ho</u>, and <u>Min-Seong</u> presented an invited talk entitled \"Analog Modeling\" at LX Semicon.",
     "links": []
   },
   {
-    "year": "2025", "month": "11", "category": "Invited Talk",
+    "year": "2025",
+    "month": "11",
+    "category": "Invited Talk",
     "text": "<u>Min-Seong</u> presented an invited talk entitled \"DSP-based Wireline Communication\" at Korea University (hosted by Prof. Chulwoo Kim).",
     "links": []
   },
   {
-    "year": "2025", "month": "10", "category": "Invited Talk",
+    "year": "2025",
+    "month": "10",
+    "category": "Invited Talk",
     "text": "Prof. Seung-Hyeon Moon presented an invited talk entitled \"Two Challenges in AI Accelerators,\" hosted by HPIC Lab.",
     "links": []
   },
   {
-    "year": "2025", "month": "10", "category": "Service",
+    "year": "2025",
+    "month": "10",
+    "category": "Service",
     "text": "<u>Min-Seong</u> served as the Special Session Organizing Co-Chair for IEEE/IEIE ICCE-ASIA 2025.",
     "links": []
   },
   {
-    "year": "2025", "month": "10", "category": "Award",
+    "year": "2025",
+    "month": "10",
+    "category": "Award",
     "text": "<u>Min-Seong</u> received the KSIA Award (한국반도체산업협회장상) at the 18th Semiconductor Day.",
-    "links": [{ "label": "News Article", "url": "https://www.newshyu.com/news/articleView.html?idxno=1021190" }]
+    "links": [
+      {
+        "label": "News Article",
+        "url": "https://www.newshyu.com/news/articleView.html?idxno=1021190"
+      }
+    ],
+    "img": "img/award/251022_교수님_반도체협회장상.jpg"
   },
   {
-    "year": "2025", "month": "10", "category": "Award",
+    "year": "2025",
+    "month": "10",
+    "category": "Award",
     "text": "<u>Jae-Hyeon</u> received the Best Poster Award at the ISOCC 2025 Chip Design Contest.",
-    "links": []
+    "links": [],
+    "img": "img/award/251016편재현_CDC_수상.png"
   },
   {
-    "year": "2025", "month": "10", "category": "Award",
+    "year": "2025",
+    "month": "10",
+    "category": "Award",
     "text": "<u>Seung-Hwan</u> received the Best Paper Award from the SSCS Seoul Chapter at ISOCC 2025.",
-    "links": []
+    "links": [],
+    "img": "img/award/251016공승환_ISOCC_수상.jpg"
   },
   {
-    "year": "2025", "month": "10", "category": "Award",
+    "year": "2025",
+    "month": "10",
+    "category": "Award",
     "text": "<u>Dong-Hoe</u> and <u>Seung-Hwan</u> received the Special Prize at the ISOCC 2025 Chip Design Contest.",
-    "links": []
+    "links": [],
+    "img": "img/award/251016허동회_공승환_CDC_수상.jpeg"
   },
   {
-    "year": "2025", "month": "10", "category": "Award",
+    "year": "2025",
+    "month": "10",
+    "category": "Award",
     "text": "<u>Seung-Mo</u> and <u>Dong-Ho</u> received the Best Paper Award from the SSCS Seoul Chapter at ISOCC 2025.",
-    "links": []
+    "links": [],
+    "img": "img/award/251016진승모_김동호_ISOCC_수상.jpg"
   },
   {
-    "year": "2025", "month": "10", "category": "Service",
+    "year": "2025",
+    "month": "10",
+    "category": "Service",
     "text": "<u>Min-Seong</u> served on the Organizing Committee for APCCAS 2025.",
     "links": []
   },
   {
-    "year": "2025", "month": "10", "category": "Service",
+    "year": "2025",
+    "month": "10",
+    "category": "Service",
     "text": "<u>Min-Seong</u> served on the Organizing Committee for ISOCC 2025.",
     "links": []
   },
   {
-    "year": "2025", "month": "09", "category": "Award",
+    "year": "2025",
+    "month": "09",
+    "category": "Award",
     "text": "<u>Dong-Hyun</u> and <u>Shin-Uk</u> received the Special Award at the 26th Korean Semiconductor Design Challenge.",
-    "links": [{ "label": "News Article", "url": "https://www.newshyu.com/news/articleView.html?idxno=1021299" }]
+    "links": [
+      {
+        "label": "News Article",
+        "url": "https://www.newshyu.com/news/articleView.html?idxno=1021299"
+      }
+    ],
+    "img": "img/award/251023_반도체_설계대전_이동현.png"
   },
   {
-    "year": "2025", "month": "09", "category": "Award",
+    "year": "2025",
+    "month": "09",
+    "category": "Award",
     "text": "<u>Seung-Mo</u> and <u>Dong-Ho</u> received 특허청장상 at the 26th Korean Semiconductor Design Challenge.",
-    "links": [{ "label": "News Article", "url": "https://www.newshyu.com/news/articleView.html?idxno=1021299" }]
+    "links": [
+      {
+        "label": "News Article",
+        "url": "https://www.newshyu.com/news/articleView.html?idxno=1021299"
+      }
+    ],
+    "img": "img/award/251023_반도체 설계대전_지식재산처장상_진승모_김동호.jpg"
   },
   {
-    "year": "2025", "month": "09", "category": "Grant",
+    "year": "2025",
+    "month": "09",
+    "category": "Grant",
     "text": "<u>Seung-Mo</u> was selected as a recipient of the Master's Student Research Grant from the National Research Foundation (NRF) of Korea.",
     "links": []
   },
   {
-    "year": "2025", "month": "09", "category": "Grant",
+    "year": "2025",
+    "month": "09",
+    "category": "Grant",
     "text": "<u>Jae-Geon</u> was selected as a recipient of the Master's Student Research Grant from the National Research Foundation (NRF) of Korea.",
     "links": []
   },
   {
-    "year": "2025", "month": "08", "category": "Conference",
+    "year": "2025",
+    "month": "08",
+    "category": "Conference",
     "text": "A paper entitled \"Critical-Timing-Relaxed pre-Decision Feedforward Equalizer for High-Speed DSP-based Wireline Receiver using Hardware-in-the-Loop Verification on RF-SoC\" has been accepted at the IEEE Asian Solid-State Circuits Conference (A-SSCC).",
-    "links": [{ "label": "Paper", "url": "https://ieeexplore.ieee.org/document/11349558" }]
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://ieeexplore.ieee.org/document/11349558"
+      }
+    ]
   },
   {
-    "year": "2025", "month": "08", "category": "Conference",
+    "year": "2025",
+    "month": "08",
+    "category": "Conference",
     "text": "A paper entitled \"A 22Gb/s-54Gb/s Reconfigurable PAM-2/4/8 DSP-Based Transmitter with 14-Tap Feedforward Equalization\" has been accepted at the IEEE Asian Solid-State Circuits Conference (A-SSCC).",
-    "links": [{ "label": "Paper", "url": "https://ieeexplore.ieee.org/document/11349396" }]
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://ieeexplore.ieee.org/document/11349396"
+      }
+    ]
   },
   {
-    "year": "2025", "month": "08", "category": "Invited Talk",
+    "year": "2025",
+    "month": "08",
+    "category": "Invited Talk",
     "text": "<u>Min-Seong</u> presented an invited talk entitled \"High-Speed Integrated Circuit Design\" at the 2025 SoC Workshop.",
     "links": []
   },
   {
-    "year": "2025", "month": "08", "category": "Service",
+    "year": "2025",
+    "month": "08",
+    "category": "Service",
     "text": "<u>Min-Seong</u> served on the Program Committee for the 2025 SoC Workshop.",
     "links": []
   },
   {
-    "year": "2025", "month": "07", "category": "Conference",
+    "year": "2025",
+    "month": "07",
+    "category": "Conference",
     "text": "A paper entitled \"Analysis of Adaptive Learning Rate Strategies for Sign-Sign LMS: Stability and Speed\" has been accepted at the IEEE International Technical Conference on Circuits/Systems, Computers, and Communications (ITC-CSCC).",
-    "links": [{ "label": "Paper", "url": "https://ieeexplore.ieee.org/document/11137667" }]
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://ieeexplore.ieee.org/document/11137667"
+      }
+    ]
   },
   {
-    "year": "2025", "month": "07", "category": "Service",
+    "year": "2025",
+    "month": "07",
+    "category": "Service",
     "text": "<u>Min-Seong</u> served as a Session Chair and on the Organizing Committee for ITC-CSCC 2025.",
     "links": []
   },
   {
-    "year": "2025", "month": "07", "category": "Service",
+    "year": "2025",
+    "month": "07",
+    "category": "Service",
     "text": "<u>Min-Seong</u> served on the Program Committee for the 2025 상용반도체개발 기술워크숍.",
     "links": []
   },
   {
-    "year": "2025", "month": "07", "category": "Patent",
+    "year": "2025",
+    "month": "07",
+    "category": "Patent",
     "text": "A patent entitled \"ADC 양자 인공신경망과 범용 Compute-in-Memory\" has been registered with the Korean Intellectual Property Office.",
     "links": []
   },
   {
-    "year": "2025", "month": "06", "category": "Journal",
+    "year": "2025",
+    "month": "06",
+    "category": "Journal",
     "text": "A paper entitled \"A 14-to-32-Gb/s Deadzone-Free Referenceless CDR With Autocovariance-Based Seamless Frequency Detector in 40-nm CMOS Technology\" has been accepted for publication in the IEEE Journal of Solid-State Circuits (JSSC).",
-    "links": [{ "label": "Paper", "url": "https://ieeexplore.ieee.org/document/11029275" }]
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://ieeexplore.ieee.org/document/11029275"
+      }
+    ]
   },
   {
-    "year": "2025", "month": "06", "category": "Grant",
+    "year": "2025",
+    "month": "06",
+    "category": "Grant",
     "text": "<u>HPIC Lab</u> was selected for the \"Interposer Technology with Integrated Opto-chiplets for CPO based on 2.5D Optical Packaging\" project, sponsored by the Ministry of Science and ICT (MSIT).",
     "links": []
   },
   {
-    "year": "2025", "month": "06", "category": "Conference",
+    "year": "2025",
+    "month": "06",
+    "category": "Conference",
     "text": "A paper entitled \"2.4 GHz BB Phase Detector를 이용한 Fast Lock & Low Noise RF Phase Locked Loop(PLL)\" has been accepted at 대한전자공학회 하계학술대회.",
-    "links": [{ "label": "Paper", "url": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12331653" }]
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12331653"
+      }
+    ]
   },
   {
-    "year": "2025", "month": "06", "category": "Conference",
+    "year": "2025",
+    "month": "06",
+    "category": "Conference",
     "text": "A paper entitled \"주입 잠금 발진기 기반 분주비 절감형 디지털 위상 잠금 회로\" has been accepted at 대한전자공학회 하계학술대회.",
-    "links": [{ "label": "Paper", "url": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12331634" }]
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12331634"
+      }
+    ]
   },
   {
-    "year": "2025", "month": "06", "category": "Conference",
+    "year": "2025",
+    "month": "06",
+    "category": "Conference",
     "text": "A paper entitled \"저복잡도 구조를 갖는 알렉산더 위상 검출기 기반 위상 - 주파수 검출기 설계\" has been accepted at 대한전자공학회 하계학술대회.",
-    "links": [{ "label": "Paper", "url": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12331656" }]
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12331656"
+      }
+    ]
   },
   {
-    "year": "2025", "month": "06", "category": "Conference",
+    "year": "2025",
+    "month": "06",
+    "category": "Conference",
     "text": "A paper entitled \"50Gbaud 송신기를 위한 고속 시리얼라이저\" has been accepted at 대한전자공학회 하계학술대회.",
-    "links": [{ "label": "Paper", "url": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12331789" }]
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12331789"
+      }
+    ]
   },
   {
-    "year": "2025", "month": "06", "category": "Conference",
+    "year": "2025",
+    "month": "06",
+    "category": "Conference",
     "text": "A paper entitled \"카운터 기반 비등간격 오버샘플링 PLL\" has been accepted at 대한전자공학회 하계학술대회.",
-    "links": [{ "label": "Paper", "url": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12331661" }]
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12331661"
+      }
+    ]
   },
   {
-    "year": "2025", "month": "06", "category": "Conference",
+    "year": "2025",
+    "month": "06",
+    "category": "Conference",
     "text": "A paper entitled \"아날로그 인메모리 컴퓨팅 연산 방식에 대한 분석\" has been accepted at 대한전자공학회 하계학술대회.",
-    "links": [{ "label": "Paper", "url": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12331532" }]
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12331532"
+      }
+    ]
   },
   {
-    "year": "2025", "month": "06", "category": "Conference",
+    "year": "2025",
+    "month": "06",
+    "category": "Conference",
     "text": "A paper entitled \"64-way ADC-DSP 기반 수신 회로의 구현: SS-LMS의 학습률의 변화에 기반한 적응형 알고리즘\" has been accepted at 대한전자공학회 하계학술대회.",
-    "links": [{ "label": "Paper", "url": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12331495" }]
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12331495"
+      }
+    ]
   },
   {
-    "year": "2025", "month": "05", "category": "Grant",
+    "year": "2025",
+    "month": "05",
+    "category": "Grant",
     "text": "<u>HPIC Lab</u> was selected for the \"Cryogenic Superconducting Quantum Computer Receiver\" project, sponsored by Samsung Electronics.",
     "links": []
   },
   {
-    "year": "2025", "month": "05", "category": "Journal",
+    "year": "2025",
+    "month": "05",
+    "category": "Journal",
     "text": "A paper entitled \"A Supply Noise-Insensitive Ring DCO With a Self-Biased Shunt Regulator Array in Wide-Range Digital PLL\" has been accepted for publication in IEEE Transactions on Very Large Scale Integration (TVLSI) Systems.",
-    "links": [{ "label": "Paper", "url": "https://ieeexplore.ieee.org/document/11017684" }]
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://ieeexplore.ieee.org/document/11017684"
+      }
+    ]
   },
   {
-    "year": "2025", "month": "05", "category": "Invited Talk",
+    "year": "2025",
+    "month": "05",
+    "category": "Invited Talk",
     "text": "<u>Min-Seong</u> presented an invited talk entitled \"Basics of High-Speed Wireline Communication\" at the Analog/Power IC Design Workshop.",
     "links": []
   },
   {
-    "year": "2025", "month": "05", "category": "Service",
+    "year": "2025",
+    "month": "05",
+    "category": "Service",
     "text": "<u>Min-Seong</u> served on the Program Committee for the 2025 Analog/Power IC Design Workshop.",
     "links": []
   },
   {
-    "year": "2025", "month": "05", "category": "Service",
+    "year": "2025",
+    "month": "05",
+    "category": "Service",
     "text": "<u>Min-Seong</u> served on the Program Committee for the 2025 SoC Conference.",
     "links": []
   },
   {
-    "year": "2025", "month": "01", "category": "Award",
+    "year": "2025",
+    "month": "01",
+    "category": "Award",
     "text": "<u>Sang-Hyeon</u> received the Best Paper Award (Silver Prize) at ICEIC 2025.",
-    "links": []
+    "links": [],
+    "img": "img/award/ICEIC2025_Silver_shok.png"
   },
   {
-    "year": "2025", "month": "01", "category": "Invited Talk",
+    "year": "2025",
+    "month": "01",
+    "category": "Invited Talk",
     "text": "<u>Min-Seong</u> presented a talk entitled \"The Future of High-Speed Wireline: Innovations in DSP-Based Transceiver Design\" at ICEIC.",
     "links": []
   },
   {
-    "year": "2025", "month": "01", "category": "Service",
+    "year": "2025",
+    "month": "01",
+    "category": "Service",
     "text": "<u>Min-Seong</u> served as a Session Chair and on the Organizing Committee for ICEIC.",
     "links": []
   },
   {
-    "year": "2025", "month": "01", "category": "Service",
+    "year": "2025",
+    "month": "01",
+    "category": "Service",
     "text": "<u>Min-Seong</u> served as the Executive Director (상임이사) of the Next-Generation Leader Division at the IEIE.",
     "links": []
   },
   {
-    "year": "2024", "month": "11", "category": "Journal",
+    "year": "2024",
+    "month": "11",
+    "category": "Journal",
     "text": "A paper entitled \"A Compact Single-Channel 1 GS/s 8-Bit 3-Stage Capacitor Array-Assisted Charge-Injection DAC-Based SAR ADC\" has been accepted for publication in IEEE Transactions on Circuits and Systems I (TCAS-I).",
-    "links": [{ "label": "Paper", "url": "https://ieeexplore.ieee.org/document/10586762" }]
-  },
-  {
-    "year": "2024", "month": "09", "category": "Journal",
-    "text": "A paper entitled \"3.2-GHz Digital Phase-Locked Loop with Autocorrelation-based Direct Jitter Correction\" has been accepted for publication in IEEE Transactions on Circuits and Systems II (TCAS-II).",
-    "links": [{ "label": "Paper", "url": "https://ieeexplore.ieee.org/document/10507171" }]
-  },
-  {
-    "year": "2024", "month": "08", "category": "Conference",
-    "text": "A paper entitled \"A 14-to-32-Gb/s Deadzone-Free Referenceless CDR with Autocovariance-based Frequency Detector in 40-nm CMOS Technology\" has been accepted for presentation at the 2024 IEEE Asian Solid-State Circuits Conference (A-SSCC).",
     "links": [
-      { "label": "Paper", "url": "https://ieeexplore.ieee.org/document/10848602" },
-      { "label": "News Article", "url": "https://www.newshyu.com/news/articleView.html?idxno=1017521" }
+      {
+        "label": "Paper",
+        "url": "https://ieeexplore.ieee.org/document/10586762"
+      }
     ]
   },
   {
-    "year": "2024", "month": "07", "category": "Journal",
-    "text": "A paper entitled \"High-Precision Built-In Phase Noise Measurement Circuit With a Hybrid ΔΣ Time-to-Digital Converter for SoC Clocking Applications\" has been accepted for publication in IEEE Transactions on Circuits and Systems II (TCAS-II).",
-    "links": [{ "label": "Paper", "url": "https://ieeexplore.ieee.org/abstract/document/10614194" }]
+    "year": "2024",
+    "month": "09",
+    "category": "Journal",
+    "text": "A paper entitled \"3.2-GHz Digital Phase-Locked Loop with Autocorrelation-based Direct Jitter Correction\" has been accepted for publication in IEEE Transactions on Circuits and Systems II (TCAS-II).",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://ieeexplore.ieee.org/document/10507171"
+      }
+    ]
   },
   {
-    "year": "2024", "month": "04", "category": "Grant",
+    "year": "2024",
+    "month": "08",
+    "category": "Conference",
+    "text": "A paper entitled \"A 14-to-32-Gb/s Deadzone-Free Referenceless CDR with Autocovariance-based Frequency Detector in 40-nm CMOS Technology\" has been accepted for presentation at the 2024 IEEE Asian Solid-State Circuits Conference (A-SSCC).",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://ieeexplore.ieee.org/document/10848602"
+      },
+      {
+        "label": "News Article",
+        "url": "https://www.newshyu.com/news/articleView.html?idxno=1017521"
+      }
+    ]
+  },
+  {
+    "year": "2024",
+    "month": "07",
+    "category": "Journal",
+    "text": "A paper entitled \"High-Precision Built-In Phase Noise Measurement Circuit With a Hybrid ΔΣ Time-to-Digital Converter for SoC Clocking Applications\" has been accepted for publication in IEEE Transactions on Circuits and Systems II (TCAS-II).",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://ieeexplore.ieee.org/abstract/document/10614194"
+      }
+    ]
+  },
+  {
+    "year": "2024",
+    "month": "04",
+    "category": "Grant",
     "text": "<u>HPIC Lab</u> was selected for the \"Development of High-Speed, Low-Power, and Low-Noise Clocking Network Systems for Optical Communication Chiplets\" project (Outstanding Young Scientist Grant), sponsored by the National Research Foundation of Korea (NRF).",
     "links": []
   },
   {
-    "year": "2024", "month": "01", "category": "Award",
+    "year": "2024",
+    "month": "01",
+    "category": "Award",
     "text": "<u>Dong-Hoe</u> received the Best Paper Award (Silver Prize) at ICEIC 2024.",
-    "links": []
+    "links": [],
+    "img": "img/award/ICEIC_24_gold.PNG"
   },
   {
-    "year": "2024", "month": "01", "category": "Service",
+    "year": "2024",
+    "month": "01",
+    "category": "Service",
     "text": "<u>Min-Seong</u> served as the Conference Secretary Chair for ICEIC 2024.",
     "links": []
   },
   {
-    "year": "2024", "month": "01", "category": "Service",
+    "year": "2024",
+    "month": "01",
+    "category": "Service",
     "text": "<u>Min-Seong</u> served on the Organizing Committee for ASP-DAC 2024.",
     "links": []
   },
   {
-    "year": "2023", "month": "12", "category": "Award",
+    "year": "2023",
+    "month": "12",
+    "category": "Award",
     "text": "<u>In-Woo</u> and <u>Kyu-Ran</u> received the IEEE CAS Student Design Contest Award.",
-    "links": []
+    "links": [],
+    "img": "img/award/231201_ICASS_IEEE_박규란_장인우.jpg"
   },
   {
-    "year": "2023", "month": "11", "category": "Service",
+    "year": "2023",
+    "month": "11",
+    "category": "Service",
     "text": "<u>Min-Seong</u> served on the Technical Program Committee for ISOCC 2023.",
     "links": []
   },
   {
-    "year": "2022", "month": "03", "category": "News",
+    "year": "2022",
+    "month": "03",
+    "category": "News",
     "text": "<u>Min-Seong</u> has been appointed to the School of Electrical Engineering at Hanyang University.",
     "links": []
   }
