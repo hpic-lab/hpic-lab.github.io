@@ -257,7 +257,6 @@ $(document).ready(function () {
 
     const links = {
       google_scholar: person.google_scholar,
-      cv: person.cv,
       linkedin: person.linkedin,
       orcid: person.orcid,
     };

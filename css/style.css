@@ -1283,8 +1283,17 @@ nav#navbar-main .navbar-collapse {
   text-align: center;
 }
 
+/* 신원 열: 세로 가운데 정렬 + 좌측 정렬로 사진과 baseline 맞춤 */
+#exampleModal .phb-identity {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
 #exampleModal .portrait-title {
   text-align: left;
+  width: 100%;
 }
 
 #exampleModal .portrait-title h2 {
