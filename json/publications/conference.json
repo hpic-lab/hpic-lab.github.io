@@ -360,7 +360,7 @@
     "title": "A 2T1C eDRAM-based Compute-In-Memory Macro with 8-to-1 Column Multiplexing Scheme for Highly Sparse Binarized Deep Neural Networks",
     "image": "",
     "conference": "IEEE/ISE ISOCC 2024",
-    "reference": "<i>21st International SoC Design Conference (ISOCC)</i>, pp. 177-178, 2024.",
+    "reference": "<i>International SoC Design Conference (ISOCC)</i>, Aug. 2024.",
     "authors": [
       "S.-U. Kang",
       "S.-M. Jin",
@@ -484,7 +484,7 @@
     "title": "Design of PAM4 Transmitter in 28-nm CMOS Technology",
     "image": "",
     "conference": "KCS 2024",
-    "reference": "<i>한국반도체학술대회 (KCS)</i>, December 2024.",
+    "reference": "<i>한국반도체학술대회 (KCS)</i>, Dec. 2024.",
     "authors": [
       "변유진",
       "추민성"
@@ -501,7 +501,7 @@
     "title": "Technology of Channel Equalization at the Receiver in 28nm CMOS",
     "image": "",
     "conference": "KCS 2024",
-    "reference": "<i>한국반도체학술대회 (KCS)</i>, December 2024.",
+    "reference": "<i>한국반도체학술대회 (KCS)</i>, Dec. 2024.",
     "authors": [
       "이동은",
       "김태현",
@@ -520,7 +520,7 @@
     "title": "Modeling of DSP-Based Receiver and Analysis Data Phase With Stochastic Method",
     "image": "",
     "conference": "KCS 2024",
-    "reference": "<i>한국반도체학술대회 (KCS)</i>, December 2024.",
+    "reference": "<i>한국반도체학술대회 (KCS)</i>, Dec. 2024.",
     "authors": [
       "권지현",
       "김태현",
