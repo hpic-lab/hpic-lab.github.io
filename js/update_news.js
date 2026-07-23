@@ -11,7 +11,7 @@ $(document).ready(function () {
     "News":         { label: "News",         bg: "#FBEAF0", fg: "#72243E" }
   };
 
-  var OPEN_YEARS_COUNT = 3; // 최신 몇 개 연도를 펼친 상태로 시작할지
+  var OPEN_YEARS_COUNT = 1; // 최신 몇 개 연도를 펼친 상태로 시작할지 (나머지는 접힘)
 
   $.getJSON("json/news/news.json").done(function (items) {
     var container = $(".news-timeline-container");
@@ -71,6 +71,31 @@ $(document).ready(function () {
         active: $this.hasClass("start-closed") ? false : 0
       });
     });
+
+    // ===== 좌측 사이드바: 연도 바로가기 (클릭 시 해당 연도 펼치고 이동) =====
+    var sidebar = $("#news-gallery .sticky-sidebar");
+    if (sidebar.length) {
+      sidebar.find(".news-year-links").remove();
+      var linksHTML = years
+        .map(function (y) {
+          return '<a href="#news-year-' + y + '" class="pub2-year-link news-year-link" data-year="' + y + '">' + y + "</a>";
+        })
+        .join("");
+      sidebar.append('<div class="pub2-year-links news-year-links">' + linksHTML + "</div>");
+
+      sidebar.on("click", ".news-year-link", function (e) {
+        e.preventDefault();
+        var year = $(this).data("year");
+        var header = container.find("h3#" + year);
+        if (!header.length) return;
+        var acc = header.closest(".news-accordion");
+        // 접혀 있으면 펼치기
+        if (acc.accordion("option", "active") === false) {
+          acc.accordion("option", "active", 0);
+        }
+        $("html, body").animate({ scrollTop: header.offset().top - 100 }, 200);
+      });
+    }
 
     // 연구원 이름 클릭 → 프로필 모달 (profile.js의 window.peopleDB 활용)
     container.on("click", "u.news-member", function () {

@@ -549,7 +549,10 @@ nav#navbar-main .navbar-collapse {
   #publications .row,
   #people,
   #people .container,
-  #people .row {
+  #people .row,
+  #news-gallery,
+  #news-gallery .container,
+  #news-gallery .row {
     overflow: visible !important;
   }
 
