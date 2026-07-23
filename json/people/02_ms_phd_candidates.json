@@ -1,13 +1,14 @@
 [
   {
     "name": "Do-Hyeong Lee",
-    "tag": "Memory Interface & Optical RX",
+    "tag": "Die-to-Die Interface",
     "education": [
       "M.S.-Ph.D., Department of Integrated Display Engineering, Yonsei University (2026.09 ~ Present)",
       "B.S., School of Electrical Engineering, Hanyang University, Ansan, Korea (2020.03 ~ 2026.02)"
     ],
     "research_interests": [
-      "Memory Interface & Optical RX"
+      "Die-to-Die Interface",
+      "Optical Receiver"
     ],
     "tape_out_schedule": [],
     "publication": [
