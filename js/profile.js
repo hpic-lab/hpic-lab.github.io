@@ -243,21 +243,31 @@ $(document).ready(function () {
     });
   })();
 
-  // 연구분야 칩이 두 줄로 넘어가면 ">100G " 접두어를 제거해 한 줄로
+  // 연구분야 칩이 한 줄에 안 들어가면 ">100G " 접두어를 제거해 한 줄로
   function fitModalInterest() {
     var ul = document.getElementById("modal-research_interests");
     if (!ul) return;
+    var avail = ul.clientWidth;
+    if (!avail) return;
     Array.prototype.forEach.call(ul.querySelectorAll("li"), function (li) {
-      var cs = getComputedStyle(li);
-      var lh = parseFloat(cs.lineHeight);
-      if (isNaN(lh)) lh = parseFloat(cs.fontSize) * 1.3;
-      var oneLine = lh + parseFloat(cs.paddingTop) + parseFloat(cs.paddingBottom);
-      if (li.offsetHeight > oneLine + 4) {
-        li.textContent = li.textContent.replace(/^\s*>?\s*100G\s+/, "");
+      // 원문 보관 후, nowrap 상태의 자연 너비를 측정
+      if (!li.dataset.full) li.dataset.full = li.textContent;
+      li.textContent = li.dataset.full;
+      var prev = li.style.whiteSpace;
+      li.style.whiteSpace = "nowrap";
+      var natural = li.scrollWidth;
+      li.style.whiteSpace = prev;
+      // 칩 한 줄 폭(자연 너비)이 행 폭보다 크면 접두어 제거
+      if (natural > avail) {
+        li.textContent = li.dataset.full.replace(/^\s*>?\s*100G\s+/, "");
       }
     });
   }
-  $("#exampleModal").on("shown.bs.modal", fitModalInterest);
+  function fitModalInterestSoon() {
+    requestAnimationFrame(fitModalInterest);
+    setTimeout(fitModalInterest, 120);
+  }
+  $("#exampleModal").on("shown.bs.modal", fitModalInterestSoon);
   $(window).on("resize", fitModalInterest);
 
   $("#exampleModal").on("show.bs.modal", function (event) {
@@ -581,6 +591,15 @@ $(document).ready(function () {
     var title, inst;
     if (instIdx >= 1) { title = parts.slice(0, instIdx).join(", "); inst = parts[instIdx]; }
     else { title = parts.join(", "); inst = ""; }
+    // 주요 기관은 위치(국가/도시)를 함께 표기
+    var INST_LOC = {
+      "Seoul National University": "Seoul National University, South Korea",
+      "Yonsei University": "Yonsei University, South Korea",
+      "Hanyang University": "Hanyang University, South Korea",
+      "Columbia University": "Columbia University, New York, NY, USA",
+      "NASA Ames Research Center": "NASA Ames Research Center, Mountain View, CA, USA"
+    };
+    if (INST_LOC[inst]) inst = INST_LOC[inst];
     return { title: title, inst: inst, period: period };
   }
 
