@@ -78,6 +78,15 @@ h6 {
   color: #222;
 }
 
+/* 섹션별 배경색 변수 (홀수 흰색 / 짝수 회색 교차) — 고정 제목 배경이 따라감 */
+.home-section {
+  --section-bg: #fff;
+}
+
+.home-section:nth-of-type(even) {
+  --section-bg: #f7f7f7;
+}
+
 /* ===== 내비게이션 흰색 테마 ===== */
 nav#navbar-main {
   background: #fff !important;
@@ -1112,9 +1121,7 @@ nav#navbar-main .navbar-collapse {
     position: -webkit-sticky;
     position: sticky;
     top: 66px;
-    background: rgba(255, 255, 255, 0.75) !important;
-    -webkit-backdrop-filter: blur(8px);
-    backdrop-filter: blur(8px);
+    background: var(--section-bg, #fff) !important;
     z-index: 5;
   }
 }
@@ -1206,9 +1213,7 @@ nav#navbar-main .navbar-collapse {
     position: -webkit-sticky;
     position: sticky;
     top: 66px;
-    background: rgba(255, 255, 255, 0.75);
-    -webkit-backdrop-filter: blur(8px);
-    backdrop-filter: blur(8px);
+    background: var(--section-bg, #fff);
     z-index: 5;
     padding-top: 8px;
   }
@@ -1364,9 +1369,7 @@ nav#navbar-main .navbar-collapse {
     position: -webkit-sticky;
     position: sticky;
     top: 66px;
-    background: rgba(255, 255, 255, 0.75);
-    -webkit-backdrop-filter: blur(8px);
-    backdrop-filter: blur(8px);
+    background: var(--section-bg, #fff);
     z-index: 5;
     padding-top: 8px;
   }
@@ -1830,9 +1833,7 @@ nav#navbar-main .navbar-collapse {
     position: -webkit-sticky;
     position: sticky;
     top: 66px;
-    background: rgba(255, 255, 255, 0.75);
-    -webkit-backdrop-filter: blur(8px);
-    backdrop-filter: blur(8px);
+    background: var(--section-bg, #fff);
     z-index: 5;
     padding-top: 8px;
   }
