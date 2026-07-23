@@ -1418,11 +1418,11 @@ nav#navbar-main .navbar-collapse {
 
 .people-card {
   width: 185px;
-  border: 1px solid #e5e5e5;
+  border: 1px solid #e0e0e0;
   border-radius: 10px;
   padding: 18px 12px;
   text-align: center;
-  background: #fff;
+  background: var(--section-bg, #fff);
   cursor: pointer;
   transition: box-shadow 0.15s, border-color 0.15s;
 }
