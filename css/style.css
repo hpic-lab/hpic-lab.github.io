@@ -1279,16 +1279,50 @@ nav#navbar-main .navbar-collapse {
   gap: 4px;
 }
 
-/* 학생용 컴팩트 카드 (사진 없이 이름 중심) */
+/* 학생용 컴팩트 카드 (시안 3: 이름 좌측 + 분야 우측, 한 줄) */
+.people-grid-compact {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
+  gap: 10px;
+}
+
 .people-card-compact {
-  position: relative;
-  width: 175px;
-  padding: 20px 14px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  width: auto;
+  padding: 13px 16px;
+  text-align: left;
+  border-radius: 8px;
+}
+
+.people-left {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
 }
 
 .people-card-compact .people-name {
-  font-size: 1.02rem;
-  margin-bottom: 8px;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.people-interest-inline {
+  flex-shrink: 0;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #0F6E56;
+  white-space: nowrap;
+}
+
+.people-roles-inline .people-role {
+  width: 19px;
+  height: 19px;
+  font-size: 11px;
+  border-width: 1px;
+  box-shadow: none;
 }
 
 .people-role {

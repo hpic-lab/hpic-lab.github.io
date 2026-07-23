@@ -37,7 +37,7 @@ $(document).ready(function () {
     return $.getJSON(url).done(function (people) {
       const container = $(containerClass);
       container.empty();
-      container.addClass("people-grid");
+      container.addClass(showIconsInMainView ? "people-grid" : "people-grid people-grid-compact");
 
       people.forEach((person) => {
         const imgKey = getFileName(person.profile_img);
@@ -177,9 +177,10 @@ $(document).ready(function () {
         data-bs-toggle="modal"
         data-bs-target="#exampleModal"
         data-img-key="${imgKey}">
-        ${roleBadges ? `<span class="people-roles">${roleBadges}</span>` : ""}
-        <div class="people-name">${name}</div>
-        ${interestHTML}
+        <span class="people-left">
+          <span class="people-name">${name}</span>${roleBadges ? `<span class="people-roles-inline">${roleBadges}</span>` : ""}
+        </span>
+        ${interest ? `<span class="people-interest-inline">${interest}</span>` : ""}
       </div>
     `;
   }
