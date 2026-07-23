@@ -1271,7 +1271,7 @@ nav#navbar-main .navbar-collapse {
   flex-wrap: wrap;
   gap: 14px;
   justify-content: center !important;
-  margin: 0 0 8px;
+  margin: 0 0 32px;
 }
 
 .principal-investigator.people-grid {
@@ -1460,14 +1460,41 @@ nav#navbar-main .navbar-collapse {
   margin-top: 0;
 }
 
-.alumni-title-ms {
+.alumni-title-ms,
+.alumni-title-bs {
+  font-size: 1.15rem;
   color: #0C447C;
   border-bottom: 2px solid #0C447C;
 }
 
-.alumni-title-bs {
-  color: #444441;
-  border-bottom: 2px solid #B4B2A9;
+/* Alumni 아코디언 헤더를 다른 서브섹션 제목과 같은 서식으로 */
+#people .accordion .ui-accordion-header {
+  background: transparent !important;
+  border: none !important;
+  border-bottom: 2px solid #0C447C !important;
+  border-radius: 0 !important;
+  color: #0C447C !important;
+  font-size: 1.15rem !important;
+  font-weight: 700;
+  text-align: left;
+  padding: 0 4px 5px 0 !important;
+  margin: 28px 0 16px !important;
+  cursor: pointer;
+}
+
+#people .accordion .ui-accordion-header .ui-accordion-header-icon {
+  display: none;
+}
+
+#people .accordion .ui-accordion-header::after {
+  content: "▾";
+  float: right;
+  transform: rotate(-90deg);
+  transition: transform 0.25s;
+}
+
+#people .accordion .ui-accordion-header.ui-state-active::after {
+  transform: rotate(0deg);
 }
 
 .alumni-grid {
