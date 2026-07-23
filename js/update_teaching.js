@@ -56,7 +56,7 @@ $(document).ready(function () {
       var range = Math.min.apply(null, hanyangYears) + "–" + Math.max.apply(null, hanyangYears);
       container.append(
         '<div class="completed-toggle collapsed">' +
-          "<span>Hanyang University (" + range + ")</span>" +
+          "<span>" + range + "</span>" +
           '<span class="completed-arrow">▾</span>' +
         "</div>" +
         '<div class="teach-hanyang" style="display: none;"></div>'
