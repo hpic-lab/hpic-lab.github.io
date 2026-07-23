@@ -1127,7 +1127,7 @@ nav#navbar-main .navbar-collapse {
   .news-accordion .ui-accordion-header {
     position: -webkit-sticky;
     position: sticky;
-    top: 66px;
+    top: 100px;
     background: var(--section-bg, #fff) !important;
     z-index: 5;
   }
@@ -1219,7 +1219,7 @@ nav#navbar-main .navbar-collapse {
   #research .gallery-title-row {
     position: -webkit-sticky;
     position: sticky;
-    top: 66px;
+    top: 100px;
     background: var(--section-bg, #fff);
     z-index: 5;
     padding-top: 8px;
@@ -1375,7 +1375,7 @@ nav#navbar-main .navbar-collapse {
   #people h3:not(.accordion h3):not(.h3-items) {
     position: -webkit-sticky;
     position: sticky;
-    top: 66px;
+    top: 100px;
     background: var(--section-bg, #fff);
     z-index: 5;
     padding-top: 8px;
@@ -1840,7 +1840,7 @@ nav#navbar-main .navbar-collapse {
   .pub2-year {
     position: -webkit-sticky;
     position: sticky;
-    top: 66px;
+    top: 100px;
     background: var(--section-bg, #fff);
     z-index: 5;
     padding-top: 8px;
