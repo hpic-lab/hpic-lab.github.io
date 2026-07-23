@@ -88,23 +88,42 @@ $(document).ready(function () {
     ];
   
     const container = $(".research-projects-container");
-    researchProjects.forEach((item) => {
 
-        const status = item.status 
-        ? `<span class="badge bg-primary">${item.status }</span>` 
-        : "";
-
-      const card = `
+    function projectCard(item) {
+      return `
         <div class="pub-wrapper">
           <span class="pub-icon-box"><img src="img/pub-svg.svg"></span>
-          <span class="badge bg-success">${item.date}</span> |
-            ${status}
+          <span class="badge bg-success">${item.date}</span>
           <br>
           <span class="pub-author"><b>${item.title}</b></span>
           <p>${item.sponsor}</p>
         </div>
       `;
-      container.append(card);
-    });
+    }
+
+    // 진행중 과제는 바로 표시
+    const ongoing = researchProjects.filter((p) => p.status !== "Completed");
+    const completed = researchProjects.filter((p) => p.status === "Completed");
+
+    ongoing.forEach((item) => container.append(projectCard(item)));
+
+    // 완료 과제는 접힌 서브섹션으로 (클릭 시 펼침)
+    if (completed.length > 0) {
+      container.append(`
+        <div class="completed-toggle collapsed">
+          <span>Completed Projects (${completed.length})</span>
+          <span class="completed-arrow">▾</span>
+        </div>
+        <div class="completed-projects" style="display:none"></div>
+      `);
+
+      const completedDiv = container.find(".completed-projects");
+      completed.forEach((item) => completedDiv.append(projectCard(item)));
+
+      container.on("click", ".completed-toggle", function () {
+        $(this).toggleClass("collapsed");
+        completedDiv.stop(true, false).slideToggle(250);
+      });
+    }
   });
   

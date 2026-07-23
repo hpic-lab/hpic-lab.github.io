@@ -1167,6 +1167,35 @@ nav#navbar-main .navbar-collapse {
   }
 }
 
+/* 완료 과제 접힘 토글 */
+.completed-toggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #555;
+  background: #f4f4f4;
+  border-radius: 8px;
+  padding: 10px 16px;
+  margin: 24px 0 12px;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.15s;
+}
+
+.completed-toggle:hover {
+  background: #ececec;
+}
+
+.completed-arrow {
+  transition: transform 0.25s;
+}
+
+.completed-toggle.collapsed .completed-arrow {
+  transform: rotate(-90deg);
+}
+
 /* 연구 대표 이미지 카드화 */
 .hpic-img {
   border: 1px solid #e5e5e5 !important;
