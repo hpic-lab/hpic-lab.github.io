@@ -404,7 +404,7 @@ $(document).ready(function () {
     const pubKey = (window.pubIndex || {})[imgKey] ? imgKey : (IMG_ALIAS[imgKey] || imgKey);
     const autoPubs = isPI ? [] : ((window.pubIndex || {})[pubKey] || [])
       .slice()
-      .sort((a, b) => a.year - b.year)
+      .sort((a, b) => b.year - a.year)
       .map((p, i) =>
         '<div class="mpub-entry">' +
           '<div class="mpub-num">' + (i + 1) + "</div>" +
