@@ -225,7 +225,7 @@ $(document).ready(function () {
           "</div>" +
           '<div class="pub2-body">' +
             (titleHTML ? '<div class="pub2-title">' + titleHTML + "</div>" : "") +
-            '<div class="pub2-src">' + srcText + "</div>" +
+            (hasTitle ? '<div class="pub2-src">' + srcText + "</div>" : "") +
             '<div class="pub2-authors">' + authorsHTML(pub.authors) + "</div>" +
             '<div class="pub-figures">' + figuresHTML(pub) + "</div>" +
           "</div>" +
