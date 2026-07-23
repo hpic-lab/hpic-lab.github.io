@@ -41,7 +41,8 @@
     "year": "2026",
     "month": "03",
     "category": "Journal",
-    "text": "A paper entitled \"IGA-SRAM: A Compact SRAM-based IMC Engine for Binary/Ternary Deep Neural Networks with ADC-Less and Error-Aware Training Algorithm\" has been accepted for publication in the IEEE Journal on Emerging and Selected Topics in Circuits and Systems (JETCAS).",
+    "text": "\"IGA-SRAM: A Compact SRAM-based IMC Engine for Binary/Ternary Deep Neural Networks with ADC-Less and Error-Aware Training Algorithm\" has been accepted in the IEEE JETCAS. Congratulations!",
+    "figures": ["su-kang-profile-img.jpg", "dh-lee-profile-img.png"],
     "links": [
       {
         "label": "Paper",

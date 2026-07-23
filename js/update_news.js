@@ -52,6 +52,10 @@ $(document).ready(function () {
         if (it.img) {
           links += ' <a href="#" class="news-link news-photo-link" data-img="' + it.img + '">[Photo]</a>';
         }
+        // 관련 학생 얼굴 사진 (문장 바로 뒤, 클릭 시 프로필 모달)
+        (it.figures || []).forEach(function (f) {
+          links += ' <img src="img/' + f + '" class="news-inline-fig" alt="" data-bs-toggle="modal" data-bs-target="#exampleModal" data-img-key="' + f + '">';
+        });
         // <u>이름</u> → 클릭 가능한 프로필 링크로 변환 (HPIC Lab 제외)
         var text = it.text.replace(/<u>(?!HPIC Lab<)(.*?)<\/u>/g, '<u class="news-member" title="View profile">$1</u>');
         list.append(

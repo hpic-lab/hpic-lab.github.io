@@ -1099,6 +1099,18 @@ nav#navbar-main .navbar-collapse {
   }
 }
 
+/* News 인라인 학생 얼굴 사진 */
+.news-inline-fig {
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid #ccc;
+  vertical-align: -8px;
+  margin-left: 3px;
+  cursor: pointer;
+}
+
 /* News [Photo] 라이트박스 */
 .news-photo-overlay {
   position: fixed;
@@ -2051,6 +2063,20 @@ nav#navbar-main .navbar-collapse {
   padding-bottom: 6px;
   border-bottom: 3px solid #e9e9e9;
   transition: color 0.2s, border-color 0.2s;
+  cursor: pointer;
+  user-select: none;
+}
+
+.pub2-year::after {
+  content: "▾";
+  float: right;
+  font-size: 1rem;
+  color: currentColor;
+  transition: transform 0.25s;
+}
+
+.pub2-year.collapsed::after {
+  transform: rotate(-90deg);
 }
 
 /* 현재 보고 있는(상단 고정) 연도만 파란 강조 — publication.js 스크롤 감지 */
@@ -2116,6 +2142,18 @@ nav#navbar-main .navbar-collapse {
 
 #pub2-patent .pub2-venue {
   color: #3C3489;
+}
+
+/* 학회명 아래 수상·상태 배지 (JSSC Invited, Best Paper Award, Submitted 등) */
+.pub2-side-badges {
+  margin-top: 5px;
+}
+
+.pub2-side-badges .pub2-badge {
+  display: inline-block;
+  margin: 2px 0 0;
+  white-space: normal;
+  line-height: 1.3;
 }
 
 .pub2-body {
