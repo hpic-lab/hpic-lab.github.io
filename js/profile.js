@@ -299,18 +299,24 @@ $(document).ready(function () {
         $("#modal-email-title").hide();
         $("#modal-email").hide();
     }
+    // 졸업생 여부 (Current Affiliation이 있으면 Alumni)
+    const isAlumni = !!(affiliation && String(affiliation).trim());
+
     // 직함 표시: Lab Captain / Server Manager 등은 아이콘·색상 배지로
-    (function () {
-      var parts = String(position || "").split(/<br\s*\/?>/i);
-      var html = parts.map(function (raw) {
+    // (졸업생은 랩 내 직함을 표시하지 않음)
+    if (isAlumni) {
+      $("#modal-position").empty().hide();
+    } else {
+      var _parts = String(position || "").split(/<br\s*\/?>/i);
+      var _html = _parts.map(function (raw) {
         var t = raw.trim();
         if (!t) return "";
         if (/lab\s*captain/i.test(t)) return '<span class="modal-role modal-role-captain">★ ' + t + "</span>";
         if (/server\s*manager/i.test(t)) return '<span class="modal-role modal-role-server">⚙ ' + t + "</span>";
         return '<span class="modal-role-plain">' + t + "</span>";
       }).filter(Boolean).join(" ");
-      $("#modal-position").html(html);
-    })();
+      $("#modal-position").html(_html).show();
+    }
 
     $("#modal-network-icons").remove(); 
     const iconsHTML = createNetworkIcons(links);
@@ -327,7 +333,7 @@ $(document).ready(function () {
     const isProfessor = (position || "").indexOf("Professor") !== -1;
     const parsed_research_interests = parseData(research_interests);
 
-    if (!isProfessor && parsed_research_interests.length > 0) {
+    if (!isProfessor && !isAlumni && parsed_research_interests.length > 0) {
         $("#modal-research_interests-title").show();
         $("#modal-research_interests").show();
         updateList("#modal-research_interests", parsed_research_interests, "");
@@ -505,7 +511,13 @@ $(document).ready(function () {
     return { title: title, inst: inst, period: period };
   }
 
-  // 타임라인(시안1) 렌더링 — 학위/직함(굵게) + 기관(회색) + 기간(우측)
+  // 기간 시작 연·월을 정렬 키(YYYYMM)로. 없으면 0.
+  function startKey(period) {
+    var m = (period || "").match(/(\d{4})\.(\d{2})/);
+    return m ? parseInt(m[1], 10) * 100 + parseInt(m[2], 10) : 0;
+  }
+
+  // 타임라인(시안1) 렌더링 — 학위/직함(굵게) + 기관(회색) + 기간(우측), 최신순(내림차순)
   function renderTimeline(selector, items, emptyMessage) {
     var $el = $(selector);
     $el.empty();
@@ -513,8 +525,14 @@ $(document).ready(function () {
       if (emptyMessage) $el.append('<li class="tl-item"><div class="tl-row"><span class="tl-title">' + emptyMessage + "</span></div></li>");
       return;
     }
-    items.forEach(function (it) {
+    // 시작일 기준 내림차순 (진행 중/최근 항목이 위로)
+    var parsed = items.map(function (it) {
       var e = parseCVEntry(it);
+      return { e: e, k: startKey(e.period) };
+    }).sort(function (a, b) { return b.k - a.k; });
+
+    parsed.forEach(function (row) {
+      var e = row.e;
       $el.append(
         '<li class="tl-item">' +
           '<span class="tl-dot"></span>' +
