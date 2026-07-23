@@ -194,6 +194,40 @@ $(document).ready(function () {
     `;
   }
 
+  // ===== 모바일 뒤로가기로 모달 닫기 =====
+  // 모달이 열릴 때 히스토리를 한 단계 쌓아서, 뒤로가기를 누르면
+  // 페이지를 벗어나는 대신 모달만 닫히도록 한다.
+  (function () {
+    var modalEl = document.getElementById("exampleModal");
+    if (!modalEl) return;
+
+    modalEl.addEventListener("shown.bs.modal", function () {
+      history.pushState({ hpicModal: true }, "");
+    });
+
+    window.addEventListener("popstate", function () {
+      if (modalEl.classList.contains("show") && window.bootstrap && window.bootstrap.Modal) {
+        var inst = window.bootstrap.Modal.getInstance(modalEl);
+        if (inst) inst.hide();
+      }
+    });
+
+    // X 버튼·배경 클릭 등으로 닫았을 때는 쌓아둔 히스토리를 정리
+    modalEl.addEventListener("hidden.bs.modal", function () {
+      if (history.state && history.state.hpicModal) {
+        history.back();
+      }
+    });
+
+    // 배경(모달 바깥 빈 곳) 클릭/터치 시 닫기 — 기본 동작이 막히는 경우 대비
+    modalEl.addEventListener("click", function (e) {
+      if (e.target === modalEl && window.bootstrap && window.bootstrap.Modal) {
+        var inst = window.bootstrap.Modal.getInstance(modalEl);
+        if (inst) inst.hide();
+      }
+    });
+  })();
+
   $("#exampleModal").on("show.bs.modal", function (event) {
     const button = $(event.relatedTarget); 
     const imgKey = button.data("img-key"); 
