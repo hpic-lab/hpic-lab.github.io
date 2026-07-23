@@ -1552,6 +1552,17 @@ nav#navbar-main .navbar-collapse {
   text-decoration: underline;
 }
 
+/* Publications 제목 옆 "Equally Credited Authors" 안내 (메인 페이지와 동일 색상) */
+#exampleModal .profile-right p span .modal-eca-note {
+  display: inline !important;
+  border-bottom: none !important;
+  padding-bottom: 0 !important;
+  margin-top: 0 !important;
+  font-size: 0.8rem !important;
+  font-weight: 500;
+  color: #777;
+}
+
 /* 심사 중(제목 미공개) 논문 표시 */
 #exampleModal .mpub-title.mpub-review {
   font-weight: 600;

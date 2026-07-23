@@ -466,6 +466,12 @@ $(document).ready(function () {
         "</div>");
     const parsedPublication = isPI ? [] : (autoPubs.length > 0 ? autoPubs : parseData(publication));
     if (parsedPublication.length > 0) {
+      // 공동 1저자(†)가 포함된 경우 제목에 안내 문구 추가
+      var hasECA = parsedPublication.some(function (h) { return String(h).indexOf("†") !== -1; });
+      $("#modal-publication-title span").html(
+        "Publications" +
+        (hasECA ? ' <span class="modal-eca-note">(&dagger; Equally Credited Authors)</span>' : "")
+      );
       $("#modal-publication-title").show();
       $("#modal-publication").show();
       updateList("#modal-publication", parsedPublication, "");
