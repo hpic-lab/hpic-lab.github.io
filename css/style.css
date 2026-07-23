@@ -2120,7 +2120,7 @@ nav#navbar-main .navbar-collapse {
 
 .pub2-side {
   flex-shrink: 0;
-  width: 105px;
+  width: 135px;
   text-align: center;
 }
 
@@ -2152,7 +2152,7 @@ nav#navbar-main .navbar-collapse {
 .pub2-side-badges .pub2-badge {
   display: inline-block;
   margin: 2px 0 0;
-  white-space: normal;
+  white-space: nowrap; /* 배지는 항상 한 줄로 */
   line-height: 1.3;
 }
 
