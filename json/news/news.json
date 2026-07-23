@@ -121,7 +121,10 @@
     "month": "03",
     "category": "News",
     "text": "<u>Min-Seong</u> was appointed to the School of Electrical and Electronic Engineering at Yonsei University.",
-    "links": []
+    "links": [],
+    "figures": [
+      "ms-choo-profile-img.png"
+    ]
   },
   {
     "year": "2026",
@@ -146,21 +149,30 @@
     "month": "01",
     "category": "Invited Talk",
     "text": "<u>Min-Seong</u> presented an invited talk entitled \"100Gb/s급 디지털 인터페이스 회로 설계\" at KAIST (hosted by IDEC).",
-    "links": []
+    "links": [],
+    "figures": [
+      "ms-choo-profile-img.png"
+    ]
   },
   {
     "year": "2026",
     "month": "01",
     "category": "Invited Talk",
     "text": "<u>Min-Seong</u> presented an invited talk entitled \"Unlocking AI's True Potential: The Critical Role of High-Speed Interfaces\" at Dongguk University.",
-    "links": []
+    "links": [],
+    "figures": [
+      "ms-choo-profile-img.png"
+    ]
   },
   {
     "year": "2026",
     "month": "01",
     "category": "Invited Talk",
     "text": "<u>Min-Seong</u> presented an invited talk entitled \"Unlocking AI's True Potential: The Critical Role of High-Speed Interfaces\" at Yonsei University.",
-    "links": []
+    "links": [],
+    "figures": [
+      "ms-choo-profile-img.png"
+    ]
   },
   {
     "year": "2026",
@@ -277,21 +289,34 @@
     "month": "11",
     "category": "Invited Talk",
     "text": "<u>Min-Seong</u> presented an invited talk entitled \"High-Speed Interface Circuit Design\" at the University of Seoul.",
-    "links": []
+    "links": [],
+    "figures": [
+      "ms-choo-profile-img.png"
+    ]
   },
   {
     "year": "2025",
     "month": "11",
     "category": "Invited Talk",
     "text": "<u>Seung-Hwan</u>, <u>Jae-Geon</u>, <u>Seung-Mo</u>, <u>Dong-Ho</u>, and <u>Min-Seong</u> presented an invited talk entitled \"Analog Modeling\" at LX Semicon.",
-    "links": []
+    "links": [],
+    "figures": [
+      "sh-gong-profile-image.jpg",
+      "jg-lee-profile-img.jpeg",
+      "sm-jin-profile-img.jpg",
+      "dh-kim-new-profile-image.jpg",
+      "ms-choo-profile-img.png"
+    ]
   },
   {
     "year": "2025",
     "month": "11",
     "category": "Invited Talk",
     "text": "<u>Min-Seong</u> presented an invited talk entitled \"DSP-based Wireline Communication\" at Korea University (hosted by Prof. Chulwoo Kim).",
-    "links": []
+    "links": [],
+    "figures": [
+      "ms-choo-profile-img.png"
+    ]
   },
   {
     "year": "2025",
@@ -431,14 +456,20 @@
     "month": "09",
     "category": "Grant",
     "text": "<u>Seung-Mo</u> was selected as a recipient of the Master's Student Research Grant from the National Research Foundation (NRF) of Korea.",
-    "links": []
+    "links": [],
+    "figures": [
+      "sm-jin-profile-img.jpg"
+    ]
   },
   {
     "year": "2025",
     "month": "09",
     "category": "Grant",
     "text": "<u>Jae-Geon</u> was selected as a recipient of the Master's Student Research Grant from the National Research Foundation (NRF) of Korea.",
-    "links": []
+    "links": [],
+    "figures": [
+      "jg-lee-profile-img.jpeg"
+    ]
   },
   {
     "year": "2025",
@@ -479,7 +510,10 @@
     "month": "08",
     "category": "Invited Talk",
     "text": "<u>Min-Seong</u> presented an invited talk entitled \"High-Speed Integrated Circuit Design\" at the 2025 SoC Workshop.",
-    "links": []
+    "links": [],
+    "figures": [
+      "ms-choo-profile-img.png"
+    ]
   },
   {
     "year": "2025",
@@ -716,7 +750,10 @@
     "month": "05",
     "category": "Invited Talk",
     "text": "<u>Min-Seong</u> presented an invited talk entitled \"Basics of High-Speed Wireline Communication\" at the Analog/Power IC Design Workshop.",
-    "links": []
+    "links": [],
+    "figures": [
+      "ms-choo-profile-img.png"
+    ]
   },
   {
     "year": "2025",
@@ -781,7 +818,10 @@
     "month": "01",
     "category": "Invited Talk",
     "text": "<u>Min-Seong</u> presented a talk entitled \"The Future of High-Speed Wireline: Innovations in DSP-Based Transceiver Design\" at ICEIC.",
-    "links": []
+    "links": [],
+    "figures": [
+      "ms-choo-profile-img.png"
+    ]
   },
   {
     "year": "2025",
@@ -993,6 +1033,9 @@
     "month": "03",
     "category": "News",
     "text": "<u>Min-Seong</u> was appointed to the School of Electrical Engineering at Hanyang University.",
-    "links": []
+    "links": [],
+    "figures": [
+      "ms-choo-profile-img.png"
+    ]
   }
 ]
