@@ -1,11 +1,13 @@
 [
-    {
+  {
     "name": "Han-Gil Yoo",
     "tag": "AI Accelerator",
     "education": [
-    "B.S., Department of Electrical Engineering, Hanyang University, Ansan, Korea (2019.03 ~ Present)"
+      "B.S., School of EE, Hanyang University, Ansan, Korea (2019.03 ~ Present)"
     ],
-    "research_interests": ["PiM"],
+    "research_interests": [
+      "PiM"
+    ],
     "Awards": [],
     "biography": "Han-Gil Yoo is pursuing a Bachelor's degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include analog and digital circuit designs of processing in memory (PiM).",
     "email": "ilovec215@gmail.com",

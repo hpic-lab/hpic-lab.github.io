@@ -7,8 +7,8 @@
       "AI hardware design and PIM"
     ],
     "education": [
-      "B.S., School of Electrical and Electronic Engineering from Dankook University, Jukjeon, South Korea, (2018.03 ~ 2024.02)",
-      "M.S., School of Electrical Engineering from Hanyang University, Ansan, South Korea, (2024.03 ~ 2026.02)"
+      "B.S., School of EE, Dankook University, Jukjeon, South Korea, (2018.03 ~ 2024.02)",
+      "M.S., School of EE, Hanyang University, Ansan, South Korea, (2024.03 ~ 2026.02)"
     ],
     "publication": [
       "S.-U. Kang*, D.-H. Lee*, M.-G. Song, M. Seok, and Min-Seong Choo., IGA-SRAM: A Compact SRAM-based IMC Engine for Binary/Ternary Deep Neural Networks with ADC-Less and Error-Aware Training Algorithm, IEEE Journal on Emerging and Selected Topics in Circuits and Systems (JETCAS), 2026(*Equally Credited Authors)."
@@ -29,8 +29,8 @@
       "CDR, PAM4 receiver"
     ],
     "education": [
-      "B.S., School of Electrical Engineering from Hanyang University, Ansan, South Korea, (2009.03 ~ 2016.02)",
-      "M.S., School of Electrical Engineering from Hanyang University, Ansan, South Korea, (2024.03 ~ 2026.02)"
+      "B.S., School of EE, Hanyang University, Ansan, South Korea, (2009.03 ~ 2016.02)",
+      "M.S., School of EE, Hanyang University, Ansan, South Korea, (2024.03 ~ 2026.02)"
     ],
     "publication": [
       "S.-H. Ok*, J.-G. Lee*, K.-H Lee, Haram Ju, G.-S Jeong, W. Bae, Min-Seong Choo, Critical-Timing-Relaxed pre-Decision Feedforward Equalizer for High-Speed DSP-based Wireline Receiver using Hardware-in-the-Loop Verification on RF-SoC, in 2025 IEEE Asian Solid-State Circuits Conference (A-SSCC), (*Equally Credited Authors).",
@@ -50,8 +50,8 @@
       "Wide-range PI-based CDR"
     ],
     "education": [
-      "B.S., School of Electrical Engineering from Hanyang University, Ansan, South Korea, (2017.03 ~ 2023.02)",
-      "M.S., School of Electrical Engineering from Hanyang University, Ansan, South Korea, (2023.03 ~ 2025.08)"
+      "B.S., School of EE, Hanyang University, Ansan, South Korea, (2017.03 ~ 2023.02)",
+      "M.S., School of EE, Hanyang University, Ansan, South Korea, (2023.03 ~ 2025.08)"
     ],
     "publication": [
       "D.-H. Heo, T.-H. Kim, K.-H. Lee, and Min-Seong Choo, An Analysis of 32-Gb/s and Full-Rate Phase Interpolator based Clock and Data Recovery, in 2024 International Conference on Electronics, Information, and Communication (ICEIC), 2024."
@@ -69,8 +69,8 @@
       "Physically Unclonable Function (PUF)"
     ],
     "education": [
-      "B.S., School of Electrical Engineering from Hanyang University, Ansan, South Korea, (2017.03 ~ 2023.02)",
-      "M.S., School of Electrical Engineering from Hanyang University, Ansan, South Korea, (2023.03 ~ 2025.02)"
+      "B.S., School of EE, Hanyang University, Ansan, South Korea, (2017.03 ~ 2023.02)",
+      "M.S., School of EE, Hanyang University, Ansan, South Korea, (2023.03 ~ 2025.02)"
     ],
     "biography": "Kang-Min Kim received the B.S. and M.S. degrees in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include hardware security.",
     "email": "",
@@ -84,7 +84,7 @@
       "High-performance DPLL"
     ],
     "education": [
-      "M.S., School of Electrical Engineering from Hanyang University, Ansan, South Korea, (2023.03 ~ 2025.02)"
+      "M.S., School of EE, Hanyang University, Ansan, South Korea, (2023.03 ~ 2025.02)"
     ],
     "biography": "Kyu-Ran Park received a B.S. degree in electrical engineering from Cheongju University, Cheongju, South Korea, and the M.S. degree in electrical engineering from Hanyang University, Ansan, South Korea. She joined LX Semicon, Seoul, South Korea, in 2015, where she has been involved in the YPD team. Her research interests include analog and digital circuit designs of phase-locked-loop (PLL).",
     "email": "",
@@ -98,8 +98,8 @@
       "AI hardware design and PIM"
     ],
     "education": [
-      "B.S., School of Electrical Engineering from Hanyang University, Ansan, South Korea, (2019.03 ~ 2023.02)",
-      "M.S., School of Electrical Engineering from Hanyang University, Ansan, South Korea, (2023.03 ~ 2025.02)"
+      "B.S., School of EE, Hanyang University, Ansan, South Korea, (2019.03 ~ 2023.02)",
+      "M.S., School of EE, Hanyang University, Ansan, South Korea, (2023.03 ~ 2025.02)"
     ],
     "publication": [
       "S.-U. Kang*, D.-H. Lee*, M.-G. Song, M. Seok, and Min-Seong Choo., IGA-SRAM: A Compact SRAM-based IMC Engine for Binary/Ternary Deep Neural Networks with ADC-Less and Error-Aware Training Algorithm, IEEE Journal on Emerging and Selected Topics in Circuits and Systems (JETCAS), 2026(*Equally Credited Authors).",
@@ -117,7 +117,7 @@
       "High PSRR DPLL"
     ],
     "education": [
-      "M.S., School of Electrical Engineering from Hanyang University, Ansan, South Korea, (2022.09 ~ 2025.02)"
+      "M.S., School of EE, Hanyang University, Ansan, South Korea, (2022.09 ~ 2025.02)"
     ],
     "publication": [
       "K. Baek*, J. Kim*, K. Kim, D.-K. Jeong, and Min-Seong Choo, A Supply Noise-Insensitive Ring DCO With a Self-Biased Shunt Regulator Array in Wide-Range Digital PLL, IEEE Transactions on Very Large Scale Integration (VLSI) Systems, vol. 33, no. 8, pp. 2349-2353, Aug. 2025 (Equally Credited Authors).",
