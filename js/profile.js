@@ -553,10 +553,12 @@ $(document).ready(function () {
     // 대학/연구기관 키워드를 우선 인식 (학과명에 Semiconductor 등이 들어가도 기관을 정확히 선택)
     var strongKw = /(University|Institute|College|대학교|Univ\.?)/i;
     var wideKw = /(University|Institute|College|Center|Research|Corp|Inc|Semiconductor|Electronics|Labs?|Company|Univ|대학교|연구소|연구원)/i;
+    // 마지막에 매칭되는 기관을 상위기관으로 선택 (부서명에 University/Center 등이 들어가도
+    // 실제 상위기관 - 예: NASA Ames Research Center, Seoul National University - 을 인식)
     var instIdx = -1;
-    for (var i = 1; i < parts.length; i++) { if (strongKw.test(parts[i])) { instIdx = i; break; } }
+    for (var i = 1; i < parts.length; i++) { if (strongKw.test(parts[i])) instIdx = i; }
     if (instIdx === -1) {
-      for (var j = 1; j < parts.length; j++) { if (wideKw.test(parts[j])) { instIdx = j; break; } }
+      for (var j = 1; j < parts.length; j++) { if (wideKw.test(parts[j])) instIdx = j; }
     }
     if (instIdx === -1) instIdx = parts.length >= 2 ? 1 : -1;
     var title, inst;
