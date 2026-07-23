@@ -29,14 +29,15 @@ $(document).ready(function () {
 
   // ===== 프로필 모달 자동 연동용 색인 =====
   // 논문의 figure(구성원 얼굴 사진 파일명)를 키로 논문 목록을 쌓는다.
-  // profile.js가 window.pubIndex[사진파일명]으로 해당 구성원의 논문을 가져간다.
+  // profile.js가 window.pubIndex[사진파일명]으로 해당 구성원의 논문을 가져가
+  // 홈페이지 Publications와 같은 양식(좌측 학회 약어·배지 + 제목·출처·저자)으로 표시한다.
   window.pubIndex = window.pubIndex || {};
-  function registerPub(pub, entryHTML) {
+  function registerPub(pub, sideHTML, bodyHTML) {
     var y = Number(pub.type || pub.year) || 0;
     (pub.figure || []).forEach(function (img) {
       var k = getFileName(img);
       if (!window.pubIndex[k]) window.pubIndex[k] = [];
-      window.pubIndex[k].push({ year: y, html: entryHTML });
+      window.pubIndex[k].push({ year: y, side: sideHTML, body: bodyHTML });
     });
   }
 
@@ -178,15 +179,21 @@ $(document).ready(function () {
         .trim();
       var srcText = refText !== "" ? refText : ((pub.conference || pub.journal || "") + ", " + year);
 
-      // 프로필 모달용 색인 등록 (제목 있는 논문만)
+      var badges = tagsHTML(pub);
+
+      // 프로필 모달용 색인 등록 (제목 있는 논문만, Publications 섹션과 동일 양식)
       if (hasTitle) {
-        var linkHTML = pub.link && pub.link.trim() !== ""
-          ? ' <a href="' + pub.link + '" target="_blank" rel="noopener noreferrer" class="news-link">[Paper]</a>'
-          : "";
-        registerPub(pub, authorsHTML(pub.authors) + ', "' + pub.title + '," ' + srcText + linkHTML);
+        var kindClass = venueClass === "pub2-venue-journal" ? "mpub-journal" : "mpub-conf";
+        registerPub(
+          pub,
+          '<div class="mpub-venue ' + kindClass + '">' + v + "</div>" +
+            (badges ? '<div class="pub2-side-badges">' + badges + "</div>" : ""),
+          '<div class="mpub-title">' + titleHTML + "</div>" +
+            '<div class="mpub-src">' + srcText + "</div>" +
+            '<div class="mpub-authors">' + authorsHTML(pub.authors) + "</div>"
+        );
       }
 
-      var badges = tagsHTML(pub);
       body.append(
         '<div class="pub2-entry">' +
           '<div class="pub2-num">' + num + "</div>" +
@@ -238,7 +245,13 @@ $(document).ready(function () {
         : "";
 
       // 프로필 모달용 색인 등록 (특허)
-      registerPub(pub, authorsHTML(pub.inventors) + ', "' + pub.title + '" (' + (pub.type || "특허") + (pub.registration ? ", " + pub.registration : "") + ")");
+      registerPub(
+        pub,
+        '<div class="mpub-venue mpub-patent">' + (pub.type || "특허") + "</div>",
+        '<div class="mpub-title">' + pub.title + "</div>" +
+          (pub.registration ? '<div class="mpub-src">' + pub.registration + "</div>" : "") +
+          '<div class="mpub-authors">' + authorsHTML(pub.inventors) + "</div>"
+      );
 
       body.append(
         '<div class="pub2-entry">' +

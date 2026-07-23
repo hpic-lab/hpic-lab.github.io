@@ -1335,6 +1335,85 @@ nav#navbar-main .navbar-collapse {
   text-align: justify;
 }
 
+/* ===== 모달 Publications/Awards: 홈페이지 Publications와 동일 양식 ===== */
+#exampleModal .ul-publication,
+#exampleModal .ul-Awards {
+  list-style: none;
+  padding-left: 0;
+}
+
+#exampleModal .mpub-entry {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+#exampleModal .mpub-num {
+  flex-shrink: 0;
+  min-width: 24px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #999;
+  text-align: center;
+}
+
+#exampleModal .mpub-side {
+  flex-shrink: 0;
+  width: 120px;
+  text-align: center;
+}
+
+#exampleModal .mpub-venue {
+  font-weight: 800;
+  font-size: 1rem;
+  line-height: 1.25;
+  word-break: keep-all;
+}
+
+#exampleModal .mpub-journal { color: #0C447C; }
+#exampleModal .mpub-conf    { color: #085041; }
+#exampleModal .mpub-patent  { color: #3C3489; }
+
+#exampleModal .mpub-side.mpub-date {
+  font-weight: 700;
+  color: #999;
+  font-size: 0.95rem;
+}
+
+#exampleModal .mpub-body {
+  flex: 1;
+  min-width: 0;
+}
+
+#exampleModal .mpub-title {
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+#exampleModal .mpub-title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#exampleModal .mpub-title a:hover {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+#exampleModal .mpub-src {
+  color: #999;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+#exampleModal .mpub-authors {
+  color: #444;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
 #exampleModal .profile-right {
   padding-left: 12px;
   padding-right: 12px;
