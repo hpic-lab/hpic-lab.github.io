@@ -2,7 +2,9 @@
   {
     "name": "Jae-Hyeon Pyeon",
     "tag": "PLL",
-    "research_interests": ["High-performance DPLL"],
+    "research_interests": [
+      "High-performance DPLL"
+    ],
     "tape_out_schedule": [
       {
         "date": "2024.07",
@@ -18,10 +20,12 @@
       }
     ],
     "education": [
-    "B.S., School of Electrical Engineering, Hanyang University, Ansan, Korea (2018.03 ~ 2024.08)"
+      "B.S., School of Electrical Engineering, Hanyang University, Ansan, Korea (2018.03 ~ 2024.08)"
     ],
-    "publication": ["J. Choi, J.-H. Kim, T. Kim, J.-H. Pyeon, W.-T. Lim, H. Kim, H. Roh, K.-H. Lee, M. Choi, Min-Seong Choo, and J. Roh, Built-In Phase Noise Measurement System for Multi-GHz Phase-Locked Loops, IEEE Transactions on Instrumentation and Measurement (TIM), 2026.<a href='https://ieeexplore.ieee.org/document/11456593' target='_blank' rel='noopener noreferrer' class='news-link'>[Paper]</a>"],
-    "Awards": ["ISOCC'25 Chip Design Contest"],
+    "publication": [
+      "J. Choi, J.-H. Kim, T. Kim, J.-H. Pyeon, W.-T. Lim, H. Kim, H. Roh, K.-H. Lee, M. Choi, Min-Seong Choo, and J. Roh, Built-In Phase Noise Measurement System for Multi-GHz Phase-Locked Loops, IEEE Transactions on Instrumentation and Measurement (TIM), 2026.<a href='https://ieeexplore.ieee.org/document/11456593' target='_blank' rel='noopener noreferrer' class='news-link'>[Paper]</a>"
+    ],
+    "Awards": [],
     "biography": "Jae-Hyeon Pyeon received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include analog and digital circuit designs of phase-locked-loop (PLL).",
     "email": "ccomo7004@hanyang.ac.kr",
     "profile_img": "img/jh-pyeon-profile-img.png",
@@ -31,10 +35,14 @@
     "name": "So-Yeon Kwon",
     "tag": "100G PIM-TX",
     "education": [
-    "B.S., School of Applied Physics, Hanyang University, Ansan, Korea (2019.03 ~ 2025.02)"
+      "B.S., School of Applied Physics, Hanyang University, Ansan, Korea (2019.03 ~ 2025.02)"
     ],
-    "research_interests": ["Digital PIM"],
-    "publication": ["S.-Y. Kwon, D.-H. Lee, S.-H. Kim, and Min-Seong Choo, Comparison of 3T2C Embedded DRAM in 28nm FD-SOI and Low Power Plus for Energy-Efficient Computing in Memory Architecture, IDEC Journal of Integrated Circuits and Systems (JICAS), 12(2), 1-5. <a href='https://jicas.idec.or.kr/index.php/JICAS/article/view/350' target='_blank' rel='noopener noreferrer' class='news-link'>[Paper]</a>"],
+    "research_interests": [
+      "Digital PIM"
+    ],
+    "publication": [
+      "S.-Y. Kwon, D.-H. Lee, S.-H. Kim, and Min-Seong Choo, Comparison of 3T2C Embedded DRAM in 28nm FD-SOI and Low Power Plus for Energy-Efficient Computing in Memory Architecture, IDEC Journal of Integrated Circuits and Systems (JICAS), 12(2), 1-5. <a href='https://jicas.idec.or.kr/index.php/JICAS/article/view/350' target='_blank' rel='noopener noreferrer' class='news-link'>[Paper]</a>"
+    ],
     "Awards": [],
     "biography": "So-Yeon Kwon received a B.S. degree in the school of Applied Physics at Hanyang University, Ansan, South Korea. She is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. Her research interests include artificial intelligence hardware design and processing in memory (PIM).",
     "email": "sykwon00@hanyang.ac.kr",
@@ -43,15 +51,19 @@
   },
   {
     "name": "In-Ho Han",
-    "research_interests": ["PLL"],
+    "research_interests": [
+      "PLL"
+    ],
     "education": [
-    "B.S., School of Electronic Engineering, Gachon University, Seoungnam, Korea (2017.03 ~ 2023.02)"
+      "B.S., School of Electronic Engineering, Gachon University, Seoungnam, Korea (2017.03 ~ 2023.02)"
     ],
     "experience": [
-    "FAE(Field Application Engineer), Dongwoon Anatech, Seoul, Korea (2023.04 ~ 2024.08 )"
-    ],    
-    "publication": ["I.-H. Han and Min-Seong Choo, Implementation and Characterization of a Digital Phase-Locked Loop (DPLL) in 65-nm CMOS Technology, IDEC Journal of Integrated Circuits and Systems (JICAS), 11(4), 52-57, 2025. <a href='https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003245290' target='_blank' rel='noopener noreferrer' class='news-link'>[Paper]</a>",
-                    "I.-H. Han and Min-Seong Choo, A Digital Phase-Locked Loop with Autocorrelation-Based Proportional Gain Control for Adaptive Jitter Reduction, 2025 International Conference on Electronics, Information, and Communication (ICEIC), Osaka, Japan, 2025."],
+      "FAE(Field Application Engineer), Dongwoon Anatech, Seoul, Korea (2023.04 ~ 2024.08 )"
+    ],
+    "publication": [
+      "I.-H. Han and Min-Seong Choo, Implementation and Characterization of a Digital Phase-Locked Loop (DPLL) in 65-nm CMOS Technology, IDEC Journal of Integrated Circuits and Systems (JICAS), 11(4), 52-57, 2025. <a href='https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003245290' target='_blank' rel='noopener noreferrer' class='news-link'>[Paper]</a>",
+      "I.-H. Han and Min-Seong Choo, A Digital Phase-Locked Loop with Autocorrelation-Based Proportional Gain Control for Adaptive Jitter Reduction, 2025 International Conference on Electronics, Information, and Communication (ICEIC), Osaka, Japan, 2025."
+    ],
     "biography": "In-Ho Han received a B.S. degree in electrical engineering from Gachon University, Sungnam, South Korea. He is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include analog and digital circuit designs of phase-locked-loop (PLL).",
     "email": "inho0303@hanyang.ac.kr",
     "profile_img": "img/ih-han-profile-img.jpg",
@@ -61,7 +73,9 @@
   {
     "name": "Seung-Hwan Gong",
     "tag": "100G RX",
-    "research_interests": ["CDR, DSP-based Receiver"],
+    "research_interests": [
+      "CDR, DSP-based Receiver"
+    ],
     "tape_out_schedule": [
       {
         "date": "2025.02",
@@ -69,10 +83,12 @@
       }
     ],
     "education": [
-    "B.S., School of Electronics Engineering, Kangwon National University, Chuncheon, Korea (2018.03 ~ 2024.02)"
+      "B.S., School of Electronics Engineering, Kangwon National University, Chuncheon, Korea (2018.03 ~ 2024.02)"
     ],
-    "publication": ["H.-S. Choi*, J.-G. Lee*, S.-H. Gong, K.-H. Lee, D. Koh, J.-W. Sull, H. Do, C.-H. Kye, D.-K. Jeong, K. Park, and Min-Seong Choo, A 14-to-32-Gb/s Deadzone-Free Referenceless CDR With Autocovariance-Based Seamless Frequency Detector in 40-nm CMOS Technology, IEEE Journal of Solid-State Circuits, vol. 60, no. 10, pp. 3602-3612, Oct. 2025 (*Equally Credited Authors). <a href='https://ieeexplore.ieee.org/document/11029275' target='_blank' rel='noopener noreferrer' class='news-link'>[Paper]</a>"],
-    "Awards": ["ISOCC'25 best paper award", "ISOCC'25 Chip Design Contest", "2025 IEEE Seoul Section Student Paper Bronze Award"],
+    "publication": [
+      "H.-S. Choi*, J.-G. Lee*, S.-H. Gong, K.-H. Lee, D. Koh, J.-W. Sull, H. Do, C.-H. Kye, D.-K. Jeong, K. Park, and Min-Seong Choo, A 14-to-32-Gb/s Deadzone-Free Referenceless CDR With Autocovariance-Based Seamless Frequency Detector in 40-nm CMOS Technology, IEEE Journal of Solid-State Circuits, vol. 60, no. 10, pp. 3602-3612, Oct. 2025 (*Equally Credited Authors). <a href='https://ieeexplore.ieee.org/document/11029275' target='_blank' rel='noopener noreferrer' class='news-link'>[Paper]</a>"
+    ],
+    "Awards": [],
     "biography": "Seung-Hwan Gong received a B.S. degree in the school of electrical engineering at Kangwon National University, Chuncheon, South Korea. He is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include CDR, DSP-based Receiver.",
     "email": "fire051324@gmail.com",
     "profile_img": "img/sh-gong-profile-image.jpg",
@@ -81,7 +97,9 @@
   {
     "name": "Dong-Ho Kim",
     "tag": "100G TX",
-    "research_interests": ["DSP-based Transmitter"],
+    "research_interests": [
+      "DSP-based Transmitter"
+    ],
     "tape_out_schedule": [
       {
         "date": "2025.09",
@@ -89,10 +107,12 @@
       }
     ],
     "education": [
-    "B.S., School of Electrical Engineering, Hanyang University, Ansan, Korea (2017.03 ~ 2023.08)"
+      "B.S., School of Electrical Engineering, Hanyang University, Ansan, Korea (2017.03 ~ 2023.08)"
     ],
-    "publication": ["S.-M Jin*, D.-H Kim*, K.-H Lee, H. Ju, G.-S Jeong, W. Bae, J. Han, Min-Seong Choo, A 22Gb/s-54Gb/s Reconfigurable PAM-2/4/8 DSP-Based Transmitter with 14-Tap Feedforward Equalization, in 2025 IEEE Asian Solid-State Circuits Conference (A-SSCC), pp. 1-3, 2025 (*Equally Credited Authors). <a href='https://ieeexplore.ieee.org/document/11349396' target='_blank' rel='noopener noreferrer' class='news-link'>[Paper]</a>"],
-    "Awards": ["제 26회 대한민국 반도체설계대전 특허청장상 수상", "2025 IEEE Seoul Section Student Paper Bronze Award"],
+    "publication": [
+      "S.-M Jin*, D.-H Kim*, K.-H Lee, H. Ju, G.-S Jeong, W. Bae, J. Han, Min-Seong Choo, A 22Gb/s-54Gb/s Reconfigurable PAM-2/4/8 DSP-Based Transmitter with 14-Tap Feedforward Equalization, in 2025 IEEE Asian Solid-State Circuits Conference (A-SSCC), pp. 1-3, 2025 (*Equally Credited Authors). <a href='https://ieeexplore.ieee.org/document/11349396' target='_blank' rel='noopener noreferrer' class='news-link'>[Paper]</a>"
+    ],
+    "Awards": [],
     "biography": "Dong-Ho Kim received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. He is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include DSP-DAC based transmitter.",
     "email": "dpdl112@hanyang.ac.kr",
     "profile_img": "img/dh-kim-new-profile-image.jpg",
@@ -102,7 +122,9 @@
   {
     "name": "Jae-Geon Lee",
     "tag": "100G DSP RX",
-    "research_interests": ["DSP-based Receiver"],
+    "research_interests": [
+      "DSP-based Receiver"
+    ],
     "tape_out_schedule": [
       {
         "date": "2024.09",
@@ -114,17 +136,17 @@
       }
     ],
     "education": [
-    "B.S., School of Electrical Engineering, Hanyang University, Ansan, Korea (2019.03 ~ 2025.02)"
+      "B.S., School of Electrical Engineering, Hanyang University, Ansan, Korea (2019.03 ~ 2025.02)"
     ],
     "publication": [
-    "J.-G. Lee, S.-U. Kang, and Min-Seong Choo, Hardware and Software Co-Simulation Methodology for Processing-in-Memory Bitcell Application , in 2024 International Conference on Electronics, Information, and Communication (ICEIC), pp. 1-2, 2024. <a href='https://ieeexplore.ieee.org/document/10457160' target='_blank' rel='noopener noreferrer' class='news-link'>[Paper]</a>",
-    "H.-S. Choi*, J.-G. Lee*, K.-H. Lee, D. Koh, J.-W. Sull, H.-R. Do, C.-H. Kye, D.-K. Jeong, and Min-Seong Choo, A 14-to-32-Gb/s Deadzone-Free Referenceless CDR with Autocovariance-based Frequency Detector in 40-nm CMOS Technology, in 2024 IEEE Asian Solid-State Circuits Conference (A-SSCC), pp. 1-3, 2024 (*Equally Credited Authors). <a href='https://ieeexplore.ieee.org/document/10848602' target='_blank' rel='noopener noreferrer' class='news-link'>[Paper]</a>",
-    "H.-S. Choi*, J.-G. Lee*, S.-H. Gong, K.-H. Lee, D. Koh, J.-W. Sull, H. Do, C.-H. Kye, D.-K. Jeong, K. Park, and Min-Seong Choo, A 14-to-32-Gb/s Deadzone-Free Referenceless CDR With Autocovariance-Based Seamless Frequency Detector in 40-nm CMOS Technology, IEEE Journal of Solid-State Circuits, vol. 60, no. 10, pp. 3602-3612, Oct. 2025 (*Equally Credited Authors). <a href='https://ieeexplore.ieee.org/document/11029275' target='_blank' rel='noopener noreferrer' class='news-link'>[Paper]</a>",
-    "J.-G. Lee, S.-H. Ok, S.-H. Gong, S.-M. Jin, D.-H. Kim, and Min-Seong Choo, Analysis of Adaptive Learning Rate Strategies for Sign-Sign LMS: Stability and Speed, in 2025 International Technical Conference on Circuits/Systems, Computers, and Communications (ITC-CSCC), pp. 1-3, 2025. <a href='https://ieeexplore.ieee.org/document/11137667' target='_blank' rel='noopener noreferrer' class='news-link'>[Paper]</a>",
-    "S.-H. Ok*, J.-G. Lee*, K.-H Lee, Haram Ju, G.-S Jeong, W. Bae, Min-Seong Choo, Critical-Timing-Relaxed pre-Decision Feedforward Equalizer for High-Speed DSP-based Wireline Receiver using Hardware-in-the-Loop Verification on RF-SoC, in 2025 IEEE Asian Solid-State Circuits Conference (A-SSCC), pp. 82-84, 2025 (*Equally Credited Authors). <a href='https://ieeexplore.ieee.org/document/11349558' target='_blank' rel='noopener noreferrer' class='news-link'>[Paper]</a>"],
+      "J.-G. Lee, S.-U. Kang, and Min-Seong Choo, Hardware and Software Co-Simulation Methodology for Processing-in-Memory Bitcell Application , in 2024 International Conference on Electronics, Information, and Communication (ICEIC), pp. 1-2, 2024. <a href='https://ieeexplore.ieee.org/document/10457160' target='_blank' rel='noopener noreferrer' class='news-link'>[Paper]</a>",
+      "H.-S. Choi*, J.-G. Lee*, K.-H. Lee, D. Koh, J.-W. Sull, H.-R. Do, C.-H. Kye, D.-K. Jeong, and Min-Seong Choo, A 14-to-32-Gb/s Deadzone-Free Referenceless CDR with Autocovariance-based Frequency Detector in 40-nm CMOS Technology, in 2024 IEEE Asian Solid-State Circuits Conference (A-SSCC), pp. 1-3, 2024 (*Equally Credited Authors). <a href='https://ieeexplore.ieee.org/document/10848602' target='_blank' rel='noopener noreferrer' class='news-link'>[Paper]</a>",
+      "H.-S. Choi*, J.-G. Lee*, S.-H. Gong, K.-H. Lee, D. Koh, J.-W. Sull, H. Do, C.-H. Kye, D.-K. Jeong, K. Park, and Min-Seong Choo, A 14-to-32-Gb/s Deadzone-Free Referenceless CDR With Autocovariance-Based Seamless Frequency Detector in 40-nm CMOS Technology, IEEE Journal of Solid-State Circuits, vol. 60, no. 10, pp. 3602-3612, Oct. 2025 (*Equally Credited Authors). <a href='https://ieeexplore.ieee.org/document/11029275' target='_blank' rel='noopener noreferrer' class='news-link'>[Paper]</a>",
+      "J.-G. Lee, S.-H. Ok, S.-H. Gong, S.-M. Jin, D.-H. Kim, and Min-Seong Choo, Analysis of Adaptive Learning Rate Strategies for Sign-Sign LMS: Stability and Speed, in 2025 International Technical Conference on Circuits/Systems, Computers, and Communications (ITC-CSCC), pp. 1-3, 2025. <a href='https://ieeexplore.ieee.org/document/11137667' target='_blank' rel='noopener noreferrer' class='news-link'>[Paper]</a>",
+      "S.-H. Ok*, J.-G. Lee*, K.-H Lee, Haram Ju, G.-S Jeong, W. Bae, Min-Seong Choo, Critical-Timing-Relaxed pre-Decision Feedforward Equalizer for High-Speed DSP-based Wireline Receiver using Hardware-in-the-Loop Verification on RF-SoC, in 2025 IEEE Asian Solid-State Circuits Conference (A-SSCC), pp. 82-84, 2025 (*Equally Credited Authors). <a href='https://ieeexplore.ieee.org/document/11349558' target='_blank' rel='noopener noreferrer' class='news-link'>[Paper]</a>"
+    ],
     "Awards": [
-      "석사과정생 연구장려금 '25-2 - '26-1 [NRF]", 
-      "2025 IEEE Seoul Section Student Paper Bronze Award", 
+      "석사과정생 연구장려금 '25-2 - '26-1 [NRF]",
       "2025 한양대학교 BK21 고신뢰성 에너지용 지능형 시스템반도체 교육연구단 우수논문상"
     ],
     "biography": "Jae-Geon Lee received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. He is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include Clock and data recovery (CDR) and DSP-based Receiver.",
@@ -136,7 +158,9 @@
   {
     "name": "Seung-Mo Jin",
     "tag": "100G TX",
-    "research_interests": ["DSP-based Transmitter"],
+    "research_interests": [
+      "DSP-based Transmitter"
+    ],
     "tape_out_schedule": [
       {
         "date": "2025.09",
@@ -144,14 +168,22 @@
       }
     ],
     "education": [
-    "B.S., School of Electrical Engineering, Hanyang University, Ansan, Korea (2019.03 ~ 2025.02)"
+      "B.S., School of Electrical Engineering, Hanyang University, Ansan, Korea (2019.03 ~ 2025.02)"
     ],
     "publication": [
-      "S.-M. Jin, S.-U. Kang, and Min-Seong Choo, Analysis of ADC Quantization Effect in Processing-In-Memory Macro in Various Low-Precision Deep Neural Networks, in 2024 International Conference on Electronics, Information, and Communication (ICEIC), pp. 1-2, 2024. <a href='https://ieeexplore.ieee.org/document/10457226' target='_blank' rel='noopener noreferrer' class='news-link'>[Paper]</a>", 
-      "S.-U. Kang, S.-M. Jin, M.-G. Song, D.-H. Lee, W.-S. Jung, and Min-Seong Choo, A 2T1C eDRAM-based Compute-In-Memory Macro with 8-to-1 Column Multiplexing Scheme for Highly Sparse Binarized Deep Neural Networks, in 2024 21st International SoC Design Conference (ISOCC), pp. 177-178, 2024. <a href='https://ieeexplore.ieee.org/document/10762215' target='_blank' rel='noopener noreferrer' class='news-link'>[Paper]</a>", 
+      "S.-M. Jin, S.-U. Kang, and Min-Seong Choo, Analysis of ADC Quantization Effect in Processing-In-Memory Macro in Various Low-Precision Deep Neural Networks, in 2024 International Conference on Electronics, Information, and Communication (ICEIC), pp. 1-2, 2024. <a href='https://ieeexplore.ieee.org/document/10457226' target='_blank' rel='noopener noreferrer' class='news-link'>[Paper]</a>",
+      "S.-U. Kang, S.-M. Jin, M.-G. Song, D.-H. Lee, W.-S. Jung, and Min-Seong Choo, A 2T1C eDRAM-based Compute-In-Memory Macro with 8-to-1 Column Multiplexing Scheme for Highly Sparse Binarized Deep Neural Networks, in 2024 21st International SoC Design Conference (ISOCC), pp. 177-178, 2024. <a href='https://ieeexplore.ieee.org/document/10762215' target='_blank' rel='noopener noreferrer' class='news-link'>[Paper]</a>",
       "S.-M Jin*, D.-H Kim*, K.-H Lee, H. Ju, G.-S Jeong, W. Bae, J. Han, Min-Seong Choo, A 22Gb/s-54Gb/s Reconfigurable PAM-2/4/8 DSP-Based Transmitter with 14-Tap Feedforward Equalization, in 2025 IEEE Asian Solid-State Circuits Conference (A-SSCC), pp. 1-3, 2025 (*Equally Credited Authors). <a href='https://ieeexplore.ieee.org/document/11349396' target='_blank' rel='noopener noreferrer' class='news-link'>[Paper]</a>"
     ],
-    "Awards": ["2023-2 SCCUD 구두 발표 최우수상", "2024.05. SOC 학술대회 우수발표 논문상", "2024-1 SCCuD DAY 구두 발표 최우수상", "2024-1 공학대학 켑스톤 페어 동상", "2024-2 SCCuD DAY 구두 발표 대상", "석사과정생 연구장려금 '25-2 - '26-1 [NRF]", "제 26회 대한민국 반도체설계대전 특허청장상 수상", "ISOCC'25 best paper award", "2025 IEEE Seoul Section Student Paper Bronze Award"],
+    "Awards": [
+      "2023-2 SCCUD 구두 발표 최우수상",
+      "2024.05. SOC 학술대회 우수발표 논문상",
+      "2024-1 SCCuD DAY 구두 발표 최우수상",
+      "2024-1 공학대학 켑스톤 페어 동상",
+      "2024-2 SCCuD DAY 구두 발표 대상",
+      "석사과정생 연구장려금 '25-2 - '26-1 [NRF]",
+      "2025 IEEE Seoul Section Student Paper Bronze Award"
+    ],
     "biography": "Seung-Mo Jin received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. He is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include DSP-DAC based transmitter.",
     "email": "victorymo@hanyang.ac.kr",
     "profile_img": "img/sm-jin-profile-img.jpg",
@@ -159,80 +191,92 @@
     "cv": "https://drive.google.com/file/d/1_ktk3-ShP13L9jBR3MU4PVthhBfJ7LM7/view?usp=drive_link"
   },
   {
-  "name": "Hyeon-Seo Kim",
-  "tag": "Time-Domain ADC",
-  "research_interests": ["Analog Digital Converter (ADC)"],
-  "Awards": [],
-  "education": [
-    "B.S., School of Electrical Engineering, Hanyang University, Ansan, Korea (2017.03 ~ 2024.02)"
+    "name": "Hyeon-Seo Kim",
+    "tag": "Time-Domain ADC",
+    "research_interests": [
+      "Analog Digital Converter (ADC)"
     ],
-  "biography": "Hyeon-Seo Kim received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. He is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include analog digital converter (ADC)",
-  "email": "hyeonseo1833@gmail.com",
-  "profile_img": "img/sh-kim2-profile-image.png",
-  "position": ""
-},
-{
-  "name": "Seol-Hyeon Kim",
-  "tag": "AI Accelerator",
-  "research_interests": ["AI hardware design and PIM"],
-  "education": [
-    "B.S., School of System Semiconductor Enginerring, Sangmyung University, Cheonan, Korea (2021.03 ~ 2025.02)"
+    "Awards": [],
+    "education": [
+      "B.S., School of Electrical Engineering, Hanyang University, Ansan, Korea (2017.03 ~ 2024.02)"
     ],
-  "Awards": [],
-  "biography": "Seol-Hyeon Kim received a B.S. degree in the school of system semiconductor enginerring at Sangmyung University, Cheonan, South Korea. She is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. Her research interests include artificial intelligence hardware design and processing in memory (PIM).",
-  "email": "congcongsister@naver.com",
-  "profile_img": "img/sh-kim-profile-image.jpg",
-  "position": ""
-},
-{
+    "biography": "Hyeon-Seo Kim received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. He is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include analog digital converter (ADC)",
+    "email": "hyeonseo1833@gmail.com",
+    "profile_img": "img/sh-kim2-profile-image.png",
+    "position": ""
+  },
+  {
+    "name": "Seol-Hyeon Kim",
+    "tag": "AI Accelerator",
+    "research_interests": [
+      "AI hardware design and PIM"
+    ],
+    "education": [
+      "B.S., School of System Semiconductor Enginerring, Sangmyung University, Cheonan, Korea (2021.03 ~ 2025.02)"
+    ],
+    "Awards": [],
+    "biography": "Seol-Hyeon Kim received a B.S. degree in the school of system semiconductor enginerring at Sangmyung University, Cheonan, South Korea. She is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. Her research interests include artificial intelligence hardware design and processing in memory (PIM).",
+    "email": "congcongsister@naver.com",
+    "profile_img": "img/sh-kim-profile-image.jpg",
+    "position": ""
+  },
+  {
     "name": "Dong-Eon Jin",
     "tag": "ADC",
-    "research_interests": ["Analog Digital Converter (ADC)"],
+    "research_interests": [
+      "Analog Digital Converter (ADC)"
+    ],
     "education": [
-    "B.S., School of Electrical Engineering, Hanyang University, Ansan, Korea (2019.03 ~ 2025.02)"
+      "B.S., School of Electrical Engineering, Hanyang University, Ansan, Korea (2019.03 ~ 2025.02)"
     ],
     "Awards": [],
     "biography": "Dong-Eon Jin received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. He is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include analog digital converter (ADC).",
     "email": "dujin0509@hanyang.ac.kr",
     "profile_img": "img/de-jin-profile-image.jpg",
     "position": ""
-},
-{
+  },
+  {
     "name": "Joon-Seok Kwon",
     "tag": "100G DSP RX",
-    "research_interests": ["Wireline Interface"],
+    "research_interests": [
+      "Wireline Interface"
+    ],
     "education": [
-    "B.S., School of Electrical Engineering, Hanyang University, Ansan, Korea (2017.03 ~ 2023.02)"
+      "B.S., School of Electrical Engineering, Hanyang University, Ansan, Korea (2017.03 ~ 2023.02)"
     ],
     "experience": [
-    "Engineer, IP Development Team, FINECHIPS INC., Yongin-si, Gyeonggi-do, Korea (2023.01 ~ 2025.06 )"
+      "Engineer, IP Development Team, FINECHIPS INC., Yongin-si, Gyeonggi-do, Korea (2023.01 ~ 2025.06 )"
     ],
     "Awards": [],
     "biography": "Joon-Seok Kwon received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. He is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include Wireline Interface.",
     "email": "qwe3016@hanyang.ac.kr",
     "profile_img": "img/js-kwon-profile-image.jpg",
     "position": ""
-},
-{
+  },
+  {
     "name": "Suk-Min Yoon",
     "tag": "AI Accelerator",
     "education": [
-    "B.S., Department of Electrical Engineering, Yeungnam University, Gyeongsan, Korea (2019.03 ~ 2025.08)"
+      "B.S., Department of Electrical Engineering, Yeungnam University, Gyeongsan, Korea (2019.03 ~ 2025.08)"
     ],
-    "research_interests": ["PiM"],
+    "research_interests": [
+      "PiM"
+    ],
     "biography": "Suk-Min Yoon received a B.S. degree in electrical engineering from Yeungnam University, Gyeongsan, South Korea. He is currently pursuing an M.S. degree in the school of electrical and electronic engineering at Yonsei University, Seoul, South Korea. His research interests include analog and digital circuit designs of Processing In Memory(PIM).",
     "Awards": [],
     "email": "ysm000917@naver.com",
     "profile_img": "img/sm_yoon_profile_image.jpg",
     "position": ""
   },
-{
+  {
     "name": "Ju-Yong Lee",
     "tag": "Optical RX",
     "education": [
-    "B.S., Department of Electrical Engineering, Gachon University, Seongnam, Korea (2021.03 ~ 2025.02)"
+      "B.S., Department of Electrical Engineering, Gachon University, Seongnam, Korea (2021.03 ~ 2025.02)"
     ],
-    "research_interests": ["Wireline Interface"],
+    "research_interests": [
+      "Wireline Interface"
+    ],
     "Awards": [],
     "biography": "Ju-Yong Lee received a B.S. degree in electrical engineering from Gachon University, Sungnam, South Korea. He is currently pursuing an M.S. degree in the school of electrical and electronic engineering at Yonsei University, Seoul, South Korea. His research interests include Wireline Interface.",
     "email": "dhxvdu@naver.com",
@@ -242,9 +286,11 @@
   {
     "name": "Jun-gyu Han",
     "education": [
-    "B.S., Department of Electronic and Electrical Engineering, Hongik University, Seoul, Korea (2020.03 ~ 2026.02)"
+      "B.S., Department of Electronic and Electrical Engineering, Hongik University, Seoul, Korea (2020.03 ~ 2026.02)"
     ],
-    "research_interests": ["Wireline Interface"],
+    "research_interests": [
+      "Wireline Interface"
+    ],
     "Awards": [],
     "biography": "Jun-gyu Han received a B.S. degree in the school of electronic and electrical engineering at Hongik University, Seoul, South Korea. He is currently pursuing a M.S.degree in the department of intelligent display engineering at Yonsei University, Seoul, South Korea. His research interests include Wireline Interface.",
     "email": "hjg0913@gmail.com",

@@ -27,6 +27,19 @@ $(document).ready(function () {
     return '<span class="pub2-badge ' + cls + '">' + text + "</span>";
   }
 
+  // ===== 프로필 모달 자동 연동용 색인 =====
+  // 논문의 figure(구성원 얼굴 사진 파일명)를 키로 논문 목록을 쌓는다.
+  // profile.js가 window.pubIndex[사진파일명]으로 해당 구성원의 논문을 가져간다.
+  window.pubIndex = window.pubIndex || {};
+  function registerPub(pub, entryHTML) {
+    var y = Number(pub.type || pub.year) || 0;
+    (pub.figure || []).forEach(function (img) {
+      var k = getFileName(img);
+      if (!window.pubIndex[k]) window.pubIndex[k] = [];
+      window.pubIndex[k].push({ year: y, html: entryHTML });
+    });
+  }
+
   function scrollToEl(el) {
     if (el && el.length) {
       $("html, body").animate({ scrollTop: el.offset().top - 100 }, 200);
@@ -165,6 +178,14 @@ $(document).ready(function () {
         .trim();
       var srcText = refText !== "" ? refText : ((pub.conference || pub.journal || "") + ", " + year);
 
+      // 프로필 모달용 색인 등록 (제목 있는 논문만)
+      if (hasTitle) {
+        var linkHTML = pub.link && pub.link.trim() !== ""
+          ? ' <a href="' + pub.link + '" target="_blank" rel="noopener noreferrer" class="news-link">[Paper]</a>'
+          : "";
+        registerPub(pub, authorsHTML(pub.authors) + ', "' + pub.title + '," ' + srcText + linkHTML);
+      }
+
       var badges = tagsHTML(pub);
       body.append(
         '<div class="pub2-entry">' +
@@ -215,6 +236,9 @@ $(document).ready(function () {
       var regHTML = pub.registration && pub.registration.trim() !== ""
         ? '<div class="pub2-src">' + pub.registration + "</div>"
         : "";
+
+      // 프로필 모달용 색인 등록 (특허)
+      registerPub(pub, authorsHTML(pub.inventors) + ', "' + pub.title + '" (' + (pub.type || "특허") + (pub.registration ? ", " + pub.registration : "") + ")");
 
       body.append(
         '<div class="pub2-entry">' +

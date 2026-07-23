@@ -353,7 +353,14 @@ $(document).ready(function () {
       $("#modal-tape_out_schedule-title").hide();
     }
 
-    const parsedPublication = parseData(publication);
+    // ===== Publications: 홈페이지 Publications 데이터와 자동 연동 =====
+    // 논문 figure의 사진 파일명이 이 사람의 profile_img와 일치하는 논문을 모두 표시
+    const imgKey = (profile_img || "").split("/").pop();
+    const autoPubs = ((window.pubIndex || {})[imgKey] || [])
+      .slice()
+      .sort((a, b) => a.year - b.year)
+      .map((p) => p.html);
+    const parsedPublication = autoPubs.length > 0 ? autoPubs : parseData(publication);
     if (parsedPublication.length > 0) {
       $("#modal-publication-title").show();
       $("#modal-publication").show();
@@ -363,7 +370,19 @@ $(document).ready(function () {
       $("#modal-publication").hide();
     }
 
-    const parsedAwards = parseData(Awards);
+    // ===== Awards: News의 Award 항목과 자동 연동 (+ 수동 항목 이어붙임) =====
+    // News 본문의 <u>이름</u>이 이 사람 이름(주어진 이름 기준)과 일치하면 표시
+    const autoAwards = (window.newsAwards || [])
+      .filter((a) => a.names.some((n) => name === n || name.indexOf(n + " ") === 0))
+      .slice()
+      .reverse() // 오래된 것부터
+      .map((a) => {
+        var photo = a.img
+          ? ' <a href="' + a.img + '" target="_blank" rel="noopener noreferrer" class="news-link">[Photo]</a>'
+          : "";
+        return a.ym + " — " + a.text + photo;
+      });
+    const parsedAwards = autoAwards.concat(parseData(Awards));
     if (parsedAwards.length > 0) {
       $("#modal-Awards-title").show();
       $("#modal-Awards").show();

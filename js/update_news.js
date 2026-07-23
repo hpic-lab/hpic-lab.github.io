@@ -14,6 +14,21 @@ $(document).ready(function () {
   var OPEN_YEARS_COUNT = 1; // 최신 몇 개 연도를 펼친 상태로 시작할지 (나머지는 접힘)
 
   $.getJSON("json/news/news.json").done(function (items) {
+    // ===== 프로필 모달 자동 연동용: Award 뉴스 색인 =====
+    // <u>이름</u>으로 수상자를 추출한다. profile.js가 이름 매칭으로 가져간다.
+    window.newsAwards = items
+      .filter(function (it) { return it.category === "Award"; })
+      .map(function (it) {
+        var names = [];
+        it.text.replace(/<u>(.*?)<\/u>/g, function (_, n) { names.push(n); return _; });
+        return {
+          ym: it.year + "." + it.month,
+          names: names,
+          text: it.text.replace(/<\/?u>/g, ""),
+          img: it.img || ""
+        };
+      });
+
     var container = $(".news-timeline-container");
     if (container.length === 0) return;
     container.empty();
