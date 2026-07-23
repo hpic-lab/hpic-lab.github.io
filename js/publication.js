@@ -226,7 +226,8 @@ $(document).ready(function () {
           '<div class="pub2-body">' +
             (titleHTML ? '<div class="pub2-title">' + titleHTML + "</div>" : "") +
             (hasTitle ? '<div class="pub2-src">' + srcText + "</div>" : "") +
-            '<div class="pub2-authors">' + authorsHTML(pub.authors) + "</div>" +
+            // 미출판(제목 없음) 논문은 저자 이름 대신 사진만 표시
+            (hasTitle ? '<div class="pub2-authors">' + authorsHTML(pub.authors) + "</div>" : "") +
             '<div class="pub-figures">' + figuresHTML(pub) + "</div>" +
           "</div>" +
         "</div>"
