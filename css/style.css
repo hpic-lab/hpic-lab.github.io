@@ -1812,10 +1812,11 @@ nav#navbar-main .navbar-collapse {
 }
 
 .pub2-notice {
-  font-size: 0.8rem;
-  color: #999;
-  font-style: italic;
-  margin: -8px 0 14px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #777;
+  font-style: normal;
+  margin: 4px 0 0;
 }
 
 .pub2-year {

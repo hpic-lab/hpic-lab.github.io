@@ -212,11 +212,11 @@ $(document).ready(function () {
           '<button type="button" class="pub2-tab pub2-tab-patent" data-target="patent">Patent</button>' +
         "</div>" +
         '<div class="pub2-year-links"></div>' +
+        '<p class="pub2-notice">&dagger; Equally Credited Authors</p>' +
       "</div>"
     );
 
     container.append(
-      '<p class="pub2-notice">&dagger; Equally Credited Authors</p>' +
       '<div class="pub2-list" id="pub2-journal"></div>' +
       '<div class="pub2-list" id="pub2-conference" style="display:none"></div>' +
       '<div class="pub2-list" id="pub2-patent" style="display:none"></div>'
