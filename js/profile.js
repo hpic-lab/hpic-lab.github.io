@@ -478,20 +478,26 @@ $(document).ready(function () {
       .slice()
       .reverse() // 오래된 것부터
       .map((a) => {
-        // 사진이 있으면 문장 전체가 클릭 가능한 링크
+        // "X and Y received (the) ~" 문구 제거 → 상 이름 + 출처만 남김
+        var txt = a.text.replace(/^.*?\breceived\s+(the\s+)?/i, "");
         var body = a.img
-          ? '<a href="' + a.img + '" target="_blank" rel="noopener noreferrer" class="mpub-award-link">' + a.text + "</a>"
-          : a.text;
+          ? '<a href="' + a.img + '" target="_blank" rel="noopener noreferrer" class="mpub-award-link">' + txt + "</a>"
+          : txt;
         return '<div class="mpub-entry">' +
           '<div class="mpub-side mpub-date">' + a.ym + "</div>" +
           '<div class="mpub-body">' + body + "</div>" +
         "</div>";
       });
-    const manualAwards = parseData(Awards).map((t) =>
-      '<div class="mpub-entry">' +
-        '<div class="mpub-side mpub-date"></div>' +
-        '<div class="mpub-body">' + t + "</div>" +
-      "</div>");
+    // 수동 항목: 맨 앞의 연도/날짜(2024.05, 2023-2, 2025 등)를 왼쪽 칸으로 분리
+    const manualAwards = parseData(Awards).map((t) => {
+      var m = String(t).match(/^(\d{4}(?:[.\-]\d{1,2})?)\.?\s+(.*)$/);
+      var date = m ? m[1] : "";
+      var body = m ? m[2] : t;
+      return '<div class="mpub-entry">' +
+        '<div class="mpub-side mpub-date">' + date + "</div>" +
+        '<div class="mpub-body">' + body + "</div>" +
+      "</div>";
+    });
     const parsedAwards = autoAwards.concat(manualAwards);
     if (parsedAwards.length > 0) {
       $("#modal-Awards-title").show();
