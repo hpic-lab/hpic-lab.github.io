@@ -243,9 +243,26 @@ $(document).ready(function () {
     });
   })();
 
+  // 연구분야 칩이 두 줄로 넘어가면 ">100G " 접두어를 제거해 한 줄로
+  function fitModalInterest() {
+    var ul = document.getElementById("modal-research_interests");
+    if (!ul) return;
+    Array.prototype.forEach.call(ul.querySelectorAll("li"), function (li) {
+      var cs = getComputedStyle(li);
+      var lh = parseFloat(cs.lineHeight);
+      if (isNaN(lh)) lh = parseFloat(cs.fontSize) * 1.3;
+      var oneLine = lh + parseFloat(cs.paddingTop) + parseFloat(cs.paddingBottom);
+      if (li.offsetHeight > oneLine + 4) {
+        li.textContent = li.textContent.replace(/^\s*>?\s*100G\s+/, "");
+      }
+    });
+  }
+  $("#exampleModal").on("shown.bs.modal", fitModalInterest);
+  $(window).on("resize", fitModalInterest);
+
   $("#exampleModal").on("show.bs.modal", function (event) {
-    const button = $(event.relatedTarget); 
-    const imgKey = button.data("img-key"); 
+    const button = $(event.relatedTarget);
+    const imgKey = button.data("img-key");
     
     let person = window.peopleDB[imgKey];
 
