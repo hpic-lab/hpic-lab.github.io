@@ -1289,6 +1289,8 @@ nav#navbar-main .navbar-collapse {
 
 #exampleModal .portrait-title h2 {
   margin: 0;
+  font-size: 1.7rem;
+  line-height: 1.2;
 }
 
 #exampleModal #modal-network-icons {
@@ -1302,27 +1304,39 @@ nav#navbar-main .navbar-collapse {
   padding-left: 24px;
 }
 
-/* 모바일: 3단을 세로로 (사진 → 신원 → Education) */
+/* 모바일: 사진 좌 + 신원(이름·직함·CV·연구분야) 우, Education은 아래 전체 폭 */
 @media (max-width: 767px) {
   #exampleModal .profile-header-b {
-    grid-template-columns: 1fr;
-    gap: 16px;
-    text-align: center;
+    grid-template-columns: auto 1fr;
+    gap: 18px;
+    align-items: center;
+    text-align: left;
   }
-  #exampleModal .portrait-title,
-  #exampleModal .phb-identity .ul-interests {
-    text-align: center;
-    justify-content: center;
-  }
-  #exampleModal #modal-network-icons {
-    justify-content: center !important;
-  }
+  #exampleModal .phb-photo { grid-column: 1; grid-row: 1; }
+  #exampleModal .phb-identity { grid-column: 2; grid-row: 1; }
   #exampleModal .phb-education {
+    grid-column: 1 / -1;
+    grid-row: 2;
     border-left: none;
     padding-left: 0;
     border-top: 0.5px solid #e8e8e8;
     padding-top: 16px;
     text-align: left;
+  }
+  #exampleModal .profile-header-b .portrait {
+    width: 92px;
+    height: 92px;
+  }
+  #exampleModal .portrait-title h2 {
+    font-size: 1.4rem;
+  }
+  #exampleModal .portrait-title,
+  #exampleModal .phb-identity .ul-interests {
+    text-align: left;
+    justify-content: flex-start;
+  }
+  #exampleModal #modal-network-icons {
+    justify-content: flex-start !important;
   }
 }
 
