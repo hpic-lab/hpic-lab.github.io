@@ -72,10 +72,7 @@ $(document).ready(function () {
           figsHTML += ' <img src="img/' + f + '" class="news-inline-fig" alt="" data-bs-toggle="modal" data-bs-target="#exampleModal" data-img-key="' + f + '">';
         });
         links = figsHTML + links;
-        // 수상 사진 등 이미지가 연결된 항목: [Photo] 링크 → 라이트박스
-        if (it.img) {
-          links += ' <a href="#" class="news-link news-photo-link" data-img="' + it.img + '">[Photo]</a>';
-        }
+        // 수상 사진 등 이미지가 연결된 항목: 문장 전체를 클릭하면 라이트박스로 열림 (별도 [Photo] 링크 없음)
         // <u>이름</u> → 클릭 가능한 프로필 링크로 변환 (HPIC Lab 제외)
         var text = it.text.replace(/<u>(?!HPIC Lab<)(.*?)<\/u>/g, '<u class="news-member" title="View profile">$1</u>');
         // 논문 제목("...") 클릭 → Publications 섹션의 해당 논문으로 이동
@@ -85,7 +82,7 @@ $(document).ready(function () {
         list.append(
           '<div class="news-item" data-cat="' + catKey + '">' +
             '<span class="news-badge" style="background:' + c.bg + ";color:" + c.fg + ';">' + c.label + "</span>" +
-            '<p class="news-text">' + text + links + "</p>" +
+            '<p class="news-text' + (it.img ? ' news-photo-sentence" data-img="' + it.img + '"' : '"') + ">" + text + links + "</p>" +
           "</div>"
         );
       });
@@ -218,10 +215,9 @@ $(document).ready(function () {
       }
     });
 
-    // [Photo] 클릭 → 이미지 라이트박스 (빈 곳 클릭 또는 ESC로 닫기)
-    container.on("click", ".news-photo-link", function (e) {
-      e.preventDefault();
-      var src = $(this).data("img");
+    // 이미지 라이트박스 (빈 곳 클릭 또는 ESC로 닫기)
+    function openNewsPhoto(src) {
+      if (!src) return;
       var overlay = $(
         '<div class="news-photo-overlay"><img src="' + src + '" alt="Award photo"></div>'
       );
@@ -236,6 +232,12 @@ $(document).ready(function () {
         }
       });
       $("body").append(overlay);
+    }
+
+    // 문장(사진 연결된 News) 클릭 → 라이트박스. 단, 이름·링크·사진 클릭은 각자 동작 유지
+    container.on("click", ".news-photo-sentence", function (e) {
+      if ($(e.target).closest("a, u.news-member, img").length) return;
+      openNewsPhoto($(this).data("img"));
     });
 
     // 연구원 이름 클릭 → 프로필 모달 (profile.js의 window.peopleDB 활용)

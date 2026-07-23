@@ -1752,6 +1752,11 @@ nav#navbar-main .navbar-collapse {
   text-decoration: underline;
 }
 
+/* 사진이 연결된 News 문장: 클릭하면 라이트박스 */
+.news-list .news-photo-sentence {
+  cursor: pointer;
+}
+
 /* News 본문에서 연구원 이름 클릭 → 프로필 모달 */
 .news-list u.news-member {
   cursor: pointer;
