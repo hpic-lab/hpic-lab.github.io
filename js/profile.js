@@ -559,7 +559,7 @@ $.when(
     sidebar.find(".people-side-nav").remove();
 
     const roles = [
-      { label: "PI", icon: "", re: /professor/i, cls: "side-pi" },
+      { label: "Principal Investigator", icon: "♛", re: /professor/i, cls: "side-pi" },
       { label: "Lab Captain", icon: "★", re: /captain/i, cls: "side-captain" },
       { label: "Server Manager", icon: "⚙", re: /server/i, cls: "side-server" }
     ];
