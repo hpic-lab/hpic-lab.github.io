@@ -156,19 +156,30 @@ $(document).ready(function () {
       return `<span class="people-role ${cls}" title="${role}">${icon}</span>`;
     }).join("");
 
+    // PI는 사진 포함 카드, 학생은 이름 중심의 컴팩트 카드 (사진은 클릭 시 모달에서 표시)
+    if (showIconsInMainView) {
+      return `
+        <div class="people-card people-card-pi"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+          data-img-key="${imgKey}">
+          <div class="people-photo-wrap">
+            <img class="people-photo" src="${person.profile_img}" alt="${name}-profile-img" />
+          </div>
+          <div class="people-name">${name}</div>
+          ${networkIconsHTML}
+        </div>
+      `;
+    }
+
     return `
-      <div class="people-card ${showIconsInMainView ? "people-card-pi" : ""}"
+      <div class="people-card people-card-compact"
         data-bs-toggle="modal"
         data-bs-target="#exampleModal"
         data-img-key="${imgKey}">
-        <div class="people-photo-wrap">
-          <img class="people-photo" src="${person.profile_img}" alt="${name}-profile-img" />
-          ${roleBadges ? `<span class="people-roles">${roleBadges}</span>` : ""}
-        </div>
+        ${roleBadges ? `<span class="people-roles">${roleBadges}</span>` : ""}
         <div class="people-name">${name}</div>
-        <div class="people-position">${basePosition}</div>
         ${interestHTML}
-        ${networkIconsHTML}
       </div>
     `;
   }

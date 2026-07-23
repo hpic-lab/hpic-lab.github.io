@@ -1273,10 +1273,22 @@ nav#navbar-main .navbar-collapse {
 
 .people-roles {
   position: absolute;
-  top: -2px;
-  right: -6px;
+  top: 8px;
+  right: 8px;
   display: flex;
   gap: 4px;
+}
+
+/* 학생용 컴팩트 카드 (사진 없이 이름 중심) */
+.people-card-compact {
+  position: relative;
+  width: 175px;
+  padding: 20px 14px 16px;
+}
+
+.people-card-compact .people-name {
+  font-size: 1.02rem;
+  margin-bottom: 8px;
 }
 
 .people-role {
