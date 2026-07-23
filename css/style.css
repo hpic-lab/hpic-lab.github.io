@@ -2185,6 +2185,25 @@ nav#navbar-main .navbar-collapse {
   min-width: 0;
 }
 
+/* 석사 졸업생 카드의 Thesis 링크 (이름 아래) */
+.alumni-thesis {
+  display: inline-block;
+  margin-top: 2px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #185FA5;
+  text-decoration: none;
+}
+
+.alumni-thesis i {
+  font-style: normal;
+  font-size: 0.72rem;
+}
+
+.alumni-thesis:hover {
+  text-decoration: underline;
+}
+
 .people-card-compact .people-name {
   font-size: 1rem;
   margin: 0;

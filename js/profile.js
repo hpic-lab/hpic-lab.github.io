@@ -124,11 +124,17 @@ $(document).ready(function () {
             ? `<img class="people-mini-photo" src="${photo}" alt="${person.name}" onerror="this.remove()" />`
             : "";
 
+          // 석사 졸업생: 이름 아래 Thesis 링크
+          const thesisHTML = person.thesis_link
+            ? `<a href="${person.thesis_link}" target="_blank" rel="noopener noreferrer" class="alumni-thesis" onclick="event.stopPropagation()">Thesis <i>↗</i></a>`
+            : "";
+
           grid.append(`
             <div class="people-card people-card-compact ${foundKey ? "" : "alumni-noclick"}" ${clickAttrs}>
               ${photoHTML}
               <div class="people-compact-info">
                 <span class="people-name">${person.name}</span>
+                ${thesisHTML}
               </div>
             </div>
           `);
