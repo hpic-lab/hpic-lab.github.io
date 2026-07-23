@@ -660,7 +660,7 @@
   {
     "type": "2019",
     "status": "IEEE ISSCC",
-    "title": "A Synthesizable Digital AOT 4-Phase Buck Voltage Regulator for Digital Systems with 0.0054mm2 Controller and 80ns Recovery Time",
+    "title": "A Synthesizable Digital AOT 4-Phase Buck Voltage Regulator for Digital Systems with 0.0054mm<sup>2</sup> Controller and 80ns Recovery Time",
     "image": "img/c5.png",
     "conference": "IEEE International Solid-State Circuits Conference (IEEE ISSCC)",
     "reference": "<i>IEEE International Solid-State Circuits Conference (ISSCC)</i>, Feb. 2019.",
@@ -700,7 +700,7 @@
   {
     "type": "2018",
     "status": "IEEE A-SSCC",
-    "title": "A 10-Gb/s, 0.03-mm2, 1.28-pJ/bit Half-Rate All-Digital Injection-Locked Clock and Data Recovery with Maximum Timing-Margin Tracking Loop",
+    "title": "A 10-Gb/s, 0.03-mm<sup>2</sup>, 1.28-pJ/bit Half-Rate All-Digital Injection-Locked Clock and Data Recovery with Maximum Timing-Margin Tracking Loop",
     "image": "",
     "conference": "IEEE A-SSCC 2018",
     "reference": "<i>IEEE Asian Solid-State Circuits Conference (A-SSCC)</i>, Nov. 2018.",
