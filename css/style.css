@@ -826,14 +826,17 @@ nav#navbar-main .navbar-collapse {
 /* ========================================= */
 
 #modal-email {
-  /* 1. 글자 크기 */
-  font-size: 16px;   
-  
-  /* 2. 글자 색상 (통일) */
-  color: #333;       
-  
-  /* 3. (선택사항) 폰트를 약간 굵게 표시되기를 원하면 주석 해제 */
-  /* font-weight: 500; */
+  font-size: 16px;
+  color: #333;
+  /* 본문과 폰트 통일 (모바일에서 이메일이 다른 글꼴로 보이는 문제 방지) */
+  font-family: "Pretendard", "Noto Sans KR", sans-serif !important;
+}
+
+/* 모바일 브라우저가 이메일을 자동 링크로 바꿔도 폰트·색 유지 */
+#modal-email a {
+  font-family: inherit !important;
+  color: inherit !important;
+  text-decoration: none;
 }
 
 /* ========================================= */
