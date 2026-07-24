@@ -2771,6 +2771,10 @@ nav#navbar-main .navbar-collapse {
 .pub2-venue-patent  { background: #EEEDFE; color: #3C3489; }
 .pub2-award         { background: #FAECE7; color: #712B13; }
 .pub2-progress      { background: #F1EFE8; color: #5F5E5A; }
+/* 상태별 색상 (시안 A): In Preparation 회색 · Submitted 앰버 · In Revision 핑크 */
+.pub2-st-prep       { background: #F1EFE8; color: #5F5E5A; }
+.pub2-st-submitted  { background: #FAEEDA; color: #633806; }
+.pub2-st-revision   { background: #FBEAF0; color: #72243E; }
 
 .pub2-title {
   font-size: 1.02rem;

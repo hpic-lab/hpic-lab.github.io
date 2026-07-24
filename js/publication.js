@@ -27,6 +27,15 @@ $(document).ready(function () {
     return '<span class="pub2-badge ' + cls + '">' + text + "</span>";
   }
 
+  // 상태(In Preparation / Submitted / In Revision)별 배지 색상 클래스
+  function statusClass(s) {
+    var t = (s || "").toLowerCase();
+    if (t.indexOf("prepar") !== -1) return "pub2-st-prep";
+    if (t.indexOf("revision") !== -1) return "pub2-st-revision";
+    if (t.indexOf("submit") !== -1) return "pub2-st-submitted";
+    return "";
+  }
+
   // ===== News → Publications 이동용 제목 색인 =====
   // 제목을 정규화(소문자·영숫자만)한 키로 해당 논문 항목을 찾을 수 있게 한다.
   window.pubTitleIndex = window.pubTitleIndex || {};
@@ -58,8 +67,8 @@ $(document).ready(function () {
   function tagsHTML(pub) {
     var html = "";
     if (pub.award && pub.award.trim() !== "" && pub.award !== "Accepted") html += badge(pub.award, "pub2-award");
-    if (pub.sub && pub.sub.trim() !== "") html += badge(pub.sub, "pub2-progress");
-    if (pub.progress && pub.progress.trim() !== "") html += badge(pub.progress, "pub2-progress");
+    if (pub.sub && pub.sub.trim() !== "") html += badge(pub.sub, "pub2-progress " + statusClass(pub.sub));
+    if (pub.progress && pub.progress.trim() !== "") html += badge(pub.progress, "pub2-progress " + statusClass(pub.progress));
     return html;
   }
 
