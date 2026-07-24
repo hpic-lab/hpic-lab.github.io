@@ -3251,9 +3251,10 @@ section {
 /* 사이트 하단 푸터 (시안1: 다크 + HPIC/연세대 로고) */
 /* ========================================= */
 .site-footer {
-  background: #2b2b2b;
-  color: #cfcfcf;
-  padding: 34px 0;
+  background: #fff;
+  color: #666;
+  padding: 32px 0;
+  border-top: 1px solid #e8e8e8;
 }
 
 .site-footer .footer-inner {
@@ -3273,11 +3274,10 @@ section {
 
 .site-footer .footer-hpic-logo {
   height: 30px;
-  filter: brightness(0) invert(1);
 }
 
 .site-footer .footer-hpic-text {
-  color: #fff;
+  color: #003876;
   font-size: 24px;
   font-weight: 800;
   letter-spacing: 1px;
@@ -3286,32 +3286,29 @@ section {
 
 .site-footer .footer-copy {
   margin: 0 0 10px;
-  color: #fff;
+  color: #222;
   font-size: 15px;
 }
 
 .site-footer .footer-copy span {
-  color: #4a90d9;
+  color: #185FA5;
   font-weight: 600;
 }
 
 .site-footer .footer-line {
   margin: 0 0 6px;
   font-size: 13.5px;
-  color: #cfcfcf;
+  color: #666;
   line-height: 1.5;
 }
 
 .site-footer .footer-label {
-  color: #4a90d9;
+  color: #185FA5;
   font-weight: 600;
 }
 
 .site-footer .footer-yonsei-logo {
-  height: 46px;
-  background: #fff;
-  padding: 6px 12px;
-  border-radius: 6px;
+  height: 52px;
 }
 
 @media (max-width: 767px) {
