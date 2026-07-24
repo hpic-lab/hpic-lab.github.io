@@ -468,7 +468,7 @@ $(document).ready(function () {
       "Seung-Mo Jin": "진승모", "Dong-Ho Kim": "김동호", "Jae-Geon Lee": "이재건",
       "Sang-Hyun Ok": "옥상현", "Sang-Hyeon Ok": "옥상현", "Seung-Hwan Gong": "공승환",
       "Dong-Hoe Heo": "허동회", "Jae-Hyeon Pyeon": "편재현", "In-Ho Han": "한인호",
-      "Dong-Hyun Lee": "이동현", "Do-Hyeong Lee": "이동현",
+      "Dong-Hyun Lee": "이동현", "Do-Hyeong Lee": "이도형",
       "Shin-Uk Kang": "강신욱", "So-Yeon Kwon": "권소연", "Seol-Hyeon Kim": "김설현",
       "Joon-Seok Kwon": "권준석", "Dong-Eun Lee": "이동은", "Tae-Hyun Kim": "김태현",
       "Min-Gwon Song": "송민권", "Suk-Min Yoon": "윤석민", "Han-Gil Yoo": "유한길",
