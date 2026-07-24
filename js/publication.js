@@ -3,7 +3,7 @@ $(document).ready(function () {
   // venue 약칭 배지 텍스트 (status 필드에서 접두어 제거)
   function venueLabel(statusStr) {
     if (!statusStr) return "";
-    return statusStr
+    return String(statusStr)
       .replace(/^(IEEE\/IEIE|IEEE\/ISE|ACM\/IEEE|ACM IEEE|IEEE|IEIE|IEEK|ACM)\s+/i, "")
       .replace(/^20\d\d\s+/, "")
       .trim();
