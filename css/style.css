@@ -3263,31 +3263,37 @@ section {
   align-items: center;
   gap: 30px;
   flex-wrap: wrap;
+  text-align: left;
 }
 
-.site-footer .footer-brand {
-  display: flex;
+.site-footer .footer-left {
+  text-align: left;
+}
+
+/* 우측 브랜드: 메뉴바와 동일 (HPIC 로고 + HPIC + 연세대 로고) */
+.site-footer .footer-right {
+  display: inline-flex;
   align-items: center;
-  gap: 9px;
-  margin-bottom: 12px;
+  white-space: nowrap;
+  gap: 10px;
 }
 
 .site-footer .footer-hpic-logo {
-  height: 30px;
+  height: 46px;
+  width: auto;
 }
 
 .site-footer .footer-hpic-text {
   color: #003876;
-  font-size: 24px;
-  font-weight: 800;
-  letter-spacing: 1px;
+  font-size: 1.6rem;
+  font-weight: 700;
   line-height: 1;
 }
 
 .site-footer .footer-copy {
   margin: 0 0 10px;
   color: #222;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .site-footer .footer-copy span {
@@ -3297,9 +3303,9 @@ section {
 
 .site-footer .footer-line {
   margin: 0 0 6px;
-  font-size: 13.5px;
+  font-size: 14.5px;
   color: #666;
-  line-height: 1.5;
+  line-height: 1.55;
 }
 
 .site-footer .footer-label {
@@ -3308,7 +3314,8 @@ section {
 }
 
 .site-footer .footer-yonsei-logo {
-  height: 52px;
+  height: 60px;
+  width: auto;
 }
 
 @media (max-width: 767px) {
