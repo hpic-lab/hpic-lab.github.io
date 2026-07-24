@@ -3295,9 +3295,9 @@ section {
 }
 
 .site-footer .footer-copy {
-  margin: 0 0 10px;
+  margin: 0 0 12px;
   color: #222;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .site-footer .footer-copy span {
@@ -3306,10 +3306,10 @@ section {
 }
 
 .site-footer .footer-line {
-  margin: 0 0 6px;
-  font-size: 14.5px;
+  margin: 0 0 7px;
+  font-size: 16px;
   color: #666;
-  line-height: 1.55;
+  line-height: 1.6;
 }
 
 .site-footer .footer-label {
