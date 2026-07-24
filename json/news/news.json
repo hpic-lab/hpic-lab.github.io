@@ -3,16 +3,16 @@
     "year": "2026",
     "month": "09",
     "category": "News",
-    "text": "<u>Do-Hyeong</u>, <u>Chang-Hui</u>, <u>Han-Gang</u>, <u>Seung-Min</u>, <u>Suk-Min</u>, <u>Ju-Yong</u>, and <u>Jun-gyu</u> joined HPIC Lab as new graduate students. Welcome!",
+    "text": "<u>Suk-Min</u>, <u>Ju-Yong</u>, <u>Jun-gyu</u>, <u>Do-Hyeong</u>, <u>Chang-Hui</u>, <u>Han-Gang</u>, and <u>Seung-Min</u> joined HPIC Lab as new graduate students. Welcome!",
     "links": [],
     "figures": [
+      "sm_yoon_profile_image.jpg",
+      "jy-lee-profile-img.jpg",
+      "jg_han_profile_image.jpg",
       "dh_lee_bs_profile_image.jpg",
       "ch_oh_profile_image.jpg",
       "hg_cho_profile_image.png",
-      "sm_yoo_profile_image.jpeg",
-      "sm_yoon_profile_image.jpg",
-      "jy-lee-profile-img.jpg",
-      "jg_han_profile_image.jpg"
+      "sm_yoo_profile_image.jpeg"
     ]
   },
   {
@@ -473,6 +473,16 @@
   },
   {
     "year": "2025",
+    "month": "09",
+    "category": "News",
+    "text": "<u>Joon-Seok</u> joined HPIC Lab as an M.S. student. Welcome!",
+    "links": [],
+    "figures": [
+      "js-kwon-profile-image.jpg"
+    ]
+  },
+  {
+    "year": "2025",
     "month": "08",
     "category": "Conference",
     "text": "\"Critical-Timing-Relaxed pre-Decision Feedforward Equalizer for High-Speed DSP-based Wireline Receiver using Hardware-in-the-Loop Verification on RF-SoC\" was accepted at the <b>IEEE A-SSCC</b>. Congratulations!",
@@ -779,14 +789,16 @@
     "year": "2025",
     "month": "03",
     "category": "News",
-    "text": "<u>So-Yeon</u>, <u>Jae-Geon</u>, <u>Seung-Mo</u>, <u>Seol-Hyeon</u>, and <u>Dong-Eon</u> joined HPIC Lab as M.S. students. Welcome!",
+    "text": "<u>Jae-Geon</u>, <u>Seung-Mo</u>, <u>Seung-Hwan</u>, <u>Dong-Ho</u>, <u>Seol-Hyeon</u>, <u>Dong-Eon</u>, and <u>Hyeon-Seo</u> joined HPIC Lab as M.S. students. Welcome!",
     "links": [],
     "figures": [
-      "sw-kwon-profile-image.jpeg",
       "jg-lee-profile-img.jpeg",
       "sm-jin-profile-img.jpg",
+      "sh-gong-profile-image.jpg",
+      "dh-kim-new-profile-image.jpg",
       "sh-kim-profile-image.jpg",
-      "de-jin-profile-image.jpg"
+      "de-jin-profile-image.jpg",
+      "sh-kim2-profile-image.png"
     ]
   },
   {
@@ -879,10 +891,12 @@
     "year": "2024",
     "month": "09",
     "category": "News",
-    "text": "<u>Jae-Hyeon</u> joined HPIC Lab as an M.S. student. Welcome!",
+    "text": "<u>Jae-Hyeon</u>, <u>In-Ho</u>, and <u>So-Yeon</u> joined HPIC Lab as M.S. students. Welcome!",
     "links": [],
     "figures": [
-      "jh-pyeon-profile-img.png"
+      "jh-pyeon-profile-img.png",
+      "ih-han-profile-img.jpg",
+      "sw-kwon-profile-image.jpeg"
     ]
   },
   {
@@ -931,13 +945,11 @@
     "year": "2024",
     "month": "03",
     "category": "News",
-    "text": "<u>Seung-Hwan</u>, <u>Hyeon-Seo</u>, <u>Dong-Hyun</u>, and <u>Sang-Hyeon</u> joined HPIC Lab as M.S. students. Welcome!",
+    "text": "<u>Sang-Hyeon</u> and <u>Dong-Hyun</u> joined HPIC Lab as M.S. students. Welcome!",
     "links": [],
     "figures": [
-      "sh-gong-profile-image.jpg",
-      "sh-kim2-profile-image.png",
-      "dh-lee-profile-img.png",
-      "sh-ok-profile-img.jpg"
+      "sh-ok-profile-img.jpg",
+      "dh-lee-profile-img.png"
     ]
   },
   {
@@ -995,27 +1007,15 @@
   },
   {
     "year": "2023",
-    "month": "09",
-    "category": "News",
-    "text": "<u>Dong-Ho</u> joined HPIC Lab as an M.S. student. Welcome!",
-    "links": [],
-    "figures": [
-      "dh-kim-new-profile-image.jpg"
-    ]
-  },
-  {
-    "year": "2023",
     "month": "03",
     "category": "News",
-    "text": "<u>In-Ho</u>, <u>Joon-Seok</u>, <u>Dong-Hoe</u>, <u>Kang-Min</u>, <u>Kyu-Ran</u>, and <u>Shin-Uk</u> joined HPIC Lab as M.S. students. Welcome!",
+    "text": "<u>Shin-Uk</u>, <u>Kang-Min</u>, <u>Kyu-Ran</u>, and <u>Dong-Hoe</u> joined HPIC Lab as M.S. students. Welcome!",
     "links": [],
     "figures": [
-      "ih-han-profile-img.jpg",
-      "js-kwon-profile-image.jpg",
-      "dh-heo-profile-img.jpg",
+      "su-kang-profile-img.jpg",
       "km-kim-profile-img.jpg",
       "kr-park-profile-img.png",
-      "su-kang-profile-img.jpg"
+      "dh-heo-profile-img.jpg"
     ]
   },
   {
