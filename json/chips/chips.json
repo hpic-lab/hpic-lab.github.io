@@ -1,0 +1,457 @@
+[
+  {
+    "year": 2025,
+    "month": 9,
+    "process": "28-nm T",
+    "image": "img/chip_new/ANA_RX_25Sep_Real_name.jpg",
+    "name": "High-Speed PAM-4 Receiver",
+    "description": "",
+    "outputs": [],
+    "note": "",
+    "raw_date": "Sep. (28-nm T)'25",
+    "designer": "Seung-Hwan Gong"
+  },
+  {
+    "year": 2025,
+    "month": 9,
+    "process": "28-nm T",
+    "image": "img/chip_new/DSP_TX_25Sep_Real.png",
+    "name": "High-Speed Transmitter",
+    "description": "",
+    "outputs": [],
+    "note": "",
+    "raw_date": "Sep. (28-nm T)'25",
+    "designer": "Dong-Ho Kim and Seung-Mo Jin"
+  },
+  {
+    "year": 2025,
+    "month": 7,
+    "process": "28-nm T",
+    "image": "img/chip_new/DSP_RX_25jul_Real.png",
+    "name": "DSP-based High-Speed Receiver",
+    "description": "",
+    "outputs": [],
+    "note": "",
+    "raw_date": "Jul. (28-nm T)'25",
+    "designer": "Jae-Geon Lee"
+  },
+  {
+    "year": 2025,
+    "month": 7,
+    "process": "28-nm SS",
+    "image": "img/chip_new/SS_28_25Jul_2GSs_SAR_ADC.png",
+    "name": "2GS/s SAR ADC for Cryogenic",
+    "description": "",
+    "outputs": [],
+    "note": "",
+    "raw_date": "Jul. (28-nm SS)'25",
+    "designer": "Dong-Eon Jin"
+  },
+  {
+    "year": 2025,
+    "month": 2,
+    "process": "28-nm T",
+    "image": "img/chip_new/PICDR_25.png",
+    "name": "PI-based CDR",
+    "description": "",
+    "outputs": [],
+    "note": "",
+    "raw_date": "Feb. (28-nm T)'25",
+    "designer": "Dong-Hoe Heo"
+  },
+  {
+    "year": 2024,
+    "month": 11,
+    "process": "65-nm T",
+    "image": "img/chip_new/2T_PIM_24nov.png",
+    "name": "2T eDRAM PIM",
+    "description": "",
+    "outputs": [],
+    "note": "",
+    "raw_date": "Nov. (65-nm T)'24",
+    "designer": "Dong-Hyun Lee"
+  },
+  {
+    "year": 2024,
+    "month": 11,
+    "process": "65-nm T",
+    "image": "img/chip_new/3T_PIM_24nov.png",
+    "name": "3T eDRAM PIM",
+    "description": "",
+    "outputs": [],
+    "note": "",
+    "raw_date": "Nov. (65-nm T)'24",
+    "designer": ""
+  },
+  {
+    "year": 2024,
+    "month": 10,
+    "process": "65-nm T",
+    "image": "img/chip_new/PLL_KL_24nov.png",
+    "name": "PI ADPLL",
+    "description": "",
+    "outputs": [],
+    "note": "",
+    "raw_date": "Oct. (65-nm T)'24",
+    "designer": "Kyu-Ran Park"
+  },
+  {
+    "year": 2024,
+    "month": 10,
+    "process": "65-nm T",
+    "image": "img/chip_new/PUF_24nov.png",
+    "name": "ILO-based PUF",
+    "description": "",
+    "outputs": [],
+    "note": "",
+    "raw_date": "Oct. (65-nm T)'24",
+    "designer": "Kang-Min Kim</Kbd>"
+  },
+  {
+    "year": 2024,
+    "month": 10,
+    "process": "40-nm T",
+    "image": "img/chip_new/DSP_RX_fig.png",
+    "name": "ADC DSP RX",
+    "description": "",
+    "outputs": [],
+    "note": "",
+    "raw_date": "Oct. (40-nm T)'24",
+    "designer": "Sang-Hyeon Ok</Kbd>"
+  },
+  {
+    "year": 2024,
+    "month": 10,
+    "process": "40-nm T",
+    "image": "img/chip_new/OSPLL_24.png",
+    "name": "Oversampling PLL",
+    "description": "",
+    "outputs": [],
+    "note": "",
+    "raw_date": "Oct. (40-nm T)'24",
+    "designer": "Ji-Ho Kim</Kbd>"
+  },
+  {
+    "year": 2024,
+    "month": 7,
+    "process": "28-nm S",
+    "image": "img/chip_new/3T_PIM_24jul_SS.png",
+    "name": "3T eDRAM PIM",
+    "description": "",
+    "outputs": [],
+    "note": "",
+    "raw_date": "Jul (28-nm S)'24",
+    "designer": "Woo-Suk Jeong"
+  },
+  {
+    "year": 2024,
+    "month": 6,
+    "process": "28-nm T",
+    "image": "img/chip_new/PICDR.png",
+    "name": "PI-based CDR",
+    "description": "",
+    "outputs": [],
+    "note": "",
+    "raw_date": "June (28-nm T)'24",
+    "designer": "Dong-Hoe Heo"
+  },
+  {
+    "year": 2024,
+    "month": 5,
+    "process": "65-nm T",
+    "image": "img/chip_new/2T_PIM_24may.png",
+    "name": "2T eDRAM PIM",
+    "description": "",
+    "outputs": [],
+    "note": "",
+    "raw_date": "May (65-nm T)'24",
+    "designer": "Dong-Hyun Lee"
+  },
+  {
+    "year": 2024,
+    "month": 5,
+    "process": "65-nm T",
+    "image": "img/chip_new/PUF_24may.png",
+    "name": "ILO-based PUF",
+    "description": "",
+    "outputs": [],
+    "note": "",
+    "raw_date": "May (65-nm T)'24",
+    "designer": "Kang-Min Kim"
+  },
+  {
+    "year": 2023,
+    "month": 12,
+    "process": "65-nm T",
+    "image": "img/chip_new/Supply_Noise_Insensitive_PLL.png",
+    "name": "Supply Noise Insensitive ADPLL",
+    "description": "",
+    "outputs": [],
+    "note": "",
+    "raw_date": "Dec (65-nm T)'23",
+    "designer": ""
+  },
+  {
+    "year": 2023,
+    "month": 12,
+    "process": "65-nm T",
+    "image": "img/chip_new/ADPLL_ILO_Calibration.png",
+    "name": "ADPLL ILO Calibration",
+    "description": "",
+    "outputs": [],
+    "note": "",
+    "raw_date": "Dec (65-nm T)'23",
+    "designer": ""
+  },
+  {
+    "year": 2023,
+    "month": 12,
+    "process": "65-nm T",
+    "image": "img/SRAM_PIM_Accelerator.JPG",
+    "name": "SRAM PIM Accelerator",
+    "description": "",
+    "outputs": [],
+    "note": "",
+    "raw_date": "Dec (65-nm T)'23",
+    "designer": "Shin-Uk Kang"
+  },
+  {
+    "year": 2023,
+    "month": 12,
+    "process": "65-nm T",
+    "image": "img/chip_new/Adaptive_Gain_Controlled_DPLL.png",
+    "name": "Adaptive Gain Controlled DPLL",
+    "description": "",
+    "outputs": [],
+    "note": "",
+    "raw_date": "Dec (65-nm T)'23",
+    "designer": "In-Woo Jang"
+  },
+  {
+    "year": 2023,
+    "month": 7,
+    "process": "28-nm S",
+    "image": "img/TX-PAM4-DRV.png",
+    "name": "TX-PAM4-DRV",
+    "description": "",
+    "outputs": [],
+    "note": "",
+    "raw_date": "July (28-nm S)'23",
+    "designer": ""
+  },
+  {
+    "year": 2023,
+    "month": 7,
+    "process": "28-nm S",
+    "image": "img/High-Speed Equalizer.png",
+    "name": "High-Speed Equalizer",
+    "description": "",
+    "outputs": [],
+    "note": "",
+    "raw_date": "July (28-nm S)'23",
+    "designer": ""
+  },
+  {
+    "year": 2023,
+    "month": 1,
+    "process": "28-nm S",
+    "image": "img/chip_new/ADPLL_23jan_SS.png",
+    "name": "ADPLL",
+    "description": "",
+    "outputs": [],
+    "note": "",
+    "raw_date": "Jan (28-nm S)'23",
+    "designer": "Ji-Ho Kim"
+  },
+  {
+    "year": 2023,
+    "month": 1,
+    "process": "28-nm S",
+    "image": "img/chip_new/ILO_23jan_SS.png",
+    "name": "Injection Lock Oscillator (ILO)",
+    "description": "",
+    "outputs": [],
+    "note": "",
+    "raw_date": "Jan (28-nm S)'23",
+    "designer": "Geun-Young Yu"
+  },
+  {
+    "year": 2023,
+    "month": 1,
+    "process": "28-nm S",
+    "image": "img/chip_new/ADC_23jan_SS.png",
+    "name": "Flash ADC",
+    "description": "",
+    "outputs": [],
+    "note": "",
+    "raw_date": "Jan (28-nm S)'23",
+    "designer": "Dong-Hoe Heo"
+  },
+  {
+    "year": 2019,
+    "month": 0,
+    "process": "",
+    "image": "img/Clock and Data Recovery (CDR).jpg",
+    "name": "Clock and Data Recovery (CDR)",
+    "description": "",
+    "outputs": [
+      "VLSI'19",
+      "JSSC'21"
+    ],
+    "note": "",
+    "raw_date": "VLSI'19, JSSC'21",
+    "designer": ""
+  },
+  {
+    "year": 2019,
+    "month": 0,
+    "process": "",
+    "image": "img/Clock Generator2.jpg",
+    "name": "Clock Generator",
+    "description": "",
+    "outputs": [
+      "TCAS-II'19"
+    ],
+    "note": "",
+    "raw_date": "TCAS-II'19",
+    "designer": ""
+  },
+  {
+    "year": 2019,
+    "month": 0,
+    "process": "",
+    "image": "img/Power Regulator.jpg",
+    "name": "Power Regulator",
+    "description": "",
+    "outputs": [
+      "ISSCC'19",
+      "SSC-L'19"
+    ],
+    "note": "",
+    "raw_date": "ISSCC'19, SSC-L'19",
+    "designer": ""
+  },
+  {
+    "year": 2018,
+    "month": 0,
+    "process": "",
+    "image": "img/CDR.jpg",
+    "name": "CDR",
+    "description": "",
+    "outputs": [
+      "A-SSCC'18",
+      "JSSC'19"
+    ],
+    "note": "",
+    "raw_date": "A-SSCC'18, JSSC'19",
+    "designer": ""
+  },
+  {
+    "year": 2018,
+    "month": 0,
+    "process": "",
+    "image": "img/Clock Generator18.jpg",
+    "name": "Clock Generator",
+    "description": "",
+    "outputs": [
+      "TCAS-II'18"
+    ],
+    "note": "",
+    "raw_date": "TCAS-II'18",
+    "designer": ""
+  },
+  {
+    "year": 2017,
+    "month": 0,
+    "process": "",
+    "image": "img/Clock Generator.jpg",
+    "name": "Clock Generator",
+    "description": "",
+    "outputs": [
+      "ISSCC'17",
+      "JSSC'21"
+    ],
+    "note": "",
+    "raw_date": "ISSCC'17, JSSC'21",
+    "designer": ""
+  },
+  {
+    "year": 2017,
+    "month": 0,
+    "process": "",
+    "image": "img/Video Interface Receiver.jpg",
+    "name": "Video Interface Receiver",
+    "description": "",
+    "outputs": [
+      "TCAS-II'17"
+    ],
+    "note": "",
+    "raw_date": "TCAS-II'17",
+    "designer": ""
+  },
+  {
+    "year": 2017,
+    "month": 0,
+    "process": "",
+    "image": "img/Clock Gen. & CDR.jpg",
+    "name": "Clock Gen. & CDR",
+    "description": "",
+    "outputs": [],
+    "note": "Failed",
+    "raw_date": "Failed'17",
+    "designer": ""
+  },
+  {
+    "year": 2016,
+    "month": 0,
+    "process": "",
+    "image": "img/Clock Generator16.jpg",
+    "name": "Clock Generator",
+    "description": "",
+    "outputs": [
+      "JSTS'16"
+    ],
+    "note": "",
+    "raw_date": "JSTS'16",
+    "designer": ""
+  },
+  {
+    "year": 2016,
+    "month": 0,
+    "process": "",
+    "image": "img/CDRF.jpg",
+    "name": "CDR",
+    "description": "",
+    "outputs": [],
+    "note": "Failed",
+    "raw_date": "Failed'16",
+    "designer": ""
+  },
+  {
+    "year": 2015,
+    "month": 0,
+    "process": "",
+    "image": "img/Clock Generator15.jpg",
+    "name": "Clock Generator",
+    "description": "",
+    "outputs": [
+      "ESSCIRC'15",
+      "TCAS-I'18"
+    ],
+    "note": "",
+    "raw_date": "ESSCIRC'15, TCAS-I'18",
+    "designer": ""
+  },
+  {
+    "year": 2015,
+    "month": 0,
+    "process": "",
+    "image": "img/CDRF2.jpg",
+    "name": "CDR",
+    "description": "",
+    "outputs": [],
+    "note": "Failed",
+    "raw_date": "Failed'15",
+    "designer": ""
+  }
+]

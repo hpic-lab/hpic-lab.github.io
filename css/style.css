@@ -3328,3 +3328,111 @@ section {
     align-items: flex-start;
   }
 }
+
+/* ========================================= */
+/* Chip Gallery 타임라인 (연도 헤더 + 월 라벨 + 칩 카드) */
+/* ========================================= */
+.chip-timeline {
+  margin: 8px 0 0;
+}
+
+.chip-year {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #0C447C;
+  border-bottom: 2px solid #0C447C;
+  padding-bottom: 5px;
+  margin: 22px 0 12px;
+}
+
+.chip-year-body {
+  padding-left: 2px;
+}
+
+.chip-month {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #999;
+  margin: 12px 0 8px;
+}
+
+.chip-card2 {
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+  background: #fff;
+  border: 0.5px solid #e8e8e8;
+  border-radius: 12px;
+  padding: 14px 16px;
+  margin-bottom: 12px;
+}
+
+.chip-card2 .chip-thumb {
+  flex-shrink: 0;
+  width: 150px;
+}
+
+.chip-card2 .chip-thumb img {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #eee;
+  object-fit: contain;
+  background: #f4f6f8;
+}
+
+.chip-card2 .chip-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.chip-card2 .chip-name {
+  margin: 2px 0 2px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #1c3557;
+}
+
+.chip-card2 .chip-proc {
+  margin: 0 0 4px;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.chip-card2 .chip-desc {
+  margin: 0 0 6px;
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.55;
+}
+
+.chip-outs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.chip-out {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 2px 9px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.chip-out-venue  { background: #E6F1FB; color: #0C447C; }
+.chip-out-patent { background: #EEEDFE; color: #3C3489; }
+.chip-out-failed { background: #F1EFE8; color: #5F5E5A; }
+
+a.chip-out:hover { text-decoration: underline; }
+
+@media (max-width: 576px) {
+  .chip-card2 { flex-direction: column; }
+  .chip-card2 .chip-thumb { width: 100%; max-width: 260px; }
+}
+
+.chip-card2 .chip-designer {
+  margin: 0 0 4px;
+  font-size: 0.88rem;
+  color: #777;
+}
