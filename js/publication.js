@@ -126,8 +126,33 @@ $(document).ready(function () {
   var OPEN_FROM_YEAR = 2024;
   var OLD_GROUP_LABEL = "~" + (OPEN_FROM_YEAR - 1);
 
+  // reference 문자열에서 월(1~12) 추출
+  function monthNum(ref) {
+    var MAP = { jan: 1, feb: 2, mar: 3, apr: 4, may: 5, jun: 6, june: 6, jul: 7, july: 7, aug: 8, sep: 9, sept: 9, oct: 10, nov: 11, dec: 12 };
+    // 월 뒤에 연도가 오는 "<Month> 2026" 패턴만 인식 (IDEC의 DEC 등 오탐 방지)
+    var m = (ref || "").match(/(Sept|June|July|Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\.?\s+20\d\d/i);
+    return m ? (MAP[m[1].toLowerCase()] || 0) : 0;
+  }
+  // 같은 연/월 동점 시 우선순위 (JSSC > TCAS-I > TCAS-II > TVLSI, 그 외 0)
+  function venuePriority(v) {
+    var P = { "JSSC": 4, "TCAS-I": 3, "TCAS-II": 2, "TVLSI": 1 };
+    return P[v] || 0;
+  }
+  // 연도 내림차순 → 월 내림차순(미출판은 최상단) → 학회 우선순위 내림차순
+  function sortByRecency(pubs) {
+    return pubs.slice().sort(function (a, b) {
+      var ya = Number(a.year) || Number(a.type) || 0, yb = Number(b.year) || Number(b.type) || 0;
+      if (ya !== yb) return yb - ya;
+      var ma = (a.title && a.title.trim()) ? monthNum(a.reference) : 99;
+      var mb = (b.title && b.title.trim()) ? monthNum(b.reference) : 99;
+      if (ma !== mb) return mb - ma;
+      return venuePriority(venueLabel(b.status)) - venuePriority(venueLabel(a.status));
+    });
+  }
+
   // Journal/Conference 공통 렌더링 (ISL 스타일: 좌측 번호·등급·학회, 우측 본문)
   function renderPaperList(pubs, container, venueClass, idPrefix) {
+    pubs = sortByRecency(pubs);
     var numbered = pubs.filter(function (p) { return p.title && p.title.trim() !== ""; }).length;
     var n = numbered;
     var curYear = null;
@@ -236,6 +261,7 @@ $(document).ready(function () {
   }
 
   function renderPatentList(pubs, container, idPrefix) {
+    pubs = sortByRecency(pubs);
     var n = pubs.length;
     var curYear = null;
     var body = null;
