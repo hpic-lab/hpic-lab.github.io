@@ -80,7 +80,8 @@ h6 {
 
 /* Research 좌측 사이드바의 Chip Gallery 서브 네비 */
 .research-subnav {
-  margin-top: 24px;
+  margin-top: 22px;
+  padding-left: 4px;
 }
 .subsection-title {
   font-size: 1.5rem;
@@ -88,8 +89,24 @@ h6 {
   color: #222;
   margin: 0 0 10px;
 }
-.chip-more-row {
-  margin-top: 2px;
+/* Chip Gallery 제목 + Details 버튼 한 줄 */
+.chip-gallery-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.chip-gallery-head .subsection-title {
+  margin: 0;
+}
+.chip-gallery-head .chip-more-row {
+  margin: 0;
+}
+/* Research 하위임을 나타내는 코너 화살표 */
+.subnav-corner {
+  color: #9aa3b0;
+  font-weight: 400;
+  margin-right: 5px;
 }
 /* Chip Gallery 연도 네비 (Publications 연도 네비와 동일 스타일) */
 .chip-year-nav {
