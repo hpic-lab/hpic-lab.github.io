@@ -2791,6 +2791,17 @@ nav#navbar-main .navbar-collapse {
     width: auto;
   }
 
+  /* venue명(TCAS-I)과 상태 배지(Accepted)를 한 줄에 배치 */
+  .pub2-side {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .pub2-side .pub2-side-badges {
+    margin-top: 0;
+  }
+
   .pub2-body {
     flex-basis: 100%;
   }
