@@ -2133,7 +2133,7 @@ nav#navbar-main .navbar-collapse {
 }
 
 .principal-investigator.people-grid {
-  justify-content: center !important;
+  justify-content: flex-start !important;
 }
 
 .people-card {
