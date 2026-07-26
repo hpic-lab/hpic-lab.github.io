@@ -476,7 +476,8 @@ $(document).ready(function () {
       "Joon-Seok Kwon": "권준석", "Dong-Eun Lee": "이동은", "Tae-Hyun Kim": "김태현",
       "Min-Gwon Song": "송민권", "Suk-Min Yoon": "윤석민", "Han-Gil Yoo": "유한길",
       "Woo-Suk Jung": "정우석", "Kyu-Ran Park": "박규란", "In-Woo Jang": "장인우",
-      "Geun-Young Yoo": "유근영", "Seung-Wan Han": "한승완", "Ji-Hyeon Kwon": "권지현"
+      "Geun-Young Yoo": "유근영", "Seung-Wan Han": "한승완", "Ji-Hyeon Kwon": "권지현",
+      "Ji-Ho Kim": "김지호"
     };
     // 영문 표기가 두 가지인 경우 (프로필 이름 ↔ 논문 저자 표기)
     const EN_ALIAS = {
@@ -487,10 +488,24 @@ $(document).ready(function () {
     const IMG_ALIAS = {
       "dh-kim-new-profile-image.jpg": "dh-kim-profile-image.jpg"
     };
+    // 이름의 영문 표기 변형 생성 (하이픈 조인: "Ji-Ho Kim" → "Jiho Kim")
+    function nameVariants(nm) {
+      var vs = [nm];
+      var joined = nm.replace(/-([A-Za-z])/g, function (m, c) { return c.toLowerCase(); });
+      if (joined !== nm && vs.indexOf(joined) < 0) vs.push(joined);
+      return vs;
+    }
     function highlightSelf(html) {
-      var targets = [name].concat(EN_ALIAS[name] || []);
+      var targets = [];
+      nameVariants(name).forEach(function (v) { targets.push(v); });
+      (EN_ALIAS[name] || []).forEach(function (a) {
+        nameVariants(a).forEach(function (v) { if (targets.indexOf(v) < 0) targets.push(v); });
+      });
       if (KR_NAME[name]) targets.push(KR_NAME[name]);
+      // 긴 문자열부터 치환해 부분 겹침 방지
+      targets.sort(function (a, b) { return b.length - a.length; });
       targets.forEach(function (t) {
+        if (!t) return;
         html = html.split(t).join("<b><u>" + t + "</u></b>");
       });
       return html;

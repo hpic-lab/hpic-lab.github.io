@@ -1,129 +1,129 @@
 [
   {
-  "id": 29,
-  "img_src": "img/award/251218_이재건_BK.jpg",
-  "award_date": "20251218",
-  "award_name": "한양대학교 BK21 우수논문상",
-  "recipient_name": "이재건",
-  "award_content": "2025 한양대학교 BK21 우수논문상",
-  "awarding_institution": "한양대학교 고신뢰성 에너지용 지능형 시스템반도체 교육연구단(BK21)"
-  },  
-  {
-  "id": 28,
-  "img_src": "img/award/251213_이재건_SPC.jpg",
-  "award_date": "20251213",
-  "award_name": "IEEE Best Student Paper Award",
-  "recipient_name": "이재건",
-  "award_content": "IEEE Best Student Paper Bronze Award",
-  "awarding_institution": "IEEE Seoul Section"
-  },  
-  {
-  "id": 27,
-  "img_src": "img/award/251213_공승환_SPC.jpg",
-  "award_date": "20251213",
-  "award_name": "IEEE Best Student Paper Award",
-  "recipient_name": "공승환",
-  "award_content": "IEEE Best Student Paper Bronze Award",
-  "awarding_institution": "IEEE Seoul Section"
-  },  
-  {
-  "id": 26,
-  "img_src": "img/award/251213_김동호_SPC.jpg",
-  "award_date": "20251213",
-  "award_name": "IEEE Best Student Paper Award",
-  "recipient_name": "김동호",
-  "award_content": "IEEE Best Student Paper Bronze Award",
-  "awarding_institution": "IEEE Seoul Section"
-  },      
-  {
-  "id": 25,
-  "img_src": "img/award/251203_교수님_전자공학회_공로상.jpg",
-  "award_date": "20251203",
-  "award_name": "대한전자공학회 공로상",
-  "recipient_name": "교수님",
-  "award_content": "대한전자공학회 공로상",
-  "awarding_institution": "대한전자공학회"
-  },    
-  {
-  "id": 24,
-  "img_src": "img/award/251203_교수님_공로상.jpg",
-  "award_date": "20251203",
-  "award_name": "반도체소사이어티 공로상",
-  "recipient_name": "교수님",
-  "award_content": "반도체소사이어티 공로상",
-  "awarding_institution": "반도체 소사이어티"
-  },  
-  {
-  "id": 23,
-  "img_src": "img/award/251022_교수님_반도체협회장상.jpg",
-  "award_date": "20251022",
-  "award_name": "한국반도체산업협회장상",
-  "recipient_name": "교수님",
-  "award_content": "한국반도체산업협회장상",
-  "awarding_institution": "한국반도체산업협회"
-  },  
-  {
-  "id": 22,
-  "img_src": "img/award/251016편재현_CDC_수상.png",
-  "award_date": "20251016",
-  "award_name": "ISOCC 2025 Chip Design Contest Best Poster Award",
-  "recipient_name": "편재현",
-  "award_content": "Design of Ring Oscillator based triple-point background calibration Injection Locked Closk Multiplier",
-  "awarding_institution": "ISOCC International Conference"
-  },  
-  {
-  "id": 21,
-  "img_src": "img/award/251016허동회_공승환_CDC_수상.jpeg",
-  "award_date": "20251016",
-  "award_name": "ISOCC 2025 Chip Design Contest Special Prize",
-  "recipient_name": "허동회, 공승환",
-  "award_content": "A 20-32Gb/s, 1.37pJ/b PI-based CDR with a Direct Proportional Path and an IIR Filter for Frequency Offset Tracking in 28-nm CMOS",
-  "awarding_institution": "ISOCC International Conference"
-  },    
-  {
-  "id": 20,
-  "img_src": "img/award/251016공승환_ISOCC_수상.jpg",
-  "award_date": "20251016",
-  "award_name": "ISOCC 2025 Synopsys Best Paper Award",
-  "recipient_name": "공승환",
-  "award_content": "A 20-32Gb/s, 1.37pJ/b PI-based CDR with a Direct Proportional Path and an IIR Filter for Frequency Offset Tracking in 28-nm CMOS",
-  "awarding_institution": "ISOCC International Conference"
-  },  
-  {
-  "id": 19,
-  "img_src": "img/award/251016진승모_김동호_ISOCC_수상.jpg",
-  "award_date": "20251016",
-  "award_name": "ISOCC 2025 SSCS Seoul Chapter Best Paper Award",
-  "recipient_name": "진승모, 김동호",
-  "award_content": "A PAM-2/4/8 DSP-based Transmitter with 14-tap Feedforward Equalization for PAM-8 at 54Gb/s in 40nm CMOS",
-  "awarding_institution": "ISOCC International Conference"
-  },  
-  {
-  "id": 18,
-  "img_src": "img/award/251023_반도체_설계대전_이동현.png",
-  "award_date": "20251023",
-  "award_name": "제26회 대한민국 반도체설계대전 기업특별상(바움디자인시스템즈)",
-  "recipient_name": "이동현",
-  "award_content": "A Compact 6T SRAM Compute-In-Memory Engine for Binary/Ternary Neural Networks Featuring Efficient ADC-Less and PVT-Robust Error-Aware Training Algorithm",
-  "awarding_institution": "산업통상자원부, 한국반도체산업협회"
-  },  
-  {
-  "id": 17,
-  "img_src": "img/award/251023_반도체 설계대전_지식재산처장상_진승모_김동호.jpg",
-  "award_date": "20251023",
-  "award_name": "제26회 대한민국 반도체설계대전 특허청장상",
-  "recipient_name": "진승모, 김동호",
-  "award_content": "A 22Gb/s-54Gb/s Reconfigurable PAM-2/4/8 DSP-based Transmitter with 14-tap Feedforward Equalization",
-  "awarding_institution": "산업통상자원부, 한국반도체산업협회"
+    "id": 29,
+    "img_src": "img/award/251218_이재건_BK.jpg",
+    "award_date": "20251218",
+    "award_name": "한양대학교 BK21 우수논문상",
+    "recipient_name": "이재건",
+    "award_content": "2025 한양대학교 BK21 우수논문상",
+    "awarding_institution": "한양대학교 고신뢰성 에너지용 지능형 시스템반도체 교육연구단(BK21)"
   },
   {
-  "id": 16,
-  "img_src": "img/award/ICEIC2025_Silver_shok.png",
-  "award_date": "20250121",
-  "award_name": "ICEIC 2025 Best Paper Award Silver Prize",
-  "recipient_name": "옥상현",
-  "award_content": "An implementation of a DSP-Based PAM-4 Digital Equalizer With 32-Way TI-ADC",
-  "awarding_institution": "ICEIC International Conference"
+    "id": 28,
+    "img_src": "img/award/251213_이재건_SPC.jpg",
+    "award_date": "20251213",
+    "award_name": "IEEE Best Student Paper Award",
+    "recipient_name": "이재건",
+    "award_content": "IEEE Best Student Paper Bronze Award",
+    "awarding_institution": "IEEE Seoul Section"
+  },
+  {
+    "id": 27,
+    "img_src": "img/award/251213_공승환_SPC.jpg",
+    "award_date": "20251213",
+    "award_name": "IEEE Best Student Paper Award",
+    "recipient_name": "공승환",
+    "award_content": "IEEE Best Student Paper Bronze Award",
+    "awarding_institution": "IEEE Seoul Section"
+  },
+  {
+    "id": 26,
+    "img_src": "img/award/251213_김동호_SPC.jpg",
+    "award_date": "20251213",
+    "award_name": "IEEE Best Student Paper Award",
+    "recipient_name": "김동호",
+    "award_content": "IEEE Best Student Paper Bronze Award",
+    "awarding_institution": "IEEE Seoul Section"
+  },
+  {
+    "id": 25,
+    "img_src": "img/award/251203_교수님_전자공학회_공로상.jpg",
+    "award_date": "20251203",
+    "award_name": "대한전자공학회 공로상",
+    "recipient_name": "교수님",
+    "award_content": "대한전자공학회 공로상",
+    "awarding_institution": "대한전자공학회"
+  },
+  {
+    "id": 24,
+    "img_src": "img/award/251203_교수님_공로상.jpg",
+    "award_date": "20251203",
+    "award_name": "반도체소사이어티 공로상",
+    "recipient_name": "교수님",
+    "award_content": "반도체소사이어티 공로상",
+    "awarding_institution": "반도체 소사이어티"
+  },
+  {
+    "id": 23,
+    "img_src": "img/award/251022_교수님_반도체협회장상.jpg",
+    "award_date": "20251022",
+    "award_name": "한국반도체산업협회장상",
+    "recipient_name": "교수님",
+    "award_content": "한국반도체산업협회장상",
+    "awarding_institution": "한국반도체산업협회"
+  },
+  {
+    "id": 22,
+    "img_src": "img/award/251016편재현_CDC_수상.png",
+    "award_date": "20251016",
+    "award_name": "ISOCC 2025 Chip Design Contest Best Poster Award",
+    "recipient_name": "편재현",
+    "award_content": "Design of Ring Oscillator based triple-point background calibration Injection Locked Closk Multiplier",
+    "awarding_institution": "ISOCC International Conference"
+  },
+  {
+    "id": 21,
+    "img_src": "img/award/251016허동회_공승환_CDC_수상.jpeg",
+    "award_date": "20251016",
+    "award_name": "ISOCC 2025 Chip Design Contest Special Prize",
+    "recipient_name": "허동회, 공승환",
+    "award_content": "A 20-32Gb/s, 1.37pJ/b PI-based CDR with a Direct Proportional Path and an IIR Filter for Frequency Offset Tracking in 28-nm CMOS",
+    "awarding_institution": "ISOCC International Conference"
+  },
+  {
+    "id": 20,
+    "img_src": "img/award/251016공승환_ISOCC_수상.jpg",
+    "award_date": "20251016",
+    "award_name": "ISOCC 2025 Synopsys Best Paper Award",
+    "recipient_name": "공승환",
+    "award_content": "A 20-32Gb/s, 1.37pJ/b PI-based CDR with a Direct Proportional Path and an IIR Filter for Frequency Offset Tracking in 28-nm CMOS",
+    "awarding_institution": "ISOCC International Conference"
+  },
+  {
+    "id": 19,
+    "img_src": "img/award/251016진승모_김동호_ISOCC_수상.jpg",
+    "award_date": "20251016",
+    "award_name": "ISOCC 2025 SSCS Seoul Chapter Best Paper Award",
+    "recipient_name": "진승모, 김동호",
+    "award_content": "A PAM-2/4/8 DSP-based Transmitter with 14-tap Feedforward Equalization for PAM-8 at 54Gb/s in 40nm CMOS",
+    "awarding_institution": "ISOCC International Conference"
+  },
+  {
+    "id": 18,
+    "img_src": "img/award/251023_반도체_설계대전_이동현.png",
+    "award_date": "20251023",
+    "award_name": "제26회 대한민국 반도체설계대전 기업특별상(바움디자인시스템즈)",
+    "recipient_name": "이동현",
+    "award_content": "A Compact 6T SRAM Compute-In-Memory Engine for Binary/Ternary Neural Networks Featuring Efficient ADC-Less and PVT-Robust Error-Aware Training Algorithm",
+    "awarding_institution": "산업통상자원부, 한국반도체산업협회"
+  },
+  {
+    "id": 17,
+    "img_src": "img/award/251023_반도체 설계대전_지식재산처장상_진승모_김동호.jpg",
+    "award_date": "20251023",
+    "award_name": "제26회 대한민국 반도체설계대전 특허청장상",
+    "recipient_name": "진승모, 김동호",
+    "award_content": "A 22Gb/s-54Gb/s Reconfigurable PAM-2/4/8 DSP-based Transmitter with 14-tap Feedforward Equalization",
+    "awarding_institution": "산업통상자원부, 한국반도체산업협회"
+  },
+  {
+    "id": 16,
+    "img_src": "img/award/ICEIC2025_Silver_shok.png",
+    "award_date": "20250121",
+    "award_name": "ICEIC 2025 Best Paper Award Silver Prize",
+    "recipient_name": "옥상현",
+    "award_content": "An implementation of a DSP-Based PAM-4 Digital Equalizer With 32-Way TI-ADC",
+    "awarding_institution": "ICEIC International Conference"
   },
   {
     "id": 15,
@@ -135,7 +135,7 @@
     "award_material": "발표자료",
     "award_status": "상장",
     "awarding_institution": "한양대학교 전자공학부 반도체전공트랙사업단"
-  },  
+  },
   {
     "id": 14,
     "img_src": "img/HYU_logo.png",
@@ -202,7 +202,7 @@
     "recipient_name": "김지호",
     "award_content": "High Performance ALL Digital Phase-Locked Loop (High-PSRR)",
     "awarding_institution": "한양대학교 고신뢰성 에너지용 지능형 시스템반도체 교육연구단(BK21)"
-  },  
+  },
   {
     "id": 7,
     "img_src": "img/award/231222_SCCuD.png",
@@ -211,7 +211,7 @@
     "recipient_name": "권지현, 변유진, 이동은",
     "award_content": "DSP BASED RECEIVER behavioral modeling 포스터 발표",
     "awarding_institution": "한양대학교 전자공학부 반도체전공트랙사업단"
-  },  
+  },
   {
     "id": 6,
     "img_src": "img/award/231227_sccud.jpg",
@@ -220,14 +220,14 @@
     "recipient_name": "진승모, 이재건, 송민권",
     "award_content": "PIM simulation 테크닉 연구 발표",
     "awarding_institution": "한양대학교 전자공학부 반도체전공트랙사업단"
-  },  
+  },
   {
     "id": 5,
     "img_src": "img/award/231201_ICASS_IEEE_박규란_장인우.jpg",
     "award_date": "20231201",
     "award_name": "IEEE CAS Student Design Contest",
     "recipient_name": "박규란, 장인우",
-    "award_content": "Best Student Design Award(IEEE CAS Seoul/Taegu/Daejeon Chapter)",
+    "award_content": "Best Student Design Award (IEEE CAS Seoul/Taegu/Daejeon Chapter)",
     "awarding_institution": "IEEE CAS Society"
   },
   {
@@ -238,7 +238,7 @@
     "recipient_name": "장인우, 박규란",
     "award_content": "회로설계 디자인 콘테스트 본선 진출 (대한민국 3팀)",
     "awarding_institution": "IEEE CAS Society"
-  },  
+  },
   {
     "id": 3,
     "img_src": "img/award/230917.jpg",
@@ -256,7 +256,7 @@
     "recipient_name": "장인우, 김태현",
     "award_content": "공학설계 프로젝트 우수(칩설계)",
     "awarding_institution": "한양대학교 ERICA 공학대학"
-  },  
+  },
   {
     "id": 1,
     "img_src": "img/award/230117.jpg",
