@@ -3077,16 +3077,29 @@ section {
     padding-right: 40px;
   }
 
-  .home-description-container h1 {
-    font-size: 20px;
+  /* 배경(회로 사진) 위 가독성 향상 */
+  .home-description-container {
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
   }
 
-  .txt {
-    /* border: 1px solid red; */
-    width: fit-content;
+  .home-description-container .uni {
+    font-size: 4.4vw;
+    letter-spacing: 0.3px;
+  }
+
+  .home-description-container h1 {
+    font-size: 8vw;
+    letter-spacing: 1px;
+    margin-top: 4px;
+  }
+
+  /* "Welcome to HPIC at Yonsei University."가 한 줄에 들어오도록 vw 기반 크기 */
+  .home-description-container .txt {
+    width: auto;
     margin-top: 12px;
-    letter-spacing: 0.5px;
-    font-size: 12px;
+    letter-spacing: 0.2px;
+    font-size: 3.5vw;
+    line-height: 1.55;
   }
 
   .home-description-container p {
@@ -3094,8 +3107,8 @@ section {
     /* 긴 단어를 줄 바꿈 */
     overflow-wrap: break-word;
     /* 긴 단어를 줄 바꿈 */
-    padding: 0 32px 0 0;
-    /* 양쪽에 패딩 추가 */
+    padding: 0 20px 0 0;
+    /* 오른쪽 패딩 */
     box-sizing: border-box;
     /* 패딩을 포함한 박스 크기 계산 */
   }
