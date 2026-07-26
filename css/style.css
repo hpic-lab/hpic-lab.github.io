@@ -3274,6 +3274,16 @@ section {
   html {
     font-size: 17px;
   }
+
+  /* 히어로 배경은 풀블리드, 텍스트만 다른 섹션과 동일한 컨테이너 좌측선에 정렬 */
+  .home-description-container {
+    left: 50%;
+    transform: translateX(-50%);
+    width: min(92vw, 1560px);
+    box-sizing: border-box;
+    padding-left: calc(var(--bs-gutter-x, 1.5rem) * 0.5);
+    padding-right: calc(var(--bs-gutter-x, 1.5rem) * 0.5);
+  }
 }
 
 :root {
@@ -3404,6 +3414,30 @@ section {
 
 .chip-year-body {
   padding-left: 2px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px 22px;
+  align-items: start;
+}
+/* 월 라벨·서브연도·빈 안내는 한 줄 전체 차지 */
+.chip-year-body .chip-month,
+.chip-year-body .chip-year-sub,
+.chip-year-body .chip-empty {
+  grid-column: 1 / -1;
+}
+/* ~YYYY 묶음 내부 연도 서브헤더 */
+.chip-year-sub {
+  font-size: 1rem;
+  font-weight: 800;
+  color: #3a4a63;
+  margin: 16px 0 8px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #dfe3ea;
+}
+@media (max-width: 767px) {
+  .chip-year-body {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* 연도 접이식 헤더 */

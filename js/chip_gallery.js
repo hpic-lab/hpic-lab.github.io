@@ -94,7 +94,13 @@ $(document).ready(function () {
       return b - a;
     });
 
-    years.forEach(function (y) {
+    // GROUP_MAX 이하 연도는 "~YYYY" 하나로 묶어 접어둠(내부는 연도별 표시)
+    var GROUP_MAX = 2022;
+    var indivYears = years.filter(function (y) { return y > GROUP_MAX; });
+    var groupYears = years.filter(function (y) { return y <= GROUP_MAX; });
+
+    // 개별 연도 (2023~ ). 2026/2025/2024 펼침, 나머지 접힘.
+    indivYears.forEach(function (y) {
       var yc = byYear[y] || [];
       var open = DEFAULT_OPEN_YEARS.indexOf(y) >= 0;
       var $header = $(
@@ -112,6 +118,28 @@ $(document).ready(function () {
       if (!open) $body.hide();
       $c.append($header).append($body);
     });
+
+    // ~GROUP_MAX 묶음 (접힘, 내부 연도별 서브헤더)
+    if (groupYears.length) {
+      var $gh = $(
+        '<div class="chip-year chip-year-toggle collapsed" role="button" tabindex="0">' +
+          '<span class="chip-year-caret">&#9662;</span>~' + GROUP_MAX +
+        "</div>"
+      );
+      var $gb = $('<div class="chip-year-body"></div>');
+      groupYears.forEach(function (y) {
+        var yc = byYear[y] || [];
+        $gb.append(
+          '<div class="chip-year-sub">' + y +
+          (yc.length ? "" : ' <span class="chip-year-soon">(Coming soon)</span>') +
+          "</div>"
+        );
+        if (yc.length) monthBlock($gb, yc);
+        else $gb.append('<p class="chip-empty">To be updated.</p>');
+      });
+      $gb.hide();
+      $c.append($gh).append($gb);
+    }
 
     $c.off("click.chiptoggle").on("click.chiptoggle", ".chip-year-toggle", function () {
       $(this).toggleClass("collapsed");
