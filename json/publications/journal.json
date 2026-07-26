@@ -58,13 +58,18 @@
   {
     "type": "2026",
     "status": "IEEE TCAS-I",
-    "title": "",
+    "title": "KWS-CIM: A Charge-Domain eDRAM-Based Compute-in-Memory Macro for Ternary DFSMN Keyword Spotting",
     "image": "",
-    "progress": "In Revision",
+    "progress": "Accepted",
     "journal": "IEEE TCAS-I",
-    "reference": "",
+    "reference": "<i>IEEE Transactions on Circuits and Systems I: Regular Papers (TCAS-I)</i>.",
     "authors": [
-      "Dong-Hyun Lee, Shin-Uk Kang, Seok-Min Yoon...",
+      "Dong-Hyun Lee",
+      "Shin-Uk Kang",
+      "Jihoon Jang",
+      "Seok-Min Yoon",
+      "Hyun Kim",
+      "Mingoo Seok",
       "Min-Seong Choo"
     ],
     "figure": [

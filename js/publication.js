@@ -33,7 +33,13 @@ $(document).ready(function () {
     if (t.indexOf("prepar") !== -1) return "pub2-st-prep";
     if (t.indexOf("revision") !== -1) return "pub2-st-revision";
     if (t.indexOf("submit") !== -1) return "pub2-st-submitted";
+    if (t.indexOf("accept") !== -1) return "pub2-st-accepted";
     return "";
+  }
+
+  // 미출판(투고~수락) 상태 여부 — 정렬 시 해당 연도 최상단으로
+  function isPendingPub(p) {
+    return /submit|revision|prepar|accept/i.test((p.progress || "") + " " + (p.sub || ""));
   }
 
   // ===== News → Publications 이동용 제목 색인 =====
@@ -152,8 +158,8 @@ $(document).ready(function () {
     return pubs.slice().sort(function (a, b) {
       var ya = Number(a.year) || Number(a.type) || 0, yb = Number(b.year) || Number(b.type) || 0;
       if (ya !== yb) return yb - ya;
-      var ma = (a.title && a.title.trim()) ? monthNum(a.reference) : 99;
-      var mb = (b.title && b.title.trim()) ? monthNum(b.reference) : 99;
+      var ma = (a.title && a.title.trim() && !isPendingPub(a)) ? monthNum(a.reference) : 99;
+      var mb = (b.title && b.title.trim() && !isPendingPub(b)) ? monthNum(b.reference) : 99;
       if (ma !== mb) return mb - ma;
       return venuePriority(venueLabel(b.status)) - venuePriority(venueLabel(a.status));
     });

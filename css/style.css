@@ -2775,6 +2775,7 @@ nav#navbar-main .navbar-collapse {
 .pub2-st-prep       { background: #F1EFE8; color: #5F5E5A; }
 .pub2-st-submitted  { background: #FAEEDA; color: #633806; }
 .pub2-st-revision   { background: #FBEAF0; color: #72243E; }
+.pub2-st-accepted   { background: #EAF3DE; color: #27500A; }
 
 .pub2-title {
   font-size: 1.02rem;
@@ -3435,4 +3436,31 @@ a.chip-out:hover { text-decoration: underline; }
   margin: 0 0 4px;
   font-size: 0.88rem;
   color: #777;
+}
+
+/* 푸터 Tel/E-mail 아이콘 */
+.site-footer .footer-ic {
+  height: 15px;
+  width: auto;
+  vertical-align: -2px;
+  margin: 0 6px 0 0;
+}
+.site-footer .footer-contact { white-space: nowrap; }
+
+/* 모바일 푸터: 글씨 축소 + 로고 가운데 정렬 */
+@media (max-width: 767px) {
+  .site-footer .footer-inner {
+    justify-content: center;
+    text-align: center;
+  }
+  .site-footer .footer-left { text-align: center; width: 100%; }
+  .site-footer .footer-copy { font-size: 14px; margin-bottom: 10px; }
+  .site-footer .footer-line { font-size: 12.5px; }
+  .site-footer .footer-contact { font-size: 12.5px; margin-top: 4px; }
+  .site-footer .footer-ic { height: 13px; margin-right: 4px; }
+  .site-footer .footer-right {
+    width: 100%;
+    justify-content: center;
+    margin-top: 14px;
+  }
 }
