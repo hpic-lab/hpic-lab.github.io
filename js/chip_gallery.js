@@ -104,7 +104,7 @@ $(document).ready(function () {
       var yc = byYear[y] || [];
       var open = DEFAULT_OPEN_YEARS.indexOf(y) >= 0;
       var $header = $(
-        '<div class="chip-year chip-year-toggle' + (open ? "" : " collapsed") + '" role="button" tabindex="0">' +
+        '<div class="chip-year chip-year-toggle' + (open ? "" : " collapsed") + '" data-year="' + y + '" role="button" tabindex="0">' +
           '<span class="chip-year-caret">&#9662;</span>' + y +
           (yc.length ? "" : ' <span class="chip-year-soon">(Coming soon)</span>') +
         "</div>"
@@ -122,7 +122,7 @@ $(document).ready(function () {
     // ~GROUP_MAX 묶음 (접힘, 내부 연도별 서브헤더)
     if (groupYears.length) {
       var $gh = $(
-        '<div class="chip-year chip-year-toggle collapsed" role="button" tabindex="0">' +
+        '<div class="chip-year chip-year-toggle collapsed" data-year="~' + GROUP_MAX + '" role="button" tabindex="0">' +
           '<span class="chip-year-caret">&#9662;</span>~' + GROUP_MAX +
         "</div>"
       );
@@ -153,6 +153,25 @@ $(document).ready(function () {
     });
   }
 
+  // 좌측 사이드바 연도 네비게이션 (연도 클릭 → 해당 연도로 스크롤·펼침)
+  function buildYearNav(navSelector, containerSelector) {
+    var $nav = $(navSelector);
+    var $c = $(containerSelector);
+    if (!$nav.length || !$c.length) return;
+    $nav.empty();
+    $c.find(".chip-year-toggle").each(function () {
+      var $h = $(this);
+      var label = $h.attr("data-year");
+      var $li = $('<li><a href="#">' + label + "</a></li>");
+      $li.find("a").on("click", function (e) {
+        e.preventDefault();
+        if ($h.hasClass("collapsed")) $h.trigger("click");
+        $("html, body").animate({ scrollTop: $h.offset().top - 90 }, 250);
+      });
+      $nav.append($li);
+    });
+  }
+
   $.getJSON("json/chips/chips.json").done(function (chips) {
     // 메인 Research 미리보기 (접이식)
     $(".chip-timeline-preview").each(function () {
@@ -160,5 +179,7 @@ $(document).ready(function () {
     });
     // 상세 전체 (접이식)
     renderCollapsible("#chip-timeline-full", chips);
+    // 좌측 사이드바 연도 네비 (미리보기 기준)
+    buildYearNav("#chip-year-nav", "#chip-timeline-preview");
   });
 });

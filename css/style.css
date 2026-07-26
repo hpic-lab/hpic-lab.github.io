@@ -78,18 +78,40 @@ h6 {
   color: #222;
 }
 
-/* Research 하위 subsection (Chip Gallery, Research Projects) 좌측 제목 */
+/* Research 좌측 사이드바의 Chip Gallery 서브 네비 */
+.research-subnav {
+  margin-top: 24px;
+}
 .subsection-title {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   font-weight: 800;
   color: #222;
-  margin: 0 0 14px;
-}
-.research-subrow {
-  margin-top: 26px;
+  margin: 0 0 10px;
 }
 .chip-more-row {
   margin-top: 2px;
+}
+.chip-year-nav {
+  list-style: none;
+  margin: 16px 0 0;
+  padding: 0;
+}
+.chip-year-nav li {
+  margin: 0;
+}
+.chip-year-nav a {
+  display: block;
+  padding: 7px 0;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #0C447C;
+  text-decoration: none;
+  border-bottom: 1px solid #e6e9ef;
+  transition: color 0.15s ease, padding-left 0.15s ease;
+}
+.chip-year-nav a:hover {
+  color: #093461;
+  padding-left: 4px;
 }
 
 /* 섹션별 배경색 변수 (홀수 흰색 / 짝수 회색 교차) — 고정 제목 배경이 따라감 */
