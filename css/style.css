@@ -3368,6 +3368,35 @@ section {
   padding-left: 2px;
 }
 
+/* 연도 접이식 헤더 */
+.chip-year-toggle {
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  align-items: center;
+}
+.chip-year-toggle:hover { color: #093461; }
+.chip-year-caret {
+  display: inline-block;
+  font-size: 0.85em;
+  margin-right: 8px;
+  transition: transform 0.18s ease;
+}
+.chip-year-toggle.collapsed .chip-year-caret {
+  transform: rotate(-90deg);
+}
+.chip-year-soon {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #9a9a9a;
+  margin-left: 8px;
+}
+.chip-empty {
+  color: #9a9a9a;
+  font-style: italic;
+  margin: 6px 0 4px;
+}
+
 .chip-month {
   font-size: 0.9rem;
   font-weight: 700;

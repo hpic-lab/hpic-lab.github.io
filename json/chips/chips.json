@@ -9,7 +9,10 @@
     "outputs": [],
     "note": "",
     "raw_date": "Sep. (28-nm T)'25",
-    "designer": "Seung-Hwan Gong"
+    "designer": "Seung-Hwan Gong",
+    "designer_imgs": [
+      "sh-gong-profile-image.jpg"
+    ]
   },
   {
     "year": 2025,
@@ -21,7 +24,11 @@
     "outputs": [],
     "note": "",
     "raw_date": "Sep. (28-nm T)'25",
-    "designer": "Dong-Ho Kim and Seung-Mo Jin"
+    "designer": "Dong-Ho Kim and Seung-Mo Jin",
+    "designer_imgs": [
+      "dh-kim-new-profile-image.jpg",
+      "sm-jin-profile-img.jpg"
+    ]
   },
   {
     "year": 2025,
@@ -33,7 +40,10 @@
     "outputs": [],
     "note": "",
     "raw_date": "Jul. (28-nm T)'25",
-    "designer": "Jae-Geon Lee"
+    "designer": "Jae-Geon Lee",
+    "designer_imgs": [
+      "jg-lee-profile-img.jpeg"
+    ]
   },
   {
     "year": 2025,
@@ -45,7 +55,10 @@
     "outputs": [],
     "note": "",
     "raw_date": "Jul. (28-nm SS)'25",
-    "designer": "Dong-Eon Jin"
+    "designer": "Dong-Eon Jin",
+    "designer_imgs": [
+      "de-jin-profile-image.jpg"
+    ]
   },
   {
     "year": 2025,
@@ -57,7 +70,10 @@
     "outputs": [],
     "note": "",
     "raw_date": "Feb. (28-nm T)'25",
-    "designer": "Dong-Hoe Heo"
+    "designer": "Dong-Hoe Heo",
+    "designer_imgs": [
+      "dh-heo-profile-img.jpg"
+    ]
   },
   {
     "year": 2024,
@@ -69,7 +85,10 @@
     "outputs": [],
     "note": "",
     "raw_date": "Nov. (65-nm T)'24",
-    "designer": "Dong-Hyun Lee"
+    "designer": "Dong-Hyun Lee",
+    "designer_imgs": [
+      "dh-lee-profile-img.png"
+    ]
   },
   {
     "year": 2024,
@@ -81,7 +100,8 @@
     "outputs": [],
     "note": "",
     "raw_date": "Nov. (65-nm T)'24",
-    "designer": ""
+    "designer": "",
+    "designer_imgs": []
   },
   {
     "year": 2024,
@@ -93,7 +113,10 @@
     "outputs": [],
     "note": "",
     "raw_date": "Oct. (65-nm T)'24",
-    "designer": "Kyu-Ran Park"
+    "designer": "Kyu-Ran Park",
+    "designer_imgs": [
+      "kr-park-profile-img.png"
+    ]
   },
   {
     "year": 2024,
@@ -105,7 +128,10 @@
     "outputs": [],
     "note": "",
     "raw_date": "Oct. (65-nm T)'24",
-    "designer": "Kang-Min Kim</Kbd>"
+    "designer": "Kang-Min Kim",
+    "designer_imgs": [
+      "km-kim-profile-img.jpg"
+    ]
   },
   {
     "year": 2024,
@@ -117,7 +143,10 @@
     "outputs": [],
     "note": "",
     "raw_date": "Oct. (40-nm T)'24",
-    "designer": "Sang-Hyeon Ok</Kbd>"
+    "designer": "Sang-Hyeon Ok",
+    "designer_imgs": [
+      "sh-ok-profile-img.jpg"
+    ]
   },
   {
     "year": 2024,
@@ -129,7 +158,10 @@
     "outputs": [],
     "note": "",
     "raw_date": "Oct. (40-nm T)'24",
-    "designer": "Ji-Ho Kim</Kbd>"
+    "designer": "Ji-Ho Kim",
+    "designer_imgs": [
+      "jh-kim-profile-img.png"
+    ]
   },
   {
     "year": 2024,
@@ -141,7 +173,10 @@
     "outputs": [],
     "note": "",
     "raw_date": "Jul (28-nm S)'24",
-    "designer": "Woo-Suk Jeong"
+    "designer": "Woo-Suk Jeong",
+    "designer_imgs": [
+      "ws-jung-profile-img.png"
+    ]
   },
   {
     "year": 2024,
@@ -153,7 +188,10 @@
     "outputs": [],
     "note": "",
     "raw_date": "June (28-nm T)'24",
-    "designer": "Dong-Hoe Heo"
+    "designer": "Dong-Hoe Heo",
+    "designer_imgs": [
+      "dh-heo-profile-img.jpg"
+    ]
   },
   {
     "year": 2024,
@@ -165,7 +203,10 @@
     "outputs": [],
     "note": "",
     "raw_date": "May (65-nm T)'24",
-    "designer": "Dong-Hyun Lee"
+    "designer": "Dong-Hyun Lee",
+    "designer_imgs": [
+      "dh-lee-profile-img.png"
+    ]
   },
   {
     "year": 2024,
@@ -177,7 +218,10 @@
     "outputs": [],
     "note": "",
     "raw_date": "May (65-nm T)'24",
-    "designer": "Kang-Min Kim"
+    "designer": "Kang-Min Kim",
+    "designer_imgs": [
+      "km-kim-profile-img.jpg"
+    ]
   },
   {
     "year": 2023,
@@ -189,7 +233,8 @@
     "outputs": [],
     "note": "",
     "raw_date": "Dec (65-nm T)'23",
-    "designer": ""
+    "designer": "",
+    "designer_imgs": []
   },
   {
     "year": 2023,
@@ -201,7 +246,8 @@
     "outputs": [],
     "note": "",
     "raw_date": "Dec (65-nm T)'23",
-    "designer": ""
+    "designer": "",
+    "designer_imgs": []
   },
   {
     "year": 2023,
@@ -213,7 +259,10 @@
     "outputs": [],
     "note": "",
     "raw_date": "Dec (65-nm T)'23",
-    "designer": "Shin-Uk Kang"
+    "designer": "Shin-Uk Kang",
+    "designer_imgs": [
+      "su-kang-profile-img.jpg"
+    ]
   },
   {
     "year": 2023,
@@ -225,7 +274,10 @@
     "outputs": [],
     "note": "",
     "raw_date": "Dec (65-nm T)'23",
-    "designer": "In-Woo Jang"
+    "designer": "In-Woo Jang",
+    "designer_imgs": [
+      "iw-jang-profile-img.jpg"
+    ]
   },
   {
     "year": 2023,
@@ -237,7 +289,8 @@
     "outputs": [],
     "note": "",
     "raw_date": "July (28-nm S)'23",
-    "designer": ""
+    "designer": "",
+    "designer_imgs": []
   },
   {
     "year": 2023,
@@ -249,7 +302,8 @@
     "outputs": [],
     "note": "",
     "raw_date": "July (28-nm S)'23",
-    "designer": ""
+    "designer": "",
+    "designer_imgs": []
   },
   {
     "year": 2023,
@@ -261,7 +315,10 @@
     "outputs": [],
     "note": "",
     "raw_date": "Jan (28-nm S)'23",
-    "designer": "Ji-Ho Kim"
+    "designer": "Ji-Ho Kim",
+    "designer_imgs": [
+      "jh-kim-profile-img.png"
+    ]
   },
   {
     "year": 2023,
@@ -273,7 +330,10 @@
     "outputs": [],
     "note": "",
     "raw_date": "Jan (28-nm S)'23",
-    "designer": "Geun-Young Yu"
+    "designer": "Geun-Young Yu",
+    "designer_imgs": [
+      "gy-you-profile-img.jpg"
+    ]
   },
   {
     "year": 2023,
@@ -285,7 +345,10 @@
     "outputs": [],
     "note": "",
     "raw_date": "Jan (28-nm S)'23",
-    "designer": "Dong-Hoe Heo"
+    "designer": "Dong-Hoe Heo",
+    "designer_imgs": [
+      "dh-heo-profile-img.jpg"
+    ]
   },
   {
     "year": 2019,
@@ -300,7 +363,8 @@
     ],
     "note": "",
     "raw_date": "VLSI'19, JSSC'21",
-    "designer": ""
+    "designer": "",
+    "designer_imgs": []
   },
   {
     "year": 2019,
@@ -314,7 +378,8 @@
     ],
     "note": "",
     "raw_date": "TCAS-II'19",
-    "designer": ""
+    "designer": "",
+    "designer_imgs": []
   },
   {
     "year": 2019,
@@ -329,7 +394,8 @@
     ],
     "note": "",
     "raw_date": "ISSCC'19, SSC-L'19",
-    "designer": ""
+    "designer": "",
+    "designer_imgs": []
   },
   {
     "year": 2018,
@@ -344,7 +410,8 @@
     ],
     "note": "",
     "raw_date": "A-SSCC'18, JSSC'19",
-    "designer": ""
+    "designer": "",
+    "designer_imgs": []
   },
   {
     "year": 2018,
@@ -358,7 +425,8 @@
     ],
     "note": "",
     "raw_date": "TCAS-II'18",
-    "designer": ""
+    "designer": "",
+    "designer_imgs": []
   },
   {
     "year": 2017,
@@ -373,7 +441,8 @@
     ],
     "note": "",
     "raw_date": "ISSCC'17, JSSC'21",
-    "designer": ""
+    "designer": "",
+    "designer_imgs": []
   },
   {
     "year": 2017,
@@ -387,7 +456,8 @@
     ],
     "note": "",
     "raw_date": "TCAS-II'17",
-    "designer": ""
+    "designer": "",
+    "designer_imgs": []
   },
   {
     "year": 2017,
@@ -399,7 +469,8 @@
     "outputs": [],
     "note": "Failed",
     "raw_date": "Failed'17",
-    "designer": ""
+    "designer": "",
+    "designer_imgs": []
   },
   {
     "year": 2016,
@@ -413,7 +484,8 @@
     ],
     "note": "",
     "raw_date": "JSTS'16",
-    "designer": ""
+    "designer": "",
+    "designer_imgs": []
   },
   {
     "year": 2016,
@@ -425,7 +497,8 @@
     "outputs": [],
     "note": "Failed",
     "raw_date": "Failed'16",
-    "designer": ""
+    "designer": "",
+    "designer_imgs": []
   },
   {
     "year": 2015,
@@ -440,7 +513,8 @@
     ],
     "note": "",
     "raw_date": "ESSCIRC'15, TCAS-I'18",
-    "designer": ""
+    "designer": "",
+    "designer_imgs": []
   },
   {
     "year": 2015,
@@ -452,6 +526,7 @@
     "outputs": [],
     "note": "Failed",
     "raw_date": "Failed'15",
-    "designer": ""
+    "designer": "",
+    "designer_imgs": []
   }
 ]
