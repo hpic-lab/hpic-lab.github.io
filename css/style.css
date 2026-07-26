@@ -154,7 +154,7 @@ nav#navbar-main .navbar-collapse {
 
 .gallery-title-row a {
   color: white;
-  background: var(--detail-button-color);
+  background: #0C447C;
   border-radius: 999px;
   padding: 6px 7px 6px 15px;
   height: auto;
@@ -164,7 +164,7 @@ nav#navbar-main .navbar-collapse {
   align-items: center;
   gap: 9px;
   text-decoration: none;
-  box-shadow: 0 2px 9px rgba(103, 125, 255, 0.32);
+  box-shadow: 0 2px 9px rgba(12, 68, 124, 0.3);
   transition: background 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
 }
 
@@ -218,8 +218,8 @@ nav#navbar-main .navbar-collapse {
 }
 
 .gallery-title-row a:hover {
-  background: var(--hover-color);
-  box-shadow: 0 4px 14px rgba(103, 125, 255, 0.42);
+  background: #093461;
+  box-shadow: 0 4px 14px rgba(12, 68, 124, 0.4);
   transform: translateY(-1px);
 }
 .gallery-title-row a:hover button {
@@ -3127,10 +3127,12 @@ section {
     letter-spacing: 0.3px;
   }
 
-  .home-description-container h1 {
-    font-size: 8vw;
-    letter-spacing: 1px;
+  /* "HPIC Design Lab @ Yonsei"가 모바일에서도 한 줄에 들어오도록 (높은 우선순위) */
+  .home-description-container h1.home-lab-name {
+    font-size: 5.4vw;
+    letter-spacing: 0.2px;
     margin-top: 4px;
+    white-space: nowrap;
   }
 
   /* "Welcome to HPIC at Yonsei University."가 한 줄에 들어오도록 vw 기반 크기 */
