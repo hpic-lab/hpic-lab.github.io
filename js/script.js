@@ -208,6 +208,25 @@ document.addEventListener("DOMContentLoaded", function () {
       // 클릭된 링크에 active 클래스 추가
       this.classList.add("active");
 
+      // 모바일: 메뉴 항목 선택 시 메뉴바 닫기
+      var nb = document.getElementById("navbar");
+      var tb = document.querySelector(".navbar-toggler");
+      if (nb && nb.classList.contains("show")) {
+        nb.style.height = nb.scrollHeight + "px";
+        nb.offsetHeight; // 강제 리플로우
+        nb.style.height = "0";
+        nb.style.opacity = "0";
+        setTimeout(function () {
+          nb.classList.remove("show");
+          nb.style.height = "";
+          nb.style.opacity = "";
+          if (tb) {
+            tb.classList.add("collapsed");
+            tb.setAttribute("aria-expanded", "false");
+          }
+        }, 300);
+      }
+
       // 홈 링크 클릭 시 최상단으로 스크롤
       if (this.getAttribute("href") === "#") {
         window.scrollTo({

@@ -171,7 +171,7 @@ $(document).ready(function () {
       return `<span class="people-role ${cls}" title="${role}">${icon}</span>`;
     }).join("");
 
-    // PI도 학생과 동일한 컴팩트 카드 (연구분야·아이콘 없이). 아이콘은 상세 모달에 표시됨
+    // PI도 학생과 동일한 컴팩트 카드. 연구분야(tag)는 표시, 아이콘은 상세 모달에 표시됨
     if (showIconsInMainView) {
       return `
         <div class="people-card people-card-compact"
@@ -181,6 +181,7 @@ $(document).ready(function () {
           <img class="people-mini-photo" src="${person.profile_img}" alt="${name}" onerror="this.remove()" />
           <div class="people-compact-info">
             <span class="people-name">${name}</span>
+            ${interest ? `<div class="people-interest-inline">${interest}</div>` : ""}
           </div>
         </div>
       `;

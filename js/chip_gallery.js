@@ -59,8 +59,10 @@ $(document).ready(function () {
     );
   }
 
-  // 아직 칩이 없는 연도(추후 업데이트용 placeholder). 여기에 연도만 추가하면 접이식 빈 섹션이 생김.
-  var PLACEHOLDER_YEARS = [2023, 2022];
+  // 칩이 없어도 항상 표시할 연도(추후 업데이트용). 여기에 연도만 추가하면 접이식 빈 섹션이 생김.
+  var PLACEHOLDER_YEARS = [2026, 2022];
+  // 기본 펼침 연도. 나머지 연도는 접힌 상태로 표시.
+  var DEFAULT_OPEN_YEARS = [2026, 2025, 2024];
 
   function monthBlock($body, chips) {
     var curMonth = null;
@@ -74,26 +76,7 @@ $(document).ready(function () {
     });
   }
 
-  // 미리보기(플랫, limit) 렌더
-  function renderFlat(selector, chips, limit) {
-    var $c = $(selector);
-    if (!$c.length) return;
-    var list = limit && limit > 0 ? chips.slice(0, limit) : chips;
-    $c.empty();
-    var curYear = null,
-      $body = null;
-    list.forEach(function (chip) {
-      if (chip.year !== curYear) {
-        curYear = chip.year;
-        $c.append('<div class="chip-year">' + (chip.year || "") + "</div>");
-        $body = $('<div class="chip-year-body"></div>');
-        $c.append($body);
-      }
-      monthBlock($body, [chip]);
-    });
-  }
-
-  // 상세 페이지: 연도별 접이식 섹션 (빈 연도 placeholder 포함)
+  // 연도별 접이식 섹션 (빈 연도 placeholder 포함). 2026/2025/2024 펼침, 나머지 접힘.
   function renderCollapsible(selector, chips) {
     var $c = $(selector);
     if (!$c.length) return;
@@ -113,8 +96,9 @@ $(document).ready(function () {
 
     years.forEach(function (y) {
       var yc = byYear[y] || [];
+      var open = DEFAULT_OPEN_YEARS.indexOf(y) >= 0;
       var $header = $(
-        '<div class="chip-year chip-year-toggle" role="button" tabindex="0">' +
+        '<div class="chip-year chip-year-toggle' + (open ? "" : " collapsed") + '" role="button" tabindex="0">' +
           '<span class="chip-year-caret">&#9662;</span>' + y +
           (yc.length ? "" : ' <span class="chip-year-soon">(Coming soon)</span>') +
         "</div>"
@@ -124,9 +108,8 @@ $(document).ready(function () {
         monthBlock($body, yc);
       } else {
         $body.append('<p class="chip-empty">To be updated.</p>');
-        $header.addClass("collapsed");
-        $body.hide();
       }
+      if (!open) $body.hide();
       $c.append($header).append($body);
     });
 
@@ -143,10 +126,9 @@ $(document).ready(function () {
   }
 
   $.getJSON("json/chips/chips.json").done(function (chips) {
-    // 메인 미리보기 (data-limit)
+    // 메인 Research 미리보기 (접이식)
     $(".chip-timeline-preview").each(function () {
-      var lim = parseInt($(this).data("limit"), 10) || 0;
-      renderFlat("#" + this.id, chips, lim);
+      renderCollapsible("#" + this.id, chips);
     });
     // 상세 전체 (접이식)
     renderCollapsible("#chip-timeline-full", chips);

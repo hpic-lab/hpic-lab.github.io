@@ -46,7 +46,7 @@
   },
   {
     "name": "So-Yeon Kwon",
-    "tag": ">100G CIM-based Transmitter",
+    "tag": ">100G CIM-based TX",
     "education": [
       "M.S., School of Electrical Engineering, Hanyang University (2024.09 ~ Present)",
       "B.S., Department of Applied Physics, Hanyang University, Ansan, Korea (2019.03 ~ 2025.02)"
@@ -112,7 +112,7 @@
   },
   {
     "name": "Seung-Hwan Gong",
-    "tag": ">100G Receiver (CDR)",
+    "tag": ">100G RX (CDR)",
     "research_interests": [
       ">100G Receiver (CDR)"
     ],
@@ -149,7 +149,7 @@
   },
   {
     "name": "Dong-Ho Kim",
-    "tag": ">100G DSP-based Transmitter",
+    "tag": ">100G DSP-based TX",
     "research_interests": [
       ">100G DSP-based Transmitter"
     ],
@@ -187,7 +187,7 @@
   },
   {
     "name": "Jae-Geon Lee",
-    "tag": ">100G DSP-based Receiver",
+    "tag": ">100G DSP-based RX",
     "research_interests": [
       ">100G DSP-based Receiver"
     ],
@@ -236,7 +236,7 @@
   },
   {
     "name": "Seung-Mo Jin",
-    "tag": ">100G DSP-based Transmitter",
+    "tag": ">100G DSP-based TX",
     "research_interests": [
       ">100G DSP-based Transmitter"
     ],
@@ -368,7 +368,7 @@
   },
   {
     "name": "Joon-Seok Kwon",
-    "tag": ">100G DSP-based Receiver",
+    "tag": ">100G DSP-based RX",
     "research_interests": [
       ">100G DSP-based Receiver"
     ],
@@ -427,7 +427,7 @@
   },
   {
     "name": "Ju-Yong Lee",
-    "tag": ">100G Optical Receiver",
+    "tag": ">100G Optical RX",
     "education": [
       "M.S., School of Electrical and Electronic Engineering, Yonsei University (2026.09 ~ Present)",
       "B.S., School of Electrical Engineering, Gachon University, Seongnam, Korea (2021.03 ~ 2025.02)"

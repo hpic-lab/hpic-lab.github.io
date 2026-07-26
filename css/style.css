@@ -193,6 +193,22 @@ nav#navbar-main .navbar-collapse {
   fill: var(--secondary);
 }
 
+/* "더 보기" 화살표 아이콘 */
+.gallery-title-row .arrow-icon {
+  height: 13px;
+  fill: none;
+  stroke: var(--secondary);
+  stroke-width: 2.4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: transform 0.25s ease;
+}
+
+/* Lab Gallery: 제목(h5)이 없는 행은 버튼을 우측 정렬 */
+#photo-gallery .gallery-title-row {
+  justify-content: flex-end;
+}
+
 .gallery-title-row a:hover {
   background: var(--hover-color);
 }
@@ -202,14 +218,18 @@ nav#navbar-main .navbar-collapse {
 }
 
 .btn-rotate:hover {
-  transform: rotate(90deg);
+  transform: translateX(2px);
   background: white;
+}
+.gallery-title-row a:hover .arrow-icon {
+  transform: translateX(2px);
 }
 
 /* 뉴스 갤러리 */
 .card-img-top {
-  object-fit: contain;
-  height: 300px;
+  object-fit: cover;   /* 비율이 달라도 같은 박스를 균일하게 채움 */
+  width: 100%;
+  height: 240px;
   border-bottom: 1px solid #c9c9c9;
 }
 

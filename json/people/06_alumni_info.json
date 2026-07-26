@@ -19,7 +19,8 @@
     "biography": "Dong-Hyun Lee received a B.S. degree in the School of Electrical and Electronic Engineering from Dankook University, Jukjeon, South Korea, and the M.S. degree in the School of Electrical Engineering from Hanyang University, Ansan, South Korea. His research interests include artificial intelligence hardware design and processing in memory (PIM).",
     "email": "",
     "position": "",
-    "profile_img": "img/dh-lee-profile-img.png"
+    "profile_img": "img/dh-lee-profile-img.png",
+    "thesis_link": "http://www.dcollection.net/handler/hanyang/200000941340"
   },
   {
     "name": "Sang-Hyeon Ok",
@@ -40,7 +41,8 @@
     "biography": "Sang-Hyeon Ok received the B.S. degree in the school of electronics and communication engineering at Hanyang University, Ansan, South Korea, and the M.S. degree in electrical engineering from Hanyang University, Ansan, South Korea. He joined LX Semicon, Seoul, South Korea in 2016, where he has been involved in the LCD DDI team. His research interests include digital and analog circuit design of Clock and Data Recovery (CDR) and digital circuit designs of PAM4 Receiver with adaptive decision feedback equalizer.",
     "email": "",
     "position": "",
-    "profile_img": "img/sh-ok-profile-img.jpg"
+    "profile_img": "img/sh-ok-profile-img.jpg",
+    "thesis_link": "http://www.dcollection.net/handler/hanyang/200000940658"
   },
   {
     "name": "Dong-Hoe Heo",
@@ -59,7 +61,8 @@
     "Awards": [],
     "biography": "Dong-Hoe Heo received the B.S. and M.S. degrees in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include clock and data recovery (CDR) circuit design.",
     "email": "",
-    "profile_img": "img/dh-heo-profile-img.jpg"
+    "profile_img": "img/dh-heo-profile-img.jpg",
+    "thesis_link": "http://www.dcollection.net/handler/hanyang/200000893313"
   },
   {
     "name": "Kang-Min Kim",
@@ -74,7 +77,8 @@
     ],
     "biography": "Kang-Min Kim received the B.S. and M.S. degrees in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include hardware security.",
     "email": "",
-    "profile_img": "img/km-kim-profile-img.jpg"
+    "profile_img": "img/km-kim-profile-img.jpg",
+    "thesis_link": "http://www.dcollection.net/handler/hanyang/200000828674"
   },
   {
     "name": "Kyu-Ran Park",
@@ -88,7 +92,8 @@
     ],
     "biography": "Kyu-Ran Park received a B.S. degree in electrical engineering from Cheongju University, Cheongju, South Korea, and the M.S. degree in electrical engineering from Hanyang University, Ansan, South Korea. She joined LX Semicon, Seoul, South Korea, in 2015, where she has been involved in the YPD team. Her research interests include analog and digital circuit designs of phase-locked-loop (PLL).",
     "email": "",
-    "profile_img": "img/kr-park-profile-img.png"
+    "profile_img": "img/kr-park-profile-img.png",
+    "thesis_link": "http://www.dcollection.net/handler/hanyang/200000842814"
   },
   {
     "name": "Shin-Uk Kang",
@@ -107,7 +112,8 @@
     ],
     "biography": "Shin-Uk Kang received the B.S. and M.S. degrees in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include artificial intelligence hardware design and processing in memory (PIM).",
     "email": "",
-    "profile_img": "img/su-kang-profile-img.jpg"
+    "profile_img": "img/su-kang-profile-img.jpg",
+    "thesis_link": "http://www.dcollection.net/handler/hanyang/200000844758"
   },
   {
     "name": "Ji-Ho Kim",
@@ -126,7 +132,8 @@
     "biography": "Ji-Ho Kim received a B.S. degree in electrical engineering from Chosun University, Gwangju, South Korea, and the M.S. degree in the school of electrical engineering from Hanyang University, Ansan, South Korea. His research interests include analog and digital circuit designs of phase-locked-loop (PLL).",
     "email": "",
     "position": "",
-    "profile_img": "img/jh-kim-profile-img.png"
+    "profile_img": "img/jh-kim-profile-img.png",
+    "thesis_link": "http://www.dcollection.net/handler/hanyang/200000845212"
   },
   {
     "name": "Woo-Suk Jung",
