@@ -153,14 +153,23 @@ $(document).ready(function () {
     var P = { "JSSC": 4, "TCAS-I": 3, "TCAS-II": 2, "TVLSI": 1 };
     return P[v] || 0;
   }
-  // 연도 내림차순 → 월 내림차순(미출판은 최상단) → 학회 우선순위 내림차순
+  // 상태별 정렬값 (위쪽일수록 큼): Submitted > In Preparation > In Revision > Accepted > Published(월)
+  function sortVal(p) {
+    var s = ((p.progress || "") + " " + (p.sub || "")).toLowerCase();
+    if (/submit/.test(s)) return 16;
+    if (/prepar/.test(s)) return 15;
+    if (/revision/.test(s)) return 14;
+    if (/accept/.test(s)) return 13;
+    // 출판된 논문: 월(1~12), 제목 없이 상태도 없는 예외는 최상단
+    return (p.title && p.title.trim()) ? monthNum(p.reference) : 99;
+  }
+  // 연도 내림차순 → 상태/월 내림차순 → 학회 우선순위 내림차순
   function sortByRecency(pubs) {
     return pubs.slice().sort(function (a, b) {
       var ya = Number(a.year) || Number(a.type) || 0, yb = Number(b.year) || Number(b.type) || 0;
       if (ya !== yb) return yb - ya;
-      var ma = (a.title && a.title.trim() && !isPendingPub(a)) ? monthNum(a.reference) : 99;
-      var mb = (b.title && b.title.trim() && !isPendingPub(b)) ? monthNum(b.reference) : 99;
-      if (ma !== mb) return mb - ma;
+      var va = sortVal(a), vb = sortVal(b);
+      if (va !== vb) return vb - va;
       return venuePriority(venueLabel(b.status)) - venuePriority(venueLabel(a.status));
     });
   }

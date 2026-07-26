@@ -124,17 +124,11 @@ $(document).ready(function () {
             ? `<img class="people-mini-photo" src="${photo}" alt="${person.name}" onerror="this.remove()" />`
             : "";
 
-          // 석사 졸업생: 이름 아래 Thesis 링크
-          const thesisHTML = person.thesis_link
-            ? `<a href="${person.thesis_link}" target="_blank" rel="noopener noreferrer" class="alumni-thesis" onclick="event.stopPropagation()">Thesis <i>↗</i></a>`
-            : "";
-
           grid.append(`
             <div class="people-card people-card-compact ${foundKey ? "" : "alumni-noclick"}" ${clickAttrs}>
               ${photoHTML}
               <div class="people-compact-info">
                 <span class="people-name">${person.name}</span>
-                ${thesisHTML}
               </div>
             </div>
           `);
@@ -177,18 +171,17 @@ $(document).ready(function () {
       return `<span class="people-role ${cls}" title="${role}">${icon}</span>`;
     }).join("");
 
-    // PI는 사진 포함 카드, 학생은 이름 중심의 컴팩트 카드 (사진은 클릭 시 모달에서 표시)
+    // PI도 학생과 동일한 컴팩트 카드 (연구분야·아이콘 없이). 아이콘은 상세 모달에 표시됨
     if (showIconsInMainView) {
       return `
-        <div class="people-card people-card-pi"
+        <div class="people-card people-card-compact"
           data-bs-toggle="modal"
           data-bs-target="#exampleModal"
           data-img-key="${imgKey}">
-          <div class="people-photo-wrap">
-            <img class="people-photo" src="${person.profile_img}" alt="${name}-profile-img" />
+          <img class="people-mini-photo" src="${person.profile_img}" alt="${name}" onerror="this.remove()" />
+          <div class="people-compact-info">
+            <span class="people-name">${name}</span>
           </div>
-          <div class="people-name">${name}</div>
-          ${networkIconsHTML}
         </div>
       `;
     }
@@ -315,6 +308,15 @@ $(document).ready(function () {
     var _hideChip = /Professor/i.test(person.position || "") ||
                     !!(person.affiliation && String(person.affiliation).trim());
     renderChipGallery(person.chips, _hideChip);
+
+    // 졸업생 Thesis 링크 (이름 아래)
+    $("#modal-thesis-link").remove();
+    if (person.thesis_link) {
+      $("#modal-position").after(
+        '<div id="modal-thesis-link"><a href="' + person.thesis_link +
+        '" target="_blank" rel="noopener noreferrer" class="modal-thesis">Thesis <i>&#8599;</i></a></div>'
+      );
+    }
   });
 
   // ===== Chip Gallery: 본인 칩 사진 (chips 필드) =====

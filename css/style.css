@@ -769,6 +769,24 @@ nav#navbar-main .navbar-collapse {
   text-align: center;   /* 가운데 정렬 */
 }
 
+/* [Modal] 이름 아래 Thesis 링크 */
+#modal-thesis-link {
+  text-align: center;
+  margin-top: -6px;
+  margin-bottom: 12px;
+}
+#modal-thesis-link .modal-thesis {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 500;
+  color: #003876;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(0, 56, 118, 0.35);
+  padding-bottom: 1px;
+}
+#modal-thesis-link .modal-thesis:hover { border-bottom-color: #003876; }
+#modal-thesis-link .modal-thesis i { font-style: normal; font-size: 13px; }
+
 /* ========================================= */
 /* [Modal] 모든 섹션 제목 공통 스타일           */
 /* (Research Interests, Details, Email 등)   */
@@ -3433,19 +3451,38 @@ a.chip-out:hover { text-decoration: underline; }
 }
 
 .chip-card2 .chip-designer {
-  margin: 0 0 4px;
+  margin: 6px 0 0;
   font-size: 0.88rem;
   color: #777;
 }
 
-/* 푸터 Tel/E-mail 아이콘 */
+/* 칩 설계자 사진 (원형) */
+.chip-designers {
+  display: flex;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.chip-designers .chip-designer-photo {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid #ccc;
+}
+
+/* 푸터 Tel/E-mail 아이콘 (전역 img{display:block} 무효화 → 값 바로 옆 인라인) */
 .site-footer .footer-ic {
+  display: inline-block !important;
   height: 15px;
   width: auto;
   vertical-align: -2px;
   margin: 0 6px 0 0;
 }
-.site-footer .footer-contact { white-space: nowrap; }
+.site-footer .footer-contact {
+  white-space: nowrap;
+  text-align: center;
+}
 
 /* 모바일 푸터: 글씨 축소 + 로고 가운데 정렬 */
 @media (max-width: 767px) {
