@@ -3,28 +3,7 @@
 $.ajaxSetup({ cache: false });
 
 document.addEventListener("DOMContentLoaded", function () {
-  // 갤러리 제목 행 hover 설정
-  $(".gallery-title-row a").hover(
-    function () {
-      // a 태그에 hover
-      $(this).css("background", "var(--hover-color)");
-      // a 태그 내부의 svg에 hover
-      $(this).find("svg").css("fill", "var(--hover-color)");
-      // a 태그 내부의 버튼에 hover
-      $(this).find(".btn-rotate").css({
-        transform: "rotate(90deg)",
-        background: "white",
-      });
-    },
-    function () {
-      // hover 해제 시 원래 상태로 복원
-      $(this).css("background", "var(--detail-button-color)");
-      $(this).find("svg").css("fill", "var(--detail-button-color)");
-      $(this).find(".btn-rotate").css({
-        transform: "rotate(0deg)",
-      });
-    }
-  );
+  // 갤러리 "Click for more details" 버튼 호버는 CSS(:hover)에서 처리
 
   // Publications 카드 새 탭에서 열기
   $(".pub-card").on("click", function (event) {

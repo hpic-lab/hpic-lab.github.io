@@ -155,33 +155,41 @@ nav#navbar-main .navbar-collapse {
 .gallery-title-row a {
   color: white;
   background: var(--detail-button-color);
-  border-radius: 2vw;
-  padding: 0 8px;
-  height: 32px;
+  border-radius: 999px;
+  padding: 6px 7px 6px 15px;
+  height: auto;
   margin: 4px;
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
+  gap: 9px;
   text-decoration: none;
+  box-shadow: 0 2px 9px rgba(103, 125, 255, 0.32);
+  transition: background 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
 }
 
 .gallery-title-row span {
-  margin-right: 4px;
-  font-size: 12px;
+  margin: 0;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.1px;
 }
 
 .btn-rotate {
   align-items: center;
   justify-content: center;
   border: none;
-  font-size: 24px;
-  transition: transform 0.3s ease-in-out;
+  padding: 0;
+  transition: transform 0.25s ease;
   display: flex;
 }
 
+/* 알약과 어우러지는 반투명 아이콘 버블 */
 .gallery-title-row button {
   border-radius: 50%;
-  background: white;
+  background: rgba(255, 255, 255, 0.2);
+  width: 24px;
+  height: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -193,11 +201,11 @@ nav#navbar-main .navbar-collapse {
   fill: var(--secondary);
 }
 
-/* "더 보기" 화살표 아이콘 */
+/* "더 보기" 화살표 아이콘 (흰색) */
 .gallery-title-row .arrow-icon {
   height: 13px;
   fill: none;
-  stroke: var(--secondary);
+  stroke: #fff;
   stroke-width: 2.4;
   stroke-linecap: round;
   stroke-linejoin: round;
@@ -211,15 +219,11 @@ nav#navbar-main .navbar-collapse {
 
 .gallery-title-row a:hover {
   background: var(--hover-color);
+  box-shadow: 0 4px 14px rgba(103, 125, 255, 0.42);
+  transform: translateY(-1px);
 }
-
-.gallery-title-row svg:hover {
-  fill: var(--secondary);
-}
-
-.btn-rotate:hover {
-  transform: translateX(2px);
-  background: white;
+.gallery-title-row a:hover button {
+  background: rgba(255, 255, 255, 0.28);
 }
 .gallery-title-row a:hover .arrow-icon {
   transform: translateX(2px);
