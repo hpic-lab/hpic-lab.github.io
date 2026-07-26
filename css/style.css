@@ -91,27 +91,37 @@ h6 {
 .chip-more-row {
   margin-top: 2px;
 }
+/* Chip Gallery 연도 네비 (Publications 연도 네비와 동일 스타일) */
 .chip-year-nav {
-  list-style: none;
-  margin: 16px 0 0;
-  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 10px;
+  margin-top: 16px;
 }
-.chip-year-nav li {
-  margin: 0;
-}
-.chip-year-nav a {
-  display: block;
-  padding: 7px 0;
+.chip-year-link {
   font-size: 1.05rem;
-  font-weight: 700;
-  color: #0C447C;
+  font-weight: 500;
+  color: #777;
   text-decoration: none;
-  border-bottom: 1px solid #e6e9ef;
-  transition: color 0.15s ease, padding-left 0.15s ease;
+  padding: 3px 4px;
+  cursor: pointer;
 }
-.chip-year-nav a:hover {
-  color: #093461;
-  padding-left: 4px;
+.chip-year-link:hover {
+  color: #2e55be;
+  text-decoration: underline;
+}
+.chip-year-link.active {
+  color: #2e55be;
+  font-weight: 700;
+}
+@media (min-width: 992px) {
+  .chip-year-nav {
+    flex-direction: column;
+    gap: 2px;
+    border-left: 2px solid #e5e5e5;
+    padding-left: 10px;
+    margin-left: 4px;
+  }
 }
 
 /* 섹션별 배경색 변수 (홀수 흰색 / 짝수 회색 교차) — 고정 제목 배경이 따라감 */

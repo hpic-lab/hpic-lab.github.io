@@ -153,7 +153,7 @@ $(document).ready(function () {
     });
   }
 
-  // 좌측 사이드바 연도 네비게이션 (연도 클릭 → 해당 연도로 스크롤·펼침)
+  // 좌측 사이드바 연도 네비게이션 (Publications와 동일: 현재 연도 하이라이트, 나머지 회색)
   function buildYearNav(navSelector, containerSelector) {
     var $nav = $(navSelector);
     var $c = $(containerSelector);
@@ -162,14 +162,42 @@ $(document).ready(function () {
     $c.find(".chip-year-toggle").each(function () {
       var $h = $(this);
       var label = $h.attr("data-year");
-      var $li = $('<li><a href="#">' + label + "</a></li>");
-      $li.find("a").on("click", function (e) {
+      var id = "chipyear-" + String(label).replace("~", "p");
+      $h.attr("id", id);
+      var $a = $('<a href="#' + id + '" class="chip-year-link">' + label + "</a>");
+      $a.on("click", function (e) {
         e.preventDefault();
         if ($h.hasClass("collapsed")) $h.trigger("click");
-        $("html, body").animate({ scrollTop: $h.offset().top - 90 }, 250);
+        $("html, body").animate({ scrollTop: $h.offset().top - 100 }, 250);
       });
-      $nav.append($li);
+      $nav.append($a);
     });
+
+    // 스크롤 위치에 따라 현재 연도 강조
+    function updateActiveYear() {
+      var headers = $c.find(".chip-year-toggle");
+      if (!headers.length) return;
+      var threshold = $(window).scrollTop() + 130;
+      var current = headers[0];
+      headers.each(function () {
+        if ($(this).offset().top <= threshold) current = this;
+      });
+      $nav.find(".chip-year-link").removeClass("active");
+      var id = $(current).attr("id");
+      if (id) $nav.find('.chip-year-link[href="#' + id + '"]').addClass("active");
+    }
+
+    var tick = false;
+    $(window).on("scroll.chipyear resize.chipyear", function () {
+      if (!tick) {
+        requestAnimationFrame(function () {
+          updateActiveYear();
+          tick = false;
+        });
+        tick = true;
+      }
+    });
+    updateActiveYear();
   }
 
   $.getJSON("json/chips/chips.json").done(function (chips) {
