@@ -3616,9 +3616,25 @@ section {
 }
 
 .chip-card2 .chip-proc {
-  margin: 0 0 4px;
+  margin: 0;
   font-size: 0.9rem;
   color: #888;
+}
+
+/* 2번째 줄: 공정(좌) + 설계자(우) */
+.chip-card2 .chip-meta-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin: 2px 0 8px;
+}
+.chip-card2 .chip-meta-row .chip-designers {
+  margin: 0;
+  flex-shrink: 0;
+}
+.chip-card2 .chip-meta-row .chip-designer {
+  margin: 0;
 }
 
 .chip-card2 .chip-desc {

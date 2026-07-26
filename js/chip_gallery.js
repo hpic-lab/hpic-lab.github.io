@@ -43,6 +43,7 @@ $(document).ready(function () {
   }
 
   function cardHTML(chip) {
+    var desc = chip.description && String(chip.description).trim() ? chip.description : "To be updated.";
     return (
       '<div class="chip-card2">' +
         '<div class="chip-thumb">' +
@@ -50,10 +51,14 @@ $(document).ready(function () {
         "</div>" +
         '<div class="chip-info">' +
           (chip.name ? '<p class="chip-name">' + chip.name + "</p>" : "") +
-          (chip.process ? '<p class="chip-proc">' + chip.process + "</p>" : "") +
-          (chip.description ? '<p class="chip-desc">' + chip.description + "</p>" : "") +
+          // 2번째 줄: 공정(좌) + 설계자 사진(우)
+          '<div class="chip-meta-row">' +
+            '<span class="chip-proc">' + (chip.process || "") + "</span>" +
+            designerHTML(chip) +
+          "</div>" +
+          // 3번째 줄 이후: Description
+          '<p class="chip-desc">' + desc + "</p>" +
           outputsHTML(chip) +
-          designerHTML(chip) +
         "</div>" +
       "</div>"
     );
