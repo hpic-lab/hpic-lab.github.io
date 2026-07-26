@@ -1,5 +1,5 @@
 [
-  { "year": 2026, "term": "Spring", "level": "Undergraduate", "title": "Advanced Electronic Circuit and Laboratory" },
+  { "year": 2026, "term": "Spring", "level": "Undergraduate", "title": "Electronic Circuits (2)", "name_kr": "전자회로 (2)" },
 
   { "year": 2025, "term": "Winter", "level": "Undergraduate", "title": "Microelectronic Circuits" },
   { "year": 2025, "term": "Fall", "level": "Graduate", "title": "Data Transmission Circuit Design for AI Display Application" },

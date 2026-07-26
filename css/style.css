@@ -2003,6 +2003,11 @@ nav#navbar-main .navbar-collapse {
   font-weight: 500;
   color: #222;
 }
+.teach-title-kr {
+  color: #888;
+  font-weight: 400;
+  margin-left: 6px;
+}
 
 /* 완료 과제 접힘 토글 */
 .completed-toggle {
