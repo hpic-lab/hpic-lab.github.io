@@ -78,6 +78,20 @@ h6 {
   color: #222;
 }
 
+/* Research 하위 subsection (Chip Gallery, Research Projects) 좌측 제목 */
+.subsection-title {
+  font-size: 1.7rem;
+  font-weight: 800;
+  color: #222;
+  margin: 0 0 14px;
+}
+.research-subrow {
+  margin-top: 26px;
+}
+.chip-more-row {
+  margin-top: 2px;
+}
+
 /* 섹션별 배경색 변수 (홀수 흰색 / 짝수 회색 교차) — 고정 제목 배경이 따라감 */
 .home-section {
   --section-bg: #fff;
@@ -3139,8 +3153,8 @@ section {
   .home-description-container .txt {
     width: auto;
     margin-top: 12px;
-    letter-spacing: 0.2px;
-    font-size: 3.5vw;
+    letter-spacing: 0.1px;
+    font-size: 3.1vw;
     line-height: 1.55;
   }
 
