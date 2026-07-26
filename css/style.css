@@ -102,11 +102,17 @@ h6 {
 .chip-gallery-head .chip-more-row {
   margin: 0;
 }
-/* Research 하위임을 나타내는 코너 화살표 */
-.subnav-corner {
+/* Research 하위임을 나타내는 브레드크럼 */
+.subnav-breadcrumb {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
   color: #9aa3b0;
-  font-weight: 400;
-  margin-right: 5px;
+  margin: 0 0 3px;
+}
+.subnav-breadcrumb .subnav-sep {
+  margin-left: 3px;
 }
 /* Chip Gallery 연도 네비 (Publications 연도 네비와 동일 스타일) */
 .chip-year-nav {
