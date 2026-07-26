@@ -55,7 +55,7 @@ $(document).ready(function () {
 
     // 한양대 (기본 접힘)
     if (hanyangYears.length > 0) {
-      var range = Math.min.apply(null, hanyangYears) + "–" + Math.max.apply(null, hanyangYears);
+      var range = "~" + Math.max.apply(null, hanyangYears);
       container.append(
         '<div class="completed-toggle collapsed">' +
           "<span>" + range + "</span>" +

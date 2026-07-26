@@ -80,8 +80,21 @@ h6 {
 
 /* Research 좌측 사이드바의 Chip Gallery 서브 네비 */
 .research-subnav {
-  margin-top: 22px;
-  padding-left: 4px;
+  position: relative;
+  margin-top: 14px;
+  padding-left: 24px;
+}
+/* Research 하위임을 나타내는 꺾인 실선(└) 커넥터 */
+.research-subnav::before {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: -6px;
+  width: 13px;
+  height: 26px;
+  border-left: 2px solid #c5cbd4;
+  border-bottom: 2px solid #c5cbd4;
+  border-bottom-left-radius: 7px;
 }
 .subsection-title {
   font-size: 1.5rem;
@@ -102,17 +115,18 @@ h6 {
 .chip-gallery-head .chip-more-row {
   margin: 0;
 }
-/* Research 하위임을 나타내는 브레드크럼 */
-.subnav-breadcrumb {
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: #9aa3b0;
-  margin: 0 0 3px;
+/* Details 버튼 밑줄 제거 */
+.chip-more-row a,
+.chip-more-row a span {
+  text-decoration: none !important;
 }
-.subnav-breadcrumb .subnav-sep {
-  margin-left: 3px;
+/* 사이드바 subsection 링크 (Research Projects) */
+.subsection-link {
+  color: inherit;
+  text-decoration: none;
+}
+.subsection-link:hover {
+  color: #0C447C;
 }
 /* Chip Gallery 연도 네비 (Publications 연도 네비와 동일 스타일) */
 .chip-year-nav {
@@ -2635,12 +2649,7 @@ nav#navbar-main .navbar-collapse {
     margin-left: 4px;
   }
 
-  /* News 사이드바 연도 목록은 세로 실선 제거 */
-  .news-year-links {
-    border-left: none;
-    padding-left: 0;
-    margin-left: 0;
-  }
+  /* News 사이드바 연도 목록도 Publications와 동일하게 좌측 실선 유지 */
 }
 
 /* 탭 (시안 3: 비활성 회색, 활성만 카테고리 색 + 테두리 + 그림자) */
