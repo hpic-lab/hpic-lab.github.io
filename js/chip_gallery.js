@@ -112,8 +112,9 @@ $(document).ready(function () {
       var open = DEFAULT_OPEN_YEARS.indexOf(y) >= 0;
       var $header = $(
         '<div class="chip-year chip-year-toggle' + (open ? "" : " collapsed") + '" data-year="' + y + '" role="button" tabindex="0">' +
-          '<span class="chip-year-caret">&#9662;</span>' + y +
+          y +
           (yc.length ? "" : ' <span class="chip-year-soon">(Coming soon)</span>') +
+          '<span class="chip-year-caret">&#9662;</span>' +
         "</div>"
       );
       var $body = $('<div class="chip-year-body"></div>');
@@ -130,7 +131,8 @@ $(document).ready(function () {
     if (groupYears.length) {
       var $gh = $(
         '<div class="chip-year chip-year-toggle collapsed" data-year="~' + GROUP_MAX + '" role="button" tabindex="0">' +
-          '<span class="chip-year-caret">&#9662;</span>~' + GROUP_MAX +
+          "~" + GROUP_MAX +
+          '<span class="chip-year-caret">&#9662;</span>' +
         "</div>"
       );
       var $gb = $('<div class="chip-year-body"></div>');
