@@ -50,8 +50,14 @@ $(document).ready(function () {
       var body = $('<div><div class="wrapper"><div class="user-card news-card news-list"></div></div></div>');
       var list = body.find(".news-list");
 
+      // 월 내림차순 정렬(최신순). 안정 정렬이라 같은 월 내 기존 순서는 유지되고,
+      // 같은 월이 연속되므로 아래 curMonth 로직으로 하나의 월 헤더로 병합됨.
+      var monthsSorted = byYear[year].slice().sort(function (a, b) {
+        return (Number(b.month) || 0) - (Number(a.month) || 0);
+      });
+
       var curMonth = null;
-      byYear[year].forEach(function (it) {
+      monthsSorted.forEach(function (it) {
         if (it.month !== curMonth) {
           curMonth = it.month;
           list.append('<div class="news-month">' + year + "." + it.month + "</div>");
