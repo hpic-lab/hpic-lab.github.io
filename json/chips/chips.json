@@ -27,7 +27,7 @@
     "month": 4,
     "process": "28-nm T",
     "image": "img/chip_new/PAM4_RX_112G_26.png",
-    "name": "112Gb/s PAM4 Receiver with fully adaptation",
+    "name": "112Gb/s Fully Adaptive PAM4 Receiver",
     "description": "",
     "outputs": [],
     "note": "",
@@ -39,7 +39,7 @@
     ],
     "keywords": [
       "112Gb/s",
-      "fully adaptation",
+      "Fully Adaptive",
       "CDR",
       "Data Pattern adaptation",
       "Ultra High Speed"
