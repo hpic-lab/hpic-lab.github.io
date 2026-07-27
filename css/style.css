@@ -3644,6 +3644,20 @@ section {
   color: #888;
 }
 
+/* 공정 인라인 배지 (제목 옆) */
+.chip-card2 .chip-fab {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #0C447C;
+  border: 1px solid rgba(12, 68, 124, 0.4);
+  border-radius: 4px;
+  padding: 1px 7px;
+  margin-left: 8px;
+  vertical-align: 2px;
+  white-space: nowrap;
+}
+
 .chip-card2 .chip-desc {
   margin: 0 0 6px;
   font-size: 0.95rem;

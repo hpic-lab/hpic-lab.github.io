@@ -42,11 +42,25 @@ $(document).ready(function () {
     return "";
   }
 
-  // 안1: 연번 + 썸네일 + [제목 / 공정 / 설명 / 학생 사진]
+  // 공정 문자열 → 파운드리 배지 라벨 ("28-nm T" → "T 28nm", "28-nm SS" → "S 28nm")
+  function fabLabel(process) {
+    if (!process) return "";
+    var m = String(process).match(/(\d+)\s*-?\s*nm/i);
+    var node = m ? m[1] + "nm" : "";
+    var suf = String(process).replace(/\d+\s*-?\s*nm/i, "").trim();
+    var fo = "";
+    if (/^ss/i.test(suf)) fo = "S";       // Samsung
+    else if (/^t/i.test(suf)) fo = "T";   // TSMC
+    else if (suf) fo = suf[0].toUpperCase();
+    return (fo ? fo + " " : "") + node || String(process);
+  }
+
+  // 안1+안B: 연번 + 썸네일 + [제목(우측 공정 배지) / 설명 / 학생 사진]
   function cardHTML(chip, num, showDescFallback) {
     var raw = chip.description && String(chip.description).trim() ? chip.description : "";
     // 최근 연도는 미기재 시 "To be updated." 표시, ~그룹(과거) 칩은 표시 안 함
     var desc = raw || (showDescFallback ? "To be updated." : "");
+    var fab = fabLabel(chip.process);
     return (
       '<div class="chip-card2">' +
         '<div class="chip-num">' + num + "</div>" +
@@ -56,8 +70,11 @@ $(document).ready(function () {
             : '<div class="chip-thumb-tbd">Chip image<br>to be updated</div>') +
         "</div>" +
         '<div class="chip-info">' +
-          (chip.name ? '<p class="chip-name">' + chip.name + "</p>" : "") +
-          (chip.process ? '<p class="chip-proc">' + chip.process + "</p>" : "") +
+          (chip.name
+            ? '<p class="chip-name">' + chip.name +
+                (fab ? ' <span class="chip-fab">' + fab + "</span>" : "") +
+              "</p>"
+            : "") +
           (desc ? '<p class="chip-desc">' + desc + "</p>" : "") +
           outputsHTML(chip) +
           designerHTML(chip) +
