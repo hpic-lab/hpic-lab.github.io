@@ -690,7 +690,9 @@ $(document).ready(function () {
           ? item.match(/^(.*?)\s*\((\d{4}\.\d{2}\s*~\s*(?:\d{4}\.\d{2}|Present))\)\s*$/)
           : null;
         if (m) {
-          list.append(`<li><span class="cv-line"><span>${m[1]}</span><span class="cv-date">${m[2]}</span></span></li>`);
+          // Education/Experience와 동일하게 "~" → " – " 로 통일
+          var _d = m[2].replace(/\s*~\s*/, " – ");
+          list.append(`<li><span class="cv-line"><span>${m[1]}</span><span class="cv-date">${_d}</span></span></li>`);
         } else {
           list.append(`<li>${item}</li>`);
         }

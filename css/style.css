@@ -1789,9 +1789,9 @@ nav#navbar-main .navbar-collapse {
 }
 
 #exampleModal .cv-date {
-  color: #888;
+  color: #999;
   white-space: nowrap;
-  font-size: 0.95em;
+  font-size: 0.9rem;
 }
 
 /* Education / Experience 타임라인 (시안1) */
