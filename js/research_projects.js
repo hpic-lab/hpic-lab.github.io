@@ -27,6 +27,8 @@ $(document).ready(function () {
         title:
           "2.5D 광패키징 기반 CPO를 위한 Opto-chiplet이 집적된 인터포저 기술",
         sponsor: "Ministry of Science and ICT (MSIT)",
+        desc:
+          "상위 사업: 차세대 광패키징기술개발사업 (과학기술정보통신부 원천기술개발사업). 총 55개월 — 1단계 3년(31개월), 2단계 2년(24개월); 1차년도 2025.06.01–2025.12.31 (7개월). 정부지원연구개발비 총 9,029백만원 (1차년도 약 1,149백만원). 총괄책임: 한국전자통신연구원(ETRI) 이종진 책임연구원.",
       },
       {
         date: "May. 2025 - Feb. 2030",
@@ -48,7 +50,7 @@ $(document).ready(function () {
           "광통신 칩렛 향 고속, 저전력, 저잡음 클럭킹 네트워크 시스템 개발",
         sponsor: "National Research Foundation (NRF) of Korea; 우수신진연구",
         desc:
-          "Development of High-Speed, Low-Power, and Low-Noise Clocking Network Systems for Optical Communication Chiplets. 2024년도 우수신진연구 신규과제 (개인기초연구사업 — 과학기술정보통신부 소관, 한국연구재단(NRF) 시행). 연구기간 최대 5년: 1단계(1~3차년), 2단계(4~5차년). ※ 정확한 협약 시작·종료 월은 문서상 미기재.",
+          "Development of High-Speed, Low-Power, and Low-Noise Clocking Network Systems for Optical Communication Chiplets. 2024년도 우수신진연구 신규과제 (개인기초연구사업 — 과학기술정보통신부 소관, 한국연구재단(NRF) 시행). 연구기간 '24~'29 (5년): 1단계(1~3차년), 2단계(4~5차년).",
       },
       {
         date: "Apr. 2022 - Dec. 2024",
