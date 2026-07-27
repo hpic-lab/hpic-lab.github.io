@@ -293,11 +293,10 @@ $(document).ready(function () {
       }
 
       var reviewGroup = reviewProcessHTML(pub, isJournal);
-      // 저자 줄: (좌) 저자 + (우) Members only 심사자료. 심사자료가 있으면 flex 행으로 감쌈.
-      var authorsLine = hasTitle ? authorsHTML(pub.authors) : "";
-      var authorsSection = reviewGroup
-        ? '<div class="pub2-authors-row"><div class="pub2-authors">' + authorsLine + "</div>" + reviewGroup + "</div>"
-        : (hasTitle ? '<div class="pub2-authors">' + authorsLine + "</div>" : "");
+      // 심사자료(Members only)는 저자 사진 줄 오른쪽에 우측정렬로 배치.
+      var figuresSection = reviewGroup
+        ? '<div class="pub-figures-row"><div class="pub-figures">' + figuresHTML(pub) + "</div>" + reviewGroup + "</div>"
+        : '<div class="pub-figures">' + figuresHTML(pub) + "</div>";
 
       body.append(
         '<div class="pub2-entry"' + (entryId ? ' id="' + entryId + '"' : "") + ">" +
@@ -309,8 +308,8 @@ $(document).ready(function () {
           '<div class="pub2-body">' +
             (titleHTML ? '<div class="pub2-title">' + titleHTML + "</div>" : "") +
             (hasTitle ? '<div class="pub2-src">' + srcText + "</div>" : "") +
-            authorsSection +
-            '<div class="pub-figures">' + figuresHTML(pub) + "</div>" +
+            (hasTitle ? '<div class="pub2-authors">' + authorsHTML(pub.authors) + "</div>" : "") +
+            figuresSection +
           "</div>" +
         "</div>"
       );

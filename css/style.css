@@ -2894,17 +2894,15 @@ nav#navbar-main .navbar-collapse {
   margin-bottom: 8px;
 }
 
-/* 저자 줄 + Members only 심사자료 (우측 정렬) */
-.pub2-authors-row {
+/* 저자 사진 줄 + Members only 심사자료 (우측 정렬) */
+.pub-figures-row {
   display: flex;
   align-items: center;
   gap: 12px;
   flex-wrap: wrap;
 }
-.pub2-authors-row .pub2-authors {
-  flex: 1;
-  min-width: 0;
-  margin-bottom: 8px;
+.pub-figures-row .pub-figures {
+  flex: 0 0 auto;
 }
 .pub2-review {
   margin-left: auto;
@@ -2912,7 +2910,6 @@ nav#navbar-main .navbar-collapse {
   align-items: center;
   flex-wrap: wrap;
   gap: 6px;
-  margin-bottom: 8px;
 }
 .pub2-review-label {
   font-size: 0.72rem;
