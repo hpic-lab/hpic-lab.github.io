@@ -212,7 +212,7 @@
       "Phase Interpolator"
     ],
     "status": "review",
-    "venue": "IEEE TCAS-II"
+    "venue": "IEEE TCAS-II'26"
   },
   {
     "year": 2024,
@@ -235,7 +235,7 @@
     ],
     "status": "accepted",
     "venue": {
-      "label": "IEEE TCAS-I",
+      "label": "IEEE TCAS-I'26",
       "paper": "KWS-CIM: A Charge-Domain eDRAM-Based Compute-in-Memory Macro for Ternary DFSMN Keyword Spotting"
     }
   },
@@ -442,7 +442,7 @@
     ],
     "status": "published",
     "venue": {
-      "label": "IEEE JETCAS’26",
+      "label": "IEEE JETCAS'26",
       "paper": "IGA-SRAM: A Compact SRAM-based IMC Engine for Binary/Ternary Deep Neural Networks with ADC-Less and Error-Aware Training Algorithm"
     }
   },
