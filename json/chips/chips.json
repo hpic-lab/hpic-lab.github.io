@@ -151,7 +151,7 @@
     "month": 9,
     "process": "28-nm T",
     "image": "img/chip_new/ANA_RX_25Sep_Real_name.jpg",
-    "name": "112Gb/s PAM-4 Receiver",
+    "name": "A 112Gb/s Data Pattern Based Adaptive Receiver with Auto Loop Gain Control CDR",
     "description": "",
     "outputs": [],
     "note": "",
@@ -161,9 +161,11 @@
       "sh-gong-profile-image.jpg"
     ],
     "keywords": [
-      "PAM-4",
-      "Receiver",
-      "High-Speed"
+      "112Gb/s",
+      "CDR",
+      "Data Pattern",
+      "ALGC",
+      "Receiver"
     ],
     "status": "measurement",
     "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/28nm/M16280%2828nm%2C%2025.07.09%29"
