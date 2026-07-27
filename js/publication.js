@@ -32,6 +32,7 @@ $(document).ready(function () {
     var t = (s || "").toLowerCase();
     if (t.indexOf("prepar") !== -1) return "pub2-st-prep";
     if (t.indexOf("revision") !== -1) return "pub2-st-revision";
+    if (t.indexOf("review") !== -1) return "pub2-st-review";
     if (t.indexOf("submit") !== -1) return "pub2-st-submitted";
     if (t.indexOf("accept") !== -1) return "pub2-st-accepted";
     return "";
@@ -184,6 +185,7 @@ $(document).ready(function () {
     if (/prepar/.test(s)) return 15;
     if (/revision/.test(s)) return 14;
     if (/accept/.test(s)) return 13;
+    if (/review/.test(s)) return 12;
     // 출판된 논문: 월(1~12), 제목 없이 상태도 없는 예외는 최상단
     return (p.title && p.title.trim()) ? monthNum(p.reference) : 99;
   }
