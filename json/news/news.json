@@ -1065,5 +1065,115 @@
     "figures": [
       "ms-choo-profile-img.png"
     ]
+  },
+  {
+    "year": "2026",
+    "month": "07",
+    "category": "Grant",
+    "text": "<u>HPIC Lab</u> was selected for the \"Development of Heterogeneous Integrated Photonic Circuits for Homodyne Photonic Neural Network Processor\" project, sponsored by Ministry of Science and ICT (MSIT). Congratulations!",
+    "links": [],
+    "figures": [
+      "lab-logo-square.png"
+    ]
+  },
+  {
+    "year": "2026",
+    "month": "07",
+    "category": "Grant",
+    "text": "<u>HPIC Lab</u> was selected for the \"Development of Highly Reliable Multi-Standard Automotive SerDes IP for SDVs in Harsh Automotive Environments\" project, sponsored by Ministry of Science and ICT (MSIT). Congratulations!",
+    "links": [],
+    "figures": [
+      "lab-logo-square.png"
+    ]
+  },
+  {
+    "year": "2025",
+    "month": "05",
+    "category": "Grant",
+    "text": "<u>HPIC Lab</u> was selected for the \"OLED Display Specialist Training Program\" project, sponsored by Korea Display Industry Association. Congratulations!",
+    "links": [],
+    "figures": [
+      "lab-logo-square.png"
+    ]
+  },
+  {
+    "year": "2022",
+    "month": "04",
+    "category": "Grant",
+    "text": "<u>HPIC Lab</u> was selected for the \"Development of Low-Power/High-Performance 2T DRAM PIM Cell, Integrated Circuits, and Architecture\" project, sponsored by National Research Foundation (NRF) of Korea. Congratulations!",
+    "links": [],
+    "figures": [
+      "lab-logo-square.png"
+    ]
+  },
+  {
+    "year": "2022",
+    "month": "09",
+    "category": "Grant",
+    "text": "<u>HPIC Lab</u> was selected for the \"Design Methodology of High-Performance Integrated Circuits based on Reinforcement Learning\" project, sponsored by Quallitas Semiconductor. Congratulations!",
+    "links": [],
+    "figures": [
+      "lab-logo-square.png"
+    ]
+  },
+  {
+    "year": "2022",
+    "month": "09",
+    "category": "Grant",
+    "text": "<u>HPIC Lab</u> was selected for the \"Development of High PSRR Low Phase Noise Voltage-Controlled Oscillator (VCO)\" project, sponsored by ACONIC Inc.. Congratulations!",
+    "links": [],
+    "figures": [
+      "lab-logo-square.png"
+    ]
+  },
+  {
+    "year": "2022",
+    "month": "07",
+    "category": "Grant",
+    "text": "<u>HPIC Lab</u> was selected for the \"Semiconductor Specialization Track Program\" project, sponsored by KIAT. Congratulations!",
+    "links": [],
+    "figures": [
+      "lab-logo-square.png"
+    ]
+  },
+  {
+    "year": "2022",
+    "month": "03",
+    "category": "Grant",
+    "text": "<u>HPIC Lab</u> was selected for the \"BK21 (Intelligent System Semiconductor Education and Research Group for Highly Reliable Energy Applications)\" project, sponsored by Ministry of Education. Congratulations!",
+    "links": [],
+    "figures": [
+      "lab-logo-square.png"
+    ]
+  },
+  {
+    "year": "2022",
+    "month": "03",
+    "category": "Grant",
+    "text": "<u>HPIC Lab</u> was selected for the \"AI Hardware Center (AI Semiconductor Convergence Research Center)\" project, sponsored by National Research Foundation (NRF) of Korea. Congratulations!",
+    "links": [],
+    "figures": [
+      "lab-logo-square.png"
+    ]
+  },
+  {
+    "year": "2022",
+    "month": "09",
+    "category": "Grant",
+    "text": "<u>HPIC Lab</u> was selected for the \"Development of a Reinforcement Learning-based Design and Measurement Platform for High-Performance Analog Integrated Circuits\" project, sponsored by National Research Foundation (NRF) of Korea. Congratulations!",
+    "links": [],
+    "figures": [
+      "lab-logo-square.png"
+    ]
+  },
+  {
+    "year": "2022",
+    "month": "03",
+    "category": "Grant",
+    "text": "<u>HPIC Lab</u> was selected for the \"New Faculty Settlement Research Grant\" project, sponsored by Hanyang University. Congratulations!",
+    "links": [],
+    "figures": [
+      "lab-logo-square.png"
+    ]
   }
 ]
