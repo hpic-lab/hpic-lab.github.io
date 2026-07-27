@@ -50,6 +50,17 @@ $(document).ready(function () {
     return "";
   }
 
+  // Design Review 자료 링크 (Teams/SharePoint · 멤버 전용). 설계자 사진 우측에 우측정렬로 표시.
+  function reviewHTML(chip) {
+    if (!chip.review_link) return "";
+    return '<a class="chip-review" href="' + escAttr(chip.review_link) +
+      '" target="_blank" rel="noopener noreferrer" title="Design review materials on Teams (members only)">' +
+      '<span class="chip-review-lock" aria-hidden="true">&#128274;</span>' +
+      '<span class="chip-review-txt">Design Review</span>' +
+      '<span class="chip-review-tag">Members only</span>' +
+      "</a>";
+  }
+
   // 설계자 사진 클릭 → 프로필 모달 열기 (peopleDB에 해당 인물이 있을 때만)
   $(document).off("click.chipdesigner").on("click.chipdesigner", ".chip-designer-link", function () {
     var modalEl = document.getElementById("exampleModal");
@@ -193,7 +204,7 @@ $(document).ready(function () {
           (desc ? '<p class="chip-desc">' + desc + "</p>" : "") +
           keywordsHTML(chip) +
           outputsRow +
-          designerHTML(chip) +
+          '<div class="chip-designer-row">' + designerHTML(chip) + reviewHTML(chip) + "</div>" +
         "</div>" +
       "</div>"
     );

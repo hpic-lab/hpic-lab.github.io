@@ -40,7 +40,8 @@
       "CTLE Adaptation",
       "On-chip Probing"
     ],
-    "status": "awaiting"
+    "status": "awaiting",
+    "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/28nm/M17949%2828nm%2C%2026.04.29%29"
   },
   {
     "year": 2026,
@@ -63,7 +64,8 @@
       "Transmitter",
       "High-Speed"
     ],
-    "status": "awaiting"
+    "status": "awaiting",
+    "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/28nm/M17949%2828nm%2C%2026.04.29%29"
   },
   {
     "year": 2026,
@@ -85,7 +87,8 @@
       "PLL",
       "Phase Interpolator"
     ],
-    "status": "awaiting"
+    "status": "awaiting",
+    "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/28nm/M17949%2828nm%2C%2026.04.29%29"
   },
   {
     "year": 2026,
@@ -106,7 +109,8 @@
       "Time-Domain",
       "ADC"
     ],
-    "status": "awaiting"
+    "status": "awaiting",
+    "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/28nm/M17949%2828nm%2C%2026.04.29%29"
   },
   {
     "year": 2026,
@@ -127,7 +131,8 @@
       "Time-Interleaved",
       "ADC"
     ],
-    "status": "awaiting"
+    "status": "awaiting",
+    "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/28nm/M17949%2828nm%2C%2026.04.29%29"
   },
   {
     "year": 2025,
@@ -148,7 +153,8 @@
       "Receiver",
       "High-Speed"
     ],
-    "status": "measurement"
+    "status": "measurement",
+    "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/28nm/M16280%2828nm%2C%2025.07.09%29"
   },
   {
     "year": 2025,
@@ -169,7 +175,8 @@
       "Transmitter",
       "High-Speed"
     ],
-    "status": "measurement"
+    "status": "measurement",
+    "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/28nm/M16280%2828nm%2C%2025.07.09%29"
   },
   {
     "year": 2025,
@@ -190,7 +197,8 @@
       "Receiver",
       "High-Speed"
     ],
-    "status": "measurement"
+    "status": "measurement",
+    "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/28nm/M16280%2828nm%2C%2025.07.09%29"
   },
   {
     "year": 2025,
@@ -234,7 +242,8 @@
       "JTOL Enhancement"
     ],
     "status": "review",
-    "venue": "IEEE TCAS-II'26"
+    "venue": "IEEE TCAS-II'26",
+    "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/28nm/M15987%2828nm%2C%2025.02.12%29"
   },
   {
     "year": 2024,
@@ -259,7 +268,8 @@
     "venue": {
       "label": "IEEE TCAS-I'26",
       "paper": "KWS-CIM: A Charge-Domain eDRAM-Based Compute-in-Memory Macro for Ternary DFSMN Keyword Spotting"
-    }
+    },
+    "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/65nm/M15407%2865nm%2C%2024.10.31%29"
   },
   {
     "year": 2024,
@@ -280,7 +290,8 @@
       "eDRAM",
       "In-Memory Computing"
     ],
-    "status": "measurement"
+    "status": "measurement",
+    "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/65nm/M15407%2865nm%2C%2024.10.31%29"
   },
   {
     "year": 2024,
@@ -300,7 +311,8 @@
       "ADPLL",
       "Phase Interpolator"
     ],
-    "status": "measurement"
+    "status": "measurement",
+    "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/65nm/M15407%2865nm%2C%2024.10.31%29"
   },
   {
     "year": 2024,
@@ -320,7 +332,8 @@
       "Injection-Locked Osc.",
       "PUF"
     ],
-    "status": "measurement"
+    "status": "measurement",
+    "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/65nm/M15407%2865nm%2C%2024.10.31%29"
   },
   {
     "year": 2024,
@@ -341,7 +354,8 @@
       "Receiver",
       "ADC"
     ],
-    "status": "measurement"
+    "status": "measurement",
+    "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/40nm/ADC_RX_1"
   },
   {
     "year": 2024,
@@ -360,7 +374,8 @@
     "keywords": [
       "PLL"
     ],
-    "status": "measurement"
+    "status": "measurement",
+    "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/40nm/OSPLL"
   },
   {
     "year": 2024,
@@ -400,7 +415,8 @@
       "CDR",
       "Phase Interpolator"
     ],
-    "status": "measurement"
+    "status": "measurement",
+    "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/28nm/M14942%2828nm%2C%2024.5.29%29"
   },
   {
     "year": 2024,
@@ -420,7 +436,8 @@
       "eDRAM",
       "In-Memory Computing"
     ],
-    "status": "measurement"
+    "status": "measurement",
+    "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/65nm/M15092%2865nm%2C%2024.5.XX%29"
   },
   {
     "year": 2024,
@@ -440,7 +457,8 @@
       "Injection-Locked Osc.",
       "PUF"
     ],
-    "status": "measurement"
+    "status": "measurement",
+    "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/65nm/M15092%2865nm%2C%2024.5.XX%29"
   },
   {
     "year": 2023,
@@ -466,7 +484,8 @@
     "venue": {
       "label": "IEEE JETCAS'26",
       "paper": "IGA-SRAM: A Compact SRAM-based IMC Engine for Binary/Ternary Deep Neural Networks with ADC-Less and Error-Aware Training Algorithm"
-    }
+    },
+    "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/65nm/M14253%2823.11.29%29"
   },
   {
     "year": 2023,

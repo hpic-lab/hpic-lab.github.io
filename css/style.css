@@ -3759,6 +3759,35 @@ a.chip-status-venue:hover { background: rgba(55, 138, 221, 0.2); }
   margin-top: 10px;
 }
 
+/* 설계자 사진 + Design Review 링크 (우측 정렬) */
+.chip-card2 .chip-designer-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+.chip-card2 .chip-designer-row .chip-designers {
+  margin-top: 0;
+}
+.chip-card2 .chip-review {
+  margin-left: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8rem;
+  color: #0C447C;
+  text-decoration: none;
+  border: 1px solid rgba(12, 68, 124, 0.35);
+  background: rgba(12, 68, 124, 0.05);
+  border-radius: 6px;
+  padding: 3px 10px;
+  white-space: nowrap;
+}
+.chip-card2 .chip-review:hover { background: rgba(12, 68, 124, 0.12); }
+.chip-card2 .chip-review-lock { font-size: 0.78rem; line-height: 1; }
+.chip-card2 .chip-review-tag { font-size: 0.68rem; color: #8a8f98; }
+
 .chip-outs {
   display: flex;
   flex-wrap: wrap;
