@@ -1,6 +1,27 @@
 [
   {
     "year": 2026,
+    "month": 0,
+    "process": "28-nm S",
+    "image": "",
+    "name": "On-chip Trace for Die-to-Die Interface",
+    "description": "",
+    "outputs": [],
+    "note": "",
+    "designer": "Do-Hyeong Lee",
+    "designer_imgs": [
+      "dh_lee_bs_profile_image.jpg"
+    ],
+    "keywords": [
+      "D2D",
+      "On-chip Trace",
+      "Emulation"
+    ],
+    "status": "awaiting",
+    "raw_date": "2026"
+  },
+  {
+    "year": 2026,
     "month": 4,
     "process": "28-nm T",
     "image": "",
