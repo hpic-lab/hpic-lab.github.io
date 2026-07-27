@@ -488,8 +488,8 @@ $(document).ready(function () {
       $("#modal-tape_out_schedule").text(formattedTapeOutSchedule);
       $("#modal-tape_out_schedule-title").show();
     } else {
-      $("#modal-tape_out_schedule").text("");
-      $("#modal-tape_out_schedule-title").hide();
+      $("#modal-tape_out_schedule").text("To be updated.");
+      $("#modal-tape_out_schedule-title").show();
     }
 
     // ===== Publications: 홈페이지 Publications 데이터와 자동 연동 (동일 양식) =====
