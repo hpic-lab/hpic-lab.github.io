@@ -77,20 +77,24 @@ $(document).ready(function () {
   //     { "round": "2nd", "submission": "", "response": "" }   // link 비우면 회색 placeholder
   //   ]
   // submission/response 키가 없으면 해당 칩은 표시하지 않습니다.
-  function reviewChip(label, link) {
+  function reviewChip(label, link, title) {
+    var t = title ? ' title="' + title + '"' : "";
     return link
-      ? '<a class="pub2-rv-link" href="' + link + '" target="_blank" rel="noopener noreferrer">' + label + "</a>"
-      : '<span class="pub2-rv-link pub2-rv-tbd" title="To be updated">' + label + "</span>";
+      ? '<a class="pub2-rv-link" href="' + link + '" target="_blank" rel="noopener noreferrer"' + t + ">" + label + "</a>"
+      : '<span class="pub2-rv-link pub2-rv-tbd" title="' + (title || "To be updated") + '">' + label + "</span>";
   }
   function reviewProcessHTML(pub, isJournal) {
     if (!isJournal) return "";
     var rounds = pub.review || [];
     if (!rounds.length) return "";
-    var groups = rounds.map(function (r) {
+    // 1st 라운드는 Submission/Response 전체 표기, 2nd 이후는 S/R로 축약(툴팁 제공)
+    var groups = rounds.map(function (r, i) {
       if (!r || typeof r !== "object") return "";
+      var subL = i === 0 ? "Submission" : "S";
+      var resL = i === 0 ? "Response" : "R";
       var chips = "";
-      if (r.hasOwnProperty("submission")) chips += reviewChip("Submission", r.submission);
-      if (r.hasOwnProperty("response")) chips += reviewChip("Response", r.response);
+      if (r.hasOwnProperty("submission")) chips += reviewChip(subL, r.submission, "Submission");
+      if (r.hasOwnProperty("response")) chips += reviewChip(resL, r.response, "Response");
       if (!chips) return "";
       return '<span class="pub2-rv-round">' +
         (r.round ? '<span class="pub2-rv-round-label">' + r.round + "</span>" : "") +
