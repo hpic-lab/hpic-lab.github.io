@@ -3570,18 +3570,13 @@ section {
   margin: 12px 0 8px;
 }
 
+/* Publications 양식: 카드 박스 없이 하단 구분선 */
 .chip-card2 {
   display: flex;
   gap: 18px;
-  align-items: flex-start;
-  background: #fff;
-  border: 0.5px solid #e8e8e8;
-  border-radius: 12px;
-  padding: 14px 16px;
-  margin-bottom: 12px;
-  height: 178px;          /* 모든 카드 동일 높이 */
-  box-sizing: border-box;
-  overflow: hidden;
+  align-items: center;
+  padding: 16px 0;
+  border-bottom: 1px solid #eee;
 }
 
 .chip-card2 .chip-thumb {
@@ -3612,9 +3607,6 @@ section {
 .chip-card2 .chip-info {
   flex: 1;
   min-width: 0;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
 }
 
 .chip-card2 .chip-name {
@@ -3637,9 +3629,8 @@ section {
   line-height: 1.55;
 }
 
-/* 학생 사진은 카드 하단에 정렬 */
 .chip-card2 .chip-info .chip-designers {
-  margin-top: auto;
+  margin-top: 10px;
 }
 
 .chip-outs {
