@@ -1608,6 +1608,20 @@ nav#navbar-main .navbar-collapse {
   font-style: italic;
 }
 
+/* 이미지 없는 칩(예: 도착 전) 자리표시 */
+#exampleModal .modal-chip-gallery .modal-chip-tbd {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 6px;
+  font-size: 0.72rem;
+  line-height: 1.3;
+  color: #9aa1a8;
+}
+
 @media (max-width: 767px) {
   #exampleModal .modal-chip-gallery .chip-card {
     flex: 0 1 calc(50% - 6px);
@@ -1944,12 +1958,31 @@ nav#navbar-main .navbar-collapse {
 
 /* ===== Research Projects (시안 3: 클릭 펼침 행) ===== */
 .rp-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
   border: 1px solid #e5e5e5;
   border-radius: 10px;
   padding: 14px 16px;
   margin-bottom: 10px;
   background: var(--section-bg, #fff);
   transition: border-color 0.15s;
+}
+
+/* 과제 연번 (Chip Gallery의 .chip-num과 동일 스타일) */
+.rp-item .rp-num {
+  flex-shrink: 0;
+  min-width: 26px;
+  text-align: center;
+  padding-top: 1px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #999;
+}
+
+.rp-item .rp-body {
+  flex: 1;
+  min-width: 0;
 }
 
 .rp-item.rp-expandable {
@@ -3687,6 +3720,7 @@ section {
   font-size: 0.72rem;
   font-weight: 600;
   color: #0C447C;
+  background: rgba(12, 68, 124, 0.06);
   border: 1px solid rgba(12, 68, 124, 0.4);
   border-radius: 4px;
   padding: 1px 7px;
@@ -3694,6 +3728,11 @@ section {
   vertical-align: 2px;
   white-space: nowrap;
 }
+/* 공정별 색 구분 (은은하게: 연한 배경 + 같은 계열 글자/테두리) */
+.chip-card2 .chip-fab.fab-t28 { color: #0C447C; background: rgba(12, 68, 124, 0.07); border-color: rgba(12, 68, 124, 0.4); }   /* TSMC 28nm - blue */
+.chip-card2 .chip-fab.fab-s28 { color: #0F766E; background: rgba(15, 118, 110, 0.08); border-color: rgba(15, 118, 110, 0.4); }  /* Samsung 28nm - teal */
+.chip-card2 .chip-fab.fab-t40 { color: #B45309; background: rgba(180, 83, 9, 0.08); border-color: rgba(180, 83, 9, 0.4); }      /* TSMC 40nm - amber */
+.chip-card2 .chip-fab.fab-t65 { color: #6D28D9; background: rgba(109, 40, 217, 0.07); border-color: rgba(109, 40, 217, 0.4); }  /* TSMC 65nm - violet */
 
 .chip-card2 .chip-desc {
   margin: 0 0 6px;
@@ -3751,6 +3790,16 @@ a.chip-out:hover { text-decoration: underline; }
   border-radius: 50%;
   object-fit: cover;
   border: 1px solid #ccc;
+}
+/* 클릭 가능한 설계자 사진 (프로필 모달로 연결) */
+.chip-designers .chip-designer-photo.chip-designer-link {
+  cursor: pointer;
+  transition: transform 0.12s ease, box-shadow 0.12s ease, border-color 0.12s ease;
+}
+.chip-designers .chip-designer-photo.chip-designer-link:hover {
+  transform: scale(1.12);
+  border-color: #0C447C;
+  box-shadow: 0 0 0 2px rgba(12, 68, 124, 0.25);
 }
 
 /* Biography 내 저널명: IEEE 스타일 small caps

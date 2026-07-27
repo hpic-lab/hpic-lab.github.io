@@ -95,7 +95,7 @@ $(document).ready(function () {
     //   role:    "HPIC이 담당하는 역할",
     //   sponsor_logo: "img/sponsors/msit.png",
     //   partners: [ { name: "ETRI", logo: "img/sponsors/etri.png" }, ... ]
-    function projectRow(item) {
+    function projectRow(item, num) {
       const hasDetail =
         item.desc || item.role || item.sponsor_logo ||
         (Array.isArray(item.partners) && item.partners.length > 0);
@@ -124,15 +124,18 @@ $(document).ready(function () {
 
       return `
         <div class="rp-item ${hasDetail ? "rp-expandable" : ""}">
-          <div class="rp-head">
-            <div class="rp-head-main">
-              <span class="rp-date">${item.date}</span>
-              <span class="rp-title">${item.title}</span>
-              <div class="rp-sponsor">${item.sponsor}</div>
+          <span class="rp-num">${num}</span>
+          <div class="rp-body">
+            <div class="rp-head">
+              <div class="rp-head-main">
+                <span class="rp-date">${item.date}</span>
+                <span class="rp-title">${item.title}</span>
+                <div class="rp-sponsor">${item.sponsor}</div>
+              </div>
+              ${hasDetail ? '<span class="rp-arrow">&#9662;</span>' : ""}
             </div>
-            ${hasDetail ? '<span class="rp-arrow">&#9662;</span>' : ""}
+            ${detailHTML}
           </div>
-          ${detailHTML}
         </div>
       `;
     }
@@ -143,7 +146,9 @@ $(document).ready(function () {
     const ongoing = researchProjects.filter((p) => p.status !== "Completed");
     const completed = researchProjects.filter((p) => p.status === "Completed");
 
-    ongoing.forEach((item) => container.append(projectCard(item)));
+    // 연번: 그룹별 개별 부여 (Chip Gallery와 동일하게 최신=큰 번호, 위→아래 내림차순)
+    let onNum = ongoing.length;
+    ongoing.forEach((item) => container.append(projectCard(item, onNum--)));
 
     // 완료 과제는 접힌 서브섹션으로 (클릭 시 펼침)
     if (completed.length > 0) {
@@ -156,7 +161,8 @@ $(document).ready(function () {
       `);
 
       const completedDiv = container.find(".completed-projects");
-      completed.forEach((item) => completedDiv.append(projectCard(item)));
+      let cpNum = completed.length;
+      completed.forEach((item) => completedDiv.append(projectCard(item, cpNum--)));
 
       container.on("click", ".completed-toggle", function () {
         $(this).toggleClass("collapsed");

@@ -7,6 +7,32 @@ $(document).ready(function () {
     return path.split('/').pop();
   }
 
+  // ===== Chip Gallery 연동: chips.json → 설계자 이미지 파일명 기준 인덱스 =====
+  window.chipsByDesigner = {};
+  function chipDateLabel(chip) {
+    var MON = ["", "Jan", "Feb", "Mar", "Apr", "May", "Jun",
+               "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+    var yy = String(chip.year || "").slice(-2);
+    var m = (chip.month && chip.month >= 1 && chip.month <= 12) ? MON[chip.month] + ". " : "";
+    var proc = chip.process ? " (" + chip.process + ")" : "";
+    return (m + (yy ? "'" + yy : "") + proc).trim();
+  }
+  function loadChipIndex(url) {
+    return $.getJSON(url).done(function (chips) {
+      (chips || []).forEach(function (chip) {
+        (chip.designer_imgs || []).forEach(function (f) {
+          var key = getFileName(f);
+          if (!key) return;
+          (window.chipsByDesigner[key] = window.chipsByDesigner[key] || []).push({
+            img: chip.image || "",
+            name: chip.name || "",
+            date: chipDateLabel(chip)
+          });
+        });
+      });
+    });
+  }
+
   // 연구분야를 짧은 약어로 축약 (카드 배지용, 필요시 규칙 추가)
   function shortenInterest(text) {
     const s = text.toLowerCase();
@@ -305,10 +331,12 @@ $(document).ready(function () {
       person.academic_services
     );
 
-    // PI(교수)와 졸업생은 Chip Gallery 미표시
+    // PI(교수)는 Chip Gallery 미표시. (졸업생도 본인이 설계한 칩이 있으면 표시)
+    var _designed = window.chipsByDesigner[imgKey] || [];
     var _hideChip = /Professor/i.test(person.position || "") ||
-                    !!(person.affiliation && String(person.affiliation).trim());
-    renderChipGallery(person.chips, _hideChip);
+                    (_designed.length === 0 &&
+                     !!(person.affiliation && String(person.affiliation).trim()));
+    renderChipGallery(_designed, _hideChip);
 
     // 졸업생 Thesis 링크 (이름 아래)
     $("#modal-thesis-link").remove();
@@ -341,8 +369,11 @@ $(document).ready(function () {
       var img = typeof c === "string" ? c : (c.img || "");
       var name = (c && c.name) ? c.name : "";
       var date = (c && c.date) ? c.date : "";
+      var media = img
+        ? '<img src="' + img + '" alt="' + name + '" loading="lazy">'
+        : '<div class="modal-chip-tbd">Chip image<br>to be updated</div>';
       return '<figure class="chip-card">' +
-        '<img src="' + img + '" alt="' + name + '" loading="lazy">' +
+        media +
         (name || date ? '<figcaption>' +
           (name ? '<span class="chip-name">' + name + "</span>" : "") +
           (date ? '<span class="chip-date">' + date + "</span>" : "") +
@@ -709,8 +740,10 @@ $.when(
     loadProfiles("json/people/04_researchers.json", ".researchers", false),
     loadProfiles("json/people/05_undergraduate_researchers.json", ".undergraduate-researchers", false),
     
-    loadDataOnly("json/people/06_alumni_info.json") 
-    
+    loadDataOnly("json/people/06_alumni_info.json"),
+
+    loadChipIndex("json/chips/chips.json")
+
   ).done(function() {
       loadAlumni("json/people/06_alumni.json", "#alumni-list-container");
       buildPeopleSideNav();

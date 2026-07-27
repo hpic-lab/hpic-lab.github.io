@@ -29,12 +29,20 @@ $(document).ready(function () {
     return chip.year + "." + ("0" + chip.month).slice(-2);
   }
 
+  // 프로필 모달이 있는 페이지(index.html)에서만 설계자 사진을 클릭 가능하게 함
+  var HAS_PROFILE_MODAL = !!document.getElementById("exampleModal");
+
   // designer를 학생 사진(원형)으로 표시. 사진이 없으면 이름 텍스트로 대체.
+  // 사진 클릭 시 해당 연구자의 상세 프로필 모달을 연다 (data-img-key = 프로필 이미지 파일명).
   function designerHTML(chip) {
     var imgs = chip.designer_imgs || [];
     if (imgs.length) {
       var h = imgs.map(function (f) {
-        return '<img class="chip-designer-photo" src="img/' + f + '" alt="" onerror="this.remove()">';
+        var key = String(f).split("/").pop();
+        var link = HAS_PROFILE_MODAL ? " chip-designer-link" : "";
+        var keyAttr = HAS_PROFILE_MODAL ? ' data-img-key="' + key + '"' : "";
+        var titleAttr = HAS_PROFILE_MODAL ? ' title="View profile"' : "";
+        return '<img class="chip-designer-photo' + link + '" src="img/' + f + '" alt=""' + keyAttr + titleAttr + ' onerror="this.remove()">';
       }).join("");
       return '<div class="chip-designers">' + h + "</div>";
     }
@@ -42,8 +50,19 @@ $(document).ready(function () {
     return "";
   }
 
+  // 설계자 사진 클릭 → 프로필 모달 열기 (peopleDB에 해당 인물이 있을 때만)
+  $(document).off("click.chipdesigner").on("click.chipdesigner", ".chip-designer-link", function () {
+    var modalEl = document.getElementById("exampleModal");
+    var key = $(this).data("img-key");
+    if (modalEl && window.bootstrap && window.bootstrap.Modal &&
+        window.peopleDB && window.peopleDB[key]) {
+      window.bootstrap.Modal.getOrCreateInstance(modalEl).show(this);
+    }
+  });
+
   // 진행 상태 (단계 → 문구/색)
   var STATUS_MAP = {
+    "awaiting": { t: "Awaiting chip delivery", c: "st-gray" },
     "tapeout": { t: "Tape-out completed", c: "st-gray" },
     "pcb": { t: "PCB & packaging in preparation", c: "st-gray" },
     "measurement": { t: "Measurement in progress", c: "st-amber" },
@@ -79,11 +98,22 @@ $(document).ready(function () {
     return (fo ? fo + " " : "") + node || String(process);
   }
 
+  // 공정 문자열 → 색 구분용 클래스 ("fab-t28" / "fab-s28" / "fab-t40" / "fab-t65")
+  function fabClass(process) {
+    if (!process) return "";
+    var m = String(process).match(/(\d+)\s*-?\s*nm/i);
+    if (!m) return "";
+    var suf = String(process).replace(/\d+\s*-?\s*nm/i, "").trim();
+    var fo = /^s/i.test(suf) ? "s" : /^t/i.test(suf) ? "t" : "";
+    return fo ? "fab-" + fo + m[1] : "";
+  }
+
   // 안1+안B: 연번 + 썸네일 + [제목(우측 공정 배지) / 설명 / 학생 사진]
   function cardHTML(chip, num, showDescFallback) {
     // 실제 설명이 있을 때만 표시 (없으면 상태 문구가 대신함)
     var desc = chip.description && String(chip.description).trim() ? chip.description : "";
     var fab = fabLabel(chip.process);
+    var fabCls = fabClass(chip.process);
     return (
       '<div class="chip-card2">' +
         '<div class="chip-num">' + num + "</div>" +
@@ -95,7 +125,7 @@ $(document).ready(function () {
         '<div class="chip-info">' +
           (chip.name
             ? '<p class="chip-name">' + chip.name +
-                (fab ? ' <span class="chip-fab">' + fab + "</span>" : "") +
+                (fab ? ' <span class="chip-fab ' + fabCls + '">' + fab + "</span>" : "") +
               "</p>"
             : "") +
           statusHTML(chip) +

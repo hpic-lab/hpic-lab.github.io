@@ -18,7 +18,7 @@
       "CTLE Adaptation",
       "On-chip Probing"
     ],
-    "status": "measurement"
+    "status": "awaiting"
   },
   {
     "year": 2026,
@@ -41,7 +41,7 @@
       "Transmitter",
       "High-Speed"
     ],
-    "status": "measurement"
+    "status": "awaiting"
   },
   {
     "year": 2026,
@@ -62,7 +62,7 @@
       "PLL",
       "Phase Interpolator"
     ],
-    "status": "measurement"
+    "status": "awaiting"
   },
   {
     "year": 2026,
@@ -82,7 +82,7 @@
       "Time-Domain",
       "ADC"
     ],
-    "status": "measurement"
+    "status": "awaiting"
   },
   {
     "year": 2026,
@@ -102,7 +102,7 @@
       "Time-Interleaved",
       "ADC"
     ],
-    "status": "measurement"
+    "status": "awaiting"
   },
   {
     "year": 2025,
