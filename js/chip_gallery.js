@@ -55,7 +55,7 @@ $(document).ready(function () {
   function reviewHTML(chip) {
     if (!chip.review_link) return "";
     return '<div class="chip-review">' +
-      '<span class="chip-review-label" title="Teams members only"><span aria-hidden="true">&#128274;</span> Members only</span>' +
+      '<span class="chip-review-label" title="Members only (Teams)" aria-label="Members only">&#128274;</span>' +
       '<a class="chip-rv-link" href="' + escAttr(chip.review_link) +
         '" target="_blank" rel="noopener noreferrer">Design Review</a>' +
       "</div>";

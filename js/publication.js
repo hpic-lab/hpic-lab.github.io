@@ -98,7 +98,7 @@ $(document).ready(function () {
     }).join("");
     if (!groups) return "";
     return '<div class="pub2-review">' +
-      '<span class="pub2-review-label" title="Teams members only">&#128274; Members only</span>' +
+      '<span class="pub2-review-label" title="Members only (Teams)" aria-label="Members only">&#128274;</span>' +
       groups + "</div>";
   }
 
