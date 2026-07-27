@@ -26,8 +26,8 @@
     "year": 2026,
     "month": 4,
     "process": "28-nm T",
-    "image": "",
-    "name": "112 Gb/s PAM-4 Receiver",
+    "image": "img/chip_new/PAM4_RX_112G_26.png",
+    "name": "112Gb/s PAM4 Receiver with fully adaptation",
     "description": "",
     "outputs": [],
     "note": "",
@@ -38,9 +38,11 @@
       "dh-kim-new-profile-image.jpg"
     ],
     "keywords": [
-      "112 Gb/s",
-      "CTLE Adaptation",
-      "On-chip Probing"
+      "112Gb/s",
+      "fully adaptation",
+      "CDR",
+      "Data Pattern adaptation",
+      "Ultra High Speed"
     ],
     "status": "awaiting",
     "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/28nm/M17949%2828nm%2C%2026.04.29%29"
@@ -49,8 +51,8 @@
     "year": 2026,
     "month": 4,
     "process": "28-nm T",
-    "image": "",
-    "name": "112 Gb/s DSP-based PAM-2/4/8 Transmitter",
+    "image": "img/chip_new/DSP_TX_168G_26.png",
+    "name": "168Gb/s DSP-based PAM-2/4/8 Transmitter",
     "description": "",
     "outputs": [],
     "note": "",
@@ -61,10 +63,11 @@
       "sm-jin-profile-img.jpg"
     ],
     "keywords": [
-      "PAM-2/4/8",
+      "168Gb/s",
       "DSP",
-      "Transmitter",
-      "High-Speed"
+      "PAM-2/4/8",
+      "1.6Vpp",
+      "Ultra High-Speed"
     ],
     "status": "awaiting",
     "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/28nm/M17949%2828nm%2C%2026.04.29%29"
@@ -73,8 +76,8 @@
     "year": 2026,
     "month": 4,
     "process": "28-nm T",
-    "image": "",
-    "name": "PI-based Fractional-N PLL",
+    "image": "img/chip_new/PI_FracN_DPLL_26.png",
+    "name": "14-GHz PI-based Fractional-N DPLL",
     "description": "",
     "outputs": [],
     "note": "",
@@ -85,9 +88,11 @@
       "dh-kim-new-profile-image.jpg"
     ],
     "keywords": [
+      "Digital PLL",
       "Fractional-N",
-      "PLL",
-      "Phase Interpolator"
+      "Phase Interpolator",
+      "Background Calibration",
+      "Fractional Spur Reduction"
     ],
     "status": "awaiting",
     "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/28nm/M17949%2828nm%2C%2026.04.29%29"
