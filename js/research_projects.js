@@ -1,11 +1,19 @@
 $(document).ready(function () {
     const researchProjects = [
       {
+        date: "Jul. 2026 - Dec. 2030",
+        title:
+          "SDV 대응 가혹환경극복 차량용 멀티표준 지원 가능 고신뢰 고속 인터페이스 IP 기술 개발",
+        sponsor: "Ministry of Science and ICT (MSIT)",
+        desc:
+          "Development of Highly Reliable Multi-Standard Automotive SerDes IP for SDVs in Harsh Automotive Environments. 상위 사업: 나노·소재기술개발 – SDV대응 가혹환경극복 자동차반도체 핵심IP 원천기술개발사업. 1단계 2026.07–2028.12 (30개월), 2단계 2029.01–2030.12 (24개월). 정부지원금 총 10,625백만원 (1단계 6,875, 2단계 3,750백만원), 전문기관 한국연구재단(NRF).",
+      },
+      {
         date: "May. 2026 - Apr. 2030",
         title:
           "이기종 디바이스 간 초고대역폭, 저지연, 직렬 인터페이스 기술 개발",
         sponsor: "Ministry of Science and ICT (MSIT)",
-      },      
+      },
       {
         date: "Jun. 2025 - Dec. 2029",
         title:
