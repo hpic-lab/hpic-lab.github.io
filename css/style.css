@@ -883,7 +883,7 @@ nav#navbar-main .navbar-collapse {
 /* [Modal] 이름 아래 Thesis 링크 */
 #modal-thesis-link {
   text-align: center;
-  margin-top: -6px;
+  margin-top: 8px;
   margin-bottom: 12px;
 }
 #modal-thesis-link .modal-thesis {
