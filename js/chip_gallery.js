@@ -60,6 +60,19 @@ $(document).ready(function () {
     }
   });
 
+  // venue 배지(내부 논문 연결) 클릭 → 홈페이지 Publications의 해당 논문으로 이동
+  $(document).off("click.chipvenue").on("click.chipvenue", ".chip-status-venue[data-pub-title]", function (e) {
+    e.preventDefault();
+    var title = $(this).attr("data-pub-title");
+    if (window.openPublicationByTitle && window.openPublicationByTitle(title)) return;
+    var pub = document.getElementById("publications");
+    if (pub) pub.scrollIntoView({ behavior: "smooth" });
+  });
+
+  function escAttr(s) {
+    return String(s).replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+  }
+
   // 진행 상태 (단계 → 문구/색)
   var STATUS_MAP = {
     "awaiting": { t: "Awaiting chip delivery", c: "st-gray" },
@@ -75,13 +88,24 @@ $(document).ready(function () {
     var s = STATUS_MAP[chip.status];
     if (!s) return "";
     // 상태 문구 옆 논문 대상 학회/저널 배지 (예: "Manuscript in review  [IEEE TCAS-II]")
+    // venue 형태:
+    //   "IEEE TCAS-II"                                  → 링크 없는 배지
+    //   { label, paper: "논문 제목" }                    → 홈페이지 Publications의 해당 논문으로 이동
+    //   { label, link: "https://..." }                  → 외부 링크
     var venue = "";
     if (chip.venue) {
-      var label = typeof chip.venue === "string" ? chip.venue : (chip.venue.label || "");
+      var isStr = typeof chip.venue === "string";
+      var label = isStr ? chip.venue : (chip.venue.label || "");
       if (label) {
-        venue = chip.venue.link
-          ? '<a class="chip-status-venue" href="' + chip.venue.link + '" target="_blank" rel="noopener noreferrer">' + label + "</a>"
-          : '<span class="chip-status-venue">' + label + "</span>";
+        if (!isStr && chip.venue.paper) {
+          venue = '<a class="chip-status-venue" href="#publications" data-pub-title="' +
+            escAttr(chip.venue.paper) + '">' + label + "</a>";
+        } else if (!isStr && chip.venue.link) {
+          venue = '<a class="chip-status-venue" href="' + chip.venue.link +
+            '" target="_blank" rel="noopener noreferrer">' + label + "</a>";
+        } else {
+          venue = '<span class="chip-status-venue">' + label + "</span>";
+        }
       }
     }
     return '<p class="chip-status ' + s.c + '"><span class="chip-status-dot"></span><span class="chip-status-txt">' + s.t + "</span>" + venue + "</p>";

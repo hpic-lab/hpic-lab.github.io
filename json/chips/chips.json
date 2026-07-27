@@ -234,7 +234,10 @@
       "In-Memory Computing"
     ],
     "status": "accepted",
-    "venue": "IEEE TCAS-I"
+    "venue": {
+      "label": "IEEE TCAS-I",
+      "paper": "KWS-CIM: A Charge-Domain eDRAM-Based Compute-in-Memory Macro for Ternary DFSMN Keyword Spotting"
+    }
   },
   {
     "year": 2024,
@@ -246,8 +249,11 @@
     "outputs": [],
     "note": "",
     "raw_date": "Nov. (65-nm T)'24",
-    "designer": "",
-    "designer_imgs": [],
+    "designer": "Dong-Hyun Lee and Shin-Uk Kang",
+    "designer_imgs": [
+      "dh-lee-profile-img.png",
+      "su-kang-profile-img.jpg"
+    ],
     "keywords": [
       "eDRAM",
       "In-Memory Computing"
@@ -418,6 +424,32 @@
     "year": 2023,
     "month": 12,
     "process": "65-nm T",
+    "image": "img/SRAM_PIM_Accelerator.JPG",
+    "name": "SRAM PIM Accelerator",
+    "description": "",
+    "outputs": [],
+    "note": "",
+    "raw_date": "Dec (65-nm T)'23",
+    "designer": "Shin-Uk Kang and Dong-Hyun Lee",
+    "designer_imgs": [
+      "su-kang-profile-img.jpg",
+      "dh-lee-profile-img.png"
+    ],
+    "keywords": [
+      "In-Memory Computing",
+      "SRAM",
+      "AI Accelerator"
+    ],
+    "status": "published",
+    "venue": {
+      "label": "IEEE JETCAS",
+      "paper": "IGA-SRAM: A Compact SRAM-based IMC Engine for Binary/Ternary Deep Neural Networks with ADC-Less and Error-Aware Training Algorithm"
+    }
+  },
+  {
+    "year": 2023,
+    "month": 12,
+    "process": "65-nm T",
     "image": "img/chip_new/Supply_Noise_Insensitive_PLL.png",
     "name": "Supply Noise Insensitive ADPLL",
     "description": "",
@@ -448,27 +480,6 @@
       "ADPLL",
       "Injection-Locked Osc.",
       "Calibration"
-    ],
-    "status": "measurement"
-  },
-  {
-    "year": 2023,
-    "month": 12,
-    "process": "65-nm T",
-    "image": "img/SRAM_PIM_Accelerator.JPG",
-    "name": "SRAM PIM Accelerator",
-    "description": "",
-    "outputs": [],
-    "note": "",
-    "raw_date": "Dec (65-nm T)'23",
-    "designer": "Shin-Uk Kang",
-    "designer_imgs": [
-      "su-kang-profile-img.jpg"
-    ],
-    "keywords": [
-      "In-Memory Computing",
-      "SRAM",
-      "AI Accelerator"
     ],
     "status": "measurement"
   },
