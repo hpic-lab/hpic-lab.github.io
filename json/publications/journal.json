@@ -660,7 +660,17 @@
     "figure": [
       "ms-choo-profile-img.png"
     ],
-    "link": "https://ieeexplore.ieee.org/document/8781914"
+    "link": "https://ieeexplore.ieee.org/document/8781914",
+    "review": [
+      {
+        "round": "1st",
+        "submission": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/%EB%85%BC%EB%AC%B8%20%EC%9E%90%EB%A3%8C/%EC%A0%80%EB%84%90%20%EB%AA%A8%EC%9D%8C/%5B5%2C%201st%20Submission%5D%20JSSC-SI-19-0030_Proof_hi.pdf"
+      },
+      {
+        "round": "2nd",
+        "submission": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/%EB%85%BC%EB%AC%B8%20%EC%9E%90%EB%A3%8C/%EC%A0%80%EB%84%90%20%EB%AA%A8%EC%9D%8C/%5B5%2C%202nd%20Submission%5D%20JSSC-SI-19-0030.R1_Proof_hi.pdf"
+      }
+    ]
   },
   {
     "type": "2018",
