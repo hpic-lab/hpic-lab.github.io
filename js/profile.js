@@ -362,7 +362,7 @@ $(document).ready(function () {
         $("#modal-profile-img").hide(); 
     }
 
-    $("#modal-biography").text(biography);
+    $("#modal-biography").html(biography || "");
     
     if (email) {
         // 런타임에 mailto 링크로 렌더 (정적 텍스트로 이메일을 남기지 않음)
