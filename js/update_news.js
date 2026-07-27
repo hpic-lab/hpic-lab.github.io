@@ -128,7 +128,7 @@ $(document).ready(function () {
         if (acc.accordion("option", "active") === false) {
           acc.accordion("option", "active", 0);
         }
-        $("html, body").animate({ scrollTop: header.offset().top - 100 }, 200);
+        window.scrollTo({ top: Math.max(0, header[0].getBoundingClientRect().top + window.pageYOffset - 100), behavior: "smooth" });
       });
 
       // ===== 카테고리 필터 (Grant / Journal / Award 등) =====

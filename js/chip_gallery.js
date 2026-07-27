@@ -318,7 +318,7 @@ $(document).ready(function () {
       $a.on("click", function (e) {
         e.preventDefault();
         if ($h.hasClass("collapsed")) $h.trigger("click");
-        $("html, body").animate({ scrollTop: $h.offset().top - 100 }, 250);
+        window.scrollTo({ top: Math.max(0, $h[0].getBoundingClientRect().top + window.pageYOffset - 100), behavior: "smooth" });
       });
       $nav.append($a);
     });

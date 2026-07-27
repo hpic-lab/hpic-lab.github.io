@@ -64,9 +64,11 @@ $(document).ready(function () {
     });
   }
 
+  // 네이티브 스무스 스크롤 사용 (html { scroll-behavior: smooth } 와 jQuery .animate 충돌 회피)
   function scrollToEl(el) {
     if (el && el.length) {
-      $("html, body").animate({ scrollTop: el.offset().top - 100 }, 200);
+      var top = el[0].getBoundingClientRect().top + window.pageYOffset - 100;
+      window.scrollTo({ top: Math.max(0, top), behavior: "smooth" });
     }
   }
 
@@ -453,7 +455,7 @@ $(document).ready(function () {
         $body.show();
       }
       var $entry = $(entry);
-      $("html, body").animate({ scrollTop: $entry.offset().top - 120 }, 300);
+      window.scrollTo({ top: Math.max(0, entry.getBoundingClientRect().top + window.pageYOffset - 120), behavior: "smooth" });
       // 잠깐 강조
       $entry.addClass("pub2-entry-flash");
       setTimeout(function () { $entry.removeClass("pub2-entry-flash"); }, 1600);
