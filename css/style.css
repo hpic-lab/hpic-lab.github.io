@@ -3813,19 +3813,25 @@ a.chip-status-venue:hover { background: rgba(55, 138, 221, 0.2); }
   margin-left: auto;
   display: inline-flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 6px;
-  font-size: 0.8rem;
-  color: #0C447C;
-  text-decoration: none;
-  border: 1px solid rgba(12, 68, 124, 0.35);
-  background: rgba(12, 68, 124, 0.05);
-  border-radius: 6px;
-  padding: 3px 10px;
+}
+.chip-card2 .chip-review-label {
+  font-size: 0.72rem;
+  color: #8a8f98;
   white-space: nowrap;
 }
-.chip-card2 .chip-review:hover { background: rgba(12, 68, 124, 0.12); }
-.chip-card2 .chip-review-lock { font-size: 0.78rem; line-height: 1; }
-.chip-card2 .chip-review-tag { font-size: 0.68rem; color: #8a8f98; }
+.chip-card2 .chip-rv-link {
+  font-size: 0.72rem;
+  color: #0C447C;
+  border: 1px solid rgba(12, 68, 124, 0.35);
+  background: rgba(12, 68, 124, 0.05);
+  border-radius: 5px;
+  padding: 2px 8px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.chip-card2 .chip-rv-link:hover { background: rgba(12, 68, 124, 0.12); }
 
 .chip-outs {
   display: flex;
