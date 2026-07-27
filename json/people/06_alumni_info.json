@@ -3,9 +3,7 @@
     "name": "Dong-Hyun Lee",
     "affiliation": "LIG D&A",
     "program_period": "M.S. (2024-2026)",
-    "research_interests": [
-      "AI hardware design and PIM"
-    ],
+    "research_interests": [],
     "education": [
       "B.S., School of Electrical Engineering, Dankook University, Jukjeon, South Korea (2018.03 ~ 2024.02)",
       "M.S., School of Electrical Engineering, Hanyang University, Ansan, South Korea (2024.03 ~ 2026.02)"
@@ -26,9 +24,7 @@
     "name": "Sang-Hyeon Ok",
     "affiliation": "LX Semicon",
     "program_period": "M.S. (2024-2026)",
-    "research_interests": [
-      "CDR, PAM4 receiver"
-    ],
+    "research_interests": [],
     "education": [
       "B.S., School of Electrical Engineering, Hanyang University, Ansan, South Korea (2009.03 ~ 2016.02)",
       "M.S., School of Electrical Engineering, Hanyang University, Ansan, South Korea (2024.03 ~ 2026.02)"
@@ -48,9 +44,7 @@
     "name": "Dong-Hoe Heo",
     "affiliation": "ram-sCHIP",
     "program_period": "M.S. (2023-2025)",
-    "research_interests": [
-      "Wide-range PI-based CDR"
-    ],
+    "research_interests": [],
     "education": [
       "B.S., School of Electrical Engineering, Hanyang University, Ansan, South Korea (2017.03 ~ 2023.02)",
       "M.S., School of Electrical Engineering, Hanyang University, Ansan, South Korea (2023.03 ~ 2025.08)"
@@ -68,9 +62,7 @@
     "name": "Kang-Min Kim",
     "affiliation": "SUGARS",
     "program_period": "M.S. (2023-2024)",
-    "research_interests": [
-      "Physically Unclonable Function (PUF)"
-    ],
+    "research_interests": [],
     "education": [
       "B.S., School of Electrical Engineering, Hanyang University, Ansan, South Korea (2017.03 ~ 2023.02)",
       "M.S., School of Electrical Engineering, Hanyang University, Ansan, South Korea (2023.03 ~ 2025.02)"
@@ -84,9 +76,7 @@
     "name": "Kyu-Ran Park",
     "affiliation": "LX Semicon",
     "program_period": "M.S. (2023-2024)",
-    "research_interests": [
-      "High-performance DPLL"
-    ],
+    "research_interests": [],
     "education": [
       "M.S., School of Electrical Engineering, Hanyang University, Ansan, South Korea (2023.03 ~ 2025.02)"
     ],
@@ -99,9 +89,7 @@
     "name": "Shin-Uk Kang",
     "affiliation": "Ph.D. Candidate @ KAIST, Advisor: <a href=\"https://sites.google.com/view/mslab\" target=\"_blank\" rel=\"noopener noreferrer\">Bongjin Kim</a>",
     "program_period": "M.S. (2023-2024)",
-    "research_interests": [
-      "AI hardware design and PIM"
-    ],
+    "research_interests": [],
     "education": [
       "B.S., School of Electrical Engineering, Hanyang University, Ansan, South Korea (2019.03 ~ 2023.02)",
       "M.S., School of Electrical Engineering, Hanyang University, Ansan, South Korea (2023.03 ~ 2025.02)"
@@ -119,9 +107,7 @@
     "name": "Ji-Ho Kim",
     "affiliation": "4Lynx",
     "program_period": "M.S. (2022-2024)",
-    "research_interests": [
-      "High PSRR DPLL"
-    ],
+    "research_interests": [],
     "education": [
       "M.S., School of Electrical Engineering, Hanyang University, Ansan, South Korea (2022.09 ~ 2025.02)"
     ],
@@ -139,9 +125,7 @@
     "name": "Woo-Suk Jung",
     "affiliation": "M.S. Candidate @ Yonsei University, Advisor: <a href=\"https://sites.google.com/site/vlsicir/home?authuser=0\" target=\"_blank\" rel=\"noopener noreferrer\">Hanwool Jeong</a>",
     "program_period": "B.S. (2024)",
-    "research_interests": [
-      "Wireline Interface"
-    ],
+    "research_interests": [],
     "biography": "Woo-Suk Jung received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. He is currently pursuing a M.S. -Ph.D. degree in the school of electrical engineering at Yonsei University, Seoul, South Korea.",
     "email": "",
     "profile_img": "img/ws-jung-profile-img.png"
@@ -150,9 +134,7 @@
     "name": "Min-Gwon Song",
     "affiliation": "M.S. Candidate @ Hanyang University, Advisor: <a href=\"http://esoc.hanyang.ac.kr/\" target=\"_blank\" rel=\"noopener noreferrer\">Ki-Seok Chung</a>",
     "program_period": "B.S. (2023-24)",
-    "research_interests": [
-      "PIM"
-    ],
+    "research_interests": [],
     "biography": "Min-Gwon Song received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. He is currently pursuing a M.S. -Ph.D. degree in the school of electrical engineering at Hanyang University, Seoul, South Korea.",
     "email": "",
     "profile_img": "img/mg-song-profile-img.jpg"
@@ -161,9 +143,7 @@
     "name": "Ji-Hyeon Kwon",
     "affiliation": "GaonChips",
     "program_period": "B.S. (2023-24)",
-    "research_interests": [
-      "Wireline Interface"
-    ],
+    "research_interests": [],
     "biography": "Ji-Hyeon Kwon received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea.",
     "email": "",
     "profile_img": "img/jh-kwon-profile-img.png"
@@ -172,9 +152,7 @@
     "name": "Yu-Jin Byeon",
     "affiliation": "M.S. Candidate @ KAIST, Advisor: <a href=\"https://sites.google.com/view/mslab\" target=\"_blank\" rel=\"noopener noreferrer\">Bongjin Kim</a>",
     "program_period": "B.S. (2023-24)",
-    "research_interests": [
-      "Wireline Interface"
-    ],
+    "research_interests": [],
     "biography": "Yu-Jin Byeon received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. She is currently pursuing a M.S. -Ph.D. degree in the school of electrical engineering at KAIST, Daejeon, South Korea.",
     "email": "",
     "profile_img": "img/yj-byeon-profile-img.png"
@@ -183,9 +161,7 @@
     "name": "Dong-Eun Lee",
     "affiliation": "SK-hynix",
     "program_period": "B.S. (2023-24)",
-    "research_interests": [
-      "Wireline Interface"
-    ],
+    "research_interests": [],
     "biography": "Dong-Eun Lee received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea.",
     "email": "",
     "profile_img": "img/de-lee-profile-img.png"
@@ -194,9 +170,7 @@
     "name": "Seung-Wan Han",
     "affiliation": "ASML",
     "program_period": "B.S. (2022-23)",
-    "research_interests": [
-      "Wireline Interface"
-    ],
+    "research_interests": [],
     "biography": "Seung-Wan Han received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea.",
     "email": "",
     "profile_img": "img/sw-han-profile-img.png"
@@ -205,9 +179,7 @@
     "name": "Tae-Hyun Kim",
     "affiliation": "M.S.-Ph.D. Candidate @ POSTECH, Advisor: <a href=\"https://ics-lab.postech.ac.kr/home\" target=\"_blank\" rel=\"noopener noreferrer\">Seon-kyoo Lee</a>",
     "program_period": "B.S. (2022-23)",
-    "research_interests": [
-      "Wireline Interface"
-    ],
+    "research_interests": [],
     "biography": "Tae-Hyun Kim received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. He is currently pursuing a M.S. -Ph.D. degree in the school of electrical engineering at POSTECH, Pohang, South Korea.",
     "email": "",
     "profile_img": "img/th-kim-profile-img.jpg"
@@ -216,9 +188,7 @@
     "name": "Geun-Young Yoo",
     "affiliation": "M.S.-Ph.D. Candidate @ Hanyang University, Advisor: <a href=\"https://niftylab.github.io/\" target=\"_blank\" rel=\"noopener noreferrer\">Jaeduk Han</a>",
     "program_period": "B.S. (2022-23)",
-    "research_interests": [
-      "Wireline Interface"
-    ],
+    "research_interests": [],
     "biography": "Geun-Young Yoo received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. He is currently pursuing a M.S. -Ph.D. degree in the school of electrical engineering at Hanyang University, Seoul, South Korea.",
     "email": "",
     "profile_img": "img/gy-you-profile-img.jpg"
@@ -227,9 +197,7 @@
     "name": "In-Woo Jang",
     "affiliation": "M.S.-Ph.D. Candidate @ KAIST, Advisor: <a href=\"https://krg.kaist.ac.kr/\" target=\"_blank\" rel=\"noopener noreferrer\">Kyeongha Kwon</a>",
     "program_period": "B.S. (2022-23)",
-    "research_interests": [
-      "Wireline Interface"
-    ],
+    "research_interests": [],
     "biography": "In-Woo Jang received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. He is currently pursuing a M.S. -Ph.D. degree in the school of electrical engineering at KAIST, Daejeon, South Korea. The primary research focus is on high-speed wireline IC.",
     "email": "",
     "profile_img": "img/iw-jang-profile-img.jpg"
