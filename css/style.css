@@ -3696,13 +3696,13 @@ a.chip-out:hover { text-decoration: underline; }
   border-bottom: none !important;
   margin: 0 !important;
   padding: 0 !important;
-  font-size: inherit !important;
+  font-size: 1.12em !important;  /* small-caps가 본문과 비슷한 높이로 보이도록 살짝 키움 */
   font-weight: inherit !important;
   color: inherit !important;
   background: none !important;
   font-variant: all-small-caps;
   font-variant-caps: all-small-caps;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.01em;
 }
 
 /* 난독화 이메일 링크 (주변 텍스트 색 상속) */
