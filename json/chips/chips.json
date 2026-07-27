@@ -1,5 +1,81 @@
 [
   {
+    "year": 2026,
+    "month": 4,
+    "process": "28-nm T",
+    "image": "",
+    "name": "112 Gb/s PAM-4 Receiver",
+    "description": "",
+    "outputs": [],
+    "note": "",
+    "raw_date": "2026.04",
+    "designer": "Seung-Hwan Gong",
+    "designer_imgs": [
+      "sh-gong-profile-image.jpg"
+    ]
+  },
+  {
+    "year": 2026,
+    "month": 4,
+    "process": "28-nm T",
+    "image": "",
+    "name": "112 Gb/s DSP-based PAM-2/4/8 Transmitter",
+    "description": "",
+    "outputs": [],
+    "note": "",
+    "raw_date": "2026.04",
+    "designer": "Dong-Ho Kim and Seung-Mo Jin",
+    "designer_imgs": [
+      "dh-kim-new-profile-image.jpg",
+      "sm-jin-profile-img.jpg"
+    ]
+  },
+  {
+    "year": 2026,
+    "month": 4,
+    "process": "28-nm T",
+    "image": "",
+    "name": "PI-based Fractional-N PLL",
+    "description": "",
+    "outputs": [],
+    "note": "",
+    "raw_date": "2026.04",
+    "designer": "In-Ho Han",
+    "designer_imgs": [
+      "ih-han-profile-img.jpg"
+    ]
+  },
+  {
+    "year": 2026,
+    "month": 4,
+    "process": "28-nm T",
+    "image": "",
+    "name": "Time-Domain ADC",
+    "description": "",
+    "outputs": [],
+    "note": "",
+    "raw_date": "2026.04",
+    "designer": "Hyeon-Seo Kim",
+    "designer_imgs": [
+      "sh-kim2-profile-image.png"
+    ]
+  },
+  {
+    "year": 2026,
+    "month": 4,
+    "process": "28-nm T",
+    "image": "",
+    "name": "Time-Interleaving ADC",
+    "description": "",
+    "outputs": [],
+    "note": "",
+    "raw_date": "2026.04",
+    "designer": "Dong-Eon Jin",
+    "designer_imgs": [
+      "de-jin-profile-image.jpg"
+    ]
+  },
+  {
     "year": 2025,
     "month": 9,
     "process": "28-nm T",

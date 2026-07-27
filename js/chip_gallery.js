@@ -51,7 +51,9 @@ $(document).ready(function () {
       '<div class="chip-card2">' +
         '<div class="chip-num">' + num + "</div>" +
         '<div class="chip-thumb">' +
-          '<img src="' + chip.image + '" alt="' + (chip.name || "") + '" loading="lazy">' +
+          (chip.image
+            ? '<img src="' + chip.image + '" alt="' + (chip.name || "") + '" loading="lazy">'
+            : '<div class="chip-thumb-tbd">Chip image<br>to be updated</div>') +
         "</div>" +
         '<div class="chip-info">' +
           (chip.name ? '<p class="chip-name">' + chip.name + "</p>" : "") +
