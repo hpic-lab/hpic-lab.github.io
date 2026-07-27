@@ -81,7 +81,7 @@
   },
   {
     "year": "2026",
-    "month": "03",
+    "month": "06",
     "category": "Journal",
     "text": "\"IGA-SRAM: A Compact SRAM-based IMC Engine for Binary/Ternary Deep Neural Networks with ADC-Less and Error-Aware Training Algorithm\" was published in the <b>IEEE JETCAS</b>. Congratulations!",
     "figures": [
@@ -99,7 +99,7 @@
   },
   {
     "year": "2026",
-    "month": "03",
+    "month": "02",
     "category": "Journal",
     "text": "\"A Pattern-Dependent Pulse Filtering Technique for Low-Jitter Injection-Locked CDR in 28-nm CMOS\" was published in the <b>IEEE TVLSI</b>. Congratulations!",
     "links": [
@@ -228,8 +228,8 @@
     ]
   },
   {
-    "year": "2025",
-    "month": "12",
+    "year": "2026",
+    "month": "04",
     "category": "Journal",
     "text": "\"A Stagger-Tuned Cryogenic Broadband CMOS Three-Stage Cascode LNA for Quantum Computing\" was published in the <b>IEEE MWTL</b>. Congratulations!",
     "links": [
@@ -273,7 +273,7 @@
   },
   {
     "year": "2025",
-    "month": "11",
+    "month": "10",
     "category": "Journal",
     "text": "\"Implementation and Characterization of a Digital Phase-Locked Loop (DPLL) in 65-nm CMOS Technology\" was published in the <b>IDEC JICAS</b>. Congratulations!",
     "links": [
@@ -607,7 +607,7 @@
   },
   {
     "year": "2025",
-    "month": "06",
+    "month": "10",
     "category": "Journal",
     "text": "\"A 14-to-32-Gb/s Deadzone-Free Referenceless CDR With Autocovariance-Based Seamless Frequency Detector in 40-nm CMOS Technology\" was published in the <b>IEEE JSSC</b>. Congratulations!",
     "links": [
@@ -754,7 +754,7 @@
   },
   {
     "year": "2025",
-    "month": "05",
+    "month": "08",
     "category": "Journal",
     "text": "\"A Supply Noise-Insensitive Ring DCO With a Self-Biased Shunt Regulator Array in Wide-Range Digital PLL\" was published in the <b>IEEE TVLSI</b>. Congratulations!",
     "links": [
@@ -934,7 +934,7 @@
   },
   {
     "year": "2024",
-    "month": "07",
+    "month": "11",
     "category": "Journal",
     "text": "\"High-Precision Built-In Phase Noise Measurement Circuit With a Hybrid ΔΣ Time-to-Digital Converter for SoC Clocking Applications\" was published in the <b>IEEE TCAS-II</b>. Congratulations!",
     "links": [
