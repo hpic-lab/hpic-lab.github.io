@@ -67,6 +67,7 @@ $(document).ready(function () {
     "pcb": { t: "PCB & packaging in preparation", c: "st-gray" },
     "measurement": { t: "Measurement in progress", c: "st-amber" },
     "paper": { t: "Paper in preparation", c: "st-blue" },
+    "review": { t: "Manuscript in review", c: "st-blue" },
     "published": { t: "Published", c: "st-green" }
   };
   function statusHTML(chip) {
