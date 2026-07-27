@@ -119,12 +119,33 @@ $(document).ready(function () {
     return fo ? "fab-" + fo + m[1] : "";
   }
 
+  // 이 연도 이하(구형 칩)는 상태 대신 Publication을 표시. Failed는 아이콘으로.
+  var GROUP_MAX = 2022;
+  function isFailedChip(chip) {
+    return /fail/i.test(String(chip.note || "")) || chip.status === "failed";
+  }
+  function failedHTML() {
+    return '<p class="chip-status st-red"><span class="chip-status-dot"></span>Failed</p>';
+  }
+
   // 안1+안B: 연번 + 썸네일 + [제목(우측 공정 배지) / 설명 / 학생 사진]
   function cardHTML(chip, num, showDescFallback) {
     // 실제 설명이 있을 때만 표시 (없으면 상태 문구가 대신함)
     var desc = chip.description && String(chip.description).trim() ? chip.description : "";
     var fab = fabLabel(chip.process);
     var fabCls = fabClass(chip.process);
+
+    // 구형 칩(≤GROUP_MAX): 상태 문구 삭제 → 그 자리에 Publication. Failed면 Failed 아이콘.
+    var isLegacy = chip.year && chip.year <= GROUP_MAX;
+    var statusSlot, outputsRow;
+    if (isLegacy) {
+      statusSlot = isFailedChip(chip) ? failedHTML() : outputsHTML(chip);
+      outputsRow = "";  // Publication을 상태 자리로 옮겼으므로 아래 중복 표시 안 함
+    } else {
+      statusSlot = statusHTML(chip);
+      outputsRow = outputsHTML(chip);
+    }
+
     return (
       '<div class="chip-card2">' +
         '<div class="chip-num">' + num + "</div>" +
@@ -139,10 +160,10 @@ $(document).ready(function () {
                 (fab ? ' <span class="chip-fab ' + fabCls + '">' + fab + "</span>" : "") +
               "</p>"
             : "") +
-          statusHTML(chip) +
+          statusSlot +
           (desc ? '<p class="chip-desc">' + desc + "</p>" : "") +
           keywordsHTML(chip) +
-          outputsHTML(chip) +
+          outputsRow +
           designerHTML(chip) +
         "</div>" +
       "</div>"
@@ -183,7 +204,6 @@ $(document).ready(function () {
     var ctr = { n: chips.length };
 
     // GROUP_MAX 이하 연도는 "~YYYY" 하나로 묶어 접어둠(내부는 연도별 표시)
-    var GROUP_MAX = 2022;
     var indivYears = years.filter(function (y) { return y > GROUP_MAX; });
     var groupYears = years.filter(function (y) { return y <= GROUP_MAX; });
 

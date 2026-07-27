@@ -3693,6 +3693,8 @@ section {
 .chip-card2 .chip-status.st-amber .chip-status-dot { background: #EF9F27; }
 .chip-card2 .chip-status.st-blue  .chip-status-dot { background: #378ADD; }
 .chip-card2 .chip-status.st-green .chip-status-dot { background: #639922; }
+.chip-card2 .chip-status.st-red   { color: #C0392B; }
+.chip-card2 .chip-status.st-red   .chip-status-dot { background: #C0392B; }
 
 /* 상태 문구 옆 논문 대상 학회/저널 배지 */
 .chip-card2 .chip-status-venue {
