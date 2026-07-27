@@ -196,8 +196,8 @@ $(document).ready(function () {
     if (/submit/.test(s)) return 16;
     if (/prepar/.test(s)) return 15;
     if (/revision/.test(s)) return 14;
-    if (/accept/.test(s)) return 13;
-    if (/review/.test(s)) return 12;
+    if (/review/.test(s)) return 13;
+    if (/accept/.test(s)) return 12.5;  // Accepted는 심사중(In Review)보다 아래, 게재(월)보다 위
     // 출판된 논문: 월(1~12), 제목 없이 상태도 없는 예외는 최상단
     return (p.title && p.title.trim()) ? monthNum(p.reference) : 99;
   }
