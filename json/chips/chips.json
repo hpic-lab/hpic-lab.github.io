@@ -449,9 +449,10 @@
     "outputs": [],
     "note": "",
     "raw_date": "Oct. (40-nm T)'24",
-    "designer": "Ji-Ho Kim",
+    "designer": "Ji-Ho Kim and Jae-Hyeon Pyeon",
     "designer_imgs": [
-      "jh-kim-profile-img.png"
+      "jh-kim-profile-img.png",
+      "jh-pyeon-profile-img.png"
     ],
     "keywords": [
       "PLL"
