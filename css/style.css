@@ -3759,16 +3759,14 @@ a.chip-status-venue:hover { background: rgba(55, 138, 221, 0.2); }
   margin-top: 10px;
 }
 
-/* 설계자 사진 + Design Review 링크 (우측 정렬) */
-.chip-card2 .chip-designer-row {
+/* 제목 행: 제목/공정 배지(좌) + Design Review 링크(우측 정렬) */
+.chip-card2 .chip-title-row {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
   gap: 10px;
-  margin-top: 10px;
 }
-.chip-card2 .chip-designer-row .chip-designers {
-  margin-top: 0;
+.chip-card2 .chip-title-row .chip-name {
+  margin: 0;
 }
 .chip-card2 .chip-review {
   margin-left: auto;

@@ -195,16 +195,17 @@ $(document).ready(function () {
             : '<div class="chip-thumb-tbd">Chip image<br>to be updated</div>') +
         "</div>" +
         '<div class="chip-info">' +
-          (chip.name
-            ? '<p class="chip-name">' + chip.name +
-                (fab ? ' <span class="chip-fab ' + fabCls + '">' + fab + "</span>" : "") +
-              "</p>"
-            : "") +
+          '<div class="chip-title-row">' +
+            '<p class="chip-name">' + (chip.name || "") +
+              (fab ? ' <span class="chip-fab ' + fabCls + '">' + fab + "</span>" : "") +
+            "</p>" +
+            reviewHTML(chip) +
+          "</div>" +
           statusSlot +
           (desc ? '<p class="chip-desc">' + desc + "</p>" : "") +
           keywordsHTML(chip) +
           outputsRow +
-          '<div class="chip-designer-row">' + designerHTML(chip) + reviewHTML(chip) + "</div>" +
+          designerHTML(chip) +
         "</div>" +
       "</div>"
     );
