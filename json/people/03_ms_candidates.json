@@ -36,7 +36,14 @@
     "biography": "So-Yeon Kwon received a B.S. degree in the school of Applied Physics at Hanyang University, Ansan, South Korea. She is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. Her research interests include artificial intelligence hardware design and processing in memory (PIM).",
     "email": "sykwon00@hanyang.ac.kr",
     "profile_img": "img/sw-kwon-profile-image.jpeg",
-    "position": ""
+    "position": "",
+    "tape_out_schedule": [
+      {
+        "date": "2026.09",
+        "process": "28-nm T",
+        "topic": "CIM-based Transmitter"
+      }
+    ]
   },
   {
     "name": "In-Ho Han",

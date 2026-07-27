@@ -7,6 +7,24 @@ $(document).ready(function () {
     return path.split('/').pop();
   }
 
+  // 공정 문자열 → Chip Gallery와 동일한 배지 라벨/색상 클래스
+  function tosFabLabel(process) {
+    if (!process) return "";
+    var m = String(process).match(/(\d+)\s*-?\s*nm/i);
+    var node = m ? m[1] + "nm" : "";
+    var suf = String(process).replace(/\d+\s*-?\s*nm/i, "").trim();
+    var fo = /^s/i.test(suf) ? "S" : /^t/i.test(suf) ? "T" : (suf ? suf[0].toUpperCase() : "");
+    return (fo ? fo + " " : "") + node || String(process);
+  }
+  function tosFabClass(process) {
+    if (!process) return "";
+    var m = String(process).match(/(\d+)\s*-?\s*nm/i);
+    if (!m) return "";
+    var suf = String(process).replace(/\d+\s*-?\s*nm/i, "").trim();
+    var fo = /^s/i.test(suf) ? "s" : /^t/i.test(suf) ? "t" : "";
+    return fo ? "fab-" + fo + m[1] : "";
+  }
+
   // ===== Chip Gallery 연동: chips.json → 설계자 이미지 파일명 기준 인덱스 =====
   window.chipsByDesigner = {};
   function chipDateLabel(chip) {
@@ -481,16 +499,22 @@ $(document).ready(function () {
     //updateList("#modal-experience", parsed_experience, "No experience available.");
 
     const parsedTapeOutSchedule = parseData(tape_out_schedule);
-    const formattedTapeOutSchedule = parsedTapeOutSchedule
-      .map((schedule) => `${schedule.date} (${schedule.process})`)
-      .join(", ");
-    if (formattedTapeOutSchedule) {
-      $("#modal-tape_out_schedule").text(formattedTapeOutSchedule);
-      $("#modal-tape_out_schedule-title").show();
+    // 공정을 Chip Gallery와 동일한 색 배지로 표시 (예: "T 28nm"), 뒤에 주제(topic) 붙임
+    const tosHTML = parsedTapeOutSchedule
+      .map(function (s) {
+        var badge = s.process
+          ? ' <span class="chip-fab ' + tosFabClass(s.process) + '">' + tosFabLabel(s.process) + "</span>"
+          : "";
+        var topic = s.topic ? ' &mdash; ' + s.topic : "";
+        return '<span class="tos-item">' + (s.date || "") + badge + topic + "</span>";
+      })
+      .join("");
+    if (tosHTML) {
+      $("#modal-tape_out_schedule").html(tosHTML);
     } else {
       $("#modal-tape_out_schedule").text("To be updated.");
-      $("#modal-tape_out_schedule-title").show();
     }
+    $("#modal-tape_out_schedule-title").show();
 
     // ===== Publications: 홈페이지 Publications 데이터와 자동 연동 (동일 양식) =====
     // 논문 figure의 사진 파일명이 이 사람의 profile_img와 일치하는 논문을 모두 표시

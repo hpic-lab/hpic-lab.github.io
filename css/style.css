@@ -3785,7 +3785,7 @@ a.chip-status-venue:hover { background: rgba(55, 138, 221, 0.2); }
 }
 
 /* 공정 인라인 배지 (제목 옆) */
-.chip-card2 .chip-fab {
+.chip-fab {
   display: inline-block;
   font-size: 0.72rem;
   font-weight: 600;
@@ -3799,10 +3799,13 @@ a.chip-status-venue:hover { background: rgba(55, 138, 221, 0.2); }
   white-space: nowrap;
 }
 /* 공정별 색 구분 (은은하게: 연한 배경 + 같은 계열 글자/테두리) */
-.chip-card2 .chip-fab.fab-t28 { color: #0C447C; background: rgba(12, 68, 124, 0.07); border-color: rgba(12, 68, 124, 0.4); }   /* TSMC 28nm - blue */
-.chip-card2 .chip-fab.fab-s28 { color: #0F766E; background: rgba(15, 118, 110, 0.08); border-color: rgba(15, 118, 110, 0.4); }  /* Samsung 28nm - teal */
-.chip-card2 .chip-fab.fab-t40 { color: #B45309; background: rgba(180, 83, 9, 0.08); border-color: rgba(180, 83, 9, 0.4); }      /* TSMC 40nm - amber */
-.chip-card2 .chip-fab.fab-t65 { color: #6D28D9; background: rgba(109, 40, 217, 0.07); border-color: rgba(109, 40, 217, 0.4); }  /* TSMC 65nm - violet */
+.chip-fab.fab-t28 { color: #0C447C; background: rgba(12, 68, 124, 0.07); border-color: rgba(12, 68, 124, 0.4); }   /* TSMC 28nm - blue */
+.chip-fab.fab-s28 { color: #0F766E; background: rgba(15, 118, 110, 0.08); border-color: rgba(15, 118, 110, 0.4); }  /* Samsung 28nm - teal */
+.chip-fab.fab-t40 { color: #B45309; background: rgba(180, 83, 9, 0.08); border-color: rgba(180, 83, 9, 0.4); }      /* TSMC 40nm - amber */
+.chip-fab.fab-t65 { color: #6D28D9; background: rgba(109, 40, 217, 0.07); border-color: rgba(109, 40, 217, 0.4); }  /* TSMC 65nm - violet */
+
+/* 모달 Tape-out Schedule: 항목별 한 줄 */
+#exampleModal #modal-tape_out_schedule .tos-item { display: block; margin: 2px 0; }
 
 .chip-card2 .chip-desc {
   margin: 0 0 6px;
