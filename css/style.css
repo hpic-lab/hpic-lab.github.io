@@ -1900,14 +1900,14 @@ nav#navbar-main .navbar-collapse {
 }
 
 /* ===== Research 섹션 스타일 (People 서브섹션과 통일) ===== */
-/* Research 서브섹션 제목: 접이식 그룹 헤더(Completed Projects 등)와 동일 크기/스타일로 통일 */
+/* Research 서브섹션 제목: 진한 네이비 (Principal Investigator 등과 동일) */
 #research h5 {
   font-size: 1.2rem;
   font-weight: 700;
-  color: #aaa;
-  border-bottom: 3px solid #e9e9e9;
+  color: #0C447C;
+  border-bottom: 2px solid #0C447C;
   padding-bottom: 6px;
-  margin: 28px 0 10px;
+  margin: 28px 0 12px;
 }
 
 #research h5:first-of-type {
