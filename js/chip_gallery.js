@@ -209,6 +209,26 @@ $(document).ready(function () {
     updateActiveYear();
   }
 
+  // Chip Gallery 콘텐츠까지 스크롤했을 때만 좌측 사이드바(제목+연도) 표시
+  function setupSidebarReveal() {
+    var subnav = document.querySelector("#research .research-subnav");
+    var anchor = document.getElementById("chip-gallery");
+    if (!subnav || !anchor) return;
+    function upd() {
+      // 칩 갤러리 제목이 화면 상단(약 220px) 근처까지 올라오면 표시
+      subnav.classList.toggle("visible", anchor.getBoundingClientRect().top <= 220);
+    }
+    var ticking = false;
+    window.addEventListener("scroll", function () {
+      if (!ticking) {
+        requestAnimationFrame(function () { upd(); ticking = false; });
+        ticking = true;
+      }
+    });
+    window.addEventListener("resize", upd);
+    upd();
+  }
+
   $.getJSON("json/chips/chips.json").done(function (chips) {
     // 메인 Research 미리보기 (접이식)
     $(".chip-timeline-preview").each(function () {
@@ -218,5 +238,7 @@ $(document).ready(function () {
     renderCollapsible("#chip-timeline-full", chips);
     // 좌측 사이드바 연도 네비 (미리보기 기준)
     buildYearNav("#chip-year-nav", "#chip-timeline-preview");
+    // 스크롤 시에만 사이드바 노출
+    setupSidebarReveal();
   });
 });

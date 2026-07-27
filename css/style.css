@@ -84,6 +84,18 @@ h6 {
   margin-top: -10px;
   padding-left: 24px;
 }
+/* 데스크톱: Chip Gallery 콘텐츠까지 스크롤했을 때만 사이드바에 표시 */
+@media (min-width: 992px) {
+  .research-subnav {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.25s ease;
+  }
+  .research-subnav.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+}
 /* Research 하위임을 나타내는 꺾인 실선(└) 커넥터 */
 .research-subnav::before {
   content: "";
@@ -1902,13 +1914,14 @@ nav#navbar-main .navbar-collapse {
 }
 
 /* ===== Research 섹션 스타일 (People 서브섹션과 통일) ===== */
+/* Research 서브섹션 제목: 접이식 그룹 헤더(Completed Projects 등)와 동일 크기/스타일로 통일 */
 #research h5 {
-  font-size: 1.15rem;
+  font-size: 1.2rem;
   font-weight: 700;
-  color: #0C447C;
-  border-bottom: 2px solid #0C447C;
-  padding-bottom: 5px;
-  margin: 28px 0 16px;
+  color: #aaa;
+  border-bottom: 3px solid #e9e9e9;
+  padding-bottom: 6px;
+  margin: 28px 0 10px;
 }
 
 #research h5:first-of-type {
