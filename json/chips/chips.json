@@ -219,27 +219,6 @@
   },
   {
     "year": 2025,
-    "month": 7,
-    "process": "28-nm SS",
-    "image": "img/chip_new/SS_28_25Jul_2GSs_SAR_ADC.png",
-    "name": "2GS/s SAR ADC for Cryogenic",
-    "description": "",
-    "outputs": [],
-    "note": "",
-    "raw_date": "Jul. (28-nm SS)'25",
-    "designer": "Dong-Eon Jin",
-    "designer_imgs": [
-      "de-jin-profile-image.jpg"
-    ],
-    "keywords": [
-      "SAR ADC",
-      "ADC",
-      "Cryogenic"
-    ],
-    "status": "measurement"
-  },
-  {
-    "year": 2025,
     "month": 2,
     "process": "28-nm T",
     "image": "img/chip_new/PICDR_25.png",
@@ -261,6 +240,92 @@
     "status": "review",
     "venue": "IEEE TCAS-II'26",
     "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/28nm/M15987%2828nm%2C%2025.02.12%29"
+  },
+  {
+    "year": 2025,
+    "month": 0,
+    "process": "28-nm S",
+    "image": "img/chip_new/ILO_Cryo_Quantum.jpg",
+    "name": "Injection-Locked Oscillator for Cryogenic Quantum Computing",
+    "description": "",
+    "outputs": [],
+    "note": "",
+    "designer": "In-Ho Han and Jae-Hyeon Pyeon",
+    "designer_imgs": [
+      "ih-han-profile-img.jpg",
+      "jh-pyeon-profile-img.png"
+    ],
+    "keywords": [
+      "ILO",
+      "Clock Generator",
+      "Cryogenic"
+    ],
+    "status": "measurement",
+    "raw_date": "2025"
+  },
+  {
+    "year": 2025,
+    "month": 0,
+    "process": "28-nm S",
+    "image": "img/chip_new/DPLL_Cryo_Quantum.jpg",
+    "name": "Digital PLL for Cryogenic Quantum Computing",
+    "description": "",
+    "outputs": [],
+    "note": "",
+    "designer": "In-Ho Han and Jae-Hyeon Pyeon",
+    "designer_imgs": [
+      "ih-han-profile-img.jpg",
+      "jh-pyeon-profile-img.png"
+    ],
+    "keywords": [
+      "Digital PLL",
+      "Integer-N",
+      "Cryogenic"
+    ],
+    "status": "measurement",
+    "raw_date": "2025"
+  },
+  {
+    "year": 2025,
+    "month": 0,
+    "process": "28-nm S",
+    "image": "img/chip_new/SAR_ADC_15GS.jpg",
+    "name": "1.5GS/s 6-bit SAR ADC",
+    "description": "",
+    "outputs": [],
+    "note": "",
+    "designer": "Hyeon-Seo Kim",
+    "designer_imgs": [
+      "sh-kim2-profile-image.png"
+    ],
+    "keywords": [
+      "SAR ADC",
+      "Loop-unrolled",
+      "Speculative CDAC Switching"
+    ],
+    "status": "measurement",
+    "raw_date": "2025"
+  },
+  {
+    "year": 2025,
+    "month": 7,
+    "process": "28-nm SS",
+    "image": "img/chip_new/SS_28_25Jul_2GSs_SAR_ADC.png",
+    "name": "2GS/s SAR ADC for Cryogenic",
+    "description": "",
+    "outputs": [],
+    "note": "",
+    "raw_date": "Jul. (28-nm SS)'25",
+    "designer": "Dong-Eon Jin",
+    "designer_imgs": [
+      "de-jin-profile-image.jpg"
+    ],
+    "keywords": [
+      "SAR ADC",
+      "ADC",
+      "Cryogenic"
+    ],
+    "status": "measurement"
   },
   {
     "year": 2024,
