@@ -79,7 +79,25 @@
       "ms-choo-profile-img.png"
     ],
     "link": "",
-    "year": "2026"
+    "year": "2026",
+    "review": [
+      {
+        "label": "1st",
+        "link": ""
+      },
+      {
+        "label": "1st Response Letter",
+        "link": ""
+      },
+      {
+        "label": "2nd",
+        "link": ""
+      },
+      {
+        "label": "2nd Response Letter",
+        "link": ""
+      }
+    ]
   },
   {
     "type": "2026",

@@ -2894,6 +2894,49 @@ nav#navbar-main .navbar-collapse {
   margin-bottom: 8px;
 }
 
+/* 저자 줄 + Members only 심사자료 (우측 정렬) */
+.pub2-authors-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.pub2-authors-row .pub2-authors {
+  flex: 1;
+  min-width: 0;
+  margin-bottom: 8px;
+}
+.pub2-review {
+  margin-left: auto;
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+.pub2-review-label {
+  font-size: 0.72rem;
+  color: #8a8f98;
+  white-space: nowrap;
+}
+.pub2-rv-link {
+  font-size: 0.72rem;
+  color: #0C447C;
+  border: 1px solid rgba(12, 68, 124, 0.35);
+  background: rgba(12, 68, 124, 0.05);
+  border-radius: 5px;
+  padding: 2px 8px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.pub2-rv-link:hover { background: rgba(12, 68, 124, 0.12); }
+.pub2-rv-tbd {
+  color: #9aa1a8;
+  border-color: #e0ded7;
+  background: #f3f2ee;
+  cursor: default;
+}
+
 @media (max-width: 576px) {
   .pub2-entry {
     flex-wrap: wrap;

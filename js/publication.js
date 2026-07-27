@@ -69,6 +69,30 @@ $(document).ready(function () {
     }
   }
 
+  // ===== Journal 심사 과정 자료 (Teams · 멤버 전용) =====
+  // journal.json 항목에 아래처럼 넣으면 저자 우측에 "Members only" 링크가 표시됩니다.
+  //   "review": [ { "label": "1st", "link": "https://.../..." },
+  //               { "label": "1st Response Letter", "link": "" },  // link 비우면 회색 placeholder
+  //               { "label": "2nd", "link": "" } ]
+  // link 가 비어 있으면 회색(비활성) 표시, 채우면 클릭 가능한 링크가 됩니다.
+  function reviewProcessHTML(pub, isJournal) {
+    if (!isJournal) return "";
+    var items = pub.review || [];
+    if (!items.length) return "";
+    var chips = items.map(function (it) {
+      var label = typeof it === "string" ? it : (it && it.label) || "";
+      var link = (it && it.link) ? it.link : "";
+      if (!label) return "";
+      return link
+        ? '<a class="pub2-rv-link" href="' + link + '" target="_blank" rel="noopener noreferrer">' + label + "</a>"
+        : '<span class="pub2-rv-link pub2-rv-tbd" title="To be updated">' + label + "</span>";
+    }).join("");
+    if (!chips) return "";
+    return '<div class="pub2-review">' +
+      '<span class="pub2-review-label" title="Teams members only">&#128274; Members only</span>' +
+      chips + "</div>";
+  }
+
   // 상태·수상 배지 (연구분야 태그는 사용하지 않음)
   function tagsHTML(pub) {
     var html = "";
@@ -208,6 +232,7 @@ $(document).ready(function () {
 
       var hasTitle = pub.title && pub.title.trim() !== "";
       var num = hasTitle ? n-- : "&ndash;";
+      var isJournal = venueClass === "pub2-venue-journal";
 
       var v = venueLabel(pub.status);
 
@@ -265,6 +290,13 @@ $(document).ready(function () {
         window.pubTitleIndex[normTitle(pub.title)] = { id: entryId, tab: tabTarget };
       }
 
+      var reviewGroup = reviewProcessHTML(pub, isJournal);
+      // 저자 줄: (좌) 저자 + (우) Members only 심사자료. 심사자료가 있으면 flex 행으로 감쌈.
+      var authorsLine = hasTitle ? authorsHTML(pub.authors) : "";
+      var authorsSection = reviewGroup
+        ? '<div class="pub2-authors-row"><div class="pub2-authors">' + authorsLine + "</div>" + reviewGroup + "</div>"
+        : (hasTitle ? '<div class="pub2-authors">' + authorsLine + "</div>" : "");
+
       body.append(
         '<div class="pub2-entry"' + (entryId ? ' id="' + entryId + '"' : "") + ">" +
           '<div class="pub2-num">' + num + "</div>" +
@@ -275,8 +307,7 @@ $(document).ready(function () {
           '<div class="pub2-body">' +
             (titleHTML ? '<div class="pub2-title">' + titleHTML + "</div>" : "") +
             (hasTitle ? '<div class="pub2-src">' + srcText + "</div>" : "") +
-            // 미출판(제목 없음) 논문은 저자 이름 대신 사진만 표시
-            (hasTitle ? '<div class="pub2-authors">' + authorsHTML(pub.authors) + "</div>" : "") +
+            authorsSection +
             '<div class="pub-figures">' + figuresHTML(pub) + "</div>" +
           "</div>" +
         "</div>"
