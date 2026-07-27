@@ -199,9 +199,7 @@
     "image": "img/chip_new/PICDR_25.png",
     "name": "PI-based CDR",
     "description": "",
-    "outputs": [
-      "IEEE TCAS-II"
-    ],
+    "outputs": [],
     "note": "",
     "raw_date": "Feb. (28-nm T)'25",
     "designer": "Dong-Hoe Heo and Seung-Hwan Gong",
@@ -213,7 +211,8 @@
       "CDR",
       "Phase Interpolator"
     ],
-    "status": "review"
+    "status": "review",
+    "venue": "IEEE TCAS-II"
   },
   {
     "year": 2024,

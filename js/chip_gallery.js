@@ -73,7 +73,17 @@ $(document).ready(function () {
   function statusHTML(chip) {
     var s = STATUS_MAP[chip.status];
     if (!s) return "";
-    return '<p class="chip-status ' + s.c + '"><span class="chip-status-dot"></span>' + s.t + "</p>";
+    // 상태 문구 옆 논문 대상 학회/저널 배지 (예: "Manuscript in review  [IEEE TCAS-II]")
+    var venue = "";
+    if (chip.venue) {
+      var label = typeof chip.venue === "string" ? chip.venue : (chip.venue.label || "");
+      if (label) {
+        venue = chip.venue.link
+          ? '<a class="chip-status-venue" href="' + chip.venue.link + '" target="_blank" rel="noopener noreferrer">' + label + "</a>"
+          : '<span class="chip-status-venue">' + label + "</span>";
+      }
+    }
+    return '<p class="chip-status ' + s.c + '"><span class="chip-status-dot"></span><span class="chip-status-txt">' + s.t + "</span>" + venue + "</p>";
   }
 
   // 키워드 태그 (임시, 최대 5개)

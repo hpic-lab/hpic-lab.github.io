@@ -3694,6 +3694,22 @@ section {
 .chip-card2 .chip-status.st-blue  .chip-status-dot { background: #378ADD; }
 .chip-card2 .chip-status.st-green .chip-status-dot { background: #639922; }
 
+/* 상태 문구 옆 논문 대상 학회/저널 배지 */
+.chip-card2 .chip-status-venue {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #378ADD;
+  background: rgba(55, 138, 221, 0.10);
+  border: 1px solid rgba(55, 138, 221, 0.35);
+  border-radius: 4px;
+  padding: 0 7px;
+  white-space: nowrap;
+  text-decoration: none;
+}
+a.chip-status-venue:hover { background: rgba(55, 138, 221, 0.2); }
+
 /* 키워드 태그 (임시) */
 .chip-card2 .chip-kws {
   display: flex;
