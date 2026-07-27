@@ -45,8 +45,10 @@ $(document).ready(function () {
       {
         date: "Apr. 2024 - Mar. 2029",
         title:
-          "Development of High-Speed, Low-Power, and Low-Noise Clocking Network Systems for Optical Communication Chiplets",
+          "광통신 칩렛 향 고속, 저전력, 저잡음 클럭킹 네트워크 시스템 개발",
         sponsor: "National Research Foundation (NRF) of Korea; 우수신진연구",
+        desc:
+          "Development of High-Speed, Low-Power, and Low-Noise Clocking Network Systems for Optical Communication Chiplets. 2024년도 우수신진연구 신규과제 (개인기초연구사업 — 과학기술정보통신부 소관, 한국연구재단(NRF) 시행). 연구기간 최대 5년: 1단계(1~3차년), 2단계(4~5차년). ※ 정확한 협약 시작·종료 월은 문서상 미기재.",
       },
       {
         date: "Apr. 2022 - Dec. 2024",
