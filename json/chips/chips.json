@@ -123,8 +123,8 @@
     "year": 2026,
     "month": 4,
     "process": "28-nm T",
-    "image": "",
-    "name": "Time-Interleaving ADC",
+    "image": "img/chip_new/TI_SAR_ADC_8GS_26.png",
+    "name": "8GS/s Time-Interleaving SAR ADC",
     "description": "",
     "outputs": [],
     "note": "",
@@ -135,8 +135,11 @@
       "dh-kim-new-profile-image.jpg"
     ],
     "keywords": [
-      "Time-Interleaved",
-      "ADC"
+      "8GS/s",
+      "4Way",
+      "Speculative",
+      "Loop-Unrolled",
+      "Comparator Offset Calibration"
     ],
     "status": "awaiting",
     "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/28nm/M17949%2828nm%2C%2026.04.29%29"
