@@ -64,10 +64,10 @@ $(document).ready(function () {
     );
   }
 
-  // 칩이 있는 연도만 표시 (빈 연도 placeholder 사용 안 함)
-  var PLACEHOLDER_YEARS = [];
+  // 칩이 없어도 항상 표시할 연도 (2026: 아직 칩 없음 → "To be updated.")
+  var PLACEHOLDER_YEARS = [2026];
   // 기본 펼침 연도. 나머지 연도는 접힌 상태로 표시.
-  var DEFAULT_OPEN_YEARS = [2026, 2025, 2024];
+  var DEFAULT_OPEN_YEARS = [2026, 2025];
 
   // 월 라벨 없이 연번을 매겨 카드 나열 (ctr: 감소 카운터 객체)
   function yearBlock($body, chips, ctr, showDescFallback) {
@@ -109,7 +109,6 @@ $(document).ready(function () {
       var $header = $(
         '<div class="chip-year chip-year-toggle' + (open ? "" : " collapsed") + '" data-year="' + y + '" role="button" tabindex="0">' +
           y +
-          (yc.length ? "" : ' <span class="chip-year-soon">(Coming soon)</span>') +
           '<span class="chip-year-caret">&#9662;</span>' +
         "</div>"
       );

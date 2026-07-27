@@ -2967,8 +2967,11 @@ section {
   z-index: 0;
 }
 
-/* 모바일: 히어로 높이를 줄여 텍스트 아래 어두운 여백을 잘라냄 */
+/* 모바일: 히어로 높이를 줄여 텍스트 아래 어두운/회색 여백을 잘라냄 */
 @media (max-width: 767px) {
+  #carousel-autoplaying {
+    height: 520px;
+  }
   .carousel-item img {
     height: 520px;
     object-position: center top;
