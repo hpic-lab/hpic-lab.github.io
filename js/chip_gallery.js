@@ -42,25 +42,23 @@ $(document).ready(function () {
     return "";
   }
 
-  function cardHTML(chip, showDescFallback) {
+  // 안1: 연번 + 썸네일 + [제목 / 공정 / 설명 / 학생 사진]
+  function cardHTML(chip, num, showDescFallback) {
     var raw = chip.description && String(chip.description).trim() ? chip.description : "";
     // 최근 연도는 미기재 시 "To be updated." 표시, ~그룹(과거) 칩은 표시 안 함
     var desc = raw || (showDescFallback ? "To be updated." : "");
     return (
       '<div class="chip-card2">' +
+        '<div class="chip-num">' + num + "</div>" +
         '<div class="chip-thumb">' +
           '<img src="' + chip.image + '" alt="' + (chip.name || "") + '" loading="lazy">' +
         "</div>" +
         '<div class="chip-info">' +
           (chip.name ? '<p class="chip-name">' + chip.name + "</p>" : "") +
-          // 2번째 줄: 공정(좌) + 설계자 사진(우)
-          '<div class="chip-meta-row">' +
-            '<span class="chip-proc">' + (chip.process || "") + "</span>" +
-            designerHTML(chip) +
-          "</div>" +
-          // 3번째 줄 이후: Description
+          (chip.process ? '<p class="chip-proc">' + chip.process + "</p>" : "") +
           (desc ? '<p class="chip-desc">' + desc + "</p>" : "") +
           outputsHTML(chip) +
+          designerHTML(chip) +
         "</div>" +
       "</div>"
     );
@@ -71,15 +69,10 @@ $(document).ready(function () {
   // 기본 펼침 연도. 나머지 연도는 접힌 상태로 표시.
   var DEFAULT_OPEN_YEARS = [2026, 2025, 2024];
 
-  function monthBlock($body, chips, showDescFallback) {
-    var curMonth = null;
+  // 월 라벨 없이 연번을 매겨 카드 나열 (ctr: 감소 카운터 객체)
+  function yearBlock($body, chips, ctr, showDescFallback) {
     chips.forEach(function (chip) {
-      var mLabel = monthLabel(chip);
-      if (mLabel !== curMonth) {
-        curMonth = mLabel;
-        if (mLabel) $body.append('<div class="chip-month">' + mLabel + "</div>");
-      }
-      $body.append(cardHTML(chip, showDescFallback));
+      $body.append(cardHTML(chip, ctr.n--, showDescFallback));
     });
   }
 
@@ -101,6 +94,9 @@ $(document).ready(function () {
       return b - a;
     });
 
+    // 연번: 전체 칩 수부터 감소 (최신이 큰 번호)
+    var ctr = { n: chips.length };
+
     // GROUP_MAX 이하 연도는 "~YYYY" 하나로 묶어 접어둠(내부는 연도별 표시)
     var GROUP_MAX = 2022;
     var indivYears = years.filter(function (y) { return y > GROUP_MAX; });
@@ -119,7 +115,7 @@ $(document).ready(function () {
       );
       var $body = $('<div class="chip-year-body"></div>');
       if (yc.length) {
-        monthBlock($body, yc, true);
+        yearBlock($body, yc, ctr, true);
       } else {
         $body.append('<p class="chip-empty">To be updated.</p>');
       }
@@ -143,7 +139,7 @@ $(document).ready(function () {
           (yc.length ? "" : ' <span class="chip-year-soon">(Coming soon)</span>') +
           "</div>"
         );
-        if (yc.length) monthBlock($gb, yc, false);
+        if (yc.length) yearBlock($gb, yc, ctr, false);
         else $gb.append('<p class="chip-empty">To be updated.</p>');
       });
       $gb.hide();

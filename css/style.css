@@ -3517,16 +3517,6 @@ section {
 
 .chip-year-body {
   padding-left: 2px;
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 12px 22px;
-  align-items: start;
-}
-/* 월 라벨·서브연도·빈 안내는 한 줄 전체 차지 */
-.chip-year-body .chip-month,
-.chip-year-body .chip-year-sub,
-.chip-year-body .chip-empty {
-  grid-column: 1 / -1;
 }
 /* ~YYYY 묶음 내부 연도 서브헤더 (Publications .pub2-subyear 와 동일) */
 .chip-year-sub {
@@ -3605,9 +3595,23 @@ section {
   border: none;
 }
 
+/* 연번 (Publications 스타일) */
+.chip-card2 .chip-num {
+  flex-shrink: 0;
+  min-width: 26px;
+  text-align: center;
+  padding-top: 2px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #999;
+}
+
 .chip-card2 .chip-info {
   flex: 1;
   min-width: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .chip-card2 .chip-name {
@@ -3618,25 +3622,9 @@ section {
 }
 
 .chip-card2 .chip-proc {
-  margin: 0;
+  margin: 0 0 6px;
   font-size: 0.9rem;
   color: #888;
-}
-
-/* 2번째 줄: 공정(좌) + 설계자(우) */
-.chip-card2 .chip-meta-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 10px;
-  margin: 2px 0 8px;
-}
-.chip-card2 .chip-meta-row .chip-designers {
-  margin: 0;
-  flex-shrink: 0;
-}
-.chip-card2 .chip-meta-row .chip-designer {
-  margin: 0;
 }
 
 .chip-card2 .chip-desc {
@@ -3644,6 +3632,11 @@ section {
   font-size: 0.95rem;
   color: #555;
   line-height: 1.55;
+}
+
+/* 학생 사진은 카드 하단에 정렬 */
+.chip-card2 .chip-info .chip-designers {
+  margin-top: auto;
 }
 
 .chip-outs {
