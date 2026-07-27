@@ -3586,15 +3586,20 @@ section {
   border-radius: 12px;
   padding: 14px 16px;
   margin-bottom: 12px;
+  height: 178px;          /* 모든 카드 동일 높이 */
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .chip-card2 .chip-thumb {
   flex-shrink: 0;
   width: 150px;
+  height: 150px;          /* 고정 정사각 박스 */
 }
 
 .chip-card2 .chip-thumb img {
   width: 100%;
+  height: 100%;           /* 박스에 맞춰 축소, 비율 유지(contain) */
   border-radius: 8px;
   border: 1px solid #eee;
   object-fit: contain;
