@@ -14,10 +14,11 @@
       "sh-gong-profile-image.jpg"
     ],
     "keywords": [
-      "PAM-4",
-      "Receiver",
-      "High-Speed"
-    ]
+      "112 Gb/s",
+      "CTLE Adaptation",
+      "On-chip Probing"
+    ],
+    "status": "measurement"
   },
   {
     "year": 2026,
@@ -39,7 +40,8 @@
       "DSP",
       "Transmitter",
       "High-Speed"
-    ]
+    ],
+    "status": "measurement"
   },
   {
     "year": 2026,
@@ -59,7 +61,8 @@
       "Fractional-N",
       "PLL",
       "Phase Interpolator"
-    ]
+    ],
+    "status": "measurement"
   },
   {
     "year": 2026,
@@ -78,7 +81,8 @@
     "keywords": [
       "Time-Domain",
       "ADC"
-    ]
+    ],
+    "status": "measurement"
   },
   {
     "year": 2026,
@@ -97,7 +101,8 @@
     "keywords": [
       "Time-Interleaved",
       "ADC"
-    ]
+    ],
+    "status": "measurement"
   },
   {
     "year": 2025,
@@ -117,7 +122,8 @@
       "PAM-4",
       "Receiver",
       "High-Speed"
-    ]
+    ],
+    "status": "measurement"
   },
   {
     "year": 2025,
@@ -137,7 +143,8 @@
     "keywords": [
       "Transmitter",
       "High-Speed"
-    ]
+    ],
+    "status": "measurement"
   },
   {
     "year": 2025,
@@ -157,7 +164,8 @@
       "DSP",
       "Receiver",
       "High-Speed"
-    ]
+    ],
+    "status": "measurement"
   },
   {
     "year": 2025,
@@ -177,7 +185,8 @@
       "SAR ADC",
       "ADC",
       "Cryogenic"
-    ]
+    ],
+    "status": "measurement"
   },
   {
     "year": 2025,
@@ -196,7 +205,8 @@
     "keywords": [
       "CDR",
       "Phase Interpolator"
-    ]
+    ],
+    "status": "measurement"
   },
   {
     "year": 2024,
@@ -215,7 +225,8 @@
     "keywords": [
       "eDRAM",
       "In-Memory Computing"
-    ]
+    ],
+    "status": "measurement"
   },
   {
     "year": 2024,
@@ -232,7 +243,8 @@
     "keywords": [
       "eDRAM",
       "In-Memory Computing"
-    ]
+    ],
+    "status": "measurement"
   },
   {
     "year": 2024,
@@ -251,7 +263,8 @@
     "keywords": [
       "ADPLL",
       "Phase Interpolator"
-    ]
+    ],
+    "status": "measurement"
   },
   {
     "year": 2024,
@@ -270,7 +283,8 @@
     "keywords": [
       "Injection-Locked Osc.",
       "PUF"
-    ]
+    ],
+    "status": "measurement"
   },
   {
     "year": 2024,
@@ -290,7 +304,8 @@
       "DSP",
       "Receiver",
       "ADC"
-    ]
+    ],
+    "status": "measurement"
   },
   {
     "year": 2024,
@@ -308,7 +323,8 @@
     ],
     "keywords": [
       "PLL"
-    ]
+    ],
+    "status": "measurement"
   },
   {
     "year": 2024,
@@ -327,7 +343,8 @@
     "keywords": [
       "eDRAM",
       "In-Memory Computing"
-    ]
+    ],
+    "status": "measurement"
   },
   {
     "year": 2024,
@@ -346,7 +363,8 @@
     "keywords": [
       "CDR",
       "Phase Interpolator"
-    ]
+    ],
+    "status": "measurement"
   },
   {
     "year": 2024,
@@ -365,7 +383,8 @@
     "keywords": [
       "eDRAM",
       "In-Memory Computing"
-    ]
+    ],
+    "status": "measurement"
   },
   {
     "year": 2024,
@@ -384,7 +403,8 @@
     "keywords": [
       "Injection-Locked Osc.",
       "PUF"
-    ]
+    ],
+    "status": "measurement"
   },
   {
     "year": 2023,
@@ -401,7 +421,8 @@
     "keywords": [
       "ADPLL",
       "Supply/Regulator"
-    ]
+    ],
+    "status": "measurement"
   },
   {
     "year": 2023,
@@ -419,7 +440,8 @@
       "ADPLL",
       "Injection-Locked Osc.",
       "Calibration"
-    ]
+    ],
+    "status": "measurement"
   },
   {
     "year": 2023,
@@ -439,7 +461,8 @@
       "In-Memory Computing",
       "SRAM",
       "AI Accelerator"
-    ]
+    ],
+    "status": "measurement"
   },
   {
     "year": 2023,
@@ -457,7 +480,8 @@
     ],
     "keywords": [
       "DPLL"
-    ]
+    ],
+    "status": "measurement"
   },
   {
     "year": 2023,
@@ -474,7 +498,8 @@
     "keywords": [
       "PAM-4",
       "Transmitter"
-    ]
+    ],
+    "status": "measurement"
   },
   {
     "year": 2023,
@@ -491,7 +516,8 @@
     "keywords": [
       "Equalizer",
       "High-Speed"
-    ]
+    ],
+    "status": "measurement"
   },
   {
     "year": 2023,
@@ -509,7 +535,8 @@
     ],
     "keywords": [
       "ADPLL"
-    ]
+    ],
+    "status": "measurement"
   },
   {
     "year": 2023,
@@ -528,7 +555,8 @@
     "keywords": [
       "Injection-Locked Osc.",
       "Oscillator"
-    ]
+    ],
+    "status": "measurement"
   },
   {
     "year": 2023,
@@ -546,7 +574,8 @@
     ],
     "keywords": [
       "ADC"
-    ]
+    ],
+    "status": "measurement"
   },
   {
     "year": 2019,
@@ -566,7 +595,8 @@
     "keywords": [
       "CDR",
       "Clocking"
-    ]
+    ],
+    "status": "measurement"
   },
   {
     "year": 2019,
@@ -584,7 +614,8 @@
     "designer_imgs": [],
     "keywords": [
       "Clocking"
-    ]
+    ],
+    "status": "measurement"
   },
   {
     "year": 2019,
@@ -603,7 +634,8 @@
     "designer_imgs": [],
     "keywords": [
       "Supply/Regulator"
-    ]
+    ],
+    "status": "measurement"
   },
   {
     "year": 2018,
@@ -622,7 +654,8 @@
     "designer_imgs": [],
     "keywords": [
       "CDR"
-    ]
+    ],
+    "status": "measurement"
   },
   {
     "year": 2018,
@@ -640,7 +673,8 @@
     "designer_imgs": [],
     "keywords": [
       "Clocking"
-    ]
+    ],
+    "status": "measurement"
   },
   {
     "year": 2017,
@@ -659,7 +693,8 @@
     "designer_imgs": [],
     "keywords": [
       "Clocking"
-    ]
+    ],
+    "status": "measurement"
   },
   {
     "year": 2017,
@@ -677,7 +712,8 @@
     "designer_imgs": [],
     "keywords": [
       "Receiver"
-    ]
+    ],
+    "status": "measurement"
   },
   {
     "year": 2017,
@@ -694,7 +730,8 @@
     "keywords": [
       "CDR",
       "Clocking"
-    ]
+    ],
+    "status": "measurement"
   },
   {
     "year": 2016,
@@ -712,7 +749,8 @@
     "designer_imgs": [],
     "keywords": [
       "Clocking"
-    ]
+    ],
+    "status": "measurement"
   },
   {
     "year": 2016,
@@ -728,7 +766,8 @@
     "designer_imgs": [],
     "keywords": [
       "CDR"
-    ]
+    ],
+    "status": "measurement"
   },
   {
     "year": 2015,
@@ -747,7 +786,8 @@
     "designer_imgs": [],
     "keywords": [
       "Clocking"
-    ]
+    ],
+    "status": "measurement"
   },
   {
     "year": 2015,
@@ -763,6 +803,7 @@
     "designer_imgs": [],
     "keywords": [
       "CDR"
-    ]
+    ],
+    "status": "measurement"
   }
 ]

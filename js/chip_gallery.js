@@ -42,6 +42,20 @@ $(document).ready(function () {
     return "";
   }
 
+  // 진행 상태 (단계 → 문구/색)
+  var STATUS_MAP = {
+    "tapeout": { t: "Tape-out completed", c: "st-gray" },
+    "pcb": { t: "PCB & packaging in preparation", c: "st-gray" },
+    "measurement": { t: "Measurement in progress", c: "st-amber" },
+    "paper": { t: "Paper in preparation", c: "st-blue" },
+    "published": { t: "Published", c: "st-green" }
+  };
+  function statusHTML(chip) {
+    var s = STATUS_MAP[chip.status];
+    if (!s) return "";
+    return '<p class="chip-status ' + s.c + '"><span class="chip-status-dot"></span>' + s.t + "</p>";
+  }
+
   // 키워드 태그 (임시, 최대 5개)
   function keywordsHTML(chip) {
     var ks = (chip.keywords || []).slice(0, 5);
@@ -67,9 +81,8 @@ $(document).ready(function () {
 
   // 안1+안B: 연번 + 썸네일 + [제목(우측 공정 배지) / 설명 / 학생 사진]
   function cardHTML(chip, num, showDescFallback) {
-    var raw = chip.description && String(chip.description).trim() ? chip.description : "";
-    // 최근 연도는 미기재 시 "To be updated." 표시, ~그룹(과거) 칩은 표시 안 함
-    var desc = raw || (showDescFallback ? "To be updated." : "");
+    // 실제 설명이 있을 때만 표시 (없으면 상태 문구가 대신함)
+    var desc = chip.description && String(chip.description).trim() ? chip.description : "";
     var fab = fabLabel(chip.process);
     return (
       '<div class="chip-card2">' +
@@ -85,6 +98,7 @@ $(document).ready(function () {
                 (fab ? ' <span class="chip-fab">' + fab + "</span>" : "") +
               "</p>"
             : "") +
+          statusHTML(chip) +
           (desc ? '<p class="chip-desc">' + desc + "</p>" : "") +
           keywordsHTML(chip) +
           outputsHTML(chip) +

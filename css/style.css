@@ -3644,6 +3644,27 @@ section {
   color: #888;
 }
 
+/* 진행 상태 문구 */
+.chip-card2 .chip-status {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin: 4px 0 2px;
+  font-size: 0.92rem;
+  color: #666;
+}
+.chip-card2 .chip-status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  background: #888;
+}
+.chip-card2 .chip-status.st-gray  .chip-status-dot { background: #9a9a9a; }
+.chip-card2 .chip-status.st-amber .chip-status-dot { background: #EF9F27; }
+.chip-card2 .chip-status.st-blue  .chip-status-dot { background: #378ADD; }
+.chip-card2 .chip-status.st-green .chip-status-dot { background: #639922; }
+
 /* 키워드 태그 (임시) */
 .chip-card2 .chip-kws {
   display: flex;
