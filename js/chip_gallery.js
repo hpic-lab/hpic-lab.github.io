@@ -42,6 +42,16 @@ $(document).ready(function () {
     return "";
   }
 
+  // 키워드 태그 (임시, 최대 5개)
+  function keywordsHTML(chip) {
+    var ks = (chip.keywords || []).slice(0, 5);
+    if (!ks.length) return "";
+    var tags = ks.map(function (k) {
+      return '<span class="chip-kw">' + k + "</span>";
+    }).join("");
+    return '<div class="chip-kws">' + tags + "</div>";
+  }
+
   // 공정 문자열 → 파운드리 배지 라벨 ("28-nm T" → "T 28nm", "28-nm SS" → "S 28nm")
   function fabLabel(process) {
     if (!process) return "";
@@ -76,6 +86,7 @@ $(document).ready(function () {
               "</p>"
             : "") +
           (desc ? '<p class="chip-desc">' + desc + "</p>" : "") +
+          keywordsHTML(chip) +
           outputsHTML(chip) +
           designerHTML(chip) +
         "</div>" +

@@ -3644,6 +3644,22 @@ section {
   color: #888;
 }
 
+/* 키워드 태그 (임시) */
+.chip-card2 .chip-kws {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 8px 0 2px;
+}
+.chip-card2 .chip-kw {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #5F5E5A;
+  background: #F1EFE8;
+  padding: 2px 9px;
+  border-radius: 999px;
+}
+
 /* 공정 인라인 배지 (제목 옆) */
 .chip-card2 .chip-fab {
   display: inline-block;

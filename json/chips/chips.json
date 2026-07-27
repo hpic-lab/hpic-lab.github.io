@@ -12,6 +12,11 @@
     "designer": "Seung-Hwan Gong",
     "designer_imgs": [
       "sh-gong-profile-image.jpg"
+    ],
+    "keywords": [
+      "PAM-4",
+      "Receiver",
+      "High-Speed"
     ]
   },
   {
@@ -28,6 +33,12 @@
     "designer_imgs": [
       "dh-kim-new-profile-image.jpg",
       "sm-jin-profile-img.jpg"
+    ],
+    "keywords": [
+      "PAM-2/4/8",
+      "DSP",
+      "Transmitter",
+      "High-Speed"
     ]
   },
   {
@@ -43,6 +54,11 @@
     "designer": "In-Ho Han",
     "designer_imgs": [
       "ih-han-profile-img.jpg"
+    ],
+    "keywords": [
+      "Fractional-N",
+      "PLL",
+      "Phase Interpolator"
     ]
   },
   {
@@ -58,6 +74,10 @@
     "designer": "Hyeon-Seo Kim",
     "designer_imgs": [
       "sh-kim2-profile-image.png"
+    ],
+    "keywords": [
+      "Time-Domain",
+      "ADC"
     ]
   },
   {
@@ -73,6 +93,10 @@
     "designer": "Dong-Eon Jin",
     "designer_imgs": [
       "de-jin-profile-image.jpg"
+    ],
+    "keywords": [
+      "Time-Interleaved",
+      "ADC"
     ]
   },
   {
@@ -88,6 +112,11 @@
     "designer": "Seung-Hwan Gong",
     "designer_imgs": [
       "sh-gong-profile-image.jpg"
+    ],
+    "keywords": [
+      "PAM-4",
+      "Receiver",
+      "High-Speed"
     ]
   },
   {
@@ -104,6 +133,10 @@
     "designer_imgs": [
       "dh-kim-new-profile-image.jpg",
       "sm-jin-profile-img.jpg"
+    ],
+    "keywords": [
+      "Transmitter",
+      "High-Speed"
     ]
   },
   {
@@ -119,6 +152,11 @@
     "designer": "Jae-Geon Lee",
     "designer_imgs": [
       "jg-lee-profile-img.jpeg"
+    ],
+    "keywords": [
+      "DSP",
+      "Receiver",
+      "High-Speed"
     ]
   },
   {
@@ -134,6 +172,11 @@
     "designer": "Dong-Eon Jin",
     "designer_imgs": [
       "de-jin-profile-image.jpg"
+    ],
+    "keywords": [
+      "SAR ADC",
+      "ADC",
+      "Cryogenic"
     ]
   },
   {
@@ -149,6 +192,10 @@
     "designer": "Dong-Hoe Heo",
     "designer_imgs": [
       "dh-heo-profile-img.jpg"
+    ],
+    "keywords": [
+      "CDR",
+      "Phase Interpolator"
     ]
   },
   {
@@ -164,6 +211,10 @@
     "designer": "Dong-Hyun Lee",
     "designer_imgs": [
       "dh-lee-profile-img.png"
+    ],
+    "keywords": [
+      "eDRAM",
+      "In-Memory Computing"
     ]
   },
   {
@@ -177,7 +228,11 @@
     "note": "",
     "raw_date": "Nov. (65-nm T)'24",
     "designer": "",
-    "designer_imgs": []
+    "designer_imgs": [],
+    "keywords": [
+      "eDRAM",
+      "In-Memory Computing"
+    ]
   },
   {
     "year": 2024,
@@ -192,6 +247,10 @@
     "designer": "Kyu-Ran Park",
     "designer_imgs": [
       "kr-park-profile-img.png"
+    ],
+    "keywords": [
+      "ADPLL",
+      "Phase Interpolator"
     ]
   },
   {
@@ -207,6 +266,10 @@
     "designer": "Kang-Min Kim",
     "designer_imgs": [
       "km-kim-profile-img.jpg"
+    ],
+    "keywords": [
+      "Injection-Locked Osc.",
+      "PUF"
     ]
   },
   {
@@ -222,6 +285,11 @@
     "designer": "Sang-Hyeon Ok",
     "designer_imgs": [
       "sh-ok-profile-img.jpg"
+    ],
+    "keywords": [
+      "DSP",
+      "Receiver",
+      "ADC"
     ]
   },
   {
@@ -237,6 +305,9 @@
     "designer": "Ji-Ho Kim",
     "designer_imgs": [
       "jh-kim-profile-img.png"
+    ],
+    "keywords": [
+      "PLL"
     ]
   },
   {
@@ -252,6 +323,10 @@
     "designer": "Woo-Suk Jeong",
     "designer_imgs": [
       "ws-jung-profile-img.png"
+    ],
+    "keywords": [
+      "eDRAM",
+      "In-Memory Computing"
     ]
   },
   {
@@ -267,6 +342,10 @@
     "designer": "Dong-Hoe Heo",
     "designer_imgs": [
       "dh-heo-profile-img.jpg"
+    ],
+    "keywords": [
+      "CDR",
+      "Phase Interpolator"
     ]
   },
   {
@@ -282,6 +361,10 @@
     "designer": "Dong-Hyun Lee",
     "designer_imgs": [
       "dh-lee-profile-img.png"
+    ],
+    "keywords": [
+      "eDRAM",
+      "In-Memory Computing"
     ]
   },
   {
@@ -297,6 +380,10 @@
     "designer": "Kang-Min Kim",
     "designer_imgs": [
       "km-kim-profile-img.jpg"
+    ],
+    "keywords": [
+      "Injection-Locked Osc.",
+      "PUF"
     ]
   },
   {
@@ -310,7 +397,11 @@
     "note": "",
     "raw_date": "Dec (65-nm T)'23",
     "designer": "",
-    "designer_imgs": []
+    "designer_imgs": [],
+    "keywords": [
+      "ADPLL",
+      "Supply/Regulator"
+    ]
   },
   {
     "year": 2023,
@@ -323,7 +414,12 @@
     "note": "",
     "raw_date": "Dec (65-nm T)'23",
     "designer": "",
-    "designer_imgs": []
+    "designer_imgs": [],
+    "keywords": [
+      "ADPLL",
+      "Injection-Locked Osc.",
+      "Calibration"
+    ]
   },
   {
     "year": 2023,
@@ -338,6 +434,11 @@
     "designer": "Shin-Uk Kang",
     "designer_imgs": [
       "su-kang-profile-img.jpg"
+    ],
+    "keywords": [
+      "In-Memory Computing",
+      "SRAM",
+      "AI Accelerator"
     ]
   },
   {
@@ -353,6 +454,9 @@
     "designer": "In-Woo Jang",
     "designer_imgs": [
       "iw-jang-profile-img.jpg"
+    ],
+    "keywords": [
+      "DPLL"
     ]
   },
   {
@@ -366,7 +470,11 @@
     "note": "",
     "raw_date": "July (28-nm S)'23",
     "designer": "",
-    "designer_imgs": []
+    "designer_imgs": [],
+    "keywords": [
+      "PAM-4",
+      "Transmitter"
+    ]
   },
   {
     "year": 2023,
@@ -379,7 +487,11 @@
     "note": "",
     "raw_date": "July (28-nm S)'23",
     "designer": "",
-    "designer_imgs": []
+    "designer_imgs": [],
+    "keywords": [
+      "Equalizer",
+      "High-Speed"
+    ]
   },
   {
     "year": 2023,
@@ -394,6 +506,9 @@
     "designer": "Ji-Ho Kim",
     "designer_imgs": [
       "jh-kim-profile-img.png"
+    ],
+    "keywords": [
+      "ADPLL"
     ]
   },
   {
@@ -409,6 +524,10 @@
     "designer": "Geun-Young Yu",
     "designer_imgs": [
       "gy-you-profile-img.jpg"
+    ],
+    "keywords": [
+      "Injection-Locked Osc.",
+      "Oscillator"
     ]
   },
   {
@@ -424,6 +543,9 @@
     "designer": "Dong-Hoe Heo",
     "designer_imgs": [
       "dh-heo-profile-img.jpg"
+    ],
+    "keywords": [
+      "ADC"
     ]
   },
   {
@@ -440,7 +562,11 @@
     "note": "",
     "raw_date": "VLSI'19, JSSC'21",
     "designer": "",
-    "designer_imgs": []
+    "designer_imgs": [],
+    "keywords": [
+      "CDR",
+      "Clocking"
+    ]
   },
   {
     "year": 2019,
@@ -455,7 +581,10 @@
     "note": "",
     "raw_date": "TCAS-II'19",
     "designer": "",
-    "designer_imgs": []
+    "designer_imgs": [],
+    "keywords": [
+      "Clocking"
+    ]
   },
   {
     "year": 2019,
@@ -471,7 +600,10 @@
     "note": "",
     "raw_date": "ISSCC'19, SSC-L'19",
     "designer": "",
-    "designer_imgs": []
+    "designer_imgs": [],
+    "keywords": [
+      "Supply/Regulator"
+    ]
   },
   {
     "year": 2018,
@@ -487,7 +619,10 @@
     "note": "",
     "raw_date": "A-SSCC'18, JSSC'19",
     "designer": "",
-    "designer_imgs": []
+    "designer_imgs": [],
+    "keywords": [
+      "CDR"
+    ]
   },
   {
     "year": 2018,
@@ -502,7 +637,10 @@
     "note": "",
     "raw_date": "TCAS-II'18",
     "designer": "",
-    "designer_imgs": []
+    "designer_imgs": [],
+    "keywords": [
+      "Clocking"
+    ]
   },
   {
     "year": 2017,
@@ -518,7 +656,10 @@
     "note": "",
     "raw_date": "ISSCC'17, JSSC'21",
     "designer": "",
-    "designer_imgs": []
+    "designer_imgs": [],
+    "keywords": [
+      "Clocking"
+    ]
   },
   {
     "year": 2017,
@@ -533,7 +674,10 @@
     "note": "",
     "raw_date": "TCAS-II'17",
     "designer": "",
-    "designer_imgs": []
+    "designer_imgs": [],
+    "keywords": [
+      "Receiver"
+    ]
   },
   {
     "year": 2017,
@@ -546,7 +690,11 @@
     "note": "Failed",
     "raw_date": "Failed'17",
     "designer": "",
-    "designer_imgs": []
+    "designer_imgs": [],
+    "keywords": [
+      "CDR",
+      "Clocking"
+    ]
   },
   {
     "year": 2016,
@@ -561,7 +709,10 @@
     "note": "",
     "raw_date": "JSTS'16",
     "designer": "",
-    "designer_imgs": []
+    "designer_imgs": [],
+    "keywords": [
+      "Clocking"
+    ]
   },
   {
     "year": 2016,
@@ -574,7 +725,10 @@
     "note": "Failed",
     "raw_date": "Failed'16",
     "designer": "",
-    "designer_imgs": []
+    "designer_imgs": [],
+    "keywords": [
+      "CDR"
+    ]
   },
   {
     "year": 2015,
@@ -590,7 +744,10 @@
     "note": "",
     "raw_date": "ESSCIRC'15, TCAS-I'18",
     "designer": "",
-    "designer_imgs": []
+    "designer_imgs": [],
+    "keywords": [
+      "Clocking"
+    ]
   },
   {
     "year": 2015,
@@ -603,6 +760,9 @@
     "note": "Failed",
     "raw_date": "Failed'15",
     "designer": "",
-    "designer_imgs": []
+    "designer_imgs": [],
+    "keywords": [
+      "CDR"
+    ]
   }
 ]
