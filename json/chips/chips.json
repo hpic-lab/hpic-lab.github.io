@@ -442,7 +442,7 @@
     ],
     "status": "published",
     "venue": {
-      "label": "IEEE JETCAS",
+      "label": "IEEE JETCAS’26",
       "paper": "IGA-SRAM: A Compact SRAM-based IMC Engine for Binary/Ternary Deep Neural Networks with ADC-Less and Error-Aware Training Algorithm"
     }
   },
