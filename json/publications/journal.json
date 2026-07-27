@@ -82,20 +82,14 @@
     "year": "2026",
     "review": [
       {
-        "label": "1st",
-        "link": ""
+        "round": "1st",
+        "submission": "",
+        "response": ""
       },
       {
-        "label": "1st Response Letter",
-        "link": ""
-      },
-      {
-        "label": "2nd",
-        "link": ""
-      },
-      {
-        "label": "2nd Response Letter",
-        "link": ""
+        "round": "2nd",
+        "submission": "",
+        "response": ""
       }
     ]
   },

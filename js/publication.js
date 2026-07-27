@@ -71,27 +71,35 @@ $(document).ready(function () {
   }
 
   // ===== Journal 심사 과정 자료 (Teams · 멤버 전용) =====
-  // journal.json 항목에 아래처럼 넣으면 저자 우측에 "Members only" 링크가 표시됩니다.
-  //   "review": [ { "label": "1st", "link": "https://.../..." },
-  //               { "label": "1st Response Letter", "link": "" },  // link 비우면 회색 placeholder
-  //               { "label": "2nd", "link": "" } ]
-  // link 가 비어 있으면 회색(비활성) 표시, 채우면 클릭 가능한 링크가 됩니다.
+  // 라운드(1st/2nd/…)별로 묶어 표시. journal.json 항목에 아래처럼 넣습니다.
+  //   "review": [
+  //     { "round": "1st", "submission": "https://.../...", "response": "https://.../..." },
+  //     { "round": "2nd", "submission": "", "response": "" }   // link 비우면 회색 placeholder
+  //   ]
+  // submission/response 키가 없으면 해당 칩은 표시하지 않습니다.
+  function reviewChip(label, link) {
+    return link
+      ? '<a class="pub2-rv-link" href="' + link + '" target="_blank" rel="noopener noreferrer">' + label + "</a>"
+      : '<span class="pub2-rv-link pub2-rv-tbd" title="To be updated">' + label + "</span>";
+  }
   function reviewProcessHTML(pub, isJournal) {
     if (!isJournal) return "";
-    var items = pub.review || [];
-    if (!items.length) return "";
-    var chips = items.map(function (it) {
-      var label = typeof it === "string" ? it : (it && it.label) || "";
-      var link = (it && it.link) ? it.link : "";
-      if (!label) return "";
-      return link
-        ? '<a class="pub2-rv-link" href="' + link + '" target="_blank" rel="noopener noreferrer">' + label + "</a>"
-        : '<span class="pub2-rv-link pub2-rv-tbd" title="To be updated">' + label + "</span>";
+    var rounds = pub.review || [];
+    if (!rounds.length) return "";
+    var groups = rounds.map(function (r) {
+      if (!r || typeof r !== "object") return "";
+      var chips = "";
+      if (r.hasOwnProperty("submission")) chips += reviewChip("Submission", r.submission);
+      if (r.hasOwnProperty("response")) chips += reviewChip("Response", r.response);
+      if (!chips) return "";
+      return '<span class="pub2-rv-round">' +
+        (r.round ? '<span class="pub2-rv-round-label">' + r.round + "</span>" : "") +
+        chips + "</span>";
     }).join("");
-    if (!chips) return "";
+    if (!groups) return "";
     return '<div class="pub2-review">' +
       '<span class="pub2-review-label" title="Teams members only">&#128274; Members only</span>' +
-      chips + "</div>";
+      groups + "</div>";
   }
 
   // 상태·수상 배지 (연구분야 태그는 사용하지 않음)

@@ -2916,6 +2916,21 @@ nav#navbar-main .navbar-collapse {
   color: #8a8f98;
   white-space: nowrap;
 }
+.pub2-rv-round {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+.pub2-rv-round + .pub2-rv-round {
+  margin-left: 8px;
+  padding-left: 12px;
+  border-left: 1px solid #e0ded7;
+}
+.pub2-rv-round-label {
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: #5F5E5A;
+}
 .pub2-rv-link {
   font-size: 0.72rem;
   color: #0C447C;
