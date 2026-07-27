@@ -3693,6 +3693,15 @@ a.chip-out:hover { text-decoration: underline; }
   border: 1px solid #ccc;
 }
 
+/* 난독화 이메일 링크 (주변 텍스트 색 상속) */
+.email-link {
+  color: inherit;
+  text-decoration: none;
+}
+.email-link:hover {
+  text-decoration: underline;
+}
+
 /* 푸터 Tel/E-mail 아이콘 (전역 img{display:block} 무효화 → 값 바로 옆 인라인) */
 .site-footer .footer-ic {
   display: inline-block !important;

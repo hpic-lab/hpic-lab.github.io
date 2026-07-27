@@ -365,8 +365,14 @@ $(document).ready(function () {
     $("#modal-biography").text(biography);
     
     if (email) {
-        $("#modal-email").text(email);
-        $("#modal-email-title").show(); 
+        // 런타임에 mailto 링크로 렌더 (정적 텍스트로 이메일을 남기지 않음)
+        var _e = String(email);
+        if (_e.indexOf("@") > 0) {
+          $("#modal-email").html('<a class="email-link" href="mailto:' + _e + '">' + _e + "</a>");
+        } else {
+          $("#modal-email").text(_e);
+        }
+        $("#modal-email-title").show();
         $("#modal-email").show();
     } else {
         $("#modal-email-title").hide();

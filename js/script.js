@@ -3,6 +3,21 @@
 $.ajaxSetup({ cache: false });
 
 document.addEventListener("DOMContentLoaded", function () {
+  // 이메일 난독화 해제: .js-email 요소를 런타임에 mailto 링크로 조립
+  // (정적 HTML에는 user@domain 형태가 없어 단순 스크래퍼가 수집하기 어려움)
+  document.querySelectorAll(".js-email").forEach(function (el) {
+    var u = el.getAttribute("data-user");
+    var d = el.getAttribute("data-domain");
+    if (!u || !d) return;
+    var addr = u + "@" + d;
+    var a = document.createElement("a");
+    a.href = "mailto:" + addr;
+    a.textContent = addr;
+    a.className = "email-link";
+    el.textContent = "";
+    el.appendChild(a);
+  });
+
   // 갤러리 "Click for more details" 버튼 호버는 CSS(:hover)에서 처리
 
   // Publications 카드 새 탭에서 열기
