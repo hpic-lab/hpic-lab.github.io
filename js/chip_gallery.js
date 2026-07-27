@@ -19,7 +19,8 @@ $(document).ready(function () {
         tags.push('<span class="chip-out ' + cls + '">' + label + "</span>");
       }
     });
-    if (chip.note) tags.push('<span class="chip-out chip-out-failed">' + chip.note + "</span>");
+    // note가 "Failed"인 경우는 상태 아이콘(failedHTML)이 대신 표시하므로 여기서는 제외
+    if (chip.note && !/fail/i.test(chip.note)) tags.push('<span class="chip-out chip-out-failed">' + chip.note + "</span>");
     return tags.length ? '<div class="chip-outs">' + tags.join("") + "</div>" : "";
   }
 
