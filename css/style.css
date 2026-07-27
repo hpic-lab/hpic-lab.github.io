@@ -97,6 +97,12 @@ h6 {
     visibility: visible;
   }
 }
+/* 모바일: 사이드바의 Chip Gallery + 연도 네비 숨김 */
+@media (max-width: 991px) {
+  .research-subnav {
+    display: none;
+  }
+}
 .subsection-title {
   font-size: 1.5rem;
   font-weight: 800;
