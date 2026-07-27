@@ -42,8 +42,10 @@ $(document).ready(function () {
     return "";
   }
 
-  function cardHTML(chip) {
-    var desc = chip.description && String(chip.description).trim() ? chip.description : "To be updated.";
+  function cardHTML(chip, showDescFallback) {
+    var raw = chip.description && String(chip.description).trim() ? chip.description : "";
+    // 최근 연도는 미기재 시 "To be updated." 표시, ~그룹(과거) 칩은 표시 안 함
+    var desc = raw || (showDescFallback ? "To be updated." : "");
     return (
       '<div class="chip-card2">' +
         '<div class="chip-thumb">' +
@@ -57,19 +59,19 @@ $(document).ready(function () {
             designerHTML(chip) +
           "</div>" +
           // 3번째 줄 이후: Description
-          '<p class="chip-desc">' + desc + "</p>" +
+          (desc ? '<p class="chip-desc">' + desc + "</p>" : "") +
           outputsHTML(chip) +
         "</div>" +
       "</div>"
     );
   }
 
-  // 칩이 없어도 항상 표시할 연도(추후 업데이트용). 여기에 연도만 추가하면 접이식 빈 섹션이 생김.
-  var PLACEHOLDER_YEARS = [2026, 2022];
+  // 칩이 있는 연도만 표시 (빈 연도 placeholder 사용 안 함)
+  var PLACEHOLDER_YEARS = [];
   // 기본 펼침 연도. 나머지 연도는 접힌 상태로 표시.
   var DEFAULT_OPEN_YEARS = [2026, 2025, 2024];
 
-  function monthBlock($body, chips) {
+  function monthBlock($body, chips, showDescFallback) {
     var curMonth = null;
     chips.forEach(function (chip) {
       var mLabel = monthLabel(chip);
@@ -77,7 +79,7 @@ $(document).ready(function () {
         curMonth = mLabel;
         if (mLabel) $body.append('<div class="chip-month">' + mLabel + "</div>");
       }
-      $body.append(cardHTML(chip));
+      $body.append(cardHTML(chip, showDescFallback));
     });
   }
 
@@ -116,7 +118,7 @@ $(document).ready(function () {
       );
       var $body = $('<div class="chip-year-body"></div>');
       if (yc.length) {
-        monthBlock($body, yc);
+        monthBlock($body, yc, true);
       } else {
         $body.append('<p class="chip-empty">To be updated.</p>');
       }
@@ -139,7 +141,7 @@ $(document).ready(function () {
           (yc.length ? "" : ' <span class="chip-year-soon">(Coming soon)</span>') +
           "</div>"
         );
-        if (yc.length) monthBlock($gb, yc);
+        if (yc.length) monthBlock($gb, yc, false);
         else $gb.append('<p class="chip-empty">To be updated.</p>');
       });
       $gb.hide();
