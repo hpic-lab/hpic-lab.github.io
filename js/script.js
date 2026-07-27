@@ -9,13 +9,8 @@ document.addEventListener("DOMContentLoaded", function () {
     var u = el.getAttribute("data-user");
     var d = el.getAttribute("data-domain");
     if (!u || !d) return;
-    var addr = u + "@" + d;
-    var a = document.createElement("a");
-    a.href = "mailto:" + addr;
-    a.textContent = addr;
-    a.className = "email-link";
-    el.textContent = "";
-    el.appendChild(a);
+    // 하이퍼링크 없이 평문으로만 표시 (mailto 링크 미생성)
+    el.textContent = u + "@" + d;
   });
 
   // 갤러리 "Click for more details" 버튼 호버는 CSS(:hover)에서 처리

@@ -365,13 +365,8 @@ $(document).ready(function () {
     $("#modal-biography").html(biography || "");
     
     if (email) {
-        // 런타임에 mailto 링크로 렌더 (정적 텍스트로 이메일을 남기지 않음)
-        var _e = String(email);
-        if (_e.indexOf("@") > 0) {
-          $("#modal-email").html('<a class="email-link" href="mailto:' + _e + '">' + _e + "</a>");
-        } else {
-          $("#modal-email").text(_e);
-        }
+        // 하이퍼링크 없이 평문으로만 표시
+        $("#modal-email").text(String(email));
         $("#modal-email-title").show();
         $("#modal-email").show();
     } else {
