@@ -477,7 +477,7 @@ $(document).ready(function () {
       "Min-Gwon Song": "송민권", "Suk-Min Yoon": "윤석민", "Han-Gil Yoo": "유한길",
       "Woo-Suk Jung": "정우석", "Kyu-Ran Park": "박규란", "In-Woo Jang": "장인우",
       "Geun-Young Yoo": "유근영", "Seung-Wan Han": "한승완", "Ji-Hyeon Kwon": "권지현",
-      "Ji-Ho Kim": "김지호"
+      "Ji-Ho Kim": "김지호", "Kang-Min Kim": "김강민", "Yu-Jin Byeon": "변유진"
     };
     // 영문 표기가 두 가지인 경우 (프로필 이름 ↔ 논문 저자 표기)
     const EN_ALIAS = {
