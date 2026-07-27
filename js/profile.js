@@ -505,8 +505,9 @@ $(document).ready(function () {
         var badge = s.process
           ? ' <span class="chip-fab ' + tosFabClass(s.process) + '">' + tosFabLabel(s.process) + "</span>"
           : "";
-        var topic = s.topic ? ' &mdash; ' + s.topic : "";
-        return '<span class="tos-item">' + (s.date || "") + badge + topic + "</span>";
+        var topic = s.topic ? " &mdash; " + s.topic : "";
+        // 날짜 → 제목 → 공정 배지 순
+        return '<span class="tos-item">' + (s.date || "") + topic + badge + "</span>";
       })
       .join("");
     if (tosHTML) {

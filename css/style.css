@@ -3804,8 +3804,13 @@ a.chip-status-venue:hover { background: rgba(55, 138, 221, 0.2); }
 .chip-fab.fab-t40 { color: #B45309; background: rgba(180, 83, 9, 0.08); border-color: rgba(180, 83, 9, 0.4); }      /* TSMC 40nm - amber */
 .chip-fab.fab-t65 { color: #6D28D9; background: rgba(109, 40, 217, 0.07); border-color: rgba(109, 40, 217, 0.4); }  /* TSMC 65nm - violet */
 
-/* 모달 Tape-out Schedule: 항목별 한 줄 */
+/* 모달 Tape-out Schedule: 항목별 한 줄, 배지는 인라인 유지 (모달의 p span 블록 규칙 무시) */
 #exampleModal #modal-tape_out_schedule .tos-item { display: block; margin: 2px 0; }
+#exampleModal #modal-tape_out_schedule .tos-item .chip-fab {
+  display: inline-block !important;
+  width: auto !important;
+  vertical-align: 1px;
+}
 
 .chip-card2 .chip-desc {
   margin: 0 0 6px;
