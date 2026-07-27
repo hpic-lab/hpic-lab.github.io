@@ -101,30 +101,6 @@
     "year": 2026,
     "month": 4,
     "process": "28-nm T",
-    "image": "img/chip_new/TD_ADC_6GS_26.png",
-    "name": "6GS/s 8-bit Time-Domain ADC",
-    "description": "",
-    "outputs": [],
-    "note": "",
-    "raw_date": "2026.04",
-    "designer": "Hyeon-Seo Kim and Dong-Ho Kim",
-    "designer_imgs": [
-      "sh-kim2-profile-image.png",
-      "dh-kim-new-profile-image.jpg"
-    ],
-    "keywords": [
-      "Time-domain",
-      "High speed",
-      "Foreground Calibration",
-      "Asynchronous Pipeline SAR-TDC"
-    ],
-    "status": "awaiting",
-    "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/28nm/M17949%2828nm%2C%2026.04.29%29"
-  },
-  {
-    "year": 2026,
-    "month": 4,
-    "process": "28-nm T",
     "image": "img/chip_new/TI_SAR_ADC_8GS_26.png",
     "name": "8GS/s 6-bit Time-Interleaving SAR ADC",
     "description": "",
@@ -142,6 +118,30 @@
       "Speculative",
       "Loop-Unrolled",
       "Comparator Offset Calibration"
+    ],
+    "status": "awaiting",
+    "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/28nm/M17949%2828nm%2C%2026.04.29%29"
+  },
+  {
+    "year": 2026,
+    "month": 4,
+    "process": "28-nm T",
+    "image": "img/chip_new/TD_ADC_6GS_26.png",
+    "name": "6GS/s 8-bit Time-Domain ADC",
+    "description": "",
+    "outputs": [],
+    "note": "",
+    "raw_date": "2026.04",
+    "designer": "Hyeon-Seo Kim and Dong-Ho Kim",
+    "designer_imgs": [
+      "sh-kim2-profile-image.png",
+      "dh-kim-new-profile-image.jpg"
+    ],
+    "keywords": [
+      "Time-domain",
+      "High speed",
+      "Foreground Calibration",
+      "Asynchronous Pipeline SAR-TDC"
     ],
     "status": "awaiting",
     "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/28nm/M17949%2828nm%2C%2026.04.29%29"
