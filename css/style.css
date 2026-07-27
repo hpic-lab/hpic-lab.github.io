@@ -3686,10 +3686,20 @@ a.chip-out:hover { text-decoration: underline; }
   border: 1px solid #ccc;
 }
 
-/* Biography 내 저널명: IEEE 스타일 small caps (섹션제목 스타일 상속 제거) */
+/* Biography 내 저널명: IEEE 스타일 small caps
+   (#exampleModal .profile-right p span 섹션제목 스타일보다 높은 우선순위로 덮어씀) */
+#exampleModal #modal-biography .jrnl,
 #modal-biography .jrnl,
 .jrnl {
-  all: unset;
+  display: inline !important;
+  border: none !important;
+  border-bottom: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  font-size: inherit !important;
+  font-weight: inherit !important;
+  color: inherit !important;
+  background: none !important;
   font-variant: all-small-caps;
   font-variant-caps: all-small-caps;
   letter-spacing: 0.02em;
