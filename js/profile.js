@@ -510,12 +510,19 @@ $(document).ready(function () {
         return '<span class="tos-item">' + (s.date || "") + topic + badge + "</span>";
       })
       .join("");
-    if (tosHTML) {
+    // 졸업생(소속 있음)·교수는 Tape-out Schedule 섹션 미표시
+    var _hideTapeout = /Professor/i.test(position || "") ||
+                       !!(affiliation && String(affiliation).trim());
+    if (_hideTapeout) {
+      $("#modal-tape_out_schedule").empty();
+      $("#modal-tape_out_schedule-title").hide();
+    } else if (tosHTML) {
       $("#modal-tape_out_schedule").html(tosHTML);
+      $("#modal-tape_out_schedule-title").show();
     } else {
       $("#modal-tape_out_schedule").text("To be updated.");
+      $("#modal-tape_out_schedule-title").show();
     }
-    $("#modal-tape_out_schedule-title").show();
 
     // ===== Publications: 홈페이지 Publications 데이터와 자동 연동 (동일 양식) =====
     // 논문 figure의 사진 파일명이 이 사람의 profile_img와 일치하는 논문을 모두 표시
