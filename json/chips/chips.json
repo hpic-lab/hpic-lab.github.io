@@ -134,7 +134,7 @@
     "month": 9,
     "process": "28-nm T",
     "image": "img/chip_new/ANA_RX_25Sep_Real_name.jpg",
-    "name": "High-Speed PAM-4 Receiver",
+    "name": "112 Gb/s PAM-4 Receiver",
     "description": "",
     "outputs": [],
     "note": "",
@@ -155,7 +155,7 @@
     "month": 9,
     "process": "28-nm T",
     "image": "img/chip_new/DSP_TX_25Sep_Real.png",
-    "name": "High-Speed Transmitter",
+    "name": "112 Gb/s DSP-based PAM-2/4/8 Transmitter",
     "description": "",
     "outputs": [],
     "note": "",
@@ -176,10 +176,10 @@
     "month": 7,
     "process": "28-nm T",
     "image": "img/chip_new/DSP_RX_25jul_Real.png",
-    "name": "DSP-based High-Speed Receiver",
+    "name": "DSP-based PAM-4 Receiver",
     "description": "",
     "outputs": [],
-    "note": "",
+    "note": "Failed",
     "raw_date": "Jul. (28-nm T)'25",
     "designer": "Jae-Geon Lee",
     "designer_imgs": [
@@ -229,8 +229,9 @@
       "sh-gong-profile-image.jpg"
     ],
     "keywords": [
-      "CDR",
-      "Phase Interpolator"
+      "ppm Tracking",
+      "I/Q Calibration",
+      "JTOL Enhancement"
     ],
     "status": "review",
     "venue": "IEEE TCAS-II'26"

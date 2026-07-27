@@ -160,11 +160,15 @@ $(document).ready(function () {
     var fab = fabLabel(chip.process);
     var fabCls = fabClass(chip.process);
 
-    // 구형 칩(≤GROUP_MAX): 상태 문구 삭제 → 그 자리에 Publication. Failed면 Failed 아이콘.
+    // 구형 칩(≤GROUP_MAX): 상태 문구 삭제 → 그 자리에 Publication.
+    // Failed 칩은 연도와 무관하게 Failed 아이콘으로 표시.
     var isLegacy = chip.year && chip.year <= GROUP_MAX;
     var statusSlot, outputsRow;
-    if (isLegacy) {
-      statusSlot = isFailedChip(chip) ? failedHTML() : outputsHTML(chip);
+    if (isFailedChip(chip)) {
+      statusSlot = failedHTML();
+      outputsRow = isLegacy ? "" : outputsHTML(chip);
+    } else if (isLegacy) {
+      statusSlot = outputsHTML(chip);
       outputsRow = "";  // Publication을 상태 자리로 옮겼으므로 아래 중복 표시 안 함
     } else {
       statusSlot = statusHTML(chip);
