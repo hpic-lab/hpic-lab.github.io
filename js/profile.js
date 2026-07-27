@@ -559,6 +559,8 @@ $(document).ready(function () {
     const manualAwards = parseData(Awards).map((t) => {
       var m = String(t).match(/^(\d{4}(?:[.\-]\d{1,2})?)\.?\s+(.*)$/);
       var date = m ? m[1] : "";
+      // "2024-1", "2023-2" 처럼 학기 표기는 연도만 표기 (단, "2024.05" 월 표기는 유지)
+      if (/^\d{4}-\d{1,2}$/.test(date)) date = date.slice(0, 4);
       var body = m ? m[2] : t;
       return '<div class="mpub-entry">' +
         '<div class="mpub-side mpub-date">' + date + "</div>" +
@@ -577,7 +579,7 @@ $(document).ready(function () {
 
     // Alumni: Current Affiliation + Program (Period)
     if (affiliation) {
-      $("#modal-affiliation").text(affiliation);
+      $("#modal-affiliation").html(affiliation);
       $("#modal-affiliation-title").show();
       $("#modal-affiliation").show();
     } else {

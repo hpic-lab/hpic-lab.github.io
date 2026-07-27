@@ -97,7 +97,7 @@
   },
   {
     "name": "Shin-Uk Kang",
-    "affiliation": "Ph.D. Candidate @ KAIST",
+    "affiliation": "Ph.D. Candidate @ KAIST, Advisor: <a href=\"https://sites.google.com/view/mslab\" target=\"_blank\" rel=\"noopener noreferrer\">Bongjin Kim</a>",
     "program_period": "M.S. (2023-2024)",
     "research_interests": [
       "AI hardware design and PIM"
@@ -137,7 +137,7 @@
   },
   {
     "name": "Woo-Suk Jung",
-    "affiliation": "M.S. Candidate @ Yonsei University",
+    "affiliation": "M.S. Candidate @ Yonsei University, Advisor: <a href=\"https://sites.google.com/site/vlsicir/home?authuser=0\" target=\"_blank\" rel=\"noopener noreferrer\">Hanwool Jeong</a>",
     "program_period": "B.S. (2024)",
     "research_interests": [
       "Wireline Interface"
@@ -170,7 +170,7 @@
   },
   {
     "name": "Yu-Jin Byeon",
-    "affiliation": "M.S. Candidate @ KAIST",
+    "affiliation": "M.S. Candidate @ KAIST, Advisor: <a href=\"https://sites.google.com/view/mslab\" target=\"_blank\" rel=\"noopener noreferrer\">Bongjin Kim</a>",
     "program_period": "B.S. (2023-24)",
     "research_interests": [
       "Wireline Interface"
@@ -203,7 +203,7 @@
   },
   {
     "name": "Tae-Hyun Kim",
-    "affiliation": "M.S.-Ph.D. Candidate @ POSTECH",
+    "affiliation": "M.S.-Ph.D. Candidate @ POSTECH, Advisor: <a href=\"https://ics-lab.postech.ac.kr/home\" target=\"_blank\" rel=\"noopener noreferrer\">Seon-kyoo Lee</a>",
     "program_period": "B.S. (2022-23)",
     "research_interests": [
       "Wireline Interface"
@@ -214,7 +214,7 @@
   },
   {
     "name": "Geun-Young Yoo",
-    "affiliation": "M.S.-Ph.D. Candidate @ Hanyang University",
+    "affiliation": "M.S.-Ph.D. Candidate @ Hanyang University, Advisor: <a href=\"https://niftylab.github.io/\" target=\"_blank\" rel=\"noopener noreferrer\">Jaeduk Han</a>",
     "program_period": "B.S. (2022-23)",
     "research_interests": [
       "Wireline Interface"
@@ -225,7 +225,7 @@
   },
   {
     "name": "In-Woo Jang",
-    "affiliation": "M.S.-Ph.D. Candidate @ KAIST",
+    "affiliation": "M.S.-Ph.D. Candidate @ KAIST, Advisor: <a href=\"https://krg.kaist.ac.kr/\" target=\"_blank\" rel=\"noopener noreferrer\">Kyeongha Kwon</a>",
     "program_period": "B.S. (2022-23)",
     "research_interests": [
       "Wireline Interface"

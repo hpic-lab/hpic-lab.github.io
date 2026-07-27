@@ -3699,6 +3699,16 @@ a.chip-out:hover { text-decoration: underline; }
   letter-spacing: 0.01em;
 }
 
+/* 지도교수/연구실 링크 (First Position After Graduation) */
+#modal-affiliation a {
+  color: #0C447C;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(12, 68, 124, 0.35);
+}
+#modal-affiliation a:hover {
+  border-bottom-color: #0C447C;
+}
+
 /* 난독화 이메일 링크 (주변 텍스트 색 상속) */
 .email-link {
   color: inherit;
