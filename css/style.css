@@ -78,11 +78,12 @@ h6 {
   color: #222;
 }
 
-/* Research 좌측 사이드바의 Chip Gallery 서브 네비 */
+/* Research 좌측 사이드바의 Chip Gallery 서브 네비 (트리 스타일: 세로 가이드 라인 + 들여쓰기) */
 .research-subnav {
   position: relative;
-  margin-top: -10px;
-  padding-left: 24px;
+  margin-top: 10px;
+  padding-left: 18px;
+  border-left: 2px solid #dfe3ea;
 }
 /* 데스크톱: Chip Gallery 콘텐츠까지 스크롤했을 때만 사이드바에 표시 */
 @media (min-width: 992px) {
@@ -95,18 +96,6 @@ h6 {
     opacity: 1;
     visibility: visible;
   }
-}
-/* Research 하위임을 나타내는 꺾인 실선(└) 커넥터 */
-.research-subnav::before {
-  content: "";
-  position: absolute;
-  left: 5px;
-  top: -4px;
-  width: 13px;
-  height: 20px;
-  border-left: 2px solid #c5cbd4;
-  border-bottom: 2px solid #c5cbd4;
-  border-bottom-left-radius: 7px;
 }
 .subsection-title {
   font-size: 1.5rem;
@@ -167,9 +156,6 @@ h6 {
   .chip-year-nav {
     flex-direction: column;
     gap: 2px;
-    border-left: 2px solid #e5e5e5;
-    padding-left: 10px;
-    margin-left: 4px;
   }
 }
 
