@@ -173,7 +173,7 @@
     "month": 9,
     "process": "28-nm T",
     "image": "img/chip_new/DSP_TX_25Sep_Real.png",
-    "name": "112Gb/s DSP-based PAM-2/4/8 Transmitter",
+    "name": "A 112Gb/s LUT-Based DSP Transmitter with an Active-Peaking Pre-Driver in 28nm CMOS",
     "description": "",
     "outputs": [],
     "note": "",
@@ -184,8 +184,11 @@
       "sm-jin-profile-img.jpg"
     ],
     "keywords": [
-      "Transmitter",
-      "High-Speed"
+      "112Gb/s",
+      "DSP",
+      "Active Peaking",
+      "PAM-2/4/8",
+      "DAC"
     ],
     "status": "measurement",
     "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/28nm/M16280%2828nm%2C%2025.07.09%29"
