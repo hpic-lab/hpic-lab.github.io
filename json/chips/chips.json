@@ -598,8 +598,10 @@
     ],
     "note": "",
     "raw_date": "VLSI'19, JSSC'21",
-    "designer": "",
-    "designer_imgs": [],
+    "designer": "Min-Seong Choo",
+    "designer_imgs": [
+      "ms-choo-profile-img.png"
+    ],
     "keywords": [
       "CDR",
       "Clocking"
@@ -618,8 +620,10 @@
     ],
     "note": "",
     "raw_date": "TCAS-II'19",
-    "designer": "",
-    "designer_imgs": [],
+    "designer": "Min-Seong Choo",
+    "designer_imgs": [
+      "ms-choo-profile-img.png"
+    ],
     "keywords": [
       "Clocking"
     ],
@@ -638,8 +642,10 @@
     ],
     "note": "",
     "raw_date": "ISSCC'19, SSC-L'19",
-    "designer": "",
-    "designer_imgs": [],
+    "designer": "Min-Seong Choo",
+    "designer_imgs": [
+      "ms-choo-profile-img.png"
+    ],
     "keywords": [
       "Supply/Regulator"
     ],
@@ -658,8 +664,10 @@
     ],
     "note": "",
     "raw_date": "A-SSCC'18, JSSC'19",
-    "designer": "",
-    "designer_imgs": [],
+    "designer": "Min-Seong Choo",
+    "designer_imgs": [
+      "ms-choo-profile-img.png"
+    ],
     "keywords": [
       "CDR"
     ],
@@ -677,8 +685,10 @@
     ],
     "note": "",
     "raw_date": "TCAS-II'18",
-    "designer": "",
-    "designer_imgs": [],
+    "designer": "Min-Seong Choo",
+    "designer_imgs": [
+      "ms-choo-profile-img.png"
+    ],
     "keywords": [
       "Clocking"
     ],
@@ -697,8 +707,10 @@
     ],
     "note": "",
     "raw_date": "ISSCC'17, JSSC'21",
-    "designer": "",
-    "designer_imgs": [],
+    "designer": "Min-Seong Choo",
+    "designer_imgs": [
+      "ms-choo-profile-img.png"
+    ],
     "keywords": [
       "Clocking"
     ],
@@ -716,8 +728,10 @@
     ],
     "note": "",
     "raw_date": "TCAS-II'17",
-    "designer": "",
-    "designer_imgs": [],
+    "designer": "Min-Seong Choo",
+    "designer_imgs": [
+      "ms-choo-profile-img.png"
+    ],
     "keywords": [
       "Receiver"
     ],
@@ -733,8 +747,10 @@
     "outputs": [],
     "note": "Failed",
     "raw_date": "Failed'17",
-    "designer": "",
-    "designer_imgs": [],
+    "designer": "Min-Seong Choo",
+    "designer_imgs": [
+      "ms-choo-profile-img.png"
+    ],
     "keywords": [
       "CDR",
       "Clocking"
@@ -753,8 +769,10 @@
     ],
     "note": "",
     "raw_date": "JSTS'16",
-    "designer": "",
-    "designer_imgs": [],
+    "designer": "Min-Seong Choo",
+    "designer_imgs": [
+      "ms-choo-profile-img.png"
+    ],
     "keywords": [
       "Clocking"
     ],
@@ -770,8 +788,10 @@
     "outputs": [],
     "note": "Failed",
     "raw_date": "Failed'16",
-    "designer": "",
-    "designer_imgs": [],
+    "designer": "Min-Seong Choo",
+    "designer_imgs": [
+      "ms-choo-profile-img.png"
+    ],
     "keywords": [
       "CDR"
     ],
@@ -790,8 +810,10 @@
     ],
     "note": "",
     "raw_date": "ESSCIRC'15, TCAS-I'18",
-    "designer": "",
-    "designer_imgs": [],
+    "designer": "Min-Seong Choo",
+    "designer_imgs": [
+      "ms-choo-profile-img.png"
+    ],
     "keywords": [
       "Clocking"
     ],
@@ -807,8 +829,10 @@
     "outputs": [],
     "note": "Failed",
     "raw_date": "Failed'15",
-    "designer": "",
-    "designer_imgs": [],
+    "designer": "Min-Seong Choo",
+    "designer_imgs": [
+      "ms-choo-profile-img.png"
+    ],
     "keywords": [
       "CDR"
     ],
