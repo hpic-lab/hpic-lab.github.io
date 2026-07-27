@@ -3,6 +3,14 @@ $(document).ready(function () {
       {
         date: "Jul. 2026 - Dec. 2030",
         title:
+          "이종집적 광회로 기반 호모다인 광신경망 프로세서 기술 개발",
+        sponsor: "Ministry of Science and ICT (MSIT)",
+        desc:
+          "Development of Heterogeneous Integrated Photonic Circuits for Homodyne Photonic Neural Network Processor. 상위 사업: 차세대광기반연산반도체핵심기술개발사업 (과학기술정보통신부 원천기술개발사업). 1단계 2026.07–2028.12 (2년 6개월), 2단계 2029.01–2030.12 (2년).",
+      },
+      {
+        date: "Jul. 2026 - Dec. 2030",
+        title:
           "SDV 대응 가혹환경극복 차량용 멀티표준 지원 가능 고신뢰 고속 인터페이스 IP 기술 개발",
         sponsor: "Ministry of Science and ICT (MSIT)",
         desc:
