@@ -68,6 +68,7 @@ $(document).ready(function () {
     "measurement": { t: "Measurement in progress", c: "st-amber" },
     "paper": { t: "Paper in preparation", c: "st-blue" },
     "review": { t: "Manuscript in review", c: "st-blue" },
+    "accepted": { t: "Paper accepted", c: "st-green" },
     "published": { t: "Published", c: "st-green" }
   };
   function statusHTML(chip) {

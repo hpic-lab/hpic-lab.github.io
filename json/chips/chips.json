@@ -224,15 +224,17 @@
     "outputs": [],
     "note": "",
     "raw_date": "Nov. (65-nm T)'24",
-    "designer": "Dong-Hyun Lee",
+    "designer": "Dong-Hyun Lee and Shin-Uk Kang",
     "designer_imgs": [
-      "dh-lee-profile-img.png"
+      "dh-lee-profile-img.png",
+      "su-kang-profile-img.jpg"
     ],
     "keywords": [
       "eDRAM",
       "In-Memory Computing"
     ],
-    "status": "measurement"
+    "status": "accepted",
+    "venue": "IEEE TCAS-I"
   },
   {
     "year": 2024,
