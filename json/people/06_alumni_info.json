@@ -1,7 +1,7 @@
 [
   {
     "name": "Dong-Hyun Lee",
-    "affiliation": "",
+    "affiliation": "LIG D&A",
     "program_period": "M.S. (2024-2026)",
     "research_interests": [
       "AI hardware design and PIM"
@@ -148,7 +148,7 @@
   },
   {
     "name": "Min-Gwon Song",
-    "affiliation": "M.S. Candidate @ Hanyang University",
+    "affiliation": "M.S. Candidate @ Hanyang University, Advisor: <a href=\"http://esoc.hanyang.ac.kr/\" target=\"_blank\" rel=\"noopener noreferrer\">Ki-Seok Chung</a>",
     "program_period": "B.S. (2023-24)",
     "research_interests": [
       "PIM"
