@@ -81,7 +81,7 @@ h6 {
 /* Research 좌측 사이드바의 Chip Gallery 서브 네비 */
 .research-subnav {
   position: relative;
-  margin-top: 14px;
+  margin-top: -10px;
   padding-left: 24px;
 }
 /* Research 하위임을 나타내는 꺾인 실선(└) 커넥터 */
@@ -89,9 +89,9 @@ h6 {
   content: "";
   position: absolute;
   left: 5px;
-  top: -6px;
+  top: -4px;
   width: 13px;
-  height: 26px;
+  height: 20px;
   border-left: 2px solid #c5cbd4;
   border-bottom: 2px solid #c5cbd4;
   border-bottom-left-radius: 7px;
