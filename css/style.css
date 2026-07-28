@@ -1153,9 +1153,15 @@ nav#navbar-main .navbar-collapse {
   font-family: "Pretendard", "Noto Sans KR", sans-serif !important;
 }
 
+/* 모바일 브라우저(삼성 인터넷 등)가 이메일을 자동 감지해 자체 요소로 감싸도
+   그 하위 요소까지 카드 본문과 동일한 글꼴로 강제 통일 */
+#modal-email * {
+  font-family: "Pretendard", "Noto Sans KR", sans-serif !important;
+}
+
 /* 모바일 브라우저가 이메일을 자동 링크로 바꿔도 폰트·색 유지 */
 #modal-email a {
-  font-family: inherit !important;
+  font-family: "Pretendard", "Noto Sans KR", sans-serif !important;
   color: inherit !important;
   text-decoration: none;
 }
@@ -4214,11 +4220,11 @@ section {
     height: 34px;
     background: var(--section-bg, #fff);
   }
-  /* Upcoming Tape-outs 헤더도 Chip Gallery 제목 아래에 고정 */
+  /* Upcoming Tape-outs 헤더도 Chip Gallery 제목 아래에 고정 (사이 여백 확보) */
   #chip-tapeout-schedule .tos2-head {
     position: -webkit-sticky;
     position: sticky;
-    top: calc(100px + var(--res-dsub-h, 42px));
+    top: calc(100px + var(--res-dsub-h, 42px) + 12px);
     z-index: 5;
     background: var(--section-bg, #fff);
   }
@@ -4525,7 +4531,7 @@ a.chip-status-venue:hover { background: rgba(55, 138, 221, 0.2); }
 .chip-fab.fab-s14 { color: #15803D; background: rgba(21, 128, 61, 0.08); border-color: rgba(21, 128, 61, 0.4); }    /* Samsung 14nm - green */
 
 /* 예정 탭아웃 일정 (컴팩트, 칩 이미지 없음) — Chip Gallery 하위로 들여쓰기 */
-.chip-tapeout-schedule { margin: 6px 0 30px 24px; }
+.chip-tapeout-schedule { margin: 18px 0 30px 24px; }
 .tos2-head {
   font-size: 1.05rem;
   font-weight: 700;
