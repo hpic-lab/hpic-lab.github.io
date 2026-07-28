@@ -431,7 +431,7 @@ $(document).ready(function () {
         .each(function () {
           var id = $(this).attr("id");
           var label = $(this).text();
-          linksDiv.append('<a href="#' + id + '" class="pub2-year-link">' + label + "</a>");
+          linksDiv.append('<span class="pub2-year-link" data-yid="' + id + '">' + label + "</span>");
         });
     }
     refreshYearLinks("journal");
@@ -478,34 +478,8 @@ $(document).ready(function () {
       $(this).next(".pub2-year-body").stop(true, false).slideToggle(250);
     });
 
-    // 연도 바로가기. 접혀 있으면 펼치고, 해당 연도 헤더로 이동한다.
-    // 위쪽 지연로드(lazy) 이미지가 로드되며 레이아웃이 밀려 목표 위치가 바뀌므로,
-    // 클릭 직후 + 이미지 로드가 끝날 때까지 몇 차례 재보정해 정확히 안착시킨다.
-    sidebar.on("click", ".pub2-year-link", function (e) {
-      e.preventDefault();
-      var header = $($(this).attr("href"));
-      if (header.hasClass("collapsed")) {
-        header.removeClass("collapsed");
-        header.next(".pub2-year-body").show();
-      }
-      var node = header[0];
-      if (!node) return;
-      // 핵심: 위쪽 지연로드(lazy) 이미지들을 즉시 로드시켜 스크롤 중 레이아웃이
-      // 밀리며 목표가 계속 위로 도망가는(=기어가는) 현상 자체를 제거한다.
-      document.querySelectorAll('img[loading="lazy"]').forEach(function (img) {
-        img.loading = "eager";
-      });
-      function jump() {
-        var docEl = document.documentElement, prev = docEl.style.scrollBehavior;
-        docEl.style.scrollBehavior = "auto";
-        var y = Math.max(0, node.getBoundingClientRect().top + window.pageYOffset - 100);
-        try { window.scrollTo({ top: y, behavior: "instant" }); }
-        catch (err) { window.scrollTo(0, y); }
-        docEl.style.scrollBehavior = prev;
-      }
-      jump();
-      [60, 150, 300, 500, 800, 1200].forEach(function (t) { setTimeout(jump, t); });
-    });
+    // 사이드바 연도는 클릭·이동 기능 없이, 현재 보고 있는 연도만 강조 표시한다.
+    // (span 으로 렌더링되어 링크가 아니며, 아래 updateActiveYear 가 하이라이트만 담당)
 
     // ===== 스크롤 위치에 따라 현재 연도 헤더 강조 (시안 3) =====
     function updateActiveYear() {
@@ -523,7 +497,7 @@ $(document).ready(function () {
       // 사이드바 연도 링크도 동일하게 강조
       var id = $(current).attr("id");
       sidebar.find(".pub2-year-link").removeClass("active");
-      if (id) sidebar.find('.pub2-year-link[href="#' + id + '"]').addClass("active");
+      if (id) sidebar.find('.pub2-year-link[data-yid="' + id + '"]').addClass("active");
     }
 
     var yearTick = false;

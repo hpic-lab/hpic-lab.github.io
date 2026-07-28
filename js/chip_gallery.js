@@ -324,12 +324,8 @@ $(document).ready(function () {
       var label = $h.attr("data-year");
       var id = "chipyear-" + String(label).replace("~", "p");
       $h.attr("id", id);
-      var $a = $('<a href="#' + id + '" class="chip-year-link">' + label + "</a>");
-      $a.on("click", function (e) {
-        e.preventDefault();
-        if ($h.hasClass("collapsed")) $h.trigger("click");
-        smoothScrollTo($h[0].getBoundingClientRect().top + window.pageYOffset - 100);
-      });
+      // 사이드바 연도는 클릭·이동 기능 없이 현재 보는 연도만 강조 (아래 updateActiveYear)
+      var $a = $('<span class="chip-year-link" data-yid="' + id + '">' + label + "</span>");
       $nav.append($a);
     });
 
@@ -344,7 +340,7 @@ $(document).ready(function () {
       });
       $nav.find(".chip-year-link").removeClass("active");
       var id = $(current).attr("id");
-      if (id) $nav.find('.chip-year-link[href="#' + id + '"]').addClass("active");
+      if (id) $nav.find('.chip-year-link[data-yid="' + id + '"]').addClass("active");
     }
 
     var tick = false;

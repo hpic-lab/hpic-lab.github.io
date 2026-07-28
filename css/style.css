@@ -148,11 +148,8 @@ h6 {
   color: #777;
   text-decoration: none;
   padding: 3px 4px;
-  cursor: pointer;
-}
-.chip-year-link:hover {
-  color: #2e55be;
-  text-decoration: underline;
+  cursor: default;
+  user-select: none;
 }
 .chip-year-link.active {
   color: #2e55be;
@@ -2692,11 +2689,8 @@ nav#navbar-main .navbar-collapse {
   color: #777;
   text-decoration: none;
   padding: 3px 4px;
-}
-
-.pub2-year-link:hover {
-  color: #2e55be;
-  text-decoration: underline;
+  cursor: default;
+  user-select: none;
 }
 
 .pub2-year-link.active {

@@ -123,23 +123,12 @@ $(document).ready(function () {
       sidebar.find(".news-year-links").remove();
       var linksHTML = years
         .map(function (y) {
-          return '<a href="#news-year-' + y + '" class="pub2-year-link news-year-link" data-year="' + y + '">' + y + "</a>";
+          return '<span class="pub2-year-link news-year-link" data-year="' + y + '">' + y + "</span>";
         })
         .join("");
       sidebar.append('<div class="pub2-year-links news-year-links">' + linksHTML + "</div>");
 
-      sidebar.on("click", ".news-year-link", function (e) {
-        e.preventDefault();
-        var year = $(this).data("year");
-        var header = container.find("h3#" + year);
-        if (!header.length) return;
-        var acc = header.closest(".news-accordion");
-        // 접혀 있으면 펼치기
-        if (acc.accordion("option", "active") === false) {
-          acc.accordion("option", "active", 0);
-        }
-        smoothScrollTo(header[0].getBoundingClientRect().top + window.pageYOffset - 100);
-      });
+      // 사이드바 연도는 클릭·이동 기능 없이 현재 보는 연도만 강조한다 (updateActiveNewsYear).
 
       // ===== 카테고리 필터 (Grant / Journal / Award 등) =====
       var catOrder = ["All", "Grant", "Journal", "Conference", "Award", "Patent", "Invited Talk", "Service", "News"];
