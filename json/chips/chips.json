@@ -370,7 +370,7 @@
     "year": 2024,
     "month": 11,
     "process": "65-nm T",
-    "image": "img/chip_new/3T_PIM_24nov.png",
+    "image": "img/chip_new/3T_PIM_24nov_v2.png",
     "name": "3T eDRAM PIM",
     "description": "",
     "outputs": [],
@@ -385,7 +385,7 @@
       "eDRAM",
       "In-Memory Computing"
     ],
-    "status": "measurement",
+    "status": "accepted",
     "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/65nm/M15407%2865nm%2C%2024.10.31%29"
   },
   {
