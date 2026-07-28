@@ -1184,21 +1184,19 @@ nav#navbar-main .navbar-collapse {
   border-top: 1px solid #eceef1;
 }
 #exampleModal #modal-tape_out_schedule .tos-entry:first-child { border-top: none; }
+/* 연번: 아래 Publications(.mpub-num)와 동일한 평번호 형태 */
 #exampleModal #modal-tape_out_schedule .tos-num {
   flex: 0 0 auto;
-  width: 26px; height: 26px;
-  border-radius: 50%;
-  background: #eef1f6;
-  color: #1c3557;
-  font-weight: 800;
-  font-size: 0.82rem;
-  display: flex; align-items: center; justify-content: center;
+  min-width: 24px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #999;
+  text-align: center;
 }
 #exampleModal #modal-tape_out_schedule .tos-date {
   flex: 0 0 64px;
   color: #999;
   font-weight: 700;
-  padding-top: 2px;
 }
 #exampleModal #modal-tape_out_schedule .tos-body {
   flex: 1;
@@ -1207,11 +1205,19 @@ nav#navbar-main .navbar-collapse {
   flex-wrap: wrap;
   align-items: center;
   gap: 8px;
-  padding-top: 1px;
 }
+/* 공정 배지: 섹션제목 규칙(1.08rem/block)에 오염되지 않도록 홈페이지 크기로 강제 */
 #exampleModal #modal-tape_out_schedule .tos-body .chip-fab {
   display: inline-block !important;
   width: auto !important;
+  font-size: 0.72rem !important;
+  font-weight: 600 !important;
+  line-height: 1.4 !important;
+  padding: 1px 7px !important;
+  margin: 0 !important;
+  border: 1px solid currentColor !important;
+  border-radius: 4px !important;
+  vertical-align: baseline !important;
 }
 @media (max-width: 576px) {
   #exampleModal #modal-tape_out_schedule .tos-entry { flex-wrap: wrap; gap: 6px 12px; }
