@@ -4535,15 +4535,43 @@ a.chip-status-venue:hover { background: rgba(55, 138, 221, 0.2); }
   padding-bottom: 6px;
   border-bottom: 2px solid #e9e9e9;
 }
-.tos2-group { margin-bottom: 14px; }
+/* ===== 안 3: 세로 타임라인 + 연월 노드 ===== */
+.tos2-timeline {
+  position: relative;
+  padding-left: 22px;
+}
+.tos2-timeline::before {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 6px;
+  bottom: 8px;
+  width: 2px;
+  background: #e3e7ee;
+}
+.tos2-group { margin-bottom: 8px; }
 .tos2-ghead {
+  position: relative;
   display: flex;
   align-items: center;
-  gap: 10px;
-  margin: 12px 0 4px;
-  padding-left: 40px;   /* 번호 열 폭만큼 밀어 제목과 정렬 */
+  gap: 9px;
+  margin: 14px 0 6px;
 }
-.tos2-date { font-size: 0.82rem; font-weight: 700; color: #0c447c; }
+/* 연월 노드 (타임라인 선 위의 점) */
+.tos2-ghead::before {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #1c3557;
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 1px #d7dde6;
+}
+.tos2-date { font-size: 0.92rem; font-weight: 800; color: #1c3557; }
 .tos2-row {
   display: flex;
   align-items: center;

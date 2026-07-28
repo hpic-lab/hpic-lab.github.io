@@ -624,7 +624,7 @@ $(document).ready(function () {
       var descOrder = dated.slice().reverse();
       if (order.indexOf("TBD") >= 0) descOrder.push("TBD");
 
-      var html = '<div class="tos2-head">Upcoming Tape-outs</div>';
+      var html = '<div class="tos2-head">Upcoming Tape-outs</div><div class="tos2-timeline">';
       descOrder.forEach(function (key) {
         var arr = groups[key];
         var proc = arr[0].process;
@@ -640,6 +640,7 @@ $(document).ready(function () {
         });
         html += "</div>";
       });
+      html += "</div>";
       $c.html(html);
     });
   }
