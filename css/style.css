@@ -1477,15 +1477,27 @@ nav#navbar-main .navbar-collapse {
   .news-sticky-head {
     position: -webkit-sticky;
     position: sticky;
-    top: 55px;
+    top: 52px;
     z-index: 900;
     background: #fff;
     padding: 6px 0 8px;
     margin-bottom: 10px;
     border-bottom: 1px solid #eee;
   }
+  /* 헤더 위 빈틈으로 내용이 비치지 않도록 배경을 위쪽까지 확장 */
+  .news-sticky-head::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 100%;
+    height: 60px;
+    background: #fff;
+  }
   .news-sticky-head h1 {
     font-size: 1.5rem;
+    font-weight: 700;   /* 원래 섹션 제목과 통일 */
+    color: #222;
     margin: 0 0 8px;
   }
   .news-sticky-head .news-cat-links {
@@ -1498,14 +1510,23 @@ nav#navbar-main .navbar-collapse {
   .pub-sticky-head {
     position: -webkit-sticky;
     position: sticky;
-    top: 55px;
+    top: 52px;
     z-index: 900;
     background: #fff;
     padding: 6px 0 8px;
     margin-bottom: 8px;
     border-bottom: 1px solid #eee;
   }
-  .pub-sticky-head h1 { font-size: 1.5rem; margin: 0 0 6px; }
+  .pub-sticky-head::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 100%;
+    height: 60px;
+    background: #fff;
+  }
+  .pub-sticky-head h1 { font-size: 1.5rem; font-weight: 700; color: #222; margin: 0 0 6px; }
   .pub-sticky-head .pub2-notice { margin: 0 0 6px; }
   .pub2-list .pub2-year {
     position: -webkit-sticky;
