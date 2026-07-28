@@ -424,7 +424,7 @@ $(document).ready(function () {
 
     // 활성 탭의 연도 바로가기 링크 갱신
     function refreshYearLinks(target) {
-      var linksDiv = sidebar.find(".pub2-year-links");
+      var linksDiv = $("#publications .pub2-year-links");
       linksDiv.empty();
       $("#pub2-" + target)
         .find(".pub2-year")
@@ -438,18 +438,37 @@ $(document).ready(function () {
 
     // 탭 활성화 (스크롤 없이 표시만)
     function activateTab(target) {
-      sidebar.find(".pub2-tab").removeClass("active");
-      sidebar.find('.pub2-tab[data-target="' + target + '"]').addClass("active");
+      $("#publications .pub2-tab").removeClass("active");
+      $('#publications .pub2-tab[data-target="' + target + '"]').addClass("active");
       container.find(".pub2-list").hide();
       $("#pub2-" + target).show();
       refreshYearLinks(target);
     }
 
     // 탭 전환
-    sidebar.on("click", ".pub2-tab", function () {
+    $("#publications").on("click", ".pub2-tab", function () {
       activateTab($(this).data("target"));
       scrollToEl($("#publications"));
     });
+
+    // 모바일: ECA+탭(+연도링크) 묶음을 콘텐츠 상단으로 옮겨 스크롤 시 상단 고정.
+    // 데스크톱에서는 사이드바 원위치로 되돌린다.
+    function placePubNav() {
+      var $nav = $("#publications .pub2-side-nav");
+      if (!$nav.length) return;
+      var $content = $("#publications .col-lg-9").first();
+      if (window.matchMedia("(max-width: 991px)").matches) {
+        if (!$nav.hasClass("pub-nav-sticky")) {
+          $content.prepend($nav);
+          $nav.addClass("pub-nav-sticky");
+        }
+      } else if ($nav.hasClass("pub-nav-sticky")) {
+        sidebar.append($nav);
+        $nav.removeClass("pub-nav-sticky");
+      }
+    }
+    placePubNav();
+    $(window).on("resize.pubnav", placePubNav);
 
     // ===== News → 제목 클릭 시 해당 논문으로 이동 =====
     window.openPublicationByTitle = function (title) {
@@ -496,8 +515,8 @@ $(document).ready(function () {
 
       // 사이드바 연도 링크도 동일하게 강조
       var id = $(current).attr("id");
-      sidebar.find(".pub2-year-link").removeClass("active");
-      if (id) sidebar.find('.pub2-year-link[data-yid="' + id + '"]').addClass("active");
+      $("#publications .pub2-year-link").removeClass("active");
+      if (id) $('#publications .pub2-year-link[data-yid="' + id + '"]').addClass("active");
     }
 
     var yearTick = false;

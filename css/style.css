@@ -1461,6 +1461,37 @@ nav#navbar-main .navbar-collapse {
   }
 }
 
+/* 모바일: Publications ECA+탭을 콘텐츠 상단 sticky 고정, 연도 헤더는 그 아래 고정 */
+@media (max-width: 991px) {
+  .pub2-side-nav.pub-nav-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 55px;
+    z-index: 900;
+    margin: 0 0 6px;
+    padding: 8px 0;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+  }
+  .pub2-side-nav.pub-nav-sticky .pub2-notice { margin: 0 0 6px; }
+  .pub2-list .pub2-year {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 124px;
+    z-index: 5;
+    background: #fff;
+  }
+  .pub2-list .pub2-year::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 100%;
+    height: 28px;
+    background: #fff;
+  }
+}
+
 /* News 목록: 내부 스크롤 없이 전체 표시 */
 .news-card.news-list {
   max-height: none !important;
