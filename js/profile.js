@@ -844,7 +844,7 @@ $.when(
       for (const [key, p] of Object.entries(window.peopleDB)) {
         if (role.re.test(p.position || "")) {
           html += `
-            <div class="people-side-item" data-img-key="${key}" title="View profile">
+            <div class="people-side-item ${role.cls}" data-img-key="${key}" title="View profile">
               <img class="people-mini-photo" src="${p.profile_img}" alt="${p.name}" onerror="this.remove()" />
               <div>
                 <div class="people-side-name">${p.name}</div>
