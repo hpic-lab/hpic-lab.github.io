@@ -524,8 +524,13 @@
       "CDR",
       "Phase Interpolator"
     ],
-    "status": "measurement",
-    "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/28nm/M14942%2828nm%2C%2024.5.29%29"
+    "status": "failed",
+    "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/28nm/M14942%2828nm%2C%2024.5.29%29",
+    "fail_reasons": [
+      "Equalization performance degraded by CTLE operating-point setup failure",
+      "DLF timing violation",
+      "Both stemmed from inadequate simulation — top-level and co-simulation not properly performed"
+    ]
   },
   {
     "year": 2024,
@@ -546,8 +551,13 @@
       "eDRAM",
       "In-Memory Computing"
     ],
-    "status": "measurement",
-    "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/65nm/M15092%2865nm%2C%2024.5.XX%29"
+    "status": "failed",
+    "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/65nm/M15092%2865nm%2C%2024.5.XX%29",
+    "fail_reasons": [
+      "Incomplete co-simulation and top-level verification before tape-out",
+      "Inadequate stand-alone analog simulation of individual circuits"
+    ],
+    "revised_into": "Revised into chips #25 and #26"
   },
   {
     "year": 2024,

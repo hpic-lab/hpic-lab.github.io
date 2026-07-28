@@ -185,9 +185,13 @@ $(document).ready(function () {
     var reasons = (chip && chip.fail_reasons) || [];
     if (!reasons.length) return "";
     var lis = reasons.map(function (r) { return "<li>" + r + "</li>"; }).join("");
+    var revised = chip.revised_into
+      ? '<div class="chip-rc-revised">&#8594; ' + chip.revised_into + "</div>"
+      : "";
     return '<div class="chip-rootcause">' +
       '<div class="chip-rootcause-h"><span class="chip-rc-ico">&#9888;</span><span class="chip-rc-title">Root cause</span>' + (reviewHtml || "") + "</div>" +
       "<ul>" + lis + "</ul>" +
+      revised +
     "</div>";
   }
 
@@ -218,6 +222,8 @@ $(document).ready(function () {
     var failBadge = failed ? ' <span class="chip-fail-badge">Failed</span>' : "";
     // Failed 뒤 강조 노트 (예: "Do not repeat the same mistake!")
     var failNote = (failed && chip.fail_note) ? ' <span class="chip-fail-note">' + chip.fail_note + "</span>" : "";
+    // 리비전되어 후속 칩으로 재제작된 경우 제목 옆 배지
+    var revisedBadge = chip.revised_into ? ' <span class="chip-revised-badge">Revised</span>' : "";
     var reviewH = reviewHTML(chip);
     // Failed + Root cause 박스가 있으면 Design Review 를 그 박스 안에 배치, 아니면 상태 줄에 둔다.
     var hasRC = failed && chip.fail_reasons && chip.fail_reasons.length;
@@ -240,7 +246,7 @@ $(document).ready(function () {
           '<div class="chip-title-row">' +
             '<p class="chip-name">' + (chip.name || "") +
               (fab ? ' <span class="chip-fab ' + fabCls + '">' + fab + "</span>" : "") +
-              failBadge + failNote +
+              failBadge + revisedBadge + failNote +
             "</p>" +
           "</div>" +
           // 상태 문구와 Design Review 배지를 한 줄에 (좁으면 배지가 다음 줄로 내려감)

@@ -3851,6 +3851,29 @@ section {
   color: #6f6f6f;
   line-height: 1.55;
 }
+.chip-card2 .chip-rc-revised {
+  margin-top: 7px;
+  padding-top: 7px;
+  border-top: 1px dashed rgba(192, 57, 43, 0.25);
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #185FA5;
+}
+
+/* 제목 옆 Revised 배지 */
+.chip-card2 .chip-revised-badge {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #185FA5;
+  background: rgba(24, 95, 165, 0.08);
+  border: 1px solid rgba(24, 95, 165, 0.4);
+  border-radius: 4px;
+  padding: 1px 8px;
+  margin-left: 8px;
+  vertical-align: 2px;
+  white-space: nowrap;
+}
 
 /* 과제(수행 완료) 배지: 논문 대신 과제 산출물로 마무리된 칩 */
 .chip-card2 .chip-status-project {
