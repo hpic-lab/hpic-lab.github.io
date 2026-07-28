@@ -427,9 +427,10 @@
     "outputs": [],
     "note": "",
     "raw_date": "Oct. (40-nm T)'24",
-    "designer": "Sang-Hyeon Ok",
+    "designer": "Sang-Hyeon Ok and Jae-Geon Lee",
     "designer_imgs": [
-      "sh-ok-profile-img.jpg"
+      "sh-ok-profile-img.jpg",
+      "jg-lee-profile-img.jpeg"
     ],
     "keywords": [
       "DSP",
@@ -490,9 +491,10 @@
     "outputs": [],
     "note": "",
     "raw_date": "June (28-nm T)'24",
-    "designer": "Dong-Hoe Heo",
+    "designer": "Dong-Hoe Heo and Ji-Ho Kim",
     "designer_imgs": [
-      "dh-heo-profile-img.jpg"
+      "dh-heo-profile-img.jpg",
+      "jh-kim-profile-img.png"
     ],
     "keywords": [
       "CDR",
@@ -511,9 +513,10 @@
     "outputs": [],
     "note": "",
     "raw_date": "May (65-nm T)'24",
-    "designer": "Dong-Hyun Lee",
+    "designer": "Dong-Hyun Lee and Shin-Uk Kang",
     "designer_imgs": [
-      "dh-lee-profile-img.png"
+      "dh-lee-profile-img.png",
+      "su-kang-profile-img.jpg"
     ],
     "keywords": [
       "eDRAM",
@@ -580,8 +583,10 @@
     "outputs": [],
     "note": "",
     "raw_date": "Dec (65-nm T)'23",
-    "designer": "",
-    "designer_imgs": [],
+    "designer": "Ji-Ho Kim",
+    "designer_imgs": [
+      "jh-kim-profile-img.png"
+    ],
     "keywords": [
       "ADPLL",
       "Supply/Regulator"
@@ -598,8 +603,10 @@
     "outputs": [],
     "note": "",
     "raw_date": "Dec (65-nm T)'23",
-    "designer": "",
-    "designer_imgs": [],
+    "designer": "Kyu-Ran Park",
+    "designer_imgs": [
+      "kr-park-profile-img.png"
+    ],
     "keywords": [
       "ADPLL",
       "Injection-Locked Osc.",
