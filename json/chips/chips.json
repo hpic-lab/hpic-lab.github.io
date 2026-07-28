@@ -487,26 +487,6 @@
   },
   {
     "year": 2024,
-    "month": 7,
-    "process": "28-nm S",
-    "image": "img/chip_new/3T_PIM_24jul_SS.png",
-    "name": "3T eDRAM PIM",
-    "description": "",
-    "outputs": [],
-    "note": "",
-    "raw_date": "Jul (28-nm S)'24",
-    "designer": "Woo-Suk Jeong",
-    "designer_imgs": [
-      "ws-jung-profile-img.png"
-    ],
-    "keywords": [
-      "eDRAM",
-      "In-Memory Computing"
-    ],
-    "status": "measurement"
-  },
-  {
-    "year": 2024,
     "month": 6,
     "process": "28-nm T",
     "image": "img/chip_new/PICDR.png",
@@ -557,7 +537,7 @@
       "Incomplete co-simulation and top-level verification before tape-out",
       "Inadequate stand-alone analog simulation of individual circuits"
     ],
-    "revised_into": "Revised into chips #25 and #26"
+    "revised_into": "Revised into the Nov-2024 2T & 3T eDRAM PIM (65-nm T)"
   },
   {
     "year": 2024,
