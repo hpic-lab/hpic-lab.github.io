@@ -1484,9 +1484,10 @@ nav#navbar-main .navbar-collapse {
     position: -webkit-sticky;
     position: sticky;
     top: var(--mem-nav-h, 56px);
-    z-index: 40;
+    z-index: 890;
     background: #fff;
     padding: 6px 0 4px;
+    box-shadow: -30px 0 0 #fff, 30px 0 0 #fff;
   }
   #members-sticky-title h1 {
     font-size: 1.5rem;
@@ -1504,8 +1505,9 @@ nav#navbar-main .navbar-collapse {
     position: -webkit-sticky;
     position: sticky;
     top: calc(var(--mem-nav-h, 56px) + var(--mem-title-h, 44px));
-    z-index: 35;
+    z-index: 880;
     background: #fff;
+    box-shadow: -30px 0 0 #fff, 30px 0 0 #fff;
   }
   #people .col-lg-8 > h3::before {
     content: "";
@@ -1521,9 +1523,10 @@ nav#navbar-main .navbar-collapse {
     position: -webkit-sticky;
     position: sticky;
     top: var(--res-nav-h, 56px);
-    z-index: 40;
+    z-index: 890;
     background: #fff;
     padding: 6px 0 4px;
+    box-shadow: -30px 0 0 #fff, 30px 0 0 #fff;   /* 좌우 여백으로 비어져 나오는 내용 가림 */
   }
   #research-sticky-title h1 {
     font-size: 1.5rem;
@@ -1542,8 +1545,9 @@ nav#navbar-main .navbar-collapse {
     position: -webkit-sticky;
     position: sticky;
     top: calc(var(--res-nav-h, 56px) + var(--res-title-h, 44px));
-    z-index: 35;
+    z-index: 880;
     background: #fff;
+    box-shadow: -30px 0 0 #fff, 30px 0 0 #fff;
   }
   #research h5#research-projects::before,
   #research h5#chip-gallery::before {
@@ -1559,15 +1563,20 @@ nav#navbar-main .navbar-collapse {
     top: calc(var(--res-nav-h, 56px) + var(--res-title-h, 44px) + var(--res-sub-h, 40px));
     background: #fff;
   }
-  #chip-tapeout-schedule .tos2-head { z-index: 30; }
-  #chip-year-nav.chip-filter-moved { z-index: 28; }
+  #chip-tapeout-schedule .tos2-head,
+  #chip-year-nav.chip-filter-moved {
+    box-shadow: -30px 0 0 #fff, 30px 0 0 #fff;
+  }
+  #chip-tapeout-schedule .tos2-head { z-index: 870; }
+  #chip-year-nav.chip-filter-moved { z-index: 865; }
   /* Level 3: 연도(2026 등) — Filter 아래에 고정, 스크롤 시 교체 */
   .chip-timeline .chip-year {
     position: -webkit-sticky;
     position: sticky;
     top: calc(var(--res-nav-h, 56px) + var(--res-title-h, 44px) + var(--res-sub-h, 40px) + var(--res-filter-h, 40px));
-    z-index: 20;
+    z-index: 860;
     background: var(--section-bg, #fff);
+    box-shadow: -30px 0 0 var(--section-bg, #fff), 30px 0 0 var(--section-bg, #fff);
   }
   .chip-timeline .chip-year::before {
     content: "";
