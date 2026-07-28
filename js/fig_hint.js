@@ -33,3 +33,37 @@ $(function () {
   initHints();
   [300, 800, 1500, 2500, 4000].forEach(function (t) { setTimeout(initHints, t); });
 });
+
+// ===== 모바일: Members 섹션 다단 고정 (Members 제목 + 카테고리 소제목) =====
+$(function () {
+  function measureMembers() {
+    var $p = $("#people");
+    if (!$p.length) return;
+    var navH = $("#navbar-main").outerHeight() || 56;
+    var mobile = window.matchMedia("(max-width: 991px)").matches;
+    var titleH = mobile ? ($("#members-sticky-title").outerHeight() || 44) : 0;
+    $p.css({ "--mem-nav-h": navH + "px", "--mem-title-h": titleH + "px" });
+  }
+  function setupMembers() {
+    var $p = $("#people");
+    if (!$p.length) return;
+    var $sidebar = $p.find(".sticky-sidebar").first();
+    var $content = $p.find(".col-lg-8").first();
+    var $title = $sidebar.find("h1").first();
+    if (window.matchMedia("(max-width: 991px)").matches) {
+      var $head = $("#members-sticky-title");
+      if (!$head.length) {
+        $head = $('<div id="members-sticky-title" class="members-sticky-title"></div>');
+        $content.prepend($head);
+      }
+      if (!$title.closest("#members-sticky-title").length) $head.append($title);
+    } else if ($("#members-sticky-title").length) {
+      $sidebar.prepend($title);
+      $("#members-sticky-title").remove();
+    }
+    measureMembers();
+  }
+  setupMembers();
+  [200, 600, 1200].forEach(function (t) { setTimeout(measureMembers, t); });
+  $(window).on("resize.memberssticky", setupMembers);
+});
