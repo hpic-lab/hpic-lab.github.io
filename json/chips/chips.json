@@ -450,8 +450,14 @@
       "Receiver",
       "ADC"
     ],
-    "status": "measurement",
-    "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/40nm/ADC_RX_1"
+    "status": "failed",
+    "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/40nm/ADC_RX_1",
+    "fail_reasons": [
+      "LVS failed",
+      "No co-simulation across different blocks",
+      "Poor allocation of design time"
+    ],
+    "fail_note": "Unacceptable!"
   },
   {
     "year": 2024,
