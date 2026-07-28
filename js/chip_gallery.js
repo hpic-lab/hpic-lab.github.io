@@ -209,9 +209,9 @@ $(document).ready(function () {
             '<p class="chip-name">' + (chip.name || "") +
               (fab ? ' <span class="chip-fab ' + fabCls + '">' + fab + "</span>" : "") +
             "</p>" +
-            reviewHTML(chip) +
           "</div>" +
-          statusSlot +
+          // 상태 문구와 Design Review 배지를 한 줄에 (좁으면 배지가 다음 줄로 내려감)
+          '<div class="chip-status-row">' + statusSlot + reviewHTML(chip) + "</div>" +
           (desc ? '<p class="chip-desc">' + desc + "</p>" : "") +
           keywordsHTML(chip) +
           outputsRow +

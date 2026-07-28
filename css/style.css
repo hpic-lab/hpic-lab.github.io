@@ -3775,6 +3775,16 @@ section {
 }
 
 /* 진행 상태 문구 */
+/* 상태 문구 + Design Review 배지를 한 줄에 (모바일에서 좁아지면 배지가 다음 줄로) */
+.chip-card2 .chip-status-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+}
+.chip-card2 .chip-status-row .chip-status {
+  margin-bottom: 0;
+}
 .chip-card2 .chip-status {
   display: flex;
   align-items: center;
