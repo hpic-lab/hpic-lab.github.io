@@ -1486,7 +1486,12 @@ nav#navbar-main .navbar-collapse {
     background: #fff;
     padding: 6px 0 4px;
   }
-  #research-sticky-title h1 { margin: 0; }
+  #research-sticky-title h1 {
+    font-size: 1.5rem;
+    font-weight: 700;   /* 다른 섹션 제목(.section-heading h1)과 통일 */
+    color: #222;
+    margin: 0;
+  }
   #research-sticky-title::before {
     content: "";
     position: absolute; left: 0; right: 0; bottom: 100%;
