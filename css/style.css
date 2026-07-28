@@ -194,13 +194,20 @@ h6 {
   user-select: none;
   align-self: flex-start;   /* 세로 목록에서 활성 배경이 칸 전체로 늘어나지 않도록 */
 }
+/* 안 4: 파란 점 마커 + 볼드 (배경 없음) — 모든 링크에 점 자리 확보, 활성만 채색 */
+.chip-year-link::before {
+  content: "\25CF";
+  color: transparent;
+  font-size: 0.55em;
+  margin-right: 7px;
+  vertical-align: middle;
+}
 .chip-year-link.active {
-  color: #0c447c;
-  font-weight: 700;
-  font-size: 1.18rem;
-  background: #e6f1fb;
-  border-radius: 7px;
-  padding: 3px 12px;
+  color: #2e55be;
+  font-weight: 800;
+}
+.chip-year-link.active::before {
+  color: #2e55be;
 }
 /* 사이드바 필터: All / Failed 세그먼트 (안 A) */
 .chip-filter-divider {
@@ -3152,13 +3159,20 @@ nav#navbar-main .navbar-collapse {
   align-self: flex-start;   /* 세로 목록에서 활성 배경이 칸 전체로 늘어나지 않도록 */
 }
 
+/* 안 4: 파란 점 마커 + 볼드 (배경 없음) — News/Publications 공통 */
+.pub2-year-link::before {
+  content: "\25CF";
+  color: transparent;
+  font-size: 0.55em;
+  margin-right: 7px;
+  vertical-align: middle;
+}
 .pub2-year-link.active {
-  color: #0c447c;
-  font-weight: 700;
-  font-size: 1.18rem;
-  background: #e6f1fb;
-  border-radius: 7px;
-  padding: 3px 12px;
+  color: #2e55be;
+  font-weight: 800;
+}
+.pub2-year-link.active::before {
+  color: #2e55be;
 }
 
 /* 데스크톱(lg+): 세로 배치 */
