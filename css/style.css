@@ -3269,6 +3269,9 @@ nav#navbar-main .navbar-collapse {
   color: #2e55be;
   font-weight: 800;
 }
+/* News 사이드바 연도는 클릭 가능 (해당 연도로 이동) */
+.news-year-link { cursor: pointer; }
+.news-year-link:hover { color: #2e55be; }
 .pub2-year-link.active::before {
   color: #2e55be;
 }
