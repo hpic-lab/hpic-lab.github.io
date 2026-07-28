@@ -1718,8 +1718,7 @@ nav#navbar-main .navbar-collapse {
     position: -webkit-sticky;
     position: sticky;
     top: calc(var(--res-nav-h, 56px) + var(--res-title-h, 44px) + var(--res-sub-h, 40px));
-    background: var(--section-bg, #fff);
-    box-shadow: -30px 0 0 var(--section-bg, #fff), 30px 0 0 var(--section-bg, #fff);
+    background: var(--tos-bg, #f2f6fc);
     z-index: 870;
   }
   /* Level 3: 연도(2026 등) — Chip Gallery 제목(필터 포함) 아래 고정 */
@@ -4255,7 +4254,7 @@ section {
     position: sticky;
     top: calc(100px + var(--res-dsub-h, 42px) + 12px);
     z-index: 5;
-    background: var(--section-bg, #fff);
+    background: var(--tos-bg, #f2f6fc);
   }
   #chip-tapeout-schedule .tos2-head::before {
     content: "";
@@ -4264,7 +4263,7 @@ section {
     right: 0;
     bottom: 100%;
     height: 20px;
-    background: var(--section-bg, #fff);
+    background: var(--tos-bg, #f2f6fc);
   }
 }
 
@@ -4560,7 +4559,16 @@ a.chip-status-venue:hover { background: rgba(55, 138, 221, 0.2); }
 .chip-fab.fab-s14 { color: #15803D; background: rgba(21, 128, 61, 0.08); border-color: rgba(21, 128, 61, 0.4); }    /* Samsung 14nm - green */
 
 /* 예정 탭아웃 일정 (컴팩트, 칩 이미지 없음) — Chip Gallery 하위로 들여쓰기 */
-.chip-tapeout-schedule { margin: 18px 0 30px 24px; }
+/* 안 2: Upcoming Tape-outs 블록 — 옅은 파랑 틴트 + 좌측 파랑 액센트 바 */
+.chip-tapeout-schedule {
+  --tos-bg: #f2f6fc;
+  margin: 18px 0 30px 24px;
+  background: var(--tos-bg);
+  border: 1px solid #dfe8f6;
+  border-left: 4px solid #2e55be;
+  border-radius: 10px;
+  padding: 14px 18px 8px;
+}
 .tos2-head {
   font-size: 1.05rem;
   font-weight: 700;
