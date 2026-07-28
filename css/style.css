@@ -160,17 +160,28 @@ h6 {
   border-radius: 7px;
   padding: 3px 12px;
 }
-/* 하단 Failed 섹션: 사이드바 링크 & 헤더를 빨간 톤으로 구분 */
-.chip-year-link[data-yid="chipyear-Failed"] {
+/* 사이드바 Failed 필터 버튼 (클릭 가능, 누르면 Failed 칩만 표시) */
+.chip-failed-filter {
+  display: inline-block;
+  align-self: flex-start;
+  margin-top: 8px;
+  font-size: 1.05rem;
+  font-weight: 500;
   color: #C0392B;
+  cursor: pointer;
+  padding: 3px 4px;
+  user-select: none;
 }
-.chip-year-link[data-yid="chipyear-Failed"].active {
+.chip-failed-filter:hover {
+  text-decoration: underline;
+}
+.chip-failed-filter.active {
+  font-weight: 700;
+  font-size: 1.18rem;
   color: #C0392B;
   background: rgba(192, 57, 43, 0.10);
-}
-.chip-timeline .chip-failed-toggle {
-  color: #C0392B;
-  margin-top: 6px;
+  border-radius: 7px;
+  padding: 3px 12px;
 }
 @media (min-width: 992px) {
   .chip-year-nav {

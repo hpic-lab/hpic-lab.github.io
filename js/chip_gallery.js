@@ -235,7 +235,7 @@ $(document).ready(function () {
       : "";
 
     return (
-      '<div class="chip-card2">' +
+      '<div class="chip-card2' + (failed ? " chip-card-failed" : "") + '">' +
         '<div class="chip-num">' + num + "</div>" +
         '<div class="chip-thumb">' +
           (chip.image
@@ -354,24 +354,6 @@ $(document).ready(function () {
       $c.append($gh).append($gb);
     }
 
-    // 하단: Failed Chip Gallery — Failed 칩만 모아 필터링해 표시 (연번은 원래 번호 유지)
-    var failedChips = chips.filter(isFailedChip);
-    if (failedChips.length) {
-      var $fh = $(
-        '<div class="chip-year chip-year-toggle chip-failed-toggle collapsed" data-year="Failed" role="button" tabindex="0">' +
-          "Failed" +
-          '<span class="chip-year-caret">&#9662;</span>' +
-        "</div>"
-      );
-      var $fb = $('<div class="chip-year-body"></div>');
-      failedChips.forEach(function (chip) {
-        var num = (typeof chip._galleryNum === "number") ? chip._galleryNum : 0;
-        $fb.append(cardHTML(chip, num, true));
-      });
-      $fb.hide();
-      $c.append($fh).append($fb);
-    }
-
     $c.off("click.chiptoggle").on("click.chiptoggle", ".chip-year-toggle", function () {
       $(this).toggleClass("collapsed");
       $(this).next(".chip-year-body").slideToggle(180);
@@ -400,9 +382,12 @@ $(document).ready(function () {
       $nav.append($a);
     });
 
-    // 스크롤 위치에 따라 현재 연도 강조
+    var filtering = false;
+
+    // 스크롤 위치에 따라 현재 연도 강조 (Failed 필터 중에는 하지 않음)
     function updateActiveYear() {
-      var headers = $c.find(".chip-year-toggle");
+      if (filtering) return;
+      var headers = $c.find(".chip-year-toggle:visible");
       if (!headers.length) return;
       var threshold = $(window).scrollTop() + 130;
       var current = headers[0];
@@ -412,6 +397,47 @@ $(document).ready(function () {
       $nav.find(".chip-year-link").removeClass("active");
       var id = $(current).attr("id");
       if (id) $nav.find('.chip-year-link[data-yid="' + id + '"]').addClass("active");
+    }
+
+    // ===== Failed 필터 버튼 (클릭 시 Failed 칩만 보이도록 필터링) =====
+    if ($c.find(".chip-card-failed").length) {
+      var $failed = $('<span class="chip-failed-filter" role="button" tabindex="0">Failed</span>');
+      $nav.append($failed);
+
+      function applyFailedFilter(on) {
+        filtering = on;
+        $failed.toggleClass("active", on);
+        if (on) {
+          $nav.find(".chip-year-link").removeClass("active");
+          // Failed 카드만 표시
+          $c.find(".chip-card2").each(function () {
+            $(this).toggle($(this).hasClass("chip-card-failed"));
+          });
+          // Failed 칩이 있는 연도만 펼쳐 표시, 없는 연도는 숨김
+          $c.find(".chip-year-toggle").each(function () {
+            var $body = $(this).next(".chip-year-body");
+            var has = $body.find(".chip-card-failed").length > 0;
+            $(this).toggle(has);
+            if (has) { $(this).removeClass("collapsed"); $body.show(); }
+            else $body.hide();
+          });
+        } else {
+          // 기본 보기로 복원 (2026/2025 펼침, 나머지 접힘)
+          $c.find(".chip-card2").show();
+          $c.find(".chip-year-toggle").each(function () {
+            var y = Number($(this).attr("data-year"));
+            var open = DEFAULT_OPEN_YEARS.indexOf(y) >= 0;
+            $(this).show().toggleClass("collapsed", !open);
+            var $body = $(this).next(".chip-year-body");
+            if (open) $body.show(); else $body.hide();
+          });
+          updateActiveYear();
+        }
+      }
+      $failed.on("click", function () { applyFailedFilter(!filtering); });
+      $failed.on("keydown", function (e) {
+        if (e.key === "Enter" || e.key === " ") { e.preventDefault(); applyFailedFilter(!filtering); }
+      });
     }
 
     var tick = false;
