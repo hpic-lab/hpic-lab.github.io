@@ -490,6 +490,11 @@ $(document).ready(function () {
       }
       var node = header[0];
       if (!node) return;
+      // 핵심: 위쪽 지연로드(lazy) 이미지들을 즉시 로드시켜 스크롤 중 레이아웃이
+      // 밀리며 목표가 계속 위로 도망가는(=기어가는) 현상 자체를 제거한다.
+      document.querySelectorAll('img[loading="lazy"]').forEach(function (img) {
+        img.loading = "eager";
+      });
       function jump() {
         var docEl = document.documentElement, prev = docEl.style.scrollBehavior;
         docEl.style.scrollBehavior = "auto";
@@ -499,7 +504,7 @@ $(document).ready(function () {
         docEl.style.scrollBehavior = prev;
       }
       jump();
-      [70, 180, 350, 600, 900].forEach(function (t) { setTimeout(jump, t); });
+      [60, 150, 300, 500, 800, 1200].forEach(function (t) { setTimeout(jump, t); });
     });
 
     // ===== 스크롤 위치에 따라 현재 연도 헤더 강조 (시안 3) =====
