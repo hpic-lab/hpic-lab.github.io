@@ -478,15 +478,15 @@ $(document).ready(function () {
       $(this).next(".pub2-year-body").stop(true, false).slideToggle(250);
     });
 
-    // 연도 바로가기 (접혀 있으면 펼친 뒤 이동)
-    sidebar.on("click", ".pub2-year-link", function (e) {
-      e.preventDefault();
+    // 연도 바로가기: 접혀 있으면 펼치고, 스크롤은 브라우저 기본 앵커 이동에 맡긴다
+    // (href="#연도id" + CSS scroll-margin-top 으로 네비바 보정). 위치 계산 기반 JS 스크롤보다 안정적.
+    sidebar.on("click", ".pub2-year-link", function () {
       var header = $($(this).attr("href"));
       if (header.hasClass("collapsed")) {
         header.removeClass("collapsed");
         header.next(".pub2-year-body").show();
       }
-      scrollToEl(header);
+      // preventDefault 하지 않음 → 브라우저가 앵커로 스크롤
     });
 
     // ===== 스크롤 위치에 따라 현재 연도 헤더 강조 (시안 3) =====
