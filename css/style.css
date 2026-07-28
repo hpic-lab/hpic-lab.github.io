@@ -3571,6 +3571,14 @@ nav#navbar-main .navbar-collapse {
   background: #f3f2ee;
   cursor: default;
 }
+/* Response(응답 서한) 링크 — 초록 계열로 구분 + 아이콘 */
+.pub2-rv-response {
+  color: #0F766E;
+  border-color: rgba(15, 118, 110, 0.35);
+  background: rgba(15, 118, 110, 0.06);
+}
+.pub2-rv-response:hover { background: rgba(15, 118, 110, 0.13); }
+.pub2-rv-ic { margin-right: 4px; }
 
 @media (max-width: 576px) {
   .pub2-entry {

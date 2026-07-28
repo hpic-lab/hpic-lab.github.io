@@ -88,18 +88,27 @@ $(document).ready(function () {
   //     { "round": "1st", "submission": "https://.../..." },
   //     { "round": "2nd", "submission": "" }   // link 비우면 회색 placeholder
   //   ]
-  // (response 키는 더 이상 사용하지 않습니다.)
+  //     { "round": "1st", "submission": "https://.../...", "response": "https://.../..." }
+  //   response 키가 있으면 해당 라운드의 "Response" 아이콘 링크(응답 서한)를 함께 표시.
   function reviewProcessHTML(pub, isJournal) {
     if (!isJournal) return "";
     var rounds = pub.review || [];
     if (!rounds.length) return "";
     var chips = rounds.map(function (r) {
       if (!r || typeof r !== "object") return "";
-      var label = (r.round ? r.round + " " : "") + "Submission";
-      var link = r.submission || r.link || "";
-      return link
-        ? '<a class="pub2-rv-link" href="' + link + '" target="_blank" rel="noopener noreferrer">' + label + "</a>"
-        : '<span class="pub2-rv-link pub2-rv-tbd" title="To be updated">' + label + "</span>";
+      var out = "";
+      var subLabel = (r.round ? r.round + " " : "") + "Submission";
+      var subLink = r.submission || r.link || "";
+      out += subLink
+        ? '<a class="pub2-rv-link" href="' + subLink + '" target="_blank" rel="noopener noreferrer">' + subLabel + "</a>"
+        : '<span class="pub2-rv-link pub2-rv-tbd" title="To be updated">' + subLabel + "</span>";
+      if (r.response) {
+        var respLabel = (r.round ? r.round + " " : "") + "Response";
+        out += '<a class="pub2-rv-link pub2-rv-response" href="' + r.response +
+          '" target="_blank" rel="noopener noreferrer" title="Response letter (Members only)">' +
+          '<span class="pub2-rv-ic" aria-hidden="true">&#128221;</span>' + respLabel + "</a>";
+      }
+      return out;
     }).join("");
     if (!chips) return "";
     return '<div class="pub2-review">' +
