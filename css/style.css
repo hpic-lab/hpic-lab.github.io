@@ -3471,8 +3471,8 @@ nav#navbar-main .navbar-collapse {
 
 /* "~2023" 그룹 내부의 작은 연도 구분 라벨 */
 .pub2-subyear {
-  font-size: 1.2rem;
-  font-weight: 700;
+  font-size: 1.05rem;
+  font-weight: 500;
   color: #aaa;
   margin: 18px 0 2px;
 }
