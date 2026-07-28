@@ -594,18 +594,12 @@ $(document).ready(function () {
 
   // 모바일: Filter(All/Failed)를 Chip Gallery 아래(칩 목록 위)로 옮긴다. 데스크톱은 사이드바 원위치.
   function placeChipFilter() {
-    var $nav = $("#chip-year-nav");
-    if (!$nav.length) return;
-    if (window.matchMedia("(max-width: 991px)").matches) {
-      var $anchor = $("#chip-gallery").first();
-      if ($anchor.length && !$nav.hasClass("chip-filter-moved")) {
-        $anchor.append($nav);
-        $nav.addClass("chip-filter-moved");
-      }
-    } else if ($nav.hasClass("chip-filter-moved")) {
-      $("#research .research-subnav").append($nav);
-      $nav.removeClass("chip-filter-moved");
-    }
+    // All/Failed 세그먼트만 Chip Gallery 제목 우측으로 (웹/모바일 공통).
+    // 연도 링크는 사이드바(#chip-year-nav)에 그대로 둔다.
+    var $seg = $("#research .chip-filter-seg").first();
+    var $h5 = $("#chip-gallery").first();
+    if (!$seg.length || !$h5.length) return;
+    if (!$seg.parent().is($h5)) $h5.append($seg);
   }
 
   // 모바일: Research 섹션 다단 고정 스택 (Research > 소섹션 > Upcoming Tape-outs > Filter/연도)

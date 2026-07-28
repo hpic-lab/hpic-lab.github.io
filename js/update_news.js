@@ -213,6 +213,7 @@ $(document).ready(function () {
         var navH = $("#navbar-main").outerHeight() || 56;
         var headH = window.matchMedia("(max-width: 991px)").matches
           ? ($("#news-sticky-head").outerHeight() || 0) : 0;
+        $("#news-gallery").css("--news-nav-h", navH + "px");
         container.css("--news-year-top", (navH + headH) + "px");
       }
       updNewsYearTop();

@@ -112,27 +112,29 @@ h6 {
     gap: 8px;
     margin-top: 0;
   }
-  /* Chip Gallery 제목에 인라인으로 붙는 필터 (오른쪽 정렬) */
-  #research h5#chip-gallery {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 12px;
-    flex-wrap: wrap;
-  }
-  #research h5#chip-gallery .chip-year-nav.chip-filter-moved {
-    display: flex !important;
-    margin: 0;
-    flex: 0 0 auto;
-  }
-  /* 인라인 필터에서는 'Filter' 라벨/구분선 숨김 */
-  #research h5#chip-gallery .chip-filter-label,
-  #research h5#chip-gallery .chip-filter-divider { display: none !important; }
   /* 사이드바의 연도 바(연도 목록)만 모바일에서 숨김 — 콘텐츠의 연도별 그룹은 유지 */
   .pub2-year-links,
   .news-year-links {
     display: none !important;
   }
+}
+
+/* ===== Chip Gallery 제목 우측에 All/Failed 필터 인라인 (웹/모바일 공통) ===== */
+#research h5#chip-gallery {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+#research h5#chip-gallery .chip-filter-seg {
+  margin: 0;
+  flex: 0 0 auto;
+}
+/* 'Filter' 라벨과 구분선은 사용 안 함 */
+.chip-filter-label,
+.chip-filter-divider {
+  display: none !important;
 }
 .subsection-title {
   font-size: 1.5rem;
@@ -1631,7 +1633,7 @@ nav#navbar-main .navbar-collapse {
   .news-sticky-head {
     position: -webkit-sticky;
     position: sticky;
-    top: 52px;
+    top: var(--news-nav-h, 56px);   /* 실제 내비바 높이에 맞춰 연도 헤더와의 틈 제거 */
     z-index: 900;
     background: #fff;
     padding: 6px 0 8px;
