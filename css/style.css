@@ -112,12 +112,22 @@ h6 {
     gap: 8px;
     margin-top: 0;
   }
-  /* Chip Gallery 아래로 옮겨진 필터 */
-  .chip-year-nav.chip-filter-moved {
-    display: flex !important;
-    margin: 22px 0 14px;   /* Chip Gallery 밑줄과 여백 확보 */
+  /* Chip Gallery 제목에 인라인으로 붙는 필터 (오른쪽 정렬) */
+  #research h5#chip-gallery {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
   }
-  .chip-filter-label { margin-bottom: 0; }
+  #research h5#chip-gallery .chip-year-nav.chip-filter-moved {
+    display: flex !important;
+    margin: 0;
+    flex: 0 0 auto;
+  }
+  /* 인라인 필터에서는 'Filter' 라벨/구분선 숨김 */
+  #research h5#chip-gallery .chip-filter-label,
+  #research h5#chip-gallery .chip-filter-divider { display: none !important; }
   /* 사이드바의 연도 바(연도 목록)만 모바일에서 숨김 — 콘텐츠의 연도별 그룹은 유지 */
   .pub2-year-links,
   .news-year-links {
@@ -1579,25 +1589,20 @@ nav#navbar-main .navbar-collapse {
     position: absolute; left: 0; right: 0; bottom: 100%;
     height: 30px; background: var(--section-bg, #fff);
   }
-  /* Level 2: Upcoming Tape-outs 헤더 & Filter */
-  #chip-tapeout-schedule .tos2-head,
-  #chip-year-nav.chip-filter-moved {
+  /* Level 2: Upcoming Tape-outs 헤더 (Filter는 Chip Gallery 제목에 인라인) */
+  #chip-tapeout-schedule .tos2-head {
     position: -webkit-sticky;
     position: sticky;
     top: calc(var(--res-nav-h, 56px) + var(--res-title-h, 44px) + var(--res-sub-h, 40px));
     background: var(--section-bg, #fff);
-  }
-  #chip-tapeout-schedule .tos2-head,
-  #chip-year-nav.chip-filter-moved {
     box-shadow: -30px 0 0 var(--section-bg, #fff), 30px 0 0 var(--section-bg, #fff);
+    z-index: 870;
   }
-  #chip-tapeout-schedule .tos2-head { z-index: 870; }
-  #chip-year-nav.chip-filter-moved { z-index: 865; }
-  /* Level 3: 연도(2026 등) — Filter 아래에 고정, 스크롤 시 교체 */
+  /* Level 3: 연도(2026 등) — Chip Gallery 제목(필터 포함) 아래 고정 */
   .chip-timeline .chip-year {
     position: -webkit-sticky;
     position: sticky;
-    top: calc(var(--res-nav-h, 56px) + var(--res-title-h, 44px) + var(--res-sub-h, 40px) + var(--res-filter-h, 40px));
+    top: calc(var(--res-nav-h, 56px) + var(--res-title-h, 44px) + var(--res-sub-h, 40px));
     z-index: 860;
     background: var(--section-bg, #fff);
     box-shadow: -30px 0 0 var(--section-bg, #fff), 30px 0 0 var(--section-bg, #fff);

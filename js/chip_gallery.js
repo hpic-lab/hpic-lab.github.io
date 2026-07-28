@@ -597,9 +597,9 @@ $(document).ready(function () {
     var $nav = $("#chip-year-nav");
     if (!$nav.length) return;
     if (window.matchMedia("(max-width: 991px)").matches) {
-      var $anchor = $("#chip-timeline-preview").first();
+      var $anchor = $("#chip-gallery").first();
       if ($anchor.length && !$nav.hasClass("chip-filter-moved")) {
-        $anchor.before($nav);
+        $anchor.append($nav);
         $nav.addClass("chip-filter-moved");
       }
     } else if ($nav.hasClass("chip-filter-moved")) {
@@ -616,7 +616,7 @@ $(document).ready(function () {
     var mobile = window.matchMedia("(max-width: 991px)").matches;
     var resH = mobile ? ($("#research-sticky-title").outerHeight() || 44) : 0;
     var subH = mobile ? ($("#chip-gallery").outerHeight() || 40) : 0;
-    var filterH = mobile ? ($("#chip-year-nav.chip-filter-moved").outerHeight() || 40) : 0;
+    var filterH = 0; /* 필터가 Chip Gallery 제목에 인라인 포함되어 별도 오프셋 불필요 */
     $research.css({
       "--res-nav-h": navH + "px",
       "--res-title-h": resH + "px",
