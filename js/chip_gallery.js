@@ -399,21 +399,27 @@ $(document).ready(function () {
       if (id) $nav.find('.chip-year-link[data-yid="' + id + '"]').addClass("active");
     }
 
-    // ===== Failed 필터 버튼 (클릭 시 Failed 칩만 보이도록 필터링) =====
+    // ===== 필터: All / Failed 세그먼트 (안 A) — All 로 언제든 복귀 =====
     if ($c.find(".chip-card-failed").length) {
-      var $failed = $('<span class="chip-failed-filter" role="button" tabindex="0">Failed</span>');
-      $nav.append($failed);
+      var $filter = $(
+        '<div class="chip-filter-divider"></div>' +
+        '<div class="chip-filter-label">Filter</div>' +
+        '<div class="chip-filter-seg">' +
+          '<span class="chip-filter-opt active" data-f="all" role="button" tabindex="0">All</span>' +
+          '<span class="chip-filter-opt cf-failed" data-f="failed" role="button" tabindex="0">Failed</span>' +
+        "</div>"
+      );
+      $nav.append($filter);
 
       function applyFailedFilter(on) {
         filtering = on;
-        $failed.toggleClass("active", on);
+        $nav.find(".chip-filter-opt").removeClass("active");
+        $nav.find('.chip-filter-opt[data-f="' + (on ? "failed" : "all") + '"]').addClass("active");
         if (on) {
           $nav.find(".chip-year-link").removeClass("active");
-          // Failed 카드만 표시
           $c.find(".chip-card2").each(function () {
             $(this).toggle($(this).hasClass("chip-card-failed"));
           });
-          // Failed 칩이 있는 연도만 펼쳐 표시, 없는 연도는 숨김
           $c.find(".chip-year-toggle").each(function () {
             var $body = $(this).next(".chip-year-body");
             var has = $body.find(".chip-card-failed").length > 0;
@@ -422,7 +428,6 @@ $(document).ready(function () {
             else $body.hide();
           });
         } else {
-          // 기본 보기로 복원 (2026/2025 펼침, 나머지 접힘)
           $c.find(".chip-card2").show();
           $c.find(".chip-year-toggle").each(function () {
             var y = Number($(this).attr("data-year"));
@@ -434,9 +439,14 @@ $(document).ready(function () {
           updateActiveYear();
         }
       }
-      $failed.on("click", function () { applyFailedFilter(!filtering); });
-      $failed.on("keydown", function (e) {
-        if (e.key === "Enter" || e.key === " ") { e.preventDefault(); applyFailedFilter(!filtering); }
+      $nav.on("click", ".chip-filter-opt", function () {
+        applyFailedFilter($(this).data("f") === "failed");
+      });
+      $nav.on("keydown", ".chip-filter-opt", function (e) {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          applyFailedFilter($(this).data("f") === "failed");
+        }
       });
     }
 
@@ -453,14 +463,13 @@ $(document).ready(function () {
     updateActiveYear();
   }
 
-  // Chip Gallery 콘텐츠까지 스크롤했을 때만 좌측 사이드바(제목+연도) 표시
+  // Research Projects 섹션부터 좌측 사이드바(섹션 링크 + 연도) 표시
   function setupSidebarReveal() {
     var subnav = document.querySelector("#research .research-subnav");
-    var anchor = document.getElementById("chip-gallery");
+    var anchor = document.getElementById("research-projects");
     if (!subnav || !anchor) return;
     function upd() {
-      // 칩 갤러리 제목이 화면 상단(약 220px) 근처까지 올라오면 표시
-      subnav.classList.toggle("visible", anchor.getBoundingClientRect().top <= 220);
+      subnav.classList.toggle("visible", anchor.getBoundingClientRect().top <= 260);
     }
     var ticking = false;
     window.addEventListener("scroll", function () {
@@ -471,6 +480,45 @@ $(document).ready(function () {
     });
     window.addEventListener("resize", upd);
     upd();
+  }
+
+  // 사이드바 섹션 링크: Research Projects / Chip Gallery (클릭 이동 + 현재 섹션 강조)
+  function setupSectionNav() {
+    var $links = $(".subsection-link");
+    if (!$links.length) return;
+
+    $links.on("click", function (e) {
+      e.preventDefault();
+      var el = document.getElementById($(this).data("target"));
+      if (!el) return;
+      // 지연로드 이미지를 즉시 로드해 스크롤 중 레이아웃 밀림 방지
+      document.querySelectorAll('img[loading="lazy"]').forEach(function (img) { img.loading = "eager"; });
+      function jump() {
+        var docEl = document.documentElement, prev = docEl.style.scrollBehavior;
+        docEl.style.scrollBehavior = "auto";
+        var y = Math.max(0, el.getBoundingClientRect().top + window.pageYOffset - 90);
+        try { window.scrollTo({ top: y, behavior: "instant" }); } catch (err) { window.scrollTo(0, y); }
+        docEl.style.scrollBehavior = prev;
+      }
+      jump();
+      [60, 180, 360, 600].forEach(function (t) { setTimeout(jump, t); });
+    });
+
+    function updateActiveSection() {
+      var threshold = $(window).scrollTop() + 150;
+      var active = null;
+      $links.each(function () {
+        var el = document.getElementById($(this).data("target"));
+        if (el && (el.getBoundingClientRect().top + window.pageYOffset) <= threshold) active = this;
+      });
+      $links.removeClass("active");
+      if (active) $(active).addClass("active");
+    }
+    var t = false;
+    $(window).on("scroll.sectionnav resize.sectionnav", function () {
+      if (!t) { requestAnimationFrame(function () { updateActiveSection(); t = false; }); t = true; }
+    });
+    updateActiveSection();
   }
 
   $.getJSON("json/chips/chips.json").done(function (chips) {
@@ -485,5 +533,7 @@ $(document).ready(function () {
     buildYearNav("#chip-year-nav", "#chip-timeline-preview");
     // 스크롤 시에만 사이드바 노출
     setupSidebarReveal();
+    // 섹션 링크(Research Projects / Chip Gallery)
+    setupSectionNav();
   });
 });

@@ -160,28 +160,66 @@ h6 {
   border-radius: 7px;
   padding: 3px 12px;
 }
-/* 사이드바 Failed 필터 버튼 (클릭 가능, 누르면 Failed 칩만 표시) */
-.chip-failed-filter {
-  display: inline-block;
+/* 사이드바 필터: All / Failed 세그먼트 (안 A) */
+.chip-filter-divider {
+  align-self: stretch;
+  border-top: 1px solid #e5e5e5;
+  margin: 14px 0 10px;
+}
+.chip-filter-label {
   align-self: flex-start;
-  margin-top: 8px;
-  font-size: 1.05rem;
-  font-weight: 500;
-  color: #C0392B;
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #aaa;
+  margin-bottom: 7px;
+}
+.chip-filter-seg {
+  align-self: flex-start;
+  display: inline-flex;
+  border: 1px solid #e0ddd6;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.chip-filter-opt {
+  font-size: 0.9rem;
+  padding: 5px 14px;
   cursor: pointer;
-  padding: 3px 4px;
+  color: #777;
   user-select: none;
 }
-.chip-failed-filter:hover {
-  text-decoration: underline;
+.chip-filter-opt + .chip-filter-opt {
+  border-left: 1px solid #e0ddd6;
 }
-.chip-failed-filter.active {
-  font-weight: 700;
-  font-size: 1.18rem;
+.chip-filter-opt.cf-failed {
   color: #C0392B;
+}
+.chip-filter-opt.active {
+  background: #f1efe8;
+  font-weight: 700;
+  color: #333;
+}
+.chip-filter-opt.cf-failed.active {
   background: rgba(192, 57, 43, 0.10);
-  border-radius: 7px;
-  padding: 3px 12px;
+  color: #C0392B;
+}
+
+/* 사이드바 섹션 링크: Research Projects / Chip Gallery (같은 레벨) */
+.subsection-link {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #9a9a9a;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 0 0 9px;
+  transition: color 0.15s ease;
+}
+.subsection-link:hover {
+  color: #444;
+}
+.subsection-link.active {
+  color: #1c3557;
 }
 @media (min-width: 992px) {
   .chip-year-nav {
