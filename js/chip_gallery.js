@@ -463,13 +463,15 @@ $(document).ready(function () {
     updateActiveYear();
   }
 
-  // Research Projects 섹션부터 좌측 사이드바(섹션 링크 + 연도) 표시
+  // Research 섹션에 진입하면 바로 좌측 사이드바(섹션 링크 + 연도) 표시
   function setupSidebarReveal() {
     var subnav = document.querySelector("#research .research-subnav");
-    var anchor = document.getElementById("research-projects");
+    var anchor = document.getElementById("research");
     if (!subnav || !anchor) return;
     function upd() {
-      subnav.classList.toggle("visible", anchor.getBoundingClientRect().top <= 260);
+      // 섹션 상단이 화면 중반쯤 올라오면(=진입) 표시
+      var top = anchor.getBoundingClientRect().top;
+      subnav.classList.toggle("visible", top <= window.innerHeight * 0.5);
     }
     var ticking = false;
     window.addEventListener("scroll", function () {
