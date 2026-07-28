@@ -220,17 +220,16 @@ $(document).ready(function () {
       : "";
 
     // 직책(position)에서 역할(Server Manager, Lab Captain 등)을 분리해
-    // 사진 우측 상단 아이콘 배지로 표시 (마우스를 올리면 역할명 표시)
+    // 멤버 카드 우측에 텍스트 배지(예: "★ Lab Captain")로 표시
     const parts = position.split(/<br\s*\/?>/i);
     const basePosition = parts[0].trim();
-    const roleBadges = parts.slice(1).map((r) => {
+    // position이 "역할만"("Server Manager")이든 "직책<br>역할"이든 모두에서 역할을 감지
+    const roleTags = parts.map((r) => {
       const role = r.trim();
       if (!role) return "";
-      let icon = "★";
-      let cls = "role-etc";
-      if (/server/i.test(role)) { icon = "⚙"; cls = "role-server"; }
-      else if (/captain/i.test(role)) { icon = "★"; cls = "role-captain"; }
-      return `<span class="people-role ${cls}" title="${role}">${icon}</span>`;
+      if (/server/i.test(role)) return `<span class="people-role-tag role-server" title="${role}">⚙ ${role}</span>`;
+      if (/captain/i.test(role)) return `<span class="people-role-tag role-captain" title="${role}">★ ${role}</span>`;
+      return ""; // 일반 직책은 배지로 표시하지 않음
     }).join("");
 
     // PI도 학생과 동일한 컴팩트 카드. 연구분야(tag)는 표시, 아이콘은 상세 모달에 표시됨
@@ -256,9 +255,10 @@ $(document).ready(function () {
         data-img-key="${imgKey}">
         <img class="people-mini-photo" src="${person.profile_img}" alt="${name}" onerror="this.remove()" />
         <div class="people-compact-info">
-          <span class="people-name">${name}</span>${roleBadges ? `<span class="people-roles-inline">${roleBadges}</span>` : ""}
+          <span class="people-name">${name}</span>
           ${interest ? `<div class="people-interest-inline">${interest}</div>` : ""}
         </div>
+        ${roleTags ? `<div class="people-role-tags">${roleTags}</div>` : ""}
       </div>
     `;
   }
