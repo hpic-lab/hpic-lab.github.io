@@ -284,6 +284,9 @@ h6 {
   border-radius: 12px;
   padding: 18px 22px;
   margin: 4px 0 22px;
+  /* 아래 연도 헤더(sticky)의 흰색 ::before가 보드 하단 테두리를 덮지 않도록 위로 올림 */
+  position: relative;
+  z-index: 6;
 }
 .fail-board-head {
   font-size: 1.35rem;
