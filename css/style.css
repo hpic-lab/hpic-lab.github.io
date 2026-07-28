@@ -97,15 +97,11 @@ h6 {
     visibility: visible;
   }
 }
-/* 모바일: 사이드바에서 연도 목록/섹션 링크는 숨기되 Filter(All/Failed)는 노출 */
+/* 모바일: 사이드바(제목/연도/필터)는 숨기고, Filter(All/Failed)는 JS가 Chip Gallery 아래로 옮겨 노출 */
 @media (max-width: 991px) {
   .research-subnav {
-    display: block;
-    border-left: none;
-    padding-left: 0;
-    margin-top: 6px;
+    display: none;
   }
-  .research-subnav .subsection-link,
   .chip-year-nav .chip-year-link,
   .chip-filter-divider {
     display: none;
@@ -115,6 +111,11 @@ h6 {
     align-items: center;
     gap: 8px;
     margin-top: 0;
+  }
+  /* Chip Gallery 아래로 옮겨진 필터 */
+  .chip-year-nav.chip-filter-moved {
+    display: flex !important;
+    margin: 4px 0 14px;
   }
   .chip-filter-label { margin-bottom: 0; }
   /* 사이드바의 연도 바(연도 목록)만 모바일에서 숨김 — 콘텐츠의 연도별 그룹은 유지 */

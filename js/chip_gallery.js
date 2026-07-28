@@ -589,6 +589,22 @@ $(document).ready(function () {
     });
   }
 
+  // 모바일: Filter(All/Failed)를 Chip Gallery 아래(칩 목록 위)로 옮긴다. 데스크톱은 사이드바 원위치.
+  function placeChipFilter() {
+    var $nav = $("#chip-year-nav");
+    if (!$nav.length) return;
+    if (window.matchMedia("(max-width: 991px)").matches) {
+      var $anchor = $("#chip-timeline-preview").first();
+      if ($anchor.length && !$nav.hasClass("chip-filter-moved")) {
+        $anchor.before($nav);
+        $nav.addClass("chip-filter-moved");
+      }
+    } else if ($nav.hasClass("chip-filter-moved")) {
+      $("#research .research-subnav").append($nav);
+      $nav.removeClass("chip-filter-moved");
+    }
+  }
+
   $.getJSON("json/chips/chips.json").done(function (chips) {
     computeGalleryNumbers(chips);  // 연번 먼저 확정 (연도/Failed 섹션 공통)
     // 메인 Research 미리보기 (접이식)
@@ -605,5 +621,8 @@ $(document).ready(function () {
     setupSectionNav();
     // 예정 탭아웃 일정 (연번은 갤러리 최대 번호 = chips.length 다음부터)
     renderTapeoutSchedule("#chip-tapeout-schedule", chips.length);
+    // 모바일: Filter를 Chip Gallery 아래로 이동
+    placeChipFilter();
+    $(window).on("resize.chipfilter", placeChipFilter);
   });
 });
