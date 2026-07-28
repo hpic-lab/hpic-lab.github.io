@@ -115,7 +115,7 @@ h6 {
   /* Chip Gallery 아래로 옮겨진 필터 */
   .chip-year-nav.chip-filter-moved {
     display: flex !important;
-    margin: 4px 0 14px;
+    margin: 22px 0 14px;   /* Chip Gallery 밑줄과 여백 확보 */
   }
   .chip-filter-label { margin-bottom: 0; }
   /* 사이드바의 연도 바(연도 목록)만 모바일에서 숨김 — 콘텐츠의 연도별 그룹은 유지 */
@@ -1473,8 +1473,31 @@ nav#navbar-main .navbar-collapse {
   #research .row,
   #people,
   #people .container,
-  #people .row {
+  #people .row,
+  #lab-policy,
+  #lab-policy .container,
+  #lab-policy .row {
     overflow: visible !important;
+  }
+}
+
+/* 모바일 전용: Lab Policy("Before You Join") 제목 상단 고정 */
+@media (max-width: 991px) {
+  #labpolicy-sticky-title {
+    position: -webkit-sticky;
+    position: sticky;
+    top: var(--lp-nav-h, 56px);
+    z-index: 890;
+    background: #fff;
+    padding: 6px 0 6px;
+    box-shadow: -30px 0 0 #fff, 30px 0 0 #fff;
+  }
+  #labpolicy-sticky-title h1 { font-weight: 700; color: #222; margin: 0; }
+  #labpolicy-sticky-title .lab-policy-updated { margin: 6px 0 0; }
+  #labpolicy-sticky-title::before {
+    content: "";
+    position: absolute; left: 0; right: 0; bottom: 100%;
+    height: 60px; background: #fff;
   }
 }
 

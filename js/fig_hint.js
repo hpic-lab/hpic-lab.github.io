@@ -67,3 +67,32 @@ $(function () {
   [200, 600, 1200].forEach(function (t) { setTimeout(measureMembers, t); });
   $(window).on("resize.memberssticky", setupMembers);
 });
+
+// ===== 모바일 전용: Lab Policy("Before You Join") 제목 상단 고정 =====
+$(function () {
+  function setupLabPolicy() {
+    var $lp = $("#lab-policy");
+    if (!$lp.length) return;
+    var $heading = $lp.find(".section-heading").first();
+    var $content = $lp.find(".col-lg-8").first();
+    var $title = $heading.find("h1").first();
+    var $date = $heading.find(".lab-policy-updated").first();
+    if (window.matchMedia("(max-width: 991px)").matches) {
+      var $head = $("#labpolicy-sticky-title");
+      if (!$head.length) {
+        $head = $('<div id="labpolicy-sticky-title" class="labpolicy-sticky-title"></div>');
+        $content.prepend($head);
+      }
+      if (!$title.closest("#labpolicy-sticky-title").length) {
+        $head.append($title).append($date);
+      }
+      $lp.css("--lp-nav-h", ($("#navbar-main").outerHeight() || 56) + "px");
+    } else if ($("#labpolicy-sticky-title").length) {
+      $heading.prepend($date).prepend($title);
+      $("#labpolicy-sticky-title").remove();
+    }
+  }
+  setupLabPolicy();
+  [200, 600, 1200].forEach(function (t) { setTimeout(setupLabPolicy, t); });
+  $(window).on("resize.labpolicy", setupLabPolicy);
+});
