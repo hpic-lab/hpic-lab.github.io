@@ -517,33 +517,36 @@ $(document).ready(function () {
     //updateList("#modal-experience", parsed_experience, "No experience available.");
 
     // ===== Tape-out Schedule: Upcoming Tape-outs(tapeout_schedule.json)와 profile_img로 자동 연동 =====
+    // 표시는 Publications 스타일(원형 연번 + 날짜열 + 본문). 연번은 학생 개인별로 1부터.
     var _tosImgKey = getFileName(profile_img);
     var _tosAlias = { "dh-kim-new-profile-image.jpg": "dh-kim-profile-image.jpg" };
     var autoTos = ((window.tapeoutByImg || {})[_tosImgKey]
                    || (window.tapeoutByImg || {})[_tosAlias[_tosImgKey]] || []).slice();
     // 최신(미래) 일정이 위로 오도록 연월(ym) 내림차순
     autoTos.sort(function (a, b) { return a.ym < b.ym ? 1 : a.ym > b.ym ? -1 : 0; });
-    var tosHTML = autoTos
-      .map(function (s) {
+    // 자동 연동 항목을 공통 형식 {date,title,process}로 정규화
+    var tosList = autoTos.map(function (s) {
+      return { date: s.ym || "", title: s.title || "", process: s.process || "" };
+    });
+    // 자동 연동이 없으면 수동 데이터(person 필드)로 대체
+    if (!tosList.length) {
+      tosList = parseData(tape_out_schedule).map(function (s) {
+        return { date: s.date || "", title: s.topic || "", process: s.process || "" };
+      });
+    }
+    // 학생 개인별 연번(위=1)으로 Publications 스타일 항목 생성
+    var tosHTML = tosList
+      .map(function (s, i) {
         var badge = s.process
-          ? ' <span class="chip-fab ' + tosFabClass(s.process) + '">' + tosFabLabel(s.process) + "</span>"
+          ? '<span class="chip-fab ' + tosFabClass(s.process) + '">' + tosFabLabel(s.process) + "</span>"
           : "";
-        var topic = s.title ? " &mdash; " + s.title : "";
-        return '<span class="tos-item">' + (s.ym || "") + topic + badge + "</span>";
+        return '<div class="tos-entry">' +
+                 '<div class="tos-num">' + (i + 1) + "</div>" +
+                 '<div class="tos-date">' + s.date + "</div>" +
+                 '<div class="tos-body">' + s.title + (badge ? " " + badge : "") + "</div>" +
+               "</div>";
       })
       .join("");
-    // 자동 연동이 없으면 수동 데이터(person 필드)로 대체
-    if (!tosHTML) {
-      tosHTML = parseData(tape_out_schedule)
-        .map(function (s) {
-          var badge = s.process
-            ? ' <span class="chip-fab ' + tosFabClass(s.process) + '">' + tosFabLabel(s.process) + "</span>"
-            : "";
-          var topic = s.topic ? " &mdash; " + s.topic : "";
-          return '<span class="tos-item">' + (s.date || "") + topic + badge + "</span>";
-        })
-        .join("");
-    }
     // 졸업생(소속 있음)·교수는 Tape-out Schedule 섹션 미표시
     var _hideTapeout = /Professor/i.test(position || "") ||
                        !!(affiliation && String(affiliation).trim());

@@ -1164,15 +1164,59 @@ nav#navbar-main .navbar-collapse {
 /* [Modal] Tape-out Schedule (일정) 내용 */
 /* ========================================= */
 #modal-tape_out_schedule {
-  
+
   /* 1. 글자 크기 통일 */
   font-size: 16px;
 
-  /* 2. 글자 색상 */              
+  /* 2. 글자 색상 */
   color: #333;
-  
+
   /* 3. 줄 간격 */
-  line-height: 1.6;     
+  line-height: 1.6;
+}
+
+/* Tape-out Schedule — Publications 스타일(원형 연번 + 날짜열 + 본문) */
+#exampleModal #modal-tape_out_schedule .tos-entry {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  padding: 9px 0;
+  border-top: 1px solid #eceef1;
+}
+#exampleModal #modal-tape_out_schedule .tos-entry:first-child { border-top: none; }
+#exampleModal #modal-tape_out_schedule .tos-num {
+  flex: 0 0 auto;
+  width: 26px; height: 26px;
+  border-radius: 50%;
+  background: #eef1f6;
+  color: #1c3557;
+  font-weight: 800;
+  font-size: 0.82rem;
+  display: flex; align-items: center; justify-content: center;
+}
+#exampleModal #modal-tape_out_schedule .tos-date {
+  flex: 0 0 64px;
+  color: #999;
+  font-weight: 700;
+  padding-top: 2px;
+}
+#exampleModal #modal-tape_out_schedule .tos-body {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  padding-top: 1px;
+}
+#exampleModal #modal-tape_out_schedule .tos-body .chip-fab {
+  display: inline-block !important;
+  width: auto !important;
+}
+@media (max-width: 576px) {
+  #exampleModal #modal-tape_out_schedule .tos-entry { flex-wrap: wrap; gap: 6px 12px; }
+  #exampleModal #modal-tape_out_schedule .tos-date { flex-basis: auto; }
+  #exampleModal #modal-tape_out_schedule .tos-body { flex-basis: 100%; }
 }
 
 /* ========================================= */
