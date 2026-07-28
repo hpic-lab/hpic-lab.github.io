@@ -83,7 +83,7 @@ h6 {
   position: relative;
   margin-top: 10px;
   padding-left: 18px;
-  border-left: 2px solid #dfe3ea;
+  /* 세로 가이드 실선은 연도 목록(.chip-year-nav)에만 적용 */
 }
 /* 데스크톱: Chip Gallery 콘텐츠까지 스크롤했을 때만 사이드바에 표시 */
 @media (min-width: 992px) {
@@ -330,6 +330,9 @@ h6 {
   .chip-year-nav {
     flex-direction: column;
     gap: 2px;
+    border-left: 2px solid #dfe3ea;   /* 세로 가이드 실선은 연도에만 */
+    padding-left: 14px;
+    margin-left: 2px;
   }
 }
 
