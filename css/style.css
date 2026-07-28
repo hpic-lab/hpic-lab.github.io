@@ -3255,10 +3255,11 @@ nav#navbar-main .navbar-collapse {
   color: #777;
   text-decoration: none;
   padding: 3px 4px;
-  cursor: default;
+  cursor: pointer;   /* 클릭 시 해당 연도로 이동 */
   user-select: none;
   align-self: flex-start;   /* 세로 목록에서 활성 배경이 칸 전체로 늘어나지 않도록 */
 }
+.pub2-year-link:hover { color: #2e55be; }
 
 /* 안 4: 파란 점 마커 + 볼드 (배경 없음) — News/Publications 공통 */
 .pub2-year-link::before {

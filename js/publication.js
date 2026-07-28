@@ -436,6 +436,30 @@ $(document).ready(function () {
     }
     refreshYearLinks("journal");
 
+    // 사이드바 연도 클릭 → 해당 연도로 이동 (접혀 있으면 펼침). News/Chip Gallery와 동일.
+    $("#publications").off("click.pubyearnav").on("click.pubyearnav", ".pub2-year-link", function () {
+      var id = $(this).data("yid");
+      var header = document.getElementById(id);
+      if (!header) return;
+      var $h = $(header);
+      if ($h.hasClass("collapsed")) { $h.removeClass("collapsed"); $h.next(".pub2-year-body").show(); }
+      var off = 100;
+      if (window.matchMedia("(max-width: 991px)").matches) {
+        var pv = getComputedStyle(document.getElementById("publications")).getPropertyValue("--pub-year-top");
+        off = (parseFloat(pv) || 150);
+      }
+      document.querySelectorAll('img[loading="lazy"]').forEach(function (img) { img.loading = "eager"; });
+      function jump() {
+        var docEl = document.documentElement, prev = docEl.style.scrollBehavior;
+        docEl.style.scrollBehavior = "auto";
+        var y = Math.max(0, header.getBoundingClientRect().top + window.pageYOffset - (off + 6));
+        try { window.scrollTo({ top: y, behavior: "instant" }); } catch (e) { window.scrollTo(0, y); }
+        docEl.style.scrollBehavior = prev;
+      }
+      jump();
+      [60, 180, 360].forEach(function (t) { setTimeout(jump, t); });
+    });
+
     // 탭 활성화 (스크롤 없이 표시만)
     function activateTab(target) {
       $("#publications .pub2-tab").removeClass("active");
