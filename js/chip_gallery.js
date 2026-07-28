@@ -542,7 +542,8 @@ $(document).ready(function () {
   }
 
   // 예정 탭아웃 일정 — 칩 이미지 없이 컴팩트 표시. 연월별 그룹, 헤더 우측에 공정 배지.
-  function renderTapeoutSchedule(selector) {
+  // 연번은 Chip Gallery 최대 번호(baseNum) 다음부터, 가장 나중 일정이 가장 큰 숫자.
+  function renderTapeoutSchedule(selector, baseNum) {
     var $c = $(selector);
     if (!$c.length) return;
     $.getJSON("json/chips/tapeout_schedule.json").done(function (items) {
@@ -558,6 +559,7 @@ $(document).ready(function () {
         if (b === "TBD") return -1;
         return a < b ? -1 : a > b ? 1 : 0;
       });
+      var n = baseNum || 0;
       var html = '<div class="tos2-head">Upcoming Tape-outs</div>';
       order.forEach(function (key) {
         var arr = groups[key];
@@ -568,7 +570,9 @@ $(document).ready(function () {
           (proc ? '<span class="chip-fab ' + fabClass(proc) + '">' + fabLabel(proc) + "</span>" : "") +
           "</div>";
         arr.forEach(function (it) {
-          html += '<div class="tos2-row"><span class="tos2-ttl">' + it.title + "</span>" +
+          n += 1;
+          html += '<div class="tos2-row"><span class="tos2-num">' + n + "</span>" +
+            '<span class="tos2-ttl">' + it.title + "</span>" +
             designerHTML({ designer_imgs: it.designer_imgs }) + "</div>";
         });
         html += "</div>";
@@ -591,7 +595,7 @@ $(document).ready(function () {
     setupSidebarReveal();
     // 섹션 링크(Research Projects / Chip Gallery)
     setupSectionNav();
-    // 예정 탭아웃 일정
-    renderTapeoutSchedule("#chip-tapeout-schedule");
+    // 예정 탭아웃 일정 (연번은 갤러리 최대 번호 = chips.length 다음부터)
+    renderTapeoutSchedule("#chip-tapeout-schedule", chips.length);
   });
 });

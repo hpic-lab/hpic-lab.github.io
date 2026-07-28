@@ -42,6 +42,14 @@
     ]
   },
   {
+    "ym": "2027.01",
+    "process": "28-nm S",
+    "title": "D2D Transceiver",
+    "designer_imgs": [
+      "dh_lee_bs_profile_image.jpg"
+    ]
+  },
+  {
     "ym": "2027.02",
     "process": "14-nm S",
     "title": "112Gb/s DSP-based Transmitter",
@@ -72,14 +80,6 @@
       "hg_cho_profile_image.png",
       "sm_yoo_profile_image.jpeg",
       "jg_han_profile_image.jpg"
-    ]
-  },
-  {
-    "ym": "",
-    "process": "28-nm S",
-    "title": "D2D Transceiver",
-    "designer_imgs": [
-      "dh_lee_bs_profile_image.jpg"
     ]
   }
 ]

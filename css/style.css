@@ -4076,10 +4076,10 @@ a.chip-status-venue:hover { background: rgba(55, 138, 221, 0.2); }
 .chip-fab.fab-t65 { color: #6D28D9; background: rgba(109, 40, 217, 0.07); border-color: rgba(109, 40, 217, 0.4); }  /* TSMC 65nm - violet */
 .chip-fab.fab-s14 { color: #15803D; background: rgba(21, 128, 61, 0.08); border-color: rgba(21, 128, 61, 0.4); }    /* Samsung 14nm - green */
 
-/* 예정 탭아웃 일정 (컴팩트, 칩 이미지 없음) */
-.chip-tapeout-schedule { margin: 6px 0 30px; }
+/* 예정 탭아웃 일정 (컴팩트, 칩 이미지 없음) — Chip Gallery 하위로 들여쓰기 */
+.chip-tapeout-schedule { margin: 6px 0 30px 24px; }
 .tos2-head {
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   font-weight: 700;
   color: #1c3557;
   margin: 0 0 10px;
@@ -4092,6 +4092,7 @@ a.chip-status-venue:hover { background: rgba(55, 138, 221, 0.2); }
   align-items: center;
   gap: 10px;
   margin: 12px 0 4px;
+  padding-left: 40px;   /* 번호 열 폭만큼 밀어 제목과 정렬 */
 }
 .tos2-date { font-size: 0.82rem; font-weight: 700; color: #0c447c; }
 .tos2-row {
@@ -4101,6 +4102,7 @@ a.chip-status-venue:hover { background: rgba(55, 138, 221, 0.2); }
   padding: 6px 0;
   border-top: 1px solid #f0f0f0;
 }
+.tos2-num { width: 30px; flex-shrink: 0; text-align: right; color: #aaa; font-size: 0.85rem; }
 .tos2-ttl { font-size: 0.9rem; color: #333; font-weight: 500; flex: 1; min-width: 0; }
 .tos2-row .chip-designers { margin-left: auto; display: flex; gap: 3px; flex-shrink: 0; }
 .tos2-row .chip-designer-photo { width: 26px; height: 26px; }
