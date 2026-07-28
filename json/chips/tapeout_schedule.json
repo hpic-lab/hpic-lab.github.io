@@ -16,7 +16,7 @@
   {
     "ym": "2026.09",
     "process": "28-nm T",
-    "title": "112Gb/s Transmitter with CIM-based FFE",
+    "title": "112Gb/s TX with CIM-based FFE",
     "designer_imgs": [
       "sw-kwon-profile-image.jpeg",
       "dh-kim-new-profile-image.jpg",
@@ -44,7 +44,7 @@
   {
     "ym": "2027.01",
     "process": "28-nm S",
-    "title": "D2D Transceiver",
+    "title": "D2D TRX",
     "designer_imgs": [
       "dh_lee_bs_profile_image.jpg"
     ]
@@ -52,7 +52,7 @@
   {
     "ym": "2027.01",
     "process": "28-nm S",
-    "title": "DSP-based Receiver in collaboration with SKKU",
+    "title": "DSP-based RX in collaboration with SKKU",
     "designer_imgs": [
       "jg-lee-profile-img.jpeg",
       "js-kwon-profile-image.jpg",
@@ -64,7 +64,7 @@
   {
     "ym": "2027.02",
     "process": "14-nm S",
-    "title": "112Gb/s DSP-based Transmitter",
+    "title": "112Gb/s DSP-based TX",
     "designer_imgs": [
       "ch_oh_profile_image.jpg",
       "hg_cho_profile_image.png",
@@ -75,7 +75,7 @@
   {
     "ym": "2027.02",
     "process": "14-nm S",
-    "title": "112Gb/s Receiver",
+    "title": "112Gb/s RX",
     "designer_imgs": [
       "ch_oh_profile_image.jpg",
       "hg_cho_profile_image.png",
