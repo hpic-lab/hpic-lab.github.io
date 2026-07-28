@@ -1700,8 +1700,12 @@ nav#navbar-main .navbar-collapse {
     height: 60px;
     background: var(--section-bg, #fff);
   }
-  .pub-sticky-head h1 { font-weight: 700; color: #222; margin: 0 0 6px; }
-  .pub-sticky-head .pub2-notice { margin: 0 0 6px; }
+  .pub-sticky-head h1 { font-weight: 700; color: #222; margin: 0 0 4px; }
+  /* ECA 문구를 제목 바로 아래로 (side-nav의 상단 여백 제거) */
+  .pub-sticky-head .pub2-side-nav { margin-top: 0; }
+  .pub-sticky-head .pub2-notice { margin: 0 0 8px; }
+  /* 탭(Journal/Conference/Patent) 가운데 정렬 */
+  .pub-sticky-head .pub2-side-tabs { justify-content: center; }
   .pub2-list .pub2-year {
     position: -webkit-sticky;
     position: sticky;
