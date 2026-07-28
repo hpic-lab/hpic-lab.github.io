@@ -257,6 +257,19 @@ h6 {
 .subsection-link.active {
   color: #1c3557;
 }
+
+/* Lab Policy: 수정일 + 한국어 소제목 */
+.lab-policy-updated {
+  margin-top: 8px;
+  font-size: 0.85rem;
+  color: #9a9a9a;
+}
+.lab-policy-kr-head {
+  margin-top: 28px;
+  padding-top: 18px;
+  border-top: 1px solid #ececec;
+  color: #555;
+}
 @media (min-width: 992px) {
   .chip-year-nav {
     flex-direction: column;
