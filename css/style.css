@@ -4036,6 +4036,11 @@ section {
   padding-bottom: 6px;
   margin: 28px 0 10px;
 }
+/* 활성(현재 보는) 연도 헤더 파랑 강조 — News/Publications와 통일 */
+.chip-year.chip-year-active {
+  color: #2e55be;
+  border-bottom-color: #2e55be;
+}
 /* 데스크톱: 연도 헤더를 상단 고정 (Publications와 동일 — 스크롤 시 다음 연도로 교체) */
 @media (min-width: 992px) {
   .chip-timeline .chip-year {

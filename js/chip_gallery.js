@@ -397,6 +397,9 @@ $(document).ready(function () {
       $nav.find(".chip-year-link").removeClass("active");
       var id = $(current).attr("id");
       if (id) $nav.find('.chip-year-link[data-yid="' + id + '"]').addClass("active");
+      // 콘텐츠 연도 헤더도 활성 시 파랑 강조 (News/Publications와 통일)
+      $c.find(".chip-year").removeClass("chip-year-active");
+      $(current).addClass("chip-year-active");
     }
 
     // ===== 필터: All / Failed 세그먼트 (안 A) — All 로 언제든 복귀 =====
