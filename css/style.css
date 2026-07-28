@@ -1472,34 +1472,24 @@ nav#navbar-main .navbar-collapse {
   }
 }
 
-/* 모바일: 카테고리 필터를 뉴스 콘텐츠 상단에 sticky 고정 (JS가 이 위치로 이동) */
+/* 모바일: "News" 제목 + 카테고리 필터를 하나의 sticky 헤더로 콘텐츠 상단에 고정 */
 @media (max-width: 991px) {
-  .news-cat-links.news-cat-sticky {
+  .news-sticky-head {
     position: -webkit-sticky;
     position: sticky;
-    top: 56px;
+    top: 55px;
     z-index: 900;
-    margin: 0 0 10px;
-    padding: 8px 0;
     background: #fff;
+    padding: 6px 0 8px;
+    margin-bottom: 10px;
     border-bottom: 1px solid #eee;
   }
-  /* 연도 헤더(2026 등)도 필터 아래에 고정 */
-  .news-timeline-container .ui-accordion-header {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 130px;
-    z-index: 5;
-    background: #fff !important;
+  .news-sticky-head h1 {
+    font-size: 1.5rem;
+    margin: 0 0 8px;
   }
-  .news-timeline-container .ui-accordion-header::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 100%;
-    height: 26px;
-    background: #fff;
+  .news-sticky-head .news-cat-links {
+    margin-top: 0;
   }
 }
 

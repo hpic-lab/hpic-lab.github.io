@@ -190,20 +190,24 @@ $(document).ready(function () {
         setTimeout(updateActiveNewsYear, 50);
       });
 
-      // 모바일: 카테고리 필터를 뉴스 콘텐츠 상단으로 옮겨 스크롤 시 상단 고정(sticky).
+      // 모바일: "News" 제목 + 카테고리 필터를 하나의 sticky 헤더로 묶어 콘텐츠 상단에 고정.
       // 데스크톱에서는 사이드바 원위치로 되돌린다.
       function placeNewsCatFilter() {
         var $chips = $("#news-gallery .news-cat-links");
         if (!$chips.length) return;
         var $content = $("#news-gallery .col-lg-9").first();
+        var $h1 = sidebar.find("h1").first();
         if (window.matchMedia("(max-width: 991px)").matches) {
-          if (!$chips.hasClass("news-cat-sticky")) {
-            $content.prepend($chips);
-            $chips.addClass("news-cat-sticky");
+          var $head = $("#news-sticky-head");
+          if (!$head.length) {
+            $head = $('<div id="news-sticky-head" class="news-sticky-head"></div>');
+            $content.prepend($head);
           }
-        } else if ($chips.hasClass("news-cat-sticky")) {
-          sidebar.append($chips);
-          $chips.removeClass("news-cat-sticky");
+          $head.append($h1).append($chips);   // 제목 → 필터 순으로 고정 헤더에
+        } else if ($("#news-sticky-head").length) {
+          sidebar.prepend($h1);               // 제목 원위치
+          sidebar.append($chips);             // 필터 원위치(연도링크 뒤)
+          $("#news-sticky-head").remove();
         }
       }
       placeNewsCatFilter();
