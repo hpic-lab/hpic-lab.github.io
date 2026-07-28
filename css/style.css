@@ -1854,8 +1854,8 @@ nav#navbar-main .navbar-collapse {
   border-bottom: 3px solid #e9e9e9 !important;
   border-radius: 0 !important;
   color: #aaa !important;
-  font-size: 1.2rem !important;
-  font-weight: 700;
+  font-size: 1.05rem !important;
+  font-weight: 500;
   text-align: left;
   padding: 8px 4px 6px 0 !important;
   margin: 28px 0 10px !important;
@@ -1887,6 +1887,7 @@ nav#navbar-main .navbar-collapse {
 .news-accordion .ui-accordion-header.ui-state-active {
   color: #2e55be !important;
   border-bottom-color: #2e55be !important;
+  font-weight: 700;   /* 활성일 때만 bold */
 }
 
 /* 스크롤 시 현재 연도 헤더 상단 고정 (Publications와 동일) */
@@ -3351,8 +3352,8 @@ nav#navbar-main .navbar-collapse {
 }
 
 .pub2-year {
-  font-size: 1.2rem;
-  font-weight: 700;
+  font-size: 1.05rem;
+  font-weight: 500;
   color: #aaa;
   margin: 28px 0 10px;
   padding-bottom: 6px;
@@ -3380,6 +3381,7 @@ nav#navbar-main .navbar-collapse {
 .pub2-year.pub2-year-active {
   color: #2e55be;
   border-bottom-color: #2e55be;
+  font-weight: 700;   /* 활성일 때만 bold */
 }
 
 /* 스크롤 시 현재 연도가 상단에 고정되고, 다음 연도가 올라오면 교체됨 */
@@ -4208,8 +4210,8 @@ section {
 
 /* 연도 헤더: Publications .pub2-year 와 동일 스타일(회색) */
 .chip-year {
-  font-size: 1.2rem;
-  font-weight: 700;
+  font-size: 1.05rem;
+  font-weight: 500;
   color: #aaa;
   border-bottom: 3px solid #e9e9e9;
   padding-bottom: 6px;
@@ -4219,6 +4221,7 @@ section {
 .chip-year.chip-year-active {
   color: #2e55be;
   border-bottom-color: #2e55be;
+  font-weight: 700;   /* 활성일 때만 bold */
 }
 
 /* 연도 sticky 헤더 위로 내용이 비치지 않도록, 본문을 자체 스태킹 컨텍스트(z:0)로 가둔다
