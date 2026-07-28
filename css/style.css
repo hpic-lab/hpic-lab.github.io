@@ -4244,7 +4244,7 @@ section {
   .chip-timeline .chip-year {
     position: -webkit-sticky;
     position: sticky;
-    top: calc(100px + var(--res-dsub-h, 42px));   /* Chip Gallery 제목 아래 */
+    top: calc(100px + var(--res-dsub-h, 42px) + 12px);   /* Chip Gallery 제목 아래 (여백 확보) */
     background: var(--section-bg, #fff);
     z-index: 5;
   }
