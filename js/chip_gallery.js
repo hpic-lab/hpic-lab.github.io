@@ -559,9 +559,18 @@ $(document).ready(function () {
         if (b === "TBD") return -1;
         return a < b ? -1 : a > b ? 1 : 0;
       });
+      // 연번은 시간 오름차순(가장 이른 일정 = 가장 작은 번호)으로 먼저 부여
       var n = baseNum || 0;
-      var html = '<div class="tos2-head">Upcoming Tape-outs</div>';
       order.forEach(function (key) {
+        groups[key].forEach(function (it) { n += 1; it._num = n; });
+      });
+      // 표시는 내림차순(가장 나중 일정 = 가장 큰 번호가 최상단). TBD는 맨 아래.
+      var dated = order.filter(function (k) { return k !== "TBD"; });
+      var descOrder = dated.slice().reverse();
+      if (order.indexOf("TBD") >= 0) descOrder.push("TBD");
+
+      var html = '<div class="tos2-head">Upcoming Tape-outs</div>';
+      descOrder.forEach(function (key) {
         var arr = groups[key];
         var proc = arr[0].process;
         var dateLabel = key === "TBD" ? "To be updated" : key.replace(".", ". ");
@@ -569,9 +578,8 @@ $(document).ready(function () {
           '<div class="tos2-ghead"><span class="tos2-date">' + dateLabel + "</span>" +
           (proc ? '<span class="chip-fab ' + fabClass(proc) + '">' + fabLabel(proc) + "</span>" : "") +
           "</div>";
-        arr.forEach(function (it) {
-          n += 1;
-          html += '<div class="tos2-row"><span class="tos2-num">' + n + "</span>" +
+        arr.slice().reverse().forEach(function (it) {
+          html += '<div class="tos2-row"><span class="tos2-num">' + it._num + "</span>" +
             '<span class="tos2-ttl">' + it.title + "</span>" +
             designerHTML({ designer_imgs: it.designer_imgs }) + "</div>";
         });
