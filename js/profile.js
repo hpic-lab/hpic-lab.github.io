@@ -432,11 +432,12 @@ $(document).ready(function () {
     $("#modal-biography").html(biography || "");
     
     if (email) {
-        // 모바일 브라우저(삼성 인터넷 등)의 이메일 자동감지를 막기 위해
-        // '@'와 '.'을 span으로 끊어 렌더 → 자체 글꼴/링크 스타일 적용 방지.
+        // 모바일 브라우저(삼성 인터넷 등)의 이메일 자동감지를 확실히 막기 위해
+        // '@'를 " (at) " 텍스트로 표기 → 이메일로 인식되지 않아 글꼴이 본문과 통일됨.
+        // 도메인 URL 인식도 막도록 마지막 '.'은 span으로 끊어 렌더(표시는 동일).
         var _em = String(email)
           .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
-          .replace(/@/g, '<span class="nolink">@</span>')
+          .replace(/@/g, " (at) ")
           .replace(/\.([^.]*)$/, '<span class="nolink">.</span>$1');
         $("#modal-email").html(_em);
         $("#modal-email-title").show();
