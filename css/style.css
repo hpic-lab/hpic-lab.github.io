@@ -1508,9 +1508,9 @@ nav#navbar-main .navbar-collapse {
     position: sticky;
     top: var(--mem-nav-h, 56px);
     z-index: 890;
-    background: #fff;
+    background: var(--section-bg, #fff);
     padding: 6px 0 4px;
-    box-shadow: -30px 0 0 #fff, 30px 0 0 #fff;
+    box-shadow: -30px 0 0 var(--section-bg, #fff), 30px 0 0 var(--section-bg, #fff);
   }
   #members-sticky-title h1 {
     font-weight: 700;
@@ -1520,7 +1520,7 @@ nav#navbar-main .navbar-collapse {
   #members-sticky-title::before {
     content: "";
     position: absolute; left: 0; right: 0; bottom: 100%;
-    height: 60px; background: #fff;
+    height: 60px; background: var(--section-bg, #fff);
   }
   /* 카테고리 소제목 (직속 h3만) — 스크롤 시 자동 교체 */
   #people .col-lg-8 > h3 {
@@ -1528,14 +1528,17 @@ nav#navbar-main .navbar-collapse {
     position: sticky;
     top: calc(var(--mem-nav-h, 56px) + var(--mem-title-h, 44px));
     z-index: 880;
-    background: #fff;
-    box-shadow: -30px 0 0 #fff, 30px 0 0 #fff;
+    background: var(--section-bg, #fff);
+    box-shadow: -30px 0 0 var(--section-bg, #fff), 30px 0 0 var(--section-bg, #fff);
   }
   #people .col-lg-8 > h3::before {
     content: "";
     position: absolute; left: 0; right: 0; bottom: 100%;
-    height: 30px; background: #fff;
+    height: 30px; background: var(--section-bg, #fff);
   }
+  /* 모바일: 사이드바의 PI/Lab Captain/Server Manager 미니 카드 숨김 */
+  #people .people-side-nav { display: none !important; }
+  #people .col-12.col-lg-4.section-heading { padding: 0; min-height: 0; }
 }
 
 /* 모바일: Research 섹션 다단 고정 스택 (Research > 소섹션 > Upcoming Tape-outs > Filter/연도) */
