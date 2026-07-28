@@ -478,15 +478,28 @@ $(document).ready(function () {
       $(this).next(".pub2-year-body").stop(true, false).slideToggle(250);
     });
 
-    // 연도 바로가기: 접혀 있으면 펼치고, 스크롤은 브라우저 기본 앵커 이동에 맡긴다
-    // (href="#연도id" + CSS scroll-margin-top 으로 네비바 보정). 위치 계산 기반 JS 스크롤보다 안정적.
-    sidebar.on("click", ".pub2-year-link", function () {
+    // 연도 바로가기. 접혀 있으면 펼치고, 해당 연도 헤더로 이동한다.
+    // 위쪽 지연로드(lazy) 이미지가 로드되며 레이아웃이 밀려 목표 위치가 바뀌므로,
+    // 클릭 직후 + 이미지 로드가 끝날 때까지 몇 차례 재보정해 정확히 안착시킨다.
+    sidebar.on("click", ".pub2-year-link", function (e) {
+      e.preventDefault();
       var header = $($(this).attr("href"));
       if (header.hasClass("collapsed")) {
         header.removeClass("collapsed");
         header.next(".pub2-year-body").show();
       }
-      // preventDefault 하지 않음 → 브라우저가 앵커로 스크롤
+      var node = header[0];
+      if (!node) return;
+      function jump() {
+        var docEl = document.documentElement, prev = docEl.style.scrollBehavior;
+        docEl.style.scrollBehavior = "auto";
+        var y = Math.max(0, node.getBoundingClientRect().top + window.pageYOffset - 100);
+        try { window.scrollTo({ top: y, behavior: "instant" }); }
+        catch (err) { window.scrollTo(0, y); }
+        docEl.style.scrollBehavior = prev;
+      }
+      jump();
+      [70, 180, 350, 600, 900].forEach(function (t) { setTimeout(jump, t); });
     });
 
     // ===== 스크롤 위치에 따라 현재 연도 헤더 강조 (시안 3) =====
