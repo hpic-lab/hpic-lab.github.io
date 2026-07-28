@@ -3868,6 +3868,7 @@ a.chip-status-venue:hover { background: rgba(55, 138, 221, 0.2); }
 .chip-card2 .chip-title-row {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;   /* 좁아지면 Design Review 묶음이 통째로 다음 줄로 */
   gap: 10px;
 }
 .chip-card2 .chip-title-row .chip-name {
@@ -3877,7 +3878,8 @@ a.chip-status-venue:hover { background: rgba(55, 138, 221, 0.2); }
   margin-left: auto;
   display: inline-flex;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;   /* 자물쇠 + Design Review 를 한 줄로 묶어 함께 줄바꿈 */
+  flex-shrink: 0;
   gap: 6px;
 }
 .chip-card2 .chip-review-label {
