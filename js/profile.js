@@ -51,6 +51,24 @@ $(document).ready(function () {
     });
   }
 
+  // ===== Upcoming Tape-outs 연동: tapeout_schedule.json → 설계자 이미지 파일명 기준 인덱스 =====
+  window.tapeoutByImg = {};
+  function loadTapeoutIndex(url) {
+    return $.getJSON(url).done(function (items) {
+      (items || []).forEach(function (it) {
+        (it.designer_imgs || []).forEach(function (f) {
+          var key = getFileName(f);
+          if (!key) return;
+          (window.tapeoutByImg[key] = window.tapeoutByImg[key] || []).push({
+            ym: it.ym || "",
+            process: it.process || "",
+            title: it.title || ""
+          });
+        });
+      });
+    });
+  }
+
   // 연구분야를 짧은 약어로 축약 (카드 배지용, 필요시 규칙 추가)
   function shortenInterest(text) {
     const s = text.toLowerCase();
@@ -498,18 +516,34 @@ $(document).ready(function () {
     }
     //updateList("#modal-experience", parsed_experience, "No experience available.");
 
-    const parsedTapeOutSchedule = parseData(tape_out_schedule);
-    // 공정을 Chip Gallery와 동일한 색 배지로 표시 (예: "T 28nm"), 뒤에 주제(topic) 붙임
-    const tosHTML = parsedTapeOutSchedule
+    // ===== Tape-out Schedule: Upcoming Tape-outs(tapeout_schedule.json)와 profile_img로 자동 연동 =====
+    var _tosImgKey = getFileName(profile_img);
+    var _tosAlias = { "dh-kim-new-profile-image.jpg": "dh-kim-profile-image.jpg" };
+    var autoTos = ((window.tapeoutByImg || {})[_tosImgKey]
+                   || (window.tapeoutByImg || {})[_tosAlias[_tosImgKey]] || []).slice();
+    // 최신(미래) 일정이 위로 오도록 연월(ym) 내림차순
+    autoTos.sort(function (a, b) { return a.ym < b.ym ? 1 : a.ym > b.ym ? -1 : 0; });
+    var tosHTML = autoTos
       .map(function (s) {
         var badge = s.process
           ? ' <span class="chip-fab ' + tosFabClass(s.process) + '">' + tosFabLabel(s.process) + "</span>"
           : "";
-        var topic = s.topic ? " &mdash; " + s.topic : "";
-        // 날짜 → 제목 → 공정 배지 순
-        return '<span class="tos-item">' + (s.date || "") + topic + badge + "</span>";
+        var topic = s.title ? " &mdash; " + s.title : "";
+        return '<span class="tos-item">' + (s.ym || "") + topic + badge + "</span>";
       })
       .join("");
+    // 자동 연동이 없으면 수동 데이터(person 필드)로 대체
+    if (!tosHTML) {
+      tosHTML = parseData(tape_out_schedule)
+        .map(function (s) {
+          var badge = s.process
+            ? ' <span class="chip-fab ' + tosFabClass(s.process) + '">' + tosFabLabel(s.process) + "</span>"
+            : "";
+          var topic = s.topic ? " &mdash; " + s.topic : "";
+          return '<span class="tos-item">' + (s.date || "") + topic + badge + "</span>";
+        })
+        .join("");
+    }
     // 졸업생(소속 있음)·교수는 Tape-out Schedule 섹션 미표시
     var _hideTapeout = /Professor/i.test(position || "") ||
                        !!(affiliation && String(affiliation).trim());
@@ -776,7 +810,9 @@ $.when(
     
     loadDataOnly("json/people/06_alumni_info.json"),
 
-    loadChipIndex("json/chips/chips.json")
+    loadChipIndex("json/chips/chips.json"),
+
+    loadTapeoutIndex("json/chips/tapeout_schedule.json")
 
   ).done(function() {
       loadAlumni("json/people/06_alumni.json", "#alumni-list-container");
