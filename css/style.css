@@ -152,8 +152,12 @@ h6 {
   user-select: none;
 }
 .chip-year-link.active {
-  color: #2e55be;
+  color: #0c447c;
   font-weight: 700;
+  font-size: 1.18rem;
+  background: #e6f1fb;
+  border-radius: 7px;
+  padding: 3px 12px;
 }
 @media (min-width: 992px) {
   .chip-year-nav {
@@ -2694,8 +2698,12 @@ nav#navbar-main .navbar-collapse {
 }
 
 .pub2-year-link.active {
-  color: #2e55be;
+  color: #0c447c;
   font-weight: 700;
+  font-size: 1.18rem;
+  background: #e6f1fb;
+  border-radius: 7px;
+  padding: 3px 12px;
 }
 
 /* 데스크톱(lg+): 세로 배치 */
