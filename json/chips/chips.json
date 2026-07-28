@@ -386,6 +386,25 @@
   },
   {
     "year": 2024,
+    "process": "28-nm S",
+    "image": "img/chip_new/ILCM_24.png",
+    "name": "All-Digital Ring-Based Injection-Locked Clock Multiplier",
+    "description": "",
+    "outputs": [],
+    "note": "",
+    "designer": "Jae-Hyeon Pyeon",
+    "designer_imgs": [
+      "jh-pyeon-profile-img.png"
+    ],
+    "keywords": [
+      "ILCM",
+      "MPC",
+      "spur reduction"
+    ],
+    "status": "measurement"
+  },
+  {
+    "year": 2024,
     "month": 10,
     "process": "65-nm T",
     "image": "img/chip_new/PLL_KL_24nov.png",
