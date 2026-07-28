@@ -546,7 +546,9 @@ $(document).ready(function () {
     // 영문 표기가 두 가지인 경우 (프로필 이름 ↔ 논문 저자 표기)
     const EN_ALIAS = {
       "Sang-Hyun Ok": ["Sang-Hyeon Ok"],
-      "Sang-Hyeon Ok": ["Sang-Hyun Ok"]
+      "Sang-Hyeon Ok": ["Sang-Hyun Ok"],
+      "Suk-Min Yoon": ["Seok-Min Yoon"],
+      "Seok-Min Yoon": ["Suk-Min Yoon"]
     };
     // 프로필 사진 파일이 교체되어 논문 figure와 달라진 경우
     const IMG_ALIAS = {
