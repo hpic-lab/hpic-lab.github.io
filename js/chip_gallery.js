@@ -414,8 +414,7 @@ $(document).ready(function () {
       // Failed 필터 활성 시 상단에 표시할 경고 메시지 보드 (강조)
       var $board = $(
         '<div class="fail-board" style="display:none">' +
-          '<div class="fail-board-head">Do not make the same mistake!</div>' +
-          '<p class="fail-board-sub">한 번의 실패는 괜찮다. 그러나 <b>똑같은 실패</b>는 반복하지 말 것.</p>' +
+          '<div class="fail-board-head">Do not make the same mistake.</div>' +
           '<ol class="fail-board-list">' +
             "<li>Always run a <mark>top-level (TR-level) simulation</mark>.</li>" +
             "<li>Always run <mark>co-simulation</mark> — digital + analog with R/C/CC extraction.</li>" +
