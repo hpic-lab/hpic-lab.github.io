@@ -457,14 +457,19 @@ $(document).ready(function () {
       var $nav = $("#publications .pub2-side-nav");
       if (!$nav.length) return;
       var $content = $("#publications .col-lg-9").first();
+      var $h1 = sidebar.find("h1").first();
       if (window.matchMedia("(max-width: 991px)").matches) {
-        if (!$nav.hasClass("pub-nav-sticky")) {
-          $content.prepend($nav);
-          $nav.addClass("pub-nav-sticky");
+        var $head = $("#pub-sticky-head");
+        if (!$head.length) {
+          $head = $('<div id="pub-sticky-head" class="pub-sticky-head"></div>');
+          $content.prepend($head);
         }
-      } else if ($nav.hasClass("pub-nav-sticky")) {
-        sidebar.append($nav);
+        $head.append($h1).append($nav);   // 제목 → ECA/탭 순으로 고정 헤더에
         $nav.removeClass("pub-nav-sticky");
+      } else if ($("#pub-sticky-head").length) {
+        sidebar.prepend($h1);             // 제목 원위치
+        sidebar.append($nav);             // ECA/탭 원위치
+        $("#pub-sticky-head").remove();
       }
     }
     placePubNav();

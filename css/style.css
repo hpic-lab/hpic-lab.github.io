@@ -1493,23 +1493,24 @@ nav#navbar-main .navbar-collapse {
   }
 }
 
-/* 모바일: Publications ECA+탭을 콘텐츠 상단 sticky 고정, 연도 헤더는 그 아래 고정 */
+/* 모바일: Publications 제목 + ECA + 탭을 하나의 sticky 헤더로 고정, 연도 헤더는 그 아래 고정 */
 @media (max-width: 991px) {
-  .pub2-side-nav.pub-nav-sticky {
+  .pub-sticky-head {
     position: -webkit-sticky;
     position: sticky;
     top: 55px;
     z-index: 900;
-    margin: 0 0 6px;
-    padding: 8px 0;
     background: #fff;
+    padding: 6px 0 8px;
+    margin-bottom: 8px;
     border-bottom: 1px solid #eee;
   }
-  .pub2-side-nav.pub-nav-sticky .pub2-notice { margin: 0 0 6px; }
+  .pub-sticky-head h1 { font-size: 1.5rem; margin: 0 0 6px; }
+  .pub-sticky-head .pub2-notice { margin: 0 0 6px; }
   .pub2-list .pub2-year {
     position: -webkit-sticky;
     position: sticky;
-    top: 124px;
+    top: 150px;
     z-index: 5;
     background: #fff;
   }
@@ -1519,7 +1520,7 @@ nav#navbar-main .navbar-collapse {
     left: 0;
     right: 0;
     bottom: 100%;
-    height: 28px;
+    height: 26px;
     background: #fff;
   }
 }
