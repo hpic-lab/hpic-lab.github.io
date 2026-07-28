@@ -243,10 +243,8 @@ $(document).ready(function () {
           curYear = null;
         }
         body = oldBody;
-        if (year !== curYear) {
-          curYear = year;
-          oldBody.append('<div class="pub2-subyear">' + year + "</div>");
-        }
+        // "~2023"은 2023년 이전을 모두 묶는 그룹이므로 내부 연도 소제목은 표시하지 않음
+        curYear = year;
       } else if (year !== curYear) {
         curYear = year;
         container.append('<div class="pub2-year" id="' + idPrefix + "-" + year + '">' + year + "</div>");
@@ -356,10 +354,8 @@ $(document).ready(function () {
           curYear = null;
         }
         body = oldBody;
-        if (year !== curYear) {
-          curYear = year;
-          oldBody.append('<div class="pub2-subyear">' + year + "</div>");
-        }
+        // "~2023"은 2023년 이전을 모두 묶는 그룹이므로 내부 연도 소제목은 표시하지 않음
+        curYear = year;
       } else if (year !== curYear) {
         curYear = year;
         container.append('<div class="pub2-year" id="' + idPrefix + "-" + year + '">' + year + "</div>");
