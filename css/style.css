@@ -1244,6 +1244,21 @@ nav#navbar-main .navbar-collapse {
   cursor: pointer;
 }
 
+/* News/Publications 프로필 사진: 클릭 가능 표시 (호버 시 확대 + 파란 링) */
+.news-inline-fig,
+.pub-figure {
+  transition: transform 0.12s ease, box-shadow 0.12s ease, border-color 0.12s ease;
+}
+.news-list .news-inline-fig:hover,
+.pub-figure:hover {
+  transform: scale(1.18);
+  border-color: #2e55be;
+  box-shadow: 0 0 0 2px rgba(46, 85, 190, 0.3);
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+}
+
 /* News [Photo] 라이트박스 */
 .news-photo-overlay {
   position: fixed;
