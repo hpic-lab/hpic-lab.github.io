@@ -4278,7 +4278,7 @@ section {
     left: 0;
     right: 0;
     bottom: 100%;
-    height: 20px;
+    height: 12px;   /* 박스 상단 패딩(14px) 안쪽으로 — 둥근 모서리 위로 삐져나오지 않게 */
     background: var(--tos-bg, #f2f6fc);
   }
 }
