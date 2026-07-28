@@ -4155,6 +4155,23 @@ section {
     height: 34px;
     background: var(--section-bg, #fff);
   }
+  /* Upcoming Tape-outs 헤더도 Chip Gallery 제목 아래에 고정 */
+  #chip-tapeout-schedule .tos2-head {
+    position: -webkit-sticky;
+    position: sticky;
+    top: calc(100px + var(--res-dsub-h, 42px));
+    z-index: 5;
+    background: var(--section-bg, #fff);
+  }
+  #chip-tapeout-schedule .tos2-head::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 100%;
+    height: 20px;
+    background: var(--section-bg, #fff);
+  }
 }
 
 /* 데스크톱: 연도 헤더를 상단 고정 (Publications와 동일 — 스크롤 시 다음 연도로 교체) */
