@@ -1153,10 +1153,17 @@ nav#navbar-main .navbar-collapse {
   font-family: "Pretendard", "Noto Sans KR", sans-serif !important;
 }
 
-/* 모바일 브라우저(삼성 인터넷 등)가 이메일을 자동 감지해 자체 요소로 감싸도
-   그 하위 요소까지 카드 본문과 동일한 글꼴로 강제 통일 */
+/* 이메일 자동감지 방지용 span(.nolink) 및 자동 생성 요소:
+   - 섹션제목 규칙(.profile-right p span { display:block })에 오염되지 않도록 inline 강제
+   - 카드 본문과 동일한 글꼴/크기로 통일 */
 #modal-email * {
+  display: inline !important;
   font-family: "Pretendard", "Noto Sans KR", sans-serif !important;
+  font-size: inherit !important;
+  font-weight: inherit !important;
+  border: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 /* 모바일 브라우저가 이메일을 자동 링크로 바꿔도 폰트·색 유지 */
