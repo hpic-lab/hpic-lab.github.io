@@ -221,6 +221,11 @@ h6 {
   border: 1px solid #e0ddd6;
   border-radius: 8px;
   overflow: hidden;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+.chip-filter-seg:hover {
+  border-color: #c7c2b6;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
 }
 .chip-filter-opt {
   font-size: 0.9rem;
@@ -228,6 +233,16 @@ h6 {
   cursor: pointer;
   color: #777;
   user-select: none;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+/* hover: 클릭 가능함을 시각적으로 표시 */
+.chip-filter-opt:hover {
+  background: #eceae3;
+  color: #333;
+}
+.chip-filter-opt.cf-failed:hover {
+  background: rgba(192, 57, 43, 0.12);
+  color: #C0392B;
 }
 .chip-filter-opt + .chip-filter-opt {
   border-left: 1px solid #e0ddd6;
