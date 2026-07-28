@@ -397,8 +397,12 @@
       "ADPLL",
       "Phase Interpolator"
     ],
-    "status": "measurement",
-    "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/65nm/M15407%2865nm%2C%2024.10.31%29"
+    "status": "failed",
+    "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/65nm/M15407%2865nm%2C%2024.10.31%29",
+    "fail_reasons": [
+      "Internal digital reset signal issue",
+      "Verified only under simulation-favorable conditions, without modeling real operation"
+    ]
   },
   {
     "year": 2024,
