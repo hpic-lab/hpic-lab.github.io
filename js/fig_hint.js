@@ -14,7 +14,7 @@ $(function () {
       var $g = $(this);
       if ($g.find(".fig-hint").length) return;
       var $photos = $g.find(ELIGIBLE);
-      if ($photos.length < 2) return; // 여러 명일 때만
+      if (!$photos.length) return; // 사진이 1장 이상이면 (단일 포함) 첫 사진에 힌트
       $photos.first().addClass("fig-hint");
     });
   }
