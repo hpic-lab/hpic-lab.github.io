@@ -1674,10 +1674,10 @@ nav#navbar-main .navbar-collapse {
   .pub-sticky-head {
     position: -webkit-sticky;
     position: sticky;
-    top: 52px;
+    top: var(--pub-nav-h, 56px);   /* 실제 내비바 높이에 맞춰 겹침 방지 */
     z-index: 900;
     background: var(--section-bg, #fff);
-    padding: 6px 0 8px;
+    padding: 12px 0 8px;
     margin-bottom: 8px;
     border-bottom: 1px solid #eee;
     box-shadow: -30px 0 0 var(--section-bg, #fff), 30px 0 0 var(--section-bg, #fff);   /* 좌우 여백으로 비침 방지 */

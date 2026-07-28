@@ -480,6 +480,7 @@ $(document).ready(function () {
       var navH = $("#navbar-main").outerHeight() || 56;
       var headH = window.matchMedia("(max-width: 991px)").matches
         ? ($("#pub-sticky-head").outerHeight() || 0) : 0;
+      $("#publications").css("--pub-nav-h", navH + "px");
       $("#publications").css("--pub-year-top", (navH + headH) + "px");
     }
     updPubYearTop();
