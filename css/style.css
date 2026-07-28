@@ -1501,9 +1501,18 @@ nav#navbar-main .navbar-collapse {
     background: var(--section-bg, #f7f7f7);   /* 섹션 배경(회색)과 통일 */
     padding: 6px 0 6px;
     box-shadow: -30px 0 0 var(--section-bg, #f7f7f7), 30px 0 0 var(--section-bg, #f7f7f7);
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
   }
   #labpolicy-sticky-title h1 { font-weight: 700; color: #222; margin: 0; }
-  #labpolicy-sticky-title .lab-policy-updated { margin: 6px 0 0; }
+  #labpolicy-sticky-title .lab-policy-updated {
+    margin: 0 0 0 auto;    /* 오른쪽으로 밀어 우측 정렬 */
+    text-align: right;
+    white-space: nowrap;
+  }
   #labpolicy-sticky-title::before {
     content: "";
     position: absolute; left: 0; right: 0; bottom: 100%;
