@@ -1393,6 +1393,12 @@ nav#navbar-main .navbar-collapse {
   border-color: #2e55be;
   box-shadow: 0 0 0 2px rgba(46, 85, 190, 0.3);
 }
+/* 뒤의 다른 학생 사진에 마우스를 올리면 첫 사진의 힌트를 해제 */
+.news-list .news-inline-fig.news-fig-hint:has(~ .news-inline-fig:hover) {
+  transform: none;
+  border-color: #ccc;
+  box-shadow: none;
+}
 .news-list .news-inline-fig:not(.news-inline-logo):hover,
 .pub-figure:hover {
   transform: scale(1.18);
