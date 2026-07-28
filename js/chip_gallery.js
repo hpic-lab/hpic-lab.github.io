@@ -378,9 +378,37 @@ $(document).ready(function () {
       var label = $h.attr("data-year");
       var id = "chipyear-" + String(label).replace("~", "p");
       $h.attr("id", id);
-      // 사이드바 연도는 클릭·이동 기능 없이 현재 보는 연도만 강조 (아래 updateActiveYear)
       var $a = $('<span class="chip-year-link" data-yid="' + id + '">' + label + "</span>");
       $nav.append($a);
+    });
+
+    // 사이드바 연도 클릭 → 해당 연도로 이동 (접혀 있으면 펼침). News와 동일.
+    $nav.off("click.chipyearnav").on("click.chipyearnav", ".chip-year-link", function () {
+      var id = $(this).data("yid");
+      var header = document.getElementById(id);
+      if (!header) return;
+      var $h = $(header);
+      if (!$h.is(":visible")) return;   // Failed 필터 등으로 숨겨진 연도는 무시
+      if ($h.hasClass("collapsed")) { $h.removeClass("collapsed"); $h.next(".chip-year-body").show(); }
+      var rEl = document.getElementById("research");
+      var off = 130;
+      if (rEl) {
+        var cs = getComputedStyle(rEl);
+        var v = function (n) { return parseFloat(cs.getPropertyValue(n)) || 0; };
+        off = window.matchMedia("(max-width: 991px)").matches
+          ? (v("--res-nav-h") + v("--res-title-h") + v("--res-sub-h"))
+          : (100 + v("--res-dsub-h") + 12);
+      }
+      document.querySelectorAll('img[loading="lazy"]').forEach(function (img) { img.loading = "eager"; });
+      function jump() {
+        var docEl = document.documentElement, prev = docEl.style.scrollBehavior;
+        docEl.style.scrollBehavior = "auto";
+        var y = Math.max(0, header.getBoundingClientRect().top + window.pageYOffset - (off + 6));
+        try { window.scrollTo({ top: y, behavior: "instant" }); } catch (e) { window.scrollTo(0, y); }
+        docEl.style.scrollBehavior = prev;
+      }
+      jump();
+      [60, 180, 360].forEach(function (t) { setTimeout(jump, t); });
     });
 
     var filtering = false;
