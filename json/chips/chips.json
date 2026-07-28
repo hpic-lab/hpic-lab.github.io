@@ -260,8 +260,9 @@
       "Clock Generator",
       "Cryogenic"
     ],
-    "status": "measurement",
-    "raw_date": "2025"
+    "status": "completed",
+    "raw_date": "2025",
+    "project": "Samsung SAIT · Quantum Computing IC"
   },
   {
     "year": 2025,
@@ -282,8 +283,9 @@
       "Integer-N",
       "Cryogenic"
     ],
-    "status": "measurement",
-    "raw_date": "2025"
+    "status": "completed",
+    "raw_date": "2025",
+    "project": "Samsung SAIT · Quantum Computing IC"
   },
   {
     "year": 2025,
@@ -303,8 +305,9 @@
       "Loop-unrolled",
       "Speculative CDAC Switching"
     ],
-    "status": "measurement",
-    "raw_date": "2025"
+    "status": "completed",
+    "raw_date": "2025",
+    "project": "Samsung SAIT · Quantum Computing IC"
   },
   {
     "year": 2025,
@@ -325,7 +328,8 @@
       "ADC",
       "Cryogenic"
     ],
-    "status": "measurement"
+    "status": "completed",
+    "project": "Samsung SAIT · Quantum Computing IC"
   },
   {
     "year": 2024,

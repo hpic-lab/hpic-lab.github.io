@@ -100,6 +100,7 @@ $(document).ready(function () {
     "tapeout": { t: "Tape-out completed", c: "st-gray" },
     "pcb": { t: "PCB & packaging in preparation", c: "st-gray" },
     "measurement": { t: "Measurement in progress", c: "st-amber" },
+    "completed": { t: "Measurement completed", c: "st-green" },
     "paper": { t: "Paper in preparation", c: "st-blue" },
     "review": { t: "Manuscript in review", c: "st-blue" },
     "accepted": { t: "Paper accepted", c: "st-green" },
@@ -129,7 +130,12 @@ $(document).ready(function () {
         }
       }
     }
-    return '<p class="chip-status ' + s.c + '"><span class="chip-status-dot"></span><span class="chip-status-txt">' + s.t + "</span>" + venue + "</p>";
+    // 과제(수행) 배지: 논문 대신 과제 산출물로 마무리된 칩에 과제명을 표기
+    var project = "";
+    if (chip.project) {
+      project = '<span class="chip-status-project">' + escAttr(chip.project) + "</span>";
+    }
+    return '<p class="chip-status ' + s.c + '"><span class="chip-status-dot"></span><span class="chip-status-txt">' + s.t + "</span>" + venue + project + "</p>";
   }
 
   // 키워드 태그 (임시, 최대 5개)
