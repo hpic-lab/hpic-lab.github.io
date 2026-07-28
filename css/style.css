@@ -1490,7 +1490,6 @@ nav#navbar-main .navbar-collapse {
     box-shadow: -30px 0 0 #fff, 30px 0 0 #fff;
   }
   #members-sticky-title h1 {
-    font-size: 1.5rem;
     font-weight: 700;
     color: #222;
     margin: 0;
@@ -1529,7 +1528,6 @@ nav#navbar-main .navbar-collapse {
     box-shadow: -30px 0 0 #fff, 30px 0 0 #fff;   /* 좌우 여백으로 비어져 나오는 내용 가림 */
   }
   #research-sticky-title h1 {
-    font-size: 1.5rem;
     font-weight: 700;   /* 다른 섹션 제목(.section-heading h1)과 통일 */
     color: #222;
     margin: 0;
@@ -1585,15 +1583,8 @@ nav#navbar-main .navbar-collapse {
   }
 }
 
-/* 모바일: 네 섹션 고정 제목 크기 통일 (.home-section h1 의 6vw 덮어쓰기 방지) */
-@media (max-width: 991px) {
-  #research-sticky-title h1,
-  #members-sticky-title h1,
-  .news-sticky-head h1,
-  .pub-sticky-head h1 {
-    font-size: 1.5rem !important;
-  }
-}
+/* (고정 제목 크기는 각 규칙에서 font-size를 지정하지 않아, 다른 섹션 제목과 동일한
+    기본 h1 cascade — Lab Gallery와 동일한 크기 — 를 그대로 따른다) */
 
 /* 모바일: "News" 제목 + 카테고리 필터를 하나의 sticky 헤더로 콘텐츠 상단에 고정 */
 @media (max-width: 991px) {
@@ -1618,7 +1609,6 @@ nav#navbar-main .navbar-collapse {
     background: #fff;
   }
   .news-sticky-head h1 {
-    font-size: 1.5rem;
     font-weight: 700;   /* 원래 섹션 제목과 통일 */
     color: #222;
     margin: 0 0 8px;
@@ -1668,7 +1658,7 @@ nav#navbar-main .navbar-collapse {
     height: 60px;
     background: #fff;
   }
-  .pub-sticky-head h1 { font-size: 1.5rem; font-weight: 700; color: #222; margin: 0 0 6px; }
+  .pub-sticky-head h1 { font-weight: 700; color: #222; margin: 0 0 6px; }
   .pub-sticky-head .pub2-notice { margin: 0 0 6px; }
   .pub2-list .pub2-year {
     position: -webkit-sticky;
