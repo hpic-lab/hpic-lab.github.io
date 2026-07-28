@@ -856,10 +856,14 @@ nav#navbar-main .navbar-collapse {
   .sticky-sidebar {
     position: -webkit-sticky; /* 사파리 호환 */
     position: sticky;
-    
+
     top: 100px;   /* 상단에서 띄울 간격 */
     height: auto; /* 높이 자동 */
     z-index: 10;  /* 다른 요소보다 위에 보이게 */
+  }
+  /* Research 사이드바 제목 top을, 우측 고정 소섹션(Chip Gallery 등)과 같게 맞춤 */
+  #research .sticky-sidebar {
+    top: var(--res-nav-h, 60px);
   }
 }
 
