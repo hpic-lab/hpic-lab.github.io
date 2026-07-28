@@ -264,7 +264,7 @@ $(document).ready(function () {
   // 칩이 없어도 항상 표시할 연도 (2026: 아직 칩 없음 → "To be updated.")
   var PLACEHOLDER_YEARS = [2026];
   // 기본 펼침 연도. 나머지 연도는 접힌 상태로 표시.
-  var DEFAULT_OPEN_YEARS = [2026, 2025];
+  var DEFAULT_OPEN_YEARS = [2026];
 
   // 각 칩에 고정 연번(_galleryNum) 부여 — 연도 섹션과 하단 Failed 섹션에서 같은 번호 사용
   function computeGalleryNumbers(chips) {
@@ -541,6 +541,42 @@ $(document).ready(function () {
     updateActiveSection();
   }
 
+  // 예정 탭아웃 일정 — 칩 이미지 없이 컴팩트 표시. 연월별 그룹, 헤더 우측에 공정 배지.
+  function renderTapeoutSchedule(selector) {
+    var $c = $(selector);
+    if (!$c.length) return;
+    $.getJSON("json/chips/tapeout_schedule.json").done(function (items) {
+      if (!items || !items.length) return;
+      var groups = {}, order = [];
+      items.forEach(function (it) {
+        var key = it.ym || "TBD";
+        if (!groups[key]) { groups[key] = []; order.push(key); }
+        groups[key].push(it);
+      });
+      order.sort(function (a, b) {
+        if (a === "TBD") return 1;
+        if (b === "TBD") return -1;
+        return a < b ? -1 : a > b ? 1 : 0;
+      });
+      var html = '<div class="tos2-head">Upcoming Tape-outs</div>';
+      order.forEach(function (key) {
+        var arr = groups[key];
+        var proc = arr[0].process;
+        var dateLabel = key === "TBD" ? "To be updated" : key.replace(".", ". ");
+        html += '<div class="tos2-group">' +
+          '<div class="tos2-ghead"><span class="tos2-date">' + dateLabel + "</span>" +
+          (proc ? '<span class="chip-fab ' + fabClass(proc) + '">' + fabLabel(proc) + "</span>" : "") +
+          "</div>";
+        arr.forEach(function (it) {
+          html += '<div class="tos2-row"><span class="tos2-ttl">' + it.title + "</span>" +
+            designerHTML({ designer_imgs: it.designer_imgs }) + "</div>";
+        });
+        html += "</div>";
+      });
+      $c.html(html);
+    });
+  }
+
   $.getJSON("json/chips/chips.json").done(function (chips) {
     computeGalleryNumbers(chips);  // 연번 먼저 확정 (연도/Failed 섹션 공통)
     // 메인 Research 미리보기 (접이식)
@@ -555,5 +591,7 @@ $(document).ready(function () {
     setupSidebarReveal();
     // 섹션 링크(Research Projects / Chip Gallery)
     setupSectionNav();
+    // 예정 탭아웃 일정
+    renderTapeoutSchedule("#chip-tapeout-schedule");
   });
 });

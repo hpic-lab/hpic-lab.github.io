@@ -1,0 +1,85 @@
+[
+  {
+    "ym": "2026.09",
+    "process": "28-nm T",
+    "title": "112Gb/s TIA with 112Gb/s Electrical Driver (CPO)",
+    "designer_imgs": [
+      "jy-lee-profile-img.jpg",
+      "dh_lee_bs_profile_image.jpg",
+      "sh-gong-profile-image.jpg",
+      "dh-kim-new-profile-image.jpg",
+      "sm-jin-profile-img.jpg",
+      "sh-kim2-profile-image.png",
+      "de-jin-profile-image.jpg"
+    ]
+  },
+  {
+    "ym": "2026.09",
+    "process": "28-nm T",
+    "title": "112Gb/s Transmitter with CIM-based FFE",
+    "designer_imgs": [
+      "sw-kwon-profile-image.jpeg",
+      "dh-kim-new-profile-image.jpg",
+      "sm-jin-profile-img.jpg"
+    ]
+  },
+  {
+    "ym": "2027.01",
+    "process": "28-nm S",
+    "title": "KWS AI Accelerator",
+    "designer_imgs": [
+      "sm_yoon_profile_image.jpg",
+      "hg-yoo-profile-img.jpg"
+    ]
+  },
+  {
+    "ym": "2027.01",
+    "process": "28-nm S",
+    "title": "XOR-Spikformer",
+    "designer_imgs": [
+      "sm_yoon_profile_image.jpg",
+      "hg-yoo-profile-img.jpg"
+    ]
+  },
+  {
+    "ym": "2027.02",
+    "process": "14-nm S",
+    "title": "112Gb/s DSP-based Transmitter",
+    "designer_imgs": [
+      "ch_oh_profile_image.jpg",
+      "hg_cho_profile_image.png",
+      "sm_yoo_profile_image.jpeg",
+      "jg_han_profile_image.jpg"
+    ]
+  },
+  {
+    "ym": "2027.02",
+    "process": "14-nm S",
+    "title": "112Gb/s Receiver",
+    "designer_imgs": [
+      "ch_oh_profile_image.jpg",
+      "hg_cho_profile_image.png",
+      "sm_yoo_profile_image.jpeg",
+      "jg_han_profile_image.jpg"
+    ]
+  },
+  {
+    "ym": "2027.02",
+    "process": "14-nm S",
+    "title": "PAM16 Automotive SERDES",
+    "designer_imgs": [
+      "ch_oh_profile_image.jpg",
+      "hg_cho_profile_image.png",
+      "sm_yoo_profile_image.jpeg",
+      "jg_han_profile_image.jpg"
+    ]
+  },
+  {
+    "ym": "",
+    "process": "28-nm S",
+    "title": "D2D Transceiver",
+    "designer_imgs": [
+      "dh_lee_bs_profile_image.jpg"
+    ]
+  }
+]
