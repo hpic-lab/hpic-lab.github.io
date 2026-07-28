@@ -267,7 +267,8 @@
     ],
     "status": "completed",
     "raw_date": "2025",
-    "project": "Samsung SAIT · Quantum Computing IC"
+    "project": "Samsung SAIT · Quantum Computing IC",
+    "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/SAMSUNG/SS28-2501/PLL/SS28nm_LPP_PLL_Tape_out.pdf"
   },
   {
     "year": 2025,
@@ -290,7 +291,8 @@
     ],
     "status": "completed",
     "raw_date": "2025",
-    "project": "Samsung SAIT · Quantum Computing IC"
+    "project": "Samsung SAIT · Quantum Computing IC",
+    "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/SAMSUNG/SS28-2501/PLL/SS28nm_LPP_PLL_Tape_out.pdf"
   },
   {
     "year": 2025,
@@ -312,7 +314,8 @@
     ],
     "status": "completed",
     "raw_date": "2025",
-    "project": "Samsung SAIT · Quantum Computing IC"
+    "project": "Samsung SAIT · Quantum Computing IC",
+    "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/SAMSUNG/SS28-2501/ADC/ADC_1.5G_6bits_DR_hskim.pdf"
   },
   {
     "year": 2025,
@@ -334,7 +337,8 @@
       "Cryogenic"
     ],
     "status": "completed",
-    "project": "Samsung SAIT · Quantum Computing IC"
+    "project": "Samsung SAIT · Quantum Computing IC",
+    "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/SAMSUNG/SS28-2501/ADC/SS28%20LPP%20Tape-Out_2GSs%20SAR%20ADC.pdf"
   },
   {
     "year": 2024,
@@ -642,7 +646,8 @@
       "Improper sizing of the back-to-back inverters in the 2-stage ring oscillator",
       "Bug masked in simulation by forcing an initial condition (.ic)",
       "No start-up circuit included"
-    ]
+    ],
+    "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/65nm/M14253(23.11.29)/Design%20Review_JihoKim_1215.pdf"
   },
   {
     "year": 2023,
@@ -668,7 +673,8 @@
       "Improper sizing of the back-to-back inverters in the 2-stage ring oscillator",
       "Bug masked in simulation by forcing an initial condition (.ic)",
       "No start-up circuit included"
-    ]
+    ],
+    "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/65nm/M14467(23.11.29)/Design_Review_final_%EB%B0%95%EA%B7%9C%EB%9E%80_M14467.pptx"
   },
   {
     "year": 2023,
@@ -692,6 +698,7 @@
       "Improper sizing of the back-to-back inverters in the 2-stage ring oscillator",
       "Bug masked in simulation by forcing an initial condition (.ic)",
       "No start-up circuit included"
-    ]
+    ],
+    "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/65nm/M14467(23.11.29)/Design_Review_231126.pptx"
   }
 ]

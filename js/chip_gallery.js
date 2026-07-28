@@ -411,8 +411,27 @@ $(document).ready(function () {
       );
       $nav.append($filter);
 
+      // Failed 필터 활성 시 상단에 표시할 경고 메시지 보드 (강조)
+      var $board = $(
+        '<div class="fail-board" style="display:none">' +
+          '<div class="fail-board-head">Do not make the same mistake!</div>' +
+          '<p class="fail-board-sub">한 번의 실패는 괜찮다. 그러나 <b>똑같은 실패</b>는 반복하지 말 것.</p>' +
+          '<ol class="fail-board-list">' +
+            "<li>Always run a <mark>top-level (TR-level) simulation</mark>.</li>" +
+            "<li>Always run <mark>co-simulation</mark> — digital + analog with R/C/CC extraction.</li>" +
+            "<li>Always verify <mark>functionality</mark> with I2C/SPI + PAD connected.</li>" +
+            "<li>For timing-critical nets, after routing place a <mark>label at the far end</mark> of the signal path, then check signal quality via R/C/CC extraction.</li>" +
+            "<li>Finish <mark>power routing &amp; decap placement</mark> with enough time.</li>" +
+            "<li>When collaborating across groups, allow ample <mark>timeline</mark> and always run co-/top-simulation.</li>" +
+            "<li>Pass not only <mark>LVS</mark> but also <mark>ERC</mark>.</li>" +
+          "</ol>" +
+        "</div>"
+      );
+      $c.prepend($board);
+
       function applyFailedFilter(on) {
         filtering = on;
+        $board.toggle(on);
         $nav.find(".chip-filter-opt").removeClass("active");
         $nav.find('.chip-filter-opt[data-f="' + (on ? "failed" : "all") + '"]').addClass("active");
         if (on) {

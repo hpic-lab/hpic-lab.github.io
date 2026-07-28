@@ -204,6 +204,42 @@ h6 {
   color: #C0392B;
 }
 
+/* Failed 필터 활성 시 상단 경고 메시지 보드 */
+.fail-board {
+  border: 1px solid rgba(192, 57, 43, 0.35);
+  background: #fdf3f1;
+  border-radius: 12px;
+  padding: 18px 22px;
+  margin: 4px 0 22px;
+}
+.fail-board-head {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #C0392B;
+  margin-bottom: 4px;
+}
+.fail-board-sub {
+  font-size: 0.95rem;
+  color: #8a5a52;
+  margin: 0 0 12px;
+}
+.fail-board-list {
+  margin: 0;
+  padding-left: 22px;
+}
+.fail-board-list li {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.95;
+}
+.fail-board-list mark {
+  background: #ffe27a;
+  color: #5a3d00;
+  padding: 0 4px;
+  border-radius: 3px;
+  font-weight: 600;
+}
+
 /* 사이드바 섹션 링크: Research Projects / Chip Gallery (같은 레벨) */
 .subsection-link {
   display: block;
@@ -2213,15 +2249,19 @@ nav#navbar-main .navbar-collapse {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 700;
   color: #aaa;
-  margin: 28px 0 10px;
+  margin: 28px 0 10px 36px;
   padding-bottom: 6px;
   border-bottom: 3px solid #e9e9e9;
   cursor: pointer;
   user-select: none;
   transition: color 0.2s, border-color 0.2s;
+}
+/* Completed 목록도 한 단계 들여쓰기 */
+.completed-projects {
+  margin-left: 36px;
 }
 
 .completed-toggle:hover {
