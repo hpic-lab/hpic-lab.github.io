@@ -1387,17 +1387,17 @@ nav#navbar-main .navbar-collapse {
   box-shadow: none;
   cursor: default;
 }
-/* 클릭 가능 힌트: 각 News 항목의 첫 학생 사진을 기본적으로 hover(파란 링) 상태로 표시 */
-.news-list .news-inline-fig.news-fig-hint {
+/* 클릭 가능 힌트: 여러 명이 나열된 그룹에서 한 사진을 hover 상태로 표시 (JS가 위치 이동/유지) */
+.news-list .news-inline-fig.fig-hint,
+.pub-figure.fig-hint {
   transform: scale(1.18);
   border-color: #2e55be;
   box-shadow: 0 0 0 2px rgba(46, 85, 190, 0.3);
 }
-/* 뒤의 다른 학생 사진에 마우스를 올리면 첫 사진의 힌트를 해제 */
-.news-list .news-inline-fig.news-fig-hint:has(~ .news-inline-fig:hover) {
-  transform: none;
-  border-color: #ccc;
-  box-shadow: none;
+.chip-designers .chip-designer-photo.fig-hint {
+  transform: scale(1.12);
+  border-color: #0C447C;
+  box-shadow: 0 0 0 2px rgba(12, 68, 124, 0.25);
 }
 .news-list .news-inline-fig:not(.news-inline-logo):hover,
 .pub-figure:hover {
@@ -1503,6 +1503,23 @@ nav#navbar-main .navbar-collapse {
   .news-sticky-head .news-cat-links {
     margin-top: 0;
   }
+  /* 연도 헤더(2026 등)를 고정 헤더 바로 아래에 고정 — 스크롤 시 현재 연도로 교체 */
+  .news-timeline-container .ui-accordion-header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: var(--news-year-top, 130px);
+    z-index: 5;
+    background: #fff !important;
+  }
+  .news-timeline-container .ui-accordion-header::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 100%;
+    height: 22px;
+    background: #fff;
+  }
 }
 
 /* 모바일: Publications 제목 + ECA + 탭을 하나의 sticky 헤더로 고정, 연도 헤더는 그 아래 고정 */
@@ -1531,7 +1548,7 @@ nav#navbar-main .navbar-collapse {
   .pub2-list .pub2-year {
     position: -webkit-sticky;
     position: sticky;
-    top: 150px;
+    top: var(--pub-year-top, 150px);
     z-index: 5;
     background: #fff;
   }

@@ -122,11 +122,6 @@ $(document).ready(function () {
       });
     });
 
-    // 클릭 가능 힌트: 각 News 항목의 첫 학생 사진에 hover(파란 링) 스타일을 기본 적용 (로고 제외)
-    container.find(".news-item").each(function () {
-      $(this).find(".news-inline-fig:not(.news-inline-logo)").first().addClass("news-fig-hint");
-    });
-
     // ===== 좌측 사이드바: 연도 바로가기 (클릭 시 해당 연도 펼치고 이동) =====
     var sidebar = $("#news-gallery .sticky-sidebar");
     if (sidebar.length) {
@@ -212,6 +207,17 @@ $(document).ready(function () {
       }
       placeNewsCatFilter();
       $(window).on("resize.newscat", placeNewsCatFilter);
+
+      // 모바일: 연도 헤더 sticky 위치 = 네비바 + 고정 헤더 높이 (측정해서 CSS 변수로)
+      function updNewsYearTop() {
+        var navH = $("#navbar-main").outerHeight() || 56;
+        var headH = window.matchMedia("(max-width: 991px)").matches
+          ? ($("#news-sticky-head").outerHeight() || 0) : 0;
+        container.css("--news-year-top", (navH + headH) + "px");
+      }
+      updNewsYearTop();
+      [200, 600, 1200].forEach(function (t) { setTimeout(updNewsYearTop, t); });
+      $(window).on("resize.newsyeartop", updNewsYearTop);
 
       // ===== 스크롤 위치의 연도를 사이드바에서 강조 =====
       function updateActiveNewsYear() {

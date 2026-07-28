@@ -475,6 +475,17 @@ $(document).ready(function () {
     placePubNav();
     $(window).on("resize.pubnav", placePubNav);
 
+    // 모바일: 연도 헤더 sticky 위치 = 네비바 + 고정 헤더 높이 (측정해서 CSS 변수로)
+    function updPubYearTop() {
+      var navH = $("#navbar-main").outerHeight() || 56;
+      var headH = window.matchMedia("(max-width: 991px)").matches
+        ? ($("#pub-sticky-head").outerHeight() || 0) : 0;
+      $("#publications").css("--pub-year-top", (navH + headH) + "px");
+    }
+    updPubYearTop();
+    [200, 600, 1200].forEach(function (t) { setTimeout(updPubYearTop, t); });
+    $(window).on("resize.pubyeartop", updPubYearTop);
+
     // ===== News → 제목 클릭 시 해당 논문으로 이동 =====
     window.openPublicationByTitle = function (title) {
       var rec = window.pubTitleIndex[normTitle(title)];
