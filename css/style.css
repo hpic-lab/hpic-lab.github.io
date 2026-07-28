@@ -4660,8 +4660,8 @@ a.chip-status-venue:hover { background: rgba(55, 138, 221, 0.2); }
     padding: 3px 9px;
     white-space: nowrap;
   }
-  /* 1명이면 배지 생략 (사진만) */
-  .tos2-row .chip-designers[data-count="1"]::after { content: none; }
+  /* 1명이면 배지는 숨기되 자리는 유지해 사진 위치를 다른 행과 정렬 */
+  .tos2-row .chip-designers[data-count="1"]::after { visibility: hidden; }
 }
 
 /* 모달 Tape-out Schedule: 항목별 한 줄, 배지는 인라인 유지 (모달의 p span 블록 규칙 무시) */
