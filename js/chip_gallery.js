@@ -460,31 +460,40 @@ $(document).ready(function () {
         updateActiveYear();
         setTimeout(updateActiveYear, 60);
       }
-      // All/Failed 클릭 시 Chip Gallery 섹션으로 이동
-      function gotoChipGallery() {
-        var el = document.getElementById("chip-gallery");
+      // 지정한 요소로 스크롤 이동
+      function gotoEl(el) {
         if (!el) return;
         document.querySelectorAll('img[loading="lazy"]').forEach(function (img) { img.loading = "eager"; });
         function jump() {
           var docEl = document.documentElement, prev = docEl.style.scrollBehavior;
           docEl.style.scrollBehavior = "auto";
-          var y = Math.max(0, el.getBoundingClientRect().top + window.pageYOffset - 90);
+          var y = Math.max(0, el.getBoundingClientRect().top + window.pageYOffset - 100);
           try { window.scrollTo({ top: y, behavior: "instant" }); } catch (err) { window.scrollTo(0, y); }
           docEl.style.scrollBehavior = prev;
         }
         jump();
         [60, 180, 360].forEach(function (t) { setTimeout(jump, t); });
       }
+      // All → 2026 등 칩 목록 전체로, Failed → 경고 보드로 이동
+      function gotoFilterTarget(isFailed) {
+        if (isFailed) {
+          gotoEl($board[0] || document.getElementById("chip-gallery"));
+        } else {
+          gotoEl(document.getElementById("chip-timeline-preview") || document.getElementById("chip-gallery"));
+        }
+      }
       // 세그먼트가 사이드바/제목 등으로 이동해도 동작하도록 #research에 위임
       $("#research").off("click.chipfilter").on("click.chipfilter", ".chip-filter-opt", function () {
-        applyFailedFilter($(this).data("f") === "failed");
-        gotoChipGallery();
+        var isFailed = $(this).data("f") === "failed";
+        applyFailedFilter(isFailed);
+        gotoFilterTarget(isFailed);
       });
       $("#research").off("keydown.chipfilter").on("keydown.chipfilter", ".chip-filter-opt", function (e) {
         if (e.key === "Enter" || e.key === " ") {
           e.preventDefault();
-          applyFailedFilter($(this).data("f") === "failed");
-          gotoChipGallery();
+          var isFailed = $(this).data("f") === "failed";
+          applyFailedFilter(isFailed);
+          gotoFilterTarget(isFailed);
         }
       });
     }
@@ -530,7 +539,10 @@ $(document).ready(function () {
 
     $links.on("click", function (e) {
       e.preventDefault();
-      var el = document.getElementById($(this).data("target"));
+      var target = $(this).data("target");
+      // "Chip Gallery" 링크는 칩 목록(2026 등) 전체로 이동
+      if (target === "chip-gallery") target = "chip-timeline-preview";
+      var el = document.getElementById(target);
       if (!el) return;
       // 지연로드 이미지를 즉시 로드해 스크롤 중 레이아웃 밀림 방지
       document.querySelectorAll('img[loading="lazy"]').forEach(function (img) { img.loading = "eager"; });
