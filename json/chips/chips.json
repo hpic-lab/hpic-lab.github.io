@@ -818,26 +818,6 @@
     "status": "measurement"
   },
   {
-    "year": 2017,
-    "month": 0,
-    "process": "",
-    "image": "img/Clock Gen. & CDR.jpg",
-    "name": "Clock Gen. & CDR",
-    "description": "",
-    "outputs": [],
-    "note": "Failed",
-    "raw_date": "Failed'17",
-    "designer": "Min-Seong Choo",
-    "designer_imgs": [
-      "ms-choo-profile-img.png"
-    ],
-    "keywords": [
-      "CDR",
-      "Clocking"
-    ],
-    "status": "measurement"
-  },
-  {
     "year": 2016,
     "month": 0,
     "process": "",
@@ -855,25 +835,6 @@
     ],
     "keywords": [
       "Clocking"
-    ],
-    "status": "measurement"
-  },
-  {
-    "year": 2016,
-    "month": 0,
-    "process": "",
-    "image": "img/CDRF.jpg",
-    "name": "CDR",
-    "description": "",
-    "outputs": [],
-    "note": "Failed",
-    "raw_date": "Failed'16",
-    "designer": "Min-Seong Choo",
-    "designer_imgs": [
-      "ms-choo-profile-img.png"
-    ],
-    "keywords": [
-      "CDR"
     ],
     "status": "measurement"
   },
@@ -896,25 +857,6 @@
     ],
     "keywords": [
       "Clocking"
-    ],
-    "status": "measurement"
-  },
-  {
-    "year": 2015,
-    "month": 0,
-    "process": "",
-    "image": "img/CDRF2.jpg",
-    "name": "CDR",
-    "description": "",
-    "outputs": [],
-    "note": "Failed",
-    "raw_date": "Failed'15",
-    "designer": "Min-Seong Choo",
-    "designer_imgs": [
-      "ms-choo-profile-img.png"
-    ],
-    "keywords": [
-      "CDR"
     ],
     "status": "measurement"
   }
