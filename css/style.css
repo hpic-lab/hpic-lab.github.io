@@ -1478,6 +1478,23 @@ nav#navbar-main .navbar-collapse {
     background: #fff;
     border-bottom: 1px solid #eee;
   }
+  /* 연도 헤더(2026 등)도 필터 아래에 고정 */
+  .news-timeline-container .ui-accordion-header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 130px;
+    z-index: 5;
+    background: #fff !important;
+  }
+  .news-timeline-container .ui-accordion-header::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 100%;
+    height: 26px;
+    background: #fff;
+  }
 }
 
 /* 모바일: Publications ECA+탭을 콘텐츠 상단 sticky 고정, 연도 헤더는 그 아래 고정 */
