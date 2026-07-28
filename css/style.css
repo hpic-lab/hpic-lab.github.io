@@ -1585,6 +1585,16 @@ nav#navbar-main .navbar-collapse {
   }
 }
 
+/* 모바일: 네 섹션 고정 제목 크기 통일 (.home-section h1 의 6vw 덮어쓰기 방지) */
+@media (max-width: 991px) {
+  #research-sticky-title h1,
+  #members-sticky-title h1,
+  .news-sticky-head h1,
+  .pub-sticky-head h1 {
+    font-size: 1.5rem !important;
+  }
+}
+
 /* 모바일: "News" 제목 + 카테고리 필터를 하나의 sticky 헤더로 콘텐츠 상단에 고정 */
 @media (max-width: 991px) {
   .news-sticky-head {
@@ -1623,6 +1633,8 @@ nav#navbar-main .navbar-collapse {
     top: var(--news-year-top, 130px);
     z-index: 850;   /* 고정 헤더(900) 아래, 콘텐츠 위 */
     background: #fff !important;
+    background-image: none !important;
+    box-shadow: -30px 0 0 #fff, 30px 0 0 #fff;   /* 좌우 여백까지 불투명 커버 */
   }
   .news-timeline-container .ui-accordion-header::before {
     content: "";
@@ -1664,6 +1676,7 @@ nav#navbar-main .navbar-collapse {
     top: var(--pub-year-top, 150px);
     z-index: 850;   /* 고정 헤더(900) 아래, 콘텐츠 위 */
     background: #fff;
+    box-shadow: -30px 0 0 #fff, 30px 0 0 #fff;
   }
   .pub2-list .pub2-year::before {
     content: "";
