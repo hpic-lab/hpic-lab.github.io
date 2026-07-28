@@ -1,20 +1,12 @@
 $(document).ready(function () {
-  // 커스텀 스무스 스크롤 (rAF) — 네이티브 smooth 의 방향성 버그 회피
-  function smoothScrollTo(targetY, duration) {
+  // 연도 바로가기 스크롤 — CSS smooth 를 잠깐 끄고 확실히 이동(방향성 버그 회피)
+  function smoothScrollTo(targetY) {
     targetY = Math.max(0, targetY);
-    var startY = window.pageYOffset, diff = targetY - startY;
-    if (Math.abs(diff) < 2) return;
-    duration = duration || 400;
-    var startTime = null, docEl = document.documentElement, prevSB = docEl.style.scrollBehavior;
+    var docEl = document.documentElement, prevSB = docEl.style.scrollBehavior;
     docEl.style.scrollBehavior = "auto";
-    function step(now) {
-      if (startTime === null) startTime = now;
-      var t = Math.min(1, (now - startTime) / duration);
-      var e = t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
-      window.scrollTo(0, Math.round(startY + diff * e));
-      if (t < 1) requestAnimationFrame(step); else docEl.style.scrollBehavior = prevSB;
-    }
-    requestAnimationFrame(step);
+    try { window.scrollTo({ top: targetY, behavior: "instant" }); }
+    catch (e) { window.scrollTo(0, targetY); }
+    setTimeout(function () { docEl.style.scrollBehavior = prevSB; }, 0);
   }
 
   // 카테고리별 배지 색상 (시안 A)

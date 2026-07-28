@@ -64,27 +64,17 @@ $(document).ready(function () {
     });
   }
 
-  // 커스텀 스무스 스크롤 (rAF). 애니메이션 동안 CSS scroll-behavior 를 끄고 프레임별 즉시 이동해
-  // 네이티브 smooth 스크롤이 방향(특히 위로)에 따라 무시되는 문제를 회피한다.
-  function smoothScrollTo(targetY, duration) {
+  // 연도/논문 바로가기 스크롤. 네이티브 smooth(behavior:"smooth")·jQuery animate 는
+  // html{scroll-behavior:smooth} 와 충돌해 방향(특히 위로)에 따라 무시되는 문제가 있어,
+  // CSS smooth 를 잠깐 끄고 window.scrollTo 로 확실히 이동한 뒤 복구한다.
+  function smoothScrollTo(targetY) {
     targetY = Math.max(0, targetY);
-    var startY = window.pageYOffset;
-    var diff = targetY - startY;
-    if (Math.abs(diff) < 2) return;
-    duration = duration || 400;
-    var startTime = null;
     var docEl = document.documentElement;
     var prevSB = docEl.style.scrollBehavior;
     docEl.style.scrollBehavior = "auto";
-    function step(now) {
-      if (startTime === null) startTime = now;
-      var t = Math.min(1, (now - startTime) / duration);
-      var ease = t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
-      window.scrollTo(0, Math.round(startY + diff * ease));
-      if (t < 1) requestAnimationFrame(step);
-      else docEl.style.scrollBehavior = prevSB;
-    }
-    requestAnimationFrame(step);
+    try { window.scrollTo({ top: targetY, behavior: "instant" }); }
+    catch (e) { window.scrollTo(0, targetY); }
+    setTimeout(function () { docEl.style.scrollBehavior = prevSB; }, 0);
   }
   function scrollToEl(el) {
     if (el && el.length) {
