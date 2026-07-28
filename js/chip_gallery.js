@@ -384,9 +384,8 @@ $(document).ready(function () {
 
     var filtering = false;
 
-    // 스크롤 위치에 따라 현재 연도 강조 (Failed 필터 중에는 하지 않음)
+    // 스크롤 위치에 따라 현재 연도 강조 (Failed 필터 중에는 보이는 실패 연도 기준)
     function updateActiveYear() {
-      if (filtering) return;
       var headers = $c.find(".chip-year-toggle:visible");
       if (!headers.length) return;
       var threshold = $(window).scrollTop() + 130;
@@ -437,7 +436,6 @@ $(document).ready(function () {
         $("#research .chip-filter-opt").removeClass("active");
         $('#research .chip-filter-opt[data-f="' + (on ? "failed" : "all") + '"]').addClass("active");
         if (on) {
-          $nav.find(".chip-year-link").removeClass("active");
           $c.find(".chip-card2").each(function () {
             $(this).toggle($(this).hasClass("chip-card-failed"));
           });
@@ -457,8 +455,10 @@ $(document).ready(function () {
             var $body = $(this).next(".chip-year-body");
             if (open) $body.show(); else $body.hide();
           });
-          updateActiveYear();
         }
+        // Failed/All 모두 현재 보이는 연도를 강조 (지연 후 재계산으로 레이아웃 반영)
+        updateActiveYear();
+        setTimeout(updateActiveYear, 60);
       }
       // All/Failed 클릭 시 Chip Gallery 섹션으로 이동
       function gotoChipGallery() {
