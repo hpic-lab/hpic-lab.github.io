@@ -434,8 +434,8 @@ $(document).ready(function () {
       function applyFailedFilter(on) {
         filtering = on;
         $board.toggle(on);
-        $nav.find(".chip-filter-opt").removeClass("active");
-        $nav.find('.chip-filter-opt[data-f="' + (on ? "failed" : "all") + '"]').addClass("active");
+        $("#research .chip-filter-opt").removeClass("active");
+        $('#research .chip-filter-opt[data-f="' + (on ? "failed" : "all") + '"]').addClass("active");
         if (on) {
           $nav.find(".chip-year-link").removeClass("active");
           $c.find(".chip-card2").each(function () {
@@ -460,10 +460,11 @@ $(document).ready(function () {
           updateActiveYear();
         }
       }
-      $nav.on("click", ".chip-filter-opt", function () {
+      // 세그먼트가 사이드바/제목 등으로 이동해도 동작하도록 #research에 위임
+      $("#research").off("click.chipfilter").on("click.chipfilter", ".chip-filter-opt", function () {
         applyFailedFilter($(this).data("f") === "failed");
       });
-      $nav.on("keydown", ".chip-filter-opt", function (e) {
+      $("#research").off("keydown.chipfilter").on("keydown.chipfilter", ".chip-filter-opt", function (e) {
         if (e.key === "Enter" || e.key === " ") {
           e.preventDefault();
           applyFailedFilter($(this).data("f") === "failed");
