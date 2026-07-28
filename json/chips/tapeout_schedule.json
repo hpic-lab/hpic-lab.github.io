@@ -50,6 +50,18 @@
     ]
   },
   {
+    "ym": "2027.01",
+    "process": "28-nm S",
+    "title": "DSP-based Receiver in collaboration with SKKU",
+    "designer_imgs": [
+      "jg-lee-profile-img.jpeg",
+      "js-kwon-profile-image.jpg",
+      "de-jin-profile-image.jpg",
+      "sh-kim2-profile-image.png",
+      "sm-jin-profile-img.jpg"
+    ]
+  },
+  {
     "ym": "2027.02",
     "process": "14-nm S",
     "title": "112Gb/s DSP-based Transmitter",
