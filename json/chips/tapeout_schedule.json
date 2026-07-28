@@ -81,5 +81,17 @@
       "sm_yoo_profile_image.jpeg",
       "jg_han_profile_image.jpg"
     ]
+  },
+  {
+    "ym": "2027.02",
+    "process": "14-nm S",
+    "title": "112Gb/s TIA with SERDES",
+    "designer_imgs": [
+      "jy-lee-profile-img.jpg",
+      "ch_oh_profile_image.jpg",
+      "hg_cho_profile_image.png",
+      "sm_yoo_profile_image.jpeg",
+      "jg_han_profile_image.jpg"
+    ]
   }
 ]
