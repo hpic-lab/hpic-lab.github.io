@@ -401,7 +401,11 @@
       "MPC",
       "spur reduction"
     ],
-    "status": "measurement"
+    "status": "paper",
+    "venue": {
+      "label": "IEEE JSSC'26",
+      "paper": "All-Digital Ring-Based Injection-Locked Clock Multiplier"
+    }
   },
   {
     "year": 2024,
