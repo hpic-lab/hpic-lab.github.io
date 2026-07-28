@@ -470,26 +470,38 @@ $(document).ready(function () {
         updateActiveYear();
         setTimeout(updateActiveYear, 60);
       }
-      // 지정한 요소로 스크롤 이동
-      function gotoEl(el) {
+      // 지정한 요소로 스크롤 이동 (offset = 상단에서 띄울 여백)
+      function gotoEl(el, offset) {
         if (!el) return;
+        var off = (typeof offset === "number") ? offset : 100;
         document.querySelectorAll('img[loading="lazy"]').forEach(function (img) { img.loading = "eager"; });
         function jump() {
           var docEl = document.documentElement, prev = docEl.style.scrollBehavior;
           docEl.style.scrollBehavior = "auto";
-          var y = Math.max(0, el.getBoundingClientRect().top + window.pageYOffset - 100);
+          var y = Math.max(0, el.getBoundingClientRect().top + window.pageYOffset - off);
           try { window.scrollTo({ top: y, behavior: "instant" }); } catch (err) { window.scrollTo(0, y); }
           docEl.style.scrollBehavior = prev;
         }
         jump();
         [60, 180, 360].forEach(function (t) { setTimeout(jump, t); });
       }
-      // All → 2026 등 칩 목록 전체로, Failed → 경고 보드로 이동
+      // 고정된 Chip Gallery 헤더 아래 위치(연도 헤더가 붙는 line)
+      function stickyTopOffset() {
+        var rEl = document.getElementById("research");
+        if (!rEl) return 130;
+        var cs = getComputedStyle(rEl);
+        var v = function (n) { return parseFloat(cs.getPropertyValue(n)) || 0; };
+        return window.matchMedia("(max-width: 991px)").matches
+          ? (v("--res-nav-h") + v("--res-title-h") + v("--res-sub-h"))
+          : (100 + v("--res-dsub-h"));
+      }
+      // All → 2026 등 칩 목록 전체로, Failed → 경고 보드로 이동 (고정 헤더에 안 가리게 여백 확보)
       function gotoFilterTarget(isFailed) {
+        var base = stickyTopOffset();
         if (isFailed) {
-          gotoEl($board[0] || document.getElementById("chip-gallery"));
+          gotoEl($board[0] || document.getElementById("chip-gallery"), base + 28);
         } else {
-          gotoEl(document.getElementById("chip-timeline-preview") || document.getElementById("chip-gallery"));
+          gotoEl(document.getElementById("chip-timeline-preview") || document.getElementById("chip-gallery"), base + 6);
         }
       }
       // 세그먼트가 사이드바/제목 등으로 이동해도 동작하도록 #research에 위임
