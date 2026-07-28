@@ -150,6 +150,7 @@ h6 {
   padding: 3px 4px;
   cursor: default;
   user-select: none;
+  align-self: flex-start;   /* 세로 목록에서 활성 배경이 칸 전체로 늘어나지 않도록 */
 }
 .chip-year-link.active {
   color: #0c447c;
@@ -2695,6 +2696,7 @@ nav#navbar-main .navbar-collapse {
   padding: 3px 4px;
   cursor: default;
   user-select: none;
+  align-self: flex-start;   /* 세로 목록에서 활성 배경이 칸 전체로 늘어나지 않도록 */
 }
 
 .pub2-year-link.active {
