@@ -183,8 +183,7 @@ h6 {
 /* 사이드바 필터: All / Failed 세그먼트 (안 A) */
 .chip-filter-divider {
   align-self: stretch;
-  border-top: 1px solid #e5e5e5;
-  margin: 14px 0 10px;
+  margin: 10px 0 4px;
 }
 .chip-filter-label {
   align-self: flex-start;
