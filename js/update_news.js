@@ -85,7 +85,12 @@ $(document).ready(function () {
         // 1저자 등 학생 얼굴 사진 (문장 바로 뒤, [Paper] 링크보다 앞, 클릭 시 프로필 모달)
         var figsHTML = "";
         (it.figures || []).forEach(function (f) {
-          figsHTML += ' <img src="img/' + f + '" class="news-inline-fig" alt="" data-bs-toggle="modal" data-bs-target="#exampleModal" data-img-key="' + f + '">';
+          if (/lab-logo/i.test(f)) {
+            // HPIC 로고: 클릭 시 이동 없음 → 모달/커서 없이 표시
+            figsHTML += ' <img src="img/' + f + '" class="news-inline-fig news-inline-logo" alt="">';
+          } else {
+            figsHTML += ' <img src="img/' + f + '" class="news-inline-fig" alt="" data-bs-toggle="modal" data-bs-target="#exampleModal" data-img-key="' + f + '">';
+          }
         });
         links = figsHTML + links;
         // 수상 사진 등 이미지가 연결된 항목: 문장 전체를 클릭하면 라이트박스로 열림 (별도 [Photo] 링크 없음)

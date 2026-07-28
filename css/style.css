@@ -1381,7 +1381,13 @@ nav#navbar-main .navbar-collapse {
 .pub-figure {
   transition: transform 0.12s ease, box-shadow 0.12s ease, border-color 0.12s ease;
 }
-.news-list .news-inline-fig:hover,
+.news-list .news-inline-fig.news-inline-logo:hover {
+  transform: none;
+  border-color: #ccc;
+  box-shadow: none;
+  cursor: default;
+}
+.news-list .news-inline-fig:not(.news-inline-logo):hover,
 .pub-figure:hover {
   transform: scale(1.18);
   border-color: #2e55be;
