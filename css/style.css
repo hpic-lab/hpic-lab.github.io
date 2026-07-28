@@ -2626,7 +2626,7 @@ nav#navbar-main .navbar-collapse {
 
 /* ===== Teaching (시안 1: 연도 헤더 + 학기·과정 배지) ===== */
 .teach-year {
-  font-size: 1.2rem;
+  font-size: 1.05rem;
   font-weight: 700;
   color: #2e55be;
   margin: 26px 0 12px;
@@ -2681,7 +2681,7 @@ nav#navbar-main .navbar-collapse {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   font-weight: 700;
   color: #aaa;
   margin: 28px 0 10px 36px;
