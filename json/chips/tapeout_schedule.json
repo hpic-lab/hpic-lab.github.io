@@ -2,7 +2,7 @@
   {
     "ym": "2026.09",
     "process": "28-nm T",
-    "title": "112Gb/s TIA with 112Gb/s Electrical Driver",
+    "title": "112Gb/s TIA",
     "designer_imgs": [
       "jy-lee-profile-img.jpg",
       "dh_lee_bs_profile_image.jpg",
@@ -16,7 +16,7 @@
   {
     "ym": "2026.09",
     "process": "28-nm T",
-    "title": "112Gb/s TX with CIM-based FFE",
+    "title": "112Gb/s TX with CIM FFE",
     "designer_imgs": [
       "sw-kwon-profile-image.jpeg",
       "dh-kim-new-profile-image.jpg",
