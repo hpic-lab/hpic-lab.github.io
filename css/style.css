@@ -1165,13 +1165,9 @@ nav#navbar-main .navbar-collapse {
 /* ========================================= */
 #modal-tape_out_schedule {
 
-  /* 1. 글자 크기 통일 */
-  font-size: 16px;
-
-  /* 2. 글자 색상 */
+  /* 글자 크기·색상을 아래 Publications와 동일하게 */
+  font-size: 0.95rem;
   color: #333;
-
-  /* 3. 줄 간격 */
   line-height: 1.6;
 }
 
@@ -1197,6 +1193,7 @@ nav#navbar-main .navbar-collapse {
   flex: 0 0 64px;
   color: #999;
   font-weight: 700;
+  font-size: 0.95rem;   /* Publications 날짜열과 동일 */
 }
 #exampleModal #modal-tape_out_schedule .tos-body {
   flex: 1;
@@ -1205,6 +1202,8 @@ nav#navbar-main .navbar-collapse {
   flex-wrap: wrap;
   align-items: center;
   gap: 8px;
+  font-size: 0.95rem;   /* Publications 본문과 동일 */
+  font-weight: 700;     /* 제목 bold */
 }
 /* 공정 배지: 섹션제목 규칙(1.08rem/block)에 오염되지 않도록 홈페이지 크기로 강제 */
 #exampleModal #modal-tape_out_schedule .tos-body .chip-fab {
