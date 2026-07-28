@@ -868,9 +868,9 @@ nav#navbar-main .navbar-collapse {
     height: auto; /* 높이 자동 */
     z-index: 10;  /* 다른 요소보다 위에 보이게 */
   }
-  /* Research 사이드바 제목 top을, 우측 고정 소섹션(Chip Gallery 등)과 같게 맞춤 */
+  /* Research 사이드바 제목 top: 다른 섹션과 동일한 간격(100px) — 소섹션/연도도 같은 기준 */
   #research .sticky-sidebar {
-    top: var(--res-nav-h, 60px);
+    top: 100px;
   }
 }
 
@@ -4141,7 +4141,7 @@ section {
   #research .col-lg-8 > h5#chip-gallery {
     position: -webkit-sticky;
     position: sticky;
-    top: var(--res-nav-h, 60px);
+    top: 100px;   /* 좌측 Research 제목과 동일 기준 (내비바에서 띄움) */
     z-index: 6;   /* 연도 헤더(5)보다 위 */
     background: var(--section-bg, #fff);
   }
@@ -4162,7 +4162,7 @@ section {
   .chip-timeline .chip-year {
     position: -webkit-sticky;
     position: sticky;
-    top: calc(var(--res-nav-h, 60px) + var(--res-dsub-h, 42px));   /* Chip Gallery 제목 아래 */
+    top: calc(100px + var(--res-dsub-h, 42px));   /* Chip Gallery 제목 아래 */
     background: var(--section-bg, #fff);
     z-index: 5;
   }
