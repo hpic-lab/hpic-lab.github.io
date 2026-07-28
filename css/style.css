@@ -1593,6 +1593,7 @@ nav#navbar-main .navbar-collapse {
     z-index: 880;
     background: var(--section-bg, #fff);
     box-shadow: -30px 0 0 var(--section-bg, #fff), 30px 0 0 var(--section-bg, #fff);
+    padding-left: 16px;   /* Research 하위(subsection)임을 들여쓰기로 표시 */
   }
   #research h5#research-projects::before,
   #research h5#chip-gallery::before {
