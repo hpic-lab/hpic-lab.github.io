@@ -148,8 +148,8 @@ $(document).ready(function () {
       sidebar.append('<div class="news-cat-links">' + chipsHTML + "</div>");
 
       function applyNewsFilter(cat) {
-        sidebar.find(".news-cat-chip").removeClass("active");
-        sidebar.find('.news-cat-chip[data-cat="' + cat + '"]').addClass("active");
+        $("#news-gallery .news-cat-chip").removeClass("active");
+        $('#news-gallery .news-cat-chip[data-cat="' + cat + '"]').addClass("active");
 
         // 항목 표시/숨김
         container.find(".news-item").each(function () {
@@ -180,10 +180,29 @@ $(document).ready(function () {
         });
       }
 
-      sidebar.on("click", ".news-cat-chip", function () {
+      $("#news-gallery").on("click", ".news-cat-chip", function () {
         applyNewsFilter($(this).data("cat"));
         setTimeout(updateActiveNewsYear, 50);
       });
+
+      // 모바일: 카테고리 필터를 뉴스 콘텐츠 상단으로 옮겨 스크롤 시 상단 고정(sticky).
+      // 데스크톱에서는 사이드바 원위치로 되돌린다.
+      function placeNewsCatFilter() {
+        var $chips = $("#news-gallery .news-cat-links");
+        if (!$chips.length) return;
+        var $content = $("#news-gallery .col-lg-9").first();
+        if (window.matchMedia("(max-width: 991px)").matches) {
+          if (!$chips.hasClass("news-cat-sticky")) {
+            $content.prepend($chips);
+            $chips.addClass("news-cat-sticky");
+          }
+        } else if ($chips.hasClass("news-cat-sticky")) {
+          sidebar.append($chips);
+          $chips.removeClass("news-cat-sticky");
+        }
+      }
+      placeNewsCatFilter();
+      $(window).on("resize.newscat", placeNewsCatFilter);
 
       // ===== 스크롤 위치의 연도를 사이드바에서 강조 =====
       function updateActiveNewsYear() {

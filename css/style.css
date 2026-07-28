@@ -1447,6 +1447,20 @@ nav#navbar-main .navbar-collapse {
   }
 }
 
+/* 모바일: 카테고리 필터를 뉴스 콘텐츠 상단에 sticky 고정 (JS가 이 위치로 이동) */
+@media (max-width: 991px) {
+  .news-cat-links.news-cat-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 56px;
+    z-index: 900;
+    margin: 0 0 10px;
+    padding: 8px 0;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+  }
+}
+
 /* News 목록: 내부 스크롤 없이 전체 표시 */
 .news-card.news-list {
   max-height: none !important;
