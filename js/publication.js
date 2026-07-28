@@ -64,11 +64,31 @@ $(document).ready(function () {
     });
   }
 
-  // 네이티브 스무스 스크롤 사용 (html { scroll-behavior: smooth } 와 jQuery .animate 충돌 회피)
+  // 커스텀 스무스 스크롤 (rAF). 애니메이션 동안 CSS scroll-behavior 를 끄고 프레임별 즉시 이동해
+  // 네이티브 smooth 스크롤이 방향(특히 위로)에 따라 무시되는 문제를 회피한다.
+  function smoothScrollTo(targetY, duration) {
+    targetY = Math.max(0, targetY);
+    var startY = window.pageYOffset;
+    var diff = targetY - startY;
+    if (Math.abs(diff) < 2) return;
+    duration = duration || 400;
+    var startTime = null;
+    var docEl = document.documentElement;
+    var prevSB = docEl.style.scrollBehavior;
+    docEl.style.scrollBehavior = "auto";
+    function step(now) {
+      if (startTime === null) startTime = now;
+      var t = Math.min(1, (now - startTime) / duration);
+      var ease = t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
+      window.scrollTo(0, Math.round(startY + diff * ease));
+      if (t < 1) requestAnimationFrame(step);
+      else docEl.style.scrollBehavior = prevSB;
+    }
+    requestAnimationFrame(step);
+  }
   function scrollToEl(el) {
     if (el && el.length) {
-      var top = el[0].getBoundingClientRect().top + window.pageYOffset - 100;
-      window.scrollTo({ top: Math.max(0, top), behavior: "smooth" });
+      smoothScrollTo(el[0].getBoundingClientRect().top + window.pageYOffset - 100);
     }
   }
 
@@ -455,7 +475,7 @@ $(document).ready(function () {
         $body.show();
       }
       var $entry = $(entry);
-      window.scrollTo({ top: Math.max(0, entry.getBoundingClientRect().top + window.pageYOffset - 120), behavior: "smooth" });
+      smoothScrollTo(entry.getBoundingClientRect().top + window.pageYOffset - 120);
       // 잠깐 강조
       $entry.addClass("pub2-entry-flash");
       setTimeout(function () { $entry.removeClass("pub2-entry-flash"); }, 1600);

@@ -1,4 +1,22 @@
 $(document).ready(function () {
+  // 커스텀 스무스 스크롤 (rAF) — 네이티브 smooth 의 방향성 버그 회피
+  function smoothScrollTo(targetY, duration) {
+    targetY = Math.max(0, targetY);
+    var startY = window.pageYOffset, diff = targetY - startY;
+    if (Math.abs(diff) < 2) return;
+    duration = duration || 400;
+    var startTime = null, docEl = document.documentElement, prevSB = docEl.style.scrollBehavior;
+    docEl.style.scrollBehavior = "auto";
+    function step(now) {
+      if (startTime === null) startTime = now;
+      var t = Math.min(1, (now - startTime) / duration);
+      var e = t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
+      window.scrollTo(0, Math.round(startY + diff * e));
+      if (t < 1) requestAnimationFrame(step); else docEl.style.scrollBehavior = prevSB;
+    }
+    requestAnimationFrame(step);
+  }
+
   // 학회/저널 약어 → output 배지 색상 (Publications 배지와 통일)
   function outClass(label) {
     var t = String(label).toLowerCase();
@@ -318,7 +336,7 @@ $(document).ready(function () {
       $a.on("click", function (e) {
         e.preventDefault();
         if ($h.hasClass("collapsed")) $h.trigger("click");
-        window.scrollTo({ top: Math.max(0, $h[0].getBoundingClientRect().top + window.pageYOffset - 100), behavior: "smooth" });
+        smoothScrollTo($h[0].getBoundingClientRect().top + window.pageYOffset - 100);
       });
       $nav.append($a);
     });

@@ -1,4 +1,22 @@
 $(document).ready(function () {
+  // 커스텀 스무스 스크롤 (rAF) — 네이티브 smooth 의 방향성 버그 회피
+  function smoothScrollTo(targetY, duration) {
+    targetY = Math.max(0, targetY);
+    var startY = window.pageYOffset, diff = targetY - startY;
+    if (Math.abs(diff) < 2) return;
+    duration = duration || 400;
+    var startTime = null, docEl = document.documentElement, prevSB = docEl.style.scrollBehavior;
+    docEl.style.scrollBehavior = "auto";
+    function step(now) {
+      if (startTime === null) startTime = now;
+      var t = Math.min(1, (now - startTime) / duration);
+      var e = t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
+      window.scrollTo(0, Math.round(startY + diff * e));
+      if (t < 1) requestAnimationFrame(step); else docEl.style.scrollBehavior = prevSB;
+    }
+    requestAnimationFrame(step);
+  }
+
   // 카테고리별 배지 색상 (시안 A)
   var CATEGORY = {
     "Grant":        { label: "Grant",        bg: "#EAF3DE", fg: "#27500A" },
@@ -128,7 +146,7 @@ $(document).ready(function () {
         if (acc.accordion("option", "active") === false) {
           acc.accordion("option", "active", 0);
         }
-        window.scrollTo({ top: Math.max(0, header[0].getBoundingClientRect().top + window.pageYOffset - 100), behavior: "smooth" });
+        smoothScrollTo(header[0].getBoundingClientRect().top + window.pageYOffset - 100);
       });
 
       // ===== 카테고리 필터 (Grant / Journal / Award 등) =====
