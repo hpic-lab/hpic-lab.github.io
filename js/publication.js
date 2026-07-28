@@ -521,7 +521,14 @@ $(document).ready(function () {
     function updateActiveYear() {
       var headers = container.find(".pub2-list:visible .pub2-year");
       if (!headers.length) return;
-      var threshold = $(window).scrollTop() + 110;
+      // 임계값: 모바일은 고정 헤더(내비바+제목/탭) 아래에 연도가 고정되므로 그 오프셋에 맞춤
+      var stickyTop = 110;
+      if (window.matchMedia("(max-width: 991px)").matches) {
+        var pv = getComputedStyle(document.getElementById("publications"))
+          .getPropertyValue("--pub-year-top");
+        stickyTop = (parseFloat(pv) || 200) + 8;
+      }
+      var threshold = $(window).scrollTop() + stickyTop;
       var current = null;
       headers.each(function () {
         if ($(this).offset().top <= threshold) current = this;
