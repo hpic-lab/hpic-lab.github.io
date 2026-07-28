@@ -1488,16 +1488,16 @@ nav#navbar-main .navbar-collapse {
     position: sticky;
     top: var(--lp-nav-h, 56px);
     z-index: 890;
-    background: #fff;
+    background: var(--section-bg, #f7f7f7);   /* 섹션 배경(회색)과 통일 */
     padding: 6px 0 6px;
-    box-shadow: -30px 0 0 #fff, 30px 0 0 #fff;
+    box-shadow: -30px 0 0 var(--section-bg, #f7f7f7), 30px 0 0 var(--section-bg, #f7f7f7);
   }
   #labpolicy-sticky-title h1 { font-weight: 700; color: #222; margin: 0; }
   #labpolicy-sticky-title .lab-policy-updated { margin: 6px 0 0; }
   #labpolicy-sticky-title::before {
     content: "";
     position: absolute; left: 0; right: 0; bottom: 100%;
-    height: 60px; background: #fff;
+    height: 60px; background: var(--section-bg, #f7f7f7);
   }
 }
 
@@ -1546,9 +1546,9 @@ nav#navbar-main .navbar-collapse {
     position: sticky;
     top: var(--res-nav-h, 56px);
     z-index: 890;
-    background: #fff;
+    background: var(--section-bg, #fff);
     padding: 6px 0 4px;
-    box-shadow: -30px 0 0 #fff, 30px 0 0 #fff;   /* 좌우 여백으로 비어져 나오는 내용 가림 */
+    box-shadow: -30px 0 0 var(--section-bg, #fff), 30px 0 0 var(--section-bg, #fff);
   }
   #research-sticky-title h1 {
     font-weight: 700;   /* 다른 섹션 제목(.section-heading h1)과 통일 */
@@ -1567,14 +1567,14 @@ nav#navbar-main .navbar-collapse {
     position: sticky;
     top: calc(var(--res-nav-h, 56px) + var(--res-title-h, 44px));
     z-index: 880;
-    background: #fff;
-    box-shadow: -30px 0 0 #fff, 30px 0 0 #fff;
+    background: var(--section-bg, #fff);
+    box-shadow: -30px 0 0 var(--section-bg, #fff), 30px 0 0 var(--section-bg, #fff);
   }
   #research h5#research-projects::before,
   #research h5#chip-gallery::before {
     content: "";
     position: absolute; left: 0; right: 0; bottom: 100%;
-    height: 30px; background: #fff;
+    height: 30px; background: var(--section-bg, #fff);
   }
   /* Level 2: Upcoming Tape-outs 헤더 & Filter */
   #chip-tapeout-schedule .tos2-head,
@@ -1582,11 +1582,11 @@ nav#navbar-main .navbar-collapse {
     position: -webkit-sticky;
     position: sticky;
     top: calc(var(--res-nav-h, 56px) + var(--res-title-h, 44px) + var(--res-sub-h, 40px));
-    background: #fff;
+    background: var(--section-bg, #fff);
   }
   #chip-tapeout-schedule .tos2-head,
   #chip-year-nav.chip-filter-moved {
-    box-shadow: -30px 0 0 #fff, 30px 0 0 #fff;
+    box-shadow: -30px 0 0 var(--section-bg, #fff), 30px 0 0 var(--section-bg, #fff);
   }
   #chip-tapeout-schedule .tos2-head { z-index: 870; }
   #chip-year-nav.chip-filter-moved { z-index: 865; }
@@ -1668,11 +1668,11 @@ nav#navbar-main .navbar-collapse {
     position: sticky;
     top: 52px;
     z-index: 900;
-    background: #fff;
+    background: var(--section-bg, #fff);
     padding: 6px 0 8px;
     margin-bottom: 8px;
     border-bottom: 1px solid #eee;
-    box-shadow: -30px 0 0 #fff, 30px 0 0 #fff;   /* 좌우 여백으로 비침 방지 */
+    box-shadow: -30px 0 0 var(--section-bg, #fff), 30px 0 0 var(--section-bg, #fff);   /* 좌우 여백으로 비침 방지 */
   }
   .pub-sticky-head::before {
     content: "";
@@ -1681,7 +1681,7 @@ nav#navbar-main .navbar-collapse {
     right: 0;
     bottom: 100%;
     height: 60px;
-    background: #fff;
+    background: var(--section-bg, #fff);
   }
   .pub-sticky-head h1 { font-weight: 700; color: #222; margin: 0 0 6px; }
   .pub-sticky-head .pub2-notice { margin: 0 0 6px; }
@@ -1690,8 +1690,8 @@ nav#navbar-main .navbar-collapse {
     position: sticky;
     top: var(--pub-year-top, 150px);
     z-index: 850;   /* 고정 헤더(900) 아래, 콘텐츠 위 */
-    background: #fff;
-    box-shadow: -30px 0 0 #fff, 30px 0 0 #fff;
+    background: var(--section-bg, #fff);
+    box-shadow: -30px 0 0 var(--section-bg, #fff), 30px 0 0 var(--section-bg, #fff);
   }
   .pub2-list .pub2-year::before {
     content: "";
@@ -1700,7 +1700,7 @@ nav#navbar-main .navbar-collapse {
     right: 0;
     bottom: 100%;
     height: 28px;
-    background: #fff;
+    background: var(--section-bg, #fff);
   }
 }
 
