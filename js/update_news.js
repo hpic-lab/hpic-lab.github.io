@@ -122,6 +122,11 @@ $(document).ready(function () {
       });
     });
 
+    // 클릭 가능 힌트: 각 News 항목의 첫 학생 사진에 hover(파란 링) 스타일을 기본 적용 (로고 제외)
+    container.find(".news-item").each(function () {
+      $(this).find(".news-inline-fig:not(.news-inline-logo)").first().addClass("news-fig-hint");
+    });
+
     // ===== 좌측 사이드바: 연도 바로가기 (클릭 시 해당 연도 펼치고 이동) =====
     var sidebar = $("#news-gallery .sticky-sidebar");
     if (sidebar.length) {

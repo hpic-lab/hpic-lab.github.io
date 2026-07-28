@@ -1387,6 +1387,12 @@ nav#navbar-main .navbar-collapse {
   box-shadow: none;
   cursor: default;
 }
+/* 클릭 가능 힌트: 각 News 항목의 첫 학생 사진을 기본적으로 hover(파란 링) 상태로 표시 */
+.news-list .news-inline-fig.news-fig-hint {
+  transform: scale(1.18);
+  border-color: #2e55be;
+  box-shadow: 0 0 0 2px rgba(46, 85, 190, 0.3);
+}
 .news-list .news-inline-fig:not(.news-inline-logo):hover,
 .pub-figure:hover {
   transform: scale(1.18);
