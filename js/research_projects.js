@@ -117,6 +117,17 @@ $(document).ready(function () {
     //   role:    "HPIC이 담당하는 역할",
     //   sponsor_logo: "img/sponsors/msit.png",
     //   partners: [ { name: "ETRI", logo: "img/sponsors/etri.png" }, ... ]
+    // 날짜를 홈페이지 전반과 동일한 "YYYY. MM" 표기로 변환
+    // 예: "Jul. 2026 - Dec. 2030" → "2026. 07 - 2030. 12"
+    function fmtDate(s) {
+      const MON = { jan:"01", feb:"02", mar:"03", apr:"04", may:"05", jun:"06",
+                    jul:"07", aug:"08", sep:"09", oct:"10", nov:"11", dec:"12" };
+      return String(s).replace(/([A-Za-z]{3,})\.?\s+(\d{4})/g, function (m, mon, yr) {
+        const mm = MON[mon.slice(0, 3).toLowerCase()];
+        return mm ? (yr + ". " + mm) : m;
+      });
+    }
+
     function projectRow(item, num) {
       const hasDetail =
         item.desc || item.role || item.sponsor_logo ||
@@ -150,7 +161,7 @@ $(document).ready(function () {
           <div class="rp-body">
             <div class="rp-head">
               <div class="rp-head-main">
-                <span class="rp-date">${item.date}</span>
+                <span class="rp-date">${fmtDate(item.date)}</span>
                 <span class="rp-title">${item.title}</span>
                 <div class="rp-sponsor">${item.sponsor}</div>
               </div>
