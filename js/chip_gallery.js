@@ -200,9 +200,10 @@ $(document).ready(function () {
     // 구형 칩(≤GROUP_MAX): 상태 문구 삭제 → 그 자리에 Publication.
     // Failed 칩은 연도와 무관하게 Failed 아이콘으로 표시.
     var isLegacy = chip.year && chip.year <= GROUP_MAX;
+    var failed = isFailedChip(chip);
     var statusSlot, outputsRow;
-    if (isFailedChip(chip)) {
-      statusSlot = failedHTML();
+    if (failed) {
+      statusSlot = "";  // Failed 는 제목 옆 배지로 이동 (아래 failBadge)
       outputsRow = isLegacy ? "" : outputsHTML(chip);
     } else if (isLegacy) {
       statusSlot = outputsHTML(chip);
@@ -211,6 +212,15 @@ $(document).ready(function () {
       statusSlot = statusHTML(chip);
       outputsRow = outputsHTML(chip);
     }
+
+    // Failed 배지(제목 옆) / 키워드는 Failed 인 경우 숨김
+    var failBadge = failed ? ' <span class="chip-fail-badge">Failed</span>' : "";
+    // Failed 뒤 강조 노트 (예: "Do not repeat the same mistake!")
+    var failNote = (failed && chip.fail_note) ? ' <span class="chip-fail-note">' + chip.fail_note + "</span>" : "";
+    var reviewH = reviewHTML(chip);
+    var statusRow = (statusSlot || reviewH)
+      ? '<div class="chip-status-row">' + statusSlot + reviewH + "</div>"
+      : "";
 
     return (
       '<div class="chip-card2">' +
@@ -224,13 +234,14 @@ $(document).ready(function () {
           '<div class="chip-title-row">' +
             '<p class="chip-name">' + (chip.name || "") +
               (fab ? ' <span class="chip-fab ' + fabCls + '">' + fab + "</span>" : "") +
+              failBadge + failNote +
             "</p>" +
           "</div>" +
           // 상태 문구와 Design Review 배지를 한 줄에 (좁으면 배지가 다음 줄로 내려감)
-          '<div class="chip-status-row">' + statusSlot + reviewHTML(chip) + "</div>" +
+          statusRow +
           rootCauseHTML(chip) +
           (desc ? '<p class="chip-desc">' + desc + "</p>" : "") +
-          keywordsHTML(chip) +
+          (failed ? "" : keywordsHTML(chip)) +
           outputsRow +
           designerHTML(chip) +
         "</div>" +

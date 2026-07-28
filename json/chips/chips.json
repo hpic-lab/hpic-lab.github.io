@@ -422,8 +422,12 @@
       "Injection-Locked Osc.",
       "PUF"
     ],
-    "status": "measurement",
-    "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/65nm/M15407%2865nm%2C%2024.10.31%29"
+    "status": "failed",
+    "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/65nm/M15407%2865nm%2C%2024.10.31%29",
+    "fail_reasons": [
+      "I2C communication failed"
+    ],
+    "fail_note": "Do not repeat the same mistake!"
   },
   {
     "year": 2024,
@@ -556,8 +560,11 @@
       "Injection-Locked Osc.",
       "PUF"
     ],
-    "status": "measurement",
-    "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/65nm/M15092%2865nm%2C%2024.5.XX%29"
+    "status": "failed",
+    "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/65nm/M15092%2865nm%2C%2024.5.XX%29",
+    "fail_reasons": [
+      "I2C communication failed"
+    ]
   },
   {
     "year": 2023,

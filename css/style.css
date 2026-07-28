@@ -3910,6 +3910,34 @@ a.chip-status-venue:hover { background: rgba(55, 138, 221, 0.2); }
   vertical-align: 1px;
 }
 
+/* Failed 뒤 강조(하이라이트) 노트 */
+.chip-card2 .chip-fail-note {
+  display: inline-block;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #7a2e12;
+  background: #ffe27a;
+  border-radius: 3px;
+  padding: 1px 7px;
+  margin-left: 8px;
+  vertical-align: 2px;
+}
+
+/* 제목 옆 Failed 배지 */
+.chip-card2 .chip-fail-badge {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #C0392B;
+  background: rgba(192, 57, 43, 0.09);
+  border: 1px solid rgba(192, 57, 43, 0.4);
+  border-radius: 4px;
+  padding: 1px 8px;
+  margin-left: 8px;
+  vertical-align: 2px;
+  white-space: nowrap;
+}
+
 .chip-card2 .chip-desc {
   margin: 0 0 6px;
   font-size: 0.95rem;
