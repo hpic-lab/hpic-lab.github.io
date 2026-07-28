@@ -179,6 +179,16 @@ $(document).ready(function () {
   function failedHTML() {
     return '<p class="chip-status st-red"><span class="chip-status-dot"></span>Failed</p>';
   }
+  // 실패 원인 박스 (Failed 칩에 fail_reasons 배열이 있을 때)
+  function rootCauseHTML(chip) {
+    var reasons = (chip && chip.fail_reasons) || [];
+    if (!reasons.length) return "";
+    var lis = reasons.map(function (r) { return "<li>" + r + "</li>"; }).join("");
+    return '<div class="chip-rootcause">' +
+      '<div class="chip-rootcause-h"><span class="chip-rc-ico">&#9888;</span>Root cause</div>' +
+      "<ul>" + lis + "</ul>" +
+    "</div>";
+  }
 
   // 안1+안B: 연번 + 썸네일 + [제목(우측 공정 배지) / 설명 / 학생 사진]
   function cardHTML(chip, num, showDescFallback) {
@@ -218,6 +228,7 @@ $(document).ready(function () {
           "</div>" +
           // 상태 문구와 Design Review 배지를 한 줄에 (좁으면 배지가 다음 줄로 내려감)
           '<div class="chip-status-row">' + statusSlot + reviewHTML(chip) + "</div>" +
+          rootCauseHTML(chip) +
           (desc ? '<p class="chip-desc">' + desc + "</p>" : "") +
           keywordsHTML(chip) +
           outputsRow +

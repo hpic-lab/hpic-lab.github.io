@@ -595,7 +595,12 @@
       "ADPLL",
       "Supply/Regulator"
     ],
-    "status": "measurement"
+    "status": "failed",
+    "fail_reasons": [
+      "Improper sizing of the back-to-back inverters in the 2-stage ring oscillator",
+      "Bug masked in simulation by forcing an initial condition (.ic)",
+      "No start-up circuit included"
+    ]
   },
   {
     "year": 2023,
@@ -616,7 +621,12 @@
       "Injection-Locked Osc.",
       "Calibration"
     ],
-    "status": "measurement"
+    "status": "failed",
+    "fail_reasons": [
+      "Improper sizing of the back-to-back inverters in the 2-stage ring oscillator",
+      "Bug masked in simulation by forcing an initial condition (.ic)",
+      "No start-up circuit included"
+    ]
   },
   {
     "year": 2023,
@@ -635,7 +645,12 @@
     "keywords": [
       "DPLL"
     ],
-    "status": "measurement"
+    "status": "failed",
+    "fail_reasons": [
+      "Improper sizing of the back-to-back inverters in the 2-stage ring oscillator",
+      "Bug masked in simulation by forcing an initial condition (.ic)",
+      "No start-up circuit included"
+    ]
   },
   {
     "year": 2019,
