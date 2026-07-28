@@ -1597,6 +1597,7 @@ nav#navbar-main .navbar-collapse {
     padding: 6px 0 8px;
     margin-bottom: 10px;
     border-bottom: 1px solid #eee;
+    box-shadow: -30px 0 0 #fff, 30px 0 0 #fff;   /* 좌우 여백으로 비침 방지 */
   }
   /* 헤더 위 빈틈으로 내용이 비치지 않도록 배경을 위쪽까지 확장 */
   .news-sticky-head::before {
@@ -1648,6 +1649,7 @@ nav#navbar-main .navbar-collapse {
     padding: 6px 0 8px;
     margin-bottom: 8px;
     border-bottom: 1px solid #eee;
+    box-shadow: -30px 0 0 #fff, 30px 0 0 #fff;   /* 좌우 여백으로 비침 방지 */
   }
   .pub-sticky-head::before {
     content: "";
