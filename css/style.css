@@ -3016,6 +3016,10 @@ nav#navbar-main .navbar-collapse {
 .people-role-tag.role-captain { background: #FAEEDA; color: #854F0B; }
 .people-role-tag.role-server  { background: #E6F1FB; color: #185FA5; }
 .people-role-tag.role-etc     { background: #F1EFE8; color: #5F5E5A; }
+/* 데스크톱에서는 역할 배지 숨김 (모바일에서만 표시) */
+@media (min-width: 992px) {
+  .people-card-compact .people-role-tags { display: none; }
+}
 
 .people-name {
   font-weight: 600;
