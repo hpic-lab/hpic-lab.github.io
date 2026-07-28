@@ -4041,6 +4041,14 @@ section {
   color: #2e55be;
   border-bottom-color: #2e55be;
 }
+
+/* 연도 sticky 헤더 위로 내용이 비치지 않도록, 본문을 자체 스태킹 컨텍스트(z:0)로 가둔다
+   (내부 사진의 transform 등이 헤더보다 위로 올라오는 것을 방지) */
+.news-timeline-container .ui-accordion-content,
+.pub2-list .pub2-year-body {
+  position: relative;
+  z-index: 0;
+}
 /* 데스크톱: 연도 헤더를 상단 고정 (Publications와 동일 — 스크롤 시 다음 연도로 교체) */
 @media (min-width: 992px) {
   .chip-timeline .chip-year {
