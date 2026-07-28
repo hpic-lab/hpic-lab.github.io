@@ -4598,7 +4598,7 @@ a.chip-status-venue:hover { background: rgba(55, 138, 221, 0.2); }
   }
   .tos2-row .chip-designers .chip-designer-photo:not(:first-child) { display: none; }
   .tos2-row .chip-designers::after {
-    content: attr(data-count) "명";
+    content: "+" attr(data-extra);
     font-size: 0.78rem;
     font-weight: 700;
     color: #1c3557;

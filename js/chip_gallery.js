@@ -55,7 +55,8 @@ $(document).ready(function () {
         var titleAttr = HAS_PROFILE_MODAL ? ' title="View profile"' : "";
         return '<img class="chip-designer-photo' + link + '" src="img/' + f + '" alt=""' + keyAttr + titleAttr + ' onerror="this.remove()">';
       }).join("");
-      return '<div class="chip-designers" data-count="' + imgs.length + '">' + h + "</div>";
+      return '<div class="chip-designers" data-count="' + imgs.length +
+        '" data-extra="' + (imgs.length - 1) + '">' + h + "</div>";
     }
     if (chip.designer) return '<p class="chip-designer">' + chip.designer + "</p>";
     return "";
