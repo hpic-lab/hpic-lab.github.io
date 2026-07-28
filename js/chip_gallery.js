@@ -397,7 +397,7 @@ $(document).ready(function () {
         var v = function (n) { return parseFloat(cs.getPropertyValue(n)) || 0; };
         line = window.matchMedia("(max-width: 991px)").matches
           ? (v("--res-nav-h") + v("--res-title-h") + v("--res-sub-h"))
-          : (100 + v("--res-dsub-h"));
+          : (100 + v("--res-dsub-h") + 12);   /* 연도 sticky top의 +12px 여백까지 반영 */
       }
       var threshold = $(window).scrollTop() + line + 6;
       var current = headers[0];
