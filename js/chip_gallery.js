@@ -460,14 +460,31 @@ $(document).ready(function () {
           updateActiveYear();
         }
       }
+      // All/Failed 클릭 시 Chip Gallery 섹션으로 이동
+      function gotoChipGallery() {
+        var el = document.getElementById("chip-gallery");
+        if (!el) return;
+        document.querySelectorAll('img[loading="lazy"]').forEach(function (img) { img.loading = "eager"; });
+        function jump() {
+          var docEl = document.documentElement, prev = docEl.style.scrollBehavior;
+          docEl.style.scrollBehavior = "auto";
+          var y = Math.max(0, el.getBoundingClientRect().top + window.pageYOffset - 90);
+          try { window.scrollTo({ top: y, behavior: "instant" }); } catch (err) { window.scrollTo(0, y); }
+          docEl.style.scrollBehavior = prev;
+        }
+        jump();
+        [60, 180, 360].forEach(function (t) { setTimeout(jump, t); });
+      }
       // 세그먼트가 사이드바/제목 등으로 이동해도 동작하도록 #research에 위임
       $("#research").off("click.chipfilter").on("click.chipfilter", ".chip-filter-opt", function () {
         applyFailedFilter($(this).data("f") === "failed");
+        gotoChipGallery();
       });
       $("#research").off("keydown.chipfilter").on("keydown.chipfilter", ".chip-filter-opt", function (e) {
         if (e.key === "Enter" || e.key === " ") {
           e.preventDefault();
           applyFailedFilter($(this).data("f") === "failed");
+          gotoChipGallery();
         }
       });
     }
