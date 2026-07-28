@@ -160,6 +160,18 @@ h6 {
   border-radius: 7px;
   padding: 3px 12px;
 }
+/* 하단 Failed 섹션: 사이드바 링크 & 헤더를 빨간 톤으로 구분 */
+.chip-year-link[data-yid="chipyear-Failed"] {
+  color: #C0392B;
+}
+.chip-year-link[data-yid="chipyear-Failed"].active {
+  color: #C0392B;
+  background: rgba(192, 57, 43, 0.10);
+}
+.chip-timeline .chip-failed-toggle {
+  color: #C0392B;
+  margin-top: 6px;
+}
 @media (min-width: 992px) {
   .chip-year-nav {
     flex-direction: column;

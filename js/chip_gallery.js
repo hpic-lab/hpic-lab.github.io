@@ -266,10 +266,23 @@ $(document).ready(function () {
   // 기본 펼침 연도. 나머지 연도는 접힌 상태로 표시.
   var DEFAULT_OPEN_YEARS = [2026, 2025];
 
-  // 월 라벨 없이 연번을 매겨 카드 나열 (ctr: 감소 카운터 객체)
+  // 각 칩에 고정 연번(_galleryNum) 부여 — 연도 섹션과 하단 Failed 섹션에서 같은 번호 사용
+  function computeGalleryNumbers(chips) {
+    var byYear = {};
+    chips.forEach(function (c) { (byYear[c.year] = byYear[c.year] || []).push(c); });
+    var years = Object.keys(byYear).map(Number).sort(function (a, b) { return b - a; });
+    var order = [];
+    years.filter(function (y) { return y > GROUP_MAX; }).forEach(function (y) { order = order.concat(byYear[y]); });
+    years.filter(function (y) { return y <= GROUP_MAX; }).forEach(function (y) { order = order.concat(byYear[y]); });
+    var n = chips.length;
+    order.forEach(function (c) { c._galleryNum = n--; });
+  }
+
+  // 월 라벨 없이 연번을 매겨 카드 나열 (연번은 미리 계산된 _galleryNum 사용)
   function yearBlock($body, chips, ctr, showDescFallback) {
     chips.forEach(function (chip) {
-      $body.append(cardHTML(chip, ctr.n--, showDescFallback));
+      var num = (typeof chip._galleryNum === "number") ? chip._galleryNum : ctr.n--;
+      $body.append(cardHTML(chip, num, showDescFallback));
     });
   }
 
@@ -339,6 +352,24 @@ $(document).ready(function () {
       });
       $gb.hide();
       $c.append($gh).append($gb);
+    }
+
+    // 하단: Failed Chip Gallery — Failed 칩만 모아 필터링해 표시 (연번은 원래 번호 유지)
+    var failedChips = chips.filter(isFailedChip);
+    if (failedChips.length) {
+      var $fh = $(
+        '<div class="chip-year chip-year-toggle chip-failed-toggle collapsed" data-year="Failed" role="button" tabindex="0">' +
+          "Failed" +
+          '<span class="chip-year-caret">&#9662;</span>' +
+        "</div>"
+      );
+      var $fb = $('<div class="chip-year-body"></div>');
+      failedChips.forEach(function (chip) {
+        var num = (typeof chip._galleryNum === "number") ? chip._galleryNum : 0;
+        $fb.append(cardHTML(chip, num, true));
+      });
+      $fb.hide();
+      $c.append($fh).append($fb);
     }
 
     $c.off("click.chiptoggle").on("click.chiptoggle", ".chip-year-toggle", function () {
@@ -417,6 +448,7 @@ $(document).ready(function () {
   }
 
   $.getJSON("json/chips/chips.json").done(function (chips) {
+    computeGalleryNumbers(chips);  // 연번 먼저 확정 (연도/Failed 섹션 공통)
     // 메인 Research 미리보기 (접이식)
     $(".chip-timeline-preview").each(function () {
       renderCollapsible("#" + this.id, chips);
