@@ -1467,8 +1467,68 @@ nav#navbar-main .navbar-collapse {
   #publications .row,
   #news-gallery,
   #news-gallery .container,
-  #news-gallery .row {
+  #news-gallery .row,
+  #research,
+  #research .container,
+  #research .row {
     overflow: visible !important;
+  }
+}
+
+/* 모바일: Research 섹션 다단 고정 스택 (Research > 소섹션 > Upcoming Tape-outs > Filter/연도) */
+@media (max-width: 991px) {
+  /* Level 0: Research 제목 (항상 최상단) */
+  #research-sticky-title {
+    position: -webkit-sticky;
+    position: sticky;
+    top: var(--res-nav-h, 56px);
+    z-index: 40;
+    background: #fff;
+    padding: 6px 0 4px;
+  }
+  #research-sticky-title h1 { margin: 0; }
+  #research-sticky-title::before {
+    content: "";
+    position: absolute; left: 0; right: 0; bottom: 100%;
+    height: 60px; background: #fff;
+  }
+  /* Level 1: 소섹션 (Research Projects / Chip Gallery) — 스크롤 시 자동 교체 */
+  #research h5#research-projects,
+  #research h5#chip-gallery {
+    position: -webkit-sticky;
+    position: sticky;
+    top: calc(var(--res-nav-h, 56px) + var(--res-title-h, 44px));
+    z-index: 35;
+    background: #fff;
+  }
+  #research h5#research-projects::before,
+  #research h5#chip-gallery::before {
+    content: "";
+    position: absolute; left: 0; right: 0; bottom: 100%;
+    height: 30px; background: #fff;
+  }
+  /* Level 2: Upcoming Tape-outs 헤더 & Filter */
+  #chip-tapeout-schedule .tos2-head,
+  #chip-year-nav.chip-filter-moved {
+    position: -webkit-sticky;
+    position: sticky;
+    top: calc(var(--res-nav-h, 56px) + var(--res-title-h, 44px) + var(--res-sub-h, 40px));
+    background: #fff;
+  }
+  #chip-tapeout-schedule .tos2-head { z-index: 30; }
+  #chip-year-nav.chip-filter-moved { z-index: 28; }
+  /* Level 3: 연도(2026 등) — Filter 아래에 고정, 스크롤 시 교체 */
+  .chip-timeline .chip-year {
+    position: -webkit-sticky;
+    position: sticky;
+    top: calc(var(--res-nav-h, 56px) + var(--res-title-h, 44px) + var(--res-sub-h, 40px) + var(--res-filter-h, 40px));
+    z-index: 20;
+    background: var(--section-bg, #fff);
+  }
+  .chip-timeline .chip-year::before {
+    content: "";
+    position: absolute; left: 0; right: 0; bottom: 100%;
+    height: 24px; background: var(--section-bg, #fff);
   }
 }
 

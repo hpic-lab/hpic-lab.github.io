@@ -605,6 +605,42 @@ $(document).ready(function () {
     }
   }
 
+  // 모바일: Research 섹션 다단 고정 스택 (Research > 소섹션 > Upcoming Tape-outs > Filter/연도)
+  function measureResearchSticky() {
+    var $research = $("#research");
+    if (!$research.length) return;
+    var navH = $("#navbar-main").outerHeight() || 56;
+    var mobile = window.matchMedia("(max-width: 991px)").matches;
+    var resH = mobile ? ($("#research-sticky-title").outerHeight() || 44) : 0;
+    var subH = mobile ? ($("#chip-gallery").outerHeight() || 40) : 0;
+    var filterH = mobile ? ($("#chip-year-nav.chip-filter-moved").outerHeight() || 40) : 0;
+    $research.css({
+      "--res-nav-h": navH + "px",
+      "--res-title-h": resH + "px",
+      "--res-sub-h": subH + "px",
+      "--res-filter-h": filterH + "px"
+    });
+  }
+  function setupResearchSticky() {
+    var $research = $("#research");
+    if (!$research.length) return;
+    var $sidebar = $research.find(".sticky-sidebar").first();
+    var $content = $research.find(".col-lg-8").first();
+    var $title = $sidebar.find("h1").first();
+    if (window.matchMedia("(max-width: 991px)").matches) {
+      var $head = $("#research-sticky-title");
+      if (!$head.length) {
+        $head = $('<div id="research-sticky-title" class="research-sticky-title"></div>');
+        $content.prepend($head);
+      }
+      if (!$title.closest("#research-sticky-title").length) $head.append($title);
+    } else if ($("#research-sticky-title").length) {
+      $sidebar.prepend($title);
+      $("#research-sticky-title").remove();
+    }
+    measureResearchSticky();
+  }
+
   $.getJSON("json/chips/chips.json").done(function (chips) {
     computeGalleryNumbers(chips);  // 연번 먼저 확정 (연도/Failed 섹션 공통)
     // 메인 Research 미리보기 (접이식)
@@ -624,5 +660,9 @@ $(document).ready(function () {
     // 모바일: Filter를 Chip Gallery 아래로 이동
     placeChipFilter();
     $(window).on("resize.chipfilter", placeChipFilter);
+    // 모바일: Research 다단 고정 스택 (제목 이동 + 높이 측정)
+    setupResearchSticky();
+    [200, 600, 1200, 2000].forEach(function (t) { setTimeout(measureResearchSticky, t); });
+    $(window).on("resize.researchsticky", setupResearchSticky);
   });
 });
