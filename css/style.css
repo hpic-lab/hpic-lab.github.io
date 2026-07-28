@@ -136,6 +136,15 @@ h6 {
 .chip-filter-divider {
   display: none !important;
 }
+/* 데스크톱 사이드바: "Chip Gallery" 링크 + All/Failed 필터를 한 줄에 */
+.research-subnav .chip-gallery-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.research-subnav .chip-gallery-row .subsection-link { flex: 0 0 auto; }
+.research-subnav .chip-gallery-row .chip-filter-seg { flex: 0 0 auto; }
 .subsection-title {
   font-size: 1.5rem;
   font-weight: 800;

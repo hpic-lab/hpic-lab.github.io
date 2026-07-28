@@ -594,12 +594,25 @@ $(document).ready(function () {
 
   // 모바일: Filter(All/Failed)를 Chip Gallery 아래(칩 목록 위)로 옮긴다. 데스크톱은 사이드바 원위치.
   function placeChipFilter() {
-    // All/Failed 세그먼트만 Chip Gallery 제목 우측으로 (웹/모바일 공통).
-    // 연도 링크는 사이드바(#chip-year-nav)에 그대로 둔다.
+    // All/Failed 세그먼트를 Chip Gallery 우측에 배치.
+    //  - 모바일: 콘텐츠 제목(h5#chip-gallery) 우측 (사이드바가 숨겨지므로)
+    //  - 데스크톱: 사이드바 트리의 "Chip Gallery" 링크 우측
     var $seg = $("#research .chip-filter-seg").first();
-    var $h5 = $("#chip-gallery").first();
-    if (!$seg.length || !$h5.length) return;
-    if (!$seg.parent().is($h5)) $h5.append($seg);
+    if (!$seg.length) return;
+    if (window.matchMedia("(max-width: 991px)").matches) {
+      var $h5 = $("#chip-gallery").first();
+      if ($h5.length && !$seg.parent().is($h5)) $h5.append($seg);
+    } else {
+      var $link = $('.research-subnav .subsection-link[data-target="chip-gallery"]').first();
+      if (!$link.length) return;
+      var $row = $(".research-subnav .chip-gallery-row").first();
+      if (!$row.length) {
+        $row = $('<div class="chip-gallery-row"></div>');
+        $link.before($row);
+        $row.append($link);
+      }
+      if (!$seg.parent().is($row)) $row.append($seg);
+    }
   }
 
   // 모바일: Research 섹션 다단 고정 스택 (Research > 소섹션 > Upcoming Tape-outs > Filter/연도)
