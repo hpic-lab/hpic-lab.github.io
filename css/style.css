@@ -1234,10 +1234,11 @@ nav#navbar-main .navbar-collapse {
   border-radius: 4px !important;
   vertical-align: baseline !important;
 }
+/* Tape-out 항목은 모바일에서도 각각 한 줄 (번호·연월·제목·배지) */
 @media (max-width: 576px) {
-  #exampleModal #modal-tape_out_schedule .tos-entry { flex-wrap: wrap; gap: 6px 12px; }
-  #exampleModal #modal-tape_out_schedule .tos-date { flex-basis: auto; }
-  #exampleModal #modal-tape_out_schedule .tos-body { flex-basis: 100%; }
+  #exampleModal #modal-tape_out_schedule .tos-entry { flex-wrap: nowrap; gap: 10px; align-items: baseline; }
+  #exampleModal #modal-tape_out_schedule .tos-date { flex: 0 0 auto; }
+  #exampleModal #modal-tape_out_schedule .tos-body { flex: 1; min-width: 0; }
 }
 
 /* ========================================= */
