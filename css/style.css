@@ -4116,12 +4116,34 @@ section {
   position: relative;
   z-index: 0;
 }
+/* 데스크톱: 콘텐츠 소섹션 제목(Research Projects / Chip Gallery)을 상단 고정 */
+@media (min-width: 992px) {
+  #research .col-lg-8 > h5#research-projects,
+  #research .col-lg-8 > h5#chip-gallery {
+    position: -webkit-sticky;
+    position: sticky;
+    top: var(--res-nav-h, 60px);
+    z-index: 6;   /* 연도 헤더(5)보다 위 */
+    background: var(--section-bg, #fff);
+  }
+  #research .col-lg-8 > h5#research-projects::before,
+  #research .col-lg-8 > h5#chip-gallery::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 100%;
+    height: 34px;
+    background: var(--section-bg, #fff);
+  }
+}
+
 /* 데스크톱: 연도 헤더를 상단 고정 (Publications와 동일 — 스크롤 시 다음 연도로 교체) */
 @media (min-width: 992px) {
   .chip-timeline .chip-year {
     position: -webkit-sticky;
     position: sticky;
-    top: 100px;
+    top: calc(var(--res-nav-h, 60px) + var(--res-dsub-h, 42px));   /* Chip Gallery 제목 아래 */
     background: var(--section-bg, #fff);
     z-index: 5;
   }

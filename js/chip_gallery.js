@@ -642,11 +642,14 @@ $(document).ready(function () {
     var resH = mobile ? ($("#research-sticky-title").outerHeight() || 44) : 0;
     var subH = mobile ? ($("#chip-gallery").outerHeight() || 40) : 0;
     var filterH = 0; /* 필터가 Chip Gallery 제목에 인라인 포함되어 별도 오프셋 불필요 */
+    // 데스크톱: 콘텐츠 소섹션 제목(Chip Gallery) 높이 — 연도 헤더를 그 아래에 고정
+    var dsubH = !mobile ? ($("#research .col-lg-8 > h5#chip-gallery").outerHeight() || 42) : 42;
     $research.css({
       "--res-nav-h": navH + "px",
       "--res-title-h": resH + "px",
       "--res-sub-h": subH + "px",
-      "--res-filter-h": filterH + "px"
+      "--res-filter-h": filterH + "px",
+      "--res-dsub-h": dsubH + "px"
     });
   }
   function setupResearchSticky() {
