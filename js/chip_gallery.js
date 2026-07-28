@@ -388,7 +388,17 @@ $(document).ready(function () {
     function updateActiveYear() {
       var headers = $c.find(".chip-year-toggle:visible");
       if (!headers.length) return;
-      var threshold = $(window).scrollTop() + 130;
+      // 연도 헤더가 실제로 고정되는 화면상 위치(line)에 맞춰 현재 연도를 판정
+      var rEl = document.getElementById("research");
+      var line = 130;
+      if (rEl) {
+        var cs = getComputedStyle(rEl);
+        var v = function (n) { return parseFloat(cs.getPropertyValue(n)) || 0; };
+        line = window.matchMedia("(max-width: 991px)").matches
+          ? (v("--res-nav-h") + v("--res-title-h") + v("--res-sub-h"))
+          : (100 + v("--res-dsub-h"));
+      }
+      var threshold = $(window).scrollTop() + line + 6;
       var current = headers[0];
       headers.each(function () {
         if ($(this).offset().top <= threshold) current = this;
