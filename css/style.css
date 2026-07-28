@@ -117,24 +117,10 @@ h6 {
     margin-top: 0;
   }
   .chip-filter-label { margin-bottom: 0; }
-  /* Publications / News 사이드바 연도 목록도 모바일에서 숨김 */
+  /* 사이드바의 연도 바(연도 목록)만 모바일에서 숨김 — 콘텐츠의 연도별 그룹은 유지 */
   .pub2-year-links,
   .news-year-links {
-    display: none;
-  }
-  /* 콘텐츠 쪽 연도 헤더도 모바일에서 제거하고 내용은 모두 펼침 */
-  .news-timeline-container .ui-accordion-header {
     display: none !important;
-  }
-  .news-timeline-container .ui-accordion-content {
-    display: block !important;
-    height: auto !important;
-  }
-  .pub2-year {
-    display: none !important;
-  }
-  .pub2-year-body {
-    display: block !important;
   }
 }
 .subsection-title {
