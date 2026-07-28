@@ -4589,6 +4589,28 @@ a.chip-status-venue:hover { background: rgba(55, 138, 221, 0.2); }
 .tos2-row .chip-designers { margin-left: auto; display: flex; gap: 3px; flex-shrink: 0; }
 .tos2-row .chip-designer-photo { width: 26px; height: 26px; }
 
+/* 모바일: 디자이너가 많으면 대표 1장 + 인원수 배지로 요약 (안 3) */
+@media (max-width: 991px) {
+  .tos2-row .chip-designers {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .tos2-row .chip-designers .chip-designer-photo:not(:first-child) { display: none; }
+  .tos2-row .chip-designers::after {
+    content: attr(data-count) "명";
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: #1c3557;
+    background: #eef1f6;
+    border-radius: 20px;
+    padding: 3px 9px;
+    white-space: nowrap;
+  }
+  /* 1명이면 배지 생략 (사진만) */
+  .tos2-row .chip-designers[data-count="1"]::after { content: none; }
+}
+
 /* 모달 Tape-out Schedule: 항목별 한 줄, 배지는 인라인 유지 (모달의 p span 블록 규칙 무시) */
 #exampleModal #modal-tape_out_schedule .tos-item { display: block; margin: 2px 0; }
 #exampleModal #modal-tape_out_schedule .tos-item .chip-fab {
