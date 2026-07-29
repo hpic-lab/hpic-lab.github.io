@@ -141,12 +141,8 @@ $(document).ready(function () {
 
   // 키워드 태그 (임시, 최대 5개)
   function keywordsHTML(chip) {
-    var ks = (chip.keywords || []).slice(0, 5);
-    if (!ks.length) return "";
-    var tags = ks.map(function (k) {
-      return '<span class="chip-kw">' + k + "</span>";
-    }).join("");
-    return '<div class="chip-kws">' + tags + "</div>";
+    // Chip Gallery 키워드 표시 일괄 비활성화 (데이터는 chips.json에 보존)
+    return "";
   }
 
   // 공정 문자열 → 파운드리 배지 라벨 ("28-nm T" → "T 28nm", "28-nm SS" → "S 28nm")
