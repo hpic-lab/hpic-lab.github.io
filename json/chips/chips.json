@@ -256,11 +256,6 @@
       "ih-han-profile-img.jpg",
       "jh-pyeon-profile-img.png"
     ],
-    "keywords": [
-      "ILO",
-      "Clock Generator",
-      "Cryogenic"
-    ],
     "status": "completed",
     "raw_date": "2025",
     "project": "Samsung SAIT · Quantum Computing IC",
@@ -280,11 +275,6 @@
       "ih-han-profile-img.jpg",
       "jh-pyeon-profile-img.png"
     ],
-    "keywords": [
-      "Digital PLL",
-      "Integer-N",
-      "Cryogenic"
-    ],
     "status": "completed",
     "raw_date": "2025",
     "project": "Samsung SAIT · Quantum Computing IC",
@@ -302,11 +292,6 @@
     "designer": "Hyeon-Seo Kim",
     "designer_imgs": [
       "sh-kim2-profile-image.png"
-    ],
-    "keywords": [
-      "SAR ADC",
-      "Loop-unrolled",
-      "Speculative CDAC Switching"
     ],
     "status": "completed",
     "raw_date": "2025",
@@ -326,11 +311,6 @@
     "designer": "Dong-Eon Jin",
     "designer_imgs": [
       "de-jin-profile-image.jpg"
-    ],
-    "keywords": [
-      "SAR ADC",
-      "ADC",
-      "Cryogenic"
     ],
     "status": "completed",
     "project": "Samsung SAIT · Quantum Computing IC",
