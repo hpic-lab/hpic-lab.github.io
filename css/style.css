@@ -1672,9 +1672,10 @@ nav#navbar-main .navbar-collapse {
     margin-left: 16px;   /* 다른 섹션(Chip Gallery 등)과 동일 레벨 */
     padding-left: 0;
   }
-  /* Alumni(아코디언 헤더)도 동일 레벨(16px)로 들여쓰기 — 밑줄도 함께 이동 */
+  /* Alumni(아코디언 헤더)도 동일 레벨(16px)로 들여쓰기 — 밑줄도 함께 이동.
+     뒤의 margin 단축 규칙(margin:28px 0 16px)을 이기기 위해 !important */
   #people .accordion .ui-accordion-header {
-    margin-left: 16px;
+    margin-left: 16px !important;
   }
   #people .col-lg-8 > h3::before {
     content: "";
@@ -4557,8 +4558,8 @@ section {
 @media (max-width: 576px) {
   .chip-card2 .chip-rv-link .dr-full { display: none; }
   .chip-card2 .chip-rv-link .dr-abbr { display: inline; }
-  /* Manuscript (저널) 의 괄호는 모바일에서 숨김 */
-  .chip-card2 .chip-status-jn .jn-paren { display: none; }
+  /* Manuscript 저널(IEEE~)은 모바일에서 숨김 — "Manuscript Accepted" 만 표시 */
+  .chip-card2 .chip-status-jn { display: none; }
 }
 /* 강조(highlight) reason 항목: bullet 마커 제거 */
 .chip-card2 .chip-rootcause li.chip-rc-li-note {
