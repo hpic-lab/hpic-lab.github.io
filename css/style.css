@@ -1864,10 +1864,17 @@ nav#navbar-main .navbar-collapse {
     height: 60px;
     background: var(--section-bg, #fff);
   }
+  .pub-sticky-head { position: -webkit-sticky; position: sticky; }
   .pub-sticky-head h1 { font-weight: 700; color: #222; margin: 0 0 4px; }
-  /* ECA 문구를 제목 바로 아래로 (side-nav의 상단 여백 제거) */
+  /* ECA 문구: "Publications" 제목 오른쪽 끝(같은 줄)에 우측정렬 배치 */
   .pub-sticky-head .pub2-side-nav { margin-top: 0; }
-  .pub-sticky-head .pub2-notice { margin: 0 0 8px; }
+  .pub-sticky-head .pub2-notice {
+    position: absolute;
+    right: 0;
+    top: 20px;
+    margin: 0;
+    text-align: right;
+  }
   /* 탭(Journal/Conference/Patent) 가운데 정렬 */
   .pub-sticky-head .pub2-side-tabs { justify-content: center; }
   .pub2-list .pub2-year {
@@ -4560,19 +4567,13 @@ section {
 }
 .chip-card2 a.chip-status-manu:hover { text-decoration: underline; }
 /* Design Review: 기본은 full, 모바일에서 "DR" 로 축약 */
-/* Failed 칩 제목 우측 Design Review: 기본(데스크톱)은 숨김 — Root cause 박스 안에 표시 */
-.chip-card2 .chip-title-review { display: none; }
+/* Design Review 배지 안 자물쇠 아이콘 여백 */
+.chip-card2 .chip-rv-link .chip-review-label { margin-right: 4px; }
 @media (max-width: 576px) {
   /* Manuscript 저널(IEEE~)은 모바일에서 숨김 — "Manuscript Accepted" 만 표시 */
   .chip-card2 .chip-status-jn { display: none; }
-  /* Failed root cause 헤더: 공간 부족 시 "Design Review" 칩을 통째로 다음 줄로
-     (링크는 nowrap 이라 글자가 두 줄로 깨지지 않음) */
+  /* Failed root cause 헤더: 공간 부족 시 Design Review 배지를 통째로 다음 줄로(글자는 nowrap) */
   .chip-card2 .chip-rootcause-h { flex-wrap: wrap; }
-  /* Failed 칩(모바일): 제목 옆 revised 문구 숨기고, Design Review 를 제목 우측으로 이동
-     (Root cause 박스 안의 Design Review 는 숨김) */
-  .chip-card2.chip-card-failed .chip-revised-badge { display: none; }
-  .chip-card2.chip-card-failed .chip-title-review { display: inline-flex; align-items: center; }
-  .chip-card2.chip-card-failed .chip-rootcause-h .chip-review { display: none; }
 }
 /* 강조(highlight) reason 항목: bullet 마커 제거 */
 .chip-card2 .chip-rootcause li.chip-rc-li-note {

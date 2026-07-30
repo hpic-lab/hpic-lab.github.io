@@ -64,15 +64,13 @@ $(document).ready(function () {
 
   // Design Review 자료 링크 (Teams/SharePoint · 멤버 전용). 설계자 사진 우측에 우측정렬로 표시.
   function reviewHTML(chip) {
-    // review_link 이 있으면 링크, 없으면 동일한 아이콘·위치로 링크 없이 표시(레이아웃 통일)
+    // 자물쇠(멤버 전용) 아이콘을 Design Review 배지 안에 함께 표시
+    var lock = '<span class="chip-review-label" title="Members only (Teams)" aria-label="Members only">&#128274;</span>';
     var inner = chip.review_link
       ? '<a class="chip-rv-link" href="' + escAttr(chip.review_link) +
-          '" target="_blank" rel="noopener noreferrer">Design Review</a>'
-      : '<span class="chip-rv-link chip-rv-nolink" title="To be updated">Design Review</span>';
-    return '<div class="chip-review">' +
-      '<span class="chip-review-label" title="Members only (Teams)" aria-label="Members only">&#128274;</span>' +
-      inner +
-      "</div>";
+          '" target="_blank" rel="noopener noreferrer">' + lock + "Design Review</a>"
+      : '<span class="chip-rv-link chip-rv-nolink" title="To be updated">' + lock + "Design Review</span>";
+    return '<div class="chip-review">' + inner + "</div>";
   }
 
   // 설계자 사진 클릭 → 프로필 모달 열기 (peopleDB에 해당 인물이 있을 때만)
@@ -213,8 +211,9 @@ $(document).ready(function () {
       return '<li' + (hl ? ' class="chip-rc-li-note"' : "") + ">" + body + (i === 0 ? note : "") + "</li>";
     }).join("");
     // "Revised into ..." 는 제목 우측(revisedBadge)으로 이동 → 박스에서는 표시하지 않음
+    // "Root cause" 문구는 제거하고, 경고 아이콘 + Design Review 를 한 줄로 배치
     return '<div class="chip-rootcause">' +
-      '<div class="chip-rootcause-h"><span class="chip-rc-ico">&#9888;</span><span class="chip-rc-title">Root cause</span>' + (reviewHtml || "") + "</div>" +
+      '<div class="chip-rootcause-h"><span class="chip-rc-ico">&#9888;</span>' + (reviewHtml || "") + "</div>" +
       "<ul>" + lis + "</ul>" +
     "</div>";
   }
@@ -251,7 +250,7 @@ $(document).ready(function () {
     var reviewH = reviewHTML(chip);
     // Failed: Design Review 를 Root cause 박스 안에 / "Measurement failed" 는 카드 하단에.
     // 그 외: Design Review 를 상태 문구 아래 한 줄로 배치.
-    var rcReview = (failed && chip.review_link) ? reviewH : "";
+    var rcReview = failed ? reviewH : "";
     var statusRow = statusSlot ? '<div class="chip-status-row">' + statusSlot + "</div>" : "";
     var reviewRow = (!failed && reviewH) ? '<div class="chip-review-row">' + reviewH + "</div>" : "";
     // Failed: 칩 이미지 위 중앙 반투명 오버레이 + 우는 아이콘
@@ -267,9 +266,8 @@ $(document).ready(function () {
           '<p class="chip-name">' + (chip.name || "") +
             failBadge + revisedBadge +
           "</p>" +
-          // Failed: 제목 우측에 Design Review (모바일에서만 표시 · CSS 제어) / 그 외: 디자이너는 meta 로
-          (failed ? '<span class="chip-title-review">' + reviewH + "</span>"
-                  : '<div class="chip-title-desg">' + designerHTML(chip) + "</div>") +
+          // Failed: 제목 옆 요소 없음(Design Review 는 Root cause 박스 안) / 그 외: 디자이너
+          (failed ? "" : '<div class="chip-title-desg">' + designerHTML(chip) + "</div>") +
         "</div>" +
         // 모바일 전용 강제 줄바꿈: 위(연번+제목) / 아래(이미지+메타) 를 확실히 분리
         '<div class="chip-rowbreak"></div>' +
