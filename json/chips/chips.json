@@ -171,7 +171,7 @@
     "month": 9,
     "process": "28-nm T",
     "image": "img/chip_new/DSP_TX_25Sep_Real.png",
-    "name": "112Gb/s LUT-based DSP TX with an Active-Peaking",
+    "name": "112Gb/s LUT-based DSP TX",
     "description": "",
     "outputs": [],
     "note": "",
