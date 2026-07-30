@@ -4378,10 +4378,11 @@ section {
 /* Publications 양식: 카드 박스 없이 하단 구분선 */
 .chip-card2 {
   display: grid;
-  grid-template-columns: auto auto 1fr auto;
+  grid-template-columns: auto auto 1fr;
   grid-template-areas:
-    "num thumb title desg"
-    "num thumb meta  desg";
+    "num thumb title"
+    "num thumb meta"
+    "num thumb desg";
   column-gap: 18px;
   row-gap: 4px;
   align-items: start;
@@ -4748,11 +4749,12 @@ a.chip-status-venue:hover { background: rgba(55, 138, 221, 0.2); }
   flex-wrap: wrap;   /* 좁아지면 Design Review 묶음이 통째로 다음 줄로 */
   gap: 10px;
 }
-/* 디자이너 사진: (데스크톱) 카드 전체의 오른쪽, 세로 중앙 정렬 */
+/* 디자이너 사진: (데스크톱) Design Review 아이콘 하단(meta 영역 아래) 좌측 정렬 */
 .chip-card2 .chip-card-desg {
   flex: 0 0 auto;
-  margin-left: auto;
-  align-self: center;
+  margin-left: 0;
+  align-self: start;
+  margin-top: 8px;
 }
 .chip-card2 .chip-card-desg .chip-designers { margin: 0; }
 /* 제목 옆 디자이너는 모바일에서만 사용 (데스크톱 숨김) */
