@@ -1740,6 +1740,12 @@ nav#navbar-main .navbar-collapse {
     position: absolute; left: 0; right: 0; bottom: 100%;
     height: 30px; background: var(--section-bg, #fff);
   }
+  /* 소제목 들여쓰기(16px)에 맞춰 그 아래 콘텐츠도 들여쓰기 */
+  #research h5#research-projects + .hpic-description,
+  #research .research-projects-container,
+  #research h5#chip-gallery + .hpic-description {
+    margin-left: 16px;
+  }
   /* Level 2: Upcoming Tape-outs 헤더 (Filter는 Chip Gallery 제목에 인라인) */
   #chip-tapeout-schedule .tos2-head {
     position: -webkit-sticky;
