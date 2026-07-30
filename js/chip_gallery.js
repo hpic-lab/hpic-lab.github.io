@@ -65,10 +65,12 @@ $(document).ready(function () {
   // Design Review 자료 링크 (Teams/SharePoint · 멤버 전용). 설계자 사진 우측에 우측정렬로 표시.
   function reviewHTML(chip) {
     // review_link 이 있으면 링크, 없으면 동일한 아이콘·위치로 링크 없이 표시(레이아웃 통일)
+    // 모바일에서는 "DR" 로 축약 (CSS 로 전환)
+    var drLabel = '<span class="dr-full">Design Review</span><span class="dr-abbr">DR</span>';
     var inner = chip.review_link
       ? '<a class="chip-rv-link" href="' + escAttr(chip.review_link) +
-          '" target="_blank" rel="noopener noreferrer">Design Review</a>'
-      : '<span class="chip-rv-link chip-rv-nolink" title="To be updated">Design Review</span>';
+          '" target="_blank" rel="noopener noreferrer">' + drLabel + "</a>"
+      : '<span class="chip-rv-link chip-rv-nolink" title="To be updated">' + drLabel + "</span>";
     return '<div class="chip-review">' +
       '<span class="chip-review-label" title="Members only (Teams)" aria-label="Members only">&#128274;</span>' +
       inner +
@@ -150,7 +152,7 @@ $(document).ready(function () {
       // "Manuscript {상태}" 는 일반 텍스트, 뒤의 "(저널명)" 만 Publications로 이동하는 링크
       var manuTxt = '<span class="chip-status-txt">' + MANU[chip.status] + "</span>";
       var venuePart = vLabel
-        ? ' <span class="chip-status-jn">(' + venueMarkup("chip-status-manu", vLabel) + ")</span>"
+        ? ' <span class="chip-status-jn"><span class="jn-paren">(</span>' + venueMarkup("chip-status-manu", vLabel) + '<span class="jn-paren">)</span></span>'
         : "";
       return '<p class="chip-status ' + s.c + '"><span class="chip-status-dot"></span>' +
         manuTxt + venuePart + project + "</p>";

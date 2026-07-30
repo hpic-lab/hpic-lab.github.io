@@ -4552,6 +4552,14 @@ section {
   text-decoration: none;
 }
 .chip-card2 a.chip-status-manu:hover { text-decoration: underline; }
+/* Design Review: 기본은 full, 모바일에서 "DR" 로 축약 */
+.chip-card2 .chip-rv-link .dr-abbr { display: none; }
+@media (max-width: 576px) {
+  .chip-card2 .chip-rv-link .dr-full { display: none; }
+  .chip-card2 .chip-rv-link .dr-abbr { display: inline; }
+  /* Manuscript (저널) 의 괄호는 모바일에서 숨김 */
+  .chip-card2 .chip-status-jn .jn-paren { display: none; }
+}
 /* 강조(highlight) reason 항목: bullet 마커 제거 */
 .chip-card2 .chip-rootcause li.chip-rc-li-note {
   list-style: none;
