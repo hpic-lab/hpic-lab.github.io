@@ -4739,6 +4739,13 @@ a.chip-status-venue:hover { background: rgba(55, 138, 221, 0.2); }
 .chip-card2 .chip-title-desg .chip-designers { margin: 0; }
 /* Failed 칩: 칩 이미지 아래의 "Measurement failed" 상태 (가운데 정렬) */
 .chip-card2 .chip-status-failed-bottom { margin: 8px 0 0; justify-content: center; }
+.chip-card2 .chip-status-failed-bottom .chip-status-txt {
+  color: #C0392B;
+  font-weight: 800;
+  background: rgba(192, 57, 43, 0.12);
+  padding: 2px 8px;
+  border-radius: 5px;
+}
 .chip-card2 .chip-title-row .chip-name {
   margin: 0;
 }
