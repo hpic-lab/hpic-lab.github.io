@@ -1665,8 +1665,10 @@ nav#navbar-main .navbar-collapse {
     z-index: 880;
     background: var(--section-bg, #fff);
     box-shadow: -30px 0 0 var(--section-bg, #fff), 30px 0 0 var(--section-bg, #fff);
-    /* 들여쓰기(밑줄 포함) — margin 사용: 빈 곳엔 밑줄이 없고 소제목 시작 지점부터 밑줄이 시작 */
-    margin-left: 16px;
+  }
+  /* 들여쓰기(밑줄 포함) — margin 사용(빈 곳엔 밑줄 없음). line 2832 규칙(margin 0)보다 명시도 높게 */
+  #people .col-lg-8 > h3:not(.accordion h3):not(.h3-items) {
+    margin-left: 16px;   /* 다른 섹션(Chip Gallery 등)과 동일 레벨 */
     padding-left: 0;
   }
   #people .col-lg-8 > h3::before {
