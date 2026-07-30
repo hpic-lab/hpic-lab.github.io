@@ -4470,7 +4470,7 @@ section {
   display: flex;
   align-items: center;
   gap: 7px;
-  margin: 4px 0 2px;
+  margin: 2px 0 2px;
   font-size: 0.92rem;
   color: #666;
 }
@@ -4506,6 +4506,11 @@ section {
 .chip-card2 .chip-status-paren {
   color: #8a8a84;
   font-size: 0.78rem;
+}
+/* 강조(highlight) reason 항목: bullet 마커 제거 */
+.chip-card2 .chip-rootcause li.chip-rc-li-note {
+  list-style: none;
+  margin-left: -18px;
 }
 
 /* 실패 원인(Root cause) 박스 */
@@ -4759,6 +4764,13 @@ a.chip-status-venue:hover { background: rgba(55, 138, 221, 0.2); }
 .chip-card2 .chip-title-desg { display: none; }
 /* Design Review 를 상태 아래 한 줄로 (non-failed) */
 .chip-card2 .chip-review-row { margin-top: 6px; }
+
+/* 데스크톱 전용(안 1): 상태를 제목 바로 아래 작은 부제로, Design Review·디자이너 살짝 들여쓰기 */
+@media (min-width: 577px) {
+  .chip-card2:not(.chip-card-failed) .chip-status { font-size: 0.85rem; }
+  .chip-card2:not(.chip-card-failed) .chip-review-row { margin-top: 12px; padding-left: 14px; }
+  .chip-card2:not(.chip-card-failed) .chip-card-desg { padding-left: 14px; }
+}
 /* Failed 칩: 칩 이미지 위 중앙 반투명 오버레이 + 우는 아이콘 */
 .chip-card2 .chip-thumb-failed { position: relative; }
 .chip-card2 .chip-fail-overlay {
