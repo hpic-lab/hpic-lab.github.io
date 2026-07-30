@@ -1897,8 +1897,11 @@ nav#navbar-main .navbar-collapse {
     top: var(--pub-year-top, 150px);
     z-index: 850;   /* 고정 헤더(900) 아래, 콘텐츠 위 */
     background: var(--section-bg, #fff);
-    /* 좌우 커버 + 밑줄 아래 흰 여백(하향 그림자) — 2026 연도와 동일 */
-    box-shadow: -30px 0 0 var(--section-bg, #fff), 30px 0 0 var(--section-bg, #fff), 0 14px 0 0 var(--section-bg, #fff);
+    /* 좌우 + 하단(중앙/좌우 코너) 커버 — 좌하단 비침 방지 */
+    box-shadow:
+      -30px 0 0 var(--section-bg, #fff), 30px 0 0 var(--section-bg, #fff),
+      0 14px 0 var(--section-bg, #fff),
+      -30px 14px 0 var(--section-bg, #fff), 30px 14px 0 var(--section-bg, #fff);
     margin-bottom: 14px;
   }
   .pub2-list .pub2-year::before {
