@@ -128,7 +128,7 @@
       "S.-H. Ok*, J.-G. Lee*, K.-H Lee, Haram Ju, G.-S Jeong, W. Bae, Min-Seong Choo, Critical-Timing-Relaxed pre-Decision Feedforward Equalizer for High-Speed DSP-based Wireline Receiver using Hardware-in-the-Loop Verification on RF-SoC, in 2025 IEEE Asian Solid-State Circuits Conference (A-SSCC), pp. 82-84, 2025 (*Equally Credited Authors). <a href='https://ieeexplore.ieee.org/document/11349558' target='_blank' rel='noopener noreferrer' class='news-link'>[Paper]</a>"
     ],
     "Awards": [
-      "석사과정생 연구장려금 '25-2 - '26-1 [NRF]",
+      "2025 석사과정생 연구장려금",
       "2025 한양대학교 BK21 고신뢰성 에너지용 지능형 시스템반도체 교육연구단 우수논문상"
     ],
     "biography": "Jae-Geon Lee received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. He is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include Clock and data recovery (CDR) and DSP-based Receiver.",
@@ -141,7 +141,7 @@
     "name": "Seung-Mo Jin",
     "tag": ">100G DSP-based TX",
     "research_interests": [
-      ">100G DSP-based Transmitter"
+      ">100G DSP-based TRX"
     ],
     "tape_out_schedule": [],
     "education": [
@@ -159,7 +159,7 @@
       "2024-1 SCCuD DAY 구두 발표 최우수상",
       "2024-1 공학대학 켑스톤 페어 동상",
       "2024-2 SCCuD DAY 구두 발표 대상",
-      "석사과정생 연구장려금 '25-2 - '26-1 [NRF]",
+      "2025 석사과정생 연구장려금",
       "2025 IEEE Seoul Section Student Paper Bronze Award"
     ],
     "biography": "Seung-Mo Jin received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. He is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include DSP-DAC based transmitter.",
