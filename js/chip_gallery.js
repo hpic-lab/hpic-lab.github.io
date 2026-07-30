@@ -64,11 +64,14 @@ $(document).ready(function () {
 
   // Design Review 자료 링크 (Teams/SharePoint · 멤버 전용). 설계자 사진 우측에 우측정렬로 표시.
   function reviewHTML(chip) {
-    if (!chip.review_link) return "";
+    // review_link 이 있으면 링크, 없으면 동일한 아이콘·위치로 링크 없이 표시(레이아웃 통일)
+    var inner = chip.review_link
+      ? '<a class="chip-rv-link" href="' + escAttr(chip.review_link) +
+          '" target="_blank" rel="noopener noreferrer">Design Review</a>'
+      : '<span class="chip-rv-link chip-rv-nolink" title="To be updated">Design Review</span>';
     return '<div class="chip-review">' +
       '<span class="chip-review-label" title="Members only (Teams)" aria-label="Members only">&#128274;</span>' +
-      '<a class="chip-rv-link" href="' + escAttr(chip.review_link) +
-        '" target="_blank" rel="noopener noreferrer">Design Review</a>' +
+      inner +
       "</div>";
   }
 
@@ -226,7 +229,7 @@ $(document).ready(function () {
     var reviewH = reviewHTML(chip);
     // Failed: Design Review 를 Root cause 박스 안에 / "Measurement failed" 는 카드 하단에.
     // 그 외: Design Review 를 상태 문구 아래 한 줄로 배치.
-    var rcReview = failed ? reviewH : "";
+    var rcReview = (failed && chip.review_link) ? reviewH : "";
     var statusRow = statusSlot ? '<div class="chip-status-row">' + statusSlot + "</div>" : "";
     var reviewRow = (!failed && reviewH) ? '<div class="chip-review-row">' + reviewH + "</div>" : "";
     // Failed: 칩 이미지 위 중앙 반투명 오버레이 + 우는 아이콘
@@ -240,7 +243,7 @@ $(document).ready(function () {
         // 제목 줄 (데스크톱: 이미지 오른쪽 상단 / 모바일: 연번 옆 최상단). 디자이너는 제목 오른쪽.
         '<div class="chip-title-row">' +
           '<p class="chip-name">' + (chip.name || "") +
-            failBadge + revisedBadge +
+            failBadge +
           "</p>" +
           // Failed 칩은 디자이너 아이콘 미표시 (추후 복원하려면 아래 조건 제거)
           (failed ? "" : '<div class="chip-title-desg">' + designerHTML(chip) + "</div>") +
@@ -260,9 +263,9 @@ $(document).ready(function () {
           (desc ? '<p class="chip-desc">' + desc + "</p>" : "") +
           (failed ? "" : keywordsHTML(chip)) +
           outputsRow +
+          // 디자이너 사진: Design Review 아이콘 하단(meta 안, 칩 이미지 우측). Failed 은 미표시.
+          (failed ? "" : '<div class="chip-card-desg">' + designerHTML(chip) + "</div>") +
         "</div>" +
-        // 데스크톱: 디자이너 사진을 카드 우측 세로중앙. Failed 은 미표시.
-        (failed ? "" : '<div class="chip-card-desg">' + designerHTML(chip) + "</div>") +
       "</div>"
     );
   }
