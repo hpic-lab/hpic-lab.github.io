@@ -581,14 +581,14 @@ $(document).ready(function () {
     }
 
     var tick = false;
-    $(window).on("scroll.chipyear resize.chipyear", function () {
-      if (!tick) {
-        requestAnimationFrame(function () {
-          updateActiveYear();
-          tick = false;
-        });
-        tick = true;
-      }
+    // 중복 바인딩 제거 후 재바인딩. tick 을 콜백 시작에서 먼저 리셋해, updateActiveYear 예외가 나도 핸들러가 죽지 않게 함
+    $(window).off("scroll.chipyear resize.chipyear").on("scroll.chipyear resize.chipyear", function () {
+      if (tick) return;
+      tick = true;
+      requestAnimationFrame(function () {
+        tick = false;
+        try { updateActiveYear(); } catch (e) {}
+      });
     });
     updateActiveYear();
   }
