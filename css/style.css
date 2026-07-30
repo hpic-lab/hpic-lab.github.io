@@ -1709,7 +1709,13 @@ nav#navbar-main .navbar-collapse {
     z-index: 880;
     background: var(--section-bg, #fff);
     box-shadow: -30px 0 0 var(--section-bg, #fff), 30px 0 0 var(--section-bg, #fff);
-    padding-left: 16px;   /* Research 하위(subsection)임을 들여쓰기로 표시 */
+    /* Research 하위(subsection) 들여쓰기 — 밑줄(border)도 함께 들여쓰도록 margin 사용 */
+    margin-left: 16px;
+    padding-left: 0;
+  }
+  /* 연도(2026)는 Chip Gallery 하위(subsection)이므로 한 단계 더 들여쓰기 (밑줄 포함) */
+  .chip-timeline .chip-year {
+    margin-left: 32px;
   }
   #research h5#research-projects::before,
   #research h5#chip-gallery::before {

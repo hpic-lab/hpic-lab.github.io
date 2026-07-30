@@ -147,8 +147,13 @@ $(document).ready(function () {
       paper: "Manuscript In Preparation"
     };
     if (MANU[chip.status]) {
+      // "Manuscript {상태}" 는 일반 텍스트, 뒤의 "(저널명)" 만 Publications로 이동하는 링크
+      var manuTxt = '<span class="chip-status-txt">' + MANU[chip.status] + "</span>";
+      var venuePart = vLabel
+        ? ' <span class="chip-status-jn">(' + venueMarkup("chip-status-manu", vLabel) + ")</span>"
+        : "";
       return '<p class="chip-status ' + s.c + '"><span class="chip-status-dot"></span>' +
-        venueMarkup("chip-status-manu", MANU[chip.status]) + project + "</p>";
+        manuTxt + venuePart + project + "</p>";
     }
     // 그 외 상태: 기존 문구 (+ venue 배지가 있으면 표시)
     return '<p class="chip-status ' + s.c + '"><span class="chip-status-dot"></span><span class="chip-status-txt">' + s.t + "</span>" + venueMarkup("chip-status-venue") + project + "</p>";
