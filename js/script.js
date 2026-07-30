@@ -102,26 +102,28 @@ document.addEventListener("DOMContentLoaded", function () {
     if (!window.matchMedia("(max-width: 991px)").matches) return;  // 모바일만
     e.preventDefault();
 
-    // 섹션별 상단 고정 제목(있으면 그 위치로, 없으면 섹션 상단으로)
+    // 섹션별 상단 고정 제목(있으면 그 위치로). 없으면 섹션의 첫 제목(h1), 그것도 없으면 섹션 상단.
     var stickyMap = {
       "people": "#members-sticky-title",
       "research": "#research-sticky-title",
       "publications": "#publications .pub-sticky-head",
       "news-gallery": "#news-gallery .news-sticky-head"
     };
-    var target = section;
-    if (stickyMap[id]) {
-      var el = document.querySelector(stickyMap[id]);
-      if (el && el.offsetParent) target = el;
+    function getTarget() {
+      if (stickyMap[id]) {
+        var el = document.querySelector(stickyMap[id]);
+        if (el && el.offsetParent) return el;
+      }
+      var h = section.querySelector("h1, h2");   // 고정 제목이 없는 섹션은 첫 제목을 최상단으로
+      if (h && h.offsetParent) return h;
+      return section;
     }
 
     function doScroll() {
       // 지연 로딩 이미지를 즉시 로드시켜 레이아웃을 확정 (스크롤 후 밀림 방지)
       document.querySelectorAll('img[loading="lazy"]').forEach(function (img) { img.loading = "eager"; });
       function go() {
-        // 대상(고정 제목)이 아직 없으면 섹션으로
-        var t = (stickyMap[id] && document.querySelector(stickyMap[id]) && document.querySelector(stickyMap[id]).offsetParent)
-          ? document.querySelector(stickyMap[id]) : section;
+        var t = getTarget();
         var navH = ($("#navbar-main").outerHeight() || 56);
         var y = window.pageYOffset + t.getBoundingClientRect().top - navH;
         window.scrollTo({ top: Math.max(0, y), behavior: "auto" });
