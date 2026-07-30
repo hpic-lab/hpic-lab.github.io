@@ -1750,6 +1750,12 @@ nav#navbar-main .navbar-collapse {
     position: absolute; left: 0; right: 0; bottom: 100%;
     height: 24px; background: var(--section-bg, #fff);
   }
+  /* 밑줄 아래 흰색 여백 — sticky 시 아래 콘텐츠가 비쳐 보이지 않도록 흰 밴드로 가림 */
+  .chip-timeline .chip-year::after {
+    content: "";
+    position: absolute; left: 0; right: 0; top: 100%;
+    height: 16px; background: var(--section-bg, #fff);
+  }
 }
 
 /* (고정 제목 크기는 각 규칙에서 font-size를 지정하지 않아, 다른 섹션 제목과 동일한
