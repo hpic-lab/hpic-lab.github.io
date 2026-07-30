@@ -262,9 +262,9 @@ h6 {
 }
 /* ⚠ 아이콘으로 주의 환기 */
 .chip-filter-opt.cf-failed::before {
-  content: "\26A0";
+  content: "\1F62D";
   margin-right: 5px;
-  font-size: 0.9em;
+  font-size: 1em;
   line-height: 1;
 }
 .chip-filter-opt.active {
@@ -4505,7 +4505,7 @@ section {
 /* 논문 상태: 저널명 배지 뒤 (상태) 회색 텍스트 */
 .chip-card2 .chip-status-paren {
   color: #8a8a84;
-  font-size: 0.95rem;
+  font-size: 0.78rem;
 }
 
 /* 실패 원인(Root cause) 박스 */
