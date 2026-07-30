@@ -239,6 +239,7 @@ $(document).ready(function () {
           (chip.image
             ? '<img src="' + chip.image + '" alt="' + (chip.name || "") + '" loading="lazy">'
             : '<div class="chip-thumb-tbd">Chip image<br>to be updated</div>') +
+          failedBottom +   // Failed: 칩 이미지 아래에 "Measurement failed"
         "</div>" +
         '<div class="chip-info">' +
           '<div class="chip-title-row' + (failed ? " chip-title-row-desg" : "") + '">' +
@@ -255,7 +256,6 @@ $(document).ready(function () {
           (failed ? "" : keywordsHTML(chip)) +
           outputsRow +
           (failed ? "" : designerHTML(chip)) +
-          failedBottom +
         "</div>" +
       "</div>"
     );
