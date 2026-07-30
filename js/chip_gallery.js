@@ -148,7 +148,7 @@ $(document).ready(function () {
     };
     if (MANU[chip.status]) {
       return '<p class="chip-status ' + s.c + '"><span class="chip-status-dot"></span>' +
-        venueMarkup("chip-status-venue", MANU[chip.status]) + project + "</p>";
+        venueMarkup("chip-status-manu", MANU[chip.status]) + project + "</p>";
     }
     // 그 외 상태: 기존 문구 (+ venue 배지가 있으면 표시)
     return '<p class="chip-status ' + s.c + '"><span class="chip-status-dot"></span><span class="chip-status-txt">' + s.t + "</span>" + venueMarkup("chip-status-venue") + project + "</p>";

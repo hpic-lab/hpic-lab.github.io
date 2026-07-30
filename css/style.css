@@ -4507,6 +4507,12 @@ section {
   color: #8a8a84;
   font-size: 0.78rem;
 }
+/* Manuscript 상태: 배지 없이 일반 텍스트(클릭 가능) */
+.chip-card2 .chip-status-manu {
+  color: inherit;
+  text-decoration: none;
+}
+.chip-card2 a.chip-status-manu:hover { text-decoration: underline; }
 /* 강조(highlight) reason 항목: bullet 마커 제거 */
 .chip-card2 .chip-rootcause li.chip-rc-li-note {
   list-style: none;
