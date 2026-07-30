@@ -134,12 +134,16 @@ $(document).ready(function () {
         }
       }
     }
+    // "in" 연결어: Paper accepted / Paper in preparation / Published 상태 + venue 가 있을 때
+    var IN_STATUSES = ["accepted", "paper", "published"];
+    var inWord = (venue && IN_STATUSES.indexOf(chip.status) !== -1)
+      ? '<span class="chip-status-in">in</span>' : "";
     // 과제(수행) 배지: 논문 대신 과제 산출물로 마무리된 칩에 과제명을 표기
     var project = "";
     if (chip.project) {
       project = '<span class="chip-status-project">' + escAttr(chip.project) + "</span>";
     }
-    return '<p class="chip-status ' + s.c + '"><span class="chip-status-dot"></span><span class="chip-status-txt">' + s.t + "</span>" + venue + project + "</p>";
+    return '<p class="chip-status ' + s.c + '"><span class="chip-status-dot"></span><span class="chip-status-txt">' + s.t + "</span>" + inWord + venue + project + "</p>";
   }
 
   // 키워드 태그 (임시, 최대 5개)

@@ -4500,6 +4500,11 @@ section {
   white-space: nowrap;
   text-decoration: none;
 }
+/* 상태 문구와 venue 배지 사이 "in" 연결어 (flex gap 사용, 마진 없음) */
+.chip-card2 .chip-status-in {
+  color: #6b7280;
+  font-size: 0.9rem;
+}
 
 /* 실패 원인(Root cause) 박스 */
 .chip-card2 .chip-rootcause {
