@@ -229,7 +229,7 @@ $(document).ready(function () {
     var reviewRow = (!failed && reviewH) ? '<div class="chip-review-row">' + reviewH + "</div>" : "";
     // Failed: 칩 이미지 위 중앙 반투명 오버레이 + 우는 아이콘
     var failedOverlay = failed
-      ? '<div class="chip-fail-overlay"><span class="chip-fail-ic" aria-hidden="true">&#128557;</span><span class="chip-fail-tx">Meas. Failed</span></div>'
+      ? '<div class="chip-fail-overlay"><span class="chip-fail-ic" aria-hidden="true">&#128557;</span><span class="chip-fail-tx">Measurement<br>FAILED</span></div>'
       : "";
 
     return (
