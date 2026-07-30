@@ -1717,13 +1717,6 @@ nav#navbar-main .navbar-collapse {
     margin-left: 16px;
     padding-left: 0;
   }
-  /* 연도(2026)는 Chip Gallery 하위(subsection)이므로 한 단계 더 들여쓰기 (밑줄 포함) */
-  .chip-timeline .chip-year {
-    margin-left: 32px;
-    padding-top: 8px;      /* 2026 위 여백 */
-    padding-bottom: 8px;   /* 2026 ~ 밑줄 사이 여백 */
-    margin-bottom: 16px;   /* 밑줄 아래 흰색 여백 */
-  }
   #research h5#research-projects::before,
   #research h5#chip-gallery::before {
     content: "";
@@ -1738,7 +1731,8 @@ nav#navbar-main .navbar-collapse {
     background: var(--tos-bg, #f2f6fc);
     z-index: 870;
   }
-  /* Level 3: 연도(2026 등) — Chip Gallery 제목(필터 포함) 아래 고정 */
+  /* Level 3: 연도(2026 등) — Chip Gallery 하위.
+     요소는 전체 폭(배경으로 아래 칩 내용이 비쳐 보이지 않게), 텍스트와 밑줄만 32px 들여쓰기 */
   .chip-timeline .chip-year {
     position: -webkit-sticky;
     position: sticky;
@@ -1746,18 +1740,23 @@ nav#navbar-main .navbar-collapse {
     z-index: 860;
     background: var(--section-bg, #fff);
     box-shadow: -30px 0 0 var(--section-bg, #fff), 30px 0 0 var(--section-bg, #fff);
+    margin-left: 0;
+    margin-bottom: 0;
+    padding: 8px 0 18px 32px;   /* 좌측 들여쓰기 32px · 위 8 · 아래 18(밑줄+흰 여백) */
+    border-bottom: none;        /* 밑줄은 ::after 로 (들여쓴 위치부터) */
   }
   .chip-timeline .chip-year::before {
     content: "";
     position: absolute; left: 0; right: 0; bottom: 100%;
     height: 24px; background: var(--section-bg, #fff);
   }
-  /* 밑줄 아래 흰색 여백 — sticky 시 아래 콘텐츠가 비쳐 보이지 않도록 흰 밴드로 가림 */
+  /* 밑줄: 2026 들여쓴 위치(32px)부터 시작, 아래로 12px 흰 여백 */
   .chip-timeline .chip-year::after {
     content: "";
-    position: absolute; left: 0; right: 0; top: 100%;
-    height: 16px; background: var(--section-bg, #fff);
+    position: absolute; left: 32px; right: 0; bottom: 12px;
+    height: 3px; background: #e9e9e9;
   }
+  .chip-timeline .chip-year.chip-year-active::after { background: #2e55be; }
 }
 
 /* (고정 제목 크기는 각 규칙에서 font-size를 지정하지 않아, 다른 섹션 제목과 동일한
