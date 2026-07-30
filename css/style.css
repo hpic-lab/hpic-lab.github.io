@@ -4739,14 +4739,26 @@ a.chip-status-venue:hover { background: rgba(55, 138, 221, 0.2); }
 .chip-card2 .chip-title-desg .chip-designers { margin: 0; }
 /* Design Review 를 상태 아래 한 줄로 (non-failed) */
 .chip-card2 .chip-review-row { margin-top: 6px; }
-/* Failed 칩: 칩 이미지 아래의 "Measurement failed" 상태 (가운데 정렬) */
-.chip-card2 .chip-status-failed-bottom { margin: 8px 0 0; justify-content: center; }
-.chip-card2 .chip-status-failed-bottom .chip-status-txt {
-  color: #C0392B;
+/* Failed 칩: 칩 이미지 위 중앙 반투명 오버레이 + 우는 아이콘 */
+.chip-card2 .chip-thumb-failed { position: relative; }
+.chip-card2 .chip-fail-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(140, 20, 10, 0.42);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  color: #fff;
+  pointer-events: none;
+}
+.chip-card2 .chip-fail-overlay .chip-fail-ic { font-size: 2rem; line-height: 1; }
+.chip-card2 .chip-fail-overlay .chip-fail-tx {
   font-weight: 800;
-  background: rgba(192, 57, 43, 0.12);
-  padding: 2px 8px;
-  border-radius: 5px;
+  font-size: 0.92rem;
+  letter-spacing: 0.02em;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
 }
 .chip-card2 .chip-title-row .chip-name {
   margin: 0;

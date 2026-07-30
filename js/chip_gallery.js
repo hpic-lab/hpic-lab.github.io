@@ -227,18 +227,19 @@ $(document).ready(function () {
     var rcReview = failed ? reviewH : "";
     var statusRow = statusSlot ? '<div class="chip-status-row">' + statusSlot + "</div>" : "";
     var reviewRow = (!failed && reviewH) ? '<div class="chip-review-row">' + reviewH + "</div>" : "";
-    var failedBottom = failed
-      ? '<p class="chip-status st-red chip-status-failed-bottom"><span class="chip-status-txt">Meas. Failed</span></p>'
+    // Failed: 칩 이미지 위 중앙 반투명 오버레이 + 우는 아이콘
+    var failedOverlay = failed
+      ? '<div class="chip-fail-overlay"><span class="chip-fail-ic" aria-hidden="true">&#128557;</span><span class="chip-fail-tx">Meas. Failed</span></div>'
       : "";
 
     return (
       '<div class="chip-card2' + (failed ? " chip-card-failed" : "") + '">' +
         '<div class="chip-num">' + num + "</div>" +
-        '<div class="chip-thumb">' +
+        '<div class="chip-thumb' + (failed ? " chip-thumb-failed" : "") + '">' +
           (chip.image
             ? '<img src="' + chip.image + '" alt="' + (chip.name || "") + '" loading="lazy">'
             : '<div class="chip-thumb-tbd">Chip image<br>to be updated</div>') +
-          failedBottom +   // Failed: 칩 이미지 아래에 "Measurement failed"
+          failedOverlay +   // Failed: 칩 이미지 위 오버레이
         "</div>" +
         '<div class="chip-info">' +
           // 디자이너 사진을 제목 오른쪽에 배치 (모든 칩)
