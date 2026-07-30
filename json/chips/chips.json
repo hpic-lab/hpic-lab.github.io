@@ -406,7 +406,8 @@
     "fail_reasons": [
       "Verified only under simulation-favorable conditions, without modeling real operation",
       "Mismatched port connection between the two modules left the rstb input unconnected (floating)"
-    ]
+    ],
+    "revised_into": "Revised into Chip #25"
   },
   {
     "year": 2024,
