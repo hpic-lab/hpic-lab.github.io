@@ -4572,12 +4572,19 @@ section {
 }
 .chip-card2 a.chip-status-manu:hover { text-decoration: underline; }
 /* Design Review: 기본은 full, 모바일에서 "DR" 로 축약 */
+/* Failed 칩 제목 우측 Design Review: 기본(데스크톱)은 숨김 — Root cause 박스 안에 표시 */
+.chip-card2 .chip-title-review { display: none; }
 @media (max-width: 576px) {
   /* Manuscript 저널(IEEE~)은 모바일에서 숨김 — "Manuscript Accepted" 만 표시 */
   .chip-card2 .chip-status-jn { display: none; }
   /* Failed root cause 헤더: 공간 부족 시 "Design Review" 칩을 통째로 다음 줄로
      (링크는 nowrap 이라 글자가 두 줄로 깨지지 않음) */
   .chip-card2 .chip-rootcause-h { flex-wrap: wrap; }
+  /* Failed 칩(모바일): 제목 옆 revised 문구 숨기고, Design Review 를 제목 우측으로 이동
+     (Root cause 박스 안의 Design Review 는 숨김) */
+  .chip-card2.chip-card-failed .chip-revised-badge { display: none; }
+  .chip-card2.chip-card-failed .chip-title-review { display: inline-flex; align-items: center; }
+  .chip-card2.chip-card-failed .chip-rootcause-h .chip-review { display: none; }
 }
 /* 강조(highlight) reason 항목: bullet 마커 제거 */
 .chip-card2 .chip-rootcause li.chip-rc-li-note {

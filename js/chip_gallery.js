@@ -267,8 +267,9 @@ $(document).ready(function () {
           '<p class="chip-name">' + (chip.name || "") +
             failBadge + revisedBadge +
           "</p>" +
-          // Failed 칩은 디자이너 아이콘 미표시 (추후 복원하려면 아래 조건 제거)
-          (failed ? "" : '<div class="chip-title-desg">' + designerHTML(chip) + "</div>") +
+          // Failed: 제목 우측에 Design Review (모바일에서만 표시 · CSS 제어) / 그 외: 디자이너는 meta 로
+          (failed ? '<span class="chip-title-review">' + reviewH + "</span>"
+                  : '<div class="chip-title-desg">' + designerHTML(chip) + "</div>") +
         "</div>" +
         // 모바일 전용 강제 줄바꿈: 위(연번+제목) / 아래(이미지+메타) 를 확실히 분리
         '<div class="chip-rowbreak"></div>' +
