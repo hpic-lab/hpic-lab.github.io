@@ -4849,10 +4849,16 @@ a.chip-out:hover { text-decoration: underline; }
   .chip-card2 .chip-thumb { flex: 0 0 120px; width: 120px; height: auto; max-width: none; align-self: flex-start; }
   .chip-card2 .chip-thumb img { height: auto; }
   .chip-card2 .chip-meta { flex: 1 1 0; min-width: 0; }
-  /* 디자이너는 제목 아래가 아니라 이미지·상태 행의 오른쪽에 배치 */
+  /* 디자이너: 제목 아래가 아니라 Design Review 아이콘 하단(meta 영역 아래 새 줄)에 배치 */
   .chip-card2 .chip-title-desg { display: none; }
-  .chip-card2 .chip-card-desg { display: flex; flex: 0 0 auto; align-self: center; margin-left: auto; }
-  /* Failed: 우측 설명이 길어 카드가 높을 때 칩 이미지를 세로 중앙 */
+  .chip-card2:not(.chip-card-failed) .chip-card-desg {
+    display: flex; flex: 0 0 100%; width: 100%;
+    margin-left: 0; padding-left: 130px; /* 칩 이미지 120px + gap 10px */
+    align-self: flex-start;
+  }
+  .chip-card2:not(.chip-card-failed) .chip-card-desg .chip-designers { margin-top: 0; }
+  /* Failed: 디자이너 미표시(주석 처리됨). 우측 설명이 길어 카드가 높을 때 칩 이미지를 세로 중앙 */
+  .chip-card2.chip-card-failed .chip-card-desg { display: flex; flex: 0 0 auto; align-self: center; margin-left: auto; }
   .chip-card2.chip-card-failed .chip-thumb { align-self: center; }
 }
 
