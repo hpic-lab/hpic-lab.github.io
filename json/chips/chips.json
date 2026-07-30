@@ -614,7 +614,9 @@
     ],
     "status": "failed",
     "fail_reasons": [
-      "Improper sizing of back-to-back inverters in 2-stage oscillator"
+      "Improper sizing of back-to-back inverters in 2-stage oscillator",
+      "Bug masked in simulation by forcing an initial condition (.ic)",
+      "No start-up circuit included"
     ],
     "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/65nm/M14253(23.11.29)/Design%20Review_JihoKim_1215.pdf"
   },
@@ -639,7 +641,9 @@
     ],
     "status": "failed",
     "fail_reasons": [
-      "Improper sizing of back-to-back inverters in 2-stage oscillator"
+      "Improper sizing of back-to-back inverters in 2-stage oscillator",
+      "Bug masked in simulation by forcing an initial condition (.ic)",
+      "No start-up circuit included"
     ],
     "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/65nm/M14467(23.11.29)/Design_Review_final_%EB%B0%95%EA%B7%9C%EB%9E%80_M14467.pptx"
   },
@@ -662,7 +666,9 @@
     ],
     "status": "failed",
     "fail_reasons": [
-      "Improper sizing of back-to-back inverters in 2-stage oscillator"
+      "Improper sizing of back-to-back inverters in 2-stage oscillator",
+      "Bug masked in simulation by forcing an initial condition (.ic)",
+      "No start-up circuit included"
     ],
     "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/65nm/M14467(23.11.29)/Design_Review_231126.pptx"
   }
