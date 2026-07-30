@@ -4554,12 +4554,12 @@ section {
 }
 .chip-card2 a.chip-status-manu:hover { text-decoration: underline; }
 /* Design Review: 기본은 full, 모바일에서 "DR" 로 축약 */
-.chip-card2 .chip-rv-link .dr-abbr { display: none; }
 @media (max-width: 576px) {
-  .chip-card2 .chip-rv-link .dr-full { display: none; }
-  .chip-card2 .chip-rv-link .dr-abbr { display: inline; }
   /* Manuscript 저널(IEEE~)은 모바일에서 숨김 — "Manuscript Accepted" 만 표시 */
   .chip-card2 .chip-status-jn { display: none; }
+  /* Failed root cause 헤더: 공간 부족 시 "Design Review" 칩을 통째로 다음 줄로
+     (링크는 nowrap 이라 글자가 두 줄로 깨지지 않음) */
+  .chip-card2 .chip-rootcause-h { flex-wrap: wrap; }
 }
 /* 강조(highlight) reason 항목: bullet 마커 제거 */
 .chip-card2 .chip-rootcause li.chip-rc-li-note {
