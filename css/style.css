@@ -2233,6 +2233,9 @@ nav#navbar-main .navbar-collapse {
   min-width: 0;
 }
 
+/* Publications 제목 옆 ECA 안내 span 에 아이콘(::before)이 중복 생성되지 않도록 제거 */
+#exampleModal .modal-eca-note::before { content: none !important; }
+
 #exampleModal .mpub-title {
   font-weight: 700;
   line-height: 1.4;
@@ -2686,14 +2689,20 @@ nav#navbar-main .navbar-collapse {
   justify-content: space-between;
   align-items: center;
   font-size: 1.05rem;
-  font-weight: 700;
+  font-weight: 500;          /* 접힘(기본)은 보통 굵기 */
   color: #aaa;
-  margin: 28px 0 10px 36px;
+  margin: 28px 0 10px;        /* 좌측 들여쓰기 제거 → 연도(2026)와 정렬 */
   padding-bottom: 6px;
   border-bottom: 3px solid #e9e9e9;
   cursor: pointer;
   user-select: none;
   transition: color 0.2s, border-color 0.2s;
+}
+/* 펼쳐진(활성) 경우에만 파랑 + bold */
+.completed-toggle:not(.collapsed) {
+  font-weight: 700;
+  color: #2e55be;
+  border-bottom-color: #2e55be;
 }
 /* Completed 목록도 한 단계 들여쓰기 */
 .completed-projects {

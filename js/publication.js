@@ -293,9 +293,9 @@ $(document).ready(function () {
                 '<div class="mpub-src">' + srcText + "</div>" +
                 '<div class="mpub-authors">' + authorsHTML(pub.authors) + "</div>";
       } else {
-        // 제목 미공개(심사 중): 상태 문구 + 저자만 표시
-        mBody = '<div class="mpub-title mpub-review">Manuscript under review</div>' +
-                '<div class="mpub-authors">' + authorsHTML(pub.authors) + "</div>";
+        // 제목 미공개(심사 중): 좌측 "In Review" 배지가 상태를 나타내므로
+        // 프로필 카드에서는 "Manuscript under review" 문구·저자 모두 표시하지 않음
+        mBody = "";
       }
       registerPub(
         pub,

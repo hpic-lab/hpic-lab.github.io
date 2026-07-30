@@ -646,7 +646,11 @@ $(document).ready(function () {
       $("#modal-publication").hide();
     }
 
-    // ===== Awards: News의 Award 항목과 자동 연동 (+ 수동 항목 이어붙임) =====
+    // ===== Awards & Funds: 날짜는 연도만 표기 (월 삭제) =====
+    var yearOnly = function (d) {
+      var mm = String(d || "").match(/(\d{4})/);
+      return mm ? mm[1] : String(d || "");
+    };
     // News 본문의 <u>이름</u>이 이 사람 이름(주어진 이름 기준)과 일치하면 표시
     const autoAwards = (window.newsAwards || [])
       .filter((a) => a.names.some((n) => name === n || name.indexOf(n + " ") === 0))
@@ -659,23 +663,27 @@ $(document).ready(function () {
           ? '<a href="' + a.img + '" target="_blank" rel="noopener noreferrer" class="mpub-award-link">' + txt + "</a>"
           : txt;
         return '<div class="mpub-entry">' +
-          '<div class="mpub-side mpub-date">' + a.ym + "</div>" +
+          '<div class="mpub-side mpub-date">' + yearOnly(a.ym) + "</div>" +
           '<div class="mpub-body">' + body + "</div>" +
         "</div>";
       });
-    // 수동 항목: 맨 앞의 연도/날짜(2024.05, 2023-2, 2025 등)를 왼쪽 칸으로 분리
+    // 수동 항목: 맨 앞의 연도/날짜를 왼쪽 칸으로 분리 (연도만 표기)
     const manualAwards = parseData(Awards).map((t) => {
       var m = String(t).match(/^(\d{4}(?:[.\-]\d{1,2})?)\.?\s+(.*)$/);
-      var date = m ? m[1] : "";
-      // "2024-1", "2023-2" 처럼 학기 표기는 연도만 표기 (단, "2024.05" 월 표기는 유지)
-      if (/^\d{4}-\d{1,2}$/.test(date)) date = date.slice(0, 4);
+      var date = yearOnly(m ? m[1] : "");
       var body = m ? m[2] : t;
       return '<div class="mpub-entry">' +
         '<div class="mpub-side mpub-date">' + date + "</div>" +
         '<div class="mpub-body">' + body + "</div>" +
       "</div>";
     });
-    const parsedAwards = autoAwards.concat(manualAwards);
+    // 진승모/이재건: "Awards & Funds"로 표기하고 석사과정생 연구장려금만 표시
+    const isFundsPerson = (name === "Seung-Mo Jin" || name === "Jae-Geon Lee");
+    let parsedAwards = autoAwards.concat(manualAwards);
+    if (isFundsPerson) {
+      parsedAwards = parsedAwards.filter((h) => h.indexOf("연구장려금") !== -1);
+    }
+    $("#modal-Awards-title span").text(isFundsPerson ? "Awards & Funds" : "Awards");
     if (parsedAwards.length > 0) {
       $("#modal-Awards-title").show();
       $("#modal-Awards").show();
