@@ -193,7 +193,13 @@ $(document).ready(function () {
     if (!reasons.length) return "";
     // fail_note(강조 배지)는 첫 번째 원인 항목 오른쪽에 표시
     var note = chip.fail_note ? ' <span class="chip-fail-note">' + chip.fail_note + "</span>" : "";
-    var lis = reasons.map(function (r, i) { return "<li>" + r + (i === 0 ? note : "") + "</li>"; }).join("");
+    // reason 은 문자열 또는 { text, highlight } 객체. highlight=true 면 노란 배경으로 강조.
+    var lis = reasons.map(function (r, i) {
+      var isObj = r && typeof r === "object";
+      var text = isObj ? (r.text || "") : r;
+      var body = (isObj && r.highlight) ? '<span class="chip-fail-note">' + text + "</span>" : text;
+      return "<li>" + body + (i === 0 ? note : "") + "</li>";
+    }).join("");
     // "Revised into ..." 는 제목 우측(revisedBadge)으로 이동 → 박스에서는 표시하지 않음
     return '<div class="chip-rootcause">' +
       '<div class="chip-rootcause-h"><span class="chip-rc-ico">&#9888;</span><span class="chip-rc-title">Root cause</span>' + (reviewHtml || "") + "</div>" +
