@@ -414,7 +414,8 @@ $(document).ready(function () {
       '<div class="pub2-side-nav">' +
         '<p class="pub2-notice">&dagger; Equally Credited Authors</p>' +
         '<div class="pub2-side-tabs">' +
-          '<button type="button" class="pub2-tab pub2-tab-journal active" data-target="journal">Journal</button>' +
+          '<button type="button" class="pub2-tab pub2-tab-all active" data-target="all">All</button>' +
+          '<button type="button" class="pub2-tab pub2-tab-journal" data-target="journal">Journal</button>' +
           '<button type="button" class="pub2-tab pub2-tab-conference" data-target="conference">Conference</button>' +
           '<button type="button" class="pub2-tab pub2-tab-patent" data-target="patent">Patent</button>' +
         "</div>" +
@@ -436,15 +437,18 @@ $(document).ready(function () {
     function refreshYearLinks(target) {
       var linksDiv = $("#publications .pub2-year-links");
       linksDiv.empty();
-      $("#pub2-" + target)
-        .find(".pub2-year")
-        .each(function () {
-          var id = $(this).attr("id");
-          var label = $(this).text();
-          linksDiv.append('<span class="pub2-year-link" data-yid="' + id + '">' + label + "</span>");
-        });
+      var lists = target === "all" ? ["journal", "conference", "patent"] : [target];
+      lists.forEach(function (t) {
+        $("#pub2-" + t)
+          .find(".pub2-year")
+          .each(function () {
+            var id = $(this).attr("id");
+            var label = $(this).text();
+            linksDiv.append('<span class="pub2-year-link" data-yid="' + id + '">' + label + "</span>");
+          });
+      });
     }
-    refreshYearLinks("journal");
+    refreshYearLinks("all");
 
     // 모바일: 리뷰 칩이 디자이너 우측에 못 들어가 줄바꿈되면 자기 줄에서 좌측정렬(.pub2-review-wrapped)
     function markWrappedReviews() {
@@ -492,8 +496,12 @@ $(document).ready(function () {
     function activateTab(target) {
       $("#publications .pub2-tab").removeClass("active");
       $('#publications .pub2-tab[data-target="' + target + '"]').addClass("active");
-      container.find(".pub2-list").hide();
-      $("#pub2-" + target).show();
+      if (target === "all") {
+        container.find(".pub2-list").show();
+      } else {
+        container.find(".pub2-list").hide();
+        $("#pub2-" + target).show();
+      }
       refreshYearLinks(target);
       if (window.markWrappedReviews) setTimeout(window.markWrappedReviews, 0);
     }
@@ -503,6 +511,9 @@ $(document).ready(function () {
       activateTab($(this).data("target"));
       scrollToEl($("#publications"));
     });
+
+    // 초기 상태: All (모든 목록 표시)
+    activateTab("all");
 
     // 모바일: ECA+탭(+연도링크) 묶음을 콘텐츠 상단으로 옮겨 스크롤 시 상단 고정.
     // 데스크톱에서는 사이드바 원위치로 되돌린다.
