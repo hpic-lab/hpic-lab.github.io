@@ -1722,6 +1722,9 @@ nav#navbar-main .navbar-collapse {
   /* 연도(2026)는 Chip Gallery 하위(subsection)이므로 한 단계 더 들여쓰기 (밑줄 포함) */
   .chip-timeline .chip-year {
     margin-left: 32px;
+    padding-top: 8px;      /* 2026 위 여백 */
+    padding-bottom: 8px;   /* 2026 ~ 밑줄 사이 여백 */
+    margin-bottom: 16px;   /* 밑줄 아래 흰색 여백 */
   }
   #research h5#research-projects::before,
   #research h5#chip-gallery::before {
