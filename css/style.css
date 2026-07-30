@@ -1664,7 +1664,8 @@ nav#navbar-main .navbar-collapse {
     top: calc(var(--mem-nav-h, 56px) + var(--mem-title-h, 44px));
     z-index: 880;
     background: var(--section-bg, #fff);
-    box-shadow: -30px 0 0 var(--section-bg, #fff), 30px 0 0 var(--section-bg, #fff);
+    /* 좌우 비침 방지 + 밑줄 아래 흰 여백(하향 그림자) — 2026 연도와 동일 여백 */
+    box-shadow: -30px 0 0 var(--section-bg, #fff), 30px 0 0 var(--section-bg, #fff), 0 16px 0 0 var(--section-bg, #fff);
   }
   /* 들여쓰기(밑줄 포함) — margin 사용(빈 곳엔 밑줄 없음). line 2832 규칙(margin 0)보다 명시도 높게 */
   #people .col-lg-8 > h3:not(.accordion h3):not(.h3-items) {
@@ -1806,7 +1807,9 @@ nav#navbar-main .navbar-collapse {
     z-index: 850;   /* 고정 헤더(900) 아래, 콘텐츠 위 */
     background: #fff !important;
     background-image: none !important;
-    box-shadow: -30px 0 0 #fff, 30px 0 0 #fff;   /* 좌우 여백까지 불투명 커버 */
+    /* 좌우 커버 + 밑줄 아래 흰 여백(하향 그림자) — 2026 연도와 동일 */
+    box-shadow: -30px 0 0 #fff, 30px 0 0 #fff, 0 14px 0 0 #fff;
+    margin-bottom: 14px !important;
   }
   .news-timeline-container .news-accordion .ui-accordion-header::before {
     content: "";
@@ -1853,7 +1856,9 @@ nav#navbar-main .navbar-collapse {
     top: var(--pub-year-top, 150px);
     z-index: 850;   /* 고정 헤더(900) 아래, 콘텐츠 위 */
     background: var(--section-bg, #fff);
-    box-shadow: -30px 0 0 var(--section-bg, #fff), 30px 0 0 var(--section-bg, #fff);
+    /* 좌우 커버 + 밑줄 아래 흰 여백(하향 그림자) — 2026 연도와 동일 */
+    box-shadow: -30px 0 0 var(--section-bg, #fff), 30px 0 0 var(--section-bg, #fff), 0 14px 0 0 var(--section-bg, #fff);
+    margin-bottom: 14px;
   }
   .pub2-list .pub2-year::before {
     content: "";
