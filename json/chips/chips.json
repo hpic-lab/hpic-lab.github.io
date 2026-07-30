@@ -171,7 +171,7 @@
     "month": 9,
     "process": "28-nm T",
     "image": "img/chip_new/DSP_TX_25Sep_Real.png",
-    "name": "112Gb/s LUT-Based DSP Transmitter with an Active-Peaking Pre-Driver in 28nm CMOS",
+    "name": "112Gb/s LUT-based DSP Transmitter with an Active-Peaking Pre-Driver in 28nm CMOS",
     "description": "",
     "outputs": [],
     "note": "",
@@ -247,7 +247,7 @@
     "month": 0,
     "process": "28-nm S",
     "image": "img/chip_new/ILO_Cryo_Quantum.jpg",
-    "name": "Injection-Locked Oscillator for Cryogenic Quantum IC",
+    "name": "Injection-Locked Oscillator for Quantum IC",
     "description": "",
     "outputs": [],
     "note": "",
@@ -265,7 +265,7 @@
     "month": 0,
     "process": "28-nm S",
     "image": "img/chip_new/DPLL_Cryo_Quantum.jpg",
-    "name": "Digital PLL for Cryogenic Quantum IC",
+    "name": "Digital PLL for Quantum IC",
     "description": "",
     "outputs": [],
     "note": "",
@@ -283,7 +283,7 @@
     "month": 0,
     "process": "28-nm S",
     "image": "img/chip_new/SAR_ADC_15GS.jpg",
-    "name": "1.5GS/s 6-bit SAR ADC for Cryogenic Quantum IC",
+    "name": "1.5GS/s 6-bit SAR ADC for Quantum IC",
     "description": "",
     "outputs": [],
     "note": "",
@@ -300,7 +300,7 @@
     "month": 7,
     "process": "28-nm SS",
     "image": "img/chip_new/SS_28_25Jul_2GSs_SAR_ADC.png",
-    "name": "2GS/s SAR ADC for Cryogenic Quantum IC",
+    "name": "2GS/s SAR ADC for Quantum IC",
     "description": "",
     "outputs": [],
     "note": "",
@@ -357,7 +357,7 @@
     "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/65nm/M15407%2865nm%2C%2024.10.31%29",
     "venue": {
       "label": "IEEE TCAS-I'26",
-      "paper": "KWS-CIM: A Charge-Domain eDRAM-Based Compute-in-Memory Macro for Ternary DFSMN Keyword Spotting"
+      "paper": "KWS-CIM: A Charge-Domain eDRAM-based Compute-in-Memory Macro for Ternary DFSMN Keyword Spotting"
     }
   },
   {
@@ -380,7 +380,7 @@
     "status": "paper",
     "venue": {
       "label": "IEEE JSSC'26",
-      "paper": "All-Digital Ring-Based Injection-Locked Clock Multiplier"
+      "paper": "All-Digital Ring-based Injection-Locked Clock Multiplier"
     }
   },
   {
@@ -468,7 +468,7 @@
     "month": 10,
     "process": "40-nm T",
     "image": "img/chip_new/OSPLL_24.png",
-    "name": "Oversampling PLL",
+    "name": "Reference Oversampling DPLL",
     "description": "",
     "outputs": [],
     "note": "",

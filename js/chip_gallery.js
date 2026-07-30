@@ -223,11 +223,10 @@ $(document).ready(function () {
     var revisedBadge = chip.revised_into ? ' <span class="chip-revised-badge">Revised</span>' : "";
     var reviewH = reviewHTML(chip);
     // Failed: Design Review 를 Root cause 박스 안에 / "Measurement failed" 는 카드 하단에.
-    // 그 외: Design Review 를 상태 문구 바로 뒤(안 2)에 인라인 배치.
+    // 그 외: Design Review 를 상태 문구 아래 한 줄로 배치.
     var rcReview = failed ? reviewH : "";
-    var statusRow = (statusSlot || (!failed && reviewH))
-      ? '<div class="chip-status-row">' + statusSlot + (failed ? "" : reviewH) + "</div>"
-      : "";
+    var statusRow = statusSlot ? '<div class="chip-status-row">' + statusSlot + "</div>" : "";
+    var reviewRow = (!failed && reviewH) ? '<div class="chip-review-row">' + reviewH + "</div>" : "";
     var failedBottom = failed
       ? '<p class="chip-status st-red chip-status-failed-bottom"><span class="chip-status-txt">Meas. Failed</span></p>'
       : "";
@@ -242,20 +241,19 @@ $(document).ready(function () {
           failedBottom +   // Failed: 칩 이미지 아래에 "Measurement failed"
         "</div>" +
         '<div class="chip-info">' +
-          '<div class="chip-title-row' + (failed ? " chip-title-row-desg" : "") + '">' +
+          // 디자이너 사진을 제목 오른쪽에 배치 (모든 칩)
+          '<div class="chip-title-row chip-title-row-desg">' +
             '<p class="chip-name">' + (chip.name || "") +
               failBadge + revisedBadge + failNote +
             "</p>" +
-            // Failed 칩은 세로 길이를 줄이기 위해 디자이너를 제목 오른쪽에 배치
-            (failed ? '<div class="chip-title-desg">' + designerHTML(chip) + "</div>" : "") +
+            '<div class="chip-title-desg">' + designerHTML(chip) + "</div>" +
           "</div>" +
-          // 상태 문구와 Design Review 배지를 한 줄에 (좁으면 배지가 다음 줄로 내려감)
           statusRow +
+          reviewRow +   // Design Review 를 상태 아래 한 줄로 (non-failed)
           rootCauseHTML(chip, rcReview) +
           (desc ? '<p class="chip-desc">' + desc + "</p>" : "") +
           (failed ? "" : keywordsHTML(chip)) +
           outputsRow +
-          (failed ? "" : designerHTML(chip)) +
         "</div>" +
       "</div>"
     );

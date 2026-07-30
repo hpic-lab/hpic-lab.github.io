@@ -4737,6 +4737,8 @@ a.chip-status-venue:hover { background: rgba(55, 138, 221, 0.2); }
 .chip-card2 .chip-title-row-desg .chip-name { flex: 1; min-width: 0; }
 .chip-card2 .chip-title-desg { flex: 0 0 auto; }
 .chip-card2 .chip-title-desg .chip-designers { margin: 0; }
+/* Design Review 를 상태 아래 한 줄로 (non-failed) */
+.chip-card2 .chip-review-row { margin-top: 6px; }
 /* Failed 칩: 칩 이미지 아래의 "Measurement failed" 상태 (가운데 정렬) */
 .chip-card2 .chip-status-failed-bottom { margin: 8px 0 0; justify-content: center; }
 .chip-card2 .chip-status-failed-bottom .chip-status-txt {
