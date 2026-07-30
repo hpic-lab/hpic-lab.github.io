@@ -242,7 +242,6 @@ $(document).ready(function () {
         '<div class="chip-info">' +
           '<div class="chip-title-row">' +
             '<p class="chip-name">' + (chip.name || "") +
-              (fab ? ' <span class="chip-fab ' + fabCls + '">' + fab + "</span>" : "") +
               failBadge + revisedBadge + failNote +
             "</p>" +
           "</div>" +
