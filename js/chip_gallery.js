@@ -229,7 +229,7 @@ $(document).ready(function () {
       ? '<div class="chip-status-row">' + statusSlot + (failed ? "" : reviewH) + "</div>"
       : "";
     var failedBottom = failed
-      ? '<p class="chip-status st-red chip-status-failed-bottom"><span class="chip-status-dot"></span><span class="chip-status-txt">Measurement failed</span></p>'
+      ? '<p class="chip-status st-red chip-status-failed-bottom"><span class="chip-status-dot"></span><span class="chip-status-txt">Failed</span></p>'
       : "";
 
     return (
