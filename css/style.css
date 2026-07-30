@@ -4849,8 +4849,9 @@ a.chip-out:hover { text-decoration: underline; }
   .chip-card2 .chip-thumb { flex: 0 0 120px; width: 120px; height: auto; max-width: none; align-self: flex-start; }
   .chip-card2 .chip-thumb img { height: auto; }
   .chip-card2 .chip-meta { flex: 1 1 0; min-width: 0; }
-  .chip-card2 .chip-card-desg { display: none; }
-  .chip-card2 .chip-title-desg { display: block; flex: 0 0 auto; }
+  /* 디자이너는 제목 아래가 아니라 이미지·상태 행의 오른쪽에 배치 */
+  .chip-card2 .chip-title-desg { display: none; }
+  .chip-card2 .chip-card-desg { display: flex; flex: 0 0 auto; align-self: center; margin-left: auto; }
   /* Failed: 우측 설명이 길어 카드가 높을 때 칩 이미지를 세로 중앙 */
   .chip-card2.chip-card-failed .chip-thumb { align-self: center; }
 }
