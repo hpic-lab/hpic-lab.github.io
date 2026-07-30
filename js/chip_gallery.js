@@ -237,10 +237,12 @@ $(document).ready(function () {
             : '<div class="chip-thumb-tbd">Chip image<br>to be updated</div>') +
         "</div>" +
         '<div class="chip-info">' +
-          '<div class="chip-title-row">' +
+          '<div class="chip-title-row' + (failed ? " chip-title-row-desg" : "") + '">' +
             '<p class="chip-name">' + (chip.name || "") +
               failBadge + revisedBadge + failNote +
             "</p>" +
+            // Failed 칩은 세로 길이를 줄이기 위해 디자이너를 제목 오른쪽에 배치
+            (failed ? '<div class="chip-title-desg">' + designerHTML(chip) + "</div>" : "") +
           "</div>" +
           // 상태 문구와 Design Review 배지를 한 줄에 (좁으면 배지가 다음 줄로 내려감)
           statusRow +
@@ -248,7 +250,7 @@ $(document).ready(function () {
           (desc ? '<p class="chip-desc">' + desc + "</p>" : "") +
           (failed ? "" : keywordsHTML(chip)) +
           outputsRow +
-          designerHTML(chip) +
+          (failed ? "" : designerHTML(chip)) +
         "</div>" +
       "</div>"
     );

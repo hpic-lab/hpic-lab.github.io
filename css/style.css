@@ -4728,6 +4728,15 @@ a.chip-status-venue:hover { background: rgba(55, 138, 221, 0.2); }
   flex-wrap: wrap;   /* 좁아지면 Design Review 묶음이 통째로 다음 줄로 */
   gap: 10px;
 }
+/* Failed 칩: 제목 왼쪽 / 디자이너 오른쪽 (세로 길이 절약) */
+.chip-card2 .chip-title-row-desg {
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.chip-card2 .chip-title-row-desg .chip-name { flex: 1; min-width: 0; }
+.chip-card2 .chip-title-desg { flex: 0 0 auto; }
+.chip-card2 .chip-title-desg .chip-designers { margin: 0; }
 .chip-card2 .chip-title-row .chip-name {
   margin: 0;
 }
