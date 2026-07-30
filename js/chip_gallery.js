@@ -242,12 +242,10 @@ $(document).ready(function () {
           failedOverlay +   // Failed: 칩 이미지 위 오버레이
         "</div>" +
         '<div class="chip-info">' +
-          // 디자이너 사진을 제목 오른쪽에 배치 (모든 칩)
-          '<div class="chip-title-row chip-title-row-desg">' +
+          '<div class="chip-title-row">' +
             '<p class="chip-name">' + (chip.name || "") +
               failBadge + revisedBadge + failNote +
             "</p>" +
-            '<div class="chip-title-desg">' + designerHTML(chip) + "</div>" +
           "</div>" +
           statusRow +
           reviewRow +   // Design Review 를 상태 아래 한 줄로 (non-failed)
@@ -256,6 +254,8 @@ $(document).ready(function () {
           (failed ? "" : keywordsHTML(chip)) +
           outputsRow +
         "</div>" +
+        // 디자이너 사진: 카드 전체의 오른쪽, 세로 중앙 정렬
+        '<div class="chip-card-desg">' + designerHTML(chip) + "</div>" +
       "</div>"
     );
   }
