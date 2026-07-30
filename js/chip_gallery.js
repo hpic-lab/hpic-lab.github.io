@@ -246,6 +246,8 @@ $(document).ready(function () {
             '<p class="chip-name">' + (chip.name || "") +
               failBadge + revisedBadge + failNote +
             "</p>" +
+            // 모바일 전용: 디자이너를 제목 오른쪽에 (데스크톱은 CSS로 숨기고 카드 우측 사용)
+            '<div class="chip-title-desg">' + designerHTML(chip) + "</div>" +
           "</div>" +
           statusRow +
           reviewRow +   // Design Review 를 상태 아래 한 줄로 (non-failed)

@@ -2634,7 +2634,7 @@ nav#navbar-main .navbar-collapse {
 /* ===== Teaching (시안 1: 연도 헤더 + 학기·과정 배지) ===== */
 .teach-year {
   font-size: 1.05rem;
-  font-weight: 700;
+  font-weight: 500;   /* 다른 섹션 연도와 통일 (bold 미사용) */
   color: #2e55be;
   margin: 26px 0 12px;
   padding-bottom: 6px;
@@ -4737,13 +4737,15 @@ a.chip-status-venue:hover { background: rgba(55, 138, 221, 0.2); }
   flex-wrap: wrap;   /* 좁아지면 Design Review 묶음이 통째로 다음 줄로 */
   gap: 10px;
 }
-/* 디자이너 사진: 카드 전체의 오른쪽, 세로 중앙 정렬 */
+/* 디자이너 사진: (데스크톱) 카드 전체의 오른쪽, 세로 중앙 정렬 */
 .chip-card2 .chip-card-desg {
   flex: 0 0 auto;
   margin-left: auto;
   align-self: center;
 }
 .chip-card2 .chip-card-desg .chip-designers { margin: 0; }
+/* 제목 옆 디자이너는 모바일에서만 사용 (데스크톱 숨김) */
+.chip-card2 .chip-title-desg { display: none; }
 /* Design Review 를 상태 아래 한 줄로 (non-failed) */
 .chip-card2 .chip-review-row { margin-top: 6px; }
 /* Failed 칩: 칩 이미지 위 중앙 반투명 오버레이 + 우는 아이콘 */
@@ -4818,8 +4820,13 @@ a.chip-status-venue:hover { background: rgba(55, 138, 221, 0.2); }
 a.chip-out:hover { text-decoration: underline; }
 
 @media (max-width: 576px) {
-  .chip-card2 { flex-direction: column; }
-  .chip-card2 .chip-thumb { width: 100%; max-width: 260px; }
+  /* 모바일: 연번(좌) | 칩 이미지 | 제목·상태(우) 가로 배치, 디자이너는 제목 오른쪽 */
+  .chip-card2 { flex-direction: row; align-items: flex-start; gap: 10px; }
+  .chip-card2 .chip-thumb { width: 108px; height: 108px; max-width: none; }
+  .chip-card2 .chip-num { flex: 0 0 auto; }
+  .chip-card2 .chip-card-desg { display: none; }       /* 카드우측 디자이너 숨김 */
+  .chip-card2 .chip-title-row { justify-content: space-between; align-items: flex-start; gap: 8px; flex-wrap: nowrap; }
+  .chip-card2 .chip-title-desg { display: block; flex: 0 0 auto; }
 }
 
 .chip-card2 .chip-designer {
