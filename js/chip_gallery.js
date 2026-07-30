@@ -118,32 +118,35 @@ $(document).ready(function () {
     //   "IEEE TCAS-II"                                  → 링크 없는 배지
     //   { label, paper: "논문 제목" }                    → 홈페이지 Publications의 해당 논문으로 이동
     //   { label, link: "https://..." }                  → 외부 링크
-    var venue = "";
+    // venue 라벨/링크 파싱
+    var vLabel = "", vPub = "", vHref = "";
     if (chip.venue) {
       var isStr = typeof chip.venue === "string";
-      var label = isStr ? chip.venue : (chip.venue.label || "");
-      if (label) {
-        if (!isStr && chip.venue.paper) {
-          venue = '<a class="chip-status-venue" href="#publications" data-pub-title="' +
-            escAttr(chip.venue.paper) + '">' + label + "</a>";
-        } else if (!isStr && chip.venue.link) {
-          venue = '<a class="chip-status-venue" href="' + chip.venue.link +
-            '" target="_blank" rel="noopener noreferrer">' + label + "</a>";
-        } else {
-          venue = '<span class="chip-status-venue">' + label + "</span>";
-        }
-      }
+      vLabel = isStr ? chip.venue : (chip.venue.label || "");
+      if (!isStr && chip.venue.paper) vPub = chip.venue.paper;
+      else if (!isStr && chip.venue.link) vHref = chip.venue.link;
     }
-    // "in" 연결어: Paper accepted / Paper in preparation / Published 상태 + venue 가 있을 때
-    var IN_STATUSES = ["accepted", "paper", "published"];
-    var inWord = (venue && IN_STATUSES.indexOf(chip.status) !== -1)
-      ? '<span class="chip-status-in">in</span>' : "";
+    function venueMarkup(cls) {
+      if (!vLabel) return "";
+      if (vPub) return '<a class="' + cls + '" href="#publications" data-pub-title="' + escAttr(vPub) + '">' + vLabel + "</a>";
+      if (vHref) return '<a class="' + cls + '" href="' + vHref + '" target="_blank" rel="noopener noreferrer">' + vLabel + "</a>";
+      return '<span class="' + cls + '">' + vLabel + "</span>";
+    }
     // 과제(수행) 배지: 논문 대신 과제 산출물로 마무리된 칩에 과제명을 표기
     var project = "";
     if (chip.project) {
       project = '<span class="chip-status-project">' + escAttr(chip.project) + "</span>";
     }
-    return '<p class="chip-status ' + s.c + '"><span class="chip-status-dot"></span><span class="chip-status-txt">' + s.t + "</span>" + inWord + venue + project + "</p>";
+    // venue 가 있는 논문 상태: "저널명 (상태)" 회색톤 표기 (배지·"Paper accepted in" 문구 없음)
+    var PAREN = { accepted: "Accepted", paper: "In Preparation", review: "In Review", published: "Published" };
+    if (vLabel && PAREN[chip.status]) {
+      return '<p class="chip-status ' + s.c + '"><span class="chip-status-dot"></span>' +
+        venueMarkup("chip-status-venue") +
+        '<span class="chip-status-paren">(' + PAREN[chip.status] + ")</span>" +
+        project + "</p>";
+    }
+    // 그 외 상태: 기존 문구 (+ venue 배지가 있으면 표시)
+    return '<p class="chip-status ' + s.c + '"><span class="chip-status-dot"></span><span class="chip-status-txt">' + s.t + "</span>" + venueMarkup("chip-status-venue") + project + "</p>";
   }
 
   // 키워드 태그 (임시, 최대 5개)

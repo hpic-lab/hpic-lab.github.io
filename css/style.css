@@ -4502,10 +4502,10 @@ section {
   white-space: nowrap;
   text-decoration: none;
 }
-/* 상태 문구와 venue 배지 사이 "in" 연결어 (flex gap 사용, 마진 없음) */
-.chip-card2 .chip-status-in {
-  color: #6b7280;
-  font-size: 0.9rem;
+/* 논문 상태: 저널명 배지 뒤 (상태) 회색 텍스트 */
+.chip-card2 .chip-status-paren {
+  color: #8a8a84;
+  font-size: 0.95rem;
 }
 
 /* 실패 원인(Root cause) 박스 */
