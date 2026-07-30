@@ -181,7 +181,9 @@ $(document).ready(function () {
   function rootCauseHTML(chip, reviewHtml) {
     var reasons = (chip && chip.fail_reasons) || [];
     if (!reasons.length) return "";
-    var lis = reasons.map(function (r) { return "<li>" + r + "</li>"; }).join("");
+    // fail_note(강조 배지)는 첫 번째 원인 항목 오른쪽에 표시
+    var note = chip.fail_note ? ' <span class="chip-fail-note">' + chip.fail_note + "</span>" : "";
+    var lis = reasons.map(function (r, i) { return "<li>" + r + (i === 0 ? note : "") + "</li>"; }).join("");
     var revised = chip.revised_into
       ? '<div class="chip-rc-revised">&#8594; ' + chip.revised_into + "</div>"
       : "";
@@ -238,7 +240,7 @@ $(document).ready(function () {
         // 제목 줄 (데스크톱: 이미지 오른쪽 상단 / 모바일: 연번 옆 최상단). 디자이너는 제목 오른쪽.
         '<div class="chip-title-row">' +
           '<p class="chip-name">' + (chip.name || "") +
-            failBadge + revisedBadge + failNote +
+            failBadge + revisedBadge +
           "</p>" +
           // Failed 칩은 디자이너 아이콘 미표시 (추후 복원하려면 아래 조건 제거)
           (failed ? "" : '<div class="chip-title-desg">' + designerHTML(chip) + "</div>") +

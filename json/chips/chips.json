@@ -404,7 +404,6 @@
     "status": "failed",
     "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/65nm/M15407%2865nm%2C%2024.10.31%29",
     "fail_reasons": [
-      "Internal digital reset signal issue",
       "Verified only under simulation-favorable conditions, without modeling real operation",
       "Mismatched port connection between the two modules left the rstb input unconnected (floating)"
     ]
@@ -430,9 +429,9 @@
     "status": "failed",
     "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/65nm/M15407%2865nm%2C%2024.10.31%29",
     "fail_reasons": [
-      "I2C communication failed"
-    ],
-    "fail_note": "Do not repeat the same mistake!"
+      "I2C communication failed",
+      "2nd Failure, do not repeat the same mistake!"
+    ]
   },
   {
     "year": 2024,
@@ -515,7 +514,7 @@
       "DLF timing violation",
       "Both stemmed from inadequate simulation — top-level and co-simulation not properly performed"
     ],
-    "revised_into": "Revised into the 2025 PI-based CDR (28-nm T)"
+    "revised_into": "Revised into Chip #19"
   },
   {
     "year": 2024,
@@ -542,7 +541,7 @@
       "Incomplete co-simulation and top-level verification before tape-out",
       "Inadequate stand-alone analog simulation of individual circuits"
     ],
-    "revised_into": "Revised into the Nov-2024 2T & 3T eDRAM CIM (65-nm T)"
+    "revised_into": "Revised into Chip #13 & #14"
   },
   {
     "year": 2024,
@@ -567,7 +566,7 @@
     "fail_reasons": [
       "I2C communication failed"
     ],
-    "revised_into": "Revised into Chip #10 (Oct-2024 ILO-based PUF, 65-nm T)"
+    "revised_into": "Revised into Chip #10"
   },
   {
     "year": 2023,
