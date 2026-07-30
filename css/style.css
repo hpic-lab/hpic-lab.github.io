@@ -4767,7 +4767,10 @@ a.chip-status-venue:hover { background: rgba(55, 138, 221, 0.2); }
 
 /* 데스크톱 전용(안 1): 상태를 제목 바로 아래 작은 부제로, Design Review·디자이너 살짝 들여쓰기 */
 @media (min-width: 577px) {
-  .chip-card2:not(.chip-card-failed) .chip-status { font-size: 0.85rem; }
+  .chip-card2:not(.chip-card-failed) { row-gap: 0; }
+  .chip-card2:not(.chip-card-failed) .chip-name { margin: 0 0 0; }
+  .chip-card2:not(.chip-card-failed) .chip-status { font-size: 0.85rem; margin: 0; }
+  .chip-card2:not(.chip-card-failed) .chip-status-row { margin-top: -1px; }
   .chip-card2:not(.chip-card-failed) .chip-review-row { margin-top: 12px; padding-left: 14px; }
   .chip-card2:not(.chip-card-failed) .chip-card-desg { padding-left: 14px; }
 }
