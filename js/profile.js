@@ -162,8 +162,11 @@ $(document).ready(function () {
         const list = groups[sec.key];
         if (list.length === 0) return;
 
-        container.append(`<div class="alumni-section-title ${sec.cls}">${sec.label} (${list.length})</div>`);
-        const grid = $('<div class="people-grid people-grid-compact"></div>');
+        // M.S. Alumni 는 펼침, 그 외(B.S./기타)는 접힘 상태로 시작
+        const open = (sec.key === "ms");
+        container.append(`<div class="alumni-section-title alumni-toggle ${sec.cls}${open ? "" : " collapsed"}" role="button" tabindex="0">${sec.label} (${list.length})</div>`);
+        const grid = $('<div class="people-grid people-grid-compact alumni-fold"></div>');
+        if (!open) grid.hide();
 
         list.forEach((person) => {
           let foundKey = null;
@@ -197,6 +200,16 @@ $(document).ready(function () {
         });
 
         container.append(grid);
+      });
+
+      // 섹션 제목 클릭 시 해당 그리드 접기/펼치기
+      container.off("click.alumnifold keydown.alumnifold");
+      container.on("click.alumnifold", ".alumni-toggle", function () {
+        $(this).toggleClass("collapsed");
+        $(this).next(".alumni-fold").stop(true, false).slideToggle(200);
+      });
+      container.on("keydown.alumnifold", ".alumni-toggle", function (e) {
+        if (e.key === "Enter" || e.key === " ") { e.preventDefault(); $(this).trigger("click"); }
       });
     });
   }

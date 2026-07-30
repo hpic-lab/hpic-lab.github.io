@@ -1671,6 +1671,10 @@ nav#navbar-main .navbar-collapse {
     margin-left: 16px;   /* 다른 섹션(Chip Gallery 등)과 동일 레벨 */
     padding-left: 0;
   }
+  /* Alumni(아코디언 헤더)도 동일 레벨(16px)로 들여쓰기 — 밑줄도 함께 이동 */
+  #people .accordion .ui-accordion-header {
+    margin-left: 16px;
+  }
   #people .col-lg-8 > h3::before {
     content: "";
     position: absolute; left: 0; right: 0; bottom: 100%;
@@ -3117,6 +3121,16 @@ nav#navbar-main .navbar-collapse {
   padding-bottom: 5px;
   margin: 22px 0 12px;
 }
+/* M.S./B.S. Alumni 섹션 접기/펼치기 토글 */
+.alumni-section-title.alumni-toggle { cursor: pointer; }
+.alumni-section-title.alumni-toggle::after {
+  content: "\25BE";   /* ▾ */
+  float: right;
+  font-size: 0.95em;
+  color: currentColor;
+  transition: transform 0.2s;
+}
+.alumni-section-title.alumni-toggle.collapsed::after { transform: rotate(-90deg); }
 
 .alumni-section-title:first-child {
   margin-top: 0;
