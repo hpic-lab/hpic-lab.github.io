@@ -4379,6 +4379,8 @@ section {
 .chip-card2 {
   display: grid;
   grid-template-columns: auto auto 1fr;
+  /* title 행은 딱 맞게(auto), meta 행이 이미지의 남는 높이를 흡수(1fr) → 제목 아래 빈 공간 방지 */
+  grid-template-rows: auto 1fr;
   grid-template-areas:
     "num thumb title"
     "num thumb meta";
@@ -4754,7 +4756,7 @@ a.chip-status-venue:hover { background: rgba(55, 138, 221, 0.2); }
 }
 /* 디자이너 사진: Design Review 아이콘 하단(meta 안) 좌측 정렬 */
 .chip-card2 .chip-card-desg {
-  margin-top: 8px;
+  margin-top: 14px;
 }
 .chip-card2 .chip-card-desg .chip-designers { margin: 0; }
 /* 제목 옆 디자이너는 모바일에서만 사용 (데스크톱 숨김) */
@@ -4856,7 +4858,7 @@ a.chip-out:hover { text-decoration: underline; }
   .chip-card2 .chip-meta { flex: 1 1 0; min-width: 0; }
   /* 디자이너: meta 안(Design Review 아이콘 하단, 칩 이미지 우측)에 표시 */
   .chip-card2 .chip-title-desg { display: none; }
-  .chip-card2 .chip-card-desg { display: block; margin-top: 8px; }
+  .chip-card2 .chip-card-desg { display: block; margin-top: 14px; }
   /* Failed: 우측 설명이 길어 카드가 높을 때 칩 이미지를 세로 중앙 */
   .chip-card2.chip-card-failed .chip-thumb { align-self: center; }
 }
