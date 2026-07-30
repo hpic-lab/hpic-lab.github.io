@@ -1749,13 +1749,10 @@ nav#navbar-main .navbar-collapse {
   }
   /* 완료 목록(Completed Projects)의 추가 들여쓰기(36px) 제거 — Research Projects 위치와 정렬 */
   #research .completed-projects { margin-left: 0; }
-  /* Level 2: Upcoming Tape-outs 헤더 (Filter는 Chip Gallery 제목에 인라인) */
+  /* Upcoming Tape-outs 헤더: 상단 고정 해제 */
   #chip-tapeout-schedule .tos2-head {
-    position: -webkit-sticky;
-    position: sticky;
-    top: calc(var(--res-nav-h, 56px) + var(--res-title-h, 44px) + var(--res-sub-h, 40px));
+    position: static;
     background: var(--tos-bg, #f2f6fc);
-    z-index: 870;
   }
   /* Level 3: 연도(2026 등) — Chip Gallery 하위.
      요소는 전체 폭(배경으로 아래 칩 내용이 비쳐 보이지 않게), 텍스트와 밑줄만 32px 들여쓰기 */
@@ -4344,20 +4341,9 @@ section {
     background: var(--section-bg, #fff);
   }
   /* Upcoming Tape-outs 헤더도 Chip Gallery 제목 아래에 고정 (사이 여백 확보) */
+  /* Upcoming Tape-outs 헤더: 상단 고정 해제 */
   #chip-tapeout-schedule .tos2-head {
-    position: -webkit-sticky;
-    position: sticky;
-    top: calc(100px + var(--res-dsub-h, 42px) + 12px);
-    z-index: 5;
-    background: var(--tos-bg, #f2f6fc);
-  }
-  #chip-tapeout-schedule .tos2-head::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 100%;
-    height: 12px;   /* 박스 상단 패딩(14px) 안쪽으로 — 둥근 모서리 위로 삐져나오지 않게 */
+    position: static;
     background: var(--tos-bg, #f2f6fc);
   }
 }
