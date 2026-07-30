@@ -122,15 +122,28 @@ document.addEventListener("DOMContentLoaded", function () {
     function doScroll() {
       // 지연 로딩 이미지를 즉시 로드시켜 레이아웃을 확정 (스크롤 후 밀림 방지)
       document.querySelectorAll('img[loading="lazy"]').forEach(function (img) { img.loading = "eager"; });
-      function go() {
+      // 비동기 콘텐츠 로드/제목 이동으로 레이아웃이 계속 바뀌므로, 짧은 간격으로 재보정.
+      // 단, 사용자가 직접 스크롤하면 즉시 중단(끌어당김 방지).
+      var cancelled = false;
+      function onUser() { cancelled = true; cleanup(); }
+      function cleanup() {
+        window.removeEventListener("wheel", onUser);
+        window.removeEventListener("touchmove", onUser);
+        window.removeEventListener("keydown", onUser);
+      }
+      window.addEventListener("wheel", onUser, { passive: true });
+      window.addEventListener("touchmove", onUser, { passive: true });
+      window.addEventListener("keydown", onUser);
+      var start = Date.now();
+      (function go() {
+        if (cancelled) return;
         var t = getTarget();
         var navH = ($("#navbar-main").outerHeight() || 56);
-        var y = window.pageYOffset + t.getBoundingClientRect().top - navH;
-        window.scrollTo({ top: Math.max(0, y), behavior: "auto" });
-      }
-      go();
-      // 이미지 로드/비동기 렌더로 인한 밀림을 여러 번 재보정
-      [120, 350, 700, 1200].forEach(function (t) { setTimeout(go, t); });
+        var y = Math.max(0, window.pageYOffset + t.getBoundingClientRect().top - navH);
+        if (Math.abs(y - window.pageYOffset) > 1) window.scrollTo({ top: y, behavior: "auto" });
+        if (Date.now() - start < 2500) setTimeout(go, 100);
+        else cleanup();
+      })();
     }
     var $nav = $(".navbar-collapse");
     if ($nav.hasClass("show")) {
