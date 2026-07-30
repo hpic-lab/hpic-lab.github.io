@@ -94,18 +94,31 @@ $(document).ready(function () {
     if (!isJournal) return "";
     var rounds = pub.review || [];
     if (!rounds.length) return "";
-    var chips = rounds.map(function (r) {
+    var nextOrd = function (r) {
+      var mp = { "1st": "2nd", "2nd": "3rd", "3rd": "4th", "4th": "5th", "5th": "6th" };
+      return mp[r] || r;
+    };
+    var chips = rounds.map(function (r, i) {
       if (!r || typeof r !== "object") return "";
       var out = "";
-      var subLabel = (r.round ? r.round + " " : "") + "Submission";
-      var subLink = r.submission || r.link || "";
-      out += subLink
-        ? '<a class="pub2-rv-link" href="' + subLink + '" target="_blank" rel="noopener noreferrer">' + subLabel + "</a>"
-        : '<span class="pub2-rv-link pub2-rv-tbd" title="To be updated">' + subLabel + "</span>";
+      var prev = rounds[i - 1];
+      var prevHadResponse = prev && typeof prev === "object" && prev.response;
+      // 이전 라운드에 response(응답 서한)가 있으면, 이 라운드의 재제출은 그 response 칩이 대표하므로 생략(중복 방지)
+      if (!prevHadResponse) {
+        // 1st = 최초 투고, 재제출(2nd+)은 응답 서한을 포함하므로 "w/ Response"
+        var subLabel = (r.round === "1st" || !r.round)
+          ? ((r.round ? r.round + " " : "") + "Submission")
+          : (r.round + " Submission w/ Response");
+        var subLink = r.submission || r.link || "";
+        out += subLink
+          ? '<a class="pub2-rv-link" href="' + subLink + '" target="_blank" rel="noopener noreferrer">' + subLabel + "</a>"
+          : '<span class="pub2-rv-link pub2-rv-tbd" title="To be updated">' + subLabel + "</span>";
+      }
       if (r.response) {
-        var respLabel = (r.round ? r.round + " " : "") + "Response";
+        // 응답 서한 = 다음 라운드의 "재제출(w/ Response)" 을 대표
+        var respLabel = nextOrd(r.round) + " Submission w/ Response";
         out += '<a class="pub2-rv-link pub2-rv-response" href="' + r.response +
-          '" target="_blank" rel="noopener noreferrer" title="Response letter (Members only)">' +
+          '" target="_blank" rel="noopener noreferrer" title="Resubmission with response letter (Members only)">' +
           '<span class="pub2-rv-ic" aria-hidden="true">&#128221;</span>' + respLabel + "</a>";
       }
       return out;
