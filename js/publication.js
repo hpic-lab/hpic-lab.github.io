@@ -94,6 +94,8 @@ $(document).ready(function () {
     if (!isJournal) return "";
     var rounds = pub.review || [];
     if (!rounds.length) return "";
+    // 모든 리뷰 칩에 동일 문서 아이콘(📄)·동일 스타일 (안 2)
+    var ICON = '<span class="pub2-rv-ic" aria-hidden="true">&#128196;</span>';
     var chips = rounds.map(function (r) {
       if (!r || typeof r !== "object") return "";
       var out = "";
@@ -101,13 +103,13 @@ $(document).ready(function () {
       var subLabel = r.subLabel || ((r.round ? r.round + " " : "") + "Submission");
       var subLink = r.submission || r.link || "";
       out += subLink
-        ? '<a class="pub2-rv-link" href="' + subLink + '" target="_blank" rel="noopener noreferrer">' + subLabel + "</a>"
-        : '<span class="pub2-rv-link pub2-rv-tbd" title="To be updated">' + subLabel + "</span>";
+        ? '<a class="pub2-rv-link" href="' + subLink + '" target="_blank" rel="noopener noreferrer">' + ICON + subLabel + "</a>"
+        : '<span class="pub2-rv-link pub2-rv-tbd" title="To be updated">' + ICON + subLabel + "</span>";
       if (r.response) {
         var respLabel = r.respLabel || ((r.round ? r.round + " " : "") + "Response");
-        out += '<a class="pub2-rv-link pub2-rv-response" href="' + r.response +
+        out += '<a class="pub2-rv-link" href="' + r.response +
           '" target="_blank" rel="noopener noreferrer" title="Response letter (Members only)">' +
-          '<span class="pub2-rv-ic" aria-hidden="true">&#128221;</span>' + respLabel + "</a>";
+          ICON + respLabel + "</a>";
       }
       return out;
     }).join("");
