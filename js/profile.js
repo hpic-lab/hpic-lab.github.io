@@ -165,8 +165,10 @@ $(document).ready(function () {
         // M.S. Alumni 는 펼침, 그 외(B.S./기타)는 접힘 상태로 시작
         const open = (sec.key === "ms");
         container.append(`<div class="alumni-section-title alumni-toggle ${sec.cls}${open ? "" : " collapsed"}" role="button" tabindex="0">${sec.label} (${list.length})</div>`);
-        const grid = $('<div class="people-grid people-grid-compact alumni-fold"></div>');
-        if (!open) grid.hide();
+        // 접기 대상은 래퍼(.alumni-fold) — .people-grid 는 display:flex !important 라 직접 hide 불가
+        const foldWrap = $('<div class="alumni-fold"></div>');
+        if (!open) foldWrap.hide();
+        const grid = $('<div class="people-grid people-grid-compact"></div>');
 
         list.forEach((person) => {
           let foundKey = null;
@@ -199,7 +201,8 @@ $(document).ready(function () {
           `);
         });
 
-        container.append(grid);
+        foldWrap.append(grid);
+        container.append(foldWrap);
       });
 
       // 섹션 제목 클릭 시 해당 그리드 접기/펼치기
