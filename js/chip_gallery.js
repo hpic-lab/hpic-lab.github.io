@@ -491,7 +491,7 @@ $(document).ready(function () {
             "<li>Always verify <mark>functionality</mark> with I2C/SPI + PAD connected.</li>" +
             "<li>For timing-critical nets, after routing place a <mark>label at the far end</mark> of the signal path, then check signal quality via R/C/CC extraction.</li>" +
             "<li>Finish <mark>power routing &amp; decap placement</mark> with enough time.</li>" +
-            "<li>When collaborating across groups, allow ample <mark>timeline</mark> and always run co-/top-simulation.</li>" +
+            "<li>When collaborating across groups, allow <mark>enough time</mark> and always run co-/top-simulation.</li>" +
             "<li>Pass not only <mark>LVS</mark> but also <mark>ERC</mark>.</li>" +
           "</ol>" +
         "</div>"

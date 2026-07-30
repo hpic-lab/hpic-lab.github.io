@@ -405,8 +405,8 @@
     "status": "failed",
     "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/65nm/M15407%2865nm%2C%2024.10.31%29",
     "fail_reasons": [
-      "Verified only under simulation-favorable conditions, without modeling real operation",
-      "Mismatched port connection between the two modules left the rstb input unconnected (floating)"
+      "Verified only under simulation-favorable conditions.",
+      "Mismatched port connection between the two modules (floating)"
     ],
     "revised_into": "Revised into #25"
   },
@@ -432,7 +432,7 @@
     "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/65nm/M15407%2865nm%2C%2024.10.31%29",
     "fail_reasons": [
       "I2C communication failed",
-      { "text": "2nd Failure, do not repeat the same mistake!", "highlight": true }
+      "<strong><u>2nd Failure, do not repeat the same mistake!</u></strong>"
     ]
   },
   {
@@ -458,11 +458,9 @@
     "status": "failed",
     "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/40nm/ADC_RX_1",
     "fail_reasons": [
-      "LVS failed",
-      "No co-simulation across different blocks",
-      "Poor allocation of design time"
+      "No co-simulation (ADC + DSP)",
+      "LVS failed (<strong><u>Unacceptable!</u></strong>)"
     ],
-    "fail_note": "Unacceptable!",
     "revised_into": "Revised into #20"
   },
   {
@@ -486,9 +484,7 @@
     "status": "failed",
     "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/40nm/OSPLL",
     "fail_reasons": [
-      "Internal signal routed over an excessively long path without a buffer",
-      "Assumed to work, so the block was left unsimulated",
-      "A top-level simulation would have caught the issue"
+      "Internal signal routed over extremely long without buffer"
     ]
   },
   {
@@ -513,9 +509,9 @@
     "status": "failed",
     "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/28nm/M14942%2828nm%2C%2024.5.29%29",
     "fail_reasons": [
-      "Equalization performance degraded by CTLE operating-point setup failure",
-      "DLF timing violation",
-      "Both stemmed from inadequate simulation — top-level and co-simulation not properly performed"
+      "CTLE performance degraded",
+      "DLF timing violation (CDC)",
+      "Inadequate simulation — top-level and co-simulation not properly performed"
     ],
     "revised_into": "Revised into #19"
   },
@@ -618,9 +614,7 @@
     ],
     "status": "failed",
     "fail_reasons": [
-      "Improper sizing of the back-to-back inverters in the 2-stage ring oscillator",
-      "Bug masked in simulation by forcing an initial condition (.ic)",
-      "No start-up circuit included"
+      "Improper sizing of back-to-back inverters in 2-stage oscillator"
     ],
     "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/65nm/M14253(23.11.29)/Design%20Review_JihoKim_1215.pdf"
   },
@@ -645,9 +639,7 @@
     ],
     "status": "failed",
     "fail_reasons": [
-      "Improper sizing of the back-to-back inverters in the 2-stage ring oscillator",
-      "Bug masked in simulation by forcing an initial condition (.ic)",
-      "No start-up circuit included"
+      "Improper sizing of back-to-back inverters in 2-stage oscillator"
     ],
     "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/65nm/M14467(23.11.29)/Design_Review_final_%EB%B0%95%EA%B7%9C%EB%9E%80_M14467.pptx"
   },
@@ -670,9 +662,7 @@
     ],
     "status": "failed",
     "fail_reasons": [
-      "Improper sizing of the back-to-back inverters in the 2-stage ring oscillator",
-      "Bug masked in simulation by forcing an initial condition (.ic)",
-      "No start-up circuit included"
+      "Improper sizing of back-to-back inverters in 2-stage oscillator"
     ],
     "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/65nm/M14467(23.11.29)/Design_Review_231126.pptx"
   }
