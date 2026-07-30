@@ -216,7 +216,8 @@
       "No buffer in front of the ADC (clock feedthrough)",
       "No co-simulation with the ADC",
       "Lack of coordination between different block designers"
-    ]
+    ],
+    "revised_into": "To be revised into Chip #34"
   },
   {
     "year": 2025,
