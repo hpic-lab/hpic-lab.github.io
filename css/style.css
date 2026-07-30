@@ -3385,8 +3385,10 @@ nav#navbar-main .navbar-collapse {
 /* 탭 (시안 3: 비활성 회색, 활성만 카테고리 색 + 테두리 + 그림자) */
 /* News 카테고리 칩과 동일한 크기/형태/색상 (연한 배경 + 색 텍스트, active=2px 색 테두리) */
 .pub2-tab {
+  font-family: inherit;   /* button 기본 폰트 대신 본문 폰트 사용 → News 칩과 동일 */
   font-size: 0.85rem;
   font-weight: 600;
+  line-height: 1.5;
   padding: 3px 12px;
   border-radius: 5px;
   border: 2px solid transparent;

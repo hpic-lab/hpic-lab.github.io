@@ -324,7 +324,8 @@ $(document).ready(function () {
         : '<div class="pub-figures">' + figuresHTML(pub) + "</div>";
 
       body.append(
-        '<div class="pub2-entry"' + (entryId ? ' id="' + entryId + '"' : "") + ">" +
+        '<div class="pub2-entry" data-yr="' + year + '" data-old="' + (isOld ? 1 : 0) +
+          '" data-sv="' + sortVal(pub) + '" data-ptype="paper"' + (entryId ? ' id="' + entryId + '"' : "") + ">" +
           '<div class="pub2-num">' + num + "</div>" +
           '<div class="pub2-side">' +
             '<div class="pub2-venue">' + v + "</div>" +
@@ -382,7 +383,8 @@ $(document).ready(function () {
       );
 
       body.append(
-        '<div class="pub2-entry">' +
+        '<div class="pub2-entry" data-yr="' + year + '" data-old="' + (isOld ? 1 : 0) +
+          '" data-sv="' + sortVal(pub) + '" data-ptype="patent">' +
           '<div class="pub2-num">' + n-- + "</div>" +
           '<div class="pub2-side">' +
             '<div class="pub2-venue">' + (pub.type || "") + "</div>" +
@@ -414,8 +416,8 @@ $(document).ready(function () {
       '<div class="pub2-side-nav">' +
         '<p class="pub2-notice">&dagger; Equally Credited Authors</p>' +
         '<div class="pub2-side-tabs">' +
-          '<button type="button" class="pub2-tab pub2-tab-all active" data-target="all">All</button>' +
-          '<button type="button" class="pub2-tab pub2-tab-journal" data-target="journal">Journal</button>' +
+          '<button type="button" class="pub2-tab pub2-tab-all" data-target="all">All</button>' +
+          '<button type="button" class="pub2-tab pub2-tab-journal active" data-target="journal">Journal</button>' +
           '<button type="button" class="pub2-tab pub2-tab-conference" data-target="conference">Conference</button>' +
           '<button type="button" class="pub2-tab pub2-tab-patent" data-target="patent">Patent</button>' +
         "</div>" +
@@ -424,6 +426,7 @@ $(document).ready(function () {
     );
 
     container.append(
+      '<div class="pub2-list" id="pub2-all" style="display:none"></div>' +
       '<div class="pub2-list" id="pub2-journal"></div>' +
       '<div class="pub2-list" id="pub2-conference" style="display:none"></div>' +
       '<div class="pub2-list" id="pub2-patent" style="display:none"></div>'
@@ -437,18 +440,52 @@ $(document).ready(function () {
     function refreshYearLinks(target) {
       var linksDiv = $("#publications .pub2-year-links");
       linksDiv.empty();
-      var lists = target === "all" ? ["journal", "conference", "patent"] : [target];
-      lists.forEach(function (t) {
-        $("#pub2-" + t)
-          .find(".pub2-year")
-          .each(function () {
-            var id = $(this).attr("id");
-            var label = $(this).text();
-            linksDiv.append('<span class="pub2-year-link" data-yid="' + id + '">' + label + "</span>");
-          });
-      });
+      var listId = target === "all" ? "pub2-all" : "pub2-" + target;
+      $("#" + listId)
+        .find(".pub2-year")
+        .each(function () {
+          var id = $(this).attr("id");
+          var label = $(this).text();
+          linksDiv.append('<span class="pub2-year-link" data-yid="' + id + '">' + label + "</span>");
+        });
     }
-    refreshYearLinks("all");
+
+    // "All": Journal/Conference/Patent 항목을 연도별로 병합(월순, Patent 는 각 연도 최하단)
+    function buildAllList() {
+      var $all = $("#pub2-all");
+      $all.empty();
+      var items = [];
+      $("#pub2-journal, #pub2-conference, #pub2-patent").find(".pub2-entry").each(function () {
+        var $e = $(this);
+        items.push({
+          yr: $e.attr("data-yr"),
+          old: $e.attr("data-old") === "1",
+          sv: parseFloat($e.attr("data-sv")) || 0,
+          patent: $e.attr("data-ptype") === "patent",
+          node: $e.clone().removeAttr("id")
+        });
+      });
+      var yearsSet = {};
+      items.forEach(function (it) { if (!it.old) yearsSet[it.yr] = 1; });
+      var years = Object.keys(yearsSet).map(Number).sort(function (a, b) { return b - a; });
+      function appendGroup(label, id, collapsed, group) {
+        group.sort(function (a, b) {
+          if (a.patent !== b.patent) return a.patent ? 1 : -1;   // Patent 는 뒤로
+          return b.sv - a.sv;                                     // 그 외 월/상태 내림차순
+        });
+        $all.append('<div class="pub2-year' + (collapsed ? " collapsed" : "") + '" id="' + id + '">' + label + "</div>");
+        var $body = $('<div class="pub2-year-body"' + (collapsed ? ' style="display:none"' : "") + "></div>");
+        group.forEach(function (it) { $body.append(it.node); });
+        $all.append($body);
+      }
+      years.forEach(function (y) {
+        appendGroup(String(y), "pub-all-" + y, false, items.filter(function (it) { return !it.old && Number(it.yr) === y; }));
+      });
+      var oldItems = items.filter(function (it) { return it.old; });
+      if (oldItems.length) appendGroup(OLD_GROUP_LABEL, "pub-all-old", true, oldItems);
+    }
+
+    refreshYearLinks("journal");
 
     // 모바일: 리뷰 칩이 디자이너 우측에 못 들어가 줄바꿈되면 자기 줄에서 좌측정렬(.pub2-review-wrapped)
     function markWrappedReviews() {
@@ -496,10 +533,11 @@ $(document).ready(function () {
     function activateTab(target) {
       $("#publications .pub2-tab").removeClass("active");
       $('#publications .pub2-tab[data-target="' + target + '"]').addClass("active");
+      container.find(".pub2-list").hide();
       if (target === "all") {
-        container.find(".pub2-list").show();
+        buildAllList();
+        $("#pub2-all").show();
       } else {
-        container.find(".pub2-list").hide();
         $("#pub2-" + target).show();
       }
       refreshYearLinks(target);
@@ -512,8 +550,8 @@ $(document).ready(function () {
       scrollToEl($("#publications"));
     });
 
-    // 초기 상태: All (모든 목록 표시)
-    activateTab("all");
+    // 초기 상태: Journal
+    activateTab("journal");
 
     // 모바일: ECA+탭(+연도링크) 묶음을 콘텐츠 상단으로 옮겨 스크롤 시 상단 고정.
     // 데스크톱에서는 사이드바 원위치로 되돌린다.
