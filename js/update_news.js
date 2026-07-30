@@ -24,6 +24,15 @@ $(document).ready(function () {
   var OPEN_YEARS_COUNT = 1; // 최신 몇 개 연도를 펼친 상태로 시작할지 (나머지는 접힘)
 
   $.getJSON("json/news/news.json").done(function (items) {
+    // 아직 오지 않은 달(미래 날짜)의 뉴스는 숨긴다. 해당 연·월이 되면 자동으로 노출.
+    // 예: 2026.09 항목은 2026년 9월 1일부터 표시됨.
+    var _now = new Date();
+    var _curYM = _now.getFullYear() * 100 + (_now.getMonth() + 1);
+    items = (items || []).filter(function (it) {
+      var y = Number(it.year), m = Number(it.month) || 1;
+      return !y || (y * 100 + m) <= _curYM;
+    });
+
     // ===== 프로필 모달 자동 연동용: Award 뉴스 색인 =====
     // <u>이름</u>으로 수상자를 추출한다. profile.js가 이름 매칭으로 가져간다.
     window.newsAwards = items
