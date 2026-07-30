@@ -675,12 +675,9 @@ $(document).ready(function () {
         '<div class="mpub-body">' + body + "</div>" +
       "</div>";
     });
-    // 진승모/이재건: "Awards & Funds"로 표기하고 석사과정생 연구장려금만 표시
+    // 진승모/이재건: 제목을 "Awards & Funds"로 표기 (수상 항목은 모두 표시)
     const isFundsPerson = (name === "Seung-Mo Jin" || name === "Jae-Geon Lee");
     let parsedAwards = autoAwards.concat(manualAwards);
-    if (isFundsPerson) {
-      parsedAwards = parsedAwards.filter((h) => h.indexOf("연구장려금") !== -1);
-    }
     $("#modal-Awards-title span").text(isFundsPerson ? "Awards & Funds" : "Awards");
     if (parsedAwards.length > 0) {
       $("#modal-Awards-title").show();
