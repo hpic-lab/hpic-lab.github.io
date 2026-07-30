@@ -2778,7 +2778,7 @@ nav#navbar-main .navbar-collapse {
 
 /* 연구 대표 이미지 카드화 */
 .hpic-img {
-  border: 1px solid #e5e5e5 !important;
+  border: none !important;
   border-radius: 10px;
   box-shadow: none !important;
 }
@@ -3680,6 +3680,17 @@ nav#navbar-main .navbar-collapse {
 
   .pub2-body {
     flex-basis: 100%;
+  }
+  /* 리뷰 칩(1st/2nd Submission 등)이 우측에 다 못 들어가 줄바꿈될 때는
+     자기 줄 전체 폭에서 좌측정렬 (우측 넘침 방지) */
+  .pub2-review {
+    margin-left: auto;
+    justify-content: flex-end;
+  }
+  .pub2-review.pub2-review-wrapped {
+    flex: 0 0 100%;
+    margin-left: 0;
+    justify-content: flex-start;
   }
 }
 

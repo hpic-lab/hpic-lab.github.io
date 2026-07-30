@@ -446,6 +446,24 @@ $(document).ready(function () {
     }
     refreshYearLinks("journal");
 
+    // 모바일: 리뷰 칩이 디자이너 우측에 못 들어가 줄바꿈되면 자기 줄에서 좌측정렬(.pub2-review-wrapped)
+    function markWrappedReviews() {
+      var mobile = window.matchMedia("(max-width: 576px)").matches;
+      $(".pub2-review").each(function () {
+        var $r = $(this);
+        $r.removeClass("pub2-review-wrapped");
+        if (!mobile) return;
+        if (!this.offsetParent) return;   // 숨겨진 탭은 제외
+        var prev = this.previousElementSibling;
+        if (prev && this.offsetTop > prev.offsetTop + 2) $r.addClass("pub2-review-wrapped");
+      });
+    }
+    window.markWrappedReviews = markWrappedReviews;
+    setTimeout(markWrappedReviews, 300);
+    $(window).on("load.pubwrap", markWrappedReviews);
+    var _wrapT;
+    $(window).on("resize.pubwrap", function () { clearTimeout(_wrapT); _wrapT = setTimeout(markWrappedReviews, 150); });
+
     // 사이드바 연도 클릭 → 해당 연도로 이동 (접혀 있으면 펼침). News/Chip Gallery와 동일.
     $("#publications").off("click.pubyearnav").on("click.pubyearnav", ".pub2-year-link", function () {
       var id = $(this).data("yid");
@@ -477,6 +495,7 @@ $(document).ready(function () {
       container.find(".pub2-list").hide();
       $("#pub2-" + target).show();
       refreshYearLinks(target);
+      if (window.markWrappedReviews) setTimeout(window.markWrappedReviews, 0);
     }
 
     // 탭 전환
