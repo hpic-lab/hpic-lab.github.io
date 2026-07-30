@@ -126,23 +126,29 @@ $(document).ready(function () {
       if (!isStr && chip.venue.paper) vPub = chip.venue.paper;
       else if (!isStr && chip.venue.link) vHref = chip.venue.link;
     }
-    function venueMarkup(cls) {
-      if (!vLabel) return "";
-      // 논문 참조(paper)가 있으면 해당 Publications 항목으로, 없으면 Publications 섹션으로 이동
-      if (vPub) return '<a class="' + cls + '" href="#publications" data-pub-title="' + escAttr(vPub) + '">' + vLabel + "</a>";
-      if (vHref) return '<a class="' + cls + '" href="' + vHref + '" target="_blank" rel="noopener noreferrer">' + vLabel + "</a>";
-      return '<a class="' + cls + '" href="#publications">' + vLabel + "</a>";
+    // 논문 참조(paper)가 있으면 해당 Publications 항목으로, 없으면 Publications 섹션으로 이동
+    function venueMarkup(cls, text) {
+      var label = text || vLabel;
+      if (!label) return "";
+      if (vPub) return '<a class="' + cls + '" href="#publications" data-pub-title="' + escAttr(vPub) + '">' + label + "</a>";
+      if (vHref) return '<a class="' + cls + '" href="' + vHref + '" target="_blank" rel="noopener noreferrer">' + label + "</a>";
+      return '<a class="' + cls + '" href="#publications">' + label + "</a>";
     }
     // 과제(수행) 배지: 논문 대신 과제 산출물로 마무리된 칩에 과제명을 표기
     var project = "";
     if (chip.project) {
       project = '<span class="chip-status-project">' + escAttr(chip.project) + "</span>";
     }
-    // venue 가 있는 논문 상태: 저널 배지만 표시(클릭 시 Publications로 이동). 괄호 상태 문구는 제거.
-    var PAPER_STATUS = { accepted: 1, paper: 1, review: 1, published: 1 };
-    if (vLabel && PAPER_STATUS[chip.status]) {
+    // 논문 상태: 배지에 "Manuscript ..." 라벨 표시(클릭 시 Publications로 이동)
+    var MANU = {
+      review: "Manuscript In Review",
+      accepted: "Manuscript Accepted",
+      published: "Manuscript Published",
+      paper: "Manuscript In Preparation"
+    };
+    if (MANU[chip.status]) {
       return '<p class="chip-status ' + s.c + '"><span class="chip-status-dot"></span>' +
-        venueMarkup("chip-status-venue") + project + "</p>";
+        venueMarkup("chip-status-venue", MANU[chip.status]) + project + "</p>";
     }
     // 그 외 상태: 기존 문구 (+ venue 배지가 있으면 표시)
     return '<p class="chip-status ' + s.c + '"><span class="chip-status-dot"></span><span class="chip-status-txt">' + s.t + "</span>" + venueMarkup("chip-status-venue") + project + "</p>";
@@ -196,8 +202,10 @@ $(document).ready(function () {
     var lis = reasons.map(function (r, i) {
       var isObj = r && typeof r === "object";
       var text = isObj ? (r.text || "") : r;
-      var body = (isObj && r.highlight) ? '<span class="chip-fail-note">' + text + "</span>" : text;
-      return "<li>" + body + (i === 0 ? note : "") + "</li>";
+      var hl = isObj && r.highlight;
+      var body = hl ? '<span class="chip-fail-note">' + text + "</span>" : text;
+      // 강조 항목은 bullet(list marker) 제거
+      return '<li' + (hl ? ' class="chip-rc-li-note"' : "") + ">" + body + (i === 0 ? note : "") + "</li>";
     }).join("");
     // "Revised into ..." 는 제목 우측(revisedBadge)으로 이동 → 박스에서는 표시하지 않음
     return '<div class="chip-rootcause">' +
