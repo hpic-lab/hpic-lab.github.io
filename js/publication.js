@@ -102,12 +102,14 @@ $(document).ready(function () {
       // 기본 라벨: "Nth Submission" / "Nth Response". 특정 항목은 subLabel/respLabel 로 override.
       var subLabel = r.subLabel || ((r.round ? r.round + " " : "") + "Submission");
       var subLink = r.submission || r.link || "";
+      // Response 를 포함한 칩(응답 서한 링크 또는 "w/ Response" 라벨)은 초록색으로 구분
+      var subResp = /Response/.test(subLabel) ? " pub2-rv-response" : "";
       out += subLink
-        ? '<a class="pub2-rv-link" href="' + subLink + '" target="_blank" rel="noopener noreferrer">' + ICON + subLabel + "</a>"
-        : '<span class="pub2-rv-link pub2-rv-tbd" title="To be updated">' + ICON + subLabel + "</span>";
+        ? '<a class="pub2-rv-link' + subResp + '" href="' + subLink + '" target="_blank" rel="noopener noreferrer">' + ICON + subLabel + "</a>"
+        : '<span class="pub2-rv-link pub2-rv-tbd' + subResp + '" title="To be updated">' + ICON + subLabel + "</span>";
       if (r.response) {
         var respLabel = r.respLabel || ((r.round ? r.round + " " : "") + "Response");
-        out += '<a class="pub2-rv-link" href="' + r.response +
+        out += '<a class="pub2-rv-link pub2-rv-response" href="' + r.response +
           '" target="_blank" rel="noopener noreferrer" title="Response letter (Members only)">' +
           ICON + respLabel + "</a>";
       }
