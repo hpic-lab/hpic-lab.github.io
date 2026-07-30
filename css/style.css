@@ -4614,6 +4614,11 @@ section {
   margin: 0;
   padding-left: 16px;
 }
+/* 모바일: red box 안 bullet 들여쓰기를 줄여 왼쪽에 더 붙임 */
+@media (max-width: 576px) {
+  .chip-card2 .chip-rootcause ul { padding-left: 6px; }
+  .chip-card2 .chip-rootcause li.chip-rc-li-note { margin-left: -6px; }
+}
 .chip-card2 .chip-rootcause li {
   font-size: 0.79rem;
   color: #6f6f6f;
