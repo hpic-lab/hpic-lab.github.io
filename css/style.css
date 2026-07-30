@@ -4377,12 +4377,22 @@ section {
 
 /* Publications 양식: 카드 박스 없이 하단 구분선 */
 .chip-card2 {
-  display: flex;
-  gap: 18px;
-  align-items: center;
+  display: grid;
+  grid-template-columns: auto auto 1fr auto;
+  grid-template-areas:
+    "num thumb title desg"
+    "num thumb meta  desg";
+  column-gap: 18px;
+  row-gap: 4px;
+  align-items: start;
   padding: 16px 0;
   border-bottom: 1px solid #eee;
 }
+.chip-card2 .chip-num   { grid-area: num;  align-self: center; }
+.chip-card2 .chip-thumb { grid-area: thumb; align-self: center; }
+.chip-card2 .chip-title-row { grid-area: title; }
+.chip-card2 .chip-meta  { grid-area: meta; min-width: 0; }
+.chip-card2 .chip-card-desg { grid-area: desg; }
 
 .chip-card2 .chip-thumb {
   flex-shrink: 0;
@@ -4820,15 +4830,26 @@ a.chip-status-venue:hover { background: rgba(55, 138, 221, 0.2); }
 a.chip-out:hover { text-decoration: underline; }
 
 @media (max-width: 576px) {
-  /* 모바일: 연번(좌) | 칩 이미지 | 제목·상태(우) 가로 배치, 디자이너는 제목 오른쪽 */
-  .chip-card2 { flex-direction: row; align-items: flex-start; gap: 10px; }
-  .chip-card2 .chip-thumb { width: 108px; height: 108px; max-width: none; }
-  .chip-card2 .chip-num { flex: 0 0 auto; }
-  .chip-card2 .chip-card-desg { display: none; }       /* 카드우측 디자이너 숨김 */
-  .chip-card2 .chip-title-row { justify-content: space-between; align-items: flex-start; gap: 8px; flex-wrap: nowrap; }
+  /* 모바일: [연번 · 제목 · 디자이너] 상단 줄 → [칩 이미지 · 상태/리뷰] 하단 줄 */
+  .chip-card2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    column-gap: 10px;
+    row-gap: 8px;
+  }
+  .chip-card2 .chip-num { flex: 0 0 auto; align-self: flex-start; }
+  /* 제목 줄이 남은 폭을 채워 다음 줄(이미지)이 아래로 내려가게 함 */
+  .chip-card2 .chip-title-row {
+    flex: 1 1 0; min-width: 0;
+    display: flex; justify-content: space-between; align-items: flex-start; gap: 8px;
+  }
+  .chip-card2 .chip-thumb { flex: 0 0 120px; width: 120px; height: auto; max-width: none; align-self: flex-start; }
+  .chip-card2 .chip-thumb img { height: auto; }
+  .chip-card2 .chip-meta { flex: 1 1 0; min-width: 0; }
+  .chip-card2 .chip-card-desg { display: none; }
   .chip-card2 .chip-title-desg { display: block; flex: 0 0 auto; }
-  /* Failed 칩: 우측 설명이 길어 카드가 높아질 때 칩 이미지를 세로 중앙 정렬 */
-  .chip-card2.chip-card-failed .chip-num,
+  /* Failed: 우측 설명이 길어 카드가 높을 때 칩 이미지를 세로 중앙 */
   .chip-card2.chip-card-failed .chip-thumb { align-self: center; }
 }
 

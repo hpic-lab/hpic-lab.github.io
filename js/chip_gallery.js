@@ -235,21 +235,21 @@ $(document).ready(function () {
     return (
       '<div class="chip-card2' + (failed ? " chip-card-failed" : "") + '">' +
         '<div class="chip-num">' + num + "</div>" +
+        // 제목 줄 (데스크톱: 이미지 오른쪽 상단 / 모바일: 연번 옆 최상단). 디자이너는 제목 오른쪽.
+        '<div class="chip-title-row">' +
+          '<p class="chip-name">' + (chip.name || "") +
+            failBadge + revisedBadge + failNote +
+          "</p>" +
+          // Failed 칩은 디자이너 아이콘 미표시 (추후 복원하려면 아래 조건 제거)
+          (failed ? "" : '<div class="chip-title-desg">' + designerHTML(chip) + "</div>") +
+        "</div>" +
         '<div class="chip-thumb' + (failed ? " chip-thumb-failed" : "") + '">' +
           (chip.image
             ? '<img src="' + chip.image + '" alt="' + (chip.name || "") + '" loading="lazy">'
             : '<div class="chip-thumb-tbd">Chip image<br>to be updated</div>') +
           failedOverlay +   // Failed: 칩 이미지 위 오버레이
         "</div>" +
-        '<div class="chip-info">' +
-          '<div class="chip-title-row">' +
-            '<p class="chip-name">' + (chip.name || "") +
-              failBadge + revisedBadge + failNote +
-            "</p>" +
-            // 모바일 전용: 디자이너를 제목 오른쪽에 (데스크톱은 CSS로 숨기고 카드 우측 사용)
-            // Failed 칩은 디자이너 아이콘 미표시 (추후 복원하려면 아래 조건 제거)
-            (failed ? "" : '<div class="chip-title-desg">' + designerHTML(chip) + "</div>") +
-          "</div>" +
+        '<div class="chip-meta">' +
           statusRow +
           reviewRow +   // Design Review 를 상태 아래 한 줄로 (non-failed)
           rootCauseHTML(chip, rcReview) +
@@ -257,8 +257,7 @@ $(document).ready(function () {
           (failed ? "" : keywordsHTML(chip)) +
           outputsRow +
         "</div>" +
-        // 디자이너 사진: 카드 전체의 오른쪽, 세로 중앙 정렬
-        // Failed 칩은 디자이너 아이콘 미표시 (추후 복원하려면 아래 조건 제거)
+        // 데스크톱: 디자이너 사진을 카드 우측 세로중앙. Failed 은 미표시.
         (failed ? "" : '<div class="chip-card-desg">' + designerHTML(chip) + "</div>") +
       "</div>"
     );
