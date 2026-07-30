@@ -627,7 +627,7 @@
     "month": 12,
     "process": "65-nm T",
     "image": "img/chip_new/ADPLL_ILO_Calibration.png",
-    "name": "ADPLL ILO Calibration",
+    "name": "ADPLL with ILO-based Reference Multiplier",
     "description": "",
     "outputs": [],
     "note": "",
