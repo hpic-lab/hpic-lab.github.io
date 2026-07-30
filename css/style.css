@@ -1672,10 +1672,21 @@ nav#navbar-main .navbar-collapse {
     margin-left: 16px;   /* 다른 섹션(Chip Gallery 등)과 동일 레벨 */
     padding-left: 0;
   }
-  /* Alumni(아코디언 헤더)도 동일 레벨(16px)로 들여쓰기 — 밑줄도 함께 이동.
-     뒤의 margin 단축 규칙(margin:28px 0 16px)을 이기기 위해 !important */
+  /* Alumni(아코디언 헤더): 다른 소제목과 동일 레벨(16px) 들여쓰기 + 상단 고정.
+     margin 단축 규칙(margin:28px 0 16px)·background transparent 를 이기기 위해 !important */
   #people .accordion .ui-accordion-header {
     margin-left: 16px !important;
+    position: -webkit-sticky;
+    position: sticky;
+    top: calc(var(--mem-nav-h, 56px) + var(--mem-title-h, 44px));
+    z-index: 880;
+    background: var(--section-bg, #fff) !important;
+    box-shadow: -30px 0 0 var(--section-bg, #fff), 30px 0 0 var(--section-bg, #fff), 0 16px 0 0 var(--section-bg, #fff);
+  }
+  #people .accordion .ui-accordion-header::before {
+    content: "";
+    position: absolute; left: 0; right: 0; bottom: 100%;
+    height: 30px; background: var(--section-bg, #fff);
   }
   #people .col-lg-8 > h3::before {
     content: "";
