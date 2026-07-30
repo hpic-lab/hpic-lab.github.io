@@ -4826,6 +4826,7 @@ a.chip-status-venue:hover { background: rgba(55, 138, 221, 0.2); }
 }
 .chip-card2 .chip-rv-link {
   font-size: 0.72rem;
+  font-weight: 600;   /* Failed 칩(root cause 내부)과 서식 통일 */
   color: #0C447C;
   border: 1px solid rgba(12, 68, 124, 0.35);
   background: rgba(12, 68, 124, 0.05);
