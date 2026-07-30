@@ -205,7 +205,8 @@ $(document).ready(function () {
     var failed = isFailedChip(chip);
     var statusSlot, outputsRow;
     if (failed) {
-      statusSlot = "";  // Failed 는 제목 옆 배지로 이동 (아래 failBadge)
+      // Awaiting chip delivery 등과 같은 레벨의 상태 줄로 표시
+      statusSlot = '<p class="chip-status st-red"><span class="chip-status-dot"></span><span class="chip-status-txt">Measurement failed</span></p>';
       outputsRow = isLegacy ? "" : outputsHTML(chip);
     } else if (isLegacy) {
       statusSlot = outputsHTML(chip);
@@ -216,19 +217,15 @@ $(document).ready(function () {
     }
 
     // Failed 배지(제목 옆) / 키워드는 Failed 인 경우 숨김
-    var failBadge = failed ? ' <span class="chip-fail-badge">Failed</span>' : "";
+    var failBadge = "";  // Failed는 상태 줄("Measurement failed")로 표시
     // Failed 뒤 강조 노트 (예: "Do not repeat the same mistake!")
     var failNote = (failed && chip.fail_note) ? ' <span class="chip-fail-note">' + chip.fail_note + "</span>" : "";
     // 리비전되어 후속 칩으로 재제작된 경우 제목 옆 배지
     var revisedBadge = chip.revised_into ? ' <span class="chip-revised-badge">Revised</span>' : "";
     var reviewH = reviewHTML(chip);
-    // Failed + Root cause 박스가 있으면 Design Review 를 그 박스 안에 배치, 아니면 상태 줄에 둔다.
-    var hasRC = failed && chip.fail_reasons && chip.fail_reasons.length;
-    var rcReview = "";
-    var rowReview = reviewH;
-    if (hasRC && reviewH) { rcReview = reviewH; rowReview = ""; }
-    var statusRow = (statusSlot || rowReview)
-      ? '<div class="chip-status-row">' + statusSlot + rowReview + "</div>"
+    // Design Review 는 상태 문구 바로 뒤(안 2)에 인라인 배치
+    var statusRow = (statusSlot || reviewH)
+      ? '<div class="chip-status-row">' + statusSlot + reviewH + "</div>"
       : "";
 
     return (
@@ -247,7 +244,7 @@ $(document).ready(function () {
           "</div>" +
           // 상태 문구와 Design Review 배지를 한 줄에 (좁으면 배지가 다음 줄로 내려감)
           statusRow +
-          rootCauseHTML(chip, rcReview) +
+          rootCauseHTML(chip, "") +
           (desc ? '<p class="chip-desc">' + desc + "</p>" : "") +
           (failed ? "" : keywordsHTML(chip)) +
           outputsRow +

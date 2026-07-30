@@ -4732,7 +4732,6 @@ a.chip-status-venue:hover { background: rgba(55, 138, 221, 0.2); }
   margin: 0;
 }
 .chip-card2 .chip-review {
-  margin-left: auto;
   display: inline-flex;
   align-items: center;
   flex-wrap: nowrap;   /* 자물쇠 + Design Review 를 한 줄로 묶어 함께 줄바꿈 */
