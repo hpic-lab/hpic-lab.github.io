@@ -116,9 +116,19 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function doScroll() {
-      var navH = ($("#navbar-main").outerHeight() || 56);
-      var y = window.pageYOffset + target.getBoundingClientRect().top - navH;
-      window.scrollTo({ top: Math.max(0, y), behavior: "smooth" });
+      // 지연 로딩 이미지를 즉시 로드시켜 레이아웃을 확정 (스크롤 후 밀림 방지)
+      document.querySelectorAll('img[loading="lazy"]').forEach(function (img) { img.loading = "eager"; });
+      function go() {
+        // 대상(고정 제목)이 아직 없으면 섹션으로
+        var t = (stickyMap[id] && document.querySelector(stickyMap[id]) && document.querySelector(stickyMap[id]).offsetParent)
+          ? document.querySelector(stickyMap[id]) : section;
+        var navH = ($("#navbar-main").outerHeight() || 56);
+        var y = window.pageYOffset + t.getBoundingClientRect().top - navH;
+        window.scrollTo({ top: Math.max(0, y), behavior: "auto" });
+      }
+      go();
+      // 이미지 로드/비동기 렌더로 인한 밀림을 여러 번 재보정
+      [120, 350, 700, 1200].forEach(function (t) { setTimeout(go, t); });
     }
     var $nav = $(".navbar-collapse");
     if ($nav.hasClass("show")) {
