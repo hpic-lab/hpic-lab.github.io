@@ -543,13 +543,11 @@ $(document).ready(function () {
     // 학생 개인별 연번(위=1)으로 Publications 스타일 항목 생성
     var tosHTML = tosList
       .map(function (s, i) {
-        var badge = s.process
-          ? '<span class="chip-fab ' + tosFabClass(s.process) + '">' + tosFabLabel(s.process) + "</span>"
-          : "";
+        // 프로필 카드에서는 공정 배지(S 14nm 등) 미표시
         return '<div class="tos-entry">' +
                  '<div class="tos-num">' + (i + 1) + "</div>" +
                  '<div class="tos-date">' + s.date + "</div>" +
-                 '<div class="tos-body">' + s.title + (badge ? " " + badge : "") + "</div>" +
+                 '<div class="tos-body">' + s.title + "</div>" +
                "</div>";
       })
       .join("");
