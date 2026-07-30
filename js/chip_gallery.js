@@ -194,13 +194,10 @@ $(document).ready(function () {
     // fail_note(강조 배지)는 첫 번째 원인 항목 오른쪽에 표시
     var note = chip.fail_note ? ' <span class="chip-fail-note">' + chip.fail_note + "</span>" : "";
     var lis = reasons.map(function (r, i) { return "<li>" + r + (i === 0 ? note : "") + "</li>"; }).join("");
-    var revised = chip.revised_into
-      ? '<div class="chip-rc-revised">&#8594; ' + chip.revised_into + "</div>"
-      : "";
+    // "Revised into ..." 는 제목 우측(revisedBadge)으로 이동 → 박스에서는 표시하지 않음
     return '<div class="chip-rootcause">' +
       '<div class="chip-rootcause-h"><span class="chip-rc-ico">&#9888;</span><span class="chip-rc-title">Root cause</span>' + (reviewHtml || "") + "</div>" +
       "<ul>" + lis + "</ul>" +
-      revised +
     "</div>";
   }
 
@@ -232,7 +229,7 @@ $(document).ready(function () {
     // Failed 뒤 강조 노트 (예: "Do not repeat the same mistake!")
     var failNote = (failed && chip.fail_note) ? ' <span class="chip-fail-note">' + chip.fail_note + "</span>" : "";
     // 리비전되어 후속 칩으로 재제작된 경우 제목 옆 배지
-    var revisedBadge = chip.revised_into ? ' <span class="chip-revised-badge">Revised</span>' : "";
+    var revisedBadge = chip.revised_into ? ' <span class="chip-revised-badge">&#8594; ' + chip.revised_into + "</span>" : "";
     var reviewH = reviewHTML(chip);
     // Failed: Design Review 를 Root cause 박스 안에 / "Measurement failed" 는 카드 하단에.
     // 그 외: Design Review 를 상태 문구 아래 한 줄로 배치.
@@ -250,7 +247,7 @@ $(document).ready(function () {
         // 제목 줄 (데스크톱: 이미지 오른쪽 상단 / 모바일: 연번 옆 최상단). 디자이너는 제목 오른쪽.
         '<div class="chip-title-row">' +
           '<p class="chip-name">' + (chip.name || "") +
-            failBadge +
+            failBadge + revisedBadge +
           "</p>" +
           // Failed 칩은 디자이너 아이콘 미표시 (추후 복원하려면 아래 조건 제거)
           (failed ? "" : '<div class="chip-title-desg">' + designerHTML(chip) + "</div>") +

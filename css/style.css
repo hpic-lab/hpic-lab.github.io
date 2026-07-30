@@ -4544,17 +4544,13 @@ section {
   color: #185FA5;
 }
 
-/* 제목 옆 Revised 배지 */
+/* 제목 옆 "→ Revised into Chip #N" (회색톤, 배지 없음) */
 .chip-card2 .chip-revised-badge {
   display: inline-block;
-  font-size: 0.72rem;
-  font-weight: 700;
-  color: #185FA5;
-  background: rgba(24, 95, 165, 0.08);
-  border: 1px solid rgba(24, 95, 165, 0.4);
-  border-radius: 4px;
-  padding: 1px 8px;
-  margin-left: 8px;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: #8a8a84;
+  margin-left: 10px;
   vertical-align: 2px;
   white-space: nowrap;
 }
