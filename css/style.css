@@ -1747,6 +1747,8 @@ nav#navbar-main .navbar-collapse {
   #research h5#chip-gallery + .hpic-description {
     margin-left: 16px;
   }
+  /* 완료 목록(Completed Projects)의 추가 들여쓰기(36px) 제거 — Research Projects 위치와 정렬 */
+  #research .completed-projects { margin-left: 0; }
   /* Level 2: Upcoming Tape-outs 헤더 (Filter는 Chip Gallery 제목에 인라인) */
   #chip-tapeout-schedule .tos2-head {
     position: -webkit-sticky;
