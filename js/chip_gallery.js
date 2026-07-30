@@ -247,7 +247,8 @@ $(document).ready(function () {
               failBadge + revisedBadge + failNote +
             "</p>" +
             // 모바일 전용: 디자이너를 제목 오른쪽에 (데스크톱은 CSS로 숨기고 카드 우측 사용)
-            '<div class="chip-title-desg">' + designerHTML(chip) + "</div>" +
+            // Failed 칩은 디자이너 아이콘 미표시 (추후 복원하려면 아래 조건 제거)
+            (failed ? "" : '<div class="chip-title-desg">' + designerHTML(chip) + "</div>") +
           "</div>" +
           statusRow +
           reviewRow +   // Design Review 를 상태 아래 한 줄로 (non-failed)
@@ -257,7 +258,8 @@ $(document).ready(function () {
           outputsRow +
         "</div>" +
         // 디자이너 사진: 카드 전체의 오른쪽, 세로 중앙 정렬
-        '<div class="chip-card-desg">' + designerHTML(chip) + "</div>" +
+        // Failed 칩은 디자이너 아이콘 미표시 (추후 복원하려면 아래 조건 제거)
+        (failed ? "" : '<div class="chip-card-desg">' + designerHTML(chip) + "</div>") +
       "</div>"
     );
   }
