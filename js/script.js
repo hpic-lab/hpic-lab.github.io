@@ -92,6 +92,43 @@ document.addEventListener("DOMContentLoaded", function () {
     event.stopPropagation(); // 이벤트 전파 중지
   });
 
+  // 모바일: 메뉴 클릭 시 해당 섹션의 "상단 고정 제목"이 화면 최상단에 오도록 스크롤
+  $(document).on("click", "#navbar-main .navbar-nav .nav-link[href^='#']", function (e) {
+    var href = this.getAttribute("href") || "";
+    if (href.length < 2) return;                 // "#" 뿐이면 무시
+    var id = href.slice(1);
+    var section = document.getElementById(id);
+    if (!section) return;
+    if (!window.matchMedia("(max-width: 991px)").matches) return;  // 모바일만
+    e.preventDefault();
+
+    // 섹션별 상단 고정 제목(있으면 그 위치로, 없으면 섹션 상단으로)
+    var stickyMap = {
+      "people": "#members-sticky-title",
+      "research": "#research-sticky-title",
+      "publications": "#publications .pub-sticky-head",
+      "news-gallery": "#news-gallery .news-sticky-head"
+    };
+    var target = section;
+    if (stickyMap[id]) {
+      var el = document.querySelector(stickyMap[id]);
+      if (el && el.offsetParent) target = el;
+    }
+
+    function doScroll() {
+      var navH = ($("#navbar-main").outerHeight() || 56);
+      var y = window.pageYOffset + target.getBoundingClientRect().top - navH;
+      window.scrollTo({ top: Math.max(0, y), behavior: "smooth" });
+    }
+    var $nav = $(".navbar-collapse");
+    if ($nav.hasClass("show")) {
+      $nav.one("hidden.bs.collapse", function () { setTimeout(doScroll, 20); });
+      $nav.collapse("hide");
+    } else {
+      doScroll();
+    }
+  });
+
   // 문서 클릭 이벤트 핸들러
   $(document).click(function (event) {
     var clickover = $(event.target);
