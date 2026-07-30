@@ -1815,10 +1815,11 @@ nav#navbar-main .navbar-collapse {
   .news-sticky-head h1 {
     font-weight: 700;   /* 원래 섹션 제목과 통일 */
     color: #222;
-    margin: 0 0 8px;
+    margin: 0 0 4px;
   }
+  /* 제목과 필터(카테고리 칩) 사이 간격 — Publications 와 동일하게 통일 */
   .news-sticky-head .news-cat-links {
-    margin-top: 0;
+    margin-top: 10px;
   }
   /* 연도 헤더(2026 등)를 고정 헤더 바로 아래에 고정 — 스크롤 시 현재 연도로 교체 */
   /* .news-accordion 를 포함해 특이도를 높여, 뒤에 오는 transparent 규칙을 이기고 흰 배경 유지 */
@@ -1877,8 +1878,8 @@ nav#navbar-main .navbar-collapse {
     margin: 0;
     text-align: right;
   }
-  /* 탭(Journal/Conference/Patent) 가운데 정렬 */
-  .pub-sticky-head .pub2-side-tabs { justify-content: center; }
+  /* 탭(Journal/Conference/Patent) 가운데 정렬 + 제목과 간격 확보 */
+  .pub-sticky-head .pub2-side-tabs { justify-content: center; margin-top: 10px; }
   .pub2-list .pub2-year {
     position: -webkit-sticky;
     position: sticky;
