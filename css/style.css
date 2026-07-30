@@ -4951,6 +4951,11 @@ a.chip-out:hover { text-decoration: underline; }
   .chip-card2 .chip-card-desg { display: block; margin-top: 14px; }
   /* Failed: 우측 설명이 길어 카드가 높을 때 칩 이미지를 세로 중앙 */
   .chip-card2.chip-card-failed .chip-thumb { align-self: center; }
+  /* Failed(모바일): 제목과 아래 콘텐츠 사이 간격 축소 */
+  .chip-card2.chip-card-failed { row-gap: 2px; }
+  .chip-card2.chip-card-failed .chip-rootcause { margin-top: 0; }
+  /* Failed(모바일): Root cause 박스 헤더의 Design Review 배지 우측정렬 */
+  .chip-card2.chip-card-failed .chip-rootcause-h { justify-content: space-between; }
 }
 
 .chip-card2 .chip-designer {
