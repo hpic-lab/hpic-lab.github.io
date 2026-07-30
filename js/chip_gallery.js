@@ -205,8 +205,7 @@ $(document).ready(function () {
     var failed = isFailedChip(chip);
     var statusSlot, outputsRow;
     if (failed) {
-      // Awaiting chip delivery 등과 같은 레벨의 상태 줄로 표시
-      statusSlot = '<p class="chip-status st-red"><span class="chip-status-dot"></span><span class="chip-status-txt">Measurement failed</span></p>';
+      statusSlot = "";  // Failed: "Measurement failed" 는 카드 하단으로 이동
       outputsRow = isLegacy ? "" : outputsHTML(chip);
     } else if (isLegacy) {
       statusSlot = outputsHTML(chip);
@@ -223,9 +222,14 @@ $(document).ready(function () {
     // 리비전되어 후속 칩으로 재제작된 경우 제목 옆 배지
     var revisedBadge = chip.revised_into ? ' <span class="chip-revised-badge">Revised</span>' : "";
     var reviewH = reviewHTML(chip);
-    // Design Review 는 상태 문구 바로 뒤(안 2)에 인라인 배치
-    var statusRow = (statusSlot || reviewH)
-      ? '<div class="chip-status-row">' + statusSlot + reviewH + "</div>"
+    // Failed: Design Review 를 Root cause 박스 안에 / "Measurement failed" 는 카드 하단에.
+    // 그 외: Design Review 를 상태 문구 바로 뒤(안 2)에 인라인 배치.
+    var rcReview = failed ? reviewH : "";
+    var statusRow = (statusSlot || (!failed && reviewH))
+      ? '<div class="chip-status-row">' + statusSlot + (failed ? "" : reviewH) + "</div>"
+      : "";
+    var failedBottom = failed
+      ? '<p class="chip-status st-red chip-status-failed-bottom"><span class="chip-status-dot"></span><span class="chip-status-txt">Measurement failed</span></p>'
       : "";
 
     return (
@@ -246,11 +250,12 @@ $(document).ready(function () {
           "</div>" +
           // 상태 문구와 Design Review 배지를 한 줄에 (좁으면 배지가 다음 줄로 내려감)
           statusRow +
-          rootCauseHTML(chip, "") +
+          rootCauseHTML(chip, rcReview) +
           (desc ? '<p class="chip-desc">' + desc + "</p>" : "") +
           (failed ? "" : keywordsHTML(chip)) +
           outputsRow +
           (failed ? "" : designerHTML(chip)) +
+          failedBottom +
         "</div>" +
       "</div>"
     );
