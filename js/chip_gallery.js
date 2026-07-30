@@ -386,7 +386,9 @@ $(document).ready(function () {
 
     $c.off("click.chiptoggle").on("click.chiptoggle", ".chip-year-toggle", function () {
       $(this).toggleClass("collapsed");
-      $(this).next(".chip-year-body").slideToggle(180);
+      // 펼침/접힘 후 현재 활성 연도(파랑 강조) 재계산 (slide 완료 후에도 한 번 더)
+      $(this).next(".chip-year-body").slideToggle(180, function () { $(window).trigger("scroll.chipyear"); });
+      $(window).trigger("scroll.chipyear");
     });
     $c.off("keydown.chiptoggle").on("keydown.chiptoggle", ".chip-year-toggle", function (e) {
       if (e.key === "Enter" || e.key === " ") {
