@@ -147,7 +147,7 @@
     "month": 9,
     "process": "28-nm T",
     "image": "img/chip_new/ANA_RX_25Sep_Real_name.jpg",
-    "name": "112Gb/s Data Pattern Based Adaptive Receiver with Auto Loop Gain Control CDR",
+    "name": "112Gb/s Data-Pattern-Based Adaptive Receiver",
     "description": "",
     "outputs": [],
     "note": "",
