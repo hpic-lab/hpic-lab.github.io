@@ -494,6 +494,17 @@ nav#navbar-main .navbar-collapse {
 #photo-gallery .gallery-title-row {
   justify-content: flex-end;
 }
+/* 모바일: Details 버튼을 "Lab Gallery" 제목과 같은 줄 우측에 배치 */
+@media (max-width: 991px) {
+  #photo-gallery .row { position: relative; }
+  #photo-gallery .gallery-title-row {
+    position: absolute;
+    top: 4px;
+    right: 0;
+    margin: 0;
+    z-index: 2;
+  }
+}
 
 .gallery-title-row a:hover {
   background: #093461;

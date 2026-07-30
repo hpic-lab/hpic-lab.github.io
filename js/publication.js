@@ -325,7 +325,8 @@ $(document).ready(function () {
 
       body.append(
         '<div class="pub2-entry" data-yr="' + year + '" data-old="' + (isOld ? 1 : 0) +
-          '" data-sv="' + sortVal(pub) + '" data-ptype="paper"' + (entryId ? ' id="' + entryId + '"' : "") + ">" +
+          '" data-sv="' + sortVal(pub) + '" data-ptype="paper" data-src="' + (isJournal ? "journal" : "conference") + '"' +
+          (entryId ? ' id="' + entryId + '"' : "") + ">" +
           '<div class="pub2-num">' + num + "</div>" +
           '<div class="pub2-side">' +
             '<div class="pub2-venue">' + v + "</div>" +
@@ -384,7 +385,7 @@ $(document).ready(function () {
 
       body.append(
         '<div class="pub2-entry" data-yr="' + year + '" data-old="' + (isOld ? 1 : 0) +
-          '" data-sv="' + sortVal(pub) + '" data-ptype="patent">' +
+          '" data-sv="' + sortVal(pub) + '" data-ptype="patent" data-src="patent">' +
           '<div class="pub2-num">' + n-- + "</div>" +
           '<div class="pub2-side">' +
             '<div class="pub2-venue">' + (pub.type || "") + "</div>" +
@@ -462,6 +463,7 @@ $(document).ready(function () {
           old: $e.attr("data-old") === "1",
           sv: parseFloat($e.attr("data-sv")) || 0,
           patent: $e.attr("data-ptype") === "patent",
+          src: $e.attr("data-src"),
           node: $e.clone().removeAttr("id")
         });
       });
@@ -475,7 +477,14 @@ $(document).ready(function () {
         });
         $all.append('<div class="pub2-year' + (collapsed ? " collapsed" : "") + '" id="' + id + '">' + label + "</div>");
         var $body = $('<div class="pub2-year-body"' + (collapsed ? ' style="display:none"' : "") + "></div>");
-        group.forEach(function (it) { $body.append(it.node); });
+        group.forEach(function (it) {
+          // All 뷰: 연번 앞에 종류 접두어 (Journal=J, Conference=C, Patent=P)
+          var pre = it.src === "journal" ? "J" : it.src === "conference" ? "C" : it.src === "patent" ? "P" : "";
+          var $num = it.node.find(".pub2-num").first();
+          var txt = $num.text().trim();
+          if (pre && txt) $num.text(pre + txt);
+          $body.append(it.node);
+        });
         $all.append($body);
       }
       years.forEach(function (y) {
