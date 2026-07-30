@@ -128,22 +128,21 @@ $(document).ready(function () {
     }
     function venueMarkup(cls) {
       if (!vLabel) return "";
+      // 논문 참조(paper)가 있으면 해당 Publications 항목으로, 없으면 Publications 섹션으로 이동
       if (vPub) return '<a class="' + cls + '" href="#publications" data-pub-title="' + escAttr(vPub) + '">' + vLabel + "</a>";
       if (vHref) return '<a class="' + cls + '" href="' + vHref + '" target="_blank" rel="noopener noreferrer">' + vLabel + "</a>";
-      return '<span class="' + cls + '">' + vLabel + "</span>";
+      return '<a class="' + cls + '" href="#publications">' + vLabel + "</a>";
     }
     // 과제(수행) 배지: 논문 대신 과제 산출물로 마무리된 칩에 과제명을 표기
     var project = "";
     if (chip.project) {
       project = '<span class="chip-status-project">' + escAttr(chip.project) + "</span>";
     }
-    // venue 가 있는 논문 상태: "저널명 (상태)" 회색톤 표기 (배지·"Paper accepted in" 문구 없음)
-    var PAREN = { accepted: "Accepted", paper: "In Preparation", review: "In Review", published: "Published" };
-    if (vLabel && PAREN[chip.status]) {
+    // venue 가 있는 논문 상태: 저널 배지만 표시(클릭 시 Publications로 이동). 괄호 상태 문구는 제거.
+    var PAPER_STATUS = { accepted: 1, paper: 1, review: 1, published: 1 };
+    if (vLabel && PAPER_STATUS[chip.status]) {
       return '<p class="chip-status ' + s.c + '"><span class="chip-status-dot"></span>' +
-        venueMarkup("chip-status-venue") +
-        '<span class="chip-status-paren">(' + PAREN[chip.status] + ")</span>" +
-        project + "</p>";
+        venueMarkup("chip-status-venue") + project + "</p>";
     }
     // 그 외 상태: 기존 문구 (+ venue 배지가 있으면 표시)
     return '<p class="chip-status ' + s.c + '"><span class="chip-status-dot"></span><span class="chip-status-txt">' + s.t + "</span>" + venueMarkup("chip-status-venue") + project + "</p>";

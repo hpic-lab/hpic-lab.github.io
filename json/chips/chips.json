@@ -439,7 +439,7 @@
     "month": 10,
     "process": "40-nm T",
     "image": "img/chip_new/DSP_RX_fig.png",
-    "name": "DSP-based RX",
+    "name": "DSP-based PAM-4 RX",
     "description": "",
     "outputs": [],
     "note": "",
@@ -461,7 +461,8 @@
       "No co-simulation across different blocks",
       "Poor allocation of design time"
     ],
-    "fail_note": "Unacceptable!"
+    "fail_note": "Unacceptable!",
+    "revised_into": "Revised into Chip #20"
   },
   {
     "year": 2024,
