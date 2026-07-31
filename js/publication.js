@@ -472,8 +472,10 @@ $(document).ready(function () {
       var years = Object.keys(yearsSet).map(Number).sort(function (a, b) { return b - a; });
       function appendGroup(label, id, collapsed, group) {
         group.sort(function (a, b) {
-          if (a.patent !== b.patent) return a.patent ? 1 : -1;   // Patent 는 뒤로
-          return b.sv - a.sv;                                     // 그 외 월/상태 내림차순
+          var ya = Number(a.yr) || 0, yb = Number(b.yr) || 0;
+          if (ya !== yb) return yb - ya;                          // 연도 내림차순 (~2023 그룹은 여러 연도 포함)
+          if (a.patent !== b.patent) return a.patent ? 1 : -1;   // 같은 연도 내 Patent 는 뒤로
+          return b.sv - a.sv;                                     // 월/상태 내림차순
         });
         $all.append('<div class="pub2-year' + (collapsed ? " collapsed" : "") + '" id="' + id + '">' + label + "</div>");
         var $body = $('<div class="pub2-year-body"' + (collapsed ? ' style="display:none"' : "") + "></div>");
