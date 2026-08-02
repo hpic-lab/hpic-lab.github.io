@@ -372,6 +372,14 @@ nav#navbar-main {
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.06);
 }
 
+/* 모바일: 메뉴바(햄버거 + 메뉴 목록) 숨김 — 스크롤로만 탐색 */
+@media (max-width: 991px) {
+  #navbar-main .navbar-toggler,
+  #navbar-main .navbar-collapse {
+    display: none !important;
+  }
+}
+
 nav#navbar-main .navbar-brand {
   color: #003876 !important; /* 연세 블루로 통일 */
   font-weight: 700;
