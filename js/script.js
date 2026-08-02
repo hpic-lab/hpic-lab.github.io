@@ -135,13 +135,16 @@ document.addEventListener("DOMContentLoaded", function () {
       window.addEventListener("touchmove", onUser, { passive: true });
       window.addEventListener("keydown", onUser);
       var start = Date.now();
+      var stable = 0;
       (function go() {
         if (cancelled) return;
         var t = getTarget();
         var navH = ($("#navbar-main").outerHeight() || 56);
         var y = Math.max(0, window.pageYOffset + t.getBoundingClientRect().top - navH);
-        if (Math.abs(y - window.pageYOffset) > 1) window.scrollTo({ top: y, behavior: "auto" });
-        if (Date.now() - start < 2500) setTimeout(go, 100);
+        if (Math.abs(y - window.pageYOffset) > 1) { window.scrollTo({ top: y, behavior: "auto" }); stable = 0; }
+        else { stable++; }
+        // 위치가 안정(연속 8회 ≈ 0.8초 변화 없음)되거나 최대 6초까지 재보정 (비동기 콘텐츠 로드 대응)
+        if (Date.now() - start < 6000 && stable < 8) setTimeout(go, 100);
         else cleanup();
       })();
     }
