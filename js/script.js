@@ -122,11 +122,16 @@ document.addEventListener("DOMContentLoaded", function () {
     function doScroll() {
       // 지연 로딩 이미지를 즉시 로드시켜 레이아웃을 확정 (스크롤 후 밀림 방지)
       document.querySelectorAll('img[loading="lazy"]').forEach(function (img) { img.loading = "eager"; });
+      // 부드러운 스크롤 대신 즉시 이동(jump). 페이지의 scroll-behavior:smooth 를 무시하도록 auto 로 고정.
+      var docEl = document.documentElement;
+      var prevSB = docEl.style.scrollBehavior;
+      docEl.style.scrollBehavior = "auto";
       // 비동기 콘텐츠 로드/제목 이동으로 레이아웃이 계속 바뀌므로, 짧은 간격으로 재보정.
       // 단, 사용자가 직접 스크롤하면 즉시 중단(끌어당김 방지).
       var cancelled = false;
       function onUser() { cancelled = true; cleanup(); }
       function cleanup() {
+        docEl.style.scrollBehavior = prevSB;
         window.removeEventListener("wheel", onUser);
         window.removeEventListener("touchmove", onUser);
         window.removeEventListener("keydown", onUser);
@@ -145,7 +150,7 @@ document.addEventListener("DOMContentLoaded", function () {
         var navH = ($("#navbar-main").outerHeight() || 56);
         var y = Math.max(0, window.pageYOffset + t.getBoundingClientRect().top - navH);
         // 안정 상태면 실제 스크롤은 하지 않음(무해). 비동기 콘텐츠가 늦게 밀려도 계속 추적하도록 전체 창 유지.
-        if (Math.abs(y - window.pageYOffset) > 1) window.scrollTo({ top: y, behavior: "auto" });
+        if (Math.abs(y - window.pageYOffset) > 1) window.scrollTo(0, y);   // 즉시 이동
         if (Date.now() - start < 7000) setTimeout(go, 100);
         else cleanup();
       })();
