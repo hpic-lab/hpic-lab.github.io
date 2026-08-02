@@ -131,9 +131,13 @@ document.addEventListener("DOMContentLoaded", function () {
         window.removeEventListener("touchmove", onUser);
         window.removeEventListener("keydown", onUser);
       }
-      window.addEventListener("wheel", onUser, { passive: true });
-      window.addEventListener("touchmove", onUser, { passive: true });
-      window.addEventListener("keydown", onUser);
+      // 메뉴 탭 시 손가락의 미세한 touchmove 가 즉시 취소시키지 않도록, 취소 리스너는 500ms 뒤 등록
+      setTimeout(function () {
+        if (cancelled) return;
+        window.addEventListener("wheel", onUser, { passive: true });
+        window.addEventListener("touchmove", onUser, { passive: true });
+        window.addEventListener("keydown", onUser);
+      }, 500);
       var start = Date.now();
       (function go() {
         if (cancelled) return;
