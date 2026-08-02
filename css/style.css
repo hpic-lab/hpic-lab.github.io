@@ -4946,7 +4946,7 @@ a.chip-out:hover { text-decoration: underline; }
     flex-wrap: wrap;
     align-items: flex-start;
     column-gap: 10px;
-    row-gap: 8px;
+    row-gap: 2px;   /* 제목↔내용 간격 축소 (rowbreak 로 2배 적용되던 것) — Failed 칩과 통일 */
   }
   .chip-card2 .chip-num { flex: 0 0 auto; align-self: flex-start; }
   .chip-card2 .chip-title-row {
