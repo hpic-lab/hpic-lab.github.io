@@ -2563,7 +2563,7 @@ nav#navbar-main .navbar-collapse {
   color: #0C447C;
   background: #E6F1FB;
   text-decoration: none;
-  vertical-align: -0.35em;
+  vertical-align: middle;
   margin: 0 1px;
 }
 .news-list .news-icon-btn:hover { background: #d3e6fa; }
