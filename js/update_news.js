@@ -106,13 +106,16 @@ $(document).ready(function () {
         // 수상 사진 등 이미지가 연결된 항목: 문장 전체를 클릭하면 라이트박스로 열림 (별도 [Photo] 링크 없음)
         // <u>이름</u> → 강조 텍스트(굵게, 검정). 클릭은 뒤의 프로필 사진으로 대체하므로 하이퍼링크 없음.
         var text = it.text.replace(/<u>(.*?)<\/u>/g, '<span class="news-name">$1</span>');
-        // 상장: 수상명("received [the] 수상명 from/at ..." 또는 문장 끝)을 검정 굵게
+        var jumpIc = '<svg class="news-link-ic" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg>';
+        // 상장: 수상명을 검정 굵게 + 그 바로 뒤에 상장 이미지를 여는 "View ↗" 배지
         if (it.category === "Award") {
+          var certBadge = it.img
+            ? ' <a href="' + it.img + '" class="news-title-badge news-cert-view" data-img="' + it.img + '">View' + jumpIc + "</a>"
+            : "";
           text = text.replace(/received (the )?(.+?)(\s+(?:from|at)\s+|\.\s*$)/, function (m, the, award, sep) {
-            return "received " + (the || "") + "<b>" + award + "</b>" + sep;
+            return "received " + (the || "") + "<b>" + award + "</b>" + certBadge + sep;
           });
         }
-        var jumpIc = '<svg class="news-link-ic" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg>';
         // 논문 제목("...")은 굵은 본문. 뒤에 "View ↗" 배지:
         //   외부 논문 링크([Paper])가 있으면(=출판됨) 그 링크로, 없으면(=Accepted, 미출판) Publications 로 이동.
         if (isPaper) {
@@ -134,10 +137,6 @@ $(document).ready(function () {
             }
             return '<span class="news-title-plain">"' + t + '"</span>' + badge;
           });
-        }
-        // 상장(Award): 상장 이미지를 여는 "View ↗" 배지 부착
-        if (it.category === "Award" && it.img) {
-          text += ' <a href="' + it.img + '" class="news-title-badge news-cert-view" data-img="' + it.img + '">View' + jumpIc + "</a>";
         }
         list.append(
           '<div class="news-item" data-cat="' + catKey + '">' +
