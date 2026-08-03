@@ -2529,14 +2529,19 @@ nav#navbar-main .navbar-collapse {
 }
 
 /* News 논문 제목 하이퍼링크 (기본은 본문색, 호버 시 파란색) */
+/* 클릭 가능한 논문 제목: 파랑 + 밑줄 + 외부이동 아이콘(↗) */
 .news-list .news-title-link {
-  color: inherit;
-  text-decoration: none;
-}
-
-.news-list .news-title-link:hover {
-  color: #007bff;
+  color: #2563d6;
   text-decoration: underline;
+}
+.news-list .news-title-link:hover {
+  color: #0C447C;
+  text-decoration: underline;
+}
+.news-list .news-title-link .news-link-ic {
+  margin-left: 3px;
+  vertical-align: -1px;
+  text-decoration: none;
 }
 
 /* 사진이 연결된 News 문장: 클릭하면 라이트박스 */
@@ -2545,15 +2550,14 @@ nav#navbar-main .navbar-collapse {
 }
 
 /* News 본문에서 연구원 이름 클릭 → 프로필 모달 */
+/* 연구원 이름: 밑줄 제거, 굵게 + 랩 파랑 (링크가 아닌 강조로 구분) */
 .news-list u.news-member {
   cursor: pointer;
-  /* 'g','y' 등 내려긋는 획 아래에서도 밑줄이 끊기지 않도록 */
-  text-decoration-skip-ink: none;
+  text-decoration: none;
+  font-weight: 600;
+  color: #0C447C;
 }
-
-.news-list u.news-member:hover {
-  color: #2e55be;
-}
+.news-list u.news-member:hover { text-decoration: underline; }
 
 .news-list .news-text {
   margin: 0;
