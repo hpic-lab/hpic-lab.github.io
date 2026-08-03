@@ -2558,6 +2558,8 @@ nav#navbar-main .navbar-collapse {
   color: #0C447C;
 }
 .news-list u.news-member:hover { text-decoration: underline; }
+/* "HPIC Lab": 이름들과 동일 강조(굵게+파랑), 밑줄·클릭 없음 */
+.news-list .news-lab { font-weight: 600; color: #0C447C; }
 
 .news-list .news-text {
   margin: 0;
