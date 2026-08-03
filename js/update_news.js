@@ -83,8 +83,9 @@ $(document).ready(function () {
         }
         var catKey = CATEGORY[it.category] ? it.category : "News";
         var c = CATEGORY[catKey];
-        // [Paper] 링크는 별도 표기하지 않고, 논문 제목("...") 클릭 → Publications 항목으로 이동
-        var isPaper = it.category === "Journal" || it.category === "Conference";
+        // [Paper] 링크는 별도 표기하지 않고, 논문/특허 제목("...") 에 "View" 배지 부착
+        var isPaper = it.category === "Journal" || it.category === "Conference" || it.category === "Patent";
+        var isPatent = it.category === "Patent";
         var links = (it.links || [])
           .filter(function (l) { return l.label !== "Paper"; })
           .map(function (l) {
@@ -108,14 +109,23 @@ $(document).ready(function () {
         // 논문 제목("...")은 굵은 본문. 뒤에 "View ↗" 배지:
         //   외부 논문 링크([Paper])가 있으면(=출판됨) 그 링크로, 없으면(=Accepted, 미출판) Publications 로 이동.
         if (isPaper) {
+          // 특허는 외부 링크 없이 항상 Publications 로 이동. 논문은 [Paper] 링크가 있으면 외부로.
           var paperUrl = "";
-          (it.links || []).forEach(function (l) { if (l.label === "Paper" && l.url) paperUrl = l.url; });
+          if (!isPatent) (it.links || []).forEach(function (l) { if (l.label === "Paper" && l.url) paperUrl = l.url; });
           var jumpIc = '<svg class="news-link-ic" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg>';
           text = text.replace(/"([^"]+)"/, function (_, t) {
             var attr = t.replace(/"/g, "&quot;");
-            var badge = paperUrl
-              ? '<a href="' + paperUrl + '" target="_blank" rel="noopener noreferrer" class="news-title-badge">View' + jumpIc + "</a>"
-              : '<a href="#publications" class="news-title-badge news-pub-jump" data-title="' + attr + '">View' + jumpIc + "</a>";
+            var badge;
+            if (paperUrl) {
+              // 출판된 논문: 외부 링크
+              badge = '<a href="' + paperUrl + '" target="_blank" rel="noopener noreferrer" class="news-title-badge">View' + jumpIc + "</a>";
+            } else if (isPatent) {
+              // 특허: Publications 섹션으로 이동 (제목 매칭 없음)
+              badge = '<a href="#publications" class="news-title-badge">View' + jumpIc + "</a>";
+            } else {
+              // Accepted 논문: Publications 의 해당 항목으로 이동
+              badge = '<a href="#publications" class="news-title-badge news-pub-jump" data-title="' + attr + '">View' + jumpIc + "</a>";
+            }
             return '<span class="news-title-plain">"' + t + '"</span>' + badge;
           });
         }

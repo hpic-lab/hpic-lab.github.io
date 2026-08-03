@@ -160,8 +160,11 @@
     "year": "2026",
     "month": "01",
     "category": "Invited Talk",
-    "text": "Dr. Jae-woo Park (Sungkyunkwan University) presented an invited talk entitled \"High-speed Multi-level Transceiver for Memory Interface Applications\" hosted by HPIC Lab.",
-    "links": []
+    "text": "<u>Dr. Jae-woo Park</u> (Sungkyunkwan University) presented an invited talk entitled \"High-speed Multi-level Transceiver for Memory Interface Applications\" hosted by HPIC Lab.",
+    "links": [],
+    "figures": [
+      "lab-logo-square.png"
+    ]
   },
   {
     "year": "2026",
@@ -341,8 +344,11 @@
     "year": "2025",
     "month": "10",
     "category": "Invited Talk",
-    "text": "Prof. Seung-Hyeon Moon presented an invited talk entitled \"Two Challenges in AI Accelerators,\" hosted by HPIC Lab.",
-    "links": []
+    "text": "<u>Prof. Seung-Hyeon Moon</u> presented an invited talk entitled \"Two Challenges in AI Accelerators,\" hosted by HPIC Lab.",
+    "links": [],
+    "figures": [
+      "lab-logo-square.png"
+    ]
   },
   {
     "year": "2025",
