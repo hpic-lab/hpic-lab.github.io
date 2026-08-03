@@ -103,10 +103,8 @@ $(document).ready(function () {
         });
         links = figsHTML + links;
         // 수상 사진 등 이미지가 연결된 항목: 문장 전체를 클릭하면 라이트박스로 열림 (별도 [Photo] 링크 없음)
-        // <u>이름</u> → 클릭 가능한 프로필 링크로 변환 (HPIC Lab 제외)
-        var text = it.text.replace(/<u>(?!HPIC Lab<)(.*?)<\/u>/g, '<u class="news-member" title="View profile">$1</u>');
-        // "HPIC Lab" 은 프로필 링크가 아니므로, 밑줄 없이 굵게+파랑 강조만 (이름들과 통일)
-        text = text.replace(/<u>HPIC Lab<\/u>/g, '<span class="news-lab">HPIC Lab</span>');
+        // <u>이름</u> → 강조 텍스트(굵게, 검정). 클릭은 뒤의 프로필 사진으로 대체하므로 하이퍼링크 없음.
+        var text = it.text.replace(/<u>(.*?)<\/u>/g, '<span class="news-name">$1</span>');
         // 논문 제목("...")은 굵은 본문으로 두고, 뒤에 작은 "View ↗" 배지를 클릭 링크로 부착 (Publications 로 이동)
         if (isPaper) {
           var jumpIc = '<svg class="news-link-ic" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg>';

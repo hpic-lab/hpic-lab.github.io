@@ -2559,16 +2559,12 @@ nav#navbar-main .navbar-collapse {
 }
 
 /* News 본문에서 연구원 이름 클릭 → 프로필 모달 */
-/* 연구원 이름: 밑줄 제거, 굵게 + 랩 파랑 (링크가 아닌 강조로 구분) */
-.news-list u.news-member {
-  cursor: pointer;
-  text-decoration: none;
+/* 연구원 이름 / HPIC Lab: 굵게 + 검정 (링크 아님, 클릭은 프로필 사진으로) */
+.news-list .news-name,
+.news-list .news-lab {
   font-weight: 600;
-  color: #0C447C;
+  color: #1a1a1a;
 }
-.news-list u.news-member:hover { text-decoration: underline; }
-/* "HPIC Lab": 이름들과 동일 강조(굵게+파랑), 밑줄·클릭 없음 */
-.news-list .news-lab { font-weight: 600; color: #0C447C; }
 
 .news-list .news-text {
   margin: 0;
