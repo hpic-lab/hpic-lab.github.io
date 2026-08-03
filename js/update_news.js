@@ -105,13 +105,18 @@ $(document).ready(function () {
         // 수상 사진 등 이미지가 연결된 항목: 문장 전체를 클릭하면 라이트박스로 열림 (별도 [Photo] 링크 없음)
         // <u>이름</u> → 강조 텍스트(굵게, 검정). 클릭은 뒤의 프로필 사진으로 대체하므로 하이퍼링크 없음.
         var text = it.text.replace(/<u>(.*?)<\/u>/g, '<span class="news-name">$1</span>');
-        // 논문 제목("...")은 굵은 본문으로 두고, 뒤에 작은 "View ↗" 배지를 클릭 링크로 부착 (Publications 로 이동)
+        // 논문 제목("...")은 굵은 본문. 뒤에 "View ↗" 배지:
+        //   외부 논문 링크([Paper])가 있으면(=출판됨) 그 링크로, 없으면(=Accepted, 미출판) Publications 로 이동.
         if (isPaper) {
+          var paperUrl = "";
+          (it.links || []).forEach(function (l) { if (l.label === "Paper" && l.url) paperUrl = l.url; });
           var jumpIc = '<svg class="news-link-ic" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg>';
           text = text.replace(/"([^"]+)"/, function (_, t) {
             var attr = t.replace(/"/g, "&quot;");
-            return '<span class="news-title-plain">"' + t + '"</span>' +
-              '<a href="#publications" class="news-title-badge news-pub-jump" data-title="' + attr + '">View' + jumpIc + "</a>";
+            var badge = paperUrl
+              ? '<a href="' + paperUrl + '" target="_blank" rel="noopener noreferrer" class="news-title-badge">View' + jumpIc + "</a>"
+              : '<a href="#publications" class="news-title-badge news-pub-jump" data-title="' + attr + '">View' + jumpIc + "</a>";
+            return '<span class="news-title-plain">"' + t + '"</span>' + badge;
           });
         }
         list.append(
