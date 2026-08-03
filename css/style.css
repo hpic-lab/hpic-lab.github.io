@@ -2529,20 +2529,29 @@ nav#navbar-main .navbar-collapse {
 }
 
 /* News 논문 제목 하이퍼링크 (기본은 본문색, 호버 시 파란색) */
-/* 클릭 가능한 논문 제목: 파랑 + 밑줄 + 외부이동 아이콘(↗) */
-.news-list .news-title-link {
-  color: #2563d6;
-  text-decoration: underline;
+/* 논문 제목: 검정 굵게(밑줄 없음, 링크 아님) */
+.news-list .news-title-plain {
+  font-weight: 600;
+  color: #1a1a1a;
 }
-.news-list .news-title-link:hover {
+/* 제목 뒤 "View ↗" 배지 = 클릭 링크 (Publications 로 이동) */
+.news-list .news-title-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  font-size: 0.76rem;
+  font-weight: 600;
   color: #0C447C;
-  text-decoration: underline;
-}
-.news-list .news-title-link .news-link-ic {
-  margin-left: 3px;
-  vertical-align: -1px;
+  background: #E6F1FB;
+  border-radius: 20px;
+  padding: 1px 9px;
+  margin-left: 6px;
+  vertical-align: 1px;
   text-decoration: none;
+  white-space: nowrap;
 }
+.news-list .news-title-badge:hover { background: #d3e6fa; }
+.news-list .news-title-badge .news-link-ic { vertical-align: -1px; }
 
 /* 사진이 연결된 News 문장: 클릭하면 라이트박스 */
 .news-list .news-photo-sentence {

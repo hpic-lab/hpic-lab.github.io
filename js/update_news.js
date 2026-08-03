@@ -107,10 +107,14 @@ $(document).ready(function () {
         var text = it.text.replace(/<u>(?!HPIC Lab<)(.*?)<\/u>/g, '<u class="news-member" title="View profile">$1</u>');
         // "HPIC Lab" 은 프로필 링크가 아니므로, 밑줄 없이 굵게+파랑 강조만 (이름들과 통일)
         text = text.replace(/<u>HPIC Lab<\/u>/g, '<span class="news-lab">HPIC Lab</span>');
-        // 논문 제목("...") 클릭 → Publications 섹션의 해당 논문으로 이동. 클릭 가능함을 나타내는 아이콘(↗) 부착.
+        // 논문 제목("...")은 굵은 본문으로 두고, 뒤에 작은 "View ↗" 배지를 클릭 링크로 부착 (Publications 로 이동)
         if (isPaper) {
           var jumpIc = '<svg class="news-link-ic" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg>';
-          text = text.replace(/"([^"]+)"/, '<a href="#publications" class="news-title-link news-pub-jump">"$1"' + jumpIc + "</a>");
+          text = text.replace(/"([^"]+)"/, function (_, t) {
+            var attr = t.replace(/"/g, "&quot;");
+            return '<span class="news-title-plain">"' + t + '"</span>' +
+              '<a href="#publications" class="news-title-badge news-pub-jump" data-title="' + attr + '">View' + jumpIc + "</a>";
+          });
         }
         list.append(
           '<div class="news-item" data-cat="' + catKey + '">' +
@@ -287,7 +291,7 @@ $(document).ready(function () {
     // 논문 제목 클릭 → Publications 섹션의 해당 논문으로 이동
     container.on("click", ".news-pub-jump", function (e) {
       e.preventDefault();
-      var title = $(this).text().replace(/^"|"$/g, "").trim();
+      var title = ($(this).attr("data-title") || $(this).text()).replace(/^"|"$/g, "").trim();
       if (window.openPublicationByTitle) {
         window.openPublicationByTitle(title);
       }
