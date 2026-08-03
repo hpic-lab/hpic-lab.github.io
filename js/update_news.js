@@ -84,60 +84,57 @@ $(document).ready(function () {
         var catKey = CATEGORY[it.category] ? it.category : "News";
         var c = CATEGORY[catKey];
         var jumpIc = '<svg class="news-link-ic" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg>';
-        // [Paper] 링크는 별도 표기하지 않고, 논문/특허 제목("...") 에 "View" 배지 부착
+        var photoIc = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.6"/><path d="M21 15l-5-5L5 21"/></svg>';
         var isPaper = it.category === "Journal" || it.category === "Conference" || it.category === "Patent";
         var isPatent = it.category === "Patent";
-        // 외부 링크([News] 등) → "라벨 ↗" 배지 (View 배지와 통일)
-        var links = (it.links || [])
+        // 외부 링크([News] 등) → "라벨 ↗" 배지
+        var extBadges = (it.links || [])
           .filter(function (l) { return l.label !== "Paper"; })
           .map(function (l) {
             return ' <a href="' + l.url + '" target="_blank" rel="noopener noreferrer" class="news-title-badge news-ext-badge">' + l.label + jumpIc + "</a>";
           })
           .join("");
-        // 1저자 등 학생 얼굴 사진 (문장 바로 뒤, [Paper] 링크보다 앞, 클릭 시 프로필 모달)
+        // 학생 얼굴 사진 (클릭 시 프로필 모달)
         var figsHTML = "";
         (it.figures || []).forEach(function (f) {
           if (/lab-logo/i.test(f)) {
-            // HPIC 로고: 클릭 시 이동 없음 → 모달/커서 없이 표시
             figsHTML += ' <img src="img/' + f + '" class="news-inline-fig news-inline-logo" alt="">';
           } else {
             figsHTML += ' <img src="img/' + f + '" class="news-inline-fig" alt="" data-bs-toggle="modal" data-bs-target="#exampleModal" data-img-key="' + f + '">';
           }
         });
-        links = figsHTML + links;
-        // 수상 사진 등 이미지가 연결된 항목: 문장 전체를 클릭하면 라이트박스로 열림 (별도 [Photo] 링크 없음)
-        // <u>이름</u> → 강조 텍스트(굵게, 검정). 클릭은 뒤의 프로필 사진으로 대체하므로 하이퍼링크 없음.
+
+        // <u>이름</u> → 강조 텍스트(굵게, 검정). 클릭은 뒤의 프로필 사진으로 대체.
         var text = it.text.replace(/<u>(.*?)<\/u>/g, '<span class="news-name">$1</span>');
-        // 상장: 수상명을 검정 굵게 + 그 바로 뒤에 상장 이미지를 여는 "View ↗" 배지
+        var links;   // 문장 뒤에 붙는 요소
         if (it.category === "Award") {
+          // 수상명 검정 굵게 + 그 바로 뒤에 [상장 이미지 아이콘] + [News 배지] 나란히
           var certBadge = it.img
-            ? ' <a href="' + it.img + '" class="news-title-badge news-cert-view" data-img="' + it.img + '">View' + jumpIc + "</a>"
+            ? ' <a href="' + it.img + '" class="news-icon-btn news-cert-view" title="View certificate" aria-label="View certificate" data-img="' + it.img + '">' + photoIc + "</a>"
             : "";
           text = text.replace(/received (the )?(.+?)(\s+(?:from|at)\s+|\.\s*$)/, function (m, the, award, sep) {
-            return "received " + (the || "") + "<b>" + award + "</b>" + certBadge + sep;
+            return "received " + (the || "") + "<b>" + award + "</b>" + certBadge + extBadges + sep;
           });
-        }
-        // 논문 제목("...")은 굵은 본문. 뒤에 "View ↗" 배지:
-        //   외부 논문 링크([Paper])가 있으면(=출판됨) 그 링크로, 없으면(=Accepted, 미출판) Publications 로 이동.
-        if (isPaper) {
-          // 특허는 외부 링크 없이 항상 Publications 로 이동. 논문은 [Paper] 링크가 있으면 외부로.
-          var paperUrl = "";
-          if (!isPatent) (it.links || []).forEach(function (l) { if (l.label === "Paper" && l.url) paperUrl = l.url; });
-          text = text.replace(/"([^"]+)"/, function (_, t) {
-            var attr = t.replace(/"/g, "&quot;");
-            var badge;
-            if (paperUrl) {
-              // 출판된 논문: 외부 링크
-              badge = '<a href="' + paperUrl + '" target="_blank" rel="noopener noreferrer" class="news-title-badge">View' + jumpIc + "</a>";
-            } else if (isPatent) {
-              // 특허: Publications 섹션으로 이동 (제목 매칭 없음)
-              badge = '<a href="#publications" class="news-title-badge">View' + jumpIc + "</a>";
-            } else {
-              // Accepted 논문: Publications 의 해당 항목으로 이동
-              badge = '<a href="#publications" class="news-title-badge news-pub-jump" data-title="' + attr + '">View' + jumpIc + "</a>";
-            }
-            return '<span class="news-title-plain">"' + t + '"</span>' + badge;
-          });
+          links = figsHTML;   // News 는 인라인으로 옮겼으므로 뒤에는 사진만
+        } else {
+          // 논문 제목("...")은 굵은 본문. 뒤에 "View ↗" 배지(외부/Publications).
+          if (isPaper) {
+            var paperUrl = "";
+            if (!isPatent) (it.links || []).forEach(function (l) { if (l.label === "Paper" && l.url) paperUrl = l.url; });
+            text = text.replace(/"([^"]+)"/, function (_, t) {
+              var attr = t.replace(/"/g, "&quot;");
+              var badge;
+              if (paperUrl) {
+                badge = '<a href="' + paperUrl + '" target="_blank" rel="noopener noreferrer" class="news-title-badge">View' + jumpIc + "</a>";
+              } else if (isPatent) {
+                badge = '<a href="#publications" class="news-title-badge">View' + jumpIc + "</a>";
+              } else {
+                badge = '<a href="#publications" class="news-title-badge news-pub-jump" data-title="' + attr + '">View' + jumpIc + "</a>";
+              }
+              return '<span class="news-title-plain">"' + t + '"</span>' + badge;
+            });
+          }
+          links = figsHTML + extBadges;
         }
         list.append(
           '<div class="news-item" data-cat="' + catKey + '">' +

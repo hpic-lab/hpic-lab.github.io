@@ -2552,6 +2552,21 @@ nav#navbar-main .navbar-collapse {
 }
 .news-list .news-title-badge:hover { background: #d3e6fa; }
 .news-list .news-title-badge .news-link-ic { vertical-align: -1px; }
+/* 상장 보기: 원형 이미지 아이콘 버튼 (텍스트 baseline 에 맞춰 정렬) */
+.news-list .news-icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  color: #0C447C;
+  background: #E6F1FB;
+  text-decoration: none;
+  vertical-align: -0.35em;
+  margin: 0 1px;
+}
+.news-list .news-icon-btn:hover { background: #d3e6fa; }
 
 /* 사진이 연결된 News 문장: 클릭하면 라이트박스 */
 .news-list .news-photo-sentence {
