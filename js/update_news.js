@@ -83,13 +83,15 @@ $(document).ready(function () {
         }
         var catKey = CATEGORY[it.category] ? it.category : "News";
         var c = CATEGORY[catKey];
+        var jumpIc = '<svg class="news-link-ic" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg>';
         // [Paper] 링크는 별도 표기하지 않고, 논문/특허 제목("...") 에 "View" 배지 부착
         var isPaper = it.category === "Journal" || it.category === "Conference" || it.category === "Patent";
         var isPatent = it.category === "Patent";
+        // 외부 링크([News] 등) → "라벨 ↗" 배지 (View 배지와 통일)
         var links = (it.links || [])
           .filter(function (l) { return l.label !== "Paper"; })
           .map(function (l) {
-            return ' <a href="' + l.url + '" target="_blank" rel="noopener noreferrer" class="news-link">[' + l.label + "]</a>";
+            return ' <a href="' + l.url + '" target="_blank" rel="noopener noreferrer" class="news-title-badge news-ext-badge">' + l.label + jumpIc + "</a>";
           })
           .join("");
         // 1저자 등 학생 얼굴 사진 (문장 바로 뒤, [Paper] 링크보다 앞, 클릭 시 프로필 모달)
@@ -106,7 +108,6 @@ $(document).ready(function () {
         // 수상 사진 등 이미지가 연결된 항목: 문장 전체를 클릭하면 라이트박스로 열림 (별도 [Photo] 링크 없음)
         // <u>이름</u> → 강조 텍스트(굵게, 검정). 클릭은 뒤의 프로필 사진으로 대체하므로 하이퍼링크 없음.
         var text = it.text.replace(/<u>(.*?)<\/u>/g, '<span class="news-name">$1</span>');
-        var jumpIc = '<svg class="news-link-ic" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg>';
         // 상장: 수상명을 검정 굵게 + 그 바로 뒤에 상장 이미지를 여는 "View ↗" 배지
         if (it.category === "Award") {
           var certBadge = it.img
@@ -141,7 +142,7 @@ $(document).ready(function () {
         list.append(
           '<div class="news-item" data-cat="' + catKey + '">' +
             '<span class="news-badge" style="background:' + c.bg + ";color:" + c.fg + ';">' + c.label + "</span>" +
-            '<p class="news-text' + (it.img ? ' news-photo-sentence" data-img="' + it.img + '"' : '"') + ">" + text + links + "</p>" +
+            '<p class="news-text' + (it.img && it.category !== "Award" ? ' news-photo-sentence" data-img="' + it.img + '"' : '"') + ">" + text + links + "</p>" +
           "</div>"
         );
       });
