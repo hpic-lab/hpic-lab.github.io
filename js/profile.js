@@ -110,8 +110,8 @@ $(document).ready(function () {
         container.append(profile);
       });
 
-      // 학생 그룹 제목에 인원 수 표시 (예: M.S. Candidates (14))
-      if (containerClass === ".ms-phd-candidates" || containerClass === ".ms-candidates") {
+      // 그룹 제목에 인원 수 표시 (예: M.S. Candidates (14), Researchers (1))
+      if (containerClass === ".ms-phd-candidates" || containerClass === ".ms-candidates" || containerClass === ".researchers") {
         const heading = container.prev("h3");
         if (heading.length && !/\(\d+\)/.test(heading.text())) {
           heading.append(` (${people.length})`);
