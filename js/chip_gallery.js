@@ -211,9 +211,10 @@ $(document).ready(function () {
       return '<li' + (hl ? ' class="chip-rc-li-note"' : "") + ">" + body + (i === 0 ? note : "") + "</li>";
     }).join("");
     // "Revised into ..." 는 제목 우측(revisedBadge)으로 이동 → 박스에서는 표시하지 않음
-    // "Root cause" 문구는 제거하고, 경고 아이콘 + Design Review 를 한 줄로 배치
+    // 경고 아이콘 + 짧은 라벨("Cause") + Design Review 를 한 줄로 배치 ("Root cause"는 두 줄로 깨져 축약)
     return '<div class="chip-rootcause">' +
-      '<div class="chip-rootcause-h"><span class="chip-rc-ico">&#9888;</span>' + (reviewHtml || "") + "</div>" +
+      '<div class="chip-rootcause-h"><span class="chip-rc-ico">&#9888;</span>' +
+        '<span class="chip-rc-title">Lesson</span>' + (reviewHtml || "") + "</div>" +
       "<ul>" + lis + "</ul>" +
     "</div>";
   }
@@ -477,8 +478,11 @@ $(document).ready(function () {
         '<div class="chip-filter-divider"></div>' +
         '<div class="chip-filter-label">Filter</div>' +
         '<div class="chip-filter-seg">' +
-          '<span class="chip-filter-opt active" data-f="all" role="button" tabindex="0">All</span>' +
-          '<span class="chip-filter-opt cf-failed" data-f="failed" role="button" tabindex="0">Failed</span>' +
+          '<label class="chip-fail-toggle" title="Show only failed chips">' +
+            '<input type="checkbox" class="chip-fail-check" aria-label="Failed only">' +
+            '<span class="chip-fail-switch" aria-hidden="true"></span>' +
+            '<span class="chip-fail-toggle-label"><span class="chip-fail-emoji" aria-hidden="true">&#128557;</span> Failed only</span>' +
+          "</label>" +
         "</div>"
       );
       $nav.append($filter);
@@ -503,8 +507,8 @@ $(document).ready(function () {
       function applyFailedFilter(on) {
         filtering = on;
         $board.toggle(on);
-        $("#research .chip-filter-opt").removeClass("active");
-        $('#research .chip-filter-opt[data-f="' + (on ? "failed" : "all") + '"]').addClass("active");
+        $("#research .chip-fail-check").prop("checked", on);
+        $("#research .chip-fail-toggle").toggleClass("on", on);
         if (on) {
           $c.find(".chip-card2").each(function () {
             $(this).toggle($(this).hasClass("chip-card-failed"));
@@ -564,19 +568,11 @@ $(document).ready(function () {
           gotoEl(document.getElementById("chip-timeline-preview") || document.getElementById("chip-gallery"), base + 6);
         }
       }
-      // 세그먼트가 사이드바/제목 등으로 이동해도 동작하도록 #research에 위임
-      $("#research").off("click.chipfilter").on("click.chipfilter", ".chip-filter-opt", function () {
-        var isFailed = $(this).data("f") === "failed";
+      // 토글이 사이드바/제목 등으로 이동해도 동작하도록 #research에 위임
+      $("#research").off("change.chipfilter").on("change.chipfilter", ".chip-fail-check", function () {
+        var isFailed = this.checked;
         applyFailedFilter(isFailed);
         gotoFilterTarget(isFailed);
-      });
-      $("#research").off("keydown.chipfilter").on("keydown.chipfilter", ".chip-filter-opt", function (e) {
-        if (e.key === "Enter" || e.key === " ") {
-          e.preventDefault();
-          var isFailed = $(this).data("f") === "failed";
-          applyFailedFilter(isFailed);
-          gotoFilterTarget(isFailed);
-        }
       });
     }
 
