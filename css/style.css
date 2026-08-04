@@ -223,8 +223,9 @@ h6 {
   margin-bottom: 7px;
 }
 .chip-filter-seg {
-  align-self: flex-start;
-  display: inline-flex;   /* 토글 스위치를 감싸는 래퍼 (테두리 없음) */
+  align-self: center;     /* 제목과 세로 가운데 정렬 */
+  display: inline-flex;
+  align-items: center;    /* 토글 스위치를 감싸는 래퍼 (테두리 없음) */
 }
 .chip-filter-opt {
   font-size: 0.9rem;
