@@ -85,6 +85,7 @@ $(document).ready(function () {
         var c = CATEGORY[catKey];
         var jumpIc = '<svg class="news-link-ic" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg>';
         var photoIc = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.6"/><path d="M21 15l-5-5L5 21"/></svg>';
+        var paperIc = '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><path d="M9 13h6M9 17h4"/></svg>';
         var isPaper = it.category === "Journal" || it.category === "Conference" || it.category === "Patent";
         var isPatent = it.category === "Patent";
         // 외부 링크([News] 등) → "라벨 ↗" 배지
@@ -125,11 +126,11 @@ $(document).ready(function () {
               var attr = t.replace(/"/g, "&quot;");
               var badge;
               if (paperUrl) {
-                badge = '<a href="' + paperUrl + '" target="_blank" rel="noopener noreferrer" class="news-title-badge">View' + jumpIc + "</a>";
+                badge = ' <a href="' + paperUrl + '" target="_blank" rel="noopener noreferrer" class="news-icon-btn" title="View paper" aria-label="View paper">' + paperIc + "</a>";
               } else if (isPatent) {
-                badge = '<a href="#publications" class="news-title-badge">View' + jumpIc + "</a>";
+                badge = ' <a href="#publications" class="news-icon-btn" title="View in Publications" aria-label="View in Publications">' + paperIc + "</a>";
               } else {
-                badge = '<a href="#publications" class="news-title-badge news-pub-jump" data-title="' + attr + '">View' + jumpIc + "</a>";
+                badge = ' <a href="#publications" class="news-icon-btn news-pub-jump" data-title="' + attr + '" title="View in Publications" aria-label="View in Publications">' + paperIc + "</a>";
               }
               return '<span class="news-title-plain">"' + t + '"</span>' + badge;
             });
