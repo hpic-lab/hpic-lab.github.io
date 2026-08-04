@@ -4668,6 +4668,22 @@ section {
   text-decoration: none;
 }
 .chip-card2 a.chip-status-manu:hover { text-decoration: underline; }
+/* 논문 상태 우측 문서 아이콘 (Publications/외부 논문 링크) */
+.chip-card2 .chip-paper-ic {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  color: #185FA5;
+  background: rgba(55, 138, 221, 0.12);
+  text-decoration: none;
+  vertical-align: middle;
+  margin-left: 4px;
+  flex: 0 0 auto;
+}
+.chip-card2 .chip-paper-ic:hover { background: rgba(55, 138, 221, 0.22); }
 /* Design Review: 기본은 full, 모바일에서 "DR" 로 축약 */
 /* Design Review 배지 안 자물쇠 아이콘 여백 */
 .chip-card2 .chip-rv-link .chip-review-label { margin-right: 4px; }

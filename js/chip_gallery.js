@@ -84,7 +84,7 @@ $(document).ready(function () {
   });
 
   // venue 배지(내부 논문 연결) 클릭 → 홈페이지 Publications의 해당 논문으로 이동
-  $(document).off("click.chipvenue").on("click.chipvenue", ".chip-status-venue[data-pub-title]", function (e) {
+  $(document).off("click.chipvenue").on("click.chipvenue", ".chip-status-venue[data-pub-title], .chip-paper-ic[data-pub-title]", function (e) {
     e.preventDefault();
     var title = $(this).attr("data-pub-title");
     if (window.openPublicationByTitle && window.openPublicationByTitle(title)) return;
@@ -145,13 +145,20 @@ $(document).ready(function () {
       paper: "Manuscript In Preparation"
     };
     if (MANU[chip.status]) {
-      // "Manuscript {상태}" 는 일반 텍스트, 뒤의 "(저널명)" 만 Publications로 이동하는 링크
+      // "Manuscript {상태} (저널명)" 은 일반 텍스트. 링크는 우측의 문서 아이콘에 건다.
+      //   내부 논문(paper)=Publications 항목으로, 외부 링크(link)=새 탭, 그 외=Publications 섹션.
       var manuTxt = '<span class="chip-status-txt">' + MANU[chip.status] + "</span>";
       var venuePart = vLabel
-        ? ' <span class="chip-status-jn"><span class="jn-paren">(</span>' + venueMarkup("chip-status-manu", vLabel) + '<span class="jn-paren">)</span></span>'
+        ? ' <span class="chip-status-jn"><span class="jn-paren">(</span>' + vLabel + '<span class="jn-paren">)</span></span>'
         : "";
+      var paperIcSvg = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><path d="M9 13h6M9 17h4"/></svg>';
+      var paperIcon = vPub
+        ? '<a class="chip-paper-ic" href="#publications" data-pub-title="' + escAttr(vPub) + '" title="View in Publications" aria-label="View in Publications">' + paperIcSvg + "</a>"
+        : vHref
+          ? '<a class="chip-paper-ic" href="' + vHref + '" target="_blank" rel="noopener noreferrer" title="View paper" aria-label="View paper">' + paperIcSvg + "</a>"
+          : '<a class="chip-paper-ic" href="#publications" title="View in Publications" aria-label="View in Publications">' + paperIcSvg + "</a>";
       return '<p class="chip-status ' + s.c + '"><span class="chip-status-dot"></span>' +
-        manuTxt + venuePart + project + "</p>";
+        manuTxt + venuePart + " " + paperIcon + project + "</p>";
     }
     // 그 외 상태: 기존 문구 (+ venue 배지가 있으면 표시)
     return '<p class="chip-status ' + s.c + '"><span class="chip-status-dot"></span><span class="chip-status-txt">' + s.t + "</span>" + venueMarkup("chip-status-venue") + project + "</p>";
