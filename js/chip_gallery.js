@@ -481,7 +481,7 @@ $(document).ready(function () {
           '<label class="chip-fail-toggle" title="Show only failed chips">' +
             '<input type="checkbox" class="chip-fail-check" aria-label="Failed only">' +
             '<span class="chip-fail-switch" aria-hidden="true"></span>' +
-            '<span class="chip-fail-toggle-label"><span class="chip-fail-emoji" aria-hidden="true">&#128557;</span> Failed only</span>' +
+            '<span class="chip-fail-toggle-label"><span class="chip-fail-emoji" aria-hidden="true">&#128557;</span> Failed Chips</span>' +
           "</label>" +
         "</div>"
       );
