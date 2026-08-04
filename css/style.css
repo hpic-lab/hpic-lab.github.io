@@ -3519,9 +3519,11 @@ nav#navbar-main .navbar-collapse {
   font-style: normal;
   margin: 0 0 12px;
 }
-/* 데스크톱: ECA 문구 크기 축소 */
+/* 데스크톱: ECA 문구를 제목 바로 밑으로 + 크기 살짝 축소 */
 @media (min-width: 992px) {
-  #publications .pub2-notice { font-size: 0.68rem; }
+  #publications .sticky-sidebar h1 { margin-bottom: 6px; }
+  #publications .pub2-side-nav { margin-top: 4px; }
+  #publications .pub2-notice { font-size: 0.74rem; margin-top: 0; margin-bottom: 14px; }
 }
 
 .pub2-year {
