@@ -224,15 +224,7 @@ h6 {
 }
 .chip-filter-seg {
   align-self: flex-start;
-  display: inline-flex;
-  border: 1px solid #e0ddd6;
-  border-radius: 8px;
-  overflow: hidden;
-  transition: border-color 0.15s ease, box-shadow 0.15s ease;
-}
-.chip-filter-seg:hover {
-  border-color: #c7c2b6;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+  display: inline-flex;   /* 토글 스위치를 감싸는 래퍼 (테두리 없음) */
 }
 .chip-filter-opt {
   font-size: 0.9rem;
