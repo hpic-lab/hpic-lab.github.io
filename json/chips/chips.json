@@ -484,7 +484,9 @@
     "status": "failed",
     "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/40nm/OSPLL",
     "fail_reasons": [
-      "Internal signal routed over extremely long without buffer"
+      "Internal signal routed over extremely long without buffer",
+      "Insufficient simulation (co-/top-level) before tape-out",
+      "Poor allocation of design time"
     ]
   },
   {
@@ -563,7 +565,9 @@
     "status": "failed",
     "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/65nm/M15092%2865nm%2C%2024.5.XX%29",
     "fail_reasons": [
-      "I2C communication failed"
+      "I2C communication failed",
+      "Insufficient co-simulation (digital + analog)",
+      "Insufficient top-level (TR-level) simulation"
     ],
     "revised_into": "Revised into #10"
   },
