@@ -3519,6 +3519,10 @@ nav#navbar-main .navbar-collapse {
   font-style: normal;
   margin: 0 0 12px;
 }
+/* 데스크톱: ECA 문구 크기 축소 */
+@media (min-width: 992px) {
+  #publications .pub2-notice { font-size: 0.68rem; }
+}
 
 .pub2-year {
   font-size: 1.05rem;
