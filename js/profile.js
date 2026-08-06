@@ -1,6 +1,12 @@
 $(document).ready(function () {
   
-  window.peopleDB = {}; 
+  window.peopleDB = {};
+  // 사진 클릭 → 상세 프로필 매칭용: 프로필 사진 파일이 교체되어 논문/칩 figure 파일명과
+  // 달라진 경우, 옛 파일명을 현재 멤버 사진 파일명으로 정규화한다.
+  // (전수 조사 결과 아래 항목만 해당. 향후 파일명 변형 시 여기에 추가.)
+  window.IMG_KEY_CANON = {
+    "dh-kim-profile-image.jpg": "dh-kim-new-profile-image.jpg"
+  };
 
   function getFileName(path) {
     if (!path) return "";
@@ -357,8 +363,9 @@ $(document).ready(function () {
 
   $("#exampleModal").on("show.bs.modal", function (event) {
     const button = $(event.relatedTarget);
-    const imgKey = button.data("img-key");
-    
+    let imgKey = button.data("img-key");
+    if (window.IMG_KEY_CANON && window.IMG_KEY_CANON[imgKey]) imgKey = window.IMG_KEY_CANON[imgKey];
+
     let person = window.peopleDB[imgKey];
 
     if (!person) {
