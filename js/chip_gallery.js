@@ -641,7 +641,7 @@ $(document).ready(function () {
   function renderTapeoutSchedule(selector, baseNum) {
     var $c = $(selector);
     if (!$c.length) return;
-    $.getJSON("json/chips/tapeout_schedule.json").done(function (items) {
+    $.getJSON("json/chips/tapeout_schedule.json?v=" + Date.now()).done(function (items) {
       if (!items || !items.length) return;
       var groups = {}, order = [];
       items.forEach(function (it) {
@@ -747,7 +747,7 @@ $(document).ready(function () {
     measureResearchSticky();
   }
 
-  $.getJSON("json/chips/chips.json").done(function (chips) {
+  $.getJSON("json/chips/chips.json?v=" + Date.now()).done(function (chips) {
     computeGalleryNumbers(chips);  // 연번 먼저 확정 (연도/Failed 섹션 공통)
     // 메인 Research 미리보기 (접이식)
     $(".chip-timeline-preview").each(function () {
