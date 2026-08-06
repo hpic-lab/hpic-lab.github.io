@@ -147,8 +147,8 @@ $(document).ready(function () {
 
       // Alumni 아코디언 헤더에 전체 인원 수 표시
       const alumniHeading = $("#alumni");
-      if (alumniHeading.length && !/\(\d+\)/.test(alumniHeading.text())) {
-        alumniHeading.append(` (${alumniList.length})`);
+      if (alumniHeading.length && !alumniHeading.find(".alumni-count").length) {
+        alumniHeading.append(' <span class="alumni-count">' + alumniList.length + '</span>');
       }
 
       const groups = { ms: [], bs: [], etc: [] };
@@ -171,7 +171,7 @@ $(document).ready(function () {
 
         // M.S. Alumni 는 펼침, 그 외(B.S./기타)는 접힘 상태로 시작
         const open = (sec.key === "ms");
-        container.append(`<div class="alumni-section-title alumni-toggle ${sec.cls}${open ? "" : " collapsed"}" role="button" tabindex="0">${sec.label} (${list.length})</div>`);
+        container.append(`<div class="alumni-section-title alumni-toggle ${sec.cls}${open ? "" : " collapsed"}" role="button" tabindex="0">${sec.label} <span class="alumni-count">${list.length}</span></div>`);
         // 접기 대상은 래퍼(.alumni-fold) — .people-grid 는 display:flex !important 라 직접 hide 불가
         const foldWrap = $('<div class="alumni-fold"></div>');
         if (!open) foldWrap.hide();

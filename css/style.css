@@ -101,6 +101,18 @@ h6 {
   margin-left: 10px;
   vertical-align: middle;
 }
+/* Alumni 카운트: 졸업생 구분용 앰버(gold) 채움 배지 */
+.alumni-count {
+  display: inline-block;
+  font-size: 0.72em;
+  font-weight: 600;
+  color: #854F0B;
+  background: #FAEEDA;
+  border-radius: 20px;
+  padding: 1px 10px;
+  margin-left: 6px;
+  vertical-align: middle;
+}
 
 /* Research 좌측 사이드바의 Chip Gallery 서브 네비 (트리 스타일: 세로 가이드 라인 + 들여쓰기) */
 .research-subnav {
