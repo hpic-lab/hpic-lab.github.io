@@ -211,7 +211,7 @@
       "High-Speed"
     ],
     "status": "failed",
-    "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/28nm/M16280%2828nm%2C%2025.07.09%29",
+    "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/28nm/M16280%2828nm%2C%2025.07.09%29/DR%20jglee%20250925%201.pdf",
     "fail_reasons": [
       "No buffer in front of the ADC (clock feedthrough)",
       "No co-simulation with the ADC",
@@ -241,7 +241,7 @@
     ],
     "status": "review",
     "venue": "IEEE TCAS-II'26",
-    "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/28nm/M15987%2828nm%2C%2025.02.12%29"
+    "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/28nm/M15987%2828nm%2C%2025.02.12%29/250228_final_DR.pdf"
   },
   {
     "year": 2025,
@@ -482,7 +482,7 @@
       "PLL"
     ],
     "status": "failed",
-    "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/40nm/OSPLL",
+    "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/40nm/OSPLL/OSPLL_design%20review_Jhkim.pdf",
     "fail_reasons": [
       "Internal signal routed over extremely long without buffer",
       "Insufficient simulation (co-/top-level) before tape-out",
@@ -509,7 +509,7 @@
       "Phase Interpolator"
     ],
     "status": "failed",
-    "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/28nm/M14942%2828nm%2C%2024.5.29%29",
+    "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/28nm/M14942%2828nm%2C%2024.5.29%29/DR_T28n_dhheo_240826.pdf",
     "fail_reasons": [
       "CTLE performance degraded",
       "DLF timing violation (CDC)",
