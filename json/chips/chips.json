@@ -164,7 +164,7 @@
       "Receiver"
     ],
     "status": "measurement",
-    "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/28nm/M16280%2828nm%2C%2025.07.09%29"
+    "review_link": ""
   },
   {
     "year": 2025,
@@ -189,7 +189,7 @@
       "DAC"
     ],
     "status": "measurement",
-    "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/28nm/M16280%2828nm%2C%2025.07.09%29"
+    "review_link": ""
   },
   {
     "year": 2025,
@@ -403,7 +403,7 @@
       "Phase Interpolator"
     ],
     "status": "failed",
-    "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/65nm/M15407%2865nm%2C%2024.10.31%29",
+    "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/65nm/M15407%2865nm%2C%2024.10.31%29/PIPLL/Design_Review_pipll_initial_%EB%B0%95%EA%B7%9C%EB%9E%80.pdf",
     "fail_reasons": [
       "Verified only under simulation-favorable conditions.",
       "Mismatched port connection between the two modules (floating)"
@@ -429,7 +429,7 @@
       "PUF"
     ],
     "status": "failed",
-    "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/65nm/M15407%2865nm%2C%2024.10.31%29",
+    "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/65nm/M15407%2865nm%2C%2024.10.31%29/PUF/ILO-based-PUF%28revision%29_Design_Review_%EB%B3%B4%EC%99%84.pdf",
     "fail_reasons": [
       "I2C communication failed",
       "<strong><u>2nd Failure, do not repeat the same mistake!</u></strong>"
@@ -456,7 +456,7 @@
       "ADC"
     ],
     "status": "failed",
-    "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/40nm/ADC_RX_1",
+    "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/40nm/ADC_RX_1/Design_review_ADCRX_241016.pdf",
     "fail_reasons": [
       "No co-simulation (ADC + DSP)",
       "LVS failed (<strong><u>Unacceptable!</u></strong>)"
@@ -563,7 +563,7 @@
       "PUF"
     ],
     "status": "failed",
-    "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/65nm/M15092%2865nm%2C%2024.5.XX%29",
+    "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/65nm/M15092%2865nm%2C%2024.5.XX%29/ILO-based%20PUF_Design_review_2405_%EB%B3%B4%EC%99%84.pdf",
     "fail_reasons": [
       "I2C communication failed",
       "Insufficient co-simulation (digital + analog)",
@@ -596,7 +596,7 @@
       "label": "IEEE JETCAS'26",
       "paper": "IGA-SRAM: A Compact SRAM-based IMC Engine for Binary/Ternary Deep Neural Networks with ADC-Less and Error-Aware Training Algorithm"
     },
-    "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/65nm/M14253%2823.11.29%29"
+    "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/65nm/M14253%2823.11.29%29/DR_PIM_20231221.pdf"
   },
   {
     "year": 2023,
@@ -649,7 +649,7 @@
       "Bug masked in simulation by forcing an initial condition (.ic)",
       "No start-up circuit included"
     ],
-    "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/65nm/M14467(23.11.29)/Design_Review_final_%EB%B0%95%EA%B7%9C%EB%9E%80_M14467.pptx"
+    "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/65nm/M14467(23.11.29)/Design_Review_final_%EB%B0%95%EA%B7%9C%EB%9E%80_M14467.pdf"
   },
   {
     "year": 2023,
@@ -674,6 +674,6 @@
       "Bug masked in simulation by forcing an initial condition (.ic)",
       "No start-up circuit included"
     ],
-    "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/65nm/M14467(23.11.29)/Design_Review_231126.pptx"
+    "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/65nm/M14467(23.11.29)/Design_Review_231126.pdf"
   }
 ]

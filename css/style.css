@@ -5017,9 +5017,15 @@ a.chip-status-venue:hover { background: rgba(55, 138, 221, 0.2); }
   white-space: nowrap;
 }
 .chip-card2 .chip-rv-link:hover { background: rgba(12, 68, 124, 0.12); }
-/* 링크 없는 Design Review (자료 미등록) — 위치·모양은 동일, 클릭 불가 */
-.chip-card2 .chip-rv-nolink { cursor: default; }
-.chip-card2 .chip-rv-nolink:hover { background: rgba(12, 68, 124, 0.05); }
+/* 링크 없는 Design Review (아직 없음) — 흐린 회색 + 점선 테두리, 클릭 불가 */
+.chip-card2 .chip-rv-nolink {
+  cursor: default;
+  color: #9a9a94;
+  border: 1px dashed #c7c5bd;
+  background: transparent;
+}
+.chip-card2 .chip-rv-nolink:hover { background: transparent; }
+.chip-card2 .chip-rv-nolink .chip-review-label { color: #b3b0a8; }
 
 .chip-outs {
   display: flex;
