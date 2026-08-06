@@ -1786,8 +1786,7 @@ nav#navbar-main .navbar-collapse {
     position: absolute; left: 0; right: 0; bottom: 100%;
     height: 60px; background: #fff;
   }
-  /* Level 1: 소섹션 (Research Projects / Chip Gallery) — 스크롤 시 자동 교체 */
-  #research h5#research-projects,
+  /* Level 1: 소섹션 (Chip Gallery) — 스크롤 시 상단 고정 */
   #research h5#chip-gallery {
     position: -webkit-sticky;
     position: sticky;
@@ -1799,7 +1798,12 @@ nav#navbar-main .navbar-collapse {
     margin-left: 16px;
     padding-left: 0;
   }
-  #research h5#research-projects::before,
+  /* Research Projects 제목은 상단 고정 해제 (들여쓰기는 유지) */
+  #research h5#research-projects {
+    position: static;
+    margin-left: 16px;
+    padding-left: 0;
+  }
   #research h5#chip-gallery::before {
     content: "";
     position: absolute; left: 0; right: 0; bottom: 100%;
@@ -4440,7 +4444,6 @@ section {
 }
 /* 데스크톱: 콘텐츠 소섹션 제목(Research Projects / Chip Gallery)을 상단 고정 */
 @media (min-width: 992px) {
-  #research .col-lg-8 > h5#research-projects,
   #research .col-lg-8 > h5#chip-gallery {
     position: -webkit-sticky;
     position: sticky;
@@ -4448,7 +4451,8 @@ section {
     z-index: 6;   /* 연도 헤더(5)보다 위 */
     background: var(--section-bg, #fff);
   }
-  #research .col-lg-8 > h5#research-projects::before,
+  /* Research Projects 제목은 상단 고정 해제 */
+  #research .col-lg-8 > h5#research-projects { position: static; }
   #research .col-lg-8 > h5#chip-gallery::before {
     content: "";
     position: absolute;
