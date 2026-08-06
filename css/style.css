@@ -3429,11 +3429,10 @@ nav#navbar-main .navbar-collapse {
   color: #777;
   text-decoration: none;
   padding: 3px 4px;
-  cursor: pointer;   /* 클릭 시 해당 연도로 이동 */
+  cursor: default;   /* 표시 전용 (클릭 링크 없음) */
   user-select: none;
   align-self: flex-start;   /* 세로 목록에서 활성 배경이 칸 전체로 늘어나지 않도록 */
 }
-.pub2-year-link:hover { color: #2e55be; }
 
 /* 안 4: 파란 점 마커 + 볼드 (배경 없음) — News/Publications 공통 */
 .pub2-year-link::before {
@@ -3447,12 +3446,9 @@ nav#navbar-main .navbar-collapse {
   color: #2e55be;
   font-weight: 800;
 }
-/* News 사이드바 연도는 클릭 가능 (해당 연도로 이동) */
-.news-year-link { cursor: pointer; }
-.news-year-link:hover { color: #2e55be; }
-/* Chip Gallery 사이드바 연도도 클릭 가능 (해당 연도로 이동) */
-.chip-year-link { cursor: pointer; }
-.chip-year-link:hover { color: #2e55be; }
+/* News / Chip Gallery 사이드바 연도도 표시 전용 */
+.news-year-link,
+.chip-year-link { cursor: default; }
 .pub2-year-link.active::before {
   color: #2e55be;
 }

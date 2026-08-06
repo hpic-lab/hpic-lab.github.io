@@ -87,6 +87,9 @@ $(document).ready(function () {
   $(document).off("click.chipvenue").on("click.chipvenue", ".chip-status-venue[data-pub-title], .chip-paper-ic[data-pub-title]", function (e) {
     e.preventDefault();
     var title = $(this).attr("data-pub-title");
+    // 외부 논문 링크가 있으면(=출판됨) 외부로, 없으면 Publications 항목/섹션으로 이동
+    var ext = window.getPublicationLink && window.getPublicationLink(title);
+    if (ext) { window.open(ext, "_blank", "noopener"); return; }
     if (window.openPublicationByTitle && window.openPublicationByTitle(title)) return;
     var pub = document.getElementById("publications");
     if (pub) pub.scrollIntoView({ behavior: "smooth" });
@@ -421,34 +424,8 @@ $(document).ready(function () {
       $nav.append($a);
     });
 
-    // 사이드바 연도 클릭 → 해당 연도로 이동 (접혀 있으면 펼침). News와 동일.
-    $nav.off("click.chipyearnav").on("click.chipyearnav", ".chip-year-link", function () {
-      var id = $(this).data("yid");
-      var header = document.getElementById(id);
-      if (!header) return;
-      var $h = $(header);
-      if (!$h.is(":visible")) return;   // Failed 필터 등으로 숨겨진 연도는 무시
-      if ($h.hasClass("collapsed")) { $h.removeClass("collapsed"); $h.next(".chip-year-body").show(); }
-      var rEl = document.getElementById("research");
-      var off = 130;
-      if (rEl) {
-        var cs = getComputedStyle(rEl);
-        var v = function (n) { return parseFloat(cs.getPropertyValue(n)) || 0; };
-        off = window.matchMedia("(max-width: 991px)").matches
-          ? (v("--res-nav-h") + v("--res-title-h") + v("--res-sub-h"))
-          : (100 + v("--res-dsub-h") + 12);
-      }
-      document.querySelectorAll('img[loading="lazy"]').forEach(function (img) { img.loading = "eager"; });
-      function jump() {
-        var docEl = document.documentElement, prev = docEl.style.scrollBehavior;
-        docEl.style.scrollBehavior = "auto";
-        var y = Math.max(0, header.getBoundingClientRect().top + window.pageYOffset - (off + 6));
-        try { window.scrollTo({ top: y, behavior: "instant" }); } catch (e) { window.scrollTo(0, y); }
-        docEl.style.scrollBehavior = prev;
-      }
-      jump();
-      [60, 180, 360].forEach(function (t) { setTimeout(jump, t); });
-    });
+    // 사이드바 연도는 표시 전용 (클릭 링크 없음)
+    $nav.off("click.chipyearnav");
 
     var filtering = false;
 

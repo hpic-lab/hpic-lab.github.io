@@ -170,28 +170,8 @@ $(document).ready(function () {
         .join("");
       sidebar.append('<div class="pub2-year-links news-year-links">' + linksHTML + "</div>");
 
-      // 사이드바 연도 클릭 → 해당 연도 아코디언 펼치고 상단으로 이동
-      sidebar.off("click.newsyear").on("click.newsyear", ".news-year-link", function () {
-        var y = $(this).data("year");
-        var header = document.getElementById(y);
-        if (!header) return;
-        var $acc = $(header).closest(".news-accordion");
-        if ($acc.length) {
-          $acc.removeClass("start-closed");
-          try { $acc.accordion("option", "active", 0); } catch (e) {}
-        }
-        document.querySelectorAll('img[loading="lazy"]').forEach(function (img) { img.loading = "eager"; });
-        function jump() {
-          var docEl = document.documentElement, prev = docEl.style.scrollBehavior;
-          docEl.style.scrollBehavior = "auto";
-          var navH = $("#navbar-main").outerHeight() || 90;
-          var yy = Math.max(0, header.getBoundingClientRect().top + window.pageYOffset - (navH + 6));
-          try { window.scrollTo({ top: yy, behavior: "instant" }); } catch (err) { window.scrollTo(0, yy); }
-          docEl.style.scrollBehavior = prev;
-        }
-        jump();
-        [60, 180, 360].forEach(function (t) { setTimeout(jump, t); });
-      });
+      // 사이드바 연도는 표시 전용 (클릭 링크 없음)
+      sidebar.off("click.newsyear");
 
       // ===== 카테고리 필터 (Grant / Journal / Award 등) =====
       var catOrder = ["All", "Grant", "Journal", "Conference", "Award", "Patent", "Invited Talk", "Service", "News"];

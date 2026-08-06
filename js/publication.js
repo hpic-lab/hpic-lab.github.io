@@ -314,7 +314,7 @@ $(document).ready(function () {
       var tabTarget = venueClass === "pub2-venue-journal" ? "journal" : "conference";
       if (hasTitle) {
         entryId = "pubentry-" + tabTarget + "-" + normTitle(pub.title);
-        window.pubTitleIndex[normTitle(pub.title)] = { id: entryId, tab: tabTarget };
+        window.pubTitleIndex[normTitle(pub.title)] = { id: entryId, tab: tabTarget, link: (pub.link || "").trim() };
       }
 
       var reviewGroup = reviewProcessHTML(pub, isJournal);
@@ -516,29 +516,8 @@ $(document).ready(function () {
     var _wrapT;
     $(window).on("resize.pubwrap", function () { clearTimeout(_wrapT); _wrapT = setTimeout(markWrappedReviews, 150); });
 
-    // 사이드바 연도 클릭 → 해당 연도로 이동 (접혀 있으면 펼침). News/Chip Gallery와 동일.
-    $("#publications").off("click.pubyearnav").on("click.pubyearnav", ".pub2-year-link", function () {
-      var id = $(this).data("yid");
-      var header = document.getElementById(id);
-      if (!header) return;
-      var $h = $(header);
-      if ($h.hasClass("collapsed")) { $h.removeClass("collapsed"); $h.next(".pub2-year-body").show(); }
-      var off = 100;
-      if (window.matchMedia("(max-width: 991px)").matches) {
-        var pv = getComputedStyle(document.getElementById("publications")).getPropertyValue("--pub-year-top");
-        off = (parseFloat(pv) || 150);
-      }
-      document.querySelectorAll('img[loading="lazy"]').forEach(function (img) { img.loading = "eager"; });
-      function jump() {
-        var docEl = document.documentElement, prev = docEl.style.scrollBehavior;
-        docEl.style.scrollBehavior = "auto";
-        var y = Math.max(0, header.getBoundingClientRect().top + window.pageYOffset - (off + 6));
-        try { window.scrollTo({ top: y, behavior: "instant" }); } catch (e) { window.scrollTo(0, y); }
-        docEl.style.scrollBehavior = prev;
-      }
-      jump();
-      [60, 180, 360].forEach(function (t) { setTimeout(jump, t); });
-    });
+    // 사이드바 연도는 표시 전용 (클릭 링크 없음)
+    $("#publications").off("click.pubyearnav");
 
     // 탭 활성화 (스크롤 없이 표시만)
     function activateTab(target) {
@@ -600,6 +579,11 @@ $(document).ready(function () {
     [200, 600, 1200].forEach(function (t) { setTimeout(updPubYearTop, t); });
     $(window).on("resize.pubyeartop", updPubYearTop);
 
+    // 제목으로 외부 논문 링크 조회 (없으면 "")
+    window.getPublicationLink = function (title) {
+      var rec = window.pubTitleIndex[normTitle(title)];
+      return rec && rec.link ? rec.link : "";
+    };
     // ===== News → 제목 클릭 시 해당 논문으로 이동 =====
     window.openPublicationByTitle = function (title) {
       var rec = window.pubTitleIndex[normTitle(title)];
