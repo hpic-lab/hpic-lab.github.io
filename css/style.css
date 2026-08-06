@@ -2838,6 +2838,15 @@ nav#navbar-main .navbar-collapse {
   font-weight: 400;
   margin-left: 6px;
 }
+/* 모바일: 한국어 교과목명이 있으면 영문 숨기고 한글만 본문 스타일로 표시 */
+@media (max-width: 576px) {
+  .teach-title-en.has-kr { display: none; }
+  .teach-title-kr {
+    margin-left: 0;
+    color: #222;
+    font-weight: 500;
+  }
+}
 
 /* 완료 과제 접힘 토글 (Publications .pub2-year 와 동일 서식) */
 .completed-toggle {

@@ -22,7 +22,8 @@ $(document).ready(function () {
       '<div class="teach-item">' +
         '<span class="teach-badge" style="background:' + t.bg + ";color:" + t.fg + ';">' + c.term + "</span>" +
         '<span class="teach-badge teach-badge-level" style="background:' + l.bg + ";color:" + l.fg + ';">' + l.label + "</span>" +
-        '<span class="teach-title">' + c.title +
+        '<span class="teach-title">' +
+          '<span class="teach-title-en' + (c.name_kr ? " has-kr" : "") + '">' + c.title + "</span>" +
           (c.name_kr ? ' <span class="teach-title-kr">' + c.name_kr + "</span>" : "") +
         "</span>" +
       "</div>"
