@@ -3890,8 +3890,12 @@ section {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
-  /* 어두운 효과 */
+  /* 좌측(텍스트 뒤)은 진하게, 우측(칩 사진 위)은 밝게 — 칩이 잘 보이도록 */
+  background: linear-gradient(100deg,
+      rgba(0, 0, 0, 0.78) 0%,
+      rgba(0, 0, 0, 0.55) 34%,
+      rgba(0, 0, 0, 0.28) 62%,
+      rgba(0, 0, 0, 0.34) 100%);
   z-index: 1;
 }
 
@@ -3942,6 +3946,7 @@ section {
   height: 200px;
   z-index: 1;
   color: white;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
 }
 
 .home-description-container .uni {
