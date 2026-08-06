@@ -680,9 +680,8 @@ $(document).ready(function () {
       .map((a) => {
         // "X and Y received (the) ~" 문구 제거 → 상 이름 + 출처만 남김
         var txt = a.text.replace(/^.*?\breceived\s+(the\s+)?/i, "");
-        var body = a.img
-          ? '<a href="' + a.img + '" target="_blank" rel="noopener noreferrer" class="mpub-award-link">' + txt + "</a>"
-          : txt;
+        // Detailed Profile 의 Awards 는 링크 없이 평문으로 표시
+        var body = txt;
         return '<div class="mpub-entry">' +
           '<div class="mpub-side mpub-date">' + yearOnly(a.ym) + "</div>" +
           '<div class="mpub-body">' + body + "</div>" +
