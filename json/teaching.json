@@ -1,4 +1,7 @@
 [
+  { "year": 2026, "term": "Fall", "level": "Graduate", "title": "High-Speed Wireline Communication IC Design", "name_kr": "고속유선통신집적회로설계" },
+  { "year": 2026, "term": "Fall", "level": "Undergraduate", "title": "Electronic Circuits (1)", "name_kr": "전자회로 (1)" },
+
   { "year": 2026, "term": "Spring", "level": "Undergraduate", "title": "Electronic Circuits (2)", "name_kr": "전자회로 (2)" },
 
   { "year": 2025, "term": "Winter", "level": "Undergraduate", "title": "Microelectronic Circuits" },
