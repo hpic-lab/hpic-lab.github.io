@@ -78,6 +78,30 @@ h6 {
   color: #222;
 }
 
+/* 멤버 수 배지: 섹션별(M.S. 등) + Members 제목 옆 총 학생 수 — 통일된 pill 스타일 */
+#people h3 .member-count {
+  display: inline-block;
+  font-size: 0.72em;
+  font-weight: 600;
+  color: #0C447C;
+  background: #E6F1FB;
+  border-radius: 20px;
+  padding: 1px 10px;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+.members-title .members-total {
+  display: inline-block;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #0C447C;
+  background: #E6F1FB;
+  border-radius: 20px;
+  padding: 2px 12px;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
 /* Research 좌측 사이드바의 Chip Gallery 서브 네비 (트리 스타일: 세로 가이드 라인 + 들여쓰기) */
 .research-subnav {
   position: relative;

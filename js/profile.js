@@ -110,11 +110,18 @@ $(document).ready(function () {
         container.append(profile);
       });
 
-      // 그룹 제목에 인원 수 표시 (예: M.S. Candidates (14), Researchers (1))
+      // 그룹 제목에 인원 수 배지 + Members 제목 옆 총 학생 수 배지
       if (containerClass === ".ms-phd-candidates" || containerClass === ".ms-candidates" || containerClass === ".researchers") {
         const heading = container.prev("h3");
-        if (heading.length && !/\(\d+\)/.test(heading.text())) {
-          heading.append(` (${people.length})`);
+        if (heading.length && !heading.find(".member-count").length) {
+          heading.append(' <span class="member-count">' + people.length + '</span>');
+          window.__studentTotal = (window.__studentTotal || 0) + people.length;
+          const $mt = $(".members-title");
+          if ($mt.length) {
+            let $b = $mt.find(".members-total");
+            if (!$b.length) { $b = $('<span class="members-total"></span>'); $mt.append(" ").append($b); }
+            $b.text(window.__studentTotal);
+          }
         }
       }
     });
