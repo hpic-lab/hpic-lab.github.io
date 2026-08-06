@@ -580,12 +580,16 @@ nav#navbar-main .navbar-collapse {
 #photo-gallery .gallery-title-row {
   justify-content: flex-end;
 }
-/* 모바일: Details 버튼을 사진 위(제목 아래)에 우측 정렬로 배치 — 사진 위 겹침 방지 */
+/* 모바일: Details 버튼을 "Lab Gallery" 제목과 같은 줄(우측 상단)로 — 아래 빈 줄 제거로 공백 축소 */
 @media (max-width: 991px) {
+  #photo-gallery .row { position: relative; }
   #photo-gallery .gallery-title-row {
-    position: static;
+    position: absolute;
+    top: 4px;
+    right: 12px;
+    margin: 0;
+    z-index: 5;
     justify-content: flex-end;
-    margin: 0 0 12px;
   }
 }
 
