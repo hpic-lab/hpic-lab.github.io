@@ -289,7 +289,7 @@ h6 {
   flex: 0 0 auto;
   width: 38px; height: 22px;
   border-radius: 20px;
-  background: #cfccc5;
+  background: #e4e1da;
   transition: background 0.2s;
 }
 .chip-fail-toggle .chip-fail-switch::after {
@@ -310,12 +310,14 @@ h6 {
 }
 .chip-fail-toggle .chip-fail-toggle-label {
   font-size: 0.95rem;
-  font-weight: 600;
-  color: #6b6b66;
+  font-weight: 500;        /* 비활성: 일반 굵기 */
+  color: #b3b0a8;          /* 비활성: 연한 회색 */
   white-space: nowrap;
-  transition: color 0.2s;
+  transition: color 0.2s, font-weight 0.2s;
 }
-.chip-fail-toggle.on .chip-fail-toggle-label { color: #C0392B; }
+.chip-fail-toggle .chip-fail-emoji { opacity: 0.45; transition: opacity 0.2s; }
+.chip-fail-toggle.on .chip-fail-toggle-label { color: #C0392B; font-weight: 700; }  /* 활성: 빨강 + Bold */
+.chip-fail-toggle.on .chip-fail-emoji { opacity: 1; }
 
 /* Failed 필터 활성 시 상단 경고 메시지 보드 */
 .fail-board {
