@@ -4006,6 +4006,16 @@ section {
   line-height: 1.7;
 }
 
+/* 히어로 내 RESEARCH SECTION — 링크임이 보이도록 밝은 파랑 + 밑줄 */
+.home-description-container .hero-link {
+  color: #7fc4ff;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  font-weight: 700;
+  transition: color 0.15s ease;
+}
+.home-description-container .hero-link:hover { color: #a9d7ff; }
+
 /* ========================================= */
 /* [Last Updated] 우측 하단 투명 위젯 스타일 */
 /* ========================================= */
@@ -4287,6 +4297,35 @@ section {
     font-size: 3vw;
     padding: 1vw 2vw;
   }
+}
+
+/* 모바일: 히어로 텍스트 가운데 정렬 + 중앙 강조 오버레이 + 두 문장 한 줄 유지 */
+@media (max-width: 991px) {
+  .dim {
+    background: linear-gradient(90deg,
+        rgba(0, 0, 0, 0.48) 0%,
+        rgba(0, 0, 0, 0.62) 50%,
+        rgba(0, 0, 0, 0.48) 100%);
+  }
+  .home-description-container {
+    left: 0;
+    right: 0;
+    transform: none;
+    width: 100%;
+    padding: 0 16px;
+    box-sizing: border-box;
+    align-items: center;
+    text-align: center;
+  }
+  .home-description-container .uni,
+  .home-description-container .txt {
+    width: 100%;
+    margin-left: 0;
+  }
+  .home-description-container p { padding: 0; }
+  .home-description-container .txt { font-size: 3vw; }
+  /* "Please see ~ information." 와 "We are ~ researchers." 는 한 줄 유지 */
+  .home-description-container .txt .hero-oneline { white-space: nowrap; }
 }
 
 @media (max-width: 344px) {
