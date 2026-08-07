@@ -598,6 +598,8 @@ $(document).ready(function () {
         $body.show();
       }
       var $entry = $(entry);
+      // 내부 이동: 뒤로가기 시 직전 위치로 복원되도록 히스토리에 기록
+      if (window.hpicMarkJump) window.hpicMarkJump();
       smoothScrollTo(entry.getBoundingClientRect().top + window.pageYOffset - 120);
       // 잠깐 강조
       $entry.addClass("pub2-entry-flash");

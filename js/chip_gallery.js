@@ -92,7 +92,10 @@ $(document).ready(function () {
     if (ext) { window.open(ext, "_blank", "noopener"); return; }
     if (window.openPublicationByTitle && window.openPublicationByTitle(title)) return;
     var pub = document.getElementById("publications");
-    if (pub) pub.scrollIntoView({ behavior: "smooth" });
+    if (pub) {
+      if (window.hpicMarkJump) window.hpicMarkJump();
+      pub.scrollIntoView({ behavior: "smooth" });
+    }
   });
 
   function escAttr(s) {

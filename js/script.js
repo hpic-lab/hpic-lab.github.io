@@ -393,3 +393,21 @@ document.addEventListener("DOMContentLoaded", function () {
     catch (e) { window.scrollTo(0, 0); }
   });
 })();
+
+// ===== 내부 redirection 뒤로가기 지원 =====
+// 내부 점프(칩→Publications, News→논문 등) 직전에 호출하면 현재 스크롤 위치를
+// 히스토리에 기록한다. 뒤로가기 시 사이트를 빠져나가는 대신 그 위치로 복원된다.
+window.hpicMarkJump = function () {
+  try {
+    var st = history.state || {};
+    st.hpicY = window.pageYOffset || document.documentElement.scrollTop || 0;
+    history.replaceState(st, "");
+    history.pushState({ hpicJump: true }, "");
+  } catch (e) {}
+};
+window.addEventListener("popstate", function (e) {
+  var st = e.state;
+  if (st && typeof st.hpicY === "number") {
+    window.scrollTo(0, st.hpicY);
+  }
+});
