@@ -540,8 +540,8 @@ $(document).ready(function () {
       scrollToEl($("#publications"));
     });
 
-    // 초기 상태: Journal
-    activateTab("journal");
+    // 초기 상태: All (통합 목록)
+    activateTab("all");
 
     // 모바일: ECA+탭(+연도링크) 묶음을 콘텐츠 상단으로 옮겨 스크롤 시 상단 고정.
     // 데스크톱에서는 사이드바 원위치로 되돌린다.
