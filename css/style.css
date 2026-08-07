@@ -4530,6 +4530,41 @@ section {
   }
 }
 
+/* 모바일 전용: 맨 위로 플로팅 버튼 (우측 하단, 네이비 원형) */
+#back-to-top {
+  display: none;   /* 데스크톱에선 항상 숨김 */
+}
+@media (max-width: 991px) {
+  #back-to-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 16px;
+    bottom: 20px;
+    width: 44px;
+    height: 44px;
+    border: none;
+    border-radius: 50%;
+    background: #0C447C;
+    color: #E6F1FB;
+    box-shadow: 0 4px 14px rgba(12, 68, 124, 0.35);
+    z-index: 950;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(8px);
+    transition: opacity 0.25s ease, visibility 0.25s ease, transform 0.25s ease;
+  }
+  #back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  #back-to-top:active { background: #093461; }
+  #back-to-top svg { width: 20px; height: 20px; }
+}
+
 /* 연도 sticky 헤더 위로 내용이 비치지 않도록, 본문을 자체 스태킹 컨텍스트(z:0)로 가둔다
    (내부 사진의 transform 등이 헤더보다 위로 올라오는 것을 방지) */
 .news-timeline-container .ui-accordion-content,

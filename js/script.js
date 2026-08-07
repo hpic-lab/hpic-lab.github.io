@@ -371,3 +371,25 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+// ===== 모바일 전용: 맨 위로 플로팅 버튼 =====
+(function () {
+  var btn = document.getElementById("back-to-top");
+  if (!btn) return;
+  var THRESH = 400;
+  var ticking = false;
+  function update() {
+    ticking = false;
+    var y = window.pageYOffset || document.documentElement.scrollTop || 0;
+    if (y > THRESH) btn.classList.add("show");
+    else btn.classList.remove("show");
+  }
+  window.addEventListener("scroll", function () {
+    if (!ticking) { ticking = true; requestAnimationFrame(update); }
+  }, { passive: true });
+  update();
+  btn.addEventListener("click", function () {
+    try { window.scrollTo({ top: 0, behavior: "smooth" }); }
+    catch (e) { window.scrollTo(0, 0); }
+  });
+})();
