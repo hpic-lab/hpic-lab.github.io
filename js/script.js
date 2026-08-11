@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // 모바일: 메뉴 클릭 시 해당 섹션의 "상단 고정 제목"이 화면 최상단에 오도록 스크롤
-  $(document).on("click", "#navbar-main .navbar-nav .nav-link[href^='#']", function (e) {
+  $(document).on("click", "#navbar-main .navbar-nav .nav-link[href^='#'], #mobile-subnav .nav-link[href^='#']", function (e) {
     var href = this.getAttribute("href") || "";
     if (href.length < 2) return;                 // "#" 뿐이면 무시
     var id = href.slice(1);

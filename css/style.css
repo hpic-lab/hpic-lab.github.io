@@ -450,11 +450,58 @@ nav#navbar-main {
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.06);
 }
 
-/* 모바일: 메뉴바(햄버거 + 메뉴 목록) 숨김 — 스크롤로만 탐색 */
+/* 모바일: 메뉴바(햄버거 + 메뉴 목록) 숨김 — 로고 아래 3탭 서브 메뉴로 탐색 */
 @media (max-width: 991px) {
   #navbar-main .navbar-toggler,
   #navbar-main .navbar-collapse {
     display: none !important;
+  }
+}
+
+/* HPIC 로고 서브타이틀 — Yonsei "YONSEI UNIVERSITY"와 같은 회색·세리프 계열 (모바일 전용) */
+.brand-sub { display: none; }
+@media (max-width: 991px) {
+  .brand-sub {
+    display: inline-block;
+    margin-left: 9px;
+    font-family: 'Times New Roman', 'Georgia', serif;
+    font-size: 10px;
+    line-height: 1.3;
+    letter-spacing: 0.4px;
+    font-weight: 400;
+    color: #6d6e71;
+    vertical-align: middle;
+  }
+  /* 로고 배치: HPIC 좌측, 연세대 우측 */
+  #navbar-main .navbar-brand {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-right: 0;
+  }
+  #navbar-main .brand-univ { margin-left: auto; }
+}
+
+/* 모바일 전용: 로고 아래 고정 3탭 메뉴 (Research / Members / Publications) */
+#mobile-subnav { display: none; }
+@media (max-width: 991px) {
+  #mobile-subnav {
+    display: flex;
+    width: 100%;
+    background: #fff;
+    border-top: 1px solid #f0efe9;
+    border-bottom: 1px solid #e5e3dc;
+  }
+  #mobile-subnav .nav-link {
+    flex: 1;
+    text-align: center;
+    padding: 8px 0 9px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+  }
+  #mobile-subnav .nav-link.active {
+    border-bottom-color: #2e55be;
   }
 }
 
