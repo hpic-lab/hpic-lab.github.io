@@ -4054,6 +4054,12 @@ section {
   line-height: 1.7;
 }
 
+/* 모바일 전용 줄바꿈: 데스크톱은 한 줄, 모바일은 reach out ~ 을 다음 줄로 */
+.hero-br-mobile { display: none; }
+@media (max-width: 991px) {
+  .hero-br-mobile { display: inline; }
+}
+
 /* 히어로 내 RESEARCH SECTION — 링크임이 보이도록 밝은 파랑 + 밑줄 */
 .home-description-container .hero-link {
   color: #7fc4ff;
