@@ -153,15 +153,16 @@ document.addEventListener("DOMContentLoaded", function () {
       }
 
       jump();   // 즉시 1차 이동
-      // 레이아웃이 실제로 바뀌는 순간(=각 이미지 로드 완료 시)에만 정확히 재점프
-      Array.prototype.slice.call(document.images).forEach(function (img) {
-        if (img.complete) return;
-        img.addEventListener("load", jump, { once: true });
-        img.addEventListener("error", jump, { once: true });
-      });
-      // 비동기 렌더(제목 이동 등) 대비 소수의 타이밍 보정 후 종료
-      [80, 250, 600, 1200, 2200].forEach(function (t) { setTimeout(jump, t); });
-      setTimeout(stop, 4000);
+      // 매 프레임 대상 위치를 고정(pinning): 이미지 로드 등으로 레이아웃이 변해도
+      // 프레임 단위 미세 보정이라 띄엄띄엄 크게 튀지 않고 화면이 안정적으로 유지된다.
+      var t0 = performance.now();
+      function pin() {
+        if (!active) return;
+        jump();
+        if (performance.now() - t0 < 2000) requestAnimationFrame(pin);
+        else stop();
+      }
+      requestAnimationFrame(pin);
     }
     var $nav = $(".navbar-collapse");
     if ($nav.hasClass("show")) {
