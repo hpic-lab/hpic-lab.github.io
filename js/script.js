@@ -421,3 +421,14 @@ window.addEventListener("popstate", function (e) {
     window.scrollTo(0, st.hpicY);
   }
 });
+
+// ===== 상단 로고 클릭 동작 분리 =====
+// HPIC 로고/텍스트: 홈(첫 화면)으로 — 최상단 이동 + URL 해시 초기화
+// 연세대학교 로고: 페이지 최상단으로 이동
+$(document).on("click", "#navbar-main .navbar-brand", function (e) {
+  e.preventDefault();
+  window.scrollTo(0, 0);
+  if (!$(e.target).closest(".brand-univ").length) {
+    try { history.replaceState(null, "", location.pathname + location.search); } catch (err) {}
+  }
+});
