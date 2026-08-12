@@ -496,12 +496,15 @@ nav#navbar-main {
     flex: 1;
     text-align: center;
     padding: 10px 0 11px;
-    font-size: 1.15rem;
+    font-size: 1.2rem;
     font-weight: 700;
-    border-bottom: 2.5px solid transparent;
+    letter-spacing: 0.2px;
+    border-bottom: 3px solid transparent;
+    transition: background 0.2s ease, border-color 0.2s ease;
   }
   #mobile-subnav .nav-link.active {
     border-bottom-color: #2e55be;
+    background: rgba(46, 85, 190, 0.07);
   }
 }
 
