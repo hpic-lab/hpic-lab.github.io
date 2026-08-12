@@ -148,7 +148,16 @@ document.addEventListener("DOMContentLoaded", function () {
         if (!active) return;
         var t = getTarget();
         var navH = ($("#navbar-main").outerHeight() || 56);
+        // sticky 제목은 스크롤 위치에 따라 '붙어 있는' 좌표가 달라진다
+        // (섹션을 지나친 상태면 컨테이너 끝에 걸려 있어 끝으로 점프하는 버그).
+        // 측정하는 동안만 static 으로 바꿔 원래(flow) 위치 기준으로 계산한다.
+        var forced = null;
+        if (getComputedStyle(t).position === "sticky") {
+          forced = t.style.position;
+          t.style.position = "static";
+        }
         var y = Math.max(0, window.pageYOffset + t.getBoundingClientRect().top - navH);
+        if (forced !== null) t.style.position = forced;
         if (Math.abs(y - window.pageYOffset) > 1) window.scrollTo(0, y);   // 즉시 이동
       }
 
