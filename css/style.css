@@ -496,8 +496,8 @@ nav#navbar-main {
     flex: 1;
     text-align: center;
     padding: 10px 0 11px;
-    font-size: 1.08rem;
-    font-weight: 600;
+    font-size: 1.15rem;
+    font-weight: 700;
     border-bottom: 2.5px solid transparent;
   }
   #mobile-subnav .nav-link.active {
