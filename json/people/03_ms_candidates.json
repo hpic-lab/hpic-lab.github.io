@@ -281,5 +281,15 @@
     "email": "hjg0913@gmail.com",
     "profile_img": "img/jg_han_profile_image.jpg",
     "position": ""
+  },
+  {
+    "name": "test",
+    "education": [],
+    "research_interests": [],
+    "Awards": [],
+    "biography": "",
+    "email": "",
+    "profile_img": "img/empty-profile-img.jpg",
+    "position": ""
   }
 ]
