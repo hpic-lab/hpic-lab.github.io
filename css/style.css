@@ -4063,6 +4063,11 @@ section {
 @media (max-width: 991px) {
   .hero-br-mobile { display: inline; }
 }
+/* 데스크톱 전용 줄바꿈: computing, 뒤에서 줄바꿈 */
+.hero-br-desktop { display: none; }
+@media (min-width: 992px) {
+  .hero-br-desktop { display: inline; }
+}
 
 /* 히어로 내 RESEARCH SECTION — 링크임이 보이도록 밝은 파랑 + 밑줄 */
 .home-description-container .hero-link {
