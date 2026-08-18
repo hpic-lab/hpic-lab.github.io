@@ -17,10 +17,30 @@
   },
   {
     "year": "2026",
+    "month": "08",
+    "category": "Invited Talk",
+    "text": "<u>Min-Seong</u> presented an invited talk entitled \"초고속 유선 통신(Wireline) 인터페이스 회로 설계\" at Yonsei University (hosted by IDEC Academy).",
+    "links": [
+      {
+        "label": "IDEC",
+        "url": "https://www.idec.or.kr/edu/apply/view/?campus=&type=lst2&search_val=%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4&no=2647"
+      }
+    ],
+    "figures": [
+      "ms-choo-profile-img.png"
+    ]
+  },
+  {
+    "year": "2026",
     "month": "07",
     "category": "Journal",
     "text": "\"KWS-CIM: A Charge-Domain eDRAM-Based Compute-in-Memory Macro for Ternary DFSMN Keyword Spotting\" was accepted in the <b>IEEE TCAS-I</b>. Congratulations!",
-    "links": [{ "label": "Paper", "url": "https://ieeexplore.ieee.org/abstract/document/11654553" }],
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://ieeexplore.ieee.org/abstract/document/11654553"
+      }
+    ],
     "figures": [
       "dh-lee-profile-img.png",
       "su-kang-profile-img.jpg",
@@ -171,7 +191,12 @@
     "month": "01",
     "category": "Invited Talk",
     "text": "<u>Min-Seong</u> presented an invited talk entitled \"100Gb/s급 디지털 인터페이스 회로 설계\" at KAIST (hosted by IDEC).",
-    "links": [],
+    "links": [
+      {
+        "label": "IDEC",
+        "url": "https://www.idec.or.kr/edu/apply/view/?campus=&type=list&search_val=%EC%B9%A9%EB%A0%9B&no=2445"
+      }
+    ],
     "figures": [
       "ms-choo-profile-img.png"
     ]
@@ -202,6 +227,21 @@
     "category": "Patent",
     "text": "A patent entitled \"주입 잠금 오실레이터 기반 물리적 복제 불가능 함수\" was registered with the Korean Intellectual Property Office.",
     "links": []
+  },
+  {
+    "year": "2025",
+    "month": "12",
+    "category": "Invited Talk",
+    "text": "<u>Min-Seong</u> presented an invited talk entitled \"고속 디지털 인터페이스 집적회로 설계\" at Hanyang University ERICA (hosted by IDEC).",
+    "links": [
+      {
+        "label": "IDEC",
+        "url": "https://www.idec.or.kr/edu/apply/view/?&category=&campus=%ED%95%9C%EC%96%91%EB%8C%80&type=list&no=2429"
+      }
+    ],
+    "figures": [
+      "ms-choo-profile-img.png"
+    ]
   },
   {
     "year": "2025",
@@ -848,6 +888,21 @@
   {
     "year": "2025",
     "month": "01",
+    "category": "Invited Talk",
+    "text": "<u>Min-Seong</u> presented an invited talk entitled \"고속 칩렛향 디지털 인터페이스 회로 설계\" at Hanyang University ERICA (hosted by IDEC).",
+    "links": [
+      {
+        "label": "IDEC",
+        "url": "https://www.idec.or.kr/edu/apply/view/?campus=&type=list&search_val=%EC%B9%A9%EB%A0%9B&no=2188"
+      }
+    ],
+    "figures": [
+      "ms-choo-profile-img.png"
+    ]
+  },
+  {
+    "year": "2025",
+    "month": "01",
     "category": "Award",
     "text": "<u>Sang-Hyeon</u> received the Best Paper Award (Silver Prize) at ICEIC 2025.",
     "links": [],
@@ -967,6 +1022,21 @@
   },
   {
     "year": "2024",
+    "month": "06",
+    "category": "Invited Talk",
+    "text": "<u>Min-Seong</u> presented an invited talk entitled \"Behavioral Model of High-Speed Interface Design\" at Hanyang University (hosted by IDEC Academy).",
+    "links": [
+      {
+        "label": "IDEC",
+        "url": "https://www.idec.or.kr/edu/apply/view/?campus=&type=lst2&search_val=%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4&page=2&no=2037"
+      }
+    ],
+    "figures": [
+      "ms-choo-profile-img.png"
+    ]
+  },
+  {
+    "year": "2024",
     "month": "04",
     "category": "Grant",
     "text": "<u>HPIC Lab</u> was selected for the \"Development of High-Speed, Low-Power, and Low-Noise Clocking Network Systems for Optical Communication Chiplets\" project (Outstanding Young Scientist Grant), sponsored by the National Research Foundation of Korea (NRF). Congratulations!",
@@ -984,6 +1054,21 @@
     "figures": [
       "sh-ok-profile-img.jpg",
       "dh-lee-profile-img.png"
+    ]
+  },
+  {
+    "year": "2024",
+    "month": "01",
+    "category": "Invited Talk",
+    "text": "<u>Min-Seong</u> presented an invited talk entitled \"Basic of High-Speed Interface Design in Behavioral Modeling\" at KAIST (hosted by IDEC).",
+    "links": [
+      {
+        "label": "IDEC",
+        "url": "https://www.idec.or.kr/edu/apply/view/?campus=&type=list&search_val=high-speed&no=1908"
+      }
+    ],
+    "figures": [
+      "ms-choo-profile-img.png"
     ]
   },
   {
@@ -1050,6 +1135,21 @@
       "km-kim-profile-img.jpg",
       "kr-park-profile-img.png",
       "dh-heo-profile-img.jpg"
+    ]
+  },
+  {
+    "year": "2023",
+    "month": "01",
+    "category": "Invited Talk",
+    "text": "<u>Min-Seong</u> presented an invited talk entitled \"Design of All-Digital Phase-Locked Loop based on Behavioral Model\" at Hanyang University ERICA (hosted by IDEC).",
+    "links": [
+      {
+        "label": "IDEC",
+        "url": "https://www.idec.or.kr/edu/apply/view/?campus=%ED%95%9C%EC%96%91%EB%8C%80&type=list&search_val=adpll&no=1664"
+      }
+    ],
+    "figures": [
+      "ms-choo-profile-img.png"
     ]
   },
   {
