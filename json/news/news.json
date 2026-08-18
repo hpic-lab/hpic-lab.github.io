@@ -20,7 +20,7 @@
     "month": "07",
     "category": "Journal",
     "text": "\"KWS-CIM: A Charge-Domain eDRAM-Based Compute-in-Memory Macro for Ternary DFSMN Keyword Spotting\" was accepted in the <b>IEEE TCAS-I</b>. Congratulations!",
-    "links": [],
+    "links": [{ "label": "Paper", "url": "https://ieeexplore.ieee.org/abstract/document/11654553" }],
     "figures": [
       "dh-lee-profile-img.png",
       "su-kang-profile-img.jpg",
