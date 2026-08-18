@@ -104,6 +104,8 @@ $(document).ready(function () {
             figsHTML += ' <img src="img/' + f + '" class="news-inline-fig" alt="" data-bs-toggle="modal" data-bs-target="#exampleModal" data-img-key="' + f + '">';
           }
         });
+        // 아바타 묶음: 모바일에서 배지 아래(좌측 열)로 옮길 수 있도록 span 으로 감싼다
+        if (figsHTML) figsHTML = '<span class="news-figs">' + figsHTML + "</span>";
 
         // <u>이름</u> → 강조 텍스트(굵게, 검정). 클릭은 뒤의 프로필 사진으로 대체.
         var text = it.text.replace(/<u>(.*?)<\/u>/g, '<span class="news-name">$1</span>');
@@ -147,6 +149,38 @@ $(document).ready(function () {
 
       acc.append(body);
       container.append(acc);
+    });
+
+    // 모바일: 아바타(.news-figs)를 배지 아래(좌측 열)로 이동. 데스크톱: 본문 끝(원위치).
+    function layoutNewsFigs() {
+      var mobile = window.matchMedia("(max-width: 991px)").matches;
+      container.find(".news-item").each(function () {
+        var $it = $(this);
+        var $figs = $it.find(".news-figs");
+        if (!$figs.length) return;
+        if (mobile) {
+          var $side = $it.children(".news-side");
+          if (!$side.length) {
+            $side = $('<div class="news-side"></div>');
+            $it.prepend($side);
+            $side.append($it.children(".news-badge"));
+          }
+          if (!$figs.parent().is($side)) $side.append($figs);
+        } else {
+          var $s = $it.children(".news-side");
+          if ($s.length) {
+            $it.prepend($s.children(".news-badge"));
+            $it.find(".news-text").append($s.children(".news-figs"));
+            $s.remove();
+          }
+        }
+      });
+    }
+    layoutNewsFigs();
+    var _nfTimer = null;
+    $(window).on("resize.newsfigs", function () {
+      clearTimeout(_nfTimer);
+      _nfTimer = setTimeout(layoutNewsFigs, 150);
     });
 
     // 아코디언 초기화 (script.js의 초기화는 JSON 로드 전에 실행되므로 여기서 직접 수행)

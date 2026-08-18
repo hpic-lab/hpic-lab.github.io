@@ -2145,6 +2145,29 @@ nav#navbar-main .navbar-collapse {
   min-width: 100px;
   text-align: center;
 }
+/* 모바일: 아바타를 배지 아래(좌측 열)에 작게 표시 */
+@media (max-width: 991px) {
+  .news-list .news-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+    flex-shrink: 0;
+  }
+  .news-list .news-side .news-figs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3px;
+    max-width: 100px;
+  }
+  .news-list .news-side .news-inline-fig {
+    width: 24px;
+    height: 24px;
+    margin: 0;
+    vertical-align: 0;
+  }
+}
 
 /* ========================================= */
 /* 프로필 모달 CV형 레이아웃: 사진 상단 중앙 + 아래 섹션 */
