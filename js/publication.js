@@ -35,12 +35,13 @@ $(document).ready(function () {
     if (t.indexOf("review") !== -1) return "pub2-st-review";
     if (t.indexOf("submit") !== -1) return "pub2-st-submitted";
     if (t.indexOf("accept") !== -1) return "pub2-st-accepted";
+    if (t.indexOf("early") !== -1) return "pub2-st-accepted";   // Early Access — Accepted와 동일 색
     return "";
   }
 
   // 미출판(투고~수락) 상태 여부 — 정렬 시 해당 연도 최상단으로
   function isPendingPub(p) {
-    return /submit|revision|prepar|accept/i.test((p.progress || "") + " " + (p.sub || ""));
+    return /submit|revision|prepar|accept|early/i.test((p.progress || "") + " " + (p.sub || ""));
   }
 
   // ===== News → Publications 이동용 제목 색인 =====
@@ -212,7 +213,7 @@ $(document).ready(function () {
     if (/prepar/.test(s)) return 15;
     if (/revision/.test(s)) return 14;
     if (/review/.test(s)) return 13;
-    if (/accept/.test(s)) return 12.5;  // Accepted는 심사중(In Review)보다 아래, 게재(월)보다 위
+    if (/accept|early/.test(s)) return 12.5;  // Accepted는 심사중(In Review)보다 아래, 게재(월)보다 위
     // 출판된 논문: 월(1~12), 제목 없이 상태도 없는 예외는 최상단
     return (p.title && p.title.trim()) ? monthNum(p.reference) : 99;
   }
