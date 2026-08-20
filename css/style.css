@@ -2974,7 +2974,8 @@ nav#navbar-main .navbar-collapse {
   margin-left: 36px;
 }
 
-.completed-toggle:hover {
+/* hover 어둡게는 접힘 상태에서만 — 펼침(활성) 파랑을 덮지 않도록 (모바일 탭 시 hover 고정 문제) */
+.completed-toggle.collapsed:hover {
   color: #888;
 }
 
