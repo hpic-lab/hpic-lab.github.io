@@ -169,6 +169,56 @@
     "link": ""
   },
   {
+    "type": "2026",
+    "status": "",
+    "title": "",
+    "image": "",
+    "progress": "In Preparation",
+    "journal": "",
+    "reference": "",
+    "authors": [
+      "Jae-Geon Lee, Joon-Seok Kwon...",
+      "Min-Seong Choo"
+    ],
+    "figure": [
+      "jg-lee-profile-img.jpeg",
+      "js-kwon-profile-image.jpg",
+      "ms-choo-profile-img.png"
+    ],
+    "link": "",
+    "review": [
+      {
+        "subLabel": "Working Draft",
+        "submission": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/%EB%85%BC%EB%AC%B8%20%EC%9E%90%EB%A3%8C/%EC%A0%80%EB%84%90%20%EB%AA%A8%EC%9D%8C/ASSCC2026-JGLEE%201.pdf"
+      }
+    ]
+  },
+  {
+    "type": "2026",
+    "status": "",
+    "title": "",
+    "image": "",
+    "progress": "In Preparation",
+    "journal": "",
+    "reference": "",
+    "authors": [
+      "Joon-Seok Kwon, Jae-Geon Lee...",
+      "Min-Seong Choo"
+    ],
+    "figure": [
+      "js-kwon-profile-image.jpg",
+      "jg-lee-profile-img.jpeg",
+      "ms-choo-profile-img.png"
+    ],
+    "link": "",
+    "review": [
+      {
+        "subLabel": "Working Draft",
+        "submission": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/%EB%85%BC%EB%AC%B8%20%EC%9E%90%EB%A3%8C/%EC%A0%80%EB%84%90%20%EB%AA%A8%EC%9D%8C/ASSCC2026_jskwon.pdf"
+      }
+    ]
+  },
+  {
     "sub": "",
     "type": "2026",
     "status": "JICAS",
