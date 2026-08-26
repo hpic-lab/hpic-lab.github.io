@@ -18,6 +18,19 @@
   {
     "year": "2026",
     "month": "08",
+    "category": "Journal",
+    "text": "\"A Timing Relaxed pre-Decision Feedforward Equalizer for DSP-based Wireline Receiver using Hardware-in-the-Loop Verification on FPGA\" was accepted in the <b>IEEE TCAS-I</b>. Congratulations!",
+    "links": [],
+    "figures": [
+      "jg-lee-profile-img.jpeg",
+      "sh-ok-profile-img.jpg",
+      "js-kwon-profile-image.jpg",
+      "ms-choo-profile-img.png"
+    ]
+  },
+  {
+    "year": "2026",
+    "month": "08",
     "category": "Invited Talk",
     "text": "<u>Min-Seong</u> presented an invited talk entitled \"초고속 유선 통신(Wireline) 인터페이스 회로 설계\" at Yonsei University (hosted by IDEC Academy).",
     "links": [
