@@ -1,15 +1,14 @@
 [
   {
     "type": "2026",
-    "status": "SNN Accel.",
-    "title": "",
+    "status": "",
+    "title": "SNN Accel.",
     "image": "",
     "progress": "In Review (2nd)",
-    "journal": "SNN Accel.",
+    "journal": "",
     "reference": "",
     "authors": [
-      "Han-Gil Yoo, Seok-Min Yoon...",
-      "Min-Seong Choo"
+      "Han-Gil Yoo, Seok-Min Yoon, ..., and Min-Seong Choo"
     ],
     "figure": [
       "hg-yoo-profile-img.jpg",
@@ -31,15 +30,14 @@
   },
   {
     "type": "2026",
-    "status": "PI-CDR",
-    "title": "",
+    "status": "",
+    "title": "PI-CDR",
     "image": "",
     "progress": "In Preparation",
-    "journal": "PI-CDR",
+    "journal": "",
     "reference": "",
     "authors": [
-      "Seung-Hwan Gong, Dong-Hoe Heo, Sang-Hyeon Ok...",
-      "Min-Seong Choo"
+      "Seung-Hwan Gong, Dong-Hoe Heo, Sang-Hyeon Ok, ..., and Min-Seong Choo"
     ],
     "figure": [
       "sh-gong-profile-image.jpg",
@@ -130,15 +128,14 @@
   },
   {
     "type": "2026",
-    "status": "DSP TX",
-    "title": "",
+    "status": "",
+    "title": "DSP TX",
     "image": "",
     "progress": "In Preparation",
-    "journal": "DSP TX",
+    "journal": "",
     "reference": "",
     "authors": [
-      "Dong-Ho Kim, Seung-Mo Jin, Sang-Hyun Ok...",
-      "Min-Seong Choo"
+      "Dong-Ho Kim, Seung-Mo Jin, Sang-Hyeon Ok, ..., and Min-Seong Choo"
     ],
     "figure": [
       "dh-kim-new-profile-image.jpg",
@@ -156,15 +153,14 @@
   },
   {
     "type": "2026",
-    "status": "ILCM",
-    "title": "",
+    "status": "",
+    "title": "ILCM",
     "image": "",
     "progress": "In Preparation",
-    "journal": "ILCM",
+    "journal": "",
     "reference": "",
     "authors": [
-      "Jae-Hyeon Pyeon...",
-      "Min-Seong Choo"
+      "Jae-Hyeon Pyeon, In-Ho Han, ..., and Min-Seong Choo"
     ],
     "figure": [
       "jh-pyeon-profile-img.png",
@@ -175,15 +171,14 @@
   },
   {
     "type": "2026",
-    "status": "PAM-16 RX",
-    "title": "",
+    "status": "",
+    "title": "PAM-16 RX",
     "image": "",
     "progress": "In Preparation",
-    "journal": "PAM-16 RX",
+    "journal": "",
     "reference": "",
     "authors": [
-      "Jae-Geon Lee, Joon-Seok Kwon...",
-      "Min-Seong Choo"
+      "Jae-Geon Lee, Joon-Seok Kwon, ..., and Min-Seong Choo"
     ],
     "figure": [
       "jg-lee-profile-img.jpeg",
@@ -200,15 +195,14 @@
   },
   {
     "type": "2026",
-    "status": "PAM-4 RX",
-    "title": "",
+    "status": "",
+    "title": "PAM-4 RX",
     "image": "",
     "progress": "In Preparation",
-    "journal": "PAM-4 RX",
+    "journal": "",
     "reference": "",
     "authors": [
-      "Joon-Seok Kwon, Jae-Geon Lee...",
-      "Min-Seong Choo"
+      "Joon-Seok Kwon, Jae-Geon Lee, ..., and Min-Seong Choo"
     ],
     "figure": [
       "js-kwon-profile-image.jpg",
