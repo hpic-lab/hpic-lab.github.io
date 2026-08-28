@@ -2,13 +2,13 @@
   {
     "type": "2026",
     "status": "",
-    "title": "Resource-efficient FPGA accelerator for spiking transformers",
+    "title": "Resource-Efficient FPGA Accelerator for Spiking Transformers",
     "image": "",
-    "progress": "In Review (2nd)",
+    "progress": "In Review",
     "journal": "",
     "reference": "<i>IEEE</i>, 2026.",
     "authors": [
-      "Han-Gil Yoo, Seok-Min Yoon, ..., and Min-Seong Choo"
+      "Han-Gil Yoo†, Suk-Min Yoon†, ..., and Min-Seong Choo"
     ],
     "figure": [
       "hg-yoo-profile-img.jpg",
@@ -31,13 +31,13 @@
   {
     "type": "2026",
     "status": "",
-    "title": "Low-latency phase-interpolator-based clock and data recovery",
+    "title": "Low-Latency Phase-Interpolator-Based Clock and Data Recovery",
     "image": "",
     "progress": "In Preparation",
     "journal": "",
     "reference": "<i>IEEE</i>, 2026.",
     "authors": [
-      "Seung-Hwan Gong, Dong-Hoe Heo, Sang-Hyeon Ok, ..., and Min-Seong Choo"
+      "Seung-Hwan Gong†, Dong-Hoe Heo†, Sang-Hyeon Ok, ..., and Min-Seong Choo"
     ],
     "figure": [
       "sh-gong-profile-image.jpg",
@@ -101,7 +101,7 @@
       "Dong-Hyun Lee*",
       "Shin-Uk Kang*",
       "Jihoon Jang",
-      "Seok-Min Yoon",
+      "Suk-Min Yoon",
       "Hyun Kim",
       "Mingoo Seok",
       "Min-Seong Choo"
@@ -129,13 +129,13 @@
   {
     "type": "2026",
     "status": "",
-    "title": "Reconfigurable PAM-2/4/8 DSP-based transmitter",
+    "title": "Reconfigurable PAM-2/4/8 DSP-Based Transmitter",
     "image": "",
     "progress": "In Preparation",
     "journal": "",
     "reference": "<i>IEEE</i>, 2026.",
     "authors": [
-      "Dong-Ho Kim, Seung-Mo Jin, Sang-Hyeon Ok, ..., and Min-Seong Choo"
+      "Dong-Ho Kim†, Seung-Mo Jin†, Sang-Hyeon Ok, ..., and Min-Seong Choo"
     ],
     "figure": [
       "dh-kim-new-profile-image.jpg",
@@ -154,13 +154,13 @@
   {
     "type": "2026",
     "status": "",
-    "title": "All-digital ring-based injection-locked clock multiplier",
+    "title": "All-Digital Ring-Based Injection-Locked Clock Multiplier",
     "image": "",
     "progress": "In Preparation",
     "journal": "",
     "reference": "<i>IEEE</i>, 2026.",
     "authors": [
-      "Jae-Hyeon Pyeon, In-Ho Han, ..., and Min-Seong Choo"
+      "..., Jae-Hyeon Pyeon, In-Ho Han, ..., and Min-Seong Choo"
     ],
     "figure": [
       "jh-pyeon-profile-img.png",
@@ -172,7 +172,7 @@
   {
     "type": "2026",
     "status": "",
-    "title": "Nonlinear Volterra-filter PAM-16 DSP receiver for automotive links",
+    "title": "Nonlinear Volterra-Filter PAM-16 DSP Receiver for Automotive Links",
     "image": "",
     "progress": "In Preparation",
     "journal": "",
@@ -196,7 +196,7 @@
   {
     "type": "2026",
     "status": "",
-    "title": "Power-and-area-efficient PAM-4 DSP receiver with approximate multipliers",
+    "title": "Power-and-Area-Efficient PAM-4 DSP Receiver With Approximate Multipliers",
     "image": "",
     "progress": "In Preparation",
     "journal": "",
