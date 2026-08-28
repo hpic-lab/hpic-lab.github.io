@@ -2900,10 +2900,11 @@ nav#navbar-main .navbar-collapse {
   margin-top: 0;
 }
 
+/* ~2025 펼침 시 보이는 과거 연도 헤더도 활성 색상(파랑+bold)으로 통일 */
 .teach-year-past {
-  color: #aaa;
-  border-bottom-color: #e9e9e9;
-  font-weight: 500;   /* 비활성 연도: 다른 섹션과 동일 */
+  color: #2e55be;
+  border-bottom-color: #2e55be;
+  font-weight: 700;
 }
 
 .teach-item {
