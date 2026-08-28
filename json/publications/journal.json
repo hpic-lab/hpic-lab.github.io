@@ -2,11 +2,11 @@
   {
     "type": "2026",
     "status": "",
-    "title": "SNN Accel.",
+    "title": "Resource-efficient FPGA accelerator for spiking transformers",
     "image": "",
     "progress": "In Review (2nd)",
     "journal": "",
-    "reference": "",
+    "reference": "<i>IEEE</i>, 2026.",
     "authors": [
       "Han-Gil Yoo, Seok-Min Yoon, ..., and Min-Seong Choo"
     ],
@@ -31,11 +31,11 @@
   {
     "type": "2026",
     "status": "",
-    "title": "PI-CDR",
+    "title": "Low-latency phase-interpolator-based clock and data recovery",
     "image": "",
     "progress": "In Preparation",
     "journal": "",
-    "reference": "",
+    "reference": "<i>IEEE</i>, 2026.",
     "authors": [
       "Seung-Hwan Gong, Dong-Hoe Heo, Sang-Hyeon Ok, ..., and Min-Seong Choo"
     ],
@@ -129,11 +129,11 @@
   {
     "type": "2026",
     "status": "",
-    "title": "DSP TX",
+    "title": "Reconfigurable PAM-2/4/8 DSP-based transmitter",
     "image": "",
     "progress": "In Preparation",
     "journal": "",
-    "reference": "",
+    "reference": "<i>IEEE</i>, 2026.",
     "authors": [
       "Dong-Ho Kim, Seung-Mo Jin, Sang-Hyeon Ok, ..., and Min-Seong Choo"
     ],
@@ -154,11 +154,11 @@
   {
     "type": "2026",
     "status": "",
-    "title": "ILCM",
+    "title": "All-digital ring-based injection-locked clock multiplier",
     "image": "",
     "progress": "In Preparation",
     "journal": "",
-    "reference": "",
+    "reference": "<i>IEEE</i>, 2026.",
     "authors": [
       "Jae-Hyeon Pyeon, In-Ho Han, ..., and Min-Seong Choo"
     ],
@@ -172,11 +172,11 @@
   {
     "type": "2026",
     "status": "",
-    "title": "PAM-16 RX",
+    "title": "Nonlinear Volterra-filter PAM-16 DSP receiver for automotive links",
     "image": "",
     "progress": "In Preparation",
     "journal": "",
-    "reference": "",
+    "reference": "<i>IEEE</i>, 2026.",
     "authors": [
       "Jae-Geon Lee, Joon-Seok Kwon, ..., and Min-Seong Choo"
     ],
@@ -196,11 +196,11 @@
   {
     "type": "2026",
     "status": "",
-    "title": "PAM-4 RX",
+    "title": "Power-and-area-efficient PAM-4 DSP receiver with approximate multipliers",
     "image": "",
     "progress": "In Preparation",
     "journal": "",
-    "reference": "",
+    "reference": "<i>IEEE</i>, 2026.",
     "authors": [
       "Joon-Seok Kwon, Jae-Geon Lee, ..., and Min-Seong Choo"
     ],
