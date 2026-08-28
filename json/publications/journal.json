@@ -1,11 +1,11 @@
 [
   {
     "type": "2026",
-    "status": "IEEE TCAS-II",
+    "status": "SNN Accel.",
     "title": "",
     "image": "",
     "progress": "In Review (2nd)",
-    "journal": "IEEE TCAS-II",
+    "journal": "SNN Accel.",
     "reference": "",
     "authors": [
       "Han-Gil Yoo, Seok-Min Yoon...",
@@ -31,11 +31,11 @@
   },
   {
     "type": "2026",
-    "status": "",
+    "status": "PI-CDR",
     "title": "",
     "image": "",
     "progress": "In Preparation",
-    "journal": "",
+    "journal": "PI-CDR",
     "reference": "",
     "authors": [
       "Seung-Hwan Gong, Dong-Hoe Heo, Sang-Hyeon Ok...",
@@ -130,11 +130,11 @@
   },
   {
     "type": "2026",
-    "status": "",
+    "status": "DSP TX",
     "title": "",
     "image": "",
     "progress": "In Preparation",
-    "journal": "",
+    "journal": "DSP TX",
     "reference": "",
     "authors": [
       "Dong-Ho Kim, Seung-Mo Jin, Sang-Hyun Ok...",
@@ -156,11 +156,11 @@
   },
   {
     "type": "2026",
-    "status": "",
+    "status": "ILCM",
     "title": "",
     "image": "",
     "progress": "In Preparation",
-    "journal": "",
+    "journal": "ILCM",
     "reference": "",
     "authors": [
       "Jae-Hyeon Pyeon...",
@@ -175,11 +175,11 @@
   },
   {
     "type": "2026",
-    "status": "",
+    "status": "PAM-16 RX",
     "title": "",
     "image": "",
     "progress": "In Preparation",
-    "journal": "",
+    "journal": "PAM-16 RX",
     "reference": "",
     "authors": [
       "Jae-Geon Lee, Joon-Seok Kwon...",
@@ -200,11 +200,11 @@
   },
   {
     "type": "2026",
-    "status": "",
+    "status": "PAM-4 RX",
     "title": "",
     "image": "",
     "progress": "In Preparation",
-    "journal": "",
+    "journal": "PAM-4 RX",
     "reference": "",
     "authors": [
       "Joon-Seok Kwon, Jae-Geon Lee...",
