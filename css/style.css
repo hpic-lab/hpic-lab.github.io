@@ -3701,7 +3701,7 @@ nav#navbar-main .navbar-collapse {
   min-width: 30px;
   font-size: 0.95rem;
   font-weight: 600;
-  color: #999;
+  color: #222;   /* 연번: 검정 통일 */
   text-align: center;
 }
 
