@@ -2781,7 +2781,7 @@ nav#navbar-main .navbar-collapse {
   text-align: center;
   font-size: 0.95rem;
   font-weight: 600;
-  color: #999;
+  color: #222;   /* 연번: 검정 통일 */
 }
 
 .rp-item .rp-body {
@@ -4806,7 +4806,7 @@ section {
   padding-top: 2px;
   font-size: 0.95rem;
   font-weight: 600;
-  color: #999;
+  color: #222;   /* 연번: 검정 통일 */
 }
 
 .chip-card2 .chip-info {
@@ -5081,7 +5081,7 @@ a.chip-status-venue:hover { background: rgba(55, 138, 221, 0.2); }
   padding: 6px 0;
   border-top: 1px solid #f0f0f0;
 }
-.tos2-num { width: 30px; flex-shrink: 0; text-align: right; color: #aaa; font-size: 0.85rem; }
+.tos2-num { width: 30px; flex-shrink: 0; text-align: right; color: #222; font-size: 0.85rem; }
 .tos2-ttl { font-size: 0.9rem; color: #333; font-weight: 500; flex: 1; min-width: 0; }
 .tos2-row .chip-designers { margin-left: auto; display: flex; gap: 3px; flex-shrink: 0; }
 .tos2-row .chip-designer-photo { width: 26px; height: 26px; }
