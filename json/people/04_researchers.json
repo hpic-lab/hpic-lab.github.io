@@ -13,5 +13,28 @@
     "email": "ilovec215@gmail.com",
     "profile_img": "img/hg-yoo-profile-img.jpg",
     "position": ""
+  },
+  {
+    "name": "In-Ho Han",
+    "research_interests": [
+      "Phase-Locked Loop"
+    ],
+    "education": [
+      "M.S., School of Electrical Engineering, Hanyang University (2024.09 ~ 2026.08)",
+      "B.S., School of Electrical Engineering, Gachon University, Seoungnam, Korea (2017.03 ~ 2023.02)"
+    ],
+    "experience": [
+      "FAE (Field Application Engineer), Dongwoon Anatech, Seoul, Korea (2023.04 ~ 2024.08 )"
+    ],
+    "publication": [
+      "I.-H. Han and Min-Seong Choo, Implementation and Characterization of a Digital Phase-Locked Loop (DPLL) in 65-nm CMOS Technology, IDEC Journal of Integrated Circuits and Systems (JICAS), 11(4), 52-57, 2025. <a href='https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003245290' target='_blank' rel='noopener noreferrer' class='news-link'>[Paper]</a>",
+      "I.-H. Han and Min-Seong Choo, A Digital Phase-Locked Loop with Autocorrelation-Based Proportional Gain Control for Adaptive Jitter Reduction, 2025 International Conference on Electronics, Information, and Communication (ICEIC), Osaka, Japan, 2025."
+    ],
+    "biography": "In-Ho Han received a B.S. degree in electrical engineering from Gachon University, Sungnam, South Korea. He received a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea, and is currently a researcher at HPIC Lab. His research interests include analog and digital circuit designs of phase-locked-loop (PLL).",
+    "email": "inho0303@hanyang.ac.kr",
+    "profile_img": "img/ih-han-profile-img.jpg",
+    "position": "",
+    "cv": "https://drive.google.com/file/d/1YalveNStnhNMOz_vrlERhe6yrfSEJqPg/view?usp=drive_link",
+    "tag": "Phase-Locked Loop"
   }
 ]

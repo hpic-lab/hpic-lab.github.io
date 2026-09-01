@@ -18,6 +18,16 @@
   {
     "year": "2026",
     "month": "08",
+    "category": "News",
+    "text": "<u>In-Ho</u> graduated with a M.S. degree. Congratulations!",
+    "links": [],
+    "figures": [
+      "ih-han-profile-img.jpg"
+    ]
+  },
+  {
+    "year": "2026",
+    "month": "08",
     "category": "Journal",
     "text": "\"A Timing Relaxed Pre-Decision Feedforward Equalizer for DSP-Based Wireline Receiver Using Hardware-in-the-Loop Verification on FPGA\" was accepted in the <b>IEEE TCAS-I</b>. Congratulations!",
     "links": [
