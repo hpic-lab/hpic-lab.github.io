@@ -19,8 +19,13 @@
     "year": "2026",
     "month": "08",
     "category": "Journal",
-    "text": "\"A Timing Relaxed pre-Decision Feedforward Equalizer for DSP-based Wireline Receiver using Hardware-in-the-Loop Verification on FPGA\" was accepted in the <b>IEEE TCAS-I</b>. Congratulations!",
-    "links": [],
+    "text": "\"A Timing Relaxed Pre-Decision Feedforward Equalizer for DSP-Based Wireline Receiver Using Hardware-in-the-Loop Verification on FPGA\" was accepted in the <b>IEEE TCAS-I</b>. Congratulations!",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://ieeexplore.ieee.org/document/11674159"
+      }
+    ],
     "figures": [
       "jg-lee-profile-img.jpeg",
       "sh-ok-profile-img.jpg",

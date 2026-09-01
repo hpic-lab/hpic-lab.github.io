@@ -56,9 +56,9 @@
   {
     "type": "2026",
     "status": "IEEE TCAS-I",
-    "title": "A Timing Relaxed pre-Decision Feedforward Equalizer for DSP-based Wireline Receiver using Hardware-in-the-Loop Verification on FPGA",
+    "title": "A Timing Relaxed Pre-Decision Feedforward Equalizer for DSP-Based Wireline Receiver Using Hardware-in-the-Loop Verification on FPGA",
     "image": "",
-    "progress": "Accepted",
+    "progress": "Early Access",
     "journal": "IEEE TCAS-I",
     "reference": "<i>IEEE Transactions on Circuits and Systems I: Regular Papers (TCAS-I)</i>, 2026. (*Equally Credited Authors)",
     "authors": [
@@ -79,7 +79,7 @@
       "js-kwon-profile-image.jpg",
       "ms-choo-profile-img.png"
     ],
-    "link": "",
+    "link": "https://ieeexplore.ieee.org/document/11674159",
     "review": [
       {
         "round": "1st",
