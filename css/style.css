@@ -3665,6 +3665,13 @@ nav#navbar-main .navbar-collapse {
   transform: rotate(-90deg);
 }
 
+/* ~2023 그룹 헤더: 펼쳐져 있으면 항상 활성 색 (Teaching ~2025 토글과 동일 동작) */
+.pub2-year[id$="-old"]:not(.collapsed) {
+  color: #2e55be;
+  border-bottom-color: #2e55be;
+  font-weight: 700;
+}
+
 /* 현재 보고 있는(상단 고정) 연도만 파란 강조 — publication.js 스크롤 감지 */
 .pub2-year.pub2-year-active {
   color: #2e55be;
