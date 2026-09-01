@@ -1,20 +1,5 @@
 [
   {
-    "name": "Han-Gil Yoo",
-    "tag": "KWS AI Accelerator",
-    "education": [
-      "B.S., School of Electrical Engineering, Hanyang University, Ansan, Korea (2019.03 ~ Present)"
-    ],
-    "research_interests": [
-      "KWS AI Accelerator"
-    ],
-    "Awards": [],
-    "biography": "Han-Gil Yoo is pursuing a Bachelor's degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include analog and digital circuit designs of processing in memory (PiM).",
-    "email": "ilovec215@gmail.com",
-    "profile_img": "img/hg-yoo-profile-img.jpg",
-    "position": ""
-  },
-  {
     "name": "In-Ho Han",
     "research_interests": [
       "Phase-Locked Loop"
@@ -37,5 +22,20 @@
     "position": "",
     "cv": "https://drive.google.com/file/d/1YalveNStnhNMOz_vrlERhe6yrfSEJqPg/view?usp=drive_link",
     "tag": "Phase-Locked Loop"
+  },
+  {
+    "name": "Han-Gil Yoo",
+    "tag": "KWS AI Accelerator",
+    "education": [
+      "B.S., School of Electrical Engineering, Hanyang University, Ansan, Korea (2019.03 ~ Present)"
+    ],
+    "research_interests": [
+      "KWS AI Accelerator"
+    ],
+    "Awards": [],
+    "biography": "Han-Gil Yoo is pursuing a Bachelor's degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include analog and digital circuit designs of processing in memory (PiM).",
+    "email": "ilovec215@gmail.com",
+    "profile_img": "img/hg-yoo-profile-img.jpg",
+    "position": ""
   }
 ]
