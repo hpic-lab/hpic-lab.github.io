@@ -2447,9 +2447,10 @@ nav#navbar-main .navbar-collapse {
   word-break: keep-all;
 }
 
-#exampleModal .mpub-journal { color: #0C447C; }
-#exampleModal .mpub-conf    { color: #085041; }
-#exampleModal .mpub-patent  { color: #3C3489; }
+/* 프로필 모달 venue: 메인 Publications(전체 탭)와 동일한 진네이비로 통일 */
+#exampleModal .mpub-journal { color: #1c3557; }
+#exampleModal .mpub-conf    { color: #1c3557; }
+#exampleModal .mpub-patent  { color: #1c3557; }
 
 #exampleModal .mpub-side.mpub-date {
   font-weight: 700;
