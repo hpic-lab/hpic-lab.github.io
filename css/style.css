@@ -3665,8 +3665,8 @@ nav#navbar-main .navbar-collapse {
   transform: rotate(-90deg);
 }
 
-/* ~2023 그룹 헤더: 펼쳐져 있으면 항상 활성 색 (Teaching ~2025 토글과 동일 동작) */
-.pub2-year[id$="-old"]:not(.collapsed) {
+/* 펼쳐진 연도 헤더는 모두 활성 색 (Chip Gallery/Teaching과 동일 동작) */
+.pub2-year:not(.collapsed) {
   color: #2e55be;
   border-bottom-color: #2e55be;
   font-weight: 700;
