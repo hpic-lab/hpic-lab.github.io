@@ -239,8 +239,7 @@
       "I/Q Calibration",
       "JTOL Enhancement"
     ],
-    "status": "review",
-    "venue": "IEEE TCAS-II'26",
+    "status": "paper",
     "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/28nm/M15987%2828nm%2C%2025.02.12%29/250228_final_DR.pdf"
   },
   {
@@ -378,11 +377,7 @@
       "MPC",
       "spur reduction"
     ],
-    "status": "paper",
-    "venue": {
-      "label": "IEEE JSSC'26",
-      "paper": "All-Digital Ring-based Injection-Locked Clock Multiplier"
-    }
+    "status": "paper"
   },
   {
     "year": 2024,
