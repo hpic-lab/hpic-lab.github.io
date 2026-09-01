@@ -4602,13 +4602,11 @@ section {
   border-bottom-color: #2e55be;
   font-weight: 700;   /* 활성일 때만 bold */
 }
-/* 모바일: 펼쳐진(열린) 연도 헤더도 활성과 동일한 파랑으로 통일 */
-@media (max-width: 991px) {
-  .chip-timeline .chip-year-toggle:not(.collapsed) {
-    color: #2e55be;
-    border-bottom-color: #2e55be;
-    font-weight: 700;
-  }
+/* 펼쳐진(열린) 연도 헤더는 활성과 동일한 파랑으로 통일 (모바일/데스크탑 공통) */
+.chip-timeline .chip-year-toggle:not(.collapsed) {
+  color: #2e55be;
+  border-bottom-color: #2e55be;
+  font-weight: 700;
 }
 
 /* 모바일 전용: 맨 위로 플로팅 버튼 (우측 하단, 네이비 원형) */
