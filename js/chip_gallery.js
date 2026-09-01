@@ -104,14 +104,14 @@ $(document).ready(function () {
 
   // 진행 상태 (단계 → 문구/색)
   var STATUS_MAP = {
-    "awaiting": { t: "Awaiting chip delivery", c: "st-gray" },
-    "tapeout": { t: "Tape-out completed", c: "st-gray" },
-    "pcb": { t: "PCB & packaging in preparation", c: "st-gray" },
-    "measurement": { t: "Measurement in progress", c: "st-amber" },
-    "completed": { t: "Measurement completed", c: "st-green" },
-    "paper": { t: "Paper in preparation", c: "st-blue" },
-    "review": { t: "Manuscript in review", c: "st-blue" },
-    "accepted": { t: "Paper accepted", c: "st-green" },
+    "awaiting": { t: "Awaiting Chip Delivery", c: "st-gray" },
+    "tapeout": { t: "Tape-out Completed", c: "st-gray" },
+    "pcb": { t: "PCB & Packaging in Preparation", c: "st-gray" },
+    "measurement": { t: "Measurement in Progress", c: "st-amber" },
+    "completed": { t: "Measurement Completed", c: "st-green" },
+    "paper": { t: "Paper in Preparation", c: "st-blue" },
+    "review": { t: "Manuscript in Review", c: "st-blue" },
+    "accepted": { t: "Paper Accepted", c: "st-green" },
     "published": { t: "Published", c: "st-green" }
   };
   function statusHTML(chip) {
