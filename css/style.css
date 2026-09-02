@@ -1617,7 +1617,7 @@ nav#navbar-main .navbar-collapse {
     left: 0;
     right: 0;
     bottom: 100%;
-    height: 34px;
+    height: 24px;   /* 헤더 간 마진(28px)보다 작게 — 위 연도의 밑줄을 가리지 않음 */
     background: var(--section-bg, #fff);
   }
 }
@@ -4696,7 +4696,7 @@ section {
     left: 0;
     right: 0;
     bottom: 100%;
-    height: 32px;
+    height: 24px;   /* 위 연도의 밑줄을 가리지 않도록 */
     background: var(--section-bg, #fff);
   }
 }
