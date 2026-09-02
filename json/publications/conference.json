@@ -268,7 +268,7 @@
     "title": "An Implementation of a DSP-Based PAM-4 Digital Equalizer with 32-Way TI-ADC",
     "image": "",
     "conference": "IEEE/IEIE ICEIC 2025",
-    "reference": "<i>International Conference on Electronics, Information, and Communication (ICEIC)</i>, Jan. 2025.",
+    "reference": "<i>IEEE/IEIE International Conference on Electronics, Information, and Communication (ICEIC)</i>, Jan. 2025.",
     "authors": [
       "S.-H. Ok",
       "D.-H. Heo",
@@ -384,7 +384,7 @@
     "title": "Analysis of ADC Quantization Effect in Processing-In-Memory Macro in Various Low-Precision Deep Neural Networks",
     "image": "",
     "conference": "IEEE/IEIE ICEIC 2024",
-    "reference": "<i>International Conference on Electronics, Information, and Communication (ICEIC)</i>, Jan. 2024.",
+    "reference": "<i>IEEE/IEIE International Conference on Electronics, Information, and Communication (ICEIC)</i>, Jan. 2024.",
     "authors": [
       "S.-M. Jin",
       "S.-U. Kang",
@@ -403,7 +403,7 @@
     "title": "Hardware and Software Co-Simulation Methodology for Processing-in-Memory Bitcell Application ",
     "image": "",
     "conference": "IEEE/IEIE ICEIC 2024",
-    "reference": "<i>International Conference on Electronics, Information, and Communication (ICEIC)</i>, Jan. 2024.",
+    "reference": "<i>IEEE/IEIE International Conference on Electronics, Information, and Communication (ICEIC)</i>, Jan. 2024.",
     "authors": [
       "J.-G. Lee",
       "S.-U. Kang",
@@ -423,7 +423,7 @@
     "title": "An Analysis of 32-Gb/s and Full-Rate Phase Interpolator based Clock and Data Recovery",
     "image": "",
     "conference": "IEEE/IEIE ICEIC 2024",
-    "reference": "<i>International Conference on Electronics, Information, and Communication (ICEIC)</i>, Jan. 2024.",
+    "reference": "<i>IEEE/IEIE International Conference on Electronics, Information, and Communication (ICEIC)</i>, Jan. 2024.",
     "authors": [
       "D.-H. Heo",
       "T.-H. Kim",
@@ -567,7 +567,7 @@
     "title": "Direct Phase Control in Digital Phase-Locked Loop Mitigating Loop Delay Effect inside Digital Filter",
     "image": "",
     "conference": "IEEE/IEIE ICEIC 2023",
-    "reference": "<i>International Conference on Electronics, Information, and Communication (ICEIC)</i>, Jan. 2023.",
+    "reference": "<i>IEEE/IEIE International Conference on Electronics, Information, and Communication (ICEIC)</i>, Jan. 2023.",
     "authors": [
       "I.-W. Jang",
       "Min-Seong Choo"
@@ -584,7 +584,7 @@
     "title": "Radiation-Hardened Processing-In-Memory Crossbar Array With Hybrid Synapse Devices for Space Application",
     "image": "",
     "conference": "IEEE/IEIE ICEIC 2023",
-    "reference": "<i>International Conference on Electronics, Information, and Communication (ICEIC)</i>, Jan. 2023.",
+    "reference": "<i>IEEE/IEIE International Conference on Electronics, Information, and Communication (ICEIC)</i>, Jan. 2023.",
     "authors": [
       "Shin-Uk Kang",
       "Jin-Woo Han",
