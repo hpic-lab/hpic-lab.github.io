@@ -2447,10 +2447,10 @@ nav#navbar-main .navbar-collapse {
   word-break: keep-all;
 }
 
-/* 프로필 모달 venue: 메인 Publications(전체 탭)와 동일한 진네이비로 통일 */
-#exampleModal .mpub-journal { color: #1c3557; }
-#exampleModal .mpub-conf    { color: #1c3557; }
-#exampleModal .mpub-patent  { color: #1c3557; }
+/* 프로필 모달 venue: 저널/학회/특허 모두 검정으로 통일 */
+#exampleModal .mpub-journal { color: #222; }
+#exampleModal .mpub-conf    { color: #222; }
+#exampleModal .mpub-patent  { color: #222; }
 
 #exampleModal .mpub-side.mpub-date {
   font-weight: 700;
