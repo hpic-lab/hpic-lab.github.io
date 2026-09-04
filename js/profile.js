@@ -383,7 +383,8 @@ $(document).ready(function () {
       person.name,
       person.profile_img, 
       person.biography,
-      person.email,
+      // 이메일은 크롤러 수집 방지를 위해 user/domain 분리 저장 → 표시 시 조립
+      person.email || (person.email_user && person.email_domain ? person.email_user + "@" + person.email_domain : ""),
       person.position,
       person.research_interests,
       person.education,

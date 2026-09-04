@@ -9,9 +9,10 @@
       "ICEIC'25 Best Paper Award - Silver Prize, ASSCC'25"
     ],
     "details": "Received a B.S. degree in the school of electronics and communication engineering at Hanyang University, Ansan, South Korea. He is currently pursuing a Master's degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. He joined LX Semicon, Seoul, South Korea in 2016, where he was involved in the LCD DDI team. His research interests include digital and analog circuit design of Clock and Data Recovery (CDR) and digital circuit design of PAM4 Receiver with adaptive decision feedback equalizer.",
-    "email": "noradlll@hanyang.ac.kr",
     "profile_img": "img/sh-ok-profile-img.jpg",
-    "position": ""
+    "position": "",
+    "email_user": "noradlll",
+    "email_domain": "hanyang.ac.kr"
   },
   {
     "name": "Dong-Hyun Lee",
@@ -23,9 +24,10 @@
       "ISOCC'24, 제 26회 대한민국 반도체설계대전 기업특별상 수상"
     ],
     "details": "Received a B.S. degree in the school of Electrical and Electronic Engineering at Dankook University, jukjeon, South Korea. He is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include artificial intelligence hardware design and processing in memory (PIM).",
-    "email": "dhlee1415@hanyang.ac.kr",
     "profile_img": "img/dh-lee-profile-img.png",
-    "position": ""
+    "position": "",
+    "email_user": "dhlee1415",
+    "email_domain": "hanyang.ac.kr"
   },
   {
     "name": "Dong-Hyun Lee",
@@ -37,9 +39,10 @@
       "ISOCC'24, 제 26회 대한민국 반도체설계대전 기업특별상 수상"
     ],
     "details": "Received a B.S. degree in the school of Electrical and Electronic Engineering at Dankook University, jukjeon, South Korea. He is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include artificial intelligence hardware design and processing in memory (PIM).",
-    "email": "dhlee1415@hanyang.ac.kr",
     "profile_img": "img/dh-lee-profile-img.png",
-    "position": ""
+    "position": "",
+    "email_user": "dhlee1415",
+    "email_domain": "hanyang.ac.kr"
   },
   {
     "name": "Sang-Hyun Ok",
@@ -51,9 +54,10 @@
       "ICEIC'25 Best Paper Award - Silver Prize, ASSCC'25"
     ],
     "details": "Received a B.S. degree in the school of electronics and communication engineering at Hanyang University, Ansan, South Korea. He is currently pursuing a Master's degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. He joined LX Semicon, Seoul, South Korea in 2016, where he was involved in the LCD DDI team. His research interests include digital and analog circuit design of Clock and Data Recovery (CDR) and digital circuit design of PAM4 Receiver with adaptive decision feedback equalizer.",
-    "email": "noradlll@hanyang.ac.kr",
     "profile_img": "img/sh-ok-profile-img.jpg",
-    "position": ""
+    "position": "",
+    "email_user": "noradlll",
+    "email_domain": "hanyang.ac.kr"
   },
   {
     "name": "Ji-Ho Kim",
@@ -63,9 +67,10 @@
     "tape_out_schedule": [],
     "achievements": [],
     "details": "Received a B.S. degree in electrical engineering from Chosun University, Gwangju, South Korea. He is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include analog and digital circuit designs of phase-locked-loop (PLL).",
-    "email": "wlgh654@hanyang.ac.kr",
     "profile_img": "img/jh-kim-profile-img.png",
-    "position": "M.S. Candidate"
+    "position": "M.S. Candidate",
+    "email_user": "wlgh654",
+    "email_domain": "hanyang.ac.kr"
   },
   {
     "name": "Kyu-Ran Park",
@@ -75,9 +80,10 @@
     "tape_out_schedule": [],
     "achievements": [],
     "details": "Received a B.S. degree in electrical engineering from Cheongju University, Cheongju, South Korea. She is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. She joined LX Semicon, Seoul, South Korea, in 2015, where she was involved in the YPD team. Her research interests include analog and digital circuit designs of phase-locked-loop (PLL).",
-    "email": "lan2137@hanyang.ac.kr",
     "profile_img": "img/kr-park-profile-img.png",
-    "position": "M.S. Candidate"
+    "position": "M.S. Candidate",
+    "email_user": "lan2137",
+    "email_domain": "hanyang.ac.kr"
   },
   {
     "name": "Shin-Uk Kang",
@@ -90,9 +96,10 @@
       "ICEIC'24"
     ],
     "details": "Received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. He is currently pursuing a M.S -Ph.D. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include artificial intelligence hardware design and processing in memory (PIM).",
-    "email": "ksu2068@hanyang.ac.kr",
     "profile_img": "img/su-kang-profile-img.jpg",
-    "position": "M.S.-Ph.D. Candidates"
+    "position": "M.S.-Ph.D. Candidates",
+    "email_user": "ksu2068",
+    "email_domain": "hanyang.ac.kr"
   },
   {
     "name": "Kang-Min Kim",
@@ -102,9 +109,10 @@
     "tape_out_schedule": [],
     "achievements": [],
     "details": "Received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. He is currently pursuing a M.S -Ph.D. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include hardware security.",
-    "email": "mim455@hanyang.ac.kr",
     "profile_img": "img/km-kim-profile-img.jpg",
-    "position": "M.S.-Ph.D. Candidates"
+    "position": "M.S.-Ph.D. Candidates",
+    "email_user": "mim455",
+    "email_domain": "hanyang.ac.kr"
   },
   {
     "name": "Dong-Hoe Heo",
@@ -116,8 +124,9 @@
       "ICEIC'24 Best Paper Award - Gold Prize"
     ],
     "details": "Received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. He is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include clock and data recovery (CDR) circuit design.",
-    "email": "ehdghl97@hanyang.ac.kr",
     "profile_img": "img/dh-heo-profile-img.jpg",
-    "position": "M.S. Candidate"
+    "position": "M.S. Candidate",
+    "email_user": "ehdghl97",
+    "email_domain": "hanyang.ac.kr"
   }
 ]

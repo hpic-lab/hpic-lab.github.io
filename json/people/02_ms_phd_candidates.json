@@ -18,9 +18,10 @@
       "2024 SCCUD 포스터 발표 최우수상"
     ],
     "biography": "Do-Hyeong Lee received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. He is currently pursuing a Ph.D. integrated degree in the department of intelligent display engineering at Yonsei University, Seoul, South Korea. His research interests include analog and digital circuit designs of clock and data recovery (CDR).",
-    "email": "dh_lee@yonsei.ac.kr",
     "profile_img": "img/dh_lee_bs_profile_image.jpg",
-    "position": ""
+    "position": "",
+    "email_user": "dh_lee",
+    "email_domain": "yonsei.ac.kr"
   },
   {
     "name": "Han-Gang Cho",
@@ -32,9 +33,10 @@
       "Wireline Interface"
     ],
     "biography": "Han-Gang Cho received a B.S. degree in the school of electrical engineering at Chung-ang University, Seoul, South Korea. He is currently pursuing a Ph.D. integrated degree in the department of intelligent display engineering at Yonsei University, Seoul, South Korea. His research interests include Wireline Interface.",
-    "email": "hgcho0810@yonsei.ac.kr",
     "profile_img": "img/hg_cho_profile_image.png",
-    "position": ""
+    "position": "",
+    "email_user": "hgcho0810",
+    "email_domain": "yonsei.ac.kr"
   },
   {
     "name": "Seung-Min Yoo",
@@ -46,8 +48,9 @@
       "Wireline Interface"
     ],
     "biography": "Seung-Min Yoo received a B.S. degree in the  school of electronic and electrical engineering at Hongik University, Seoul, South Korea. He is currently pursuing a Ph.D. integrated degree in the department of intelligent display engineering at Yonsei University, Seoul, South Korea. His research interests include Wireline Interface.",
-    "email": "smyoo@yonsei.ac.kr",
     "profile_img": "img/sm_yoo_profile_image.jpeg",
-    "position": ""
+    "position": "",
+    "email_user": "smyoo",
+    "email_domain": "yonsei.ac.kr"
   }
 ]

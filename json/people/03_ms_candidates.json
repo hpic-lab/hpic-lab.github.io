@@ -15,9 +15,10 @@
     ],
     "Awards": [],
     "biography": "Jae-Hyeon Pyeon received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include analog and digital circuit designs of phase-locked-loop (PLL).",
-    "email": "ccomo7004@hanyang.ac.kr",
     "profile_img": "img/jh-pyeon-profile-img.png",
-    "position": ""
+    "position": "",
+    "email_user": "ccomo7004",
+    "email_domain": "hanyang.ac.kr"
   },
   {
     "name": "So-Yeon Kwon",
@@ -34,7 +35,6 @@
     ],
     "Awards": [],
     "biography": "So-Yeon Kwon received a B.S. degree in the school of Applied Physics at Hanyang University, Ansan, South Korea. She is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. Her research interests include artificial intelligence hardware design and processing in memory (PIM).",
-    "email": "sykwon00@hanyang.ac.kr",
     "profile_img": "img/sw-kwon-profile-image.jpeg",
     "position": "",
     "tape_out_schedule": [
@@ -43,7 +43,9 @@
         "process": "28-nm T",
         "topic": "CIM-based Transmitter"
       }
-    ]
+    ],
+    "email_user": "sykwon00",
+    "email_domain": "hanyang.ac.kr"
   },
   {
     "name": "Seung-Hwan Gong",
@@ -61,9 +63,10 @@
     ],
     "Awards": [],
     "biography": "Seung-Hwan Gong received a B.S. degree in the school of electrical engineering at Kangwon National University, Chuncheon, South Korea. He is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include CDR, DSP-based Receiver.",
-    "email": "jusarang1007@hanyang.ac.kr",
     "profile_img": "img/sh-gong-profile-image.jpg",
-    "position": ""
+    "position": "",
+    "email_user": "jusarang1007",
+    "email_domain": "hanyang.ac.kr"
   },
   {
     "name": "Dong-Ho Kim",
@@ -81,10 +84,11 @@
     ],
     "Awards": [],
     "biography": "Dong-Ho Kim received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. He is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include DSP-DAC based transmitter.",
-    "email": "dpdl112@hanyang.ac.kr",
     "profile_img": "img/dh-kim-new-profile-image.jpg",
     "position": "",
-    "cv": "https://drive.google.com/file/d/1IIwGJfwAkVuCNuxvlFhy0Qp3Lv7o2et1/view?usp=drive_link"
+    "cv": "https://drive.google.com/file/d/1IIwGJfwAkVuCNuxvlFhy0Qp3Lv7o2et1/view?usp=drive_link",
+    "email_user": "dpdl112",
+    "email_domain": "hanyang.ac.kr"
   },
   {
     "name": "Jae-Geon Lee",
@@ -109,10 +113,11 @@
       "2025 한양대학교 BK21 고신뢰성 에너지용 지능형 시스템반도체 교육연구단 우수논문상"
     ],
     "biography": "Jae-Geon Lee received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. He is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include Clock and data recovery (CDR) and DSP-based Receiver.",
-    "email": "dlworjs@hanyang.ac.kr",
     "profile_img": "img/jg-lee-profile-img.jpeg",
     "position": "Server Manager",
-    "cv": "https://drive.google.com/file/d/12ue5Z6KN3z0orGQJY3S3WTa_Z84VX9Mh/view?usp=sharing"
+    "cv": "https://drive.google.com/file/d/12ue5Z6KN3z0orGQJY3S3WTa_Z84VX9Mh/view?usp=sharing",
+    "email_user": "dlworjs",
+    "email_domain": "hanyang.ac.kr"
   },
   {
     "name": "Seung-Mo Jin",
@@ -140,10 +145,11 @@
       "2025 IEEE Seoul Section Student Paper Bronze Award"
     ],
     "biography": "Seung-Mo Jin received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. He is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include DSP-DAC based transmitter.",
-    "email": "victorymo@hanyang.ac.kr",
     "profile_img": "img/sm-jin-profile-img.jpg",
     "position": "Lab Captain",
-    "cv": "https://drive.google.com/file/d/1_ktk3-ShP13L9jBR3MU4PVthhBfJ7LM7/view?usp=drive_link"
+    "cv": "https://drive.google.com/file/d/1_ktk3-ShP13L9jBR3MU4PVthhBfJ7LM7/view?usp=drive_link",
+    "email_user": "victorymo",
+    "email_domain": "hanyang.ac.kr"
   },
   {
     "name": "Hyeon-Seo Kim",
@@ -157,9 +163,10 @@
       "B.S., School of Electrical Engineering, Hanyang University, Ansan, Korea (2017.03 ~ 2024.02)"
     ],
     "biography": "Hyeon-Seo Kim received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. He is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include analog digital converter (ADC)",
-    "email": "hskim98@hanyang.ac.kr",
     "profile_img": "img/sh-kim2-profile-image.png",
-    "position": ""
+    "position": "",
+    "email_user": "hskim98",
+    "email_domain": "hanyang.ac.kr"
   },
   {
     "name": "Seol-Hyeon Kim",
@@ -173,9 +180,10 @@
     ],
     "Awards": [],
     "biography": "Seol-Hyeon Kim received a B.S. degree in the school of system semiconductor enginerring at Sangmyung University, Cheonan, South Korea. She is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. Her research interests include artificial intelligence hardware design and processing in memory (PIM).",
-    "email": "cuter0407@hanyang.ac.kr",
     "profile_img": "img/sh-kim-profile-image.jpg",
-    "position": ""
+    "position": "",
+    "email_user": "cuter0407",
+    "email_domain": "hanyang.ac.kr"
   },
   {
     "name": "Dong-Eon Jin",
@@ -189,9 +197,10 @@
     ],
     "Awards": [],
     "biography": "Dong-Eon Jin received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. He is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include analog digital converter (ADC).",
-    "email": "dujin0509@hanyang.ac.kr",
     "profile_img": "img/de-jin-profile-image.jpg",
-    "position": ""
+    "position": "",
+    "email_user": "dujin0509",
+    "email_domain": "hanyang.ac.kr"
   },
   {
     "name": "Joon-Seok Kwon",
@@ -208,9 +217,10 @@
     ],
     "Awards": [],
     "biography": "Joon-Seok Kwon received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. He is currently pursuing a M.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include Wireline Interface.",
-    "email": "qwe3016@hanyang.ac.kr",
     "profile_img": "img/js-kwon-profile-image.jpg",
-    "position": ""
+    "position": "",
+    "email_user": "qwe3016",
+    "email_domain": "hanyang.ac.kr"
   },
   {
     "name": "Suk-Min Yoon",
@@ -224,9 +234,10 @@
     ],
     "biography": "Suk-Min Yoon received a B.S. degree in electrical engineering from Yeungnam University, Gyeongsan, South Korea. He is currently pursuing an M.S. degree in the school of electrical and electronic engineering at Yonsei University, Seoul, South Korea. His research interests include analog and digital circuit designs of Processing In Memory(PIM).",
     "Awards": [],
-    "email": "ysm000917@yonsei.ac.kr",
     "profile_img": "img/sm_yoon_profile_image.jpg",
-    "position": ""
+    "position": "",
+    "email_user": "ysm000917",
+    "email_domain": "yonsei.ac.kr"
   },
   {
     "name": "Ju-Yong Lee",
@@ -240,9 +251,10 @@
     ],
     "Awards": [],
     "biography": "Ju-Yong Lee received a B.S. degree in electrical engineering from Gachon University, Sungnam, South Korea. He is currently pursuing an M.S. degree in the school of electrical and electronic engineering at Yonsei University, Seoul, South Korea. His research interests include Wireline Interface.",
-    "email": "2026321242@yonsei.ac.kr",
     "profile_img": "img/jy-lee-profile-img.jpg",
-    "position": ""
+    "position": "",
+    "email_user": "2026321242",
+    "email_domain": "yonsei.ac.kr"
   },
   {
     "name": "Jun-gyu Han",
@@ -255,9 +267,10 @@
     ],
     "Awards": [],
     "biography": "Jun-gyu Han received a B.S. degree in the school of electronic and electrical engineering at Hongik University, Seoul, South Korea. He is currently pursuing a M.S.degree in the department of intelligent display engineering at Yonsei University, Seoul, South Korea. His research interests include Wireline Interface.",
-    "email": "dizzy_ggyu@yonsei.ac.kr",
     "profile_img": "img/jg_han_profile_image.jpg",
-    "position": ""
+    "position": "",
+    "email_user": "dizzy_ggyu",
+    "email_domain": "yonsei.ac.kr"
   },
   {
     "name": "Chang-Hui Oh",
@@ -269,8 +282,9 @@
       "Wireline Interface"
     ],
     "biography": "Chang-Hui Oh received a B.S. degree in the school of electrical engineering at Incheon National University, Incheon, South Korea. He is currently pursuing a Ph.D. integrated degree in the department of intelligent display engineering at Yonsei University, Seoul, South Korea. His research interests include Wireline Interface.",
-    "email": "och@yonsei.ac.kr",
     "profile_img": "img/ch_oh_profile_image.jpg",
-    "position": ""
+    "position": "",
+    "email_user": "och",
+    "email_domain": "yonsei.ac.kr"
   }
 ]
