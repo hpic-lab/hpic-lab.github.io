@@ -2,6 +2,18 @@
   {
     "year": "2026",
     "month": "09",
+    "category": "Journal",
+    "text": "\"XOR-Spikformer: A Resource-Efficient FPGA Accelerator for Spiking Transformers With XOR Residuals and Overlap Regularization\" was accepted in the <b>IEEE TCAS-II</b>. Congratulations!",
+    "links": [],
+    "figures": [
+      "hg-yoo-profile-img.jpg",
+      "sm_yoon_profile_image.jpg",
+      "ms-choo-profile-img.png"
+    ]
+  },
+  {
+    "year": "2026",
+    "month": "09",
     "category": "News",
     "text": "<u>Suk-Min</u>, <u>Ju-Yong</u>, <u>Jun-gyu</u>, <u>Do-Hyeong</u>, <u>Chang-Hui</u>, <u>Han-Gang</u>, <u>Seung-Min</u> joined HPIC Lab as new graduate students. Welcome!",
     "links": [],

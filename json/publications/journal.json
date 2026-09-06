@@ -1,14 +1,18 @@
 [
   {
     "type": "2026",
-    "status": "",
-    "title": "Resource-Efficient FPGA Accelerator for Spiking Transformers",
+    "status": "IEEE TCAS-II",
+    "title": "XOR-Spikformer: A Resource-Efficient FPGA Accelerator for Spiking Transformers With XOR Residuals and Overlap Regularization",
     "image": "",
-    "progress": "In Review",
-    "journal": "",
-    "reference": "<i>IEEE</i>, 2026.",
+    "progress": "Accepted",
+    "journal": "IEEE TCAS-II",
+    "reference": "<i>IEEE Transactions on Circuits and Systems II: Express Briefs (TCAS-II)</i>, 2026. (*Equally Credited Authors)",
     "authors": [
-      "Han-Gil Yoo†, Suk-Min Yoon†, ..., and Min-Seong Choo"
+      "Han-Gil Yoo*",
+      "Suk-Min Yoon*",
+      "Seungkyu Choi",
+      "Mingoo Seok",
+      "Min-Seong Choo"
     ],
     "figure": [
       "hg-yoo-profile-img.jpg",
