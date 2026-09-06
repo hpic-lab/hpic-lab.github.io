@@ -4112,6 +4112,33 @@ section {
   font-weight: inherit;
 }
 
+/* 히어로 키워드 태그 칩 — 클릭 시 Research 섹션 이동 */
+.hero-tags {
+  margin-top: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+.hero-tag {
+  border: 1px solid #7fc4ff;
+  color: #7fc4ff;
+  border-radius: 999px;
+  padding: 3px 14px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+.hero-tag:hover {
+  background: rgba(127, 196, 255, 0.18);
+  color: #ffffff;
+}
+@media (max-width: 991px) {
+  .hero-tags { gap: 6px; margin-top: 10px; }
+  .hero-tag { font-size: 0.72rem; padding: 2px 10px; }
+}
+
 /* 히어로 내 RESEARCH SECTION — 링크임이 보이도록 밝은 파랑 + 밑줄 */
 .home-description-container .hero-link {
   color: #7fc4ff;
