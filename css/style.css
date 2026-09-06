@@ -4121,18 +4121,13 @@ section {
   justify-content: center;
 }
 .hero-tag {
-  border: 1px solid #7fc4ff;
-  color: #7fc4ff;
+  background: rgba(10, 16, 28, 0.55);   /* 반투명 다크 필 — 칩 배경 위 가독성 확보 */
+  border: 1px solid rgba(127, 196, 255, 0.9);
+  color: #bfe0ff;
   border-radius: 999px;
-  padding: 3px 14px;
+  padding: 4px 14px;
   font-size: 0.85rem;
   font-weight: 600;
-  text-decoration: none;
-  transition: background 0.2s, color 0.2s;
-}
-.hero-tag:hover {
-  background: rgba(127, 196, 255, 0.18);
-  color: #ffffff;
 }
 @media (max-width: 991px) {
   .hero-tags { gap: 6px; margin-top: 10px; }
