@@ -224,6 +224,8 @@ $(document).ready(function () {
       if (ya !== yb) return yb - ya;
       var va = sortVal(a), vb = sortVal(b);
       if (va !== vb) return vb - va;
+      // Accepted/Early Access 등 미게재 동점은 JSON에 적힌 순서 유지 (최신 소식이 위)
+      if (va >= 12.5) return 0;
       return venuePriority(venueLabel(b.status)) - venuePriority(venueLabel(a.status));
     });
   }
@@ -231,7 +233,9 @@ $(document).ready(function () {
   // Journal/Conference 공통 렌더링 (ISL 스타일: 좌측 번호·등급·학회, 우측 본문)
   function renderPaperList(pubs, container, venueClass, idPrefix) {
     pubs = sortByRecency(pubs);
-    var numbered = pubs.filter(function (p) { return p.title && p.title.trim() !== ""; }).length;
+    // 번호는 게재/억셉 논문만: In Preparation / In Review 는 제목이 있어도 J&ndash;
+    var isPendNum = function (p) { return /prepar|review/i.test(p.progress || ""); };
+    var numbered = pubs.filter(function (p) { return p.title && p.title.trim() !== "" && !isPendNum(p); }).length;
     var n = numbered;
     var curYear = null;
     var body = null;
@@ -259,7 +263,7 @@ $(document).ready(function () {
       }
 
       var hasTitle = pub.title && pub.title.trim() !== "";
-      var num = hasTitle ? n-- : "&ndash;";
+      var num = (hasTitle && !isPendNum(pub)) ? n-- : "&ndash;";
       var isJournal = venueClass === "pub2-venue-journal";
 
       var v = venueLabel(pub.status);
