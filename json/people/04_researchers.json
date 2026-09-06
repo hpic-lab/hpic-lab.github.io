@@ -28,16 +28,19 @@
     "name": "Han-Gil Yoo",
     "tag": "KWS AI Accelerator",
     "education": [
-      "B.S., School of Electrical Engineering, Hanyang University, Ansan, Korea (2019.03 ~ Present)"
+      "B.S., School of Electrical Engineering, Hanyang University, Ansan, Korea (2019.03 ~ 2026.08)"
     ],
     "research_interests": [
       "KWS AI Accelerator"
     ],
     "Awards": [],
-    "biography": "Han-Gil Yoo is pursuing a Bachelor's degree in the school of electrical engineering at Hanyang University, Ansan, South Korea. His research interests include analog and digital circuit designs of processing in memory (PiM).",
+    "biography": "Han-Gil Yoo received a B.S. degree in the school of electrical engineering at Hanyang University, Ansan, South Korea, and is currently a researcher at HPIC Lab, Yonsei University, Seoul, South Korea. His research interests include analog and digital circuit designs of processing in memory (PiM).",
     "profile_img": "img/hg-yoo-profile-img.jpg",
     "position": "",
     "email_user": "ilovec215",
-    "email_domain": "gmail.com"
+    "email_domain": "gmail.com",
+    "experience": [
+      "Researcher, HPIC Lab, Yonsei University, Seoul, Korea (2026.09 ~ Present)"
+    ]
   }
 ]
