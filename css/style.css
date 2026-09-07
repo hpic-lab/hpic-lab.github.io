@@ -1925,6 +1925,8 @@ nav#navbar-main .navbar-collapse {
     height: 3px; background: #e9e9e9;
   }
   .chip-timeline .chip-year.chip-year-active::after { background: #2e55be; }
+  /* 펼쳐진(열린) 연도의 ::after 밑줄도 활성 파랑으로 (글자색 규칙과 동일 조건) */
+  .chip-timeline .chip-year-toggle:not(.collapsed)::after { background: #2e55be; }
   /* 연도(32px 들여쓰기)에 맞춰 아래 칩 콘텐츠도 동일하게 들여쓰기 */
   .chip-timeline .chip-year-body { padding-left: 32px; }
 }
