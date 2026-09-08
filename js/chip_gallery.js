@@ -438,8 +438,13 @@ $(document).ready(function () {
 
     // 스크롤 위치에 따라 현재 연도 강조 (Failed 필터 중에는 보이는 실패 연도 기준)
     function updateActiveYear() {
-      var headers = $c.find(".chip-year-toggle:visible");
-      if (!headers.length) return;
+      // 접힌(collapsed) 연도는 활성 판정에서 제외 — 펼쳐진 연도만 강조
+      var headers = $c.find(".chip-year-toggle:visible").not(".collapsed");
+      if (!headers.length) {
+        $nav.find(".chip-year-link").removeClass("active");
+        $c.find(".chip-year").removeClass("chip-year-active");
+        return;
+      }
       // 연도 헤더가 실제로 고정되는 화면상 위치(line)에 맞춰 현재 연도를 판정
       var rEl = document.getElementById("research");
       var line = 130;

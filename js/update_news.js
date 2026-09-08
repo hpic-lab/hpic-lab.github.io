@@ -294,8 +294,9 @@ $(document).ready(function () {
 
       // ===== 스크롤 위치의 연도를 사이드바에서 강조 =====
       function updateActiveNewsYear() {
-        var headers = container.find(".news-accordion:visible .ui-accordion-header");
-        if (!headers.length) return;
+        // 접힌 연도는 활성 판정에서 제외 — 펼쳐진 연도만 사이드바 강조
+        var headers = container.find(".news-accordion:visible .ui-accordion-header.ui-state-active");
+        if (!headers.length) { sidebar.find(".news-year-link").removeClass("active"); return; }
         var threshold = $(window).scrollTop() + 110;
         var current = null;
         headers.each(function () {

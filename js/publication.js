@@ -623,8 +623,13 @@ $(document).ready(function () {
 
     // ===== 스크롤 위치에 따라 현재 연도 헤더 강조 (시안 3) =====
     function updateActiveYear() {
-      var headers = container.find(".pub2-list:visible .pub2-year");
-      if (!headers.length) return;
+      // 접힌(collapsed) 연도 그룹은 활성 판정에서 제외 — 펼쳐진 연도만 강조
+      var headers = container.find(".pub2-list:visible .pub2-year").not(".collapsed");
+      if (!headers.length) {
+        container.find(".pub2-year").removeClass("pub2-year-active");
+        $("#publications .pub2-year-link").removeClass("active");
+        return;
+      }
       // 임계값: 모바일은 고정 헤더(내비바+제목/탭) 아래에 연도가 고정되므로 그 오프셋에 맞춤
       var stickyTop = 110;
       if (window.matchMedia("(max-width: 991px)").matches) {
