@@ -427,8 +427,10 @@ $(document).ready(function () {
           '<button type="button" class="pub2-tab pub2-tab-journal active" data-target="journal">Journal</button>' +
           '<button type="button" class="pub2-tab pub2-tab-conference" data-target="conference">Conference</button>' +
           '<button type="button" class="pub2-tab pub2-tab-patent" data-target="patent">Patent</button>' +
-          '<button type="button" class="pub2-tab pub2-tab-inreview" data-target="inreview">In Review</button>' +
-          '<button type="button" class="pub2-tab pub2-tab-inprep" data-target="inprep">In Preparation</button>' +
+        "</div>" +
+        '<div class="pub2-status-links">' +
+          '<button type="button" class="pub2-tab pub2-status-link pub2-tab-inreview" data-target="inreview">In Review &rsaquo;</button>' +
+          '<button type="button" class="pub2-tab pub2-status-link pub2-tab-inprep" data-target="inprep">In Preparation &rsaquo;</button>' +
         "</div>" +
         '<div class="pub2-year-links"></div>' +
       "</div>"
