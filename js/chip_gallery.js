@@ -107,6 +107,7 @@ $(document).ready(function () {
     "awaiting": { t: "Awaiting Chip Delivery", c: "st-gray" },
     "tapeout": { t: "Tape-out Completed", c: "st-gray" },
     "pcb": { t: "PCB & Packaging in Preparation", c: "st-gray" },
+    "measprep": { t: "Measurement in Preparation", c: "st-amber" },
     "measurement": { t: "Measurement in Progress", c: "st-amber" },
     "completed": { t: "Measurement Completed", c: "st-green" },
     "paper": { t: "Paper in Preparation", c: "st-blue" },

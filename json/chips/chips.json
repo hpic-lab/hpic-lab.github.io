@@ -70,7 +70,7 @@
       "Data Pattern adaptation",
       "Ultra High Speed"
     ],
-    "status": "awaiting",
+    "status": "measprep",
     "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/28nm/M17949%2828nm%2C%2026.04.29%29/112Gbps_PAM4RX_Seunghwan_Gong_260423.pdf"
   },
   {
@@ -95,7 +95,7 @@
       "1.6Vpp",
       "Ultra High-Speed"
     ],
-    "status": "awaiting",
+    "status": "measprep",
     "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/28nm/M17949%2828nm%2C%2026.04.29%29/DSP%20TX_260423_DR%28%EC%B5%9C%EC%8B%A0%29.pdf"
   },
   {
@@ -119,7 +119,7 @@
       "Background Calibration",
       "Fractional Spur Reduction"
     ],
-    "status": "awaiting",
+    "status": "measprep",
     "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/28nm/M17949%2828nm%2C%2026.04.29%29/PIPLL_ihhan_Design_Review_260417.pdf"
   },
   {
@@ -143,7 +143,7 @@
       "Loop-Unrolled",
       "Comparator Offset Calibration"
     ],
-    "status": "awaiting",
+    "status": "measprep",
     "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/28nm/M17949%2828nm%2C%2026.04.29%29/TI-ADC_dujin%20DR.pdf"
   },
   {
@@ -166,7 +166,7 @@
       "Foreground Calibration",
       "Asynchronous Pipeline SAR-TDC"
     ],
-    "status": "awaiting",
+    "status": "measprep",
     "review_link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/0_%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%A6%AC%EB%B7%B0/TSMC/28nm/M17949%2828nm%2C%2026.04.29%29/TDADC_DR_hskim.pdf"
   },
   {
