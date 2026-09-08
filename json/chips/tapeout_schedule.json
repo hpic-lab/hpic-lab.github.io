@@ -2,21 +2,6 @@
   {
     "ym": "2026.09",
     "process": "28-nm T",
-    "title": "112Gb/s TIA",
-    "designer_imgs": [
-      "jy-lee-profile-img.jpg",
-      "dh_lee_bs_profile_image.jpg",
-      "sh-gong-profile-image.jpg",
-      "dh-kim-new-profile-image.jpg",
-      "sm-jin-profile-img.jpg",
-      "sh-kim2-profile-image.png",
-      "de-jin-profile-image.jpg"
-    ],
-    "image": "img/chip_new/TIA_112G_2609.jpg"
-  },
-  {
-    "ym": "2026.09",
-    "process": "28-nm T",
     "title": "112Gb/s TX with CIM FFE",
     "designer_imgs": [
       "sw-kwon-profile-image.jpeg",

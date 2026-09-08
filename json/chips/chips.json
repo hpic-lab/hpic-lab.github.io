@@ -1,6 +1,33 @@
 [
   {
     "year": 2026,
+    "month": 9,
+    "process": "28-nm T",
+    "image": "img/chip_new/TIA_112G_2609.jpg",
+    "name": "112Gb/s TIA",
+    "description": "",
+    "outputs": [],
+    "note": "",
+    "designer": "",
+    "designer_imgs": [
+      "jy-lee-profile-img.jpg",
+      "dh_lee_bs_profile_image.jpg",
+      "sh-gong-profile-image.jpg",
+      "dh-kim-new-profile-image.jpg",
+      "sm-jin-profile-img.jpg",
+      "sh-kim2-profile-image.png",
+      "de-jin-profile-image.jpg"
+    ],
+    "keywords": [
+      "TIA",
+      "112Gb/s",
+      "Optical RX"
+    ],
+    "status": "awaiting",
+    "raw_date": "2026.09"
+  },
+  {
+    "year": 2026,
     "month": 0,
     "process": "28-nm S",
     "image": "img/chip_new/OnChipTrace_D2D_26.jpg",
