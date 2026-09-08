@@ -687,6 +687,7 @@ $(document).ready(function () {
           "</div>";
         arr.slice().reverse().forEach(function (it) {
           html += '<div class="tos2-row"><span class="tos2-num">' + it._num + "</span>" +
+            (it.image ? '<img class="tos2-thumb" src="' + it.image + '" alt="' + it.title + '" loading="lazy">' : "") +
             '<span class="tos2-ttl">' + it.title + "</span>" +
             designerHTML({ designer_imgs: it.designer_imgs }) + "</div>";
         });

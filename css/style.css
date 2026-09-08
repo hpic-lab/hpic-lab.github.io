@@ -5139,6 +5139,14 @@ a.chip-status-venue:hover { background: rgba(55, 138, 221, 0.2); }
   border-top: 1px solid #f0f0f0;
 }
 .tos2-num { width: 30px; flex-shrink: 0; text-align: right; color: #222; font-size: 0.85rem; }
+/* Upcoming Tape-outs 행 썸네일 (레이아웃/칩 이미지) */
+.tos2-thumb {
+  height: 44px;
+  width: auto;
+  border-radius: 6px;
+  border: 1px solid #e2e2e2;
+  flex-shrink: 0;
+}
 .tos2-ttl { font-size: 0.9rem; color: #333; font-weight: 500; flex: 1; min-width: 0; }
 .tos2-row .chip-designers { margin-left: auto; display: flex; gap: 3px; flex-shrink: 0; }
 .tos2-row .chip-designer-photo { width: 26px; height: 26px; }
