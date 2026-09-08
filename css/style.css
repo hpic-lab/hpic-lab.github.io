@@ -3624,6 +3624,17 @@ nav#navbar-main .navbar-collapse {
 .pub2-tab-patent:hover,
 .pub2-tab-patent.active     { border-color: #3C3489; }
 
+.pub2-tab-inreview   { background: #E6F1FB; color: #185FA5; }
+.pub2-tab-inreview:hover,
+.pub2-tab-inreview.active   { border-color: #185FA5; }
+
+/* 전용 탭에 항목이 없을 때 안내 */
+.pub2-tab-empty { color: #999; font-size: 0.95rem; margin: 24px 4px; }
+
+.pub2-tab-inprep     { background: #F1EFE8; color: #5F5E5A; }
+.pub2-tab-inprep:hover,
+.pub2-tab-inprep.active     { border-color: #5F5E5A; }
+
 .pub2-notice {
   font-size: 0.8rem;
   font-weight: 500;

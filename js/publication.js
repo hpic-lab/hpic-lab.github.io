@@ -331,6 +331,7 @@ $(document).ready(function () {
       body.append(
         '<div class="pub2-entry" data-yr="' + year + '" data-old="' + (isOld ? 1 : 0) +
           '" data-sv="' + sortVal(pub) + '" data-ptype="paper" data-src="' + (isJournal ? "journal" : "conference") + '"' +
+          ' data-pending="' + (/prepar/i.test(pub.progress || "") ? "prep" : /review/i.test(pub.progress || "") ? "review" : "") + '"' +
           (entryId ? ' id="' + entryId + '"' : "") + ">" +
           '<div class="pub2-num">' + num + "</div>" +
           '<div class="pub2-side">' +
@@ -426,6 +427,8 @@ $(document).ready(function () {
           '<button type="button" class="pub2-tab pub2-tab-journal active" data-target="journal">Journal</button>' +
           '<button type="button" class="pub2-tab pub2-tab-conference" data-target="conference">Conference</button>' +
           '<button type="button" class="pub2-tab pub2-tab-patent" data-target="patent">Patent</button>' +
+          '<button type="button" class="pub2-tab pub2-tab-inreview" data-target="inreview">In Review</button>' +
+          '<button type="button" class="pub2-tab pub2-tab-inprep" data-target="inprep">In Preparation</button>' +
         "</div>" +
         '<div class="pub2-year-links"></div>' +
       "</div>"
@@ -446,9 +449,11 @@ $(document).ready(function () {
     function refreshYearLinks(target) {
       var linksDiv = $("#publications .pub2-year-links");
       linksDiv.empty();
-      var listId = target === "all" ? "pub2-all" : "pub2-" + target;
+      var listId = target === "all" ? "pub2-all"
+        : (target === "inprep" || target === "inreview") ? "pub2-journal"
+        : "pub2-" + target;
       $("#" + listId)
-        .find(".pub2-year")
+        .find(".pub2-year:visible")
         .each(function () {
           var id = $(this).attr("id");
           var label = $(this).text();
@@ -463,6 +468,7 @@ $(document).ready(function () {
       var items = [];
       $("#pub2-journal, #pub2-conference, #pub2-patent").find(".pub2-entry").each(function () {
         var $e = $(this);
+        if ($e.attr("data-pending")) return;   // In Preparation/In Review 는 All 에서 제외 (전용 탭)
         items.push({
           yr: $e.attr("data-yr"),
           old: $e.attr("data-old") === "1",
@@ -529,11 +535,38 @@ $(document).ready(function () {
       $("#publications .pub2-tab").removeClass("active");
       $('#publications .pub2-tab[data-target="' + target + '"]').addClass("active");
       container.find(".pub2-list").hide();
+      // 연도 헤더 중 보이는 항목이 하나도 없는 그룹은 헤더도 숨김
+      function hideEmptyYears($l) {
+        $l.find(".pub2-year").each(function () {
+          var $body = $(this).next(".pub2-year-body");
+          $(this).toggle($body.find(".pub2-entry:visible").length > 0);
+        });
+      }
       if (target === "all") {
         buildAllList();
         $("#pub2-all").show();
+      } else if (target === "inprep" || target === "inreview") {
+        // 전용 탭: 저널 리스트에서 해당 상태만 표시
+        var want = target === "inprep" ? "prep" : "review";
+        var $l = $("#pub2-journal");
+        $l.find(".pub2-entry").each(function () {
+          $(this).toggle($(this).attr("data-pending") === want);
+        });
+        $l.show();
+        hideEmptyYears($l);
+        // 해당 상태의 항목이 하나도 없으면 안내 문구
+        $l.find(".pub2-tab-empty").remove();
+        if (!$l.find(".pub2-entry:visible").length) {
+          $l.append('<p class="pub2-tab-empty">No papers ' +
+            (want === "prep" ? "in preparation" : "under review") + " at the moment.</p>");
+        }
       } else {
-        $("#pub2-" + target).show();
+        var $t = $("#pub2-" + target).show();
+        // 일반 탭: In Preparation/In Review 는 전용 탭에서만 표시
+        $t.find(".pub2-entry").each(function () {
+          $(this).toggle(!$(this).attr("data-pending"));
+        });
+        hideEmptyYears($t);
       }
       refreshYearLinks(target);
       if (window.markWrappedReviews) setTimeout(window.markWrappedReviews, 0);
