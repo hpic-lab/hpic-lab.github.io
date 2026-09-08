@@ -539,7 +539,12 @@ $(document).ready(function () {
       function hideEmptyYears($l) {
         $l.find(".pub2-year").each(function () {
           var $body = $(this).next(".pub2-year-body");
-          $(this).toggle($body.find(".pub2-entry:visible").length > 0);
+          // 접힌(~2023) 그룹은 body 가 display:none 이라 :visible 로 판단하면 빈 그룹으로 오판됨.
+          // 개별 항목의 자체 숨김(display:none) 여부로만 판단한다.
+          var shown = $body.find(".pub2-entry").filter(function () {
+            return this.style.display !== "none";
+          }).length;
+          $(this).toggle(shown > 0);
         });
       }
       if (target === "all") {
