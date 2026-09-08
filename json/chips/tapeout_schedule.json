@@ -10,8 +10,8 @@
     ]
   },
   {
-    "ym": "2027.01",
-    "process": "28-nm S",
+    "ym": "2027.02",
+    "process": "14-nm S",
     "title": "KWS AI Accelerator",
     "designer_imgs": [
       "sm_yoon_profile_image.jpg",
@@ -19,8 +19,8 @@
     ]
   },
   {
-    "ym": "2027.01",
-    "process": "28-nm S",
+    "ym": "2027.02",
+    "process": "14-nm S",
     "title": "XOR-Spikformer",
     "designer_imgs": [
       "sm_yoon_profile_image.jpg",
