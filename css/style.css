@@ -1617,8 +1617,13 @@ nav#navbar-main .navbar-collapse {
     left: 0;
     right: 0;
     bottom: 100%;
-    height: 24px;   /* 헤더 간 마진(28px)보다 작게 — 위 연도의 밑줄을 가리지 않음 */
+    height: 24px;   /* 접힌 헤더: 마진(28px)보다 작게 — 위 연도의 밑줄을 가리지 않음 */
     background: var(--section-bg, #fff);
+  }
+  /* 펼쳐진(스크롤 시 상단 고정되는) 헤더만 크게 — 고정 시 위 틈으로 콘텐츠 비침 방지 */
+  .pub2-year:not(.collapsed)::before,
+  .news-accordion .ui-accordion-header.ui-state-active::before {
+    height: 34px;
   }
 }
 
@@ -4749,6 +4754,9 @@ section {
     bottom: 100%;
     height: 24px;   /* 위 연도의 밑줄을 가리지 않도록 */
     background: var(--section-bg, #fff);
+  }
+  .chip-timeline .chip-year-toggle:not(.collapsed)::before {
+    height: 32px;   /* 펼쳐진(고정되는) 연도만 크게 */
   }
 }
 
