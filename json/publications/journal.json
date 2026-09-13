@@ -29,7 +29,7 @@
     "status": "IEEE TCAS-II",
     "title": "XOR-Spikformer: A Resource-Efficient FPGA Accelerator for Spiking Transformers With XOR Residuals and Overlap Regularization",
     "image": "",
-    "progress": "Accepted",
+    "progress": "Early Access",
     "journal": "IEEE TCAS-II",
     "reference": "<i>IEEE Transactions on Circuits and Systems II: Express Briefs (TCAS-II)</i>, 2026. (*Equally Credited Authors)",
     "authors": [
@@ -44,7 +44,7 @@
       "sm_yoon_profile_image.jpg",
       "ms-choo-profile-img.png"
     ],
-    "link": "",
+    "link": "https://ieeexplore.ieee.org/document/11688113",
     "review": [
       {
         "round": "1st",

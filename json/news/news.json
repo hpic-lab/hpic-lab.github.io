@@ -4,7 +4,12 @@
     "month": "09",
     "category": "Journal",
     "text": "\"XOR-Spikformer: A Resource-Efficient FPGA Accelerator for Spiking Transformers With XOR Residuals and Overlap Regularization\" was accepted in the <b>IEEE TCAS-II</b>. Congratulations!",
-    "links": [],
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://ieeexplore.ieee.org/document/11688113"
+      }
+    ],
     "figures": [
       "hg-yoo-profile-img.jpg",
       "sm_yoon_profile_image.jpg",
