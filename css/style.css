@@ -5147,6 +5147,56 @@ a.chip-status-venue:hover { background: rgba(55, 138, 221, 0.2); }
   border-top: 1px solid #f0f0f0;
 }
 .tos2-num { width: 30px; flex-shrink: 0; text-align: right; color: #222; font-size: 0.85rem; }
+/* ===== Teaching: SerDes Lecture Series 카드 (멤버 전용) ===== */
+.lecture-card {
+  border: 1px solid #e2e6ef;
+  border-left: 4px solid #185FA5;
+  border-radius: 10px;
+  background: #f8fafd;
+  padding: 16px 20px;
+  margin-bottom: 26px;
+}
+.lecture-head {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+.lecture-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #185FA5;
+}
+.lecture-lock {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #854F0B;
+  background: #FAEEDA;
+  border-radius: 999px;
+  padding: 2px 10px;
+}
+.lecture-desc {
+  font-size: 0.92rem;
+  color: #444;
+  margin: 0 0 8px;
+}
+.lecture-syllabus {
+  margin: 0 0 10px;
+  padding-left: 18px;
+  font-size: 0.88rem;
+  color: #555;
+}
+.lecture-syllabus li { margin-bottom: 3px; }
+.lecture-link {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #185FA5;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.lecture-link:hover { color: #0C447C; }
+
 /* Upcoming Tape-outs 행 썸네일 (레이아웃/칩 이미지) */
 .tos2-thumb {
   height: 44px;
