@@ -2,6 +2,21 @@
   {
     "year": "2026",
     "month": "09",
+    "category": "Invited Talk",
+    "text": "<u>Min-Seong</u> presented an invited talk entitled \"고속 유선 통신 및 광통신 집적회로 설계\" at the Optical Semiconductor Workshop 2026 (OSW 2026), hosted by the Optical Society of Korea.",
+    "links": [
+      {
+        "label": "OSW 2026",
+        "url": "https://www.osk.or.kr/conference/event/content/content.php?_mid=2888,2910&cfrid=147"
+      }
+    ],
+    "figures": [
+      "ms-choo-profile-img.png"
+    ]
+  },
+  {
+    "year": "2026",
+    "month": "09",
     "category": "Journal",
     "text": "\"XOR-Spikformer: A Resource-Efficient FPGA Accelerator for Spiking Transformers With XOR Residuals and Overlap Regularization\" was accepted in the <b>IEEE TCAS-II</b>. Congratulations!",
     "links": [
