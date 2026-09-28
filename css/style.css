@@ -1620,8 +1620,9 @@ nav#navbar-main .navbar-collapse {
     height: 24px;   /* 접힌 헤더: 마진(28px)보다 작게 — 위 연도의 밑줄을 가리지 않음 */
     background: var(--section-bg, #fff);
   }
-  /* 펼쳐진(스크롤 시 상단 고정되는) 헤더만 크게 — 고정 시 위 틈으로 콘텐츠 비침 방지 */
-  .pub2-year:not(.collapsed)::before,
+  /* 실제로 상단 고정된(활성) 헤더만 크게 — 고정 시 위 틈으로 콘텐츠 비침 방지.
+     ':not(.collapsed)' 로 주면 바로 위 연도의 밑줄까지 덮어버린다. */
+  .pub2-year.pub2-year-active::before,
   .news-accordion .ui-accordion-header.ui-state-active::before {
     height: 34px;
   }
@@ -4755,8 +4756,8 @@ section {
     height: 24px;   /* 위 연도의 밑줄을 가리지 않도록 */
     background: var(--section-bg, #fff);
   }
-  .chip-timeline .chip-year-toggle:not(.collapsed)::before {
-    height: 32px;   /* 펼쳐진(고정되는) 연도만 크게 */
+  .chip-timeline .chip-year.chip-year-active::before {
+    height: 32px;   /* 실제로 고정된(활성) 연도만 크게 — 위 연도 밑줄 보존 */
   }
 }
 
