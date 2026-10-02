@@ -1,6 +1,21 @@
 [
   {
     "year": "2026",
+    "month": "10",
+    "category": "Invited Talk",
+    "text": "<u>Min-Seong</u> presented an invited talk entitled \"초고속 유선 통신 회로 시스템 설계 및 실습\" at Korea University (hosted by IDEC Academy).",
+    "links": [
+      {
+        "label": "IDEC",
+        "url": "https://www.idec.or.kr/edu/apply/view/?&category=&campus=%EA%B3%A0%EB%A0%A4%EB%8C%80-%EC%95%84%EC%B9%B4%EB%8D%B0%EB%AF%B8&type=lst2&no=2522"
+      }
+    ],
+    "figures": [
+      "ms-choo-profile-img.png"
+    ]
+  },
+  {
+    "year": "2026",
     "month": "09",
     "category": "Invited Talk",
     "text": "<u>Min-Seong</u> presented an invited talk entitled \"고속 유선 통신 및 광통신 집적회로 설계\" at the Optical Semiconductor Workshop 2026 (OSW 2026), hosted by the Optical Society of Korea.",
