@@ -2,5 +2,16 @@
 .vscode/settings.json
 
 # PI CV (개인 휴대폰 번호 포함 — 커밋 금지)
+# 파일명이 달라져도 걸리도록 패턴으로 지정 (img/cv-svg.svg 같은 아이콘은 영향 없음)
 CV.tex
 CV.pdf
+*CV*.pdf
+*CV*.tex
+*_CV.*
+*이력서*
+
+# LaTeX 빌드 산출물
+*.aux
+*.log
+*.out
+*.synctex.gz
