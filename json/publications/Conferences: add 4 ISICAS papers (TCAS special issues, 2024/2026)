@@ -1,6 +1,101 @@
 [
   {
     "type": "2026",
+    "status": "IEEE ISICAS",
+    "award": "",
+    "title": "A Timing Relaxed Pre-Decision Feedforward Equalizer for DSP-Based Wireline Receiver Using Hardware-in-the-Loop Verification on FPGA",
+    "image": "",
+    "conference": "IEEE International Symposium on Integrated Circuits and Systems (ISICAS)",
+    "reference": "<i>IEEE International Symposium on Integrated Circuits and Systems (ISICAS)</i>, Dec. 2026.",
+    "authors": [
+      "Jae-Geon Lee*",
+      "Sang-Hyeon Ok*",
+      "Joon-Seok Kwon",
+      "Kwang-Ho Lee",
+      "Haram Ju",
+      "Gyu-Seob Jeong",
+      "Woorham Bae",
+      "Gain Kim",
+      "Kwanseo Park",
+      "Min-Seong Choo"
+    ],
+    "figure": [
+      "jg-lee-profile-img.jpeg",
+      "sh-ok-profile-img.jpg",
+      "js-kwon-profile-image.jpg",
+      "ms-choo-profile-img.png"
+    ],
+    "link": "https://ieeexplore.ieee.org/document/11674159"
+  },
+  {
+    "type": "2026",
+    "status": "IEEE ISICAS",
+    "award": "",
+    "title": "KWS-CIM: A Charge-Domain eDRAM-Based Compute-in-Memory Macro for Ternary DFSMN Keyword Spotting",
+    "image": "",
+    "conference": "IEEE International Symposium on Integrated Circuits and Systems (ISICAS)",
+    "reference": "<i>IEEE International Symposium on Integrated Circuits and Systems (ISICAS)</i>, Dec. 2026.",
+    "authors": [
+      "Dong-Hyun Lee*",
+      "Shin-Uk Kang*",
+      "Jihoon Jang",
+      "Suk-Min Yoon",
+      "Hyun Kim",
+      "Mingoo Seok",
+      "Min-Seong Choo"
+    ],
+    "figure": [
+      "dh-lee-profile-img.png",
+      "su-kang-profile-img.jpg",
+      "sm_yoon_profile_image.jpg",
+      "ms-choo-profile-img.png"
+    ],
+    "link": "https://ieeexplore.ieee.org/abstract/document/11654553"
+  },
+  {
+    "type": "2026",
+    "status": "IEEE ISICAS",
+    "award": "",
+    "title": "XOR-Spikformer: A Resource-Efficient FPGA Accelerator for Spiking Transformers With XOR Residuals and Overlap Regularization",
+    "image": "",
+    "conference": "IEEE International Symposium on Integrated Circuits and Systems (ISICAS)",
+    "reference": "<i>IEEE International Symposium on Integrated Circuits and Systems (ISICAS)</i>, Dec. 2026.",
+    "authors": [
+      "Han-Gil Yoo*",
+      "Suk-Min Yoon*",
+      "Seungkyu Choi",
+      "Mingoo Seok",
+      "Min-Seong Choo"
+    ],
+    "figure": [
+      "hg-yoo-profile-img.jpg",
+      "sm_yoon_profile_image.jpg",
+      "ms-choo-profile-img.png"
+    ],
+    "link": "https://ieeexplore.ieee.org/document/11688113"
+  },
+  {
+    "type": "2024",
+    "status": "IEEE ISICAS",
+    "award": "",
+    "title": "Design Methodology for Compact Single-Channel 3-Stage Capacitor-Array-Assisted Charge-Injection DAC-Based SAR ADC",
+    "image": "",
+    "conference": "IEEE International Symposium on Integrated Circuits and Systems (ISICAS)",
+    "reference": "<i>IEEE International Symposium on Integrated Circuits and Systems (ISICAS)</i>, Oct. 2024.",
+    "authors": [
+      "Chan-Ho Kye",
+      "Yu-Jin Byeon",
+      "Kyojin Choo",
+      "Min-Seong Choo"
+    ],
+    "figure": [
+      "yj-byeon-profile-img.png",
+      "ms-choo-profile-img.png"
+    ],
+    "link": "https://ieeexplore.ieee.org/document/10586762"
+  },
+  {
+    "type": "2026",
     "status": "IEIE 하계학술대회",
     "award": "",
     "title": "SNN-DCIM: 스파이킹 신경망을 위한 Digital Compute-in-Memory Architecture ",
