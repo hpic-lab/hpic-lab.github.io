@@ -5,18 +5,22 @@ GitHub Pages 로 배포되며 저장소 루트에 `.nojekyll` 이 있다(Jekyll 
 
 ## 기본 작업 흐름
 
-1. 파일을 직접 수정한다.
+0. **항상 GitHub 의 최신본을 기준으로 작업한다.** 로컬 폴더(`C:\Users\mschoo\Documents\GitHub\hpic-lab.github.io`)는
+   뒤처져 있을 수 있으므로, 파일을 고치기 전에 내장 브라우저에서
+   `/hpic-lab/hpic-lab.github.io/raw/main/<경로>` 를 받아 현재 내용을 확인한다.
+1. 파일을 수정한다.
 2. **CSS/JS 를 수정하면 `index.html` 의 캐시 버스터를 반드시 올린다** — 예: `css/style.css?v=326` → `?v=327`,
-   `js/publication.js?v=64` → `?v=65`. 이걸 빠뜨리면 사용자 브라우저에 반영되지 않는다.
-3. **커밋·푸시는 Claude 가 하지 않는다.** 교수님이 윈도우 PowerShell 에서 직접 수행한다
-   (강의자료 `serdes-lecture` 저장소와 동일한 방식 — 푸시용 토큰을 Claude 가 다루지 않게 하기 위함).
-   작업을 마치면 실행할 명령 한 줄을 제시한다:
-   ```
-   .\push.ps1 "커밋 메시지"
-   ```
-   `push.ps1` 은 add -A → commit → push 를 수행하고, 거절되면 `pull --rebase` 후 재시도한다.
-   참고: 이 저장소는 **Git LFS 를 쓰지 않는다**(.gitattributes 없음). 이미지·PDF 는 일반 git 객체로 커밋된다.
-4. 배포는 GitHub Actions(Pages)가 자동 처리. 반영까지 1~2분 + 브라우저 캐시(하드 리프레시 Ctrl+Shift+R).
+   `js/publication.js?v=64` → `?v=65`. 이걸 빠뜨리면 브라우저에 반영되지 않는다.
+3. **텍스트 파일은 Claude 가 직접 커밋한다** — 데스크톱 앱 내장 브라우저에서 GitHub 웹 에디터
+   (`/edit/main/<경로>`, 새 파일은 `/new/main`)로 수정하고 "Commit changes" 까지 수행한다.
+   - 큰 데이터 파일(JSON)은 **전체 교체 대신 필요한 부분만 삽입**한다. 전체 교체는 붙여넣기가
+     기존 내용을 덮지 못하고 뒤에 붙어 파일이 깨진 전례가 있다.
+   - 커밋 후에는 `https://hpic-lab.github.io/<경로>` 를 받아 **JSON 파싱까지 검증**한다.
+4. **이미지·PDF 등 바이너리는 Claude 가 올릴 수 없다**(웹 에디터는 텍스트 전용).
+   로컬 폴더에 준비해 두고, 교수님이 GitHub Desktop 또는 `.\push.ps1` 로 올린다.
+   이때는 먼저 Pull 해서 로컬을 동기화해야 한다. 그 외에는 로컬 동기화가 필요 없다.
+   참고: 이 저장소는 **Git LFS 를 쓰지 않는다**(.gitattributes 없음).
+5. 배포는 GitHub Actions(Pages)가 자동 처리. 반영까지 1~2분 + 브라우저 캐시(하드 리프레시 Ctrl+Shift+R).
 
 ## 데이터 파일
 
