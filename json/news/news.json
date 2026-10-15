@@ -2,6 +2,17 @@
   {
     "year": "2026",
     "month": "10",
+    "category": "Award",
+    "text": "<u>Dong-Ho</u>, <u>Seung-Mo</u> received the Outstanding Poster Award at the ISOCC 2026 Chip Design Contest.",
+    "links": [],
+    "figures": [
+      "dh-kim-new-profile-image.jpg",
+      "sm-jin-profile-img.jpg"
+    ]
+  },
+  {
+    "year": "2026",
+    "month": "10",
     "category": "Invited Talk",
     "text": "<u>Min-Seong</u> presented an invited talk entitled \"초고속 유선 통신 회로 시스템 설계 및 실습\" at Korea University (hosted by IDEC Academy).",
     "links": [
