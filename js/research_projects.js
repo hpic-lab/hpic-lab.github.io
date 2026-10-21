@@ -32,6 +32,12 @@ $(document).ready(function () {
         title:
           "이종집적 광회로 기반 호모다인 광신경망 프로세서 기술 개발",
         sponsor: "Ministry of Science and ICT (MSIT)",
+        grant_no: "RS-2026-25607377",
+        agency: "NRF",
+        agency_note: "전문기관(NRF/IITP) 확인 필요",
+        lead: "KIST (한재훈)",
+        short: "광컴퓨팅",
+        en_title: "Development of Heterogeneous Integrated Photonic Circuits for Homodyne Photonic Neural Network Processor",
         desc:
           "Development of Heterogeneous Integrated Photonic Circuits for Homodyne Photonic Neural Network Processor. 상위 사업: 차세대광기반연산반도체핵심기술개발사업 (과학기술정보통신부 원천기술개발사업). 1단계 2026.07–2028.12 (2년 6개월), 2단계 2029.01–2030.12 (2년).",
       },
@@ -40,6 +46,11 @@ $(document).ready(function () {
         title:
           "SDV 대응 가혹환경극복 차량용 멀티표준 지원 가능 고신뢰 고속 인터페이스 IP 기술 개발",
         sponsor: "Ministry of Science and ICT (MSIT)",
+        grant_no: "RS-2026-25591915",
+        agency: "NRF",
+        lead: "성균관대학교 (이강윤)",
+        short: "SDV",
+        en_title: "Development of Highly Reliable Multi-Standard Automotive SerDes IP for SDVs in Harsh Automotive Environments",
         desc:
           "Development of Highly Reliable Multi-Standard Automotive SerDes IP for SDVs in Harsh Automotive Environments. 상위 사업: 나노·소재기술개발 – SDV대응 가혹환경극복 자동차반도체 핵심IP 원천기술개발사업. 1단계 2026.07–2028.12 (30개월), 2단계 2029.01–2030.12 (24개월). 전문기관 한국연구재단(NRF).",
       },
@@ -48,6 +59,11 @@ $(document).ready(function () {
         title:
           "이기종 디바이스 간 초고대역폭, 저지연 직렬 인터페이스 기술 개발",
         sponsor: "Ministry of Science and ICT (MSIT)",
+        grant_no: "RS-2026-25508822",
+        agency: "IITP",
+        lead: "파네시아 (정명수)",
+        short: "K-클라우드",
+        en_title: "Development of a high-bandwidth, low-latency serial interface technology for heterogenous devices",
         desc:
           "관리번호 2026-AI반도체-6 (지정공모형). 상위 사업: AI반도체를 활용한 K-클라우드 기술개발사업 (과학기술정보통신부 · 정보통신기획평가원(IITP) 정보통신방송기술개발사업). 총 45개월 — 1단계 2년, 2단계 2년; 1차년도 2026.04.01–2026.12.31 (9개월). 주관 ㈜파네시아(정명수 대표), 참여 한양대학교(추민성 교수) 등.",
       },
@@ -56,6 +72,12 @@ $(document).ready(function () {
         title:
           "2.5D 광패키징 기반 CPO를 위한 Opto-chiplet이 집적된 인터포저 기술",
         sponsor: "Ministry of Science and ICT (MSIT)",
+        grant_no: "RS-2025-16068050",
+        agency: "NRF",
+        agency_note: "전문기관(NRF/IITP) 확인 필요",
+        lead: "필옵틱스 (이종진)",
+        short: "CPO",
+        en_title: "Interposer Technology Integrated with Opto-chiplets for 2.5D Optical Packaging-Based CPO",
         desc:
           "상위 사업: 차세대 광패키징기술개발사업 (과학기술정보통신부 원천기술개발사업). 총 55개월 — 1단계 3년(31개월), 2단계 2년(24개월); 1차년도 2025.06.01–2025.12.31 (7개월). 총괄책임: 한국전자통신연구원(ETRI) 이종진 책임연구원.",
       },
@@ -78,6 +100,11 @@ $(document).ready(function () {
         title:
           "광통신 칩렛 향 고속, 저전력, 저잡음 클럭킹 네트워크 시스템 개발",
         sponsor: "National Research Foundation (NRF)",
+        grant_no: "RS-2024-00339543",
+        agency: "NRF",
+        lead: "연세대학교 (추민성)",
+        short: "우수신진",
+        en_title: "Development of High-Speed, Low-Power, and Low-Noise Clocking Network Systems for Optical Communication Chiplets",
         desc:
           "Development of High-Speed, Low-Power, and Low-Noise Clocking Network Systems for Optical Communication Chiplets. 2024년도 우수신진연구 신규과제 (개인기초연구사업 — 과학기술정보통신부 소관, 한국연구재단(NRF) 시행). 연구기간 '24~'29 (5년): 1단계(1~3차년), 2단계(4~5차년).",
       },
@@ -155,9 +182,22 @@ $(document).ready(function () {
       });
     }
 
+    // 과제번호·전문기관·주관·영문과제명 블록 (학생 사사 작성용)
+    function grantHTML(item) {
+      var agencyName = item.agency === "IITP" ? "정보통신기획평가원 (IITP)" : "한국연구재단 (NRF)";
+      return '<div class="rp-grant">' +
+        '<div><span class="rp-grant-k">과제번호</span><code class="rp-grant-no">' + item.grant_no + '</code>' +
+        '<button type="button" class="rp-copy" data-copy="' + item.grant_no + '">Copy</button></div>' +
+        '<div><span class="rp-grant-k">전문기관</span>' + agencyName +
+        (item.agency_note ? ' <span class="rp-warn">※ ' + item.agency_note + '</span>' : '') + '</div>' +
+        (item.lead ? '<div><span class="rp-grant-k">주관·총괄</span>' + item.lead + '</div>' : '') +
+        (item.en_title ? '<div><span class="rp-grant-k">영문 과제명</span>' + item.en_title + '</div>' : '') +
+        '</div>';
+    }
+
     function projectRow(item, num) {
       const hasDetail =
-        item.desc || item.role || item.sponsor_logo ||
+        item.grant_no || item.desc || item.role || item.sponsor_logo ||
         (Array.isArray(item.partners) && item.partners.length > 0);
 
       let detailHTML = "";
@@ -176,6 +216,7 @@ $(document).ready(function () {
 
         detailHTML = `
           <div class="rp-detail" style="display: none;">
+            ${item.grant_no ? grantHTML(item) : ""}
             ${item.desc ? `<p class="rp-desc">${item.desc}</p>` : ""}
             ${item.role ? `<p class="rp-role"><b>HPIC Role</b> — ${item.role}</p>` : ""}
             ${logos ? `<div class="rp-logos">${logos}</div>` : ""}
@@ -222,6 +263,106 @@ $(document).ready(function () {
       list.forEach((item) => container.append(projectCard(item, n--)));
     });
 
+    // ===== 사사(Acknowledgment) 가이드 + 문구 생성기 =====
+    const grantProjects = ongoing.filter(function (p) { return p.grant_no; });
+    if (grantProjects.length) {
+      var chk = grantProjects.map(function (p, i) {
+        return '<label class="ack-chk"><input type="checkbox" data-i="' + i + '"> <b>' + (p.short || "") + '</b> ' +
+          p.grant_no + ' <span class="ack-ag">(' + p.agency + ')</span>' +
+          '<span class="ack-pct-wrap">기여율<input type="number" class="ack-pct" data-i="' + i + '" min="0" max="100" placeholder="00">%</span></label>';
+      }).join("");
+      container.append(
+        '<div class="completed-toggle ack-toggle collapsed"><span>Acknowledgment Guide (사사 가이드)</span><span class="completed-arrow">▾</span></div>' +
+        '<div class="ack-guide" style="display:none">' +
+          '<ul class="ack-rules">' +
+            '<li>과제번호는 정식 형식(RS-연도-번호)으로 정확히 적고, 해당 논문에 <b>실제 기여한 과제만</b> 적는다.</li>' +
+            '<li>사사 과제가 과다하거나 기여도가 낮은 성과는 연차평가에서 불리할 수 있으므로, 논문마다 기여도를 점검한다.</li>' +
+            '<li>전문기관이 다르면 NRF와 IITP를 함께 적는다 (이기종 인터페이스(K-클라우드) 과제는 IITP).</li>' +
+            '<li>연도는 논문 <b>게재연도</b> 기준으로 적는다.</li>' +
+            '<li>복수과제 정식 서식에는 기여율을 적으며, 합은 100%가 되어야 한다.</li>' +
+            '<li>IDEC의 칩 제작·EDA 지원은 과제와 분리해 별도 문장으로 적는다 (실적 집계 대상 아님).</li>' +
+            '<li>Non-Government 과제(삼성·ETRI·KETI)는 사사 표기 전 교수님께 확인한다.</li>' +
+          '</ul>' +
+          '<div class="ack-builder">' +
+            '<div class="ack-step">1. 논문에 기여한 과제 선택</div>' + chk +
+            '<div class="ack-row"><label>게재연도<input type="number" class="ack-year" value="' + new Date().getFullYear() + '"></label>' +
+            '<label>IDEC<select class="ack-idec"><option value="">없음</option><option value="eda">EDA 툴</option><option value="chip">칩 제작 + EDA 툴</option></select></label></div>' +
+            '<div class="ack-step">2. 생성된 사사문구</div>' +
+            '<div class="ack-warn"></div>' +
+            '<div class="ack-out" data-k="ko"><div class="ack-out-h">국문 (정식 서식)<button type="button" class="rp-copy">Copy</button></div><p></p></div>' +
+            '<div class="ack-out" data-k="en"><div class="ack-out-h">English (formal)<button type="button" class="rp-copy">Copy</button></div><p></p></div>' +
+            '<div class="ack-out" data-k="short"><div class="ack-out-h">English (short — 지면 제한 시)<button type="button" class="rp-copy">Copy</button></div><p></p></div>' +
+          '</div>' +
+        '</div>'
+      );
+
+      var AG = {
+        NRF: { ko: "한국연구재단", en: "the National Research Foundation of Korea (NRF)" },
+        IITP: { ko: "정보통신기획평가원", en: "the Institute of Information & Communications Technology Planning & Evaluation (IITP)" }
+      };
+      var IDEC = {
+        eda: { ko: " 본 연구의 EDA 툴은 반도체설계교육센터(IDEC)의 지원을 받았음.", en: " The EDA tool was supported by the IC Design Education Center (IDEC), Korea." },
+        chip: { ko: " 본 연구의 칩 제작 및 EDA 툴은 반도체설계교육센터(IDEC)의 지원을 받았음.", en: " The chip fabrication and EDA tool were supported by the IC Design Education Center (IDEC), Korea." }
+      };
+      var buildAck = function () {
+        var g = container.find(".ack-guide");
+        var sel = [];
+        g.find(".ack-chk input[type=checkbox]").each(function () { if (this.checked) sel.push(+$(this).data("i")); });
+        var year = g.find(".ack-year").val() || new Date().getFullYear();
+        var idec = IDEC[g.find(".ack-idec").val()] || { ko: "", en: "" };
+        var out = { ko: "", en: "", short: "" };
+        var warn = [];
+        if (!sel.length) {
+          out.ko = out.en = out.short = "위에서 과제를 선택하세요.";
+        } else {
+          var multi = sel.length > 1;
+          var sum = 0;
+          var ps = sel.map(function (i) {
+            var v = g.find('.ack-pct[data-i="' + i + '"]').val();
+            sum += +v || 0;
+            return { p: grantProjects[i], pct: v === "" ? "00" : v };
+          });
+          var ags = [];
+          ps.forEach(function (x) {
+            if (ags.indexOf(x.p.agency) < 0) ags.push(x.p.agency);
+            if (x.p.agency_note) warn.push(x.p.short + ": " + x.p.agency_note);
+          });
+          if (multi && sum !== 100) warn.push("기여율 합계가 100%가 아닙니다 (현재 " + sum + "%).");
+          out.ko = "이 논문은 " + year + "년도 정부(과학기술정보통신부)의 재원으로 " +
+            ags.map(function (a) { return AG[a].ko; }).join(" 및 ") + "의 지원을 받아 수행된 연구임(" +
+            ps.map(function (x) { return x.p.grant_no + ", " + x.p.title + (multi ? ", 기여율 " + x.pct + "%" : ""); }).join("; ") + ")." + idec.ko;
+          out.en = "This work was supported by " + ags.map(function (a) { return AG[a].en; }).join(" and ") +
+            (ags.length > 1 || multi ? " grants" : " grant") + " funded by the Korean government (MSIT) in " + year + " (" +
+            ps.map(function (x) { return "Grant No. " + x.p.grant_no + ", Project Title: " + x.p.en_title + (multi ? ", Contribution: " + x.pct + "%" : ""); }).join("; ") + ")." + idec.en;
+          out.short = "This work was supported by " + ags.map(function (a) { return AG[a].en; }).join(" and ") +
+            " funded by the Korean Government Ministry of Science and ICT (MSIT) under Grant " +
+            ps.map(function (x) { return x.p.grant_no + " (" + x.p.agency + ")"; }).join(", ").replace(/, ([^,]*)$/, " and $1") + "." + idec.en;
+        }
+        g.find(".ack-out").each(function () { $(this).find("p").text(out[$(this).data("k")]); });
+        g.find(".ack-warn").html(warn.map(function (w) { return "※ " + w; }).join("<br>"));
+      };
+      container.on("click", ".ack-toggle", function () {
+        $(this).toggleClass("collapsed");
+        container.find(".ack-guide").stop(true, false).slideToggle(250);
+      });
+      container.on("change input", ".ack-guide input, .ack-guide select", buildAck);
+      buildAck();
+    }
+
+    // 복사 버튼 (과제번호 / 생성된 사사문구)
+    container.on("click", ".rp-copy", function (e) {
+      e.stopPropagation();
+      var btn = $(this);
+      var txt = btn.data("copy") || btn.closest(".ack-out").find("p").text();
+      if (!txt) return;
+      var done = function () { btn.text("Copied!"); setTimeout(function () { btn.text("Copy"); }, 1200); };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(String(txt)).then(done, function () { window.prompt("Copy:", txt); });
+      } else {
+        window.prompt("Copy:", txt);
+      }
+    });
+
     // 완료 과제는 접힌 서브섹션으로 (클릭 시 펼침)
     if (completed.length > 0) {
       container.append(`
@@ -236,7 +377,7 @@ $(document).ready(function () {
       let cpNum = completed.length;
       completed.forEach((item) => completedDiv.append(projectCard(item, cpNum--)));
 
-      container.on("click", ".completed-toggle", function () {
+      container.on("click", ".completed-toggle:not(.ack-toggle)", function () {
         $(this).toggleClass("collapsed");
         completedDiv.stop(true, false).slideToggle(250);
       });
