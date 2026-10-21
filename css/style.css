@@ -5538,3 +5538,21 @@ a.chip-out:hover { text-decoration: underline; }
 .research-projects-container > .rp-group-label:first-child {
   margin-top: 6px;
 }
+
+/* Research Projects — 제목 아래 줄: 연구기간 + 지원기관 */
+.rp-head-main .rp-title {
+  display: block;
+}
+.rp-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4px 10px;
+  margin-top: 6px;
+}
+.rp-meta .rp-date {
+  margin-right: 0;
+}
+.rp-meta .rp-sponsor {
+  margin-top: 0;
+}
