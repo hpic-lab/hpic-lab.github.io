@@ -5556,3 +5556,66 @@ a.chip-out:hover { text-decoration: underline; }
 .rp-meta .rp-sponsor {
   margin-top: 0;
 }
+
+/* Research Projects — 과제번호 블록 + 사사 가이드/문구 생성기 */
+.rp-grant {
+  font-size: 0.85rem;
+  color: #333;
+  background: #f7f8fa;
+  border-left: 3px solid #2e55be;
+  padding: 8px 12px;
+  margin: 8px 0 10px;
+}
+.rp-grant > div { margin: 2px 0; }
+.rp-grant-k {
+  display: inline-block;
+  min-width: 84px;
+  color: #888;
+  font-weight: 600;
+}
+.rp-grant-no {
+  font-size: 0.85rem;
+  color: #1f3c74;
+  background: #eaf0fb;
+  padding: 1px 6px;
+  border-radius: 3px;
+}
+.rp-copy {
+  font-size: 0.72rem;
+  margin-left: 8px;
+  padding: 1px 8px;
+  border: 1px solid #c9d3e6;
+  background: #fff;
+  color: #2e55be;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.rp-copy:hover { background: #eaf0fb; }
+.rp-warn, .ack-warn { color: #b45309; font-size: 0.8rem; }
+.ack-guide { padding: 4px 2px 12px; font-size: 0.88rem; }
+.ack-rules { padding-left: 18px; margin: 6px 0 14px; color: #333; }
+.ack-rules li { margin: 3px 0; }
+.ack-step { font-weight: 700; color: #1f3c74; margin: 14px 0 6px; }
+.ack-chk { display: block; margin: 4px 0; cursor: pointer; }
+.ack-ag { color: #888; }
+.ack-pct-wrap { color: #888; margin-left: 10px; font-size: 0.82rem; }
+.ack-pct { width: 56px; margin-left: 4px; }
+.ack-row { display: flex; gap: 18px; flex-wrap: wrap; margin: 10px 0 4px; }
+.ack-row input, .ack-row select { margin-left: 6px; }
+.ack-year { width: 76px; }
+.ack-out {
+  background: #f7f8fa;
+  border: 1px solid #eceef2;
+  border-radius: 6px;
+  padding: 8px 12px;
+  margin: 8px 0;
+}
+.ack-out-h {
+  font-weight: 600;
+  color: #555;
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ack-out p { margin: 6px 0 0; line-height: 1.55; color: #222; word-break: break-word; }
