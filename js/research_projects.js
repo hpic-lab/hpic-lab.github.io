@@ -188,9 +188,11 @@ $(document).ready(function () {
           <div class="rp-body">
             <div class="rp-head">
               <div class="rp-head-main">
-                <span class="rp-date">${fmtDate(item.date)}</span>
-                <span class="rp-title">${item.title}</span>
-                <div class="rp-sponsor">${item.sponsor}</div>
+                <div class="rp-title">${item.title}</div>
+                <div class="rp-meta">
+                  <span class="rp-date">${fmtDate(item.date)}</span>
+                  <span class="rp-sponsor">${item.sponsor}</span>
+                </div>
               </div>
               ${hasDetail ? '<span class="rp-arrow">&#9662;</span>' : ""}
             </div>
