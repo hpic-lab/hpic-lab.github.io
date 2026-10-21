@@ -10,6 +10,15 @@ $(document).ready(function () {
           "Reconfigurable PAM-N SerDes Transceiver Based on 64 GT/s Low-Power DAC/ADC-DSP for Next-Generation PCIe Gen6/CXL Memory Controllers. 삼성전자 DS부문 신진산학 3기 과제. 연구기간 2026.10.01–2029.09.30 (3년).",
       },
       {
+        date: "Oct. 2026 - Jan. 2027",
+        title:
+          "지반침하와 지하매설물 감지용 레이더 센서용 클럭발생기 IP 개발",
+        sponsor: "Electronics and Telecommunications Research Institute (ETRI)",
+        type: "industry",   // 비정부(연구용역)
+        desc:
+          "Clock Generator IP for Radar Sensors Detecting Ground Subsidence and Underground Utilities. 지하매설물 탐지용 레이더 센서의 RF 송수신기에 고분해능 타이밍을 제공하는 저지터·고해상도 클럭 발생기(DLL) 설계 (한국전자통신연구원 연구용역).",
+      },
+      {
         date: "Jul. 2026 - Oct. 2026",
         title:
           "PAM-4 고속 직렬 인터페이스 수신기 등화기 성능 분석",
@@ -202,8 +211,8 @@ $(document).ready(function () {
     const ongoingGov = ongoing.filter((p) => p.type !== "industry");
     const ongoingInd = ongoing.filter((p) => p.type === "industry");
     [
-      ["Government-Funded Projects", ongoingGov],
-      ["Industry & Institute Projects", ongoingInd],
+      ["Government Projects", ongoingGov],
+      ["Non-Government Projects", ongoingInd],
     ].forEach(([label, list]) => {
       if (!list.length) return;
       container.append(`<div class="rp-group-label">${label}</div>`);
