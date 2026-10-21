@@ -308,6 +308,8 @@ $(document).ready(function () {
         var g = container.find(".ack-guide");
         var sel = [];
         g.find(".ack-chk input[type=checkbox]").each(function () { if (this.checked) sel.push(+$(this).data("i")); });
+        // 과제번호 오름차순 (오래된 과제 → 최신 과제)
+        sel.sort(function (x, y) { return grantProjects[x].grant_no < grantProjects[y].grant_no ? -1 : 1; });
         var year = g.find(".ack-year").val() || new Date().getFullYear();
         var idec = IDEC[g.find(".ack-idec").val()] || { ko: "", en: "" };
         var out = { ko: "", en: "", short: "" };
