@@ -10,6 +10,15 @@ $(document).ready(function () {
           "Reconfigurable PAM-N SerDes Transceiver Based on 64 GT/s Low-Power DAC/ADC-DSP for Next-Generation PCIe Gen6/CXL Memory Controllers. 삼성전자 DS부문 신진산학 3기 과제. 연구기간 2026.10.01–2029.09.30 (3년).",
       },
       {
+        date: "Jul. 2026 - Oct. 2026",
+        title:
+          "PAM-4 고속 직렬 인터페이스 수신기 등화기 성능 분석",
+        sponsor: "Korea Electronics Technology Institute (KETI)",
+        type: "industry",   // 산학(연구개발서비스)
+        desc:
+          "PAM-4 DSP 기반 수신기의 DFE/FFE 등화기 알고리즘 구현 및 성능 분석 코드 개발 (ZCU208 RFSoC 기반 PAM-4 수신기 DSP 플랫폼, AWGN 채널 BER/SER 분석). 상위 과제: 차세대 서버 및 가속기 시스템을 위한 FRA 및 텔레메트리 지원 PCIe Retimer IC 개발 (한국전자기술연구원 외부 전문기술 활용).",
+      },
+      {
         date: "Jul. 2026 - Dec. 2030",
         title:
           "이종집적 광회로 기반 호모다인 광신경망 프로세서 기술 개발",
@@ -23,7 +32,7 @@ $(document).ready(function () {
           "SDV 대응 가혹환경극복 차량용 멀티표준 지원 가능 고신뢰 고속 인터페이스 IP 기술 개발",
         sponsor: "Ministry of Science and ICT (MSIT)",
         desc:
-          "Development of Highly Reliable Multi-Standard Automotive SerDes IP for SDVs in Harsh Automotive Environments. 상위 사업: 나노·소재기술개발 – SDV대응 가혹환경극복 자동차반도체 핵심IP 원천기술개발사업. 1단계 2026.07–2028.12 (30개월), 2단계 2029.01–2030.12 (24개월). 정부지원금 총 10,625백만원 (1단계 6,875, 2단계 3,750백만원), 전문기관 한국연구재단(NRF).",
+          "Development of Highly Reliable Multi-Standard Automotive SerDes IP for SDVs in Harsh Automotive Environments. 상위 사업: 나노·소재기술개발 – SDV대응 가혹환경극복 자동차반도체 핵심IP 원천기술개발사업. 1단계 2026.07–2028.12 (30개월), 2단계 2029.01–2030.12 (24개월). 전문기관 한국연구재단(NRF).",
       },
       {
         date: "Apr. 2026 - Dec. 2029",
@@ -31,7 +40,7 @@ $(document).ready(function () {
           "이기종 디바이스 간 초고대역폭, 저지연 직렬 인터페이스 기술 개발",
         sponsor: "Ministry of Science and ICT (MSIT)",
         desc:
-          "관리번호 2026-AI반도체-6 (지정공모형). 상위 사업: AI반도체를 활용한 K-클라우드 기술개발사업 (과학기술정보통신부 · 정보통신기획평가원(IITP) 정보통신방송기술개발사업). 총 45개월 — 1단계 2년, 2단계 2년; 1차년도 2026.04.01–2026.12.31 (9개월). 정부지원연구개발비 총 140억원 이내 (1단계 65.34억, 2단계 74.66억). 주관 ㈜파네시아(정명수 대표), 참여 한양대학교(추민성 교수) 등.",
+          "관리번호 2026-AI반도체-6 (지정공모형). 상위 사업: AI반도체를 활용한 K-클라우드 기술개발사업 (과학기술정보통신부 · 정보통신기획평가원(IITP) 정보통신방송기술개발사업). 총 45개월 — 1단계 2년, 2단계 2년; 1차년도 2026.04.01–2026.12.31 (9개월). 주관 ㈜파네시아(정명수 대표), 참여 한양대학교(추민성 교수) 등.",
       },
       {
         date: "Jun. 2025 - Dec. 2029",
@@ -39,7 +48,7 @@ $(document).ready(function () {
           "2.5D 광패키징 기반 CPO를 위한 Opto-chiplet이 집적된 인터포저 기술",
         sponsor: "Ministry of Science and ICT (MSIT)",
         desc:
-          "상위 사업: 차세대 광패키징기술개발사업 (과학기술정보통신부 원천기술개발사업). 총 55개월 — 1단계 3년(31개월), 2단계 2년(24개월); 1차년도 2025.06.01–2025.12.31 (7개월). 정부지원연구개발비 총 9,029백만원 (1차년도 약 1,149백만원). 총괄책임: 한국전자통신연구원(ETRI) 이종진 책임연구원.",
+          "상위 사업: 차세대 광패키징기술개발사업 (과학기술정보통신부 원천기술개발사업). 총 55개월 — 1단계 3년(31개월), 2단계 2년(24개월); 1차년도 2025.06.01–2025.12.31 (7개월). 총괄책임: 한국전자통신연구원(ETRI) 이종진 책임연구원.",
       },
       {
         date: "May. 2025 - Feb. 2030",
@@ -194,7 +203,7 @@ $(document).ready(function () {
     const ongoingInd = ongoing.filter((p) => p.type === "industry");
     [
       ["Government-Funded Projects", ongoingGov],
-      ["Industry-Sponsored Projects", ongoingInd],
+      ["Industry & Institute Projects", ongoingInd],
     ].forEach(([label, list]) => {
       if (!list.length) return;
       container.append(`<div class="rp-group-label">${label}</div>`);
