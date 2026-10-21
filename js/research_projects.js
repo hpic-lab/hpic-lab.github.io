@@ -1,6 +1,15 @@
 $(document).ready(function () {
     const researchProjects = [
       {
+        date: "Oct. 2026 - Sep. 2029",
+        title:
+          "차세대 메모리 컨트롤러용 PCIe Gen6/CXL 대응 64GT/s급 저전력 DAC/ADC-DSP 기반 Reconfigurable PAM-N SerDes 송수신기(TRX) 설계 기술 개발",
+        sponsor: "Samsung Electronics (DS Division)",
+        type: "industry",   // 산학과제
+        desc:
+          "Reconfigurable PAM-N SerDes Transceiver Based on 64 GT/s Low-Power DAC/ADC-DSP for Next-Generation PCIe Gen6/CXL Memory Controllers. 삼성전자 DS부문 신진산학 3기 과제. 연구기간 2026.10.01–2029.09.30 (3년).",
+      },
+      {
         date: "Jul. 2026 - Dec. 2030",
         title:
           "이종집적 광회로 기반 호모다인 광신경망 프로세서 기술 개발",
@@ -180,8 +189,18 @@ $(document).ready(function () {
     const completed = researchProjects.filter((p) => p.status === "Completed");
 
     // 연번: 그룹별 개별 부여 (Chip Gallery와 동일하게 최신=큰 번호, 위→아래 내림차순)
-    let onNum = ongoing.length;
-    ongoing.forEach((item) => container.append(projectCard(item, onNum--)));
+    // 진행중 과제: 정부과제 / 산학과제 구분 (type: "industry" → 산학과제), 그룹별 연번
+    const ongoingGov = ongoing.filter((p) => p.type !== "industry");
+    const ongoingInd = ongoing.filter((p) => p.type === "industry");
+    [
+      ["Government-Funded Projects", ongoingGov],
+      ["Industry-Sponsored Projects", ongoingInd],
+    ].forEach(([label, list]) => {
+      if (!list.length) return;
+      container.append(`<div class="rp-group-label">${label}</div>`);
+      let n = list.length;
+      list.forEach((item) => container.append(projectCard(item, n--)));
+    });
 
     // 완료 과제는 접힌 서브섹션으로 (클릭 시 펼침)
     if (completed.length > 0) {
