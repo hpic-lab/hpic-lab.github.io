@@ -876,15 +876,19 @@ $.when(
     roles.forEach((role) => {
       for (const [key, p] of Object.entries(window.peopleDB)) {
         if (role.re.test(p.position || "")) {
+          // 표시 라벨: PI는 고정, 그 외는 실제 직함 텍스트 사용 (예: "Lab Captain (Yonsei)")
+          const roleText = role.cls === "side-pi"
+            ? role.label
+            : ((p.position || "").split(/<br\s*\/?>/i).find((r) => role.re.test(r)) || role.label).trim();
           html += `
             <div class="people-side-item ${role.cls}" data-img-key="${key}" title="View profile">
               <img class="people-mini-photo" src="${p.profile_img}" alt="${p.name}" onerror="this.remove()" />
               <div>
                 <div class="people-side-name">${p.name}</div>
-                <span class="people-side-label ${role.cls}">${role.icon ? role.icon + " " : ""}${role.label}</span>
+                <span class="people-side-label ${role.cls}">${role.icon ? role.icon + " " : ""}${roleText}</span>
               </div>
             </div>`;
-          break; // 역할당 한 명
+          // 역할당 여러 명 허용 (예: 한양/연세 Lab Captain 각각)
         }
       }
     });
