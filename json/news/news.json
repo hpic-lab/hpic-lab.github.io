@@ -28,6 +28,16 @@
   },
   {
     "year": "2026",
+    "month": "10",
+    "category": "Grant",
+    "text": "<u>HPIC Lab</u> was selected for the \"Reconfigurable PAM-N SerDes Transceiver Based on 64 GT/s Low-Power DAC/ADC-DSP for Next-Generation PCIe Gen6/CXL Memory Controllers\" project, sponsored by Samsung Electronics (DS Division). Congratulations!",
+    "links": [],
+    "figures": [
+      "lab-logo-square.png"
+    ]
+  },
+  {
+    "year": "2026",
     "month": "09",
     "category": "Invited Talk",
     "text": "<u>Min-Seong</u> presented an invited talk entitled \"고속 유선 통신 및 광통신 집적회로 설계\" at the Optical Semiconductor Workshop 2026 (OSW 2026), hosted by the Optical Society of Korea.",
