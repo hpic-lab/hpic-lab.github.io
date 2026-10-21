@@ -5523,3 +5523,18 @@ a.chip-out:hover { text-decoration: underline; }
     margin-top: 14px;
   }
 }
+
+/* Research Projects — 진행중 과제 그룹 라벨 (정부과제 / 산학과제) */
+.rp-group-label {
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #1f3c74;
+  margin: 26px 0 2px;
+  padding-left: 10px;
+  border-left: 3px solid #2e55be;
+}
+.research-projects-container > .rp-group-label:first-child {
+  margin-top: 6px;
+}
