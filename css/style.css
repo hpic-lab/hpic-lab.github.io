@@ -5619,3 +5619,20 @@ a.chip-out:hover { text-decoration: underline; }
   align-items: center;
 }
 .ack-out p { margin: 6px 0 0; line-height: 1.55; color: #222; word-break: break-word; }
+
+/* Research Projects — 과제별 사사문구 */
+.rp-ack { margin-top: 8px; padding-top: 6px; border-top: 1px dashed #d8dde8; }
+.rp-ack-row { margin: 6px 0; }
+.rp-ack-h { display: flex; align-items: center; }
+.rp-ack-text {
+  margin: 3px 0 0;
+  padding: 6px 10px;
+  background: #fff;
+  border: 1px solid #eceef2;
+  border-radius: 4px;
+  font-size: 0.82rem;
+  line-height: 1.5;
+  color: #222;
+  word-break: break-word;
+}
+.rp-ack-note { font-size: 0.78rem; color: #888; margin: 6px 0 0; }
