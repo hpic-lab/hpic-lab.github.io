@@ -192,7 +192,30 @@ $(document).ready(function () {
         (item.agency_note ? ' <span class="rp-warn">※ ' + item.agency_note + '</span>' : '') + '</div>' +
         (item.lead ? '<div><span class="rp-grant-k">주관·총괄</span>' + item.lead + '</div>' : '') +
         (item.en_title ? '<div><span class="rp-grant-k">영문 과제명</span>' + item.en_title + '</div>' : '') +
+        ackHTML(item) +
         '</div>';
+    }
+
+    // 과제별 사사문구 (단독 과제 기준, 연도 = 올해 → 논문 게재연도로 수정)
+    function escAttr(s) { return String(s).replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;"); }
+    function ackHTML(item) {
+      var y = new Date().getFullYear();
+      var iitp = item.agency === "IITP";
+      var agKo = iitp ? "정보통신기획평가원" : "한국연구재단";
+      var agEn = iitp ? "the Institute of Information & Communications Technology Planning & Evaluation (IITP)"
+                      : "the National Research Foundation of Korea (NRF)";
+      var rows = [
+        ["사사 (국문)", "이 논문은 " + y + "년도 정부(과학기술정보통신부)의 재원으로 " + agKo + "의 지원을 받아 수행된 연구임(" + item.grant_no + ", " + item.title + ")."],
+        ["사사 (영문)", "This work was supported by " + agEn + " grant funded by the Korean government (MSIT) in " + y + " (Grant No. " + item.grant_no + ", Project Title: " + item.en_title + ")."],
+        ["사사 (영문 간략)", "This work was supported by " + agEn + " funded by the Korean Government Ministry of Science and ICT (MSIT) under Grant " + item.grant_no + "."]
+      ];
+      return '<div class="rp-ack">' + rows.map(function (r) {
+        return '<div class="rp-ack-row"><div class="rp-ack-h"><span class="rp-grant-k">' + r[0] + '</span>' +
+          '<button type="button" class="rp-copy" data-copy="' + escAttr(r[1]) + '">Copy</button></div>' +
+          '<p class="rp-ack-text">' + r[1].replace(/&/g, "&amp;").replace(/</g, "&lt;") + '</p></div>';
+      }).join("") +
+        '<div class="rp-ack-note">※ 단독 과제 기준. 연도는 논문 게재연도로, 여러 과제를 함께 사사할 때는 아래 Acknowledgment Guide의 생성기를 사용 (기여율 필요).' +
+        (item.agency_note ? ' 전문기관 확인 후 사용.' : '') + '</div></div>';
     }
 
     function projectRow(item, num) {
@@ -218,6 +241,7 @@ $(document).ready(function () {
           <div class="rp-detail" style="display: none;">
             ${item.grant_no ? grantHTML(item) : ""}
             ${item.desc ? `<p class="rp-desc">${item.desc}</p>` : ""}
+            ${item.type === "industry" ? `<p class="rp-ack-note">※ 사사 표기 여부는 교수님께 확인 후 기재.</p>` : ""}
             ${item.role ? `<p class="rp-role"><b>HPIC Role</b> — ${item.role}</p>` : ""}
             ${logos ? `<div class="rp-logos">${logos}</div>` : ""}
           </div>`;
