@@ -2,16 +2,6 @@
   {
     "year": "2026",
     "month": "10",
-    "category": "Invited Talk",
-    "text": "<u>Min-Seong</u> presented an invited talk entitled \"Analog Modeling (Analog 회로 설계)\" at LX Semicon (3-day design course).",
-    "links": [],
-    "figures": [
-      "ms-choo-profile-img.png"
-    ]
-  },
-  {
-    "year": "2026",
-    "month": "10",
     "category": "Grant",
     "text": "<u>HPIC Lab</u> was selected for the \"Reconfigurable PAM-N SerDes Transceiver Based on 64 GT/s Low-Power DAC/ADC-DSP for Next-Generation PCIe Gen6/CXL Memory Controllers\" project, sponsored by Samsung Electronics (DS Division). Congratulations!",
     "links": [],
