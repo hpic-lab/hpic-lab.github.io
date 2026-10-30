@@ -3,6 +3,28 @@
     "type": "2026",
     "status": "IEEE ISICAS",
     "award": "",
+    "title": "XOR-Spikformer: A Resource-Efficient FPGA Accelerator for Spiking Transformers With XOR Residuals and Overlap Regularization",
+    "image": "",
+    "conference": "IEEE International Symposium on Integrated Circuits and Systems (ISICAS)",
+    "reference": "<i>IEEE International Symposium on Integrated Circuits and Systems (ISICAS)</i>, Dec. 2026.",
+    "authors": [
+      "Han-Gil Yoo*",
+      "Suk-Min Yoon*",
+      "Seungkyu Choi",
+      "Mingoo Seok",
+      "Min-Seong Choo"
+    ],
+    "figure": [
+      "hg-yoo-profile-img.jpg",
+      "sm_yoon_profile_image.jpg",
+      "ms-choo-profile-img.png"
+    ],
+    "link": "https://ieeexplore.ieee.org/document/11688113"
+  },
+  {
+    "type": "2026",
+    "status": "IEEE ISICAS",
+    "award": "",
     "title": "A Timing Relaxed Pre-Decision Feedforward Equalizer for DSP-Based Wireline Receiver Using Hardware-in-the-Loop Verification on FPGA",
     "image": "",
     "conference": "IEEE International Symposium on Integrated Circuits and Systems (ISICAS)",
@@ -51,28 +73,6 @@
       "ms-choo-profile-img.png"
     ],
     "link": "https://ieeexplore.ieee.org/abstract/document/11654553"
-  },
-  {
-    "type": "2026",
-    "status": "IEEE ISICAS",
-    "award": "",
-    "title": "XOR-Spikformer: A Resource-Efficient FPGA Accelerator for Spiking Transformers With XOR Residuals and Overlap Regularization",
-    "image": "",
-    "conference": "IEEE International Symposium on Integrated Circuits and Systems (ISICAS)",
-    "reference": "<i>IEEE International Symposium on Integrated Circuits and Systems (ISICAS)</i>, Dec. 2026.",
-    "authors": [
-      "Han-Gil Yoo*",
-      "Suk-Min Yoon*",
-      "Seungkyu Choi",
-      "Mingoo Seok",
-      "Min-Seong Choo"
-    ],
-    "figure": [
-      "hg-yoo-profile-img.jpg",
-      "sm_yoon_profile_image.jpg",
-      "ms-choo-profile-img.png"
-    ],
-    "link": "https://ieeexplore.ieee.org/document/11688113"
   },
   {
     "type": "2024",
