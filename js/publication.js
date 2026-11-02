@@ -83,6 +83,23 @@ $(document).ready(function () {
     }
   }
 
+  // ===== Patent 관련 문서 (특허결정서·등록증 등, Teams · 멤버 전용) =====
+  // patent.json 항목에 "docs": [ { "label": "특허결정서", "link": "https://hpiclab.sharepoint.com/..." } ]
+  function patentDocsHTML(pub) {
+    var docs = pub.docs || [];
+    var ICON = '<span class="pub2-rv-ic" aria-hidden="true">&#128196;</span>';
+    var chips = docs.map(function (d) {
+      if (!d || !d.label) return "";
+      return d.link
+        ? '<a class="pub2-rv-link" href="' + d.link + '" target="_blank" rel="noopener noreferrer" title="Members only (Teams)">' + ICON + d.label + "</a>"
+        : '<span class="pub2-rv-link pub2-rv-tbd" title="To be updated">' + ICON + d.label + "</span>";
+    }).join("");
+    if (!chips) return "";
+    return '<div class="pub2-review">' +
+      '<span class="pub2-review-label" title="Members only (Teams)" aria-label="Members only">&#128274;</span>' +
+      chips + "</div>";
+  }
+
   // ===== Journal 심사 과정 자료 (Teams · 멤버 전용) =====
   // 안 C: 라운드별 "제출본"만 나열. journal.json 항목에 아래처럼 넣습니다.
   //   "review": [
@@ -401,7 +418,9 @@ $(document).ready(function () {
             '<div class="pub2-title">' + pub.title + "</div>" +
             regHTML +
             '<div class="pub2-authors">' + authorsHTML(pub.inventors) + "</div>" +
-            '<div class="pub-figures">' + figuresHTML(pub) + "</div>" +
+            (patentDocsHTML(pub)
+              ? '<div class="pub-figures-row"><div class="pub-figures">' + figuresHTML(pub) + "</div>" + patentDocsHTML(pub) + "</div>"
+              : '<div class="pub-figures">' + figuresHTML(pub) + "</div>") +
           "</div>" +
         "</div>"
       );
