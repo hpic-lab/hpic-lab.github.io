@@ -408,7 +408,7 @@ $(document).ready(function () {
 
       body.append(
         '<div class="pub2-entry" data-yr="' + year + '" data-old="' + (isOld ? 1 : 0) +
-          '" data-sv="' + sortVal(pub) + '" data-ptype="patent" data-src="patent">' +
+          '" data-sv="' + (Number(pub.month) || 0) + '" data-ptype="patent" data-src="patent">' +
           '<div class="pub2-num">' + n-- + "</div>" +
           '<div class="pub2-side">' +
             '<div class="pub2-venue">' + (pub.type || "") + "</div>" +
@@ -506,7 +506,7 @@ $(document).ready(function () {
         group.sort(function (a, b) {
           var ya = Number(a.yr) || 0, yb = Number(b.yr) || 0;
           if (ya !== yb) return yb - ya;                          // 연도 내림차순 (~2023 그룹은 여러 연도 포함)
-          if (a.patent !== b.patent) return a.patent ? 1 : -1;   // 같은 연도 내 Patent 는 뒤로
+          // 같은 연도 내: Journal/Conference/Patent 구분 없이 게재(등록)월 내림차순 (Patent 는 patent.json 의 month 사용)
           return b.sv - a.sv;                                     // 월/상태 내림차순
         });
         $all.append('<div class="pub2-year' + (collapsed ? " collapsed" : "") + '" id="' + id + '">' + label + "</div>");
