@@ -1,6 +1,13 @@
 [
   {
     "year": "2026",
+    "month": "11",
+    "category": "Patent",
+    "text": "A patent entitled \"디지털 등화기 및 이의 동작 방법\" was allowed (decision to grant) by the Korean Intellectual Property Office.",
+    "links": []
+  },
+  {
+    "year": "2026",
     "month": "10",
     "category": "Invited Talk",
     "text": "<u>Min-Seong</u> presented an invited talk entitled \"Analog Modeling (Analog 회로 설계)\" at LX Semicon (3-day design course).",
