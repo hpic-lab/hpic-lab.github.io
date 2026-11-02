@@ -3,6 +3,31 @@
     "year": 2026,
     "type": "특허 등록",
     "status": 3,
+    "registration": "KR · 출원번호 10-2025-0019049 (특허결정 2026.11)",
+    "title": "디지털 등화기 및 이의 동작 방법",
+    "figure": [
+      "sh-ok-profile-img.jpg",
+      "jg-lee-profile-img.jpeg",
+      "sm-jin-profile-img.jpg",
+      "ms-choo-profile-img.png"
+    ],
+    "inventors": [
+      "옥상현",
+      "이재건",
+      "진승모",
+      "추민성"
+    ],
+    "docs": [
+      {
+        "label": "특허결정서",
+        "link": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/%EB%85%BC%EB%AC%B8%20%EC%9E%90%EB%A3%8C/%EC%A0%80%EB%84%90%20%EB%AA%A8%EC%9D%8C/P20240882OP_%EC%B6%94%EB%AF%BC%EC%84%B1_%EB%93%B1%EB%A1%9D%EA%B2%B0%EC%A0%95%EC%84%9C_20261101.pdf"
+      }
+    ]
+  },
+  {
+    "year": 2026,
+    "type": "특허 등록",
+    "status": 3,
     "registration": "",
     "title": "삼진 신경망용 3T 2C 동적 임베디드 램 기반 ADC 없는 커패시터 커플링을 이용한 프로세싱 인 메모리 가속기",
     "figure": [
