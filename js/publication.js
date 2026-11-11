@@ -225,6 +225,8 @@ $(document).ready(function () {
   }
   // 상태별 정렬값 (위쪽일수록 큼): Submitted > In Preparation > In Revision > Accepted > Published(월)
   function sortVal(p) {
+    // JSON 에 sortMonth 가 있으면 그 값으로 정렬 (예: Early Access 이지만 게재 예정 위치에 두고 싶을 때)
+    if (p.sortMonth != null && p.sortMonth !== "") return Number(p.sortMonth);
     var s = ((p.progress || "") + " " + (p.sub || "")).toLowerCase();
     if (/submit/.test(s)) return 16;
     if (/prepar/.test(s)) return 15;
