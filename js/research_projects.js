@@ -262,7 +262,7 @@ $(document).ready(function () {
 
     // ===== 사사(Acknowledgment) 가이드: 내부 전용 (hpic-lab SharePoint 문서로 연결) =====
     container.append(
-      '<a class="completed-toggle collapsed ack-toggle ack-link" href="https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/%EB%85%BC%EB%AC%B8%20%EC%9E%90%EB%A3%8C/HPIC_%EC%82%AC%EC%82%AC_%EA%B0%80%EC%9D%B4%EB%93%9C(Acknowledgment%20Guide).md" target="_blank" rel="noopener noreferrer" title="Members only (hpic-lab 계정)">' +
+      '<a class="completed-toggle collapsed ack-toggle ack-link" href="https://hpiclab.sharepoint.com/sites/hpic-lab/_layouts/15/Doc.aspx?sourcedoc=%7BFB219FA9-6CF1-4DC3-960E-9ADD3D0F0CD4%7D&amp;file=HPIC_%EC%82%AC%EC%82%AC_%EA%B0%80%EC%9D%B4%EB%93%9C(Acknowledgment%20Guide).docx&amp;action=view" target="_blank" rel="noopener noreferrer" title="Members only (hpic-lab 계정)">' +
         '<span>&#128274; Acknowledgment Guide (사사 가이드)</span><span class="ack-link-sub">Members only &#8599;</span>' +
       '</a>'
     );
