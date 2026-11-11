@@ -101,7 +101,7 @@ $(document).ready(function () {
     return first.length > 14 ? first.slice(0, 13) + "…" : first;
   }
 
-  function loadProfiles(url, containerClass, showIconsInMainView) {
+  function loadProfiles(url, containerClass, showIconsInMainView, previewOnly) {
     return $.getJSON(url).done(function (people) {
       const container = $(containerClass);
       container.empty();
@@ -109,13 +109,19 @@ $(document).ready(function () {
 
       people.forEach((person) => {
         const imgKey = getFileName(person.profile_img);
-        if (imgKey) {
+        // previewOnly(입학 예정자 등): 기존 멤버 DB를 덮어쓰지 않고, 카드도 클릭(모달) 없이 표시
+        if (imgKey && !previewOnly) {
             window.peopleDB[imgKey] = person;
         }
-        const profile = createProfileHTML(person, showIconsInMainView);
-        container.append(profile);
+        const $profile = $(createProfileHTML(person, showIconsInMainView));
+        if (previewOnly) $profile.removeAttr("data-bs-toggle data-bs-target data-img-key").addClass("people-card-preview");
+        container.append($profile);
       });
 
+      if (previewOnly) {
+        const h = container.prev("h3");
+        if (h.length && !h.find(".member-count").length) h.append(' <span class="member-count">' + people.length + "</span>");
+      }
       // 그룹 제목에 인원 수 배지 + Members 제목 옆 총 학생 수 배지
       if (containerClass === ".ms-phd-candidates" || containerClass === ".ms-candidates" || containerClass === ".researchers") {
         const heading = container.prev("h3");
@@ -848,6 +854,7 @@ $.when(
     loadProfiles("json/people/03_ms_candidates.json", ".ms-candidates", false),
     loadProfiles("json/people/04_researchers.json", ".researchers", false),
     loadProfiles("json/people/05_undergraduate_researchers.json", ".undergraduate-researchers", false),
+    loadProfiles("json/people/07_incoming_2703.json", ".incoming-2703", false, true),
     
     loadDataOnly("json/people/06_alumni_info.json"),
 
