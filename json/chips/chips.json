@@ -1,6 +1,29 @@
 [
   {
     "year": 2026,
+    "month": 11,
+    "process": "28-nm T",
+    "image": "img/chip_new/CIM_FFE_TX_112G_26.jpg",
+    "name": "112Gb/s TX with CIM FFE",
+    "description": "",
+    "outputs": [],
+    "note": "",
+    "designer": "",
+    "designer_imgs": [
+      "sw-kwon-profile-image.jpeg",
+      "dh-kim-new-profile-image.jpg",
+      "sm-jin-profile-img.jpg"
+    ],
+    "keywords": [
+      "112Gb/s",
+      "TX",
+      "CIM FFE"
+    ],
+    "status": "awaiting",
+    "raw_date": "2026.11"
+  },
+  {
+    "year": 2026,
     "month": 9,
     "process": "28-nm T",
     "image": "img/chip_new/TIA_112G_2609.jpg",

@@ -1,15 +1,5 @@
 [
   {
-    "ym": "2026.11",
-    "process": "28-nm T",
-    "title": "112Gb/s TX with CIM FFE",
-    "designer_imgs": [
-      "sw-kwon-profile-image.jpeg",
-      "dh-kim-new-profile-image.jpg",
-      "sm-jin-profile-img.jpg"
-    ]
-  },
-  {
     "ym": "2027.02",
     "process": "14-nm S",
     "title": "KWS AI Accelerator",
