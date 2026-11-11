@@ -5636,3 +5636,8 @@ a.chip-out:hover { text-decoration: underline; }
   word-break: break-word;
 }
 .rp-ack-note { font-size: 0.78rem; color: #888; margin: 6px 0 0; }
+
+/* Research Projects — 사사 가이드 (Members only 링크) */
+a.ack-link { text-decoration: none; }
+a.ack-link:hover { color: #2e55be; }
+.ack-link .ack-link-sub { font-size: 0.8rem; font-weight: 500; color: #999; }
