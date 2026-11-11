@@ -262,14 +262,15 @@ $(document).ready(function () {
 
     // ===== 사사(Acknowledgment) 가이드: 내부 전용 (hpic-lab SharePoint 문서로 연결) =====
     container.append(
-      '<a class="completed-toggle collapsed ack-toggle ack-link" href="https://hpiclab.sharepoint.com/sites/hpic-lab/_layouts/15/Doc.aspx?sourcedoc=%7BFB219FA9-6CF1-4DC3-960E-9ADD3D0F0CD4%7D&amp;file=HPIC_%EC%82%AC%EC%82%AC_%EA%B0%80%EC%9D%B4%EB%93%9C(Acknowledgment%20Guide).docx&amp;action=view" target="_blank" rel="noopener noreferrer" title="Members only (hpic-lab 계정)">' +
+      '<a class="completed-toggle collapsed ack-toggle ack-link" href="https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/%EB%85%BC%EB%AC%B8%20%EC%9E%90%EB%A3%8C/HPIC_%EC%82%AC%EC%82%AC_%EA%B0%80%EC%9D%B4%EB%93%9C(Acknowledgment%20Guide).pdf" target="_blank" rel="noopener noreferrer" title="Members only (hpic-lab 계정)">' +
         '<span>&#128274; Acknowledgment Guide (사사 가이드)</span><span class="ack-link-sub">Members only</span>' +
       '</a>'
     );
 
     // 사사 가이드: 새 탭 대신 홈페이지 내 팝업(모달)으로 표시 (SharePoint embed — hpic-lab 로그인 필요)
     (function () {
-      var SP = "https://hpiclab.sharepoint.com/sites/hpic-lab/_layouts/15/Doc.aspx?sourcedoc=%7BFB219FA9-6CF1-4DC3-960E-9ADD3D0F0CD4%7D";
+      var SP_VIEW = "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/%EB%85%BC%EB%AC%B8%20%EC%9E%90%EB%A3%8C/HPIC_%EC%82%AC%EC%82%AC_%EA%B0%80%EC%9D%B4%EB%93%9C(Acknowledgment%20Guide).pdf";
+      var SP_EMBED = "https://hpiclab.sharepoint.com/sites/hpic-lab/_layouts/15/embed.aspx?UniqueId=68446df1-4763-463d-b603-5979d2ac59ca";
       if (!document.getElementById("ack-modal-style")) {
         $("head").append('<style id="ack-modal-style">' +
           '.ack-modal{position:fixed;inset:0;z-index:10000;background:rgba(15,25,45,.55);display:none;align-items:center;justify-content:center;padding:3vh 3vw}' +
@@ -289,7 +290,7 @@ $(document).ready(function () {
           m = $('<div id="ack-modal" class="ack-modal" role="dialog" aria-modal="true">' +
             '<div class="ack-modal-box">' +
               '<div class="ack-modal-head"><span>&#128274; Acknowledgment Guide (사사 가이드)</span>' +
-                '<span><a href="' + SP + '&amp;action=view" target="_blank" rel="noopener noreferrer">새 창에서 열기 &#8599;</a>' +
+                '<span><a href="' + SP_VIEW + '" target="_blank" rel="noopener noreferrer">새 창에서 열기 &#8599;</a>' +
                 '<button type="button" class="ack-modal-close" aria-label="닫기">&times;</button></span></div>' +
               '<iframe title="Acknowledgment Guide" loading="lazy"></iframe>' +
               '<div class="ack-modal-note">hpic-lab 계정으로 로그인한 구성원만 볼 수 있습니다. 내용이 보이지 않으면 위의 [새 창에서 열기]를 이용하세요.</div>' +
@@ -299,7 +300,7 @@ $(document).ready(function () {
           m.on("click", ".ack-modal-close", closeAck);
         }
         var f = m.find("iframe");
-        if (!f.attr("src")) f.attr("src", SP + "&action=embedview");
+        if (!f.attr("src")) f.attr("src", SP_EMBED);
         m.addClass("open");
         $("body").css("overflow", "hidden");
       }
