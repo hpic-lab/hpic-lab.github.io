@@ -5641,3 +5641,6 @@ a.chip-out:hover { text-decoration: underline; }
 a.ack-link { text-decoration: none; }
 a.ack-link:hover { color: #2e55be; }
 .ack-link .ack-link-sub { font-size: 0.8rem; font-weight: 500; color: #999; }
+
+/* keep last toggle underline clear of the sticky Chip Gallery header mask (34px) */
+.research-projects-container { margin-bottom: 14px; }
