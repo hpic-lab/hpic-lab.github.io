@@ -1,5 +1,12 @@
 [
   {
+    "id": 10,
+    "img_src": "img/photo/261105_HPIC_Lab_Picnic.jpg",
+    "date": "202611",
+    "name": "Picnic",
+    "content": "연구실 야유회"
+  },
+  {
     "id": 9,
     "img_src": "img/photo/260824_HPIC_Lab_Dinner.jpg",
     "date": "20260824",
