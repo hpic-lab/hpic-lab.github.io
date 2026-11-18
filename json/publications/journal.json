@@ -175,7 +175,13 @@
       "ih-han-profile-img.jpg",
       "ms-choo-profile-img.png"
     ],
-    "link": ""
+    "link": "",
+    "review": [
+      {
+        "submission": "https://hpiclab.sharepoint.com/sites/hpic-lab/Shared%20Documents/%EB%85%BC%EB%AC%B8%20%EC%9E%90%EB%A3%8C/%EC%A0%80%EB%84%90%20%EB%AA%A8%EC%9D%8C/JSSC_2026_ILCM.pdf",
+        "subLabel": "Working Draft"
+      }
+    ]
   },
   {
     "type": "2026",
