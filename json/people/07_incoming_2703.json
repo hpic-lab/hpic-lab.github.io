@@ -86,16 +86,5 @@
     "biography": "",
     "profile_img": "img/empty-profile-img.jpg",
     "position": ""
-  },
-  {
-    "name": "Hye-Hoon Moon",
-    "education": [
-      "M.S., Department of AX Semiconductor, Yonsei University (2027.03 ~ Present)"
-    ],
-    "research_interests": [],
-    "tag": "M.S.",
-    "biography": "",
-    "profile_img": "img/empty-profile-img.jpg",
-    "position": ""
   }
 ]
